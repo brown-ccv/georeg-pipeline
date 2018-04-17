@@ -77,12 +77,20 @@ class Address(object):
         else:
             stnum = ''
             stnam = street.strip()
-        
-        stnam = re.sub('Av$', 'Ave', stnam)
 
         if stnam == '':
             print('EMPTY STREET')
             return
+
+        sts = ['St','Ave','Av','Ct','Dr','Rd','Ln']
+
+        for st in sts:
+            if re.match('.*\s' + st + '\s.*', stnam):
+                stnam = stnam.partition(' ' + st + ' ')[0] + ' ' + st
+                break
+
+        stnam = re.sub(' Av$', ' Ave', stnam)
+
         print(stnam)
         # Look for best fuzzy matches with a score > cutoff.
         t1 = time.time()
