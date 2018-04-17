@@ -8,6 +8,7 @@ from address import Address
 
 def streetMatcher(dataFrame):
     final = []
+    mistakes = []
     #dataFrame = pd.read_pickle('ccities')
     #streetTable()
 
@@ -21,16 +22,26 @@ def streetMatcher(dataFrame):
 
         for addr, city, score in address.addr_matches:
 
-            final.append({
-                'Address': addr,
-                'City': city,
-                'Conf._Score': score,
-                'Header': row['Header'],
-                'File_List': row['File_List'],
-                'Text': row['Text'],
-                'Company_Name': row['Company_Name']
-            })
+            if city == 'N/A':
+                mistakes.append({
+                    'Street': addr,
+                    'Drop_Reason': score,
+                    'File_List': row['File_List'],
+                    'Text': row['Text'],
+                    })
+            else:
+                final.append({
+                    'Address': addr,
+                    'City': city,
+                    'Conf._Score': score,
+                    'Header': row['Header'],
+                    'File_List': row['File_List'],
+                    'Text': row['Text'],
+                    'Company_Name': row['Company_Name']
+                })
 
     final = pd.DataFrame(final)
+    drops = pd.DataFrame(mistakes)
+    drops.to_csv('drops_address.csv', sep = ',')
 
     return final

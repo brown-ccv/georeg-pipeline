@@ -51,6 +51,7 @@ class Address(object):
 
         if street == 'N/A':
             print('N/A')
+            self.addr_matches.append((street, 'N/A', 'FAILED TO PARSE AN ADDRESS'))
             return
 
         if re.match('.+\(.{1,20}\)$', street):
@@ -80,6 +81,7 @@ class Address(object):
 
         if stnam == '':
             print('EMPTY STREET')
+            self.addr_matches.append((street, 'N/A', 'EMPTY STREET'))
             return
 
         sts = ['St','Ave','Av','Ct','Dr','Rd','Ln']
@@ -101,6 +103,7 @@ class Address(object):
             street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
         if not street_matches:
             print('No match')
+            self.addr_matches.append((street, 'N/A', 'NO MATCH'))
             return
         street, score = (street_matches[0],street_matches[1]) # removes the third dummy value that sometimes shows up in the tuple
         t2 = time.time()
@@ -109,7 +112,7 @@ class Address(object):
         # Add to addr_matches if score reaches cutoff:
         if score < cutoff:
             print('SCORE LESS THAN CUTOFF: ' + street + ',' + str(score) + ',' + self.city)
-            return
+            self.addr_matches.append((street, 'N/A', 'SCORE LESS THAN CUTOFF'))
         else:
             addr = stnum + ' ' + street
             addr_match = (addr, self.city, score)
