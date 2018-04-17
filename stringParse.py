@@ -11,8 +11,14 @@ def split_on_st(string, st):
 	if i<2:
 		return 'Search','failed',True
 	else:
-		rtuple = string.partition(' ' + words[i-2] + ' ')
-		return rtuple[0],rtuple[2], False
+		j = i-2
+		while j>0 and (not (re.match('\d+', words[j]))):
+			j -= 1
+		if j < 0:
+			return 'Search','failed',True
+		else:
+			rtuple = string.partition(' ' + words[j] + ' ')
+			return rtuple[0],(rtuple[1] + rtuple[2]), False
 
 def search(string):
 	regex = '(\D+)(\s\d+\s)(.+)'
@@ -31,6 +37,8 @@ def search(string):
 		companyName, street, do_regex = split_on_st(string,'Ct')
 	elif re.match('.+\sLn\s.*', string) or re.match('.+\sLn$', string):
 		companyName, street, do_regex = split_on_st(string,'Ln')
+	elif re.match('.+\sDr\s.*', string) or re.match('.+\sDr$', string):
+		companyName, street, do_regex = split_on_st(string,'Dr')
 	
 	if do_regex:
 		parts = re.search(regex, string)
