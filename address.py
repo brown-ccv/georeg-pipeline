@@ -100,7 +100,12 @@ class Address(object):
             print('Perfect match')
             street_matches = (stnam.upper(), 100.0)
         else:
-            street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
+            try:
+                street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
+            except:
+                print('ERROR IN STREET MATCHING')
+                self.addr_matches.append((street, 'N/A', 'ERROR IN STREET MATCHING'))
+                return
         if not street_matches:
             print('No match')
             self.addr_matches.append((street, 'N/A', 'NO MATCH'))

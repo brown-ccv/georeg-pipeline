@@ -1,8 +1,11 @@
-import glob, os
+import glob, os, re
 import numpy as np
 import cv2
 
 #Crops out the margins.
+
+def naturalSort(String_):
+    return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
 def getAvg(img, height):
     h, w = img.shape[:2]
@@ -29,31 +32,57 @@ def getAvgV(img, width):
 
 def cropTop(image):
     h, w = image.shape[:2]
+    sf = float(h)/13524.0
+    sfw = float(w)/9475.0
     y = 0
-    while w - cv2.countNonZero(image[y,:]) < 25:
+    while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
         y += 1
-    return y
+    if cv2.countNonZero(image[:,x+int(sf*50):x+int(sf*100)]) < float(int(sf*50.0))*sfw*30.0:
+        y += 50
+        while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+        y += 1
+    return y - int(sf*25)
 
 def cropBottom(image):
     h, w = image.shape[:2]
+    sf = float(h)/13524.0
+    sfw = float(w)/9475.0
     y = h - 1
-    while w - cv2.countNonZero(image[y,:]) < 25:
+    while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
         y -= 1
-    return y
+    if cv2.countNonZero(image[:,x-int(sf*50):x-int(sf*100)]) < float(int(sf*50.0))*sfw*30.0:
+        y -= 50
+        while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+        y -= 1
+    return y + int(sf*25)
 
 def cropLeft(image):
     h, w = image.shape[:2]
+    sf = float(h)/13524.0
+    sfw = float(w)/9475.0
     x = 50
-    while h - cv2.countNonZero(image[:,x]) < 25:
+    while h - cv2.countNonZero(image[:,x]) < sf*50.0:
         x += 1
-    return x
+    if cv2.countNonZero(image[:,x-int(sfw*50):x-int(sfw*100)]) < float(int(sfw*50.0))*sf*50.0:
+        x += 50
+        while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+            x += 1
+    return x - int(25*sfw)
 
 def cropRight(image):
     h, w = image.shape[:2]
+    sf = float(h)/13524.0
+    sfw = float(w)/9475.0
     x = w - 50
-    while h - cv2.countNonZero(image[:,x]) < 25:
+    #while x > 7000 and (h - cv2.countNonZero(image[:,x]) < sf*50.0 or cv2.countNonZero(image[:,x-int(sfw*150):x-int(sfw*50)]) < sfw*100.0*sf*50.0):
+        #x -= 1
+    while h - cv2.countNonZero(image[:,x]) < sf*50.0:
         x -= 1
-    return x
+    if cv2.countNonZero(image[:,x-int(sfw*100):x-int(sfw*200)]) < float(int(sfw*100.0))*sf*50.0:
+        x -= 100
+        while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+            x -= 1
+    return x + int(100*sfw)
 
 
 def cropMargins(file):
@@ -62,8 +91,11 @@ def cropMargins(file):
     bottom = cropBottom(image)
     left = cropLeft(image)
     right = cropRight(image)
+    h, w = image.shape[:2]
+    sf = float(h)/13524.0
+    sfw = float(w)/9475.0
     #print top, bottom, left, right
-    return image[top-5 : bottom+5, left-5 : right+5]
+    return image[top-int(sf*5.0) : bottom+int(sf*5.0), left-int(sfw*5.0) : right+int(sfw*10.0)]
 
 
 def cleanImage(image):
@@ -82,9 +114,9 @@ def marginCrop(folder):
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    for file in sorted(glob.glob("*.png")):
+    for file in sorted(glob.glob("*.png"), key=naturalSort):
         print file + '-margins cropped'
         cropped = cropMargins(file)
-        #cropped = cleanImage(original)
+        #cropped = cleanImage(cropped)
         #cropped = original
         cv2.imwrite(os.path.join(nDirectory, file), cropped)

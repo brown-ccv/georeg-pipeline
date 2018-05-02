@@ -1,4 +1,4 @@
-import glob, os
+import glob, os, re
 import numpy as np
 from numpy import ndarray
 import cv2
@@ -10,6 +10,9 @@ import sklearn
 from sklearn.cluster import MeanShift
 
 #Chops the pages into columns
+
+def naturalSort(String_):
+	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
 def getAvg(img, x, y):
 	height, width = img.shape[:2]
@@ -39,24 +42,27 @@ def cleanImage(image):
     #return opening
 
 
-def cropImage(image):
+def cropImage(image, file):
 	croppedImages = []
 	img = image.copy()
 	height, width = img.shape[:2]
-	sf = float(height)/float(11675)
-
+	sf = float(height)/11675.0
+	sfw = float(width)/7820.0
+	fig = plt.figure()
 	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5).mean()
 	ax = histogram.plot()
 	#ax.set_ylim([0,200])
-	plt.savefig('histogram.pdf', bbox_inches='tight')
+	fig.savefig(file.partition('.png')[0] + '.histogram.pdf', bbox_inches='tight')
+	plt.close(fig)
 	dip_df = histogram[histogram < sf*150].to_frame().rename(columns = {0:'count'})
-	dip_df.loc[dip_df['count']<sf*25,'count'] = 0
+	dip_df.loc[dip_df['count']<sf*50,'count'] = 0
+	histogram.iloc[0] = 0
 	indices = np.array(dip_df.index.tolist()).reshape(-1,1)
 	ms = MeanShift()
 	ms.fit(indices)
 	dip_group = ms.predict(indices)
 	dip_df = dip_df.assign(group = dip_group)
-	cut_points = [0] + sorted(dip_df.groupby('group').apply(lambda x: max(x[x['count']==0].index)).tolist())[1:-1] + [width]
+	cut_points = [0] + sorted(dip_df.groupby('group').apply(lambda x: max(x[x['count']==0].index - int(sfw*35.0))).tolist())[1:-1] + [width]
 	for i in list(range(len(cut_points)-1)):
 		croppedImages.append(img[0:height, cut_points[i]:cut_points[i+1]])
 	return croppedImages
@@ -69,10 +75,10 @@ def doCrop(folder):
 	os.chdir(scans)
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
-	for file in sorted(glob.glob("*.png")):
+	for file in sorted(glob.glob("*.png"), key=naturalSort):
 		img = cv2.imread(file, 0)
 		#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
-		crop = cropImage(img)
+		crop = cropImage(img, file)
 		name = file[:-4]
 		ext = file[-4:]
 		i = 1

@@ -1,4 +1,4 @@
-import glob, os
+import glob, os, re
 import numpy as np
 import cv2
 import pandas as pd
@@ -12,6 +12,9 @@ import time
 
 #Chops columns into entries
 #Script contains unused functions and needs heavy editing.
+
+def naturalSort(String_):
+    return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
 def lineIndent(img, h):
     avg = 0
@@ -186,7 +189,7 @@ def entryChop(folder):
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
     crop_points_dict = {}
-    for file in sorted(glob.glob("*.png")):
+    for file in sorted(glob.glob("*.png"), key=naturalSort):
     	print 'Chopping: ' + file
         fileN = file[:-4]
         ext = file[-4:]

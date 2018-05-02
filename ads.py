@@ -1,8 +1,13 @@
-import glob, os
+import glob, os, re
 import cv2
 import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
 
 #Removes the ads
+
+def naturalSort(String_):
+    return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
 def cleanImage(image):
     inv = cv2.bitwise_not(image)
@@ -11,8 +16,8 @@ def cleanImage(image):
     closed = cv2.morphologyEx(closed, cv2.MORPH_OPEN, kernel)
     return closed
 
-def removeAds(im_bw):
-    pad = 0
+def removeAds(im_bw, file):
+    #pad = 0
     #cv2.imwrite(os.path.join('no_ads', 'bw_test2.png'), im_bw)
     # inverted = cv2.bitwise_not(inverted)
     # gray = cv2.cvtColor(inverted, cv2.COLOR_BGR2GRAY)
@@ -21,10 +26,14 @@ def removeAds(im_bw):
         #gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
     #else:
         #gray = original
+    do_diagnostics = False
+    height,width = im_bw.shape[:2]
+    cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), 100)
     im_bw_copy = im_bw.copy()
-    #cv2.imwrite(os.path.join('no_ads', 'bw_test.png'), im_bw_copy)
-    height,width = im_bw_copy.shape[:2]
+    if do_diagnostics:
+        cv2.imwrite(os.path.join('no_ads', file.partition('.png')[0] + '.bw_test.jpg'), im_bw)
     blank_image = np.zeros((height,width,3), np.uint8)
+    white_image = 255.0 * np.ones((height,width), np.uint8)
     sf = float(height + width)/float(13524 + 9475)
     minContour = 3000 * sf
     im2, contours, hierarchy = cv2.findContours(im_bw_copy,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
@@ -43,23 +52,36 @@ def removeAds(im_bw):
             right = max([vertex[0][0] for vertex in cnt])
             if (w > (width / 2)) and (bottom < (height * 0.75)):
                 cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
+            #if (w > (width / 2)) and (top > (height * 0.90)):
+                #cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
             if (w * h) < 0.9 * width * height:
+                cv2.drawContours(white_image, [cnt], -1, (0,0,0), -1)
                 if h > (0.1 * float(height)) and right < (0.25 * float(width)):
                     cv2.rectangle(im_bw,(0,0),(right,height), (255,255,255), -1)
                 elif h > (0.1 * float(height)) and left > (0.75 * float(width)):
                     cv2.rectangle(im_bw,(left,0),(width,height), (255,255,255), -1)
-                elif ((height - bottom) < 11) or (top < 11):
-                    o_vertices = cv2.approxPolyDP(cnt, 0.005*perimeter, True)
-                    approx = cv2.convexHull(o_vertices, clockwise=True)
-                    cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), -1)
-                    cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), int(5 * sf))
-                    cv2.drawContours(blank_image, [approx], -1, (255, 255, 255), -1)
+                #elif ((height - bottom) < 11) or (top < 11):
+                    #o_vertices = cv2.approxPolyDP(cnt, 0.005*perimeter, True)
+                    #approx = cv2.convexHull(o_vertices, clockwise=True)
+                    #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), -1)
+                    #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), int(5 * sf))
+                    #cv2.drawContours(blank_image, [approx], -1, (255, 255, 255), -1)
                 else:
-                    cv2.rectangle(im_bw,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
-                    cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+                    #cv2.rectangle(im_bw,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
+                    #cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
     #cv2.imwrite(os.path.join(nDirectory, file), original)
-    #cv2.imwrite(os.path.join('no_ads', 'bw_test3.png'), im_bw)
-    #cv2.imwrite(os.path.join('no_ads', 'contours.png'), blank_image)
+    if do_diagnostics:
+        cv2.imwrite(os.path.join('no_ads', file.partition('.png')[0] + '.white.jpg'), white_image)
+    yi = height-50
+    while cv2.countNonZero(white_image[yi,:]) < (0.7*float(width)) and yi > (0.95*float(height)):
+        yi -= 1
+    #yi -= int(height/300)
+    if do_diagnostics:
+        print('Bottom cutoff: ' + str(100.0*float(yi)/float(height)))
+    cv2.rectangle(im_bw,(0,yi),(width,height), (255,255,255), -1)
+    if do_diagnostics:
+        cv2.imwrite(os.path.join('no_ads', file.partition('.png')[0] + '.contours.jpg'), blank_image)
     return im_bw
 
 def noAds(image, area):
@@ -68,20 +90,45 @@ def noAds(image, area):
     return noAds
 
 def rmAds(folder):
+    do_plots = False
     scans = folder
     nDirectory = 'no_ads'
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    for file in sorted(glob.glob("*.png")):
+    for file in sorted(glob.glob("*.png"), key=naturalSort):
         original = cv2.imread(file, 0)
         h, w = original.shape[:2]
-        threshold = 127
+        hist_raw,bins = np.histogram(original.ravel(),256,[0,256])
+        hist = pd.Series(hist_raw[:200]).rolling(10).mean()
+        h_total = hist.sum()
+        h_cumulative = hist.cumsum()/h_total
+        h_grad = pd.Series(np.gradient(hist, 5)).rolling(5).mean()
+        if do_plots:
+            fig = plt.figure()
+            plt.plot(hist)
+            fig.savefig(file.partition('.png')[0] + '.grayscale_histogram.pdf', bbox_inches='tight')
+            plt.close(fig)
+            cfig = plt.figure()
+            ax = h_cumulative.plot()
+            cfig.savefig(file.partition('.png')[0] + '.grayscale_cumulative.pdf', bbox_inches='tight')
+            plt.close(cfig)
+        threshold = h_grad[(h_grad.index > 60) & (h_grad.index < 150)].idxmin()
+        g_cutoff = h_grad.min()*0.15
+        while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
+            threshold += 1
+        print(threshold)
+        if do_plots:
+            gfig = plt.figure()
+            plt.plot(h_grad)
+            plt.plot([0,200],[g_cutoff,g_cutoff])
+            gfig.savefig(file.partition('.png')[0] + '.grayscale_grad.pdf', bbox_inches='tight')
+            plt.close(gfig)
         original_padded = cv2.copyMakeBorder(original[:,0:w-50],10,10,10,10, cv2.BORDER_CONSTANT, value=255)
         im_bw = cv2.threshold(original_padded, threshold, 255, cv2.THRESH_BINARY)[1]
         #cv2.imwrite(os.path.join('no_ads', 'bw_test.png'), im_bw)
         #im = cleanImage(original)
-        removeAds(im_bw)
+        removeAds(im_bw, file)
         cv2.imwrite(os.path.join(nDirectory, file), im_bw)
         print file + '-no ads'
 

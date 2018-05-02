@@ -7,6 +7,8 @@ import pandas as pd
 
 
 def geocode(dataFrame):
+	errors = pd.DataFrame()
+
 	geolocator = BrownArcGIS(username = os.environ.get("BROWNGIS_USERNAME"), password = os.environ.get("BROWNGIS_PASSWORD"), referer = os.environ.get("BROWNGIS_REFERER"))
 
 	master = pd.DataFrame()
@@ -65,9 +67,12 @@ def geocode(dataFrame):
 				})
 			master = master.append(rowFrame)
 		else:
+			errors = errors.append(row)
 			continue
 
 	if master.empty:
 		print 'Nothing new to add'
+
+	errors.to_csv('geocoder_errors.csv')
 
 	return master
