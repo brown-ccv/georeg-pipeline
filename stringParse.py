@@ -23,7 +23,7 @@ def split_on_st(string, st):
 def search(string):
 	regex = '(\D+)(\s\d+\s)(.+)'
 
-	print('Parsing: ' + string)
+	#print('Parsing: ' + string)
 	do_regex = True
 	if re.match('.+\sAv\s.*', string) or re.match('.+\sAv$', string):
 		companyName, street, do_regex = split_on_st(string,'Av')
@@ -53,7 +53,7 @@ def search(string):
 			companyName = parts.group(1).strip()
 			return street, companyName
 		else:
-			print('Regex failure: no number found')
+			#print('Regex failure: no number found')
 			return 'N/A', 'N/A'
 	else:
 		return street, companyName

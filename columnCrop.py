@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import math
 import sklearn
 from sklearn.cluster import MeanShift
+from multiprocessing import Pool
 
 #Chops the pages into columns
 
@@ -67,6 +68,21 @@ def cropImage(image, file):
 		croppedImages.append(img[0:height, cut_points[i]:cut_points[i+1]])
 	return croppedImages
 
+def crop_file(file):
+	nDirectory = 'cropped'
+	print(file)
+	img = cv2.imread(file, 0)
+	#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
+	crop = cropImage(img, file)
+	name = file[:-4]
+	ext = file[-4:]
+	i = 1
+	for image in crop:
+		cv2.imwrite(os.path.join(nDirectory, name + " ("+ str(i) + ")" + ext), image)
+		i += 1
+	#cv2.imwrite(os.path.join(nDirectory, file), clean)
+	print file + '-cropped to columns'
+	return
 
 def doCrop(folder):
 	croppedImages = []
@@ -75,51 +91,13 @@ def doCrop(folder):
 	os.chdir(scans)
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
+	pool = Pool(4)
+	print('bp')
 	for file in sorted(glob.glob("*.png"), key=naturalSort):
-		img = cv2.imread(file, 0)
-		#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
-		crop = cropImage(img, file)
-		name = file[:-4]
-		ext = file[-4:]
-		i = 1
-		for image in crop:
-			cv2.imwrite(os.path.join(nDirectory, name + " ("+ str(i) + ")" + ext), image)
-			i += 1
-		#cv2.imwrite(os.path.join(nDirectory, file), clean)
-		print file + '-cropped to columns'
-
-		# height, width = img.shape[:2]
-		# histogram = ndarray((width,),int)
-		# i=0
-
-		# while i<width:
-		# 	histogram[i] = height - cv2.countNonZero(img[:,i])
-		# 	i=i+1
-
-		# print histogram
-		# pix = cv2.countNonZero(img)
-		# print pix
-		# left = 0
-		# right = left + 618
-
-		# while right < width:
-		# 	rng = histogram[right-15:right+15]
-		# 	(var, indx) = min((v,i) for i,v in enumerate(rng))
-		# 	print var,indx
-		# 	right = indx + (right-15)
-		# 	im2 = img[0:height, left:right]
-		# 	left = right+6
-		# 	right+=615
+		crop_file(file)
+	#pool.map(crop_file, sorted(glob.glob("*.png"), key=naturalSort))
+	
 
 
-			#print mymin
-		#clean = cleanImage(img)
-		
-		# name = file[:-4]
-		# ext = file[-4:]
-		# i = 1
-		# for image in crop:
-		# 	cv2.imwrite(os.path.join(nDirectory, name + " ("+ str(i) + ")" + ext), image)
-		# 	i += 1
-		# #cv2.imwrite(os.path.join(nDirectory, file), clean)
-		# print file + '-cropped'
+
+

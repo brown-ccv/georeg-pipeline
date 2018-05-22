@@ -1,6 +1,7 @@
 import glob, os, re
 import numpy as np
 import cv2
+from multiprocessing import Pool
 
 #Crops out the margins.
 
@@ -37,10 +38,10 @@ def cropTop(image):
     y = 0
     while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
         y += 1
-    if cv2.countNonZero(image[:,x+int(sf*50):x+int(sf*100)]) < float(int(sf*50.0))*sfw*30.0:
+    if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*30.0:
         y += 50
         while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
-        y += 1
+            y += 1
     return y - int(sf*25)
 
 def cropBottom(image):
@@ -50,10 +51,10 @@ def cropBottom(image):
     y = h - 1
     while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
         y -= 1
-    if cv2.countNonZero(image[:,x-int(sf*50):x-int(sf*100)]) < float(int(sf*50.0))*sfw*30.0:
+    if cv2.countNonZero(image[y-int(sf*50):y-int(sf*100),:]) < float(int(sf*50.0))*sfw*30.0:
         y -= 50
         while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
-        y -= 1
+            y -= 1
     return y + int(sf*25)
 
 def cropLeft(image):
@@ -86,6 +87,7 @@ def cropRight(image):
 
 
 def cropMargins(file):
+    print file + '-margins cropped'
     image = cv2.imread(file, 0)
     top = cropTop(image)
     bottom = cropBottom(image)
@@ -94,9 +96,11 @@ def cropMargins(file):
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
+    cropped = image[top-int(sf*5.0) : bottom+int(sf*5.0), left-int(sfw*5.0) : right+int(sfw*10.0)]
+    nDirectory = 'margins_fixed'
+    cv2.imwrite(os.path.join(nDirectory, file), cropped)
     #print top, bottom, left, right
-    return image[top-int(sf*5.0) : bottom+int(sf*5.0), left-int(sfw*5.0) : right+int(sfw*10.0)]
-
+    return
 
 def cleanImage(image):
     inv = cv2.bitwise_not(image)
@@ -114,9 +118,9 @@ def marginCrop(folder):
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    for file in sorted(glob.glob("*.png"), key=naturalSort):
-        print file + '-margins cropped'
-        cropped = cropMargins(file)
-        #cropped = cleanImage(cropped)
-        #cropped = original
-        cv2.imwrite(os.path.join(nDirectory, file), cropped)
+    pool = Pool(4)
+    pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
+
+
+
+

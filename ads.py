@@ -3,6 +3,8 @@ import cv2
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+import time
+from multiprocessing import Pool
 
 #Removes the ads
 
@@ -89,48 +91,70 @@ def noAds(image, area):
     noAds = removeAds(image, area)
     return noAds
 
-def rmAds(folder):
+def get_binary(file):
     do_plots = False
+    t1 = time.time()
+    original = cv2.imread(file, 0)
+    t2 = time.time()
+    #print('Image read time: ' + str(round(t2-t1, 2)) + ' s')
+    h, w = original.shape[:2]
+    hist_raw,bins = np.histogram(original.ravel(),256,[0,256])
+    hist = pd.Series(hist_raw[:200]).rolling(10).mean()
+    h_total = hist.sum()
+    h_cumulative = hist.cumsum()/h_total
+    h_grad = pd.Series(np.gradient(hist, 5)).rolling(5).mean()
+    if do_plots:
+        fig = plt.figure()
+        plt.plot(hist)
+        fig.savefig(file.partition('.png')[0] + '.grayscale_histogram.pdf', bbox_inches='tight')
+        plt.close(fig)
+        cfig = plt.figure()
+        ax = h_cumulative.plot()
+        cfig.savefig(file.partition('.png')[0] + '.grayscale_cumulative.pdf', bbox_inches='tight')
+        plt.close(cfig)
+    threshold = h_grad[(h_grad.index > 60) & (h_grad.index < 150)].idxmin()
+    g_cutoff = h_grad.min()*0.15
+    while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
+        threshold += 1
+    #print(threshold)
+    if do_plots:
+        gfig = plt.figure()
+        plt.plot(h_grad)
+        plt.plot([0,200],[g_cutoff,g_cutoff])
+        gfig.savefig(file.partition('.png')[0] + '.grayscale_grad.pdf', bbox_inches='tight')
+        plt.close(gfig)
+    original_padded = cv2.copyMakeBorder(original[:,0:w-50],10,10,10,10, cv2.BORDER_CONSTANT, value=255)
+    im_bw = cv2.threshold(original_padded, threshold, 255, cv2.THRESH_BINARY)[1]
+    return im_bw
+
+def process_image(file):
+    nDirectory = 'no_ads'
+    t1 = time.time()
+    im_bw = get_binary(file)
+    t2 = time.time()
+    #print('Binary conversion time: ' + str(round(t2-t1, 2)) + ' s')
+    #cv2.imwrite(os.path.join('no_ads', 'bw_test.png'), im_bw)
+    #im = cleanImage(original)
+    t1 = time.time()
+    removeAds(im_bw, file)
+    t2 = time.time()
+    #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
+    t1 = time.time()
+    cv2.imwrite(os.path.join(nDirectory, file), im_bw)
+    t2 = time.time()
+    #print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
+    print file + '-no ads'
+    return
+
+def rmAds(folder):
     scans = folder
     nDirectory = 'no_ads'
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    for file in sorted(glob.glob("*.png"), key=naturalSort):
-        original = cv2.imread(file, 0)
-        h, w = original.shape[:2]
-        hist_raw,bins = np.histogram(original.ravel(),256,[0,256])
-        hist = pd.Series(hist_raw[:200]).rolling(10).mean()
-        h_total = hist.sum()
-        h_cumulative = hist.cumsum()/h_total
-        h_grad = pd.Series(np.gradient(hist, 5)).rolling(5).mean()
-        if do_plots:
-            fig = plt.figure()
-            plt.plot(hist)
-            fig.savefig(file.partition('.png')[0] + '.grayscale_histogram.pdf', bbox_inches='tight')
-            plt.close(fig)
-            cfig = plt.figure()
-            ax = h_cumulative.plot()
-            cfig.savefig(file.partition('.png')[0] + '.grayscale_cumulative.pdf', bbox_inches='tight')
-            plt.close(cfig)
-        threshold = h_grad[(h_grad.index > 60) & (h_grad.index < 150)].idxmin()
-        g_cutoff = h_grad.min()*0.15
-        while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
-            threshold += 1
-        print(threshold)
-        if do_plots:
-            gfig = plt.figure()
-            plt.plot(h_grad)
-            plt.plot([0,200],[g_cutoff,g_cutoff])
-            gfig.savefig(file.partition('.png')[0] + '.grayscale_grad.pdf', bbox_inches='tight')
-            plt.close(gfig)
-        original_padded = cv2.copyMakeBorder(original[:,0:w-50],10,10,10,10, cv2.BORDER_CONSTANT, value=255)
-        im_bw = cv2.threshold(original_padded, threshold, 255, cv2.THRESH_BINARY)[1]
-        #cv2.imwrite(os.path.join('no_ads', 'bw_test.png'), im_bw)
-        #im = cleanImage(original)
-        removeAds(im_bw, file)
-        cv2.imwrite(os.path.join(nDirectory, file), im_bw)
-        print file + '-no ads'
+    pool = Pool(4)
+    pool.map(process_image, sorted(glob.glob("*.png"), key=naturalSort))
+
 
 
 

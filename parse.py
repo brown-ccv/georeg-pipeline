@@ -9,10 +9,9 @@ import cv2
 import pickle as pkl
 from PIL import Image
 from tesserocr import PyTessBaseAPI, RIL
+import multiprocessing
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
-
-crop_points_dict = pkl.load(open('test/no_ads/margins_fixed/cropped/crop_points_dict.pkl'))
 
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
@@ -45,9 +44,19 @@ def makeCSV(dataFrame):
 	dataFrame.to_csv('FOutput.csv', sep = ',')
 
 def dfProcess(dataFrame):
+	print('Matching city and street...')
+	t1 = time.time()
 	frame = streetMatch1.streetMatcher(dataFrame)
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+	print('Geocoding...')
+	t1 = time.time()
+	#frame.to_pickle('frame.pkl')
+	#frame = pd.read_pickle('frame.pkl')
 	fDF = arcgeocoder.geocode(frame)
-	print(str(len(fDF)) + ' addresses')
+	#print(str(len(fDF)) + ' addresses')
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 	return fDF
 
 def getHorzHist(image):
@@ -87,6 +96,28 @@ def is_header(fbp, text, file, entry_num):
 	else:
 		return False
 
+def ocr_file(file, api):
+	image = Image.open(file)
+	api.SetImage(image)
+	api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+	boxes = api.GetComponentImages(RIL.TEXTLINE, True)
+	outStr = api.GetUTF8Text()
+	text = outStr.encode('ascii', 'ignore')
+	im = cv2.imread(file, 0)
+	width = im.shape[1]
+	sf = float(width)/float(2611)
+	fbp = getFBP(file, sf)
+	entry_num = int(file.rpartition('_')[2].rpartition('.png')[0])
+	return file,text,fbp,sf,entry_num
+
+def chunk_process_ocr(chunk_files):
+	'''We process the OCR in chunks to avoid having to reload the API each time.'''
+	rlist = []
+	with PyTessBaseAPI() as api:
+		for file in chunk_files:
+			rlist.append(ocr_file(file, api))
+	return rlist
+
 def process(folder, do_OCR=True, make_table=False):
 	#Make the zip code to city lookup table
 	if make_table:
@@ -97,48 +128,19 @@ def process(folder, do_OCR=True, make_table=False):
 		texts = []
 		first_black_pixels = []
 		sfs = []
-		crop_points_list = []
 		entry_nums = []
 		print('Doing OCR')
 		t1 = time.time()
-		with PyTessBaseAPI() as api:
-			for file in sorted(glob.glob("test/no_ads/margins_fixed/cropped/entry/*.png"), key = naturalSort):
-				#print('Reading...')
-				#ta = time.time()
-				image = Image.open(file)
-				api.SetImage(image)
-				api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
-				boxes = api.GetComponentImages(RIL.TEXTLINE, True)
-				outStr = api.GetUTF8Text()
-				text = outStr.encode('ascii', 'ignore')
-				#tb = time.time()
-				#print('Read in: ' + str(round(tb-ta, 5)) + ' s')
-
-				#print('Finding scale factor...')
-				#ta = time.time()
-				im = cv2.imread(file, 0)
-				width = im.shape[1]
-				sf = float(width)/float(2611)
-				#tb = time.time()
-				#print('Scale factor found in: ' + str(round(tb-ta, 5)) + ' s')
-
-				#print('Finding first black pixel...')
-				#ta = time.time()
-				fbp = getFBP(file, sf)
-				#print('FBP: ' + str(fbp))
-				#tb = time.time()
-				#print('First black pixel found in: ' + str(round(tb-ta, 5)) + ' s')
-
-				texts.append(text)
-				files.append(file)
-				entry_nums.append(int(file.rpartition('_')[2].rpartition('.png')[0]))
-				crop_points_list.append(crop_points_dict[file.rpartition('/')[2]])
-				sfs.append(sf)
-				first_black_pixels.append(fbp)
-
-		raw_data = pd.DataFrame(data={'file':files, 'text':texts, 'first_black_pixel':first_black_pixels, 'sf':sfs, 'crop_points':crop_points_list, 'entry_num':entry_nums})
+		pool = multiprocessing.Pool(6)
+		file_list = sorted(glob.glob("test/no_ads/margins_fixed/cropped/entry/*.png"), key = naturalSort)
+		chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
+		chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
+		ocr_results = pool.map(chunk_process_ocr, chunk_list)
+		flat_ocr_results = [item for sublist in ocr_results for item in sublist]
+		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+
 		print('Saving...')
 		t1 = time.time()
 		raw_data.to_pickle('raw_data.pkl')
@@ -156,20 +158,40 @@ def process(folder, do_OCR=True, make_table=False):
 
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['first_black_pixel'], row['text'], row['file'], row['entry_num']), axis=1))
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
-	def page_break(i):
-		return max([num for num in page_breaks if i>=num])
-	raw_data = raw_data.assign(relative_fbp = [0.0] + [raw_data.iloc[i]['first_black_pixel'] - raw_data.iloc[max(page_break(i),i-8):i]['first_black_pixel'].min() for i in list(range(1,raw_data.shape[0]))])
+	ilist = list(range(1,raw_data.shape[0]))
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	def get_relative_fbp(i):
+		pbi = page_break[i]
+		if i == pbi:
+			rval = 0
+		else:
+			fbp_dict[i] - min([fbp_dict[j] for j in list(range(max(pbi,i-8),i))])
+		return 
+	raw_data = raw_data.assign(relative_fbp = [0.0] + [get_relative_fbp(i) for i in ilist])
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
+	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	raw_data_length = raw_data.shape[0]
 	def concatenateQ(i):
-		if i==raw_data.shape[0] - 1:
+		if i==raw_data_length - 1:
 			return False
-		elif i==0 and raw_data.iloc[i]['is_header']:
+		elif i==0 and is_header_dict[i]:
 			return False
-		elif raw_data.iloc[i]['is_header'] and (not raw_data.iloc[i-1]['is_header']):
+		elif is_header_dict[i] and (not is_header_dict[i-1]):
 			return False
-		elif raw_data.iloc[i]['is_header'] and raw_data.iloc[i-1]['is_header']:
+		elif is_header_dict[i] and is_header_dict[i-1]:
 			return True
-		elif (not raw_data.iloc[i]['is_header']) and raw_data.iloc[i+1]['is_header']:
+		elif (not is_header_dict[i]) and is_header_dict[i+1]:
 			return False
 		elif raw_data.iloc[i+1]['relative_fbp'] > 50.0 * raw_data.iloc[i+1]['sf']:
 			return True
@@ -177,6 +199,8 @@ def process(folder, do_OCR=True, make_table=False):
 			return False
 
 	raw_data = raw_data.assign(cq = raw_data.index.map(concatenateQ))
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
 	raw_data.to_csv('raw_data.csv')
 
@@ -186,18 +210,24 @@ def process(folder, do_OCR=True, make_table=False):
 	text = ''
 	headers = []
 	header = ''
-	for i in list(range(raw_data.shape[0])):
-		raw_row = raw_data.iloc[i]
-		row_text = raw_row['text']
-		cq = raw_row['cq']
-		file = raw_row['file']
-		if raw_row['is_header']:
+	cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
+	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
+	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
+	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
+	tb = time.time()
+	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	for index in raw_data.index:
+		#raw_row = raw_data.iloc[i]
+		row_text = text_dict[index]
+		cq = cq_dict[index]
+		file = file_dict[index]
+		if is_header_dict[index]:
 			if cq:
 				header += ' ' + row_text.strip()
-				print(header)
+				#print(header)
 			else:
 				header = row_text.strip()
-		elif raw_row['entry_num'] == 1 and row_text == file.rpartition('_Page_')[2].rpartition(' ')[0]:
+		elif entry_num_dict[index] == 1 and row_text == file.rpartition('_Page_')[2].rpartition(' ')[0]:
 			pass
 		elif cq:
 			file_list.append(file)
@@ -223,19 +253,19 @@ def process(folder, do_OCR=True, make_table=False):
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
 	print('Parsing text...')
-	streets = []
-	company_names = []
-	for txt in data['Text']:
-		st, coName = stringParse.search(txt)
-		streets.append(st)
-		company_names.append(coName)
+	t1 = time.time()
+	pool = multiprocessing.Pool(4)
+	output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	streets,company_names = zip(*output_tuples)
 	data = data.assign(Street=streets, Company_Name=company_names)
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
 	print('Matching city and street and geocoding...')
 	t1 = time.time()
 	result = dfProcess(data)
 	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+	print('Collective runtime: ' + str(round(t2-t1, 3)) + ' s')
 	if not result.empty:
 		print('Saving to FOutput.csv...')
 		t1 = time.time()
