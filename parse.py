@@ -89,8 +89,11 @@ def getFBP(image_file, sf):
 def is_header(fbp, text, file, entry_num):
 	if len([l for l in text if l.isalpha()]) == 0:
 		return False
+	#PUT IN SOME SCALE FACTORS, YOU IDIOT!!!!!!!!!!!!
+	#THINK ABOUT DOING RELATIVE FIRST BLACK PIXEL!!!
 	elif (fbp > 200) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 		return True
+	#Try automatically assuming that the first entry is a header.
 	elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 		return True
 	else:
@@ -157,13 +160,10 @@ def process(folder, do_OCR=True, make_table=False):
 	t1 = time.time()
 
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['first_black_pixel'], row['text'], row['file'], row['entry_num']), axis=1))
+	#NOTE!!!! This variable really should be column_breaks, not page_breaks.  Confusing as is.
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(1,raw_data.shape[0]))
-	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
-	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
@@ -172,8 +172,9 @@ def process(folder, do_OCR=True, make_table=False):
 		if i == pbi:
 			rval = 0
 		else:
-			fbp_dict[i] - min([fbp_dict[j] for j in list(range(max(pbi,i-8),i))])
-		return 
+			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(max(pbi,i-8),i))])
+		return rval
+	#NOTE!!!! Figure out why a zero gets appended to the beginning.
 	raw_data = raw_data.assign(relative_fbp = [0.0] + [get_relative_fbp(i) for i in ilist])
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
@@ -182,6 +183,7 @@ def process(folder, do_OCR=True, make_table=False):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
+	#NOTE!!! EXPLORE aligning conventions.
 	def concatenateQ(i):
 		if i==raw_data_length - 1:
 			return False
@@ -273,7 +275,7 @@ def process(folder, do_OCR=True, make_table=False):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-process('test/margins_fixed/no_ads/cropped/entry', do_OCR=False, make_table=False)
+process('test/margins_fixed/no_ads/cropped/entry', do_OCR=True, make_table=False)
 
 mt2 = time.time()
 print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')

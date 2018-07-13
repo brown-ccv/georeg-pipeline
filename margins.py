@@ -5,6 +5,8 @@ from multiprocessing import Pool
 
 #Crops out the margins.
 
+p_cutoff = 30.0
+
 def naturalSort(String_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
@@ -36,11 +38,11 @@ def cropTop(image):
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
     y = 0
-    while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+    while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y += 1
-    if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*30.0:
+    if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
         y += 50
-        while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+        while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y += 1
     return y - int(sf*25)
 
@@ -49,39 +51,44 @@ def cropBottom(image):
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
     y = h - 1
-    while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+    while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y -= 1
-    if cv2.countNonZero(image[y-int(sf*50):y-int(sf*100),:]) < float(int(sf*50.0))*sfw*30.0:
+    if cv2.countNonZero(image[y-int(sf*100):y-int(sf*50),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
         y -= 50
-        while w - cv2.countNonZero(image[y,:]) < sfw*30.0:
+        while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y -= 1
-    return y + int(sf*25)
+    return y + int(sf*35)
 
 def cropLeft(image):
     h, w = image.shape[:2]
+    print(h,w)
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
-    x = 50
-    while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+    print(sf,sfw)
+    x = 0
+    while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x += 1
-    if cv2.countNonZero(image[:,x-int(sfw*50):x-int(sfw*100)]) < float(int(sfw*50.0))*sf*50.0:
+    if cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]) < float(int(sfw*50.0))*sf*p_cutoff:
         x += 50
-        while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+        print('Entered 50 plus loop.')
+        print(h - cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]))
+        print(float(int(sfw*50.0))*sf*p_cutoff)
+        while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
             x += 1
-    return x - int(25*sfw)
+    return x - int(50*sfw)
 
 def cropRight(image):
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
-    x = w - 50
+    x = w - 1
     #while x > 7000 and (h - cv2.countNonZero(image[:,x]) < sf*50.0 or cv2.countNonZero(image[:,x-int(sfw*150):x-int(sfw*50)]) < sfw*100.0*sf*50.0):
         #x -= 1
-    while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+    while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x -= 1
-    if cv2.countNonZero(image[:,x-int(sfw*100):x-int(sfw*200)]) < float(int(sfw*100.0))*sf*50.0:
+    if cv2.countNonZero(image[:,x-int(sfw*200):x-int(sfw*100)]) < float(int(sfw*100.0))*sf*p_cutoff:
         x -= 100
-        while h - cv2.countNonZero(image[:,x]) < sf*50.0:
+        while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
             x -= 1
     return x + int(100*sfw)
 
@@ -118,9 +125,12 @@ def marginCrop(folder):
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    pool = Pool(4)
-    pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
-
-
-
+    do_multiprocessing = True
+    if do_multiprocessing:
+        pool = Pool(4)
+        pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
+    else:
+        for file in sorted(glob.glob("*.png"), key=naturalSort):
+            cropMargins(file)
+    
 

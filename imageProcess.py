@@ -23,7 +23,6 @@ if __name__ == '__main__':
 	columnCrop.doCrop('margins_fixed')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	exit()
 	print('Chopping entries...')
 	t1 = time.time()
 	entryChop.entryChop('cropped')
