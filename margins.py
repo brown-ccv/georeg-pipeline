@@ -125,12 +125,12 @@ def marginCrop(folder):
     os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    do_multiprocessing = True
+    do_multiprocessing = False
     if do_multiprocessing:
         pool = Pool(4)
-        pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
+        pool.map(cropMargins, sorted(glob.glob("*.jp2"), key=naturalSort))
     else:
-        for file in sorted(glob.glob("*.png"), key=naturalSort):
+        for file in sorted(glob.glob("*.jp2"), key=naturalSort):
             cropMargins(file)
     
 

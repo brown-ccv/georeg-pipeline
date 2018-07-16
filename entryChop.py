@@ -189,7 +189,7 @@ def entryChop(folder):
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
     crop_points_dict = {}
-    for file in sorted(glob.glob("*.png"), key=naturalSort):
+    for file in sorted(glob.glob("*.jp2"), key=naturalSort):
     	print 'Chopping: ' + file
         fileN = file[:-4]
         ext = file[-4:]

@@ -49,12 +49,19 @@ def cropImage(image, file):
 	height, width = img.shape[:2]
 	sf = float(height)/11675.0
 	sfw = float(width)/7820.0
-	fig = plt.figure()
 	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5).mean()
-	ax = histogram.plot()
-	#ax.set_ylim([0,200])
-	fig.savefig(file.partition('.png')[0] + '.histogram.pdf', bbox_inches='tight')
-	plt.close(fig)
+	do_plots = True
+	if do_plots:
+		fig = plt.figure()
+		ax = histogram.plot()
+		ax.set_ylim([0,200])
+		fig.savefig(file.partition('.jp2')[0] + '.histogram.pdf', bbox_inches='tight')
+		plt.close(fig)
+		fig = plt.figure()
+		ax = histogram.rolling(50,center=True).mean().rolling(10,center=True).mean().plot()
+		ax.set_ylim([0,200])
+		fig.savefig(file.partition('.jp2')[0] + '.histogram.smooth.pdf', bbox_inches='tight')
+		plt.close(fig)
 	dip_df = histogram[histogram < sf*150].to_frame().rename(columns = {0:'count'})
 	dip_df.loc[dip_df['count']<sf*50,'count'] = 0
 	histogram.iloc[0] = 0
@@ -91,11 +98,13 @@ def doCrop(folder):
 	os.chdir(scans)
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
-	pool = Pool(4)
-	print('bp')
-	for file in sorted(glob.glob("*.png"), key=naturalSort):
+	do_multiprocessing = False
+	if do_multiprocessing:
+		pool = Pool(4)
+		pool.map(crop_file, sorted(glob.glob("*.jp2"), key=naturalSort))
+	for file in sorted(glob.glob("*.jp2"), key=naturalSort):
 		crop_file(file)
-	#pool.map(crop_file, sorted(glob.glob("*.png"), key=naturalSort))
+	
 	
 
 

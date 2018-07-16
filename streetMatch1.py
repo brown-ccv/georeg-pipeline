@@ -29,7 +29,7 @@ def streetMatcher(dataFrame):
 
     # If there are street strings missing from the dictionary, do the address matching, and add them.
     if search_list:
-        pool = Pool(6)
+        pool = Pool(3)
         search_results = pool.map(search_street, search_list)
         for query,addr,city,score in search_results:
             street_dict[query] = (addr, city, score)
