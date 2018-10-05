@@ -39,7 +39,7 @@ def cropEntries(image, file):
     img = image.copy()
     height, width = img.shape[:2]
     sf = float(width)/float(2611)
-    pad = int(4.0/float(height)*float(11675))
+    pad = 0 #int(4.0/float(height)*float(11675))
     histogram  = pd.Series([width - cv2.countNonZero(img[i,:]) for i in list(range(height))])
     #fig = plt.figure()
     #ax = histogram.plot()
@@ -189,7 +189,7 @@ def entryChop(folder):
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
     crop_points_dict = {}
-    for file in sorted(glob.glob("*.jp2"), key=naturalSort):
+    for file in sorted(glob.glob("*.png"), key=naturalSort):
     	print 'Chopping: ' + file
         fileN = file[:-4]
         ext = file[-4:]

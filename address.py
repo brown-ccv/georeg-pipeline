@@ -2,13 +2,13 @@ import pandas as pd
 import re
 import numpy as np
 from cityMatch import city_match
-
 from fuzzywuzzy import fuzz, process
 import time
-
+import pickle as pkl
 
 ri_streets_table = pd.read_pickle('stZipCty')
 street_patt = re.compile(r"(^\d+)(.+)")
+street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
 
 def substitute_directions(inwords):
     outwords = inwords[:]
@@ -59,8 +59,9 @@ class Address(object):
             city_guess = street.partition('(')[2].partition(')')[0]
             city_guess = re.sub('/d', '', city_guess)
             city_guess = re.sub(';', '', city_guess)
-            print(city_guess)
-            self.city = city_match(city_guess.strip())
+            if city_guess != '':
+                print(city_guess)
+                self.city = city_match(city_guess.strip())
             
         street = street.partition('(')[0]
 
@@ -83,7 +84,8 @@ class Address(object):
             print('EMPTY STREET')
             self.addr_matches.append((street, 'N/A', 'EMPTY STREET'))
             return
-
+        print('stnam')
+        print(stnam)
         sts = ['St','Ave','Av','Ct','Dr','Rd','Ln']
 
         for st in sts:
@@ -92,16 +94,20 @@ class Address(object):
                 break
 
         stnam = re.sub(' Av$', ' Ave', stnam)
-
+        print('stnam')
         print(stnam)
         # Look for best fuzzy matches with a score > cutoff.
         t1 = time.time()
         if stnam.upper() in addr_options['Street'].tolist():
             print('Perfect match')
             street_matches = (stnam.upper(), 100.0)
+        elif stnam.upper() in street_name_dict.keys():
+            print('Street in dictionary')
+            street_matches = street_name_dict[stnam.upper()]
         else:
             try:
                 street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
+                street_name_dict[stnam.upper()] = street_matches
             except:
                 print('ERROR IN STREET MATCHING')
                 self.addr_matches.append((street, 'N/A', 'ERROR IN STREET MATCHING'))
@@ -123,6 +129,8 @@ class Address(object):
             addr_match = (addr, self.city, score)
             print(addr_match)
             self.addr_matches.append(addr_match)
+
+        pkl.dump(street_name_dict, open('street_name_dict.pkl', 'wb'))
 
 
 

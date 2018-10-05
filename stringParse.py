@@ -1,5 +1,4 @@
 import re
-import cityMatch
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
@@ -17,7 +16,7 @@ def split_on_st(string, st):
 		if j < 0:
 			return 'Search','failed',True
 		else:
-			rtuple = string.partition(' ' + words[j] + ' ')
+			rtuple = ' '.join(words[:i+1]).partition(' ' + words[j] + ' ')
 			return rtuple[0],(rtuple[1] + rtuple[2]), False
 
 def search(string):

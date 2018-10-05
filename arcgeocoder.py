@@ -25,9 +25,13 @@ def geolocate(row_tuple):
 		rval = 'timeout'
 	return address,city,rval
 
-def geocode(dataFrame):
+def geocode(dataFrame, dir_dir):
 	t1 = time.time()
 	location_dict = pkl.load(open('location_dict.pkl', 'rb'))
+
+	location_dict = { k:v for k, v in location_dict.items() if v!='timeout' }
+
+	timeout_set = set()
 
 	outside = ['SEEKONK', 'ATTLEBORO', 'NORTH ATTLEBORO', 'SOUTH ATTLEBORO']
 	dataFrame = dataFrame[~dataFrame['City'].str.contains('|'.join(outside))]
@@ -35,7 +39,9 @@ def geocode(dataFrame):
 	print('Prep time: ' + str(round(t2-t1,2)) + ' s')
 	t1 = time.time()
 	input_set = set((row.Address,row.City) for row in dataFrame.itertuples())
+	print(len(input_set))
 	input_list = list(input_set - set(location_dict))
+	print(len(input_list))
 	if input_list:
 		n_processes = min(max(int(float(len(input_list))/20.0), 1), 50)
 		pool = Pool(n_processes)
@@ -49,7 +55,10 @@ def geocode(dataFrame):
 		del pool
 		gc.collect()
 		for location_tuple in locations:
-			location_dict[(location_tuple[0], location_tuple[1])] = location_tuple[2]
+			if location_tuple[2] != 'timeout':
+				location_dict[(location_tuple[0], location_tuple[1])] = location_tuple[2]
+			else:
+				timeout_set.add((location_tuple[0], location_tuple[1]))
 	t2 = time.time()
 	print('Geocoding search time: ' + str(round(t2-t1,2)) + ' s')
 
@@ -79,36 +88,43 @@ def geocode(dataFrame):
 
 		#Look up the Location
 		#gt1=time.time()
-		location = location_dict[(address,city)]
+		if (address,city) in timeout_set:
+			location = 'timeout'
+		else:
+			location = location_dict[(address,city)]
 		#gt2=time.time()
 
 		if location:
-			match = location['candidates'][0]['attributes']
-			conf_score = float(match["score"])
-			result = match['match_addr']
-			lat = match["location"]["y"]
-			lon = match["location"]["x"]
+			try:
+				match = location['candidates'][0]['attributes']
+				conf_score = float(match["score"])
+				result = match['match_addr']
+				lat = match["location"]["y"]
+				lon = match["location"]["x"]
 
-			patt = r"(.+RI,)(.+)"
-			if re.search(patt, str(result)):
-				sep = re.search(patt, str(result))
-				pt1 = sep.group(1)
-				pt2 = sep.group(2)
+				patt = r"(.+RI,)(.+)"
+				if re.search(patt, str(result)):
+					sep = re.search(patt, str(result))
+					pt1 = sep.group(1)
+					pt2 = sep.group(2)
 
-			rowFrame = {
-				'Query': [faddress],
-				'Address - From Geocoder': [pt1],
-				'Geocode Score': [conf_score],
-				'Match Score': [score],
-				'Latitude': [lat],
-				'Longitude': [lon],
-				'Date_Added': [today],
-				'File_List': [flist],
-				'Text': [text],
-				'Company_Name': [coName],
-				'Header': [group]
-				}
-			master_list.append(rowFrame)
+				rowFrame = {
+					'Query': [faddress],
+					'Address - From Geocoder': [pt1],
+					'Geocode Score': [conf_score],
+					'Match Score': [score],
+					'Latitude': [lat],
+					'Longitude': [lon],
+					'Date_Added': [today],
+					'File_List': [flist],
+					'Text': [text],
+					'Company_Name': [coName],
+					'Header': [group]
+					}
+				master_list.append(rowFrame)
+			except:
+				print('Error for location: ' + location)
+				errors_list.append(row)
 		else:
 			errors_list.append(row)
 			continue
@@ -122,95 +138,10 @@ def geocode(dataFrame):
 	t4 = time.time()
 	print('Concat time: ' + str(round(t4-t3,2)) + ' s')
 
-	errors.to_csv('geocoder_errors.csv')
+	errors.to_csv(dir_dir + '/geocoder_errors.csv')
 
 	pkl.dump(location_dict, open('location_dict.pkl', 'wb'))
 	t5 = time.time()
 	print('Save time: ' + str(round(t5-t4,2)) + ' s')
-
-	return master
-
-def geocodeOLD(dataFrame):
-	errors = pd.DataFrame()
-
-	geolocator = BrownArcGIS(username = os.environ.get("BROWNGIS_USERNAME"), password = os.environ.get("BROWNGIS_PASSWORD"), referer = os.environ.get("BROWNGIS_REFERER"))
-
-	master = pd.DataFrame()
-	#dataFrame = pd.read_pickle('df_2_geocode')
-	outside = ['SEEKONK', 'ATTLEBORO', 'NORTH ATTLEBORO', 'SOUTH ATTLEBORO']
-	dataFrame = dataFrame[~dataFrame['City'].str.contains('|'.join(outside))]
-	master_list = []
-	errors_list = []
-	today = datetime.date.today()
-	t1 = time.time()
-	for index, row in dataFrame.iterrows():
-		#lt1=time.time()
-		#Pull data from previous dataframe
-		address = str(row['Address'])
-		city = str(row['City'])
-		score = row['Conf._Score']
-		group = row['Header']
-		flist = row['File_List']
-		text = row['Text']
-		coName = row['Company_Name']
-
-		#Define Variables
-		faddress = str(address) + ' ' + str(city)
-		#print 'Geocoding: ' + faddress
-		state = "RI"
-		timeout = 60
-
-		#Clean Queires
-		city = re.sub(r"\'",'',city)
-		faddress = re.sub(r"\'",'',faddress)
-
-		#Look up the Location
-		#gt1=time.time()
-		location = geolocator.geocode(street=address, city =city, state=state, n_matches = 1, timeout = 60)
-		#gt2=time.time()
-
-		if location:
-			match = location['candidates'][0]['attributes']
-			conf_score = float(match["score"])
-			result = match['match_addr']
-			lat = match["location"]["y"]
-			lon = match["location"]["x"]
-
-			patt = r"(.+RI,)(.+)"
-			if re.search(patt, str(result)):
-				sep = re.search(patt, str(result))
-				pt1 = sep.group(1)
-				pt2 = sep.group(2)
-
-			rowFrame = {
-				'Query': [faddress],
-				'Address - From Geocoder': [pt1],
-				'Geocode Score': [conf_score],
-				'Match Score': [score],
-				'Latitude': [lat],
-				'Longitude': [lon],
-				'Date_Added': [today],
-				'File_List': [flist],
-				'Text': [text],
-				'Company_Name': [coName],
-				'Header': [group]
-				}
-			master_list.append(rowFrame)
-		else:
-			errors_list.append(row)
-			continue
-		#lt2=time.time()
-		#print('Geocoding time: ' + str(round(gt2-gt1,6)) + ' s')
-		#print('Loop iteration time: ' + str(round(lt2-lt1,6)) + ' s')
-
-	t2=time.time()
-	print('List building time: ' + str(round(t2-t1,2)) + ' s')
-
-	master = pd.DataFrame(master_list)
-	errors = pd.concat(errors_list)
-
-	errors.to_csv('geocoder_errors.csv')
-	t3=time.time()
-	print('Geocoding time: ' + str(round(t3-t1,2)) + ' s')
 
 	return master

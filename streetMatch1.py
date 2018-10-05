@@ -13,7 +13,7 @@ def search_street(query):
     rtuple = address.addr_matches[0]
     return query,rtuple[0],rtuple[1],rtuple[2]
 
-def streetMatcher(dataFrame):
+def streetMatcher(dataFrame, dir_dir):
     final = []
     mistakes = []
     #dataFrame = pd.read_pickle('ccities')
@@ -29,8 +29,12 @@ def streetMatcher(dataFrame):
 
     # If there are street strings missing from the dictionary, do the address matching, and add them.
     if search_list:
-        pool = Pool(3)
-        search_results = pool.map(search_street, search_list)
+        do_multiprocessing = True
+        if do_multiprocessing:
+            pool = Pool(3)
+            search_results = pool.map(search_street, search_list)
+        else:
+            search_results = [search_street(street_i) for street_i in search_list]
         for query,addr,city,score in search_results:
             street_dict[query] = (addr, city, score)
 
@@ -61,7 +65,7 @@ def streetMatcher(dataFrame):
 
     final = pd.DataFrame(final)
     drops = pd.DataFrame(mistakes)
-    drops.to_csv('drops_address.csv', sep = ',')
+    drops.to_csv(dir_dir + '/drops_address.csv', sep = ',')
     pkl.dump(street_dict, open('street_dict.pkl', 'wb'))
 
     return final

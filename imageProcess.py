@@ -1,6 +1,6 @@
 import time
 mt1 = time.time()
-import ads, margins, columnCrop, entryChop, clean
+import ads, margins, columnCrop, entryChop
 import os
 import sys
 
@@ -26,6 +26,7 @@ if __name__ == '__main__':
 	print('Cropping columns...')
 	t1 = time.time()
 	columnCrop.doCrop('margins_fixed')
+	#os.chdir('margins_fixed')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
 	print('Chopping entries...')
