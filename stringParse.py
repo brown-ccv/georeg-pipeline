@@ -19,8 +19,10 @@ def split_on_st(string, st):
 			rtuple = ' '.join(words[:i+1]).partition(' ' + words[j] + ' ')
 			return rtuple[0],(rtuple[1] + rtuple[2]), False
 
-def search(string):
+def search(input_string):
 	regex = '(\D+)(\s\d+\s)(.+)'
+
+	string = input_string.partition(' tel ')[0].partition(' Tel ')[0]
 
 	#print('Parsing: ' + string)
 	do_regex = True
@@ -45,15 +47,23 @@ def search(string):
 		if parts:
 			street = (parts.group(2) + parts.group(3)).strip()
 			companyName = parts.group(1).strip()
-			return street, companyName
 		elif re.search('(\D+)(\d+)(.+)', string):
 			parts = re.search('(\D+)(\d+)(.+)', string)
 			street = (parts.group(2) + parts.group(3)).strip()
 			companyName = parts.group(1).strip()
-			return street, companyName
 		else:
 			#print('Regex failure: no number found')
-			return 'N/A', 'N/A'
-	else:
-		return street, companyName
+			street, companyName = 'N/A', 'N/A'
+
+		if re.match('.+\sbldg\s.+', street):
+			street = street.partition(' bldg ')[2]
+		if re.match('.+\sBldg\s.+', street):
+			street = street.partition(' Bldg ')[2]
+
+		if re.match('.+\srm\s\d+.*', street):
+			street = street.partition(' rm ')[0]
+		if re.match('.+\srm\s\d+.*', street):
+			street = street.partition(' Rm ')[0]
+		
+	return street, companyName
 

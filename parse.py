@@ -1,6 +1,6 @@
 import time
 mt1 = time.time()
-import stringParse, arcgeocoder
+import stringParse, arcgeocoder, address
 import zipcode
 import streetMatch1
 import sys, glob, os, re, datetime
@@ -26,6 +26,8 @@ def streetTable():
     #.csv with streets and corresponding zip codes
     street_df = pd.read_csv('streets_by_zip_code.csv', dtype = str)
     street_df.columns = ['Street', 'Zip_Code']
+
+    street_df['Street'] = street_df['Street'].apply(lambda x: ' '.join(address.substitute_directions(x.split())))
 
     #Make zip a zipcode object.
     street_df['Zip_Code'] = street_df['Zip_Code'].apply(zipcode.isequal)
@@ -166,7 +168,7 @@ def process(folder, do_OCR=True, make_table=False):
 		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
 		do_multiprocessing = True
 		if do_multiprocessing:
-			pool = multiprocessing.Pool(3)
+			pool = multiprocessing.Pool(5)
 			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
 			chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
 			ocr_results = pool.map(chunk_process_ocr, chunk_list)
@@ -293,8 +295,12 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Parsing text...')
 	t1 = time.time()
-	pool = multiprocessing.Pool(4)
-	output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	do_multiprocessing = True
+	if do_multiprocessing:
+		pool = multiprocessing.Pool(4)
+		output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	else:
+		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
 	streets,company_names = zip(*output_tuples)
 	data = data.assign(Street=streets, Company_Name=company_names)
 	t2 = time.time()

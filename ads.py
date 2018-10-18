@@ -102,8 +102,8 @@ def get_binary(file, threshold_dict):
             rfig.savefig(file.partition('.jp2')[0] + '.grayscale_raw.pdf', bbox_inches='tight')
             plt.close(rfig)
         hist = pd.Series(hist_raw).rolling(20, center=True).mean()
-        h_total = hist.sum()
-        h_cumulative = hist.cumsum()/h_total
+        #h_total = hist.sum()
+        #h_cumulative = hist.cumsum()/h_total
         h_grad = pd.Series(np.gradient(hist, 20)).rolling(20, center=True).mean()
         if do_plots:
             fig = plt.figure()

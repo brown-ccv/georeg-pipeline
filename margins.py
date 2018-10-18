@@ -42,7 +42,7 @@ def cropTop(image):
         y += 1
     print(y)
     if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
-        y += 50
+        y += int(sf*50)
         while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y += 1
     return y - int(sf*25)
@@ -55,7 +55,7 @@ def cropBottom(image):
     while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y -= 1
     if cv2.countNonZero(image[y-int(sf*100):y-int(sf*50),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
-        y -= 50
+        y -= int(sf*50)
         while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y -= 1
     return y + int(sf*35)
@@ -70,7 +70,7 @@ def cropLeft(image):
     while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x += 1
     if cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]) < float(int(sfw*50.0))*sf*p_cutoff:
-        x += 50
+        x += int(sfw*50)
         print('Entered 50 plus loop.')
         print(h - cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]))
         print(float(int(sfw*50.0))*sf*p_cutoff)
@@ -88,7 +88,7 @@ def cropRight(image):
     while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x -= 1
     if cv2.countNonZero(image[:,x-int(sfw*200):x-int(sfw*100)]) < float(int(sfw*100.0))*sf*p_cutoff:
-        x -= 100
+        x -= int(100*sfw)
         while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
             x -= 1
     return x + int(100*sfw)
