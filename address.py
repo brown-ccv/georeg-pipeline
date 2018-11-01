@@ -8,8 +8,12 @@ import pickle as pkl
 
 ri_streets_table = pd.read_pickle('stZipCty')
 street_patt = re.compile(r"(^\d+)(.+)")
-street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
-#street_name_dict = {}
+#street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
+street_name_dict = {}
+
+abbreviations = pd.DataFrame({'Street':['BWAY','WASH'], 'Zip_Code':['BROADWAY', 'WASHINGTON ST'], 'City':['PROVIDENCE','PROVIDENCE']})
+
+ri_streets_table = ri_streets_table.append(abbreviations, ignore_index=True)
 
 def substitute_directions(inwords):
     outwords = inwords[:]
@@ -103,12 +107,18 @@ class Address(object):
         if stnam.upper() in addr_options['Street'].tolist():
             #print('Perfect match')
             street_matches = (stnam.upper(), 100.0)
+            if stnam.upper() in abbreviations['Street'].tolist():
+                street_matches = (abbreviations[abbreviations['Street'] == street_matches[0]]['Zip_Code'].values[0], 100)
         elif stnam.upper() in street_name_dict.keys():
             #print('Street in dictionary')
             street_matches = street_name_dict[stnam.upper()]
         else:
             try:
                 street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
+                if street_matches[0] in abbreviations['Street'].tolist():
+                    street_matches = list(street_matches)
+                    street_matches[0] = abbreviations[abbreviations['Street'] == street_matches[0]]['Zip_Code'].values[0]
+                    street_matches = tuple(street_matches)
                 street_name_dict[stnam.upper()] = street_matches
             except:
                 #print('ERROR IN STREET MATCHING')
@@ -116,7 +126,7 @@ class Address(object):
                 return
         if not street_matches:
             #print('No match')
-            self.addr_matches.append((street, 'N/A', 'NO MATCH: ' + street + ',' + self.city))
+            self.addr_matches.append((street, 'N/A', 'NO MATCH: ' + stnam + ',' + self.city))
             return
         street, score = (street_matches[0],street_matches[1]) # removes the third dummy value that sometimes shows up in the tuple
         t2 = time.time()

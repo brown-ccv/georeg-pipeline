@@ -18,8 +18,8 @@ def streetMatcher(dataFrame, dir_dir):
     mistakes = []
     #dataFrame = pd.read_pickle('ccities')
     #streetTable()
-    street_dict = pkl.load(open('street_dict.pkl', 'rb'))
-    #street_dict = {}
+    #street_dict = pkl.load(open('street_dict.pkl', 'rb'))
+    street_dict = {}
 
     search_list = []
 

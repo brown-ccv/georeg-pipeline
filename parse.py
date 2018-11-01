@@ -2,9 +2,11 @@ import time
 mt1 = time.time()
 import stringParse, arcgeocoder, address
 import zipcode
+#import sqlalchemy
 import streetMatch1
 import sys, glob, os, re, datetime
 import pandas as pd
+import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
@@ -38,18 +40,28 @@ def streetTable():
     street_df.to_pickle('stZipCty')
     return street_df
 
+def createCache(dataFrame):
+	engine = sqlalchemy.create_engine('sqlite:///../georeg.db', echo=True)
+	#dataFrame = dataFrame.drop_duplicates(['Query'], keep = 'last')
+	#dataFrame = dataFrame.set_index('Query', 1)
+	#dataFrame.assign(fname=dir_dir)
+	dataFrame.to_sql('foutput', engine, if_exists = 'append', index = False)
+
+
 def makeCSV(dataFrame):
 	today = datetime.date.today()
+	#createCache(dataFrame)
 	dataFrame.set_index('Query')
 	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Company_Name'] = dataFrame['Company_Name'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
-	dataFrame['File_List'] = dataFrame['File_List'].astype('str')
+	dataFrame['File_List'] = dataFrame['File_List'] #.apply(lambda paths: [path.rpartition('/')[2] for path in paths[0]]).astype('str')
 	dataFrame['Header'] = dataFrame['Header'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]').str.lstrip('>')
 	dataFrame['Text'] = dataFrame['Text'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Query'] = dataFrame['Query'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
+	
 
 def dfProcess(dataFrame):
 	print('Matching city and street...')

@@ -22,15 +22,16 @@ def split_on_st(string, st):
 def search(input_string):
 	regex = '(\D+)(\s\d+\s)(.+)'
 
-	string = input_string.partition(' tel ')[0].partition(' Tel ')[0]
+	string = input_string.partition(' tel ')[0].partition(' tels ')[0].partition(' Tel ')[0].partition(' Tels ')[0]
+	string = string.partition(' telephone')[0].partition(' Telephone')[0]
 
 	#print('Parsing: ' + string)
 	do_regex = True
 	if re.match('.+\sAv\s.*', string) or re.match('.+\sAv$', string):
 		companyName, street, do_regex = split_on_st(string,'Av')
-	elif re.match('.+\sAve\s.*', string) or re.match('.+\sAve$\s.*', string):
+	elif re.match('.+\sAve\s.*', string) or re.match('.+\sAve$', string):
 		companyName, street, do_regex = split_on_st(string,'Ave')
-	elif re.match('.+\sSt\s.*', string) or re.match('.+\sSt$.*', string):
+	elif re.match('.+\sSt\s.*', string) or re.match('.+\sSt$', string):
 		companyName, street, do_regex = split_on_st(string,'St')
 	elif re.match('.+\sRd\s.*', string) or re.match('.+\sRd$', string):
 		companyName, street, do_regex = split_on_st(string,'Rd')
