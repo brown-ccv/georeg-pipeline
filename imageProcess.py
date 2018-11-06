@@ -20,7 +20,7 @@ if __name__ == '__main__':
 	ads.rmAds(d['no_ads'])
 	#os.chdir(dir_dir)
 	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	print('Done in: ' + strnd(t2-t1, 2)) + ' s')
 	# print('Cropping margins...')
 	# t1 = time.time()
 	# margins.marginCrop('no_ads')
