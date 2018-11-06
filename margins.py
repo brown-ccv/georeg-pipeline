@@ -40,8 +40,9 @@ def cropTop(image):
     y = 0
     while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y += 1
+    print(y)
     if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
-        y += 50
+        y += int(sf*50)
         while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y += 1
     return y - int(sf*25)
@@ -54,22 +55,22 @@ def cropBottom(image):
     while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y -= 1
     if cv2.countNonZero(image[y-int(sf*100):y-int(sf*50),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
-        y -= 50
+        y -= int(sf*50)
         while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
             y -= 1
     return y + int(sf*35)
 
 def cropLeft(image):
     h, w = image.shape[:2]
-    print(h,w)
+    #print(h,w)
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
-    print(sf,sfw)
+    #print(sf,sfw)
     x = 0
     while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x += 1
     if cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]) < float(int(sfw*50.0))*sf*p_cutoff:
-        x += 50
+        x += int(sfw*50)
         print('Entered 50 plus loop.')
         print(h - cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]))
         print(float(int(sfw*50.0))*sf*p_cutoff)
@@ -87,7 +88,7 @@ def cropRight(image):
     while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
         x -= 1
     if cv2.countNonZero(image[:,x-int(sfw*200):x-int(sfw*100)]) < float(int(sfw*100.0))*sf*p_cutoff:
-        x -= 100
+        x -= int(100*sfw)
         while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
             x -= 1
     return x + int(100*sfw)
@@ -128,9 +129,9 @@ def marginCrop(folder):
     do_multiprocessing = False
     if do_multiprocessing:
         pool = Pool(4)
-        pool.map(cropMargins, sorted(glob.glob("*.jp2"), key=naturalSort))
+        pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
     else:
-        for file in sorted(glob.glob("*.jp2"), key=naturalSort):
+        for file in sorted(glob.glob("*.png"), key=naturalSort):
             cropMargins(file)
     
 

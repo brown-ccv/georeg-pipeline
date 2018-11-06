@@ -1,10 +1,12 @@
 import time
 mt1 = time.time()
-import stringParse, arcgeocoder, findHeader, regX2
+import stringParse, arcgeocoder, address
 import zipcode
+#import sqlalchemy
 import streetMatch1
 import sys, glob, os, re, datetime
 import pandas as pd
+import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
@@ -12,6 +14,10 @@ from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
+
+if not sys.argv[1]:
+	raise Exception('You need to input the name of the directory you are running.')
+dir_dir = str(sys.argv[1])
 
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
@@ -23,6 +29,8 @@ def streetTable():
     street_df = pd.read_csv('streets_by_zip_code.csv', dtype = str)
     street_df.columns = ['Street', 'Zip_Code']
 
+    street_df['Street'] = street_df['Street'].apply(lambda x: ' '.join(address.substitute_directions(x.split())))
+
     #Make zip a zipcode object.
     street_df['Zip_Code'] = street_df['Zip_Code'].apply(zipcode.isequal)
 
@@ -32,28 +40,40 @@ def streetTable():
     street_df.to_pickle('stZipCty')
     return street_df
 
+def createCache(dataFrame):
+	engine = sqlalchemy.create_engine('sqlite:///../georeg.db', echo=True)
+	#dataFrame = dataFrame.drop_duplicates(['Query'], keep = 'last')
+	#dataFrame = dataFrame.set_index('Query', 1)
+	#dataFrame.assign(fname=dir_dir)
+	dataFrame.to_sql('foutput', engine, if_exists = 'append', index = False)
+
+
 def makeCSV(dataFrame):
 	today = datetime.date.today()
+	#createCache(dataFrame)
 	dataFrame.set_index('Query')
-	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',')
+	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Company_Name'] = dataFrame['Company_Name'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
-	dataFrame['File_List'] = dataFrame['File_List'].astype('str')
+	dataFrame['File_List'] = dataFrame['File_List'] #.apply(lambda paths: [path.rpartition('/')[2] for path in paths[0]]).astype('str')
 	dataFrame['Header'] = dataFrame['Header'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]').str.lstrip('>')
 	dataFrame['Text'] = dataFrame['Text'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
-	dataFrame['Query'] = dataFrame['Query'].astype('str')
-	dataFrame.to_csv('FOutput.csv', sep = ',')
+	dataFrame['Query'] = dataFrame['Query'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
+	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
+	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
+	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
+	
 
 def dfProcess(dataFrame):
 	print('Matching city and street...')
 	t1 = time.time()
-	frame = streetMatch1.streetMatcher(dataFrame)
+	frame = streetMatch1.streetMatcher(dataFrame, dir_dir)
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 	print('Geocoding...')
 	t1 = time.time()
 	#frame.to_pickle('frame.pkl')
 	#frame = pd.read_pickle('frame.pkl')
-	fDF = arcgeocoder.geocode(frame)
+	fDF = arcgeocoder.geocode(frame, dir_dir)
 	#print(str(len(fDF)) + ' addresses')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -80,18 +100,44 @@ def getFBP(image_file, sf):
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
 	listIntPart = map(int, listStringPart)
-	blackindx = next((i for i, x in enumerate(listIntPart) if x), None)
+	blackindices = [i for i, x in enumerate(listIntPart) if x > 3]
+	if len(blackindices) > 0:
+		blackindx = blackindices[0]
+	else:
+		blackindx = 999999999
 	# print(listIntPart, blackindx)
 	cut = len(strpart[0].split(',')) + len(strpart[1].split(','))
-	firstBlackPix = cut + blackindx - 2
+	firstBlackPix = cut + blackindx - 3
 	return sf*float(firstBlackPix)
 
 def is_header(fbp, text, file, entry_num):
+	year = int(file.partition('/')[0].lstrip('cd'))
+	if year > 1955:
+		if len([l for l in text if l.isalpha()]) == 0:
+			return False
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+			return True
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+			return True
+		else:
+			return False
+	else:
+		if len([l for l in text if l.isalpha()]) == 0:
+			return False
+		elif (fbp > 40):
+			return True
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
+			return True
+		else:
+			return False
+
+
+def is_header2(bp, text, file, entry_num):
 	if len([l for l in text if l.isalpha()]) == 0:
 		return False
-	elif (fbp > 200) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+	elif (fbp > 200):
 		return True
-	elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+	elif (text.lstrip()[0] == '*') and (fbp > 100):
 		return True
 	else:
 		return False
@@ -107,7 +153,7 @@ def ocr_file(file, api):
 	width = im.shape[1]
 	sf = float(width)/float(2611)
 	fbp = getFBP(file, sf)
-	entry_num = int(file.rpartition('_')[2].rpartition('.jp2')[0])
+	entry_num = int(file.rpartition('_')[2].rpartition('.png')[0])
 	return file,text,fbp,sf,entry_num
 
 def chunk_process_ocr(chunk_files):
@@ -131,25 +177,32 @@ def process(folder, do_OCR=True, make_table=False):
 		entry_nums = []
 		print('Doing OCR')
 		t1 = time.time()
-		pool = multiprocessing.Pool(6)
-		file_list = sorted(glob.glob("test/no_ads/margins_fixed/cropped/entry/*.jp2"), key = naturalSort)
-		chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
-		chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
-		ocr_results = pool.map(chunk_process_ocr, chunk_list)
-		flat_ocr_results = [item for sublist in ocr_results for item in sublist]
+		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
+		do_multiprocessing = True
+		if do_multiprocessing:
+			pool = multiprocessing.Pool(5)
+			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
+			chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
+			ocr_results = pool.map(chunk_process_ocr, chunk_list)
+			flat_ocr_results = [item for sublist in ocr_results for item in sublist]
+		else:
+			flat_ocr_results = []
+			with PyTessBaseAPI() as api:
+				for file in file_list:
+					flat_ocr_results.append(ocr_file(file, api))
 		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
 		print('Saving...')
 		t1 = time.time()
-		raw_data.to_pickle('raw_data.pkl')
+		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 	else:
 		print('Reading raw data from raw_data.pkl...')
 		t1 = time.time()
-		raw_data = pd.read_pickle('raw_data.pkl')
+		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -193,7 +246,7 @@ def process(folder, do_OCR=True, make_table=False):
 			return True
 		elif (not is_header_dict[i]) and is_header_dict[i+1]:
 			return False
-		elif raw_data.iloc[i+1]['relative_fbp'] > 50.0 * raw_data.iloc[i+1]['sf']:
+		elif raw_data.iloc[i+1]['relative_fbp'] > 9.0:
 			return True
 		else:
 			return False
@@ -202,7 +255,7 @@ def process(folder, do_OCR=True, make_table=False):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
-	raw_data.to_csv('raw_data.csv')
+	raw_data.to_csv(dir_dir + '/raw_data.csv')
 
 	file_lists = []
 	file_list = []
@@ -248,14 +301,18 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Writing data to data.csv...')
 	t1 = time.time()
-	data.to_csv('data.csv')
+	data.to_csv(dir_dir + '/data.csv')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
 	print('Parsing text...')
 	t1 = time.time()
-	pool = multiprocessing.Pool(4)
-	output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	do_multiprocessing = True
+	if do_multiprocessing:
+		pool = multiprocessing.Pool(4)
+		output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	else:
+		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
 	streets,company_names = zip(*output_tuples)
 	data = data.assign(Street=streets, Company_Name=company_names)
 	t2 = time.time()
@@ -273,7 +330,7 @@ def process(folder, do_OCR=True, make_table=False):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-process('test/margins_fixed/no_ads/cropped/entry', do_OCR=False, make_table=False)
+process(dir_dir + '/no_ads/margins_fixed/cropped/entry', do_OCR=False, make_table=False)
 
 mt2 = time.time()
 print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')

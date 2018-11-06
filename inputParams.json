@@ -1,0 +1,24 @@
+{
+  "year_folder": "cd1970",
+  "no_ads": {
+    "do_multiprocessing": true,
+    "pool_num": 4,
+    "only_hardcoded": false,
+    "do_plots": false,
+    "do_diagnostics": false
+  },
+  "margins": {
+    "do_multiprocessing": false,
+    "pool_num": 2,
+    "p_cutoff": 0
+  },
+  "columns": {
+    "do_multiprocessing": false,
+    "pool_num": 2
+  },
+  "entry": {
+    "do_multiprocessing": false,
+    "pool_num": 2,
+    "pad": 0
+  }
+}

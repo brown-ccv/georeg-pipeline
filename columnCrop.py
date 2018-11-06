@@ -55,12 +55,12 @@ def cropImage(image, file):
 		fig = plt.figure()
 		ax = histogram.plot()
 		ax.set_ylim([0,200])
-		fig.savefig(file.partition('.jp2')[0] + '.histogram.pdf', bbox_inches='tight')
+		fig.savefig(file.partition('.png')[0] + '.histogram.pdf', bbox_inches='tight')
 		plt.close(fig)
 		fig = plt.figure()
 		ax = histogram.rolling(50,center=True).mean().rolling(10,center=True).mean().plot()
 		ax.set_ylim([0,200])
-		fig.savefig(file.partition('.jp2')[0] + '.histogram.smooth.pdf', bbox_inches='tight')
+		fig.savefig(file.partition('.png')[0] + '.histogram.smooth.pdf', bbox_inches='tight')
 		plt.close(fig)
 	dip_df = histogram[histogram < sf*150].to_frame().rename(columns = {0:'count'})
 	dip_df.loc[dip_df['count']<sf*50,'count'] = 0
@@ -81,7 +81,7 @@ def crop_file(file):
 	img = cv2.imread(file, 0)
 	#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
 	crop = cropImage(img, file)
-	name = file[:-4]
+	name = file[:-4].partition('.chop')[0]
 	ext = file[-4:]
 	i = 1
 	for image in crop:
@@ -98,12 +98,22 @@ def doCrop(folder):
 	os.chdir(scans)
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
+	file_list = glob.glob("*.png")
+	for chop_file in file_list:
+		if re.match('.*\.chop\.png', chop_file):
+			unchopped_file = chop_file.partition('.chop.png')[0] + '.png'
+			file_list.remove(unchopped_file)
+			print('ALERT: Chop file override!\nInstead of ' + unchopped_file + ', using: ' + chop_file)
+	file_list.sort(key=naturalSort)
 	do_multiprocessing = False
 	if do_multiprocessing:
 		pool = Pool(4)
-		pool.map(crop_file, sorted(glob.glob("*.jp2"), key=naturalSort))
-	for file in sorted(glob.glob("*.jp2"), key=naturalSort):
-		crop_file(file)
+		pool.map(crop_file, file_list)
+	for file in file_list:
+		try:
+			crop_file(file)
+		except:
+			print('WARNING: File ' + file + ' failed!!!')
 	
 	
 
