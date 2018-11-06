@@ -14,11 +14,12 @@
   },
   "columns": {
     "do_multiprocessing": false,
-    "pool_num": 2
+    "pool_num": 2,
+    "do_plots": false
   },
-  "entry": {
+  "entries": {
     "do_multiprocessing": false,
     "pool_num": 2,
-    "pad": 0
+    "padding": 0
   }
 }
