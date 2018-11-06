@@ -9,6 +9,7 @@ import sklearn
 from sklearn.cluster import MeanShift
 import pickle as pkl
 import time
+from multiprocessing import Pool
 
 #Chops columns into entries
 #Script contains unused functions and needs heavy editing.
@@ -221,13 +222,18 @@ def entry_wrapper(file_param_tuple):
     return crop_points_dict
 
 def entryChop(params):
+    # make entry folder.
     nDirectory = 'entry'
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
 
+    # create file/param lists
     x = sorted(glob.glob(os.getcwd() + "/columns/*.png"), key=naturalSort)
     files_and_params = [(i, params) for i in x]
 
+    # map files/params to entry_wrapper
+    # entry_wrapper outputs a crop points dict, 
+    # which is thrown into results and then merged together
     result = []
     if params['do_multiprocessing']:
         pool = Pool(params['pool_num'])
@@ -236,7 +242,7 @@ def entryChop(params):
         result.append(entry_wrapper(file_param_tuple))
     crop_points_dict = { k: v for d in result for k, v in d.items() }
 
-    	
+    # dump crop points dict into pickle file. 
     pkl.dump(crop_points_dict, open('crop_points_dict.pkl', 'wb'))
 
 

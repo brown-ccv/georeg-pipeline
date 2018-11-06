@@ -105,7 +105,6 @@ def cropMargins(filename_param_tuple):
     cropped = image[top-int(sf*5.0) : bottom+int(sf*5.0), left-int(sfw*5.0) : right+int(sfw*10.0)]
     nDirectory = 'margins'
     filename = file.split("/")[-1]
-    print("Written to " + os.path.join(nDirectory, filename))
     cv2.imwrite(os.path.join(nDirectory, filename), cropped)
     #print top, bottom, left, right
     return

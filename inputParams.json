@@ -8,9 +8,9 @@
     "do_diagnostics": false
   },
   "margins": {
-    "do_multiprocessing": false,
+    "do_multiprocessing": true,
     "pool_num": 2,
-    "p_cutoff": 0
+    "p_cutoff": 30.0
   },
   "columns": {
     "do_multiprocessing": false,
@@ -18,7 +18,7 @@
     "do_plots": false
   },
   "entries": {
-    "do_multiprocessing": false,
+    "do_multiprocessing": true,
     "pool_num": 2,
     "padding": 0
   }

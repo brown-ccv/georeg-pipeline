@@ -77,7 +77,6 @@ def cropImage(image, file, do_plots):
 def crop_file(file_param_tuple):
 	nDirectory = 'columns'
 	file, params = file_param_tuple
-	print(file)
 	img = cv2.imread(file, 0)
 	#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
 	crop = cropImage(img, file, params['do_plots'])
@@ -115,7 +114,7 @@ def doCrop(params):
 		try:
 			crop_file(file_param_tuple)
 		except:
-			print('WARNING: File ' + file + ' failed!!!')
+			print('WARNING: File ' + file_param_tuple[0] + ' failed!!!')
 	
 	
 
