@@ -120,7 +120,7 @@ def get_binary(file, threshold_dict, do_plots):
         while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
             threshold += 1
         threshold -= 15
-        print(threshold)
+        # print(threshold)
         os.system('echo "' + file.partition('.jp2')[0] + ',' + str(threshold) + '" >> threshold_used.csv')
         if do_plots:
             gfig = plt.figure()
@@ -135,7 +135,9 @@ def get_binary(file, threshold_dict, do_plots):
     return im_bw
 
 def process_image(input_tuple):
+    #separate tuple
     file, params = input_tuple
+
     t1 = time.time()
     im_bw = get_binary(file, params['threshold'], params['do_plots'])
     t2 = time.time()
@@ -146,14 +148,18 @@ def process_image(input_tuple):
     removeAds(im_bw, file, params['do_diagnostics'])
     t2 = time.time()
     #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
+
+    # write output images
     t1 = time.time()
     cv2.imwrite(os.path.join('no_ads', file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
     t2 = time.time()
     #print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
     print file + '-no ads'
+
     return
 
 def rmAds(params):
+    # use hardcoded thresholds if they exist. 
     if os.path.isfile('hardcoded_thresholds.csv'):
         threshold_dict = pd.read_csv('hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
         print('Using hardcoded thresholds:')
@@ -162,17 +168,21 @@ def rmAds(params):
         threshold_dict = {}
     os.system('echo ",threshold" > threshold_used.csv')
 
+    # create no_ads dir.
     nDirectory = 'no_ads'
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
 
+    # add threshold dict to params
     params['threshold'] = threshold_dict
+
+    # create list of file/params tuples
     if params['only_hardcoded']:
         input_list = [(file_base + '.jp2', params) for file_base in threshold_dict.keys()]
     else:
         input_list = [(file, params) for file in sorted(glob.glob("*.jp2") + glob.glob("*.png"), key=naturalSort)]
     
-
+    # map input list to process_img
     if params['do_multiprocessing']:
         pool = Pool(params['pool_num'])
         pool.map(process_image, input_list)

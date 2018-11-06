@@ -32,14 +32,14 @@ def findFirstIndent(image, h):
                 return i, x
     return -1, -1
 
-def cropEntries(image, file):
+def cropEntries(image, file, padding):
     #t1 = time.time()
     croppedImages = []
     crop_points = []
     img = image.copy()
     height, width = img.shape[:2]
     sf = float(width)/float(2611)
-    pad = 0 #int(4.0/float(height)*float(11675))
+    pad = int(padding/float(height)*float(11675))
     histogram  = pd.Series([width - cv2.countNonZero(img[i,:]) for i in list(range(height))])
     #fig = plt.figure()
     #ax = histogram.plot()
@@ -182,46 +182,61 @@ def fineCrop(image):
         cropRight += 1
     return image[0 : height, cropLeft  : cropRight]
 
-def entryChop(folder):
-    scans = folder
+
+def entry_wrapper(file_param_tuple):
+    crop_points_dict = {}
+    file, params = file_param_tuple
+    print 'Chopping: ' + file
+    fileN = file[:-4].split("/")[-1]
+    ext = file[-4:]
+    #t1 = time.time()
+    original = cv2.imread(file, 0)
+    #t2 = time.time()
+    #print('Read time: ' + str(round(t2-t1, 2)) + ' s')
+    #t1 = time.time()
+    original = fineCrop(original)
+    #t2 = time.time()
+    #print('fineCrop time: ' + str(round(t2-t1, 2)) + ' s')
+    #t1 = time.time()
+    original = cv2.copyMakeBorder(original,4,4,10,10, borderType= cv2.BORDER_CONSTANT, value=[255,255,255])
+    #t2 = time.time()
+    #print('copyMakeBorder time: ' + str(round(t2-t1, 2)) + ' s')
+    #t1 = time.time()
+    #clean = cleanImage(original)
+    entries, points = cropEntries(original, file, params['padding'])
+    #t2 = time.time()
+    #print('Entry crop time: ' + str(round(t2-t1, 2)) + ' s')
+    #print('Saving...')
+    #t1 = time.time()
+    i = 1
+    for image in entries:
+        w_image = cv2.copyMakeBorder(image,15,15,15,15, borderType= cv2.BORDER_CONSTANT, value=[255,255,255])
+        cv2.imwrite(os.path.join('entry', fileN + "_" + str(i) + ext), w_image)
+        crop_points_dict[fileN + "_" + str(i) + ext] = points[i-1]
+        i += 1
+    #t2 = time.time()
+    #print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+    #cv2.imwrite(os.path.join(nDirectory, file), clean)
+    #cv2.imwrite(os.path.join(nDirectory, "og_" + file), original)
+    return crop_points_dict
+
+def entryChop(params):
     nDirectory = 'entry'
-    os.chdir(scans)
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    crop_points_dict = {}
-    for file in sorted(glob.glob("*.png"), key=naturalSort):
-    	print 'Chopping: ' + file
-        fileN = file[:-4]
-        ext = file[-4:]
-        #t1 = time.time()
-        original = cv2.imread(file, 0)
-        #t2 = time.time()
-        #print('Read time: ' + str(round(t2-t1, 2)) + ' s')
-        #t1 = time.time()
-        original = fineCrop(original)
-        #t2 = time.time()
-        #print('fineCrop time: ' + str(round(t2-t1, 2)) + ' s')
-        #t1 = time.time()
-        original = cv2.copyMakeBorder(original,4,4,10,10, borderType= cv2.BORDER_CONSTANT, value=[255,255,255])
-        #t2 = time.time()
-        #print('copyMakeBorder time: ' + str(round(t2-t1, 2)) + ' s')
-        #t1 = time.time()
-        #clean = cleanImage(original)
-        entries, points = cropEntries(original, file)
-        #t2 = time.time()
-        #print('Entry crop time: ' + str(round(t2-t1, 2)) + ' s')
-        #print('Saving...')
-        #t1 = time.time()
-        i = 1
-        for image in entries:
-            w_image = cv2.copyMakeBorder(image,15,15,15,15, borderType= cv2.BORDER_CONSTANT, value=[255,255,255])
-            cv2.imwrite(os.path.join(nDirectory, fileN + "_" + str(i) + ext), w_image)
-            crop_points_dict[fileN + "_" + str(i) + ext] = points[i-1]
-            i += 1
-        #t2 = time.time()
-        #print('Done in: ' + str(round(t2-t1, 3)) + ' s')
-        #cv2.imwrite(os.path.join(nDirectory, file), clean)
-        #cv2.imwrite(os.path.join(nDirectory, "og_" + file), original)
+
+    x = sorted(glob.glob(os.getcwd() + "/columns/*.png"), key=naturalSort)
+    files_and_params = [(i, params) for i in x]
+
+    result = []
+    if params['do_multiprocessing']:
+        pool = Pool(params['pool_num'])
+        result = pool.map(entry_wrapper, files_and_params)
+    for file_param_tuple in files_and_params:
+        result.append(entry_wrapper(file_param_tuple))
+    crop_points_dict = { k: v for d in result for k, v in d.items() }
+
+    	
     pkl.dump(crop_points_dict, open('crop_points_dict.pkl', 'wb'))
 
 
