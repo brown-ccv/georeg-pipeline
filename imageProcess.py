@@ -26,6 +26,8 @@ if __name__ == '__main__':
 		columnCrop.doCrop(all_params[2])
 		entryChop.entryChop(all_params[3])
 
+	#adding a comment for te sake of branching
+
 
 	print('Removing ads...')
 	t1 = time.time()
