@@ -40,17 +40,9 @@ def streetTable():
     street_df.to_pickle('stZipCty')
     return street_df
 
-def createCache(dataFrame):
-	engine = sqlalchemy.create_engine('sqlite:///../georeg.db', echo=True)
-	#dataFrame = dataFrame.drop_duplicates(['Query'], keep = 'last')
-	#dataFrame = dataFrame.set_index('Query', 1)
-	#dataFrame.assign(fname=dir_dir)
-	dataFrame.to_sql('foutput', engine, if_exists = 'append', index = False)
-
 
 def makeCSV(dataFrame):
 	today = datetime.date.today()
-	#createCache(dataFrame)
 	dataFrame.set_index('Query')
 	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Company_Name'] = dataFrame['Company_Name'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
