@@ -1,0 +1,36 @@
+{
+  "year_folder": "cd1976",
+  "single_image": true,
+  "img_name": "1976_page_100",
+  "no_ads": {
+    "do_multiprocessing": true,
+    "pool_num": 4,
+    "only_hardcoded": false,
+    "do_plots": false,
+    "do_diagnostics": false
+  },
+  "margins": {
+    "do_multiprocessing": true,
+    "pool_num": 2,
+    "p_cutoff": 30.0
+  },
+  "columns": {
+    "do_multiprocessing": false,
+    "pool_num": 2,
+    "do_plots": false
+  },
+  "entries": {
+    "do_multiprocessing": true,
+    "pool_num": 2,
+    "padding": 0
+  }, 
+  "parse": {
+    "do_multiprocessing": true,
+    "pool_num": 2,
+    "do_ocr": true,
+    "make_table": false,
+    "stringParse" : {
+      "do_regex": true
+    }
+  }
+}

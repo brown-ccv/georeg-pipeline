@@ -18,8 +18,7 @@ def cleanImage(image):
     closed = cv2.morphologyEx(closed, cv2.MORPH_OPEN, kernel)
     return closed
 
-def removeAds(im_bw, file):
-    do_diagnostics = False
+def removeAds(im_bw, file, do_diagnostics):
     height,width = im_bw.shape[:2]
     cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), 100)
     im_bw_copy = im_bw.copy()
@@ -77,11 +76,12 @@ def noAds(image, area):
     noAds = removeAds(image, area)
     return noAds
 
-def get_binary(file, threshold_dict):
+def get_binary(file, threshold_dict, do_plots):
     nDirectory = 'no_ads'
-    do_plots = True
     t1 = time.time()
+    
     original = cv2.imread(file, 0)
+
     #uneq = cv2.imread(file, 0)
     #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     #original = clahe.apply(uneq)
@@ -122,7 +122,7 @@ def get_binary(file, threshold_dict):
         while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
             threshold += 1
         threshold -= 15
-        print(threshold)
+        # print(threshold)
         os.system('echo "' + file.partition('.jp2')[0] + ',' + str(threshold) + '" >> threshold_used.csv')
         if do_plots:
             gfig = plt.figure()
@@ -137,51 +137,61 @@ def get_binary(file, threshold_dict):
     return im_bw
 
 def process_image(input_tuple):
-    file,threshold_dict = input_tuple
-    nDirectory = 'no_ads'
+    #separate tuple
+    file, params = input_tuple
+
     t1 = time.time()
-    im_bw = get_binary(file, threshold_dict)
+    im_bw = get_binary(file, params['threshold'], params['do_plots'])
     t2 = time.time()
     #print('Binary conversion time: ' + str(round(t2-t1, 2)) + ' s')
     #cv2.imwrite(os.path.join('no_ads', file + 'bw_test.jpg'), im_bw)
     #im = cleanImage(original)
     t1 = time.time()
-    removeAds(im_bw, file)
+    removeAds(im_bw, file, params['do_diagnostics'])
     t2 = time.time()
     #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
+
+    # write output images
     t1 = time.time()
-    cv2.imwrite(os.path.join(nDirectory, file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
+    cv2.imwrite(os.path.join('no_ads', file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
     t2 = time.time()
     #print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
     print file + '-no ads'
+
     return
 
-def rmAds(folder):
-    scans = folder
-    nDirectory = 'no_ads'
-    if os.path.isfile(folder + '/hardcoded_thresholds.csv'):
-        threshold_dict = pd.read_csv(folder + '/hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
+def rmAds(params):
+    # use hardcoded thresholds if they exist. 
+    if os.path.isfile('hardcoded_thresholds.csv'):
+        threshold_dict = pd.read_csv('hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
         print('Using hardcoded thresholds:')
         print(threshold_dict)
     else:
         threshold_dict = {}
-
-    only_hardcoded = False
-    os.chdir(scans)
-
     os.system('echo ",threshold" > threshold_used.csv')
 
+    # create no_ads dir.
+    nDirectory = 'no_ads'
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
 
-    if only_hardcoded:
-        input_list = [(file_base + '.jp2', threshold_dict) for file_base in threshold_dict.keys()]
+    # add threshold dict to params
+    params['threshold'] = threshold_dict
+
+    # parses single image
+    if 'img_name' in params:
+        process_image((params['img_name'] + ".jp2", params))
+        return
+
+    # create list of file/params tuples
+    if params['only_hardcoded']:
+        input_list = [(file_base + '.jp2', params) for file_base in threshold_dict.keys()]
     else:
-        input_list = [(file, threshold_dict) for file in sorted(glob.glob("*.jp2") + glob.glob("*.png"), key=naturalSort)]
+        input_list = [(file, params) for file in sorted(glob.glob("*.jp2") + glob.glob("*.png"), key=naturalSort)]
     
-    do_multiprocessing = False
-    if do_multiprocessing:
-        pool = Pool(3)
+    # map input list to process_img
+    if params['do_multiprocessing']:
+        pool = Pool(params['pool_num'])
         pool.map(process_image, input_list)
     else:
         for input_tuple in input_list:
