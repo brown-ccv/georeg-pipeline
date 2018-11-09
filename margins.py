@@ -3,10 +3,6 @@ import numpy as np
 import cv2
 from multiprocessing import Pool
 
-#Crops out the margins.
-
-p_cutoff = 30.0
-
 def naturalSort(String_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
@@ -33,7 +29,7 @@ def getAvgV(img, width):
         # avg += minPixel
     return avg/h
 
-def cropTop(image):
+def cropTop(image, p_cutoff):
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
@@ -47,7 +43,7 @@ def cropTop(image):
             y += 1
     return y - int(sf*25)
 
-def cropBottom(image):
+def cropBottom(image, p_cutoff):
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
@@ -60,7 +56,7 @@ def cropBottom(image):
             y -= 1
     return y + int(sf*35)
 
-def cropLeft(image):
+def cropLeft(image, p_cutoff):
     h, w = image.shape[:2]
     #print(h,w)
     sf = float(h)/13524.0
@@ -78,7 +74,7 @@ def cropLeft(image):
             x += 1
     return x - int(50*sfw)
 
-def cropRight(image):
+def cropRight(image, p_cutoff):
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
@@ -94,19 +90,22 @@ def cropRight(image):
     return x + int(100*sfw)
 
 
-def cropMargins(file):
+def cropMargins(filename_param_tuple):
+    file, params = filename_param_tuple
+    p_cutoff = params['p_cutoff']
     print file + '-margins cropped'
     image = cv2.imread(file, 0)
-    top = cropTop(image)
-    bottom = cropBottom(image)
-    left = cropLeft(image)
-    right = cropRight(image)
+    top = cropTop(image, p_cutoff)
+    bottom = cropBottom(image, p_cutoff)
+    left = cropLeft(image, p_cutoff)
+    right = cropRight(image, p_cutoff)
     h, w = image.shape[:2]
     sf = float(h)/13524.0
     sfw = float(w)/9475.0
     cropped = image[top-int(sf*5.0) : bottom+int(sf*5.0), left-int(sfw*5.0) : right+int(sfw*10.0)]
-    nDirectory = 'margins_fixed'
-    cv2.imwrite(os.path.join(nDirectory, file), cropped)
+    nDirectory = 'margins'
+    filename = file.split("/")[-1]
+    cv2.imwrite(os.path.join(nDirectory, filename), cropped)
     #print top, bottom, left, right
     return
 
@@ -120,18 +119,23 @@ def cleanImage(image):
     #return opening
 
 
-def marginCrop(folder):
-    scans = folder
-    nDirectory = 'margins_fixed'
-    os.chdir(scans)
+def marginCrop(params):
+
+    #make margins dir.
+    nDirectory = 'margins'
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
-    do_multiprocessing = False
-    if do_multiprocessing:
-        pool = Pool(4)
-        pool.map(cropMargins, sorted(glob.glob("*.png"), key=naturalSort))
+
+    #create list of image/param tuples.
+    x = sorted(glob.glob(os.getcwd() + "/no_ads/*.png"), key=naturalSort)
+    params_and_files = [(i, params) for i in x]
+
+    # map params_and_files to cropMargins.
+    if params['do_multiprocessing']:
+        pool = Pool(params['pool_num'])
+        pool.map(cropMargins, params_and_files)
     else:
-        for file in sorted(glob.glob("*.png"), key=naturalSort):
-            cropMargins(file)
+        for filename_param_tuple in params_and_files:
+            cropMargins(filename_param_tuple)
     
 
