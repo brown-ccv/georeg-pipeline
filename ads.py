@@ -79,7 +79,9 @@ def noAds(image, area):
 def get_binary(file, threshold_dict, do_plots):
     nDirectory = 'no_ads'
     t1 = time.time()
+    
     original = cv2.imread(file, 0)
+
     #uneq = cv2.imread(file, 0)
     #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     #original = clahe.apply(uneq)
@@ -175,6 +177,11 @@ def rmAds(params):
 
     # add threshold dict to params
     params['threshold'] = threshold_dict
+
+    # parses single image
+    if 'img_name' in params:
+        process_image((params['img_name'] + ".jp2", params))
+        return
 
     # create list of file/params tuples
     if params['only_hardcoded']:

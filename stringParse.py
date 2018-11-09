@@ -19,14 +19,14 @@ def split_on_st(string, st):
 			rtuple = ' '.join(words[:i+1]).partition(' ' + words[j] + ' ')
 			return rtuple[0],(rtuple[1] + rtuple[2]), False
 
-def search(input_string):
+def search(str_param_tuple):
+	input_string, params = str_param_tuple
 	regex = '(\D+)(\s\d+\s)(.+)'
 
 	string = input_string.partition(' tel ')[0].partition(' tels ')[0].partition(' Tel ')[0].partition(' Tels ')[0]
 	string = string.partition(' telephone')[0].partition(' Telephone')[0]
 
 	#print('Parsing: ' + string)
-	do_regex = True
 	if re.match('.+\sAv\s.*', string) or re.match('.+\sAv$', string):
 		companyName, street, do_regex = split_on_st(string,'Av')
 	elif re.match('.+\sAve\s.*', string) or re.match('.+\sAve$', string):
@@ -42,7 +42,7 @@ def search(input_string):
 	elif re.match('.+\sDr\s.*', string) or re.match('.+\sDr$', string):
 		companyName, street, do_regex = split_on_st(string,'Dr')
 	
-	if do_regex:
+	if params['do_regex']:
 		parts = re.search(regex, string)
 
 		if parts:

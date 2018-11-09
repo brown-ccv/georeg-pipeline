@@ -96,6 +96,12 @@ def doCrop(params):
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
 
+	# parses single image
+	if 'img_name' in params:
+		print(params)
+		crop_file((os.getcwd() + "/margins/" + params['img_name'] + ".png", params))
+		return
+
 	#find chopped files. 
 	file_list = glob.glob(os.getcwd() + "/margins/*.png")
 	for chop_file in file_list:

@@ -126,6 +126,11 @@ def marginCrop(params):
     if not os.path.exists(nDirectory):
         os.mkdir(nDirectory)
 
+    # parses single image
+    if 'img_name' in params:
+        cropMargins((os.getcwd() + "/no_ads/" + params['img_name'] + ".png", params))
+        return
+
     #create list of image/param tuples.
     x = sorted(glob.glob(os.getcwd() + "/no_ads/*.png"), key=naturalSort)
     params_and_files = [(i, params) for i in x]

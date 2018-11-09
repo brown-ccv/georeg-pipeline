@@ -12,12 +12,14 @@ import pickle as pkl
 from PIL import Image
 from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
+import json
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
 
 if not sys.argv[1]:
-	raise Exception('You need to input the name of the directory you are running.')
-dir_dir = str(sys.argv[1])
+	raise Exception('You need to input a parameters file. try inputParams.json.')
+inputParams = str(sys.argv[1])
+dir_dir = inputParams['year_folder']
 
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
@@ -164,11 +166,12 @@ def chunk_process_ocr(chunk_files):
 			rlist.append(ocr_file(file, api))
 	return rlist
 
-def process(folder, do_OCR=True, make_table=False):
+def process(folder, params):
+	do_ocr = params['do_ocr']
+	make_table = params['make_table']
 	#Make the zip code to city lookup table
 	if make_table:
 		streetTable()
-
 	if do_OCR:
 		files = []
 		texts = []
@@ -178,9 +181,8 @@ def process(folder, do_OCR=True, make_table=False):
 		print('Doing OCR')
 		t1 = time.time()
 		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
-		do_multiprocessing = True
-		if do_multiprocessing:
-			pool = multiprocessing.Pool(5)
+		if params['do_multiprocessing']:
+			pool = multiprocessing.Pool(params['pool_num'])
 			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
 			chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
 			ocr_results = pool.map(chunk_process_ocr, chunk_list)
@@ -307,12 +309,12 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Parsing text...')
 	t1 = time.time()
-	do_multiprocessing = True
-	if do_multiprocessing:
-		pool = multiprocessing.Pool(4)
-		output_tuples = pool.map(stringParse.search, data['Text'].tolist())
+	if params['do_multiprocessing']:
+		pool = multiprocessing.Pool(params['pool_num'])
+		search_list = [(i, params['stringParse']) for i in data['Text'].tolist()]
+		output_tuples = pool.map(stringParse.search, search_list)
 	else:
-		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
+		output_tuples = [stringParse.search((search_text, params['stringParse'])) for search_text in data['Text'].tolist()]
 	streets,company_names = zip(*output_tuples)
 	data = data.assign(Street=streets, Company_Name=company_names)
 	t2 = time.time()
@@ -330,7 +332,12 @@ def process(folder, do_OCR=True, make_table=False):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-process(dir_dir + '/no_ads/margins_fixed/cropped/entry', do_OCR=False, make_table=False)
 
-mt2 = time.time()
-print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
+if __name__ == '__main__':
+	with open(inputParams) as json_data:
+		d = json.load(json_data)
+	
+	process(d['year_folder'] + '/entry', d['parse'])
+	
+	mt2 = time.time()
+	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
