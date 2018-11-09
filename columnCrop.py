@@ -12,7 +12,7 @@ from multiprocessing import Pool
 
 #Chops the pages into columns
 
-def naturalSort(String_):
+def naturalSort(String_): 
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
 def getAvg(img, x, y):
@@ -43,14 +43,13 @@ def cleanImage(image):
     #return opening
 
 
-def cropImage(image, file):
+def cropImage(image, file, do_plots):
 	croppedImages = []
 	img = image.copy()
 	height, width = img.shape[:2]
 	sf = float(height)/11675.0
 	sfw = float(width)/7820.0
 	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5).mean()
-	do_plots = True
 	if do_plots:
 		fig = plt.figure()
 		ax = histogram.plot()
@@ -75,13 +74,13 @@ def cropImage(image, file):
 		croppedImages.append(img[0:height, cut_points[i]:cut_points[i+1]])
 	return croppedImages
 
-def crop_file(file):
-	nDirectory = 'cropped'
-	print(file)
+def crop_file(file_param_tuple):
+	nDirectory = 'columns'
+	file, params = file_param_tuple
 	img = cv2.imread(file, 0)
 	#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
-	crop = cropImage(img, file)
-	name = file[:-4].partition('.chop')[0]
+	crop = cropImage(img, file, params['do_plots'])
+	name = file[:-4].partition('.chop')[0].split("/")[-1]
 	ext = file[-4:]
 	i = 1
 	for image in crop:
@@ -91,29 +90,31 @@ def crop_file(file):
 	print file + '-cropped to columns'
 	return
 
-def doCrop(folder):
-	croppedImages = []
-	scans = folder
-	nDirectory = 'cropped'
-	os.chdir(scans)
+def doCrop(params):
+	#make columns dir
+	nDirectory = 'columns'
 	if not os.path.exists(nDirectory):
 		os.mkdir(nDirectory)
-	file_list = glob.glob("*.png")
+
+	#find chopped files. 
+	file_list = glob.glob(os.getcwd() + "/margins/*.png")
 	for chop_file in file_list:
 		if re.match('.*\.chop\.png', chop_file):
 			unchopped_file = chop_file.partition('.chop.png')[0] + '.png'
 			file_list.remove(unchopped_file)
 			print('ALERT: Chop file override!\nInstead of ' + unchopped_file + ', using: ' + chop_file)
-	file_list.sort(key=naturalSort)
-	do_multiprocessing = False
-	if do_multiprocessing:
-		pool = Pool(4)
+	file_list.sort(key=naturalSort) 
+	file_list = [(i, params) for i in file_list]
+
+	# map list of files/params to crop_file
+	if params['do_multiprocessing']:
+		pool = Pool(params['pool_num'])
 		pool.map(crop_file, file_list)
-	for file in file_list:
+	for file_param_tuple in file_list:
 		try:
-			crop_file(file)
+			crop_file(file_param_tuple)
 		except:
-			print('WARNING: File ' + file + ' failed!!!')
+			print('WARNING: File ' + file_param_tuple[0] + ' failed!!!')
 	
 	
 
