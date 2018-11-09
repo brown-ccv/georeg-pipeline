@@ -8,8 +8,8 @@ import pickle as pkl
 
 ri_streets_table = pd.read_pickle('stZipCty')
 street_patt = re.compile(r"(^\d+)(.+)")
-#street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
-street_name_dict = {}
+street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
+#street_name_dict = {}
 
 abbreviations = pd.DataFrame({'Street':['BWAY','WASH'], 'Zip_Code':['BROADWAY', 'WASHINGTON ST'], 'City':['PROVIDENCE','PROVIDENCE']})
 
