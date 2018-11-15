@@ -2,7 +2,7 @@ import time
 mt1 = time.time()
 import stringParse, arcgeocoder, address
 import zipcode
-#import sqlalchemy
+import sqlalchemy
 import streetMatch1
 import sys, glob, os, re, datetime
 import pandas as pd
@@ -102,36 +102,260 @@ def getFBP(image_file, sf):
 	firstBlackPix = cut + blackindx - 3
 	return sf*float(firstBlackPix)
 
-def is_header(fbp, text, file, entry_num):
+# def is_header_deprecated(fbp, text, file, entry_num):
+# 	year = int(file.partition('/')[0].lstrip('cd'))
+# 	if year > 1955:
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	else:
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (fbp > 40):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# def is_header2(fbp, text, file, entry_num):
+# 	if len([l for l in text if l.isalpha()]) == 0:
+# 		return False
+# 	elif (fbp > 200):
+# 		return True
+# 	elif (text.lstrip()[0] == '*') and (fbp > 100):
+# 		return True
+# 	else:
+# 		return False
+
+
+def is_header(fbp, text, file, entry_num, word_attrs):
 	year = int(file.partition('/')[0].lstrip('cd'))
-	if year > 1955:
-		if len([l for l in text if l.isalpha()]) == 0:
-			return False
-		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
-		else:
-			return False
-	else:
-		if len([l for l in text if l.isalpha()]) == 0:
-			return False
-		elif (fbp > 40):
-			return True
-		elif (text.lstrip()[0] == '*') and (fbp > 30):
-			return True
-		else:
-			return False
+	scores = {}
+	if word_attrs["error"] == "None":
+		if year <= 1954:
+			# Bold, no underline, starred*, no all caps, no bigger
 
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 40):
+				scores["indented_score"] = 1
+			elif (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["indented_score"] = 1
+			else:
+				return False
 
-def is_header2(bp, text, file, entry_num):
-	if len([l for l in text if l.isalpha()]) == 0:
-		return False
-	elif (fbp > 200):
-		return True
-	elif (text.lstrip()[0] == '*') and (fbp > 100):
-		return True
+			# bold
+			if word_attrs['bold'] is True:
+				scores["bold_score"] = 1
+			else:
+				scores["bold_score"] = 0
+			
+			# starred 
+			if (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["star_score"] = 1
+			else:
+				scores["star_score"] = 0
+
+			weights = [0.7, 0.15, 0.15]
+			
+		elif year <= 1962:
+			# Bold, no underline, starred*, caps, not bigger
+
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+
+			# bold
+			if word_attrs['bold'] is True:
+				scores["bold_score"] = 1
+			else:
+				scores["bold_score"] = 0
+			
+			# starred 
+			if (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["star_score"] = 1
+			else:
+				scores["star_score"] = 0
+
+			# all caps
+			if word_attrs['smallcaps'] is False:
+				scores["some_caps"] = 1
+			else:
+				scores["some_caps"] = 0
+			
+			weights = [0.7, 0.2, 0.05, 0.05]
+
+		elif year <= 1968:
+			# Bold, underline, starred*, caps, bigger
+
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+
+			# bold
+			if word_attrs['bold'] is True:
+				scores["bold_score"] = 1
+			else:
+				scores["bold_score"] = 0
+
+			# underline
+			if word_attrs['underlined'] is True:
+				scores["underline_score"] = 1
+			else:
+				scores["underline_score"] = 0
+			
+			# starred 
+			if (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["star_score"] = 1
+			else:
+				scores["star_score"] = 0
+
+			# all caps
+			if word_attrs['smallcaps'] is False:
+				scores["some_caps"] = 1
+			else:
+				scores["some_caps"] = 0
+
+			weights = [0.7, 0.12, 0.12, 0.03, 0.03]
+
+		elif year == 1970:
+			# Bold, underline, starred*, caps, no bigger
+
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+
+			# bold
+			if word_attrs['bold'] is True:
+				scores["bold_score"] = 1
+			else:
+				scores["bold_score"] = 0
+
+			# underline
+			if word_attrs['underlined'] is True:
+				scores["underline_score"] = 1
+			else:
+				scores["underline_score"] = 0
+			
+			# starred 
+			if (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["star_score"] = 1
+			else:
+				scores["star_score"] = 0
+
+			# all caps
+			if word_attrs['smallcaps'] is False:
+				scores["some_caps"] = 1
+			else:
+				scores["some_caps"] = 0
+
+			weights = [0.7, 0.12, 0.12, 0.03, 0.03]
+
+		elif year <= 1990:
+			# Bold, no underline, starred*, caps, bigger
+
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+
+			# bold
+			if word_attrs['bold'] is True:
+				scores["bold_score"] = 1
+			else:
+				scores["bold_score"] = 0
+			
+			# starred 
+			if (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["star_score"] = 1
+			else:
+				scores["star_score"] = 0
+
+			# all caps
+			if word_attrs['smallcaps'] is False:
+				scores["some_caps"] = 1
+			else:
+				scores["some_caps"] = 0
+
+			weights = [0.7, 0.2, 0.05, 0.05]
+
+		else:
+			print("WARNING: Year not in range: ", year)
+
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+			
+			weights = [1]
+
 	else:
+		print(word_attrs["error"])
+		if year > 1955:
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+				scores["indented_score"] = 1
+			elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+				scores["indented_score"] = 1
+			else:
+				scores["indented_score"] = 0
+			
+			weights = [1]
+
+		else:
+			# indent
+			if len([l for l in text if l.isalpha()]) == 0:
+				return False
+			elif (fbp > 40):
+				scores["indented_score"] = 1
+			elif (text.lstrip()[0] == '*') and (fbp > 30):
+				scores["indented_score"] = 1
+			else:
+				return False
+
+			weights = [1]
+
+	weighted_score = [w*v for w,v in zip(weights, scores.values())]
+	avg_score = sum(weighted_score)
+	print("Average score: ", avg_score, " for ", text)
+	if avg_score > 0.6:
+		return True
+	else: 
 		return False
 
 def ocr_file(file, api):
@@ -146,7 +370,13 @@ def ocr_file(file, api):
 	sf = float(width)/float(2611)
 	fbp = getFBP(file, sf)
 	entry_num = int(file.rpartition('_')[2].rpartition('.png')[0])
-	return file,text,fbp,sf,entry_num
+	word_attrs = api.GetIterator().WordFontAttributes()
+	if word_attrs is None:
+		print("WARNING: Could not find word_attrs, sending none")
+		word_attrs = {"error": "No word_attrs found"}
+	else:
+		word_attrs["error"] = "None"
+	return file,text,fbp,sf,entry_num,word_attrs
 
 def chunk_process_ocr(chunk_files):
 	'''We process the OCR in chunks to avoid having to reload the API each time.'''
@@ -172,7 +402,7 @@ def process(folder, do_OCR=True, make_table=False):
 		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
 		do_multiprocessing = True
 		if do_multiprocessing:
-			pool = multiprocessing.Pool(5)
+			pool = multiprocessing.Pool(4)
 			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
 			chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
 			ocr_results = pool.map(chunk_process_ocr, chunk_list)
@@ -182,7 +412,7 @@ def process(folder, do_OCR=True, make_table=False):
 			with PyTessBaseAPI() as api:
 				for file in file_list:
 					flat_ocr_results.append(ocr_file(file, api))
-		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num', 'word_attrs'])
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -200,8 +430,6 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Concatenating entries...')
 	t1 = time.time()
-
-	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['first_black_pixel'], row['text'], row['file'], row['entry_num']), axis=1))
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(1,raw_data.shape[0]))
 	tb = time.time()
@@ -223,7 +451,10 @@ def process(folder, do_OCR=True, make_table=False):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
+	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num'], row['word_attrs']), axis=1))
+	print(raw_data["is_header"])
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
+	print(is_header_dict)
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
@@ -322,7 +553,7 @@ def process(folder, do_OCR=True, make_table=False):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-process(dir_dir + '/no_ads/margins_fixed/cropped/entry', do_OCR=False, make_table=False)
+process(dir_dir + '/no_ads/margins_fixed/cropped/entry', do_OCR=True, make_table=False)
 
 mt2 = time.time()
 print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
