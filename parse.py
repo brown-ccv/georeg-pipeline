@@ -299,14 +299,33 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Parsing text...')
 	t1 = time.time()
-	do_multiprocessing = True
+	do_multiprocessing = False
 	if do_multiprocessing:
 		pool = multiprocessing.Pool(4)
 		output_tuples = pool.map(stringParse.search, data['Text'].tolist())
 	else:
 		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
-	streets,company_names = zip(*output_tuples)
+	#streets,company_names = zip(*output_tuples)
+	streets = [output_tuple[0] for output_tuple in output_tuples]
+	company_names = [output_tuple[1] for output_tuple in output_tuples]
 	data = data.assign(Street=streets, Company_Name=company_names)
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+
+	print('Expanding...')
+	t1 = time.time()
+	#data_list = [row for row in data.iterrows()]
+	expanded_data_list = []
+	for index,row in data.iterrows():
+		if type(row['Street']) == list:
+			row_streets = row['Street']
+			new_row = row.copy()
+			for street in row_streets:
+				new_row['Street'] = street
+				expanded_data_list.append(new_row.copy())
+		else:
+			expanded_data_list.append(row)
+	data = pd.DataFrame(expanded_data_list)
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 

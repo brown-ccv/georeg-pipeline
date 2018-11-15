@@ -31,6 +31,9 @@ def geocode(dataFrame, dir_dir):
 
 	location_dict = { k:v for k, v in location_dict.items() if v!='timeout' }
 
+	hardcodes = pd.read_csv('geocoder_hardcodes.csv').dropna()
+	hardcode_dict = {(row.Address,row.City):(row.Lat,row.Lon) for row in hardcodes.itertuples()}
+
 	timeout_set = set()
 
 	outside = ['SEEKONK', 'ATTLEBORO', 'NORTH ATTLEBORO', 'SOUTH ATTLEBORO']
@@ -111,20 +114,39 @@ def geocode(dataFrame, dir_dir):
 				rowFrame = {
 					'Query': [faddress],
 					'Address - From Geocoder': [pt1],
-					'Geocode Score': [conf_score],
-					'Match Score': [score],
+					'Geocode Score': conf_score,
+					'Match Score': score,
 					'Latitude': [lat],
 					'Longitude': [lon],
-					'Date_Added': [today],
+					'Date_Added': today,
 					'File_List': [flist],
 					'Text': [text],
 					'Company_Name': [coName],
 					'Header': [group]
 					}
-				master_list.append(rowFrame)
+				if conf_score > 85:
+					master_list.append(rowFrame)
+				else:
+					errors_list.append(row)
 			except:
 				print('Error for location: ' + location)
 				errors_list.append(row)
+		elif (address,city) in hardcode_dict.keys():
+			lat,lon = hardcode_dict[(address,city)]
+			rowFrame = {
+					'Query': [faddress],
+					'Address - From Geocoder': ['HARDCODE'],
+					'Geocode Score': 100.0,
+					'Match Score': score,
+					'Latitude': [lat],
+					'Longitude': [lon],
+					'Date_Added': today,
+					'File_List': [flist],
+					'Text': [text],
+					'Company_Name': [coName],
+					'Header': [group]
+					}
+			master_list.append(rowFrame)
 		else:
 			errors_list.append(row)
 			continue
