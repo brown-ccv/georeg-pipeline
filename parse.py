@@ -132,7 +132,7 @@ def is_header(rel_fbp, text, file, entry_num):
 			return False
 		elif (rel_fbp > 40):
 			return True
-		elif (text.lstrip()[0] == '*') and (ref_fbp > 30):
+		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
 			return True
 		else:
 			return False
@@ -140,13 +140,13 @@ def is_header(rel_fbp, text, file, entry_num):
 		## Big problems here
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (ref_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (ref_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
+		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
 			return True
 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
-		elif (text.lstrip()[0] == '*') and (ref_fbp > 30):
+		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
 			return True
 		else:
 			return False
@@ -154,7 +154,7 @@ def is_header(rel_fbp, text, file, entry_num):
 		## Tweak threshold
 		if len([l for l in text if l.isalpha()]) == 0:
 				return False
-		elif (ref_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
@@ -164,7 +164,7 @@ def is_header(rel_fbp, text, file, entry_num):
 		## Tweak threshold
 		if len([l for l in text if l.isalpha()]) == 0:
 				return False
-		elif (ref_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
@@ -286,7 +286,9 @@ def process(folder, do_OCR=True, make_table=False):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
-	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num'], axis=1)))
+	print(raw_data.head(10))
+
+	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	print(raw_data["is_header"])
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	print(is_header_dict)
