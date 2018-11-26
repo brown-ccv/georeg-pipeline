@@ -5,6 +5,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import time
 from multiprocessing import Pool
+import shutil
 
 #Removes the ads
 
@@ -152,6 +153,7 @@ def process_image(input_tuple):
     #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
 
     # write output images
+    file = file.split("/")[2]
     t1 = time.time()
     cv2.imwrite(os.path.join('no_ads', file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
     t2 = time.time()
@@ -160,7 +162,24 @@ def process_image(input_tuple):
 
     return
 
+
+def create_images_dir():
+    if not os.path.exists('imgs'):
+        os.mkdir('imgs')
+    for filename in glob.glob('*.jp2'):
+        shutil.copy(filename, 'imgs')
+        os.remove(filename)
+    for filename in glob.glob('*.pdf'):
+        shutil.copy(filename, 'imgs')
+        os.remove(filename)
+    for filename in glob.glob('*.jpg'):
+        shutil.copy(filename, 'imgs')
+        os.remove(filename)
+
 def rmAds(params):
+
+    create_images_dir()
+
     # use hardcoded thresholds if they exist. 
     if os.path.isfile('hardcoded_thresholds.csv'):
         threshold_dict = pd.read_csv('hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
@@ -187,7 +206,7 @@ def rmAds(params):
     if params['only_hardcoded']:
         input_list = [(file_base + '.jp2', params) for file_base in threshold_dict.keys()]
     else:
-        input_list = [(file, params) for file in sorted(glob.glob("*.jp2") + glob.glob("*.png"), key=naturalSort)]
+        input_list = [(file, params) for file in sorted(glob.glob("./imgs/*.jp2") + glob.glob("*.png"), key=naturalSort)]
     
     # map input list to process_img
     if params['do_multiprocessing']:

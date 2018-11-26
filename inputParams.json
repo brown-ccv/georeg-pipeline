@@ -1,6 +1,6 @@
 {
   "year_folder": "cd1976",
-  "single_image": true,
+  "single_image": false,
   "img_name": "1976_page_100",
   "no_ads": {
     "do_multiprocessing": true,

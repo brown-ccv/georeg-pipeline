@@ -15,12 +15,7 @@ import multiprocessing
 import json
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
-
-if not sys.argv[1]:
-	raise Exception('You need to input a parameters file. try inputParams.json.')
-inputParams = str(sys.argv[1])
-dir_dir = inputParams['year_folder']
-
+dir_dir = ""
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
@@ -167,7 +162,7 @@ def chunk_process_ocr(chunk_files):
 	return rlist
 
 def process(folder, params):
-	do_ocr = params['do_ocr']
+	do_OCR = params['do_ocr']
 	make_table = params['make_table']
 	#Make the zip code to city lookup table
 	if make_table:
@@ -332,12 +327,18 @@ def process(folder, params):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-
-if __name__ == '__main__':
-	with open(inputParams) as json_data:
-		d = json.load(json_data)
+def main(inputParams):
+	global dir_dir
+	dir_dir = "./" + inputParams['year_folder']
 	
-	process(d['year_folder'] + '/entry', d['parse'])
-	
+	process(inputParams['year_folder'] + '/entry', inputParams['parse'])
 	mt2 = time.time()
 	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
+
+if __name__ == '__main__':
+	if not sys.argv[1]:
+		raise Exception('You need to input a parameters file. try inputParams.json.')
+	inputParams = str(sys.argv[1])
+	with open(inputParams) as json_data:
+		d = json.load(json_data)
+	main(d)

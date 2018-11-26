@@ -1,6 +1,6 @@
 import time
 mt1 = time.time()
-import ads, margins, columnCrop, entryChop
+import ads, margins, columnCrop, entryChop, parse
 import os
 import sys
 import json
@@ -14,6 +14,8 @@ inputParams = str(sys.argv[1])
 if __name__ == '__main__':
 	with open(inputParams) as json_data:
 		d = json.load(json_data)
+
+
 	os.chdir(d['year_folder'])
 
 	#checks if you only wish to parse a single image. 
@@ -25,30 +27,31 @@ if __name__ == '__main__':
 		margins.marginCrop(all_params[1])
 		columnCrop.doCrop(all_params[2])
 		entryChop.entryChop(all_params[3])
+		parse.main(d)
 
-	#adding a comment for te sake of branching
-
-
-	print('Removing ads...')
-	t1 = time.time()
-	ads.rmAds(d['no_ads'])
-	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	print('Cropping margins...')
-	t1 = time.time()
-	margins.marginCrop(d['margins'])
-	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	print('Cropping columns...')
-	t1 = time.time()
-	columnCrop.doCrop(d['columns'])
-	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	print('Chopping entries...')
-	t1 = time.time()
-	entryChop.entryChop(d['entries'])
-	t2 = time.time()
-	print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	
+	#print('Removing ads...')
+	# #t1 = time.time()
+	# ads.rmAds(d['no_ads'])
+	# #t2 = time.time()
+	# #print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# #print('Cropping margins...')
+	# #t1 = time.time()
+	# margins.marginCrop(d['margins'])
+	# #t2 = time.time()
+	# #print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# #print('Cropping columns...')
+	# #t1 = time.time()
+	# columnCrop.doCrop(d['columns'])
+	# # t2 = time.time()
+	# # print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# # print('Chopping entries...')
+	# # t1 = time.time()
+	# entryChop.entryChop(d['entries'])
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	os.chdir("..")
+	parse.main(d)
 
 mt2 = time.time()
 print('Full runtime: ' + str(round(mt2-mt1, 2)) + ' s')

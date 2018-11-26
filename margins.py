@@ -122,9 +122,8 @@ def cleanImage(image):
 def marginCrop(params):
 
     #make margins dir.
-    nDirectory = 'margins'
-    if not os.path.exists(nDirectory):
-        os.mkdir(nDirectory)
+    if not os.path.exists('margins'):
+        os.mkdir('margins')
 
     # parses single image
     if 'img_name' in params:
