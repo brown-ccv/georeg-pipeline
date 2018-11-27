@@ -105,7 +105,7 @@ def city_scorer(str1, str2):
 
 def city_match(city):
 	cty, score = process.extractOne(city, city_dict.keys(), scorer = city_scorer)
-	if score > 60:
+	if score > 85:
 		print(cty + ', score = ' + str(score))
 		return city_dict[cty]
 	else:

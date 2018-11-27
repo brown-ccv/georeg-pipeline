@@ -8,12 +8,19 @@ import pickle as pkl
 
 ri_streets_table = pd.read_pickle('stZipCty')
 street_patt = re.compile(r"(^\d+)(.+)")
-#street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
-street_name_dict = {}
+street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))
+#street_name_dict = {}
 
 abbreviations = pd.DataFrame({'Street':['BWAY','WASH'], 'Zip_Code':['BROADWAY', 'WASHINGTON ST'], 'City':['PROVIDENCE','PROVIDENCE']})
+historical_streets = pd.read_csv('historical_streets.csv').dropna()
 
-ri_streets_table = ri_streets_table.append(abbreviations, ignore_index=True)
+ri_streets_table = ri_streets_table.append(abbreviations, ignore_index=True).append(historical_streets, ignore_index=True)
+addr_options = ri_streets_table[ri_streets_table['City'] == 'PROVIDENCE']
+
+
+sts = ['St','Ave','Av','Ct','Dr','Rd','Ln']
+sts += [st.lower() for st in sts]
+sts += [st.upper() for st in sts]
 
 def substitute_directions(inwords):
     outwords = inwords[:]
@@ -28,11 +35,19 @@ def substitute_directions(inwords):
             outwords[i] = 'SOUTH'
     return outwords
 
+def test_func():
+    print('test')
+
 def street_scorer(istr1, istr2):
     str1 = istr1.upper()
     str2 = istr2.upper()
     words1 = substitute_directions(str1.split())
     words2 = substitute_directions(str2.split())
+    if words1[-1] != words2[-1]:
+        if words2[-1] in sts:
+            words2 = words2[:-1]
+        if words1[-1] in sts:
+            words1 = words1[:-1]
     word1 = sorted(words1, key=len, reverse=True)[0]
     word2 = sorted(words2, key=len, reverse=True)[0]
     return (fuzz.ratio(word1, word2) + fuzz.ratio(' '.join(words1), ' '.join(words2)))/2
@@ -91,15 +106,14 @@ class Address(object):
             return
         #print('stnam')
         #print(stnam)
-        sts = ['St','Ave','Av','Ct','Dr','Rd','Ln']
-        sts += [st.lower() for st in sts]
 
         for st in sts:
             if re.match('.*\s' + st + '\s.*', stnam):
                 stnam = stnam.partition(' ' + st + ' ')[0] + ' ' + st
                 break
 
-        stnam = re.sub(' Av$', ' Ave', stnam)
+        stnam = re.sub(' Av$', ' Ave', stnam).replace('- ','')
+        stnam = stnam.partition(' cor ')[0].partition(' corner ')[0].partition(' at ')[0]
         print('stnam')
         print(stnam)
         # Look for best fuzzy matches with a score > cutoff.

@@ -2,7 +2,7 @@ import time
 mt1 = time.time()
 import stringParse, arcgeocoder, address
 import zipcode
-#import sqlalchemy
+import sqlalchemy
 import streetMatch1
 import sys, glob, os, re, datetime
 import pandas as pd
@@ -37,17 +37,9 @@ def streetTable():
     street_df.to_pickle('stZipCty')
     return street_df
 
-def createCache(dataFrame):
-	engine = sqlalchemy.create_engine('sqlite:///../georeg.db', echo=True)
-	#dataFrame = dataFrame.drop_duplicates(['Query'], keep = 'last')
-	#dataFrame = dataFrame.set_index('Query', 1)
-	#dataFrame.assign(fname=dir_dir)
-	dataFrame.to_sql('foutput', engine, if_exists = 'append', index = False)
-
 
 def makeCSV(dataFrame):
 	today = datetime.date.today()
-	#createCache(dataFrame)
 	dataFrame.set_index('Query')
 	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Company_Name'] = dataFrame['Company_Name'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
@@ -58,7 +50,6 @@ def makeCSV(dataFrame):
 	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
-	
 
 def dfProcess(dataFrame):
 	print('Matching city and street...')
@@ -78,7 +69,6 @@ def dfProcess(dataFrame):
 
 def getHorzHist(image):
 	height, width = image.shape[:2]
-
 	i=0
 	histogram = [0]*width
 	#count white pixels in each row
@@ -89,6 +79,7 @@ def getHorzHist(image):
 	return histogram
 
 def getFBP(image_file, sf):
+	fbp_thresh = 3
 	im = cv2.imread(image_file, 0)
 	hhist = getHorzHist(im[5:-5,:])
 	# print(hhist)
@@ -97,14 +88,14 @@ def getFBP(image_file, sf):
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
 	listIntPart = map(int, listStringPart)
-	blackindices = [i for i, x in enumerate(listIntPart) if x > 3]
+	blackindices = [i for i, x in enumerate(listIntPart) if x > fbp_thresh]
 	if len(blackindices) > 0:
 		blackindx = blackindices[0]
 	else:
 		blackindx = 999999999
 	# print(listIntPart, blackindx)
 	cut = len(strpart[0].split(',')) + len(strpart[1].split(','))
-	firstBlackPix = cut + blackindx - 3
+	firstBlackPix = cut + blackindx - fbp_thresh
 	return sf*float(firstBlackPix)
 
 def is_header(fbp, text, file, entry_num):
@@ -128,16 +119,75 @@ def is_header(fbp, text, file, entry_num):
 		else:
 			return False
 
+# def is_header(rel_fbp, text, file, entry_num):
+# 	print(file)
+# 	year = int(file.partition('/')[0].lstrip('cd'))
+# 	if year <= 1954:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 40):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1962:
+# 		## Big problems here
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1968:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year == 1970:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1990:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	else:
+# 		## Tweak threshold
+# 		print("WARNING: Year not in range: ", year)
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
 
-def is_header2(bp, text, file, entry_num):
-	if len([l for l in text if l.isalpha()]) == 0:
-		return False
-	elif (fbp > 200):
-		return True
-	elif (text.lstrip()[0] == '*') and (fbp > 100):
-		return True
-	else:
-		return False
 
 def ocr_file(file, api):
 	image = Image.open(file)
@@ -188,6 +238,7 @@ def process(folder, params):
 				for file in file_list:
 					flat_ocr_results.append(ocr_file(file, api))
 		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		print(raw_data)
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -205,8 +256,6 @@ def process(folder, params):
 
 	print('Concatenating entries...')
 	t1 = time.time()
-
-	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['first_black_pixel'], row['text'], row['file'], row['entry_num']), axis=1))
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(1,raw_data.shape[0]))
 	tb = time.time()
@@ -228,7 +277,12 @@ def process(folder, params):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
+	print(raw_data.head(10))
+
+	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
+	print(raw_data["is_header"])
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
+	print(is_header_dict)
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
@@ -309,9 +363,28 @@ def process(folder, params):
 		search_list = [(i, params['stringParse']) for i in data['Text'].tolist()]
 		output_tuples = pool.map(stringParse.search, search_list)
 	else:
-		output_tuples = [stringParse.search((search_text, params['stringParse'])) for search_text in data['Text'].tolist()]
-	streets,company_names = zip(*output_tuples)
+		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
+	#streets,company_names = zip(*output_tuples)
+	streets = [output_tuple[0] for output_tuple in output_tuples]
+	company_names = [output_tuple[1] for output_tuple in output_tuples]
 	data = data.assign(Street=streets, Company_Name=company_names)
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+
+	print('Expanding...')
+	t1 = time.time()
+	#data_list = [row for row in data.iterrows()]
+	expanded_data_list = []
+	for index,row in data.iterrows():
+		if type(row['Street']) == list:
+			row_streets = row['Street']
+			new_row = row.copy()
+			for street in row_streets:
+				new_row['Street'] = street
+				expanded_data_list.append(new_row.copy())
+		else:
+			expanded_data_list.append(row)
+	data = pd.DataFrame(expanded_data_list)
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
