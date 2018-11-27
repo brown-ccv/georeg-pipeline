@@ -53,7 +53,6 @@ def makeCSV(dataFrame):
 	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
-	
 
 def dfProcess(dataFrame):
 	print('Matching city and street...')
@@ -73,7 +72,6 @@ def dfProcess(dataFrame):
 
 def getHorzHist(image):
 	height, width = image.shape[:2]
-
 	i=0
 	histogram = [0]*width
 	#count white pixels in each row
@@ -103,94 +101,95 @@ def getFBP(image_file, sf):
 	firstBlackPix = cut + blackindx - fbp_thresh
 	return sf*float(firstBlackPix)
 
-# def is_header_deprecated(fbp, text, file, entry_num):
-# 	year = int(file.partition('/')[0].lstrip('cd'))
-# 	if year > 1955:
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 			return False
-# 		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		else:
-# 			return False
-# 	else:
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 			return False
-# 		elif (fbp > 40):
-# 			return True
-# 		elif (text.lstrip()[0] == '*') and (fbp > 30):
-# 			return True
-# 		else:
-# 			return False
-
-def is_header(rel_fbp, text, file, entry_num):
+def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
-	if year <= 1954:
-		## Tweak threshold
+	if year > 1955:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (rel_fbp > 40):
-			return True
-		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
-			return True
-		else:
-			return False
-	elif year <= 1962:
-		## Big problems here
-		if len([l for l in text if l.isalpha()]) == 0:
-			return False
-		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
-		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
-			return True
-		else:
-			return False
-	elif year <= 1968:
-		## Tweak threshold
-		if len([l for l in text if l.isalpha()]) == 0:
-				return False
-		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
-		else:
-			return False
-	elif year == 1970:
-		## Tweak threshold
-		if len([l for l in text if l.isalpha()]) == 0:
-				return False
-		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
-		else:
-			return False
-	elif year <= 1990:
-		## Tweak threshold
-		if len([l for l in text if l.isalpha()]) == 0:
-				return False
-		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
 	else:
-		## Tweak threshold
-		print("WARNING: Year not in range: ", year)
 		if len([l for l in text if l.isalpha()]) == 0:
-				return False
-		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+			return False
+		elif (fbp > 40):
 			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
 			return True
 		else:
 			return False
+
+# def is_header(rel_fbp, text, file, entry_num):
+# 	print(file)
+# 	year = int(file.partition('/')[0].lstrip('cd'))
+# 	if year <= 1954:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 40):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1962:
+# 		## Big problems here
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1968:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year == 1970:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1990:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	else:
+# 		## Tweak threshold
+# 		print("WARNING: Year not in range: ", year)
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
 
 
 def ocr_file(file, api):
@@ -205,13 +204,7 @@ def ocr_file(file, api):
 	sf = float(width)/float(2611)
 	fbp = getFBP(file, sf)
 	entry_num = int(file.rpartition('_')[2].rpartition('.png')[0])
-	word_attrs = api.GetIterator().WordFontAttributes()
-	if word_attrs is None:
-		print("WARNING: Could not find word_attrs, sending none")
-		word_attrs = {"error": "No word_attrs found"}
-	else:
-		word_attrs["error"] = "None"
-	return file,text,fbp,sf,entry_num,word_attrs
+	return file,text,fbp,sf,entry_num
 
 def chunk_process_ocr(chunk_files):
 	'''We process the OCR in chunks to avoid having to reload the API each time.'''
@@ -247,7 +240,8 @@ def process(folder, do_OCR=True, make_table=False):
 			with PyTessBaseAPI() as api:
 				for file in file_list:
 					flat_ocr_results.append(ocr_file(file, api))
-		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num', 'word_attrs'])
+		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		print(raw_data)
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -367,7 +361,7 @@ def process(folder, do_OCR=True, make_table=False):
 
 	print('Parsing text...')
 	t1 = time.time()
-	do_multiprocessing = False
+	do_multiprocessing = True
 	if do_multiprocessing:
 		pool = multiprocessing.Pool(4)
 		output_tuples = pool.map(stringParse.search, data['Text'].tolist())
