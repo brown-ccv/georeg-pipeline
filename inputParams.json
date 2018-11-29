@@ -5,9 +5,9 @@
     "img_name": "1976_page_100",
     "ads": false,
     "margins": false,
-    "columns": true,
+    "columns": false,
     "entries": false,
-    "parse": false
+    "parse": true
     },
   "no_ads": {
     "do_multiprocessing": true,
@@ -34,10 +34,9 @@
   "parse": {
     "do_multiprocessing": true,
     "pool_num": 2,
-    "do_ocr": false,
+    "do_ocr": true,
     "make_table": false,
     "stringParse" : {
-      "do_regex": true
     }
   }
 }
