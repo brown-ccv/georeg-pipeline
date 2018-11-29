@@ -84,18 +84,20 @@ def getHorzHist(image):
 def getFBP(image_file, sf):
 	fbp_thresh = 3
 	im = cv2.imread(image_file, 0)
-	hhist = getHorzHist(im[5:-5,:])
+	h,w = im.shape[:2]
+	hlow = int(float(h)*0.25)
+	hhigh = int(float(h)*0.75)
+	hhist = getHorzHist(im[hlow:hhigh,:])
 	# print(hhist)
 	#get location of first black pixel
 	histstr = ','.join([str(li) for li in hhist])
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
 	listIntPart = map(int, listStringPart)
-	blackindices = [i for i, x in enumerate(listIntPart) if x > fbp_thresh]
-	if len(blackindices) > 0:
-		blackindx = blackindices[0]
-	else:
-		blackindx = 999999999
+	i=0
+	while ((listIntPart[min(i,len(listIntPart)-1)] < fbp_thresh) or (listIntPart[min(i+2,len(listIntPart)-1)] < fbp_thresh)) and (i < len(listIntPart)):
+		i+=1
+	blackindx = i
 	# print(listIntPart, blackindx)
 	cut = len(strpart[0].split(',')) + len(strpart[1].split(','))
 	firstBlackPix = cut + blackindx - fbp_thresh
@@ -103,7 +105,49 @@ def getFBP(image_file, sf):
 
 def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
-	if year > 1955:
+	if year <= 1954:
+ 		## Tweak threshold
+ 		if len([l for l in text if l.isalpha()]) == 0:
+ 			return False
+ 		elif (fbp > 40):
+ 			return True
+ 		elif (text.lstrip()[0] == '*') and (fbp > 30):
+ 			return True
+ 		else:
+ 			return False
+ 	elif year <= 1962:
+ 		## Big problems here
+ 		if len([l for l in text if l.isalpha()]) == 0:
+ 			return False
+ 		elif (fbp > 42):
+ 			return True
+ 		elif (fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+ 			return True
+ 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+ 			return True
+ 		elif (text.lstrip()[0] == '*') and (fbp > 35):
+ 			return True
+ 		else:
+ 			return False
+ 	elif year <= 1968:
+		if len([l for l in text if l.isalpha()]) == 0:
+			return False
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+			return True
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+			return True
+		else:
+			return False
+	elif year == 1970:
+		if len([l for l in text if l.isalpha()]) == 0:
+			return False
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+			return True
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+			return True
+		else:
+			return False
+	elif year <= 1990:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
 		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
@@ -115,9 +159,9 @@ def is_header(fbp, text, file, entry_num):
 	else:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 40):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (text.lstrip()[0] == '*') and (fbp > 30):
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
@@ -228,9 +272,10 @@ def process(folder, do_OCR=True, make_table=False):
 		print('Doing OCR')
 		t1 = time.time()
 		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
+		print('Processing ' + str(len(file_list)) + ' files...')
 		do_multiprocessing = True
 		if do_multiprocessing:
-			pool = multiprocessing.Pool(4)
+			pool = multiprocessing.Pool(6)
 			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
 			chunk_list = [file_list[i:i + chunk_size] for i in list(range(0, len(file_list), chunk_size))]
 			ocr_results = pool.map(chunk_process_ocr, chunk_list)
@@ -239,12 +284,11 @@ def process(folder, do_OCR=True, make_table=False):
 			flat_ocr_results = []
 			with PyTessBaseAPI() as api:
 				for file in file_list:
+					print(file)
 					flat_ocr_results.append(ocr_file(file, api))
 		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
-		print(raw_data)
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
-
 		print('Saving...')
 		t1 = time.time()
 		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
@@ -260,7 +304,7 @@ def process(folder, do_OCR=True, make_table=False):
 	print('Concatenating entries...')
 	t1 = time.time()
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
-	ilist = list(range(1,raw_data.shape[0]))
+	ilist = list(range(0,raw_data.shape[0]))
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
@@ -271,21 +315,20 @@ def process(folder, do_OCR=True, make_table=False):
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	def get_relative_fbp(i):
 		pbi = page_break[i]
-		if i == pbi:
-			rval = 0
+		if i <= pbi + 8:
+			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(pbi,pbi+8))])
 		else:
-			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(max(pbi,i-8),i))])
+			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(i-8,i))])
 		return rval
-	raw_data = raw_data.assign(relative_fbp = [0.0] + [get_relative_fbp(i) for i in ilist])
+	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
-	print(raw_data.head(10))
+	#print(raw_data.head(10))
 
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
-	print(raw_data["is_header"])
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
-	print(is_header_dict)
+	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
@@ -299,6 +342,8 @@ def process(folder, do_OCR=True, make_table=False):
 		elif is_header_dict[i] and is_header_dict[i-1]:
 			return True
 		elif (not is_header_dict[i]) and is_header_dict[i+1]:
+			return False
+		elif (not is_header_dict[i]) and (entry_num_dict[i+1] == 1):
 			return False
 		elif raw_data.iloc[i+1]['relative_fbp'] > 9.0:
 			return True
@@ -320,7 +365,6 @@ def process(folder, do_OCR=True, make_table=False):
 	cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
 	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
 	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
-	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	for index in raw_data.index:
