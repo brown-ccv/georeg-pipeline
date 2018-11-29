@@ -1,12 +1,12 @@
 {
   "year_folder": "cd1976",
-  "single_image": false,
-  "img_name": "1976_page_100",
-  "run": {
-    "ads": true,
-    "margins": true,
+  "image_process": {
+    "single_image": false,
+    "img_name": "1976_page_100",
+    "ads": false,
+    "margins": false,
     "columns": true,
-    "entries": true,
+    "entries": false,
     "parse": false
     },
   "no_ads": {

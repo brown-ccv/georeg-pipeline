@@ -89,7 +89,7 @@ def search(str_param_tuple):
 				#print('Regex failure: no number found')
 				street, companyName = 'N/A', 'N/A'
 
-			cut_strs = [' rm ', ' Rm ', ' suites ', ' Suites ', ' fl ', ' Fl ', 'st fl', 'rd fl', 'th fl']
+			cut_strs = [' rm ', ' Rm ', ' suites ', ' Suites ', ' fl ', ' Fl ', '1st fl', '2d fl', '3d fl', '4th fl', '5th fl', 'th fl']
 
 			for cut_str in cut_strs:
 				street = street.partition(cut_str)[0]

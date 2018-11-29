@@ -15,43 +15,42 @@ if __name__ == '__main__':
 	with open(inputParams) as json_data:
 		d = json.load(json_data)
 
-
 	os.chdir(d['year_folder'])
-
-	#checks if you only wish to parse a single image. 
+	img_p = d['image_process']
 	all_params = [d['no_ads'], d['margins'],d['columns'],d['entries']]
-	if d['single_image']:
-		for p in all_params:
-			p.update({'img_name': d['img_name']})
-		ads.rmAds(all_params[0])
-		margins.marginCrop(all_params[1])
-		columnCrop.doCrop(all_params[2])
-		entryChop.entryChop(all_params[3])
-		parse.main(d)
-
 	
-	#print('Removing ads...')
-	# #t1 = time.time()
-	# ads.rmAds(d['no_ads'])
-	# #t2 = time.time()
-	# #print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	# #print('Cropping margins...')
-	# #t1 = time.time()
-	# margins.marginCrop(d['margins'])
-	# #t2 = time.time()
-	# #print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	# #print('Cropping columns...')
-	# #t1 = time.time()
-	# columnCrop.doCrop(d['columns'])
-	# # t2 = time.time()
-	# # print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	# # print('Chopping entries...')
-	# # t1 = time.time()
-	# entryChop.entryChop(d['entries'])
+	#checks if you only wish to parse a single image. 
+	if img_p['single_image']:
+		for p in all_params:
+			p.update({'img_name': img_p['img_name']})
+	
+	# print('Removing ads...')
+	# t1 = time.time()
+	if img_p['ads']:
+		ads.rmAds(all_params[0])
 	# t2 = time.time()
 	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
-	os.chdir("..")
-	parse.main(d)
+	# print('Cropping margins...')
+	# t1 = time.time()
+	if img_p['margins']:
+		margins.marginCrop(all_params[1])
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# print('Cropping columns...')
+	# t1 = time.time()
+	if img_p['columns']:
+		columnCrop.doCrop(all_params[2])
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# print('Chopping entries...')
+	# t1 = time.time()
+	if img_p['entries']:
+		entryChop.entryChop(all_params[3])
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	if img_p['parse']:
+		os.chdir("..")
+		parse.main(d)
 
 mt2 = time.time()
 print('Full runtime: ' + str(round(mt2-mt1, 2)) + ' s')
