@@ -228,7 +228,11 @@ def entryChop(params):
         os.mkdir(nDirectory)
 
     # create file/param lists
-    x = sorted(glob.glob(os.getcwd() + "/columns/*.png"), key=naturalSort)
+    x = []
+    if 'img_name' in params:
+        x = sorted(glob.glob(os.getcwd() + "/columns/" + params['img_name'] + " *.png"), key=naturalSort)
+    else:
+        x = sorted(glob.glob(os.getcwd() + "/columns/*.png"), key=naturalSort)
     files_and_params = [(i, params) for i in x]
 
     # map files/params to entry_wrapper

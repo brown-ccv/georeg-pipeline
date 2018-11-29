@@ -122,9 +122,13 @@ def cleanImage(image):
 def marginCrop(params):
 
     #make margins dir.
-    nDirectory = 'margins'
-    if not os.path.exists(nDirectory):
-        os.mkdir(nDirectory)
+    if not os.path.exists('margins'):
+        os.mkdir('margins')
+
+    # parses single image
+    if 'img_name' in params:
+        cropMargins((os.getcwd() + "/no_ads/" + params['img_name'] + ".png", params))
+        return
 
     #create list of image/param tuples.
     x = sorted(glob.glob(os.getcwd() + "/no_ads/*.png"), key=naturalSort)

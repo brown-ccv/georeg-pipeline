@@ -20,12 +20,14 @@ def split_on_st(string, st):
 			rtuple = ' '.join(words[:i+1]).partition(' ' + words[j] + ' ')
 			return rtuple[0],(rtuple[1] + rtuple[2]), False
 
-def search(input_string):
+def search(str_param_tuple):
+	input_string, params = str_param_tuple
 	regex = '(\D+)(\s\d+\s)(.+)'
 
 	string = input_string.partition(' tel ')[0].partition(' tels ')[0].partition(' Tel ')[0].partition(' Tels ')[0]
 	string = string.partition(' telephone')[0].partition(' Telephone')[0].partition('-See ')[0].partition('See page')[0]
 	string = string.partition(' phone')[0].partition(' phone')[0]
+
 
 	text_words = string.split()
 	text_words = string.split()
@@ -34,7 +36,6 @@ def search(input_string):
 		cut_text_words = string[cut_text.span()[0]:].split()
 	else:
 		cut_text_words = text_words
-
 	if 'and' in cut_text_words and text_words[min(text_words.index('and') + 1, len(text_words) - 1)] not in ['page', 'pages']:
 		#print(string)
 		words = string.replace(',',' ').replace(' and ',' ').split()
@@ -63,13 +64,12 @@ def search(input_string):
 	else: 
 
 		#print('Parsing: ' + string)
-		do_regex = True
 
 		for st in sts:
 			if re.match('.+\s' + st + '\s.*', string) or re.match('.+\s' + st + '$', string):
 				companyName, street, do_regex = split_on_st(string, st)
 		
-		if do_regex:
+		if params['do_regex']:
 			str_list = string.split()
 			if '0' in str_list:
 				str_list.remove('0')
