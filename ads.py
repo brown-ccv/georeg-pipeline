@@ -6,6 +6,7 @@ from matplotlib import pyplot as plt
 import time
 from multiprocessing import Pool
 import shutil
+import pickle as pkl
 
 #Removes the ads
 
@@ -19,42 +20,65 @@ def cleanImage(image):
     closed = cv2.morphologyEx(closed, cv2.MORPH_OPEN, kernel)
     return closed
 
-def removeAds(im_bw, file, do_diagnostics):
+def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
+    chop_file = file.rpartition("/")[2].partition('.jp2')[0]
     height,width = im_bw.shape[:2]
-    cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), 100)
+    sf = float(height + width)/float(13524 + 9475)
+    cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), int(150*sf))
     im_bw_copy = im_bw.copy()
     if do_diagnostics:
-        cv2.imwrite(os.path.join('no_ads', file.partition('.jp2')[0] + '.bw_test.jpg'), im_bw)
+        cv2.imwrite(os.path.join('no_ads', chop_file + '_bw_test.jpg'), im_bw)
     blank_image = np.zeros((height,width,3), np.uint8)
     white_image = 255.0 * np.ones((height,width), np.uint8)
-    sf = float(height + width)/float(13524 + 9475)
-    minContour = 3000 * sf
+    minContour = perimeter_cutoff * sf
     im2, contours, hierarchy = cv2.findContours(im_bw_copy,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
     for cnt in contours:
         perimeter = cv2.arcLength(cnt, True)
-        if perimeter > minContour:
-        #x,y,w,h = cv2.boundingRect(cnt)
-        #contourA = w*h
-        #if contourA > minContour:
+        #if perimeter > minContour:
+        x,y,w,h = cv2.boundingRect(cnt)
+        contourA = (2*(w+h))**2 / max(perimeter,1)
+        if contourA > minContour:
             #print(perimeter)
             cv2.drawContours(blank_image, [cnt], -1, (0,255,0), 3)
-            x,y,w,h = cv2.boundingRect(cnt)
+            #x,y,w,h = cv2.boundingRect(cnt)
             bottom = max([vertex[0][1] for vertex in cnt])
             top = min([vertex[0][1] for vertex in cnt])
             left = min([vertex[0][0] for vertex in cnt])
             right = max([vertex[0][0] for vertex in cnt])
             if (w > (width / 2)) and (bottom < (height * 0.75)):
-                cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
+                drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                y = bottom
+                while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y > 0):
+                    y -= 1
+                cv2.rectangle(im_bw,(0,0),(width,y), (255,255,255), -1)
+                cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
             if (w > (width / 2)) and (top > (height * 0.85)):
+                drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                y = top
+                while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y < (height - 1)):
+                    y += 1
                 cv2.rectangle(im_bw,(0,top),(width,height), (255,255,255), -1)
+                cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
             #if (w > (width / 2)) and (top > (height * 0.90)):
                 #cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
             if (w * h) < 0.9 * width * height:
                 cv2.drawContours(white_image, [cnt], -1, (0,0,0), -1)
-                if h > (0.1 * float(height)) and right < (0.25 * float(width)):
-                    cv2.rectangle(im_bw,(0,0),(right,height), (255,255,255), -1)
-                elif h > (0.1 * float(height)) and left > (0.75 * float(width)):
-                    cv2.rectangle(im_bw,(left,0),(width,height), (255,255,255), -1)
+                if h > (0.15 * float(height)) and right < (0.25 * float(width)):
+                    drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                    x = right
+                    while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x > 0):
+                        x -= 1
+                    x = max(0,x-int(sf*15))
+                    cv2.rectangle(im_bw,(0,0),(x,height), (255,255,255), -1)
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+                elif h > (0.15 * float(height)) and left > (0.75 * float(width)):
+                    drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                    x = left
+                    while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x < (width - 1)):
+                        x += 1
+                    x = max(0,x+int(sf*15))
+                    cv2.rectangle(im_bw,(x,0),(width,height), (255,255,255), -1)
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
                 #elif ((height - bottom) < 11) or (top < 11):
                     #o_vertices = cv2.approxPolyDP(cnt, 0.005*perimeter, True)
                     #approx = cv2.convexHull(o_vertices, clockwise=True)
@@ -67,9 +91,9 @@ def removeAds(im_bw, file, do_diagnostics):
                     #cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
     #cv2.imwrite(os.path.join(nDirectory, file), original)
     if do_diagnostics:
-        cv2.imwrite(os.path.join('no_ads', file.partition('.jp2')[0] + '.white.jpg'), white_image)
+        cv2.imwrite(os.path.join('no_ads', chop_file + '_white.jpg'), white_image)
     if do_diagnostics:
-        cv2.imwrite(os.path.join('no_ads', file.partition('.jp2')[0] + '.contours.jpg'), blank_image)
+        cv2.imwrite(os.path.join('no_ads', chop_file + '_contours.jpg'), blank_image)
     return im_bw
 
 def noAds(image, area):
@@ -77,7 +101,7 @@ def noAds(image, area):
     noAds = removeAds(image, area)
     return noAds
 
-def get_binary(file, threshold_dict, do_plots):
+def get_binary(file, threshold_dict, do_diagnostics, do_plots):
     nDirectory = 'no_ads'
     t1 = time.time()
     
@@ -87,7 +111,8 @@ def get_binary(file, threshold_dict, do_plots):
     #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     #original = clahe.apply(uneq)
     #original = cv2.equalizeHist(uneq)
-    cv2.imwrite(os.path.join(nDirectory, file.partition('jp2')[0] + '_eq.jpg'), original)
+    if do_diagnostics:
+        cv2.imwrite(os.path.join(nDirectory, file.rpartition("/")[2].partition('.jp2')[0] + '_gray.jpg'), original)
     t2 = time.time()
     #print('Image read time: ' + str(round(t2-t1, 2)) + ' s')
     h, w = original.shape[:2]
@@ -142,20 +167,20 @@ def process_image(input_tuple):
     file, params = input_tuple
 
     t1 = time.time()
-    im_bw = get_binary(file, params['threshold'], params['do_plots'])
+    im_bw = get_binary(file, params['threshold'], params['do_diagnostics'], params['do_plots'])
     t2 = time.time()
     #print('Binary conversion time: ' + str(round(t2-t1, 2)) + ' s')
     #cv2.imwrite(os.path.join('no_ads', file + 'bw_test.jpg'), im_bw)
     #im = cleanImage(original)
     t1 = time.time()
-    removeAds(im_bw, file, params['do_diagnostics'])
+    removeAds(im_bw, file, params['do_diagnostics'], params['perimeter_cutoff'])
     t2 = time.time()
     #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
 
     # write output images
-    file = file.split("/")[2]
     t1 = time.time()
-    cv2.imwrite(os.path.join('no_ads', file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
+    chop_file = file.rpartition("/")[2]
+    cv2.imwrite(os.path.join('no_ads', chop_file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
     t2 = time.time()
     #print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
     print file + '-no ads'

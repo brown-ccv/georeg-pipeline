@@ -262,8 +262,8 @@ def process(folder, params):
 	if make_table:
 		streetTable()
 	if do_OCR and 'img' in params:
+		print("singly")
 		files = sorted(glob.glob(folder + params['img'] + "*.png"), key = naturalSort)
-		print(files)
 		texts = []
 		first_black_pixels = []
 		sfs = []

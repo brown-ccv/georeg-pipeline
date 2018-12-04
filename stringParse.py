@@ -25,6 +25,7 @@ def search(str_param_tuple):
 	regex = '(\D+)(\s\d+\s)(.+)'
 
 	string = input_string.partition(' tel ')[0].partition(' tels ')[0].partition(' Tel ')[0].partition(' Tels ')[0]
+	string = string.partition(' TEL ')[0].partition(' TELS ')[0].partition('(See ')[0]
 	string = string.partition(' telephone')[0].partition(' Telephone')[0].partition('-See ')[0].partition('See page')[0]
 	string = string.partition(' phone')[0].partition(' phone')[0]
 
@@ -64,12 +65,14 @@ def search(str_param_tuple):
 	else: 
 
 		#print('Parsing: ' + string)
+		
+		do_regex = True
 
 		for st in sts:
 			if re.match('.+\s' + st + '\s.*', string) or re.match('.+\s' + st + '$', string):
 				companyName, street, do_regex = split_on_st(string, st)
 		
-		if params['do_regex']:
+		if do_regex:
 			str_list = string.split()
 			if '0' in str_list:
 				str_list.remove('0')
