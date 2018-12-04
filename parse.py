@@ -263,7 +263,8 @@ def process(folder, params):
 		streetTable()
 	if do_OCR and 'img' in params:
 		print("singly")
-		files = sorted(glob.glob(folder + params['img'] + "*.png"), key = naturalSort)
+		file_list = sorted(glob.glob(folder +"/" +  params['img'] + "*.png"), key = naturalSort)
+		#files = []
 		texts = []
 		first_black_pixels = []
 		sfs = []
@@ -271,11 +272,10 @@ def process(folder, params):
 		flat_ocr_results = []
 		with PyTessBaseAPI() as api:
 			for file in file_list:
-				print(file)
 				flat_ocr_results.append(ocr_file(file, api))
 		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
 		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
-		raw_data = pd.concat([raw_data[raw_data.file != files[0], single_raw_data]])
+		raw_data = pd.concat([raw_data[~raw_data.file.isin(file_list)], single_raw_data])
 		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
 	elif do_OCR:
 		files = []
