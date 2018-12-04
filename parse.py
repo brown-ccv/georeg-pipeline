@@ -261,7 +261,23 @@ def process(folder, params):
 	#Make the zip code to city lookup table
 	if make_table:
 		streetTable()
-	if do_OCR:
+	if do_OCR and 'img' in params:
+		files = sorted(glob.glob(folder + params['img'] + "*.png"), key = naturalSort)
+		print(files)
+		texts = []
+		first_black_pixels = []
+		sfs = []
+		entry_nums = []
+		flat_ocr_results = []
+		with PyTessBaseAPI() as api:
+			for file in file_list:
+				print(file)
+				flat_ocr_results.append(ocr_file(file, api))
+		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
+		raw_data = pd.concat([raw_data[raw_data.file != files[0], single_raw_data]])
+		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
+	elif do_OCR:
 		files = []
 		texts = []
 		first_black_pixels = []
@@ -448,6 +464,8 @@ def main(inputParams):
 	global dir_dir
 	dir_dir = "./" + inputParams['year_folder']
 	
+	if inputParams['image_process']['single_image']:
+		inputParams['parse']['img'] = inputParams['image_process']['img_name']
 	process(inputParams['year_folder'] + '/entry', inputParams['parse'])
 	mt2 = time.time()
 	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
