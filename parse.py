@@ -252,6 +252,7 @@ def chunk_process_ocr(chunk_files):
 	rlist = []
 	with PyTessBaseAPI() as api:
 		for file in chunk_files:
+			print(file)
 			rlist.append(ocr_file(file, api))
 	return rlist
 
@@ -262,7 +263,6 @@ def process(folder, params):
 	if make_table:
 		streetTable()
 	if do_OCR and 'img' in params:
-		print("singly")
 		file_list = sorted(glob.glob(folder +"/" +  params['img'] + "*.png"), key = naturalSort)
 		#files = []
 		texts = []
@@ -275,7 +275,7 @@ def process(folder, params):
 				flat_ocr_results.append(ocr_file(file, api))
 		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
 		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
-		raw_data = pd.concat([raw_data[~raw_data.file.isin(file_list)], single_raw_data])
+		raw_data = pd.concat([raw_data[~raw_data.file.isin(file_list)], single_raw_data], ignore_index = True)
 		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
 	elif do_OCR:
 		files = []
