@@ -10,8 +10,6 @@ import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
-import locale
-locale.setlocale(locale.LC_ALL, 'C')
 from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
@@ -93,9 +91,7 @@ def getFBP(image_file, sf):
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
 	listIntPart = map(int, listStringPart)
-
 	i=0
-	# checks twice ahead to see for black pixels
 	while ((listIntPart[min(i,len(listIntPart)-1)] < fbp_thresh) or (listIntPart[min(i+2,len(listIntPart)-1)] < fbp_thresh)) and (i < len(listIntPart)):
 		i+=1
 	blackindx = i
@@ -104,20 +100,11 @@ def getFBP(image_file, sf):
 	firstBlackPix = cut + blackindx - fbp_thresh
 	return sf*float(firstBlackPix)
 
-def count_upper(text):
-	return float(len([l for l in text if l.isupper()]))
-
-def count_alpha(text):
-	return float(len([l for l in text if l.isalpha()]))
-
-def count_alnum(text):
-	return float(len([l for l in text if l.isalnum()]))
-
 def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
 	if year <= 1954:
  		## Tweak threshold
- 		if int(count_alpha(text)) == 0:
+ 		if len([l for l in text if l.isalpha()]) == 0:
  			return False
  		elif (fbp > 40):
  			return True
@@ -126,57 +113,127 @@ def is_header(fbp, text, file, entry_num):
  		else:
  			return False
  	elif year <= 1962:
- 		if int(count_alpha(text)) == 0:
+ 		## Big problems here
+ 		if len([l for l in text if l.isalpha()]) == 0:
  			return False
  		elif (fbp > 42):
  			return True
- 		elif (fbp > 35) and (count_upper(text)/count_alnum(text) > 0.9):
+ 		elif (fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
  			return True
- 		elif (entry_num < 3) and (count_upper(text)/count_alnum(text) > 0.95):
+ 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
  			return True
  		elif (text.lstrip()[0] == '*') and (fbp > 35):
  			return True
  		else:
  			return False
  	elif year <= 1968:
-		if int(count_alpha(text)) == 0:
+		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 42) and (count_upper(text)/count_alnum(text) > 0.9):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (entry_num < 3) and (count_upper(text)/count_alnum(text) > 0.95):
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
 	elif year == 1970:
-		if int(count_alpha(text)) == 0:
+		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and (count_upper(text)/count_alnum(text) > 0.9):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (entry_num < 3) and (count_upper(text)/count_alnum(text) > 0.95):
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
 	elif year <= 1990:
-		if int(count_alpha(text)) == 0:
+		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and (count_upper(text)/count_alnum(text) > 0.9):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (entry_num < 3) and (count_upper(text)/count_alnum(text) > 0.95):
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
 	else:
-		if int(count_alpha(text)) == 0:
+		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and (count_upper(text)/count_alnum(text) > 0.9):
+		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
 			return True
-		elif (entry_num < 3) and (count_upper(text)/count_alnum(text) > 0.95):
+		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
 			return True
 		else:
 			return False
 
+# def is_header(rel_fbp, text, file, entry_num):
+# 	print(file)
+# 	year = int(file.partition('/')[0].lstrip('cd'))
+# 	if year <= 1954:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 40):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1962:
+# 		## Big problems here
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 			return False
+# 		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1968:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year == 1970:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	elif year <= 1990:
+# 		## Tweak threshold
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+# 	else:
+# 		## Tweak threshold
+# 		print("WARNING: Year not in range: ", year)
+# 		if len([l for l in text if l.isalpha()]) == 0:
+# 				return False
+# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+# 			return True
+# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+# 			return True
+# 		else:
+# 			return False
+
+
 def ocr_file(file, api):
-	print("Processing a file...")
 	image = Image.open(file)
 	api.SetImage(image)
 	api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -195,16 +252,32 @@ def chunk_process_ocr(chunk_files):
 	rlist = []
 	with PyTessBaseAPI() as api:
 		for file in chunk_files:
+			print(file)
 			rlist.append(ocr_file(file, api))
 	return rlist
 
 def process(folder, params):
 	do_OCR = params['do_ocr']
 	make_table = params['make_table']
-	# Make the zip code to city lookup table
+	#Make the zip code to city lookup table
 	if make_table:
 		streetTable()
-	if do_OCR:
+	if do_OCR and 'img' in params:
+		file_list = sorted(glob.glob(folder +"/" +  params['img'] + "*.png"), key = naturalSort)
+		#files = []
+		texts = []
+		first_black_pixels = []
+		sfs = []
+		entry_nums = []
+		flat_ocr_results = []
+		with PyTessBaseAPI() as api:
+			for file in file_list:
+				flat_ocr_results.append(ocr_file(file, api))
+		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
+		raw_data = pd.concat([raw_data[~raw_data.file.isin(file_list)], single_raw_data], ignore_index = True)
+		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
+	elif do_OCR:
 		files = []
 		texts = []
 		first_black_pixels = []
@@ -390,7 +463,9 @@ def process(folder, params):
 def main(inputParams):
 	global dir_dir
 	dir_dir = "./" + inputParams['year_folder']
-
+	
+	if inputParams['image_process']['single_image']:
+		inputParams['parse']['img'] = inputParams['image_process']['img_name']
 	process(inputParams['year_folder'] + '/entry', inputParams['parse'])
 	mt2 = time.time()
 	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
