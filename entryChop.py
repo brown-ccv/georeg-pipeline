@@ -188,7 +188,7 @@ def fineCrop(image):
 def entry_wrapper(file_param_tuple):
     crop_points_dict = {}
     file, params = file_param_tuple
-    print 'Chopping: ' + file
+    #print 'Chopping: ' + file
     fileN = file[:-4].split("/")[-1]
     ext = file[-4:]
     #t1 = time.time()
