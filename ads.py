@@ -50,6 +50,8 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
                 y = bottom
                 while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y > 0):
                     y -= 1
+                if y < top:
+                    y = bottom
                 cv2.rectangle(im_bw,(0,0),(width,y), (255,255,255), -1)
                 cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
             if (w > (width / 2)) and (top > (height * 0.85)):
@@ -57,6 +59,8 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
                 y = top
                 while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y < (height - 1)):
                     y += 1
+                if y > bottom:
+                    y = top
                 cv2.rectangle(im_bw,(0,top),(width,height), (255,255,255), -1)
                 cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
             #if (w > (width / 2)) and (top > (height * 0.90)):
@@ -68,7 +72,9 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
                     x = right
                     while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x > 0):
                         x -= 1
-                    x = max(0,x-int(sf*15))
+                    #x = max(0,x-int(sf*15))
+                    if x < left:
+                        x = right
                     cv2.rectangle(im_bw,(0,0),(x,height), (255,255,255), -1)
                     cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
                 elif h > (0.15 * float(height)) and left > (0.75 * float(width)):
@@ -76,7 +82,9 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
                     x = left
                     while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x < (width - 1)):
                         x += 1
-                    x = max(0,x+int(sf*15))
+                    #x = max(0,x+int(sf*15))
+                    if x > right:
+                        x = left
                     cv2.rectangle(im_bw,(x,0),(width,height), (255,255,255), -1)
                     cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
                 #elif ((height - bottom) < 11) or (top < 11):
@@ -107,6 +115,8 @@ def get_binary(file, threshold_dict, do_diagnostics, do_plots):
     
     original = cv2.imread(file, 0)
 
+    chop_file = file.partition('.jp2')[0]
+
     #uneq = cv2.imread(file, 0)
     #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     #original = clahe.apply(uneq)
@@ -122,10 +132,10 @@ def get_binary(file, threshold_dict, do_diagnostics, do_plots):
         hist_raw,bins = np.histogram(original.ravel(),256,[0,256])
         if do_plots:
             rfig = plt.figure()
-            plt.plot(hist_raw[:175])
+            plt.plot(hist_raw[:200])
             plt.xlabel('Grayscale Value')
             plt.ylabel('Pixel Count')
-            rfig.savefig(file.partition('.jp2')[0] + '.grayscale_raw.pdf', bbox_inches='tight')
+            rfig.savefig(chop_file + '.grayscale_raw.pdf', bbox_inches='tight')
             plt.close(rfig)
         hist = pd.Series(hist_raw).rolling(20, center=True).mean()
         #h_total = hist.sum()
@@ -133,10 +143,10 @@ def get_binary(file, threshold_dict, do_diagnostics, do_plots):
         h_grad = pd.Series(np.gradient(hist, 20)).rolling(20, center=True).mean()
         if do_plots:
             fig = plt.figure()
-            plt.plot(hist[:175])
+            plt.plot(hist[:200])
             plt.xlabel('Grayscale Value')
             plt.ylabel('Pixel Count')
-            fig.savefig(file.partition('.jp2')[0] + '.grayscale_histogram.pdf', bbox_inches='tight')
+            fig.savefig(chop_file + '.grayscale_histogram.pdf', bbox_inches='tight')
             plt.close(fig)
             #cfig = plt.figure()
             #ax = h_cumulative.plot()
@@ -148,15 +158,16 @@ def get_binary(file, threshold_dict, do_diagnostics, do_plots):
         while threshold<175 and h_grad.iloc[threshold] < g_cutoff:
             threshold += 1
         threshold -= 15
+        #threshold = 145
         # print(threshold)
         os.system('echo "' + file.partition('.jp2')[0] + ',' + str(threshold) + '" >> threshold_used.csv')
         if do_plots:
             gfig = plt.figure()
-            plt.plot(h_grad[:175])
-            plt.plot([0,175],[g_cutoff,g_cutoff])
+            plt.plot(h_grad[:200])
+            plt.plot([0,200],[g_cutoff,g_cutoff])
             plt.xlabel('Grayscale Value')
             plt.ylabel('Gradient of Pixel Count')
-            gfig.savefig(file.partition('.jp2')[0] + '.grayscale_grad.pdf', bbox_inches='tight')
+            gfig.savefig(chop_file + '.grayscale_grad.pdf', bbox_inches='tight')
             plt.close(gfig)
     original_padded = cv2.copyMakeBorder(original[:,:],10,10,10,10, cv2.BORDER_CONSTANT, value=255)
     im_bw = cv2.threshold(original_padded, threshold, 255, cv2.THRESH_BINARY)[1]
