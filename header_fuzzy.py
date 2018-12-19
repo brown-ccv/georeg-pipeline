@@ -47,7 +47,7 @@ def match(headers, true_headers, map_dict):
     for header in headers:
         if header not in map_dict:
             score_list = [(score(header, true_header), true_header) for true_header in true_headers]
-            sorted_score = sorted(score_list, key = lambda tup: tup[0])
+            sorted_score = sorted(score_list, key = lambda tup: tup[0], reverse=True)
             score_tuple = sorted_score[0]
             map_dict[header] = score_tuple
     return map_dict
