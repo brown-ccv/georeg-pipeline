@@ -13,6 +13,7 @@ from PIL import Image
 from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
+from fuzzywuzzy import fuzz, process
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
 dir_dir = ""
@@ -103,7 +104,7 @@ def getFBP(image_file, sf):
 def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
 	if year <= 1954:
- 		## Tweak threshold
+ 		if int(count_alpha(text)) == 0:
  		if len([l for l in text if l.isalpha()]) == 0:
  			return False
  		elif (fbp > 40):
@@ -113,125 +114,57 @@ def is_header(fbp, text, file, entry_num):
  		else:
  			return False
  	elif year <= 1962:
- 		## Big problems here
  		if len([l for l in text if l.isalpha()]) == 0:
  			return False
- 		elif (fbp > 42):
+ 		elif (fbp > 40):
  			return True
  		elif (fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
  			return True
  		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
  			return True
- 		elif (text.lstrip()[0] == '*') and (fbp > 35):
+ 		elif (text.lstrip()[0] == '*') and (fbp > 30):
+ 			return True
+ 		else:
+ 			return False
+ 	if year == 1964:
+ 		if int(count_alpha(text)) == 0:
+ 			return False
+ 		elif (fbp > 40):
+ 			return True
+ 		elif (text.lstrip()[0] == '*') and (fbp > 30):
  			return True
  		else:
  			return False
  	elif year <= 1968:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
-		else:
-			return False
-	elif year == 1970:
-		if len([l for l in text if l.isalpha()]) == 0:
-			return False
-		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
+		elif (fbp > 40):
+ 			return True
+ 		elif (fbp > 30) and (count_upper(text)/count_alnum(text) > 0.9):
+ 			return True
+ 		elif (entry_num < 3) and (fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80):
+ 			return True
+ 		elif (text.lstrip()[0] == '*') and (fbp > 30):
+ 			return True
 		else:
 			return False
 	elif year <= 1990:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (fbp > 22) and (count_upper(text)/count_alnum(text) > 0.9):
 			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-			return True
+		elif (entry_num < 3) and ((fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80) or (count_upper(text)/count_alnum(text) > 0.95)):
 		else:
 			return False
 	else:
 		if len([l for l in text if l.isalpha()]) == 0:
 			return False
-		elif (fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+		elif (fbp > 22) and (count_upper(text)/count_alnum(text) > 0.9):
 			return True
-		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+		elif (entry_num < 3) and ((fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80) or (count_upper(text)/count_alnum(text) > 0.95)):
 			return True
 		else:
 			return False
-
-# def is_header(rel_fbp, text, file, entry_num):
-# 	print(file)
-# 	year = int(file.partition('/')[0].lstrip('cd'))
-# 	if year <= 1954:
-# 		## Tweak threshold
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 			return False
-# 		elif (rel_fbp > 40):
-# 			return True
-# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
-# 			return True
-# 		else:
-# 			return False
-# 	elif year <= 1962:
-# 		## Big problems here
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 			return False
-# 		elif (rel_fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (rel_fbp > 25) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.97):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		elif (text.lstrip()[0] == '*') and (rel_fbp > 30):
-# 			return True
-# 		else:
-# 			return False
-# 	elif year <= 1968:
-# 		## Tweak threshold
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 				return False
-# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		else:
-# 			return False
-# 	elif year == 1970:
-# 		## Tweak threshold
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 				return False
-# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		else:
-# 			return False
-# 	elif year <= 1990:
-# 		## Tweak threshold
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 				return False
-# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		else:
-# 			return False
-# 	else:
-# 		## Tweak threshold
-# 		print("WARNING: Year not in range: ", year)
-# 		if len([l for l in text if l.isalpha()]) == 0:
-# 				return False
-# 		elif (rel_fbp > 29) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
-# 			return True
-# 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
-# 			return True
-# 		else:
-# 			return False
-
 
 def ocr_file(file, api):
 	image = Image.open(file)
@@ -331,7 +264,7 @@ def process(folder, params):
 		if i <= pbi + 8:
 			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(pbi,pbi+8))])
 		else:
-			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(i-8,i))])
+			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(i-8,min(i+2,len(fbp_dict)-1)))])
 		return rval
 	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	tb = time.time()

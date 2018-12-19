@@ -27,7 +27,7 @@ def search(str_param_tuple):
 	string = input_string.partition(' tel ')[0].partition(' tels ')[0].partition(' Tel ')[0].partition(' Tels ')[0]
 	string = string.partition(' TEL ')[0].partition(' TELS ')[0].partition('(See ')[0]
 	string = string.partition(' telephone')[0].partition(' Telephone')[0].partition('-See ')[0].partition('See page')[0]
-	string = string.partition(' phone')[0].partition(' phone')[0]
+	string = string.partition(' phone')[0].partition(' phone')[0].partition(' TELEPHONE')[0].partition(' PHONE')[0]
 
 
 	text_words = string.split()

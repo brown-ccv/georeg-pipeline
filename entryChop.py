@@ -10,6 +10,7 @@ from sklearn.cluster import MeanShift
 import pickle as pkl
 import time
 from multiprocessing import Pool
+import shutil
 
 #Chops columns into entries
 #Script contains unused functions and needs heavy editing.
@@ -224,8 +225,9 @@ def entry_wrapper(file_param_tuple):
 def entryChop(params):
     # make entry folder.
     nDirectory = 'entry'
-    if not os.path.exists(nDirectory):
-        os.mkdir(nDirectory)
+    if os.path.exists(nDirectory):
+        shutil.rmtree(nDirectory)
+    os.mkdir(nDirectory)
 
     # create file/param lists
     x = []

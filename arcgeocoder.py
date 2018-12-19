@@ -48,7 +48,10 @@ def geocode(dataFrame, dir_dir):
 	if input_list:
 		n_processes = min(max(int(float(len(input_list))/20.0), 1), 50)
 		pool = Pool(n_processes)
-		locations = pool.map(geolocate, input_list)
+		if True:
+			locations = [geolocate(input) for input in input_list]
+		else:
+			locations = pool.map(geolocate, input_list)
 		counter = 0
 		for location in locations:
 			if location[2]=='timeout':
