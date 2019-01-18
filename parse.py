@@ -101,11 +101,19 @@ def getFBP(image_file, sf):
 	firstBlackPix = cut + blackindx - fbp_thresh
 	return sf*float(firstBlackPix)
 
+def count_alpha(text):
+	return len([l for l in text if l.isalpha()])
+
+def count_alnum(text):
+	return len([l for l in text if l.isalnum()])
+
+def count_upper(text):
+	return len([l for l in text if l.isupper()])
+
 def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
 	if year <= 1954:
  		if int(count_alpha(text)) == 0:
- 		if len([l for l in text if l.isalpha()]) == 0:
  			return False
  		elif (fbp > 40):
  			return True
@@ -118,9 +126,9 @@ def is_header(fbp, text, file, entry_num):
  			return False
  		elif (fbp > 40):
  			return True
- 		elif (fbp > 35) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.9):
+ 		elif (fbp > 35) and ((float(count_upper(text))/float(count_alpha(text))) > 0.9):
  			return True
- 		elif (entry_num < 3) and ((float(len([l for l in text if l.isupper()])))/float(len([l for l in text if l.isalpha()])) > 0.95):
+ 		elif (entry_num < 3) and ((float(count_alpha(text))/float(count_alpha(text))) > 0.95):
  			return True
  		elif (text.lstrip()[0] == '*') and (fbp > 30):
  			return True
@@ -136,7 +144,7 @@ def is_header(fbp, text, file, entry_num):
  		else:
  			return False
  	elif year <= 1968:
-		if len([l for l in text if l.isalpha()]) == 0:
+		if int(count_alpha(text)) == 0:
 			return False
 		elif (fbp > 40):
  			return True
@@ -149,7 +157,7 @@ def is_header(fbp, text, file, entry_num):
 		else:
 			return False
 	elif year <= 1990:
-		if len([l for l in text if l.isalpha()]) == 0:
+		if int(count_alpha(text)) == 0:
 			return False
 		elif (fbp > 22) and (count_upper(text)/count_alnum(text) > 0.9):
 			return True
@@ -157,7 +165,7 @@ def is_header(fbp, text, file, entry_num):
 		else:
 			return False
 	else:
-		if len([l for l in text if l.isalpha()]) == 0:
+		if int(count_alpha(text)) == 0:
 			return False
 		elif (fbp > 22) and (count_upper(text)/count_alnum(text) > 0.9):
 			return True
