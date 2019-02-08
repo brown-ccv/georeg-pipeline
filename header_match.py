@@ -150,25 +150,3 @@ def header_match(df, map_dict, unsure_headers):
     internal_unmatched = internal_unmatched.reset_index(drop=True)
 
     return known, internal_unmatched
-
-
-def test_matcher():
-    raw = pd.read_csv("RankedHeaders.csv")[["count", "Headers"]].dropna().assign(headers=assign_clean)
-    df = raw.drop_duplicates("headers")
-    unsure_headers = list(df[TRUE_CUTOFF:].headers)
-    map_dict = pkl.load(open('trueheaders_match_dict.pkl', 'rb'))
-    known, unmatched = header_match(df, map_dict, unsure_headers)
-    print("test_passed")
-    print(known)
-    print(unmatched)
-
-def test_map_dict():
-    raw = pd.read_csv("RankedHeaders.csv")[["count", "Headers"]].dropna().assign(headers=assign_clean)
-    df = raw.drop_duplicates("headers")
-    true_headers = list(df[:TRUE_CUTOFF].headers)
-    unsure_headers = list(df[TRUE_CUTOFF:].headers)
-    map_dict = generate_dict(df, true_headers, unsure_headers)
-    print(map_dict)
-    print("test passed")
-
-test_matcher()
