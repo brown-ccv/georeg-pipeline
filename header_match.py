@@ -4,8 +4,12 @@ import string
 import pickle as pkl
 import numpy as np
 
+
+# Global constants, should be in input_Params
 TRUE_CUTOFF = 3150
 THRESHOLD = 85
+
+# can be in input_params, but this is stuff that needs to be replaced or removed.
 replace_char = ["*", "&", "%", "/", "\\"]
 strip_char = ["'", "-", ".", "!", ":", ";"]
 num_char =  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
@@ -18,6 +22,7 @@ common_errors = {
 }
 
 def clean_header(h):
+    # cleans the header
     red_flag = False
     for s in replace_char:
         h = h.replace(s, "")
@@ -36,6 +41,7 @@ def clean_header(h):
     return h
     
 def assign_clean(D):
+    # assigns to dataframe
     return [clean_header(h) for h in D.Headers]
 
 def score(string1, string2):
@@ -46,10 +52,14 @@ def match(headers, true_headers, map_dict):
     # Matches ocr headers to true headers
     for header in headers:
         if header not in map_dict:
+            # score every true header with current unknown header
             score_list = [(score(header, true_header), true_header) for true_header in true_headers]
+            # sort the list
             sorted_score = sorted(score_list, key = lambda tup: tup[0], reverse=True)
+            # pick the best tuple
             score_tuple = sorted_score[0]
-            if score_tuple[0] > 90:
+            # if above threshold, match
+            if score_tuple[0] > THRESHOLD:
                 print("LOG: Matched! " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
                 map_dict[header] = (score_tuple[0], score_tuple[1], "TRUE")
             else:
@@ -58,22 +68,33 @@ def match(headers, true_headers, map_dict):
     return map_dict
 
 def calculate_scores(df):
+    # find the total length
     l = len(df.headers)
+    # initialize the matrix
     score_matrix = np.zeros((l,l))
     i = 0
     for h in df.headers:
+        # create the scored matrix
         score_matrix[i, :] = df.headers.apply(score, args=(h,)).values
         print("Row number: {} of {}".format(i, l - 1))
         i += 1
     return score_matrix
 
 def remove_repeat(df, scores):
+    # remove the repeated unknown headers
     prelist = list(df.headers)
     i = 0
     for _ in df.headers:
         j = 0
         for removal in scores[i, :]:
-            if removal and j > i:
+            if removal and j > i: # the j > i ensures that only one copy of the header to header match is removed. 
+                #   A B C
+                # A . . .
+                # B . . .
+                # C . . .
+                # AC <==> CA, only one is removed
+
+                # check if can be removed, if yes, remove.
                 try:
                     df = df[df["headers"] != prelist[j]]
                     print("LOG: " + prelist[j] + " deleted!")
@@ -82,6 +103,9 @@ def remove_repeat(df, scores):
             j += 1
         i += 1
     return df
+
+
+# Functions to assign to the dataframe
 
 def assign_matched(D, map_dict):
     matched = []
@@ -114,7 +138,7 @@ def assign_bool(D, map_dict):
     return is_matched
 
 
-
+# driver function to create the map_dict
 def generate_dict(df, true_headers, unsure_headers):
     map_dict = {}
     df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
@@ -125,7 +149,7 @@ def generate_dict(df, true_headers, unsure_headers):
 
     return map_dict
 
-
+# driver function to header match given a map_dict
 def header_match(df, map_dict, unsure_headers):
     df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
     df = df.drop_duplicates("headers").reset_index(drop=True).sort_values("count", ascending=False)
