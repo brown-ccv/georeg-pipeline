@@ -49,7 +49,11 @@ def cropImage(image, file, do_plots):
 	height, width = img.shape[:2]
 	sf = float(height)/11675.0
 	sfw = float(width)/7820.0
-	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5).mean()
+
+	# list of rolling means of black pixels
+	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5, center=True).mean()
+
+	# there might be something broken in here. programs hangs when do_plots is true. 
 	if do_plots:
 		fig = plt.figure()
 		ax = histogram.plot()
@@ -61,40 +65,53 @@ def cropImage(image, file, do_plots):
 		ax.set_ylim([0,200])
 		fig.savefig(file.partition('.png')[0] + '.histogram.smooth.pdf', bbox_inches='tight')
 		plt.close(fig)
+	
+	# takes all instances where black pixel count < 150
 	dip_df = histogram[histogram < sf*150].to_frame().rename(columns = {0:'count'})
+	
+	# sets all instances of just 50 (factored to scale) to 0.
 	dip_df.loc[dip_df['count']<sf*50,'count'] = 0
 	histogram.iloc[0] = 0
 	indices = np.array(dip_df.index.tolist()).reshape(-1,1)
+
+	# predicts the best place to cut the columns
 	ms = MeanShift()
 	ms.fit(indices)
 	dip_group = ms.predict(indices)
 	dip_df = dip_df.assign(group = dip_group)
-	cut_points = [0] + sorted(dip_df.groupby('group').apply(lambda x: max(x[x['count']==0].index - int(sfw*35.0))).tolist())[1:-1] + [width]
+
+	# picks the rightmost place to cut the columns. might not work if image is tilted.
+	try:
+		cut_points = [0] + sorted(dip_df.groupby('group').apply(lambda x: max(x[x['count']==0].index - int(sfw*35.0))).tolist())[1:-1] + [width]
+	except:
+		cut_points = [0]
+
+	# returns points to cut. 
 	for i in list(range(len(cut_points)-1)):
 		croppedImages.append(img[0:height, cut_points[i]:cut_points[i+1]])
 	return croppedImages
 
 def crop_file(file_param_tuple):
-	nDirectory = 'columns'
 	file, params = file_param_tuple
 	img = cv2.imread(file, 0)
-	#clean = cv2.fastNlMeansDenoising(img, None, 60, 7, 21)
+
 	crop = cropImage(img, file, params['do_plots'])
+
 	name = file[:-4].partition('.chop')[0].split("/")[-1]
 	ext = file[-4:]
 	i = 1
 	for image in crop:
-		cv2.imwrite(os.path.join(nDirectory, name + " ("+ str(i) + ")" + ext), image)
+		cv2.imwrite(os.path.join('columns', name + " ("+ str(i) + ")" + ext), image)
 		i += 1
-	#cv2.imwrite(os.path.join(nDirectory, file), clean)
-	print file + '-cropped to columns'
+	if len(crop) == 1:
+		print("ERROR: " + file)
+	#print file + '-cropped to columns'
 	return
 
 def doCrop(params):
 	#make columns dir
-	nDirectory = 'columns'
-	if not os.path.exists(nDirectory):
-		os.mkdir(nDirectory)
+	if not os.path.exists('columns'):
+		os.mkdir('columns')
 
 	# parses single image
 	if 'img_name' in params:
@@ -123,7 +140,3 @@ def doCrop(params):
 			print('WARNING: File ' + file_param_tuple[0] + ' failed!!!')
 	
 	
-
-
-
-

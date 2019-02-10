@@ -8,39 +8,61 @@ from multiprocessing import Pool
 import shutil
 import pickle as pkl
 
-#Removes the ads
+#This is the py file that filters out the ads on the edges of the page. 
 
+"""Sorts based on natural ordering of numbers, ie. "12" > "2" """
 def naturalSort(String_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
-def cleanImage(image):
-    inv = cv2.bitwise_not(image)
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2,2))
-    closed = cv2.morphologyEx(inv, cv2.MORPH_CLOSE, kernel)
-    closed = cv2.morphologyEx(closed, cv2.MORPH_OPEN, kernel)
-    return closed
+"""
+    the part that actually does the bulk of ad filtering.
 
+    how it works is it takes all the connected pixels (contours) in order to look for 
+    the boxes that ads are usually contained in, because they will have lots of pixels 
+    connected to each other. 
+
+    the algorithm to decide whether a contour is an ad is: 
+    (perimeter of the bounding box)^2 / perimeter of contour > perimeter cutoff
+
+    Args:
+        im_bw: str, the image in black and white
+        file: str, the filename
+        do_diagnostics: switch for debugging/diagnostic purposes
+        perimeter_cutoff: int, indicates when we believe a contour is an ad
+
+    Returns:
+        im_bw (the image, but without ads).
+"""
 def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
     chop_file = file.rpartition("/")[2].partition('.jp2')[0]
     height,width = im_bw.shape[:2]
+
+    #sf = scale factor based on the size of a page
     sf = float(height + width)/float(13524 + 9475)
+
+    #draws a rectangle around everything in white
     cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), int(150*sf))
     im_bw_copy = im_bw.copy()
+
+    # save this to a chopped file for diagnostic reasons
     if do_diagnostics:
         cv2.imwrite(os.path.join('no_ads', chop_file + '_bw_test.jpg'), im_bw)
+
     blank_image = np.zeros((height,width,3), np.uint8)
     white_image = 255.0 * np.ones((height,width), np.uint8)
     minContour = perimeter_cutoff * sf
+
+    # finds all the ad boxes and stuff
     im2, contours, hierarchy = cv2.findContours(im_bw_copy,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+    
     for cnt in contours:
         perimeter = cv2.arcLength(cnt, True)
-        #if perimeter > minContour:
         x,y,w,h = cv2.boundingRect(cnt)
         contourA = (2*(w+h))**2 / max(perimeter,1)
+
+        # if we think it's an ad
         if contourA > minContour:
-            #print(perimeter)
             cv2.drawContours(blank_image, [cnt], -1, (0,255,0), 3)
-            #x,y,w,h = cv2.boundingRect(cnt)
             bottom = max([vertex[0][1] for vertex in cnt])
             top = min([vertex[0][1] for vertex in cnt])
             left = min([vertex[0][0] for vertex in cnt])
@@ -97,30 +119,33 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
                     cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
                     #cv2.rectangle(im_bw,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
                     #cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
-    #cv2.imwrite(os.path.join(nDirectory, file), original)
+    
+    # a few more diagnostic files
     if do_diagnostics:
         cv2.imwrite(os.path.join('no_ads', chop_file + '_white.jpg'), white_image)
-    if do_diagnostics:
         cv2.imwrite(os.path.join('no_ads', chop_file + '_contours.jpg'), blank_image)
     return im_bw
 
-def noAds(image, area):
-    #cleaned = cleanImage(image)
-    noAds = removeAds(image, area)
-    return noAds
+"""
+turns the image into black and white to make things work.
 
+input:
+    file: str, filename.
+    threshold_dict: dict, if any thresholds were already calculated and stored to save time they'll be used 
+    do_diagnostics: bool, switch for debugging/diagnostic purposes
+    do_plots: bool, switch that also makes additional plot files to look at
+
+returns:
+    binary black and white img. 
+
+"""
 def get_binary(file, threshold_dict, do_diagnostics, do_plots):
     nDirectory = 'no_ads'
     t1 = time.time()
-    
     original = cv2.imread(file, 0)
 
     chop_file = file.partition('.jp2')[0]
 
-    #uneq = cv2.imread(file, 0)
-    #clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
-    #original = clahe.apply(uneq)
-    #original = cv2.equalizeHist(uneq)
     if do_diagnostics:
         cv2.imwrite(os.path.join(nDirectory, file.rpartition("/")[2].partition('.jp2')[0] + '_gray.jpg'), original)
     t2 = time.time()
@@ -174,34 +199,36 @@ def get_binary(file, threshold_dict, do_diagnostics, do_plots):
     return im_bw
 
 def process_image(input_tuple):
-    #separate tuple
     file, params = input_tuple
 
-    t1 = time.time()
+    #t1 = time.time()
     im_bw = get_binary(file, params['threshold'], params['do_diagnostics'], params['do_plots'])
-    t2 = time.time()
-    #print('Binary conversion time: ' + str(round(t2-t1, 2)) + ' s')
-    #cv2.imwrite(os.path.join('no_ads', file + 'bw_test.jpg'), im_bw)
-    #im = cleanImage(original)
-    t1 = time.time()
+    #t2 = time.time()
+
+    #t1 = time.time()
     removeAds(im_bw, file, params['do_diagnostics'], params['perimeter_cutoff'])
-    t2 = time.time()
+    #t2 = time.time()
     #print('Ad removal time: ' + str(round(t2-t1, 2)) + ' s')
 
     # write output images
-    t1 = time.time()
+
+    #t1 = time.time()
     chop_file = file.rpartition("/")[2]
     cv2.imwrite(os.path.join('no_ads', chop_file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
-    t2 = time.time()
+    #t2 = time.time()
     #print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
     print file + '-no ads'
 
     return
 
 
+# if there is not an existing imgs directory, 
+# it means you haven't moved to the new file structure
+# this creates the file structure for you. 
 def create_images_dir():
-    if not os.path.exists('imgs'):
-        os.mkdir('imgs')
+    if os.path.exists('imgs'): return
+
+    os.mkdir('imgs')
     for filename in glob.glob('*.jp2'):
         shutil.copy(filename, 'imgs')
         os.remove(filename)
@@ -212,15 +239,16 @@ def create_images_dir():
         shutil.copy(filename, 'imgs')
         os.remove(filename)
 
-def rmAds(params):
 
+def rmAds(params):
+    # converts to new file structure if not already done. 
     create_images_dir()
 
     # use hardcoded thresholds if they exist. 
     if os.path.isfile('hardcoded_thresholds.csv'):
         threshold_dict = pd.read_csv('hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
-        print('Using hardcoded thresholds:')
-        print(threshold_dict)
+        print('hardcoded thresholds found:')
+        #print(threshold_dict)
     else:
         threshold_dict = {}
     os.system('echo ",threshold" > threshold_used.csv')

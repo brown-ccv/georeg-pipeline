@@ -162,6 +162,7 @@ def is_header(fbp, text, file, entry_num):
 		elif (fbp > 22) and (count_upper(text)/count_alnum(text) > 0.9):
 			return True
 		elif (entry_num < 3) and ((fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80) or (count_upper(text)/count_alnum(text) > 0.95)):
+			return True
 		else:
 			return False
 	else:
