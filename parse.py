@@ -40,6 +40,7 @@ def streetTable():
 
 
 def makeCSV(dataFrame):
+	# creates the csv FOutput
 	today = datetime.date.today()
 	dataFrame.set_index('Query')
 	dataFrame['Address - From Geocoder'] = dataFrame['Address - From Geocoder'].astype('str').str.rstrip(',').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
@@ -53,12 +54,15 @@ def makeCSV(dataFrame):
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
 
 def dfProcess(dataFrame):
+	# this processes the dataframe to match streets and geocode
 	print('Matching city and street...')
 	t1 = time.time()
+	# street matching
 	frame = streetMatch1.streetMatcher(dataFrame, dir_dir)
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 	print('Geocoding...')
+	# Geocoding
 	t1 = time.time()
 	#frame.to_pickle('frame.pkl')
 	#frame = pd.read_pickle('frame.pkl')
@@ -80,13 +84,13 @@ def getHorzHist(image):
 	return histogram
 
 def getFBP(image_file, sf):
+	# Gets the first black pixel
 	fbp_thresh = 3
 	im = cv2.imread(image_file, 0)
 	h,w = im.shape[:2]
 	hlow = int(float(h)*0.25)
 	hhigh = int(float(h)*0.75)
 	hhist = getHorzHist(im[hlow:hhigh,:])
-	# print(hhist)
 	#get location of first black pixel
 	histstr = ','.join([str(li) for li in hhist])
 	strpart = histstr.partition('0,')
@@ -102,16 +106,21 @@ def getFBP(image_file, sf):
 	return sf*float(firstBlackPix)
 
 def count_alpha(text):
+	# returns the number of alphabetic chars in the string
 	return len([l for l in text if l.isalpha()])
 
 def count_alnum(text):
+	# returns the number of alphanumeric chars in the string
 	return len([l for l in text if l.isalnum()])
 
 def count_upper(text):
+	# returns the number of uppercase chars in the string
 	return len([l for l in text if l.isupper()])
 
 def is_header(fbp, text, file, entry_num):
+	# Determines if the text is a header entry
 	year = int(file.partition('/')[0].lstrip('cd'))
+	# divides logic by year
 	if year <= 1954:
  		if int(count_alpha(text)) == 0:
  			return False
@@ -176,6 +185,7 @@ def is_header(fbp, text, file, entry_num):
 			return False
 
 def ocr_file(file, api):
+	# Performs the ocr for the page, returning a tuple of data
 	image = Image.open(file)
 	api.SetImage(image)
 	api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -190,6 +200,7 @@ def ocr_file(file, api):
 	return file,text,fbp,sf,entry_num
 
 def chunk_process_ocr(chunk_files):
+	# chunking the process to increase efficiency
 	'''We process the OCR in chunks to avoid having to reload the API each time.'''
 	rlist = []
 	with PyTessBaseAPI() as api:
@@ -199,6 +210,7 @@ def chunk_process_ocr(chunk_files):
 	return rlist
 
 def process(folder, params):
+	# Main processing/driver script
 	do_OCR = params['do_ocr']
 	make_table = params['make_table']
 	#Make the zip code to city lookup table
@@ -279,8 +291,6 @@ def process(folder, params):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
-	#print(raw_data.head(10))
-
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
@@ -288,6 +298,7 @@ def process(folder, params):
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
 	def concatenateQ(i):
+		# decides whether to concatenate files or not
 		if i==raw_data_length - 1:
 			return False
 		elif i==0 and is_header_dict[i]:
@@ -309,6 +320,7 @@ def process(folder, params):
 	tb = time.time()
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
+	# saves raw data as a csv
 	raw_data.to_csv(dir_dir + '/raw_data.csv')
 
 	file_lists = []
@@ -347,6 +359,7 @@ def process(folder, params):
 			file_list = []
 			text = ''
 
+	# processed data
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
 
 	t2 = time.time()
