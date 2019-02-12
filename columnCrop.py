@@ -49,7 +49,7 @@ def cropImage(image, file, do_plots):
 	height, width = img.shape[:2]
 	sf = float(height)/11675.0
 	sfw = float(width)/7820.0
-	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5).mean()
+	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5, center=True).mean()
 	if do_plots:
 		fig = plt.figure()
 		ax = histogram.plot()
