@@ -1,13 +1,13 @@
 {
-  "year_folder": "cd1976",
+  "year_folder": "cd1968",
   "image_process": {
     "single_image": true,
-    "img_name": "1976_page_100",
+    "img_name": "1968_Page_108",
     "ads": false,
     "margins": false,
-    "columns": false,
+    "columns": true,
     "entries": false,
-    "parse": true
+    "parse": false
     },
   "no_ads": {
     "do_multiprocessing": true,
@@ -23,7 +23,7 @@
     "p_cutoff": 30.0
   },
   "columns": {
-    "do_multiprocessing": false,
+    "do_multiprocessing": true,
     "pool_num": 6,
     "do_plots": false
   },

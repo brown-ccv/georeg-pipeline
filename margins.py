@@ -8,7 +8,7 @@ def naturalSort(String_):
 
 def getAvg(img, height):
     h, w = img.shape[:2]
-    print('height: ' + str(height))
+    #print('height: ' + str(height))
     avg = 0
     for i in range(0, w):
         minPixel = img[height, i]
@@ -36,7 +36,7 @@ def cropTop(image, p_cutoff):
     y = 0
     while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
         y += 1
-    print(y)
+    #print(y)
     if cv2.countNonZero(image[y+int(sf*50):y+int(sf*100),:]) < float(int(sf*50.0))*sfw*p_cutoff/2.0:
         y += int(sf*50)
         while w - cv2.countNonZero(image[y,:]) < sfw*p_cutoff/2.0:
@@ -67,9 +67,9 @@ def cropLeft(image, p_cutoff):
         x += 1
     if cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]) < float(int(sfw*50.0))*sf*p_cutoff:
         x += int(sfw*50)
-        print('Entered 50 plus loop.')
-        print(h - cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]))
-        print(float(int(sfw*50.0))*sf*p_cutoff)
+        # print('Entered 50 plus loop.')
+        # print(h - cv2.countNonZero(image[:,x+int(sfw*50):x+int(sfw*100)]))
+        # print(float(int(sfw*50.0))*sf*p_cutoff)
         while h - cv2.countNonZero(image[:,x]) < sf*p_cutoff:
             x += 1
     return x - int(50*sfw)
