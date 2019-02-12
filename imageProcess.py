@@ -30,22 +30,22 @@ if __name__ == '__main__':
 	
 	# print('Removing ads...')
 	# t1 = time.time()
-	ads.rmAds(all_params[0]) if img_p['ads']
+	if img_p['ads']: ads.rmAds(all_params[0]) 
 	# t2 = time.time()
 	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
 	# print('Cropping margins...')
 	# t1 = time.time()
-	margins.marginCrop(all_params[1]) if img_p['margins']
+	if img_p['margins']: margins.marginCrop(all_params[1]) 
 	# t2 = time.time()
 	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
 	# print('Cropping columns...')
 	# t1 = time.time()
-	columnCrop.doCrop(all_params[2]) if img_p['columns']
+	if img_p['columns']: columnCrop.doCrop(all_params[2]) 
 	# t2 = time.time()
 	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
 	# print('Chopping entries...')
 	# t1 = time.time()
-	entryChop.entryChop(all_params[3]) if img_p['entries']
+	if img_p['entries']: entryChop.entryChop(all_params[3]) 
 	# t2 = time.time()
 	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
 	if img_p['parse']:
