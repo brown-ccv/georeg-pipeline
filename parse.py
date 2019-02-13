@@ -14,6 +14,7 @@ from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
 from fuzzywuzzy import fuzz, process
+from header_match import generate_dict, match_headers
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
 dir_dir = ""
@@ -360,6 +361,16 @@ def process(folder, params):
 
 	# processed data
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
+	try:
+		header_match_dict = pkl.load("header_match_dict")
+	except:
+		try:
+			true_headers = list(pd.read_csv("true_headers.csv").Headers)
+			header_match_dict = generate_dict(data, true_headers)
+		except Exception as e:
+			print(e.message)
+			print("Problem with loading list of true headers, generation of match dict failed")
+	data, match_failed = match_headers(data, header_match_dict)
 
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
