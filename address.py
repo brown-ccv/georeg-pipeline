@@ -6,7 +6,7 @@ from fuzzywuzzy import fuzz, process
 import time 
 import pickle as pkl
 
-ri_streets_table = pd.read_pickle('stZipCty')
+ri_streets_table = pd.read_csv('StreetZipCity.csv')
 street_patt = re.compile(r"(^\d+)(.+)")
 try:
     street_name_dict = pkl.load(open('street_name_dict.pkl', 'rb'))

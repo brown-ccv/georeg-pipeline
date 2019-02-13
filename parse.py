@@ -1,8 +1,6 @@
 import time
 mt1 = time.time()
 import stringParse, arcgeocoder, address
-import zipcode
-import sqlalchemy
 import streetMatch1
 import sys, glob, os, re, datetime
 import pandas as pd
