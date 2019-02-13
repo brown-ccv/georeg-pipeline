@@ -28,6 +28,7 @@ if __name__ == '__main__':
 		for p in all_params:
 			p.update({'img_name': img_p['img_name']})
 	
+<<<<<<< HEAD
 	if img_p['ads']:
 		print('Removing ads...')
 		t1 = time.time()
@@ -52,6 +53,28 @@ if __name__ == '__main__':
 		entryChop.entryChop(all_params[3])
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+=======
+	# print('Removing ads...')
+	# t1 = time.time()
+	if img_p['ads']: ads.rmAds(all_params[0]) 
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# print('Cropping margins...')
+	# t1 = time.time()
+	if img_p['margins']: margins.marginCrop(all_params[1]) 
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# print('Cropping columns...')
+	# t1 = time.time()
+	if img_p['columns']: columnCrop.doCrop(all_params[2]) 
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+	# print('Chopping entries...')
+	# t1 = time.time()
+	if img_p['entries']: entryChop.entryChop(all_params[3]) 
+	# t2 = time.time()
+	# print('Done in: ' + str(round(t2-t1, 2)) + ' s')
+>>>>>>> 3b13610e8c7ffa5a5799cff267bd31258ecc8d16
 	if img_p['parse']:
 		os.chdir("..")
 		parse.main(d)

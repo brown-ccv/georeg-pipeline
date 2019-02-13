@@ -12,36 +12,20 @@ from multiprocessing import Pool
 
 #Chops the pages into columns
 
+"""
+Sorts based on natural ordering of numbers, ie. "12" > "2" 
+"""
 def naturalSort(String_): 
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
-def getAvg(img, x, y):
-	height, width = img.shape[:2]
-	avg = [range(x,y)]
-	for i in range(height):
-		for j in range(x,y):
-				avg += img[i, j]
-	return avg/height
+"""
+does the bulk of actual image cropping into columns
 
-def imgAvg(img):
-	height, width = img.shape[:2]
-	avg = 0
-	for i in range(width):
-		for j in range(height):
-			avg += img[j, i]
-	return avg/(height * width)
-
-def cleanImage(image):
-    inv = cv2.bitwise_not(image)
-    #kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5,2000))
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1,1))
-    closing = cv2.morphologyEx(inv, cv2.MORPH_CLOSE, kernel)
-    opening = cv2.morphologyEx(closing, cv2.MORPH_OPEN, kernel)
-    #dilate = cv2.dilate(inv, kernel)
-    return cv2.bitwise_not(opening)
-    #return opening
-
-
+input: 
+	image: ??, actual img (i think it's a matrix of pixel vals actually?)
+	file: str, filename
+	do_plots: bool, whether to make the diagnostic plots
+"""
 def cropImage(image, file, do_plots):
 	croppedImages = []
 	img = image.copy()
