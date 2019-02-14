@@ -36,7 +36,8 @@ def clean_header(h):
     h = ''.join(hl).upper()
     for rf in red_flag_char:
         if rf in h: red_flag = True
-    if cnt > 3 or red_flag: h = ""
+    if cnt > 3 or red_flag: 
+        h = ""
     return h
     
 def assign_clean(D):
@@ -142,7 +143,7 @@ def assign_bool(D, map_dict):
 def generate_dict(df, true_headers):
     
     map_dict = {}
-    df = df.assign(clean_headers=assign_clean).drop_duplicates("Header")
+    df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
     df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
     unsure_headers = list(df["clean_headers"])
@@ -154,7 +155,7 @@ def generate_dict(df, true_headers):
 # driver function to header match given a map_dict
 def match_headers(df, map_dict):
 
-    df = df.assign(clean_headers=assign_clean).drop_duplicates("Header")
+    df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
     df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
     df = df.assign(
