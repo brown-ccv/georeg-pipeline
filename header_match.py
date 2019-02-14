@@ -41,7 +41,7 @@ def clean_header(h):
     
 def assign_clean(D):
     # assigns to dataframe
-    return [clean_header(h) for h in D.Headers]
+    return [clean_header(h) for h in D["Header"]]
 
 def score(string1, string2):
     # Scores the fuzzy match between the ocr header and the true header
@@ -68,22 +68,22 @@ def match(headers, true_headers, map_dict):
 
 def calculate_scores(df):
     # find the total length
-    l = len(df.clean_headers)
+    l = len(df["clean_headers"])
     # initialize the matrix
     score_matrix = np.zeros((l,l))
     i = 0
-    for h in df.clean_headers:
+    for h in df["clean_headers"]:
         # create the scored matrix
-        score_matrix[i, :] = df.clean_headers.apply(score, args=(h,)).values
+        score_matrix[i, :] = df["clean_headers"].apply(score, args=(h,)).values
         print("Row number: {} of {}".format(i, l - 1))
         i += 1
     return score_matrix
 
 def remove_repeat(df, scores):
     # remove the repeated unknown headers
-    prelist = list(df.clean_headers)
+    prelist = list(df["clean_headers"])
     i = 0
-    for _ in df.clean_headers:
+    for _ in df["clean_headers"]:
         j = 0
         for removal in scores[i, :]:
             if removal and j > i: # the j > i ensures that only one copy of the header to header match is removed. 
@@ -108,7 +108,7 @@ def remove_repeat(df, scores):
 
 def assign_matched(D, map_dict):
     matched = []
-    for h in D.clean_headers:
+    for h in D["clean_headers"]:
         if h in map_dict: 
             matched.append(map_dict[h][1])
         else: 
@@ -118,7 +118,7 @@ def assign_matched(D, map_dict):
 
 def assign_score(D, map_dict):
     scores = []
-    for h in D.clean_headers:
+    for h in D["clean_headers"]:
         if h in map_dict: 
             scores.append(map_dict[h][0])
         else:
@@ -128,7 +128,7 @@ def assign_score(D, map_dict):
 
 def assign_bool(D, map_dict):
     is_matched = []
-    for h in D.clean_headers:
+    for h in D["clean_headers"]:
         if h in map_dict:
             is_matched.append(map_dict[h][2])
         else:
@@ -143,9 +143,11 @@ def generate_dict(df, true_headers):
     
     map_dict = {}
     df = df.assign(clean_headers=assign_clean).drop_duplicates("Header")
+
     df = df[df['clean_headers'].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
     unsure_headers = list(df['clean_headers'])
+
     map_dict = match(unsure_headers, true_headers, map_dict)
     pkl.dump(map_dict, open('trueheaders_match_dict.pkl', 'wb'))
 
@@ -155,7 +157,7 @@ def generate_dict(df, true_headers):
 def match_headers(df, map_dict):
 
     df = df.assign(clean_headers=assign_clean).drop_duplicates("Header")
-    df = df[df.clean_headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
+    df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
     df = df.assign(
         matched = lambda D: assign_matched(D, map_dict),
@@ -171,3 +173,6 @@ def match_headers(df, map_dict):
     internal_unmatched = internal_unmatched.reset_index(drop=True)
 
     return known, internal_unmatched, df
+
+
+    
