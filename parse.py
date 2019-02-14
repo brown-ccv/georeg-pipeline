@@ -191,7 +191,7 @@ def chunk_process_ocr(chunk_files):
 			rlist.append(ocr_file(file, api))
 	return rlist
 
-def process(folder, params):
+def process_data(folder, params):
 	# Main processing/driver script
 	do_OCR = params['do_ocr']
 	make_table = params['make_table']
@@ -412,7 +412,7 @@ def main(inputParams):
 	
 	if inputParams['image_process']['single_image']:
 		inputParams['parse']['img'] = inputParams['image_process']['img_name']
-	process(inputParams['year_folder'] + '/entry', inputParams['parse'])
+	process_data(inputParams['year_folder'] + '/entry', inputParams['parse'])
 	mt2 = time.time()
 	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
 
