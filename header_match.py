@@ -138,18 +138,18 @@ def assign_bool(D, map_dict):
 
 
 # driver function to create the map_dict
-def generate_dict(df, true_headers):
+def generate_dict(df, true_headers, unsure_headers):
     map_dict = {}
     df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
     df = df.drop_duplicates("headers").reset_index(drop=True).sort_values("count", ascending=False)
-    unsure_headers = list(df.headers)
+
     map_dict = match(unsure_headers, true_headers, map_dict)
     pkl.dump(map_dict, open('trueheaders_match_dict.pkl', 'wb'))
 
     return map_dict
 
 # driver function to header match given a map_dict
-def match_headers(df, map_dict):
+def match_headers(df, map_dict, unsure_headers):
     df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
     df = df.drop_duplicates("headers").reset_index(drop=True).sort_values("count", ascending=False)
     
