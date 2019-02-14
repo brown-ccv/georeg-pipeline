@@ -14,66 +14,6 @@ import pickle as pkl
 def naturalSort(String_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
-def ad_cut(cnt, height, width, im_bw, blank_image, white_image, x, w, y, h):
-    cv2.drawContours(blank_image, [cnt], -1, (0,255,0), 3)
-    bottom = max([vertex[0][1] for vertex in cnt])
-    top = min([vertex[0][1] for vertex in cnt])
-    left = min([vertex[0][0] for vertex in cnt])
-    right = max([vertex[0][0] for vertex in cnt])
-    if (w > (width / 2)) and (bottom < (height * 0.75)):
-        drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
-        y = bottom
-        while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y > 0):
-            y -= 1
-        if y < top:
-            y = bottom
-        cv2.rectangle(im_bw,(0,0),(width,y), (255,255,255), -1)
-        cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
-    if (w > (width / 2)) and (top > (height * 0.85)):
-        drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
-        y = top
-        while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y < (height - 1)):
-            y += 1
-        if y > bottom:
-            y = top
-        cv2.rectangle(im_bw,(0,top),(width,height), (255,255,255), -1)
-        cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
-    #if (w > (width / 2)) and (top > (height * 0.90)):
-        #cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
-    if (w * h) < 0.9 * width * height:
-        cv2.drawContours(white_image, [cnt], -1, (0,0,0), -1)
-        if h > (0.15 * float(height)) and right < (0.25 * float(width)):
-            drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
-            x = right
-            while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x > 0):
-                x -= 1
-            #x = max(0,x-int(sf*15))
-            if x < left:
-                x = right
-            cv2.rectangle(im_bw,(0,0),(x,height), (255,255,255), -1)
-            cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
-        elif h > (0.15 * float(height)) and left > (0.75 * float(width)):
-            drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
-            x = left
-            while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x < (width - 1)):
-                x += 1
-            #x = max(0,x+int(sf*15))
-            if x > right:
-                x = left
-            cv2.rectangle(im_bw,(x,0),(width,height), (255,255,255), -1)
-            cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
-        #elif ((height - bottom) < 11) or (top < 11):
-            #o_vertices = cv2.approxPolyDP(cnt, 0.005*perimeter, True)
-            #approx = cv2.convexHull(o_vertices, clockwise=True)
-            #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), -1)
-            #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), int(5 * sf))
-            #cv2.drawContours(blank_image, [approx], -1, (255, 255, 255), -1)
-        else:
-            cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
-            #cv2.rectangle(im_bw,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
-            #cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
-    return im_bw, blank_image, white_image
-
 """
     the part that actually does the bulk of ad filtering.
 
@@ -122,8 +62,63 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
 
         # if we think it's an ad
         if contourA > minContour:
-            im_bw, blank_image, white_image = ad_cut(cnt, height, width, im_bw, blank_image, white_image, x, w, y, h)
-    
+            cv2.drawContours(blank_image, [cnt], -1, (0,255,0), 3)
+            bottom = max([vertex[0][1] for vertex in cnt])
+            top = min([vertex[0][1] for vertex in cnt])
+            left = min([vertex[0][0] for vertex in cnt])
+            right = max([vertex[0][0] for vertex in cnt])
+            if (w > (width / 2)) and (bottom < (height * 0.75)):
+                drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                y = bottom
+                while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y > 0):
+                    y -= 1
+                if y < top:
+                    y = bottom
+                cv2.rectangle(im_bw,(0,0),(width,y), (255,255,255), -1)
+                cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+            if (w > (width / 2)) and (top > (height * 0.85)):
+                drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                y = top
+                while (cv2.countNonZero(drawn_cnt[y,:]) > 0.75*width) and (y < (height - 1)):
+                    y += 1
+                if y > bottom:
+                    y = top
+                cv2.rectangle(im_bw,(0,top),(width,height), (255,255,255), -1)
+                cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+            #if (w > (width / 2)) and (top > (height * 0.90)):
+                #cv2.rectangle(im_bw,(0,0),(width,bottom), (255,255,255), -1)
+            if (w * h) < 0.9 * width * height:
+                cv2.drawContours(white_image, [cnt], -1, (0,0,0), -1)
+                if h > (0.15 * float(height)) and right < (0.25 * float(width)):
+                    drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                    x = right
+                    while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x > 0):
+                        x -= 1
+                    #x = max(0,x-int(sf*15))
+                    if x < left:
+                        x = right
+                    cv2.rectangle(im_bw,(0,0),(x,height), (255,255,255), -1)
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+                elif h > (0.15 * float(height)) and left > (0.75 * float(width)):
+                    drawn_cnt = cv2.drawContours(255.0 * np.ones((height,width), np.uint8), [cnt], -1, (0,0,0), -1)
+                    x = left
+                    while (cv2.countNonZero(drawn_cnt[:,x]) > 0.85*height) and (x < (width - 1)):
+                        x += 1
+                    #x = max(0,x+int(sf*15))
+                    if x > right:
+                        x = left
+                    cv2.rectangle(im_bw,(x,0),(width,height), (255,255,255), -1)
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+                #elif ((height - bottom) < 11) or (top < 11):
+                    #o_vertices = cv2.approxPolyDP(cnt, 0.005*perimeter, True)
+                    #approx = cv2.convexHull(o_vertices, clockwise=True)
+                    #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), -1)
+                    #cv2.drawContours(im_bw, [approx], -1, (255, 255, 255), int(5 * sf))
+                    #cv2.drawContours(blank_image, [approx], -1, (255, 255, 255), -1)
+                else:
+                    cv2.drawContours(im_bw, [cnt], -1, (255,255,255), -1)
+                    #cv2.rectangle(im_bw,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
+                    #cv2.rectangle(blank_image,(x-pad,y-pad),(x+w+pad,y+h+pad), (255,255,255), -1)
     # a few more diagnostic files
     if do_diagnostics:
         cv2.imwrite(os.path.join('no_ads', chop_file + '_white.jpg'), white_image)
@@ -132,6 +127,8 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
 
 """
 Turns the image into black and white to make ad filtering based on pixel values work.
+take an img between 0-255 and turn it to an image that is just 0 or 255.
+we create a binary threshold variable to calculate this distinction and apply it at the very final line at the bottom
 
 Args:
     file: str, filename.
