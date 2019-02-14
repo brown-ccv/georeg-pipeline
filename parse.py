@@ -15,28 +15,11 @@ from fuzzywuzzy import fuzz, process
 from header_match import generate_dict, match_headers
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
+
 dir_dir = ""
+
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
-
-def streetTable():
-    """Create DataFrame with streets, Zip Codes, and Cities."""
-    print 'Creating Zipcode Table'
-    #.csv with streets and corresponding zip codes
-    street_df = pd.read_csv('streets_by_zip_code.csv', dtype = str)
-    street_df.columns = ['Street', 'Zip_Code']
-
-    street_df['Street'] = street_df['Street'].apply(lambda x: ' '.join(address.substitute_directions(x.split())))
-
-    #Make zip a zipcode object.
-    street_df['Zip_Code'] = street_df['Zip_Code'].apply(zipcode.isequal)
-
-    #Find city corresponding to each zip code.
-    street_df['City'] = street_df['Zip_Code'].apply(lambda x: x.city.encode('ascii', 'ignore'))
-
-    street_df.to_pickle('stZipCty')
-    return street_df
-
 
 def makeCSV(dataFrame):
 	# creates the csv FOutput
@@ -360,12 +343,14 @@ def process(folder, params):
 
 	# processed data
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
+	print(data.columns)
 	try:
 		header_match_dict = pkl.load("header_match_dict")
 	except:
 		try:
-			true_headers = list(pd.read_csv("true_headers.csv").Headers)
+			true_headers = list(pd.read_csv("true_headers.csv")['Headers'])
 			header_match_dict = generate_dict(data, true_headers)
+			print('match dict built')
 		except Exception as e:
 			print(e.message)
 			print("Problem with loading list of true headers, generation of match dict failed")
