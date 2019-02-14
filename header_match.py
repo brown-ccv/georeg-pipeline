@@ -143,9 +143,9 @@ def generate_dict(df, true_headers):
     
     map_dict = {}
     df = df.assign(clean_headers=assign_clean).drop_duplicates("Header")
-    df = df[df.clean_headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
+    df = df[df['clean_headers'].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
-    unsure_headers = list(df.clean_headers)
+    unsure_headers = list(df['clean_headers'])
     map_dict = match(unsure_headers, true_headers, map_dict)
     pkl.dump(map_dict, open('trueheaders_match_dict.pkl', 'wb'))
 
