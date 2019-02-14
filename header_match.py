@@ -6,7 +6,6 @@ import numpy as np
 
 
 # Global constants, should be in input_Params
-TRUE_CUTOFF = 3150
 THRESHOLD = 85
 
 # can be in input_params, but this is stuff that needs to be replaced or removed.
@@ -139,18 +138,17 @@ def assign_bool(D, map_dict):
 
 
 # driver function to create the map_dict
-def generate_dict(df, true_headers, unsure_headers):
+def generate_dict(df, true_headers):
     map_dict = {}
-    df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
-    df = df.drop_duplicates("headers").reset_index(drop=True).sort_values("count", ascending=False)
-
+    df = df[df['Header'].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))]
+    df = df['Header'].drop_duplicates()
+    unsure_headers = df.tolist()
     map_dict = match(unsure_headers, true_headers, map_dict)
     pkl.dump(map_dict, open('trueheaders_match_dict.pkl', 'wb'))
-
     return map_dict
 
 # driver function to header match given a map_dict
-def header_match(df, map_dict, unsure_headers):
+def match_headers(df, map_dict):
     df = df[df.headers.map(lambda h: (len(h) < 150) and (len(h) > 2) and (h is not ""))]
     df = df.drop_duplicates("headers").reset_index(drop=True).sort_values("count", ascending=False)
     

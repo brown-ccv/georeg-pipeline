@@ -36,7 +36,7 @@ def cropImage(image, file, do_plots):
 	# list of rolling means of black pixels
 	histogram  = pd.Series([height - cv2.countNonZero(img[:,i]) for i in list(range(width))]).rolling(5, center=True).mean()
 
-	# there might be something broken in here. programs hangs when do_plots is true. 
+	# prints out plots of the pixel count histogram and a smoothed version of the histogram
 	if do_plots:
 		fig = plt.figure()
 		ax = histogram.plot()
