@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
-from tesserocr import PyTessBaseAPI, RIL
+# from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
 from fuzzywuzzy import fuzz, process
@@ -347,14 +347,11 @@ def process_data(folder, params):
 	try:
 		header_match_dict = pkl.load("header_match_dict")
 	except:
-		try:
-			true_headers = list(pd.read_csv("true_headers.csv")['Headers'])
-			header_match_dict = generate_dict(data, true_headers)
-			print('match dict built')
-		except Exception as e:
-			print(e.message)
-			print("Problem with loading list of true headers, generation of match dict failed")
-	data, match_failed = match_headers(data, header_match_dict)
+		true_headers = list(pd.read_csv("true_headers.csv")['Headers'])
+		header_match_dict = generate_dict(data, true_headers)
+		print('match dict built')
+	
+	matched, match_failed, all_headers = match_headers(data, header_match_dict)
 
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
