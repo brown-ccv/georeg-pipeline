@@ -44,7 +44,7 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
     cv2.rectangle(im_bw,(0,0),(width,height), (255,255,255), int(150*sf))
     im_bw_copy = im_bw.copy()
 
-    # save this to a chopped file for diagnostic reasons
+    # save a black and white image for diagnostic reasons
     if do_diagnostics:
         cv2.imwrite(os.path.join('no_ads', chop_file + '_bw_test.jpg'), im_bw)
 
