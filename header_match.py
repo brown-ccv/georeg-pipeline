@@ -45,6 +45,12 @@ def assign_clean(D):
 
 def score(string1, string2):
     # Scores the fuzzy match between the ocr header and the true header
+    try:
+        fuzz.ratio(string1,string2)
+    except:
+        print(string1)
+        print(string2)
+        exit()
     return fuzz.ratio(string1,string2)
 
 def match(headers, true_headers, map_dict):
@@ -175,4 +181,3 @@ def match_headers(df, map_dict):
     return known, internal_unmatched, df
 
 
-    
