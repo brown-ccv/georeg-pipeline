@@ -27,10 +27,12 @@ def geolocate(row_tuple):
 
 def geocode(dataFrame, dir_dir):
 	t1 = time.time()
-	location_dict = pkl.load(open('location_dict.pkl', 'rb'))
-
-	location_dict = { k:v for k, v in location_dict.items() if v!='timeout' }
-
+	try:
+		location_dict = pkl.load(open('location_dict.pkl', 'rb'))
+		location_dict = { k:v for k, v in location_dict.items() if v!='timeout' }
+	except:
+		location_dict = {}
+	
 	hardcodes = pd.read_csv('geocoder_hardcodes.csv').dropna()
 	hardcode_dict = {(row.Address,row.City):(row.Lat,row.Lon) for row in hardcodes.itertuples()}
 

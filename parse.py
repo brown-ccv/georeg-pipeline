@@ -57,7 +57,7 @@ def dfProcess(dataFrame):
 	#print(str(len(fDF)) + ' addresses')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
-	return fDF1
+	return fDF
 
 def getHorzHist(image):
 	height, width = image.shape[:2]
@@ -107,6 +107,7 @@ def count_upper(text):
 def is_header(fbp, text, file, entry_num):
 	# Determines if the text is a header entry
 	year = int(file.partition('/')[0].lstrip('cd'))
+	text = text.decode("utf-8")
 	# divides logic by year
 	if year <= 1954:
 		if int(count_alpha(text)) == 0:
@@ -323,7 +324,7 @@ def process_data(folder, params):
 	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	for index in raw_data.index:
 		#raw_row = raw_data.iloc[i]
-		row_text = text_dict[index]
+		row_text = text_dict[index].decode("utf-8")
 		cq = cq_dict[index]
 		file = file_dict[index]
 		if is_header_dict[index]:
