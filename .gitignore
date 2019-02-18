@@ -1,4 +1,7 @@
 *.code-workspace
+.vscode/
+.vscode
+.ipynb_checkpoints/
 TesserocrEx.pyc
 address.pyc
 ads.pyc

@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
-# from tesserocr import PyTessBaseAPI, RIL
+Sfrom tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
 from fuzzywuzzy import fuzz, process
@@ -52,7 +52,7 @@ def dfProcess(dataFrame):
 	#print(str(len(fDF)) + ' addresses')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
-	return fDF
+	return fDF1
 
 def getHorzHist(image):
 	height, width = image.shape[:2]
@@ -347,7 +347,7 @@ def process_data(folder, params):
 	try:
 		header_match_dict = pkl.load("header_match_dict")
 	except:
-		true_headers = list(pd.read_csv("true_headers.csv")['Headers'])
+		true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
 		header_match_dict = generate_dict(data, true_headers)
 		print('match dict built')
 	

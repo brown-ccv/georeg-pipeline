@@ -141,7 +141,7 @@ def assign_bool(D, map_dict):
 
 # driver function to create the map_dict
 def generate_dict(df, true_headers):
-    
+
     map_dict = {}
     df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
     df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
