@@ -8,11 +8,16 @@ import numpy as np
 import cv2
 import pickle as pkl
 from PIL import Image
-Sfrom tesserocr import PyTessBaseAPI, RIL
+
+# necessary for using tesserocr
+import locale
+locale.setlocale(locale.LC_ALL, 'C')
+from tesserocr import PyTessBaseAPI, RIL
 import multiprocessing
 import json
 from fuzzywuzzy import fuzz, process
 from header_match import generate_dict, match_headers
+
 
 #This is the driver script for pulling the data out of the images, parsing them, matching them, and geocoding them.
 
@@ -77,7 +82,7 @@ def getFBP(image_file, sf):
 	histstr = ','.join([str(li) for li in hhist])
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
-	listIntPart = map(int, listStringPart)
+	listIntPart = list(map(int, listStringPart))
 	i=0
 	while ((listIntPart[min(i,len(listIntPart)-1)] < fbp_thresh) or (listIntPart[min(i+2,len(listIntPart)-1)] < fbp_thresh)) and (i < len(listIntPart)):
 		i+=1
@@ -104,47 +109,47 @@ def is_header(fbp, text, file, entry_num):
 	year = int(file.partition('/')[0].lstrip('cd'))
 	# divides logic by year
 	if year <= 1954:
- 		if int(count_alpha(text)) == 0:
- 			return False
- 		elif (fbp > 40):
- 			return True
- 		elif (text.lstrip()[0] == '*') and (fbp > 30):
- 			return True
- 		else:
- 			return False
- 	elif year <= 1962:
- 		if len([l for l in text if l.isalpha()]) == 0:
- 			return False
- 		elif (fbp > 40):
- 			return True
- 		elif (fbp > 35) and ((float(count_upper(text))/float(count_alpha(text))) > 0.9):
- 			return True
- 		elif (entry_num < 3) and ((float(count_alpha(text))/float(count_alpha(text))) > 0.95):
- 			return True
- 		elif (text.lstrip()[0] == '*') and (fbp > 30):
- 			return True
- 		else:
- 			return False
- 	if year == 1964:
- 		if int(count_alpha(text)) == 0:
- 			return False
- 		elif (fbp > 40):
- 			return True
- 		elif (text.lstrip()[0] == '*') and (fbp > 30):
- 			return True
- 		else:
- 			return False
- 	elif year <= 1968:
 		if int(count_alpha(text)) == 0:
 			return False
 		elif (fbp > 40):
- 			return True
- 		elif (fbp > 30) and (count_upper(text)/count_alnum(text) > 0.9):
- 			return True
- 		elif (entry_num < 3) and (fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80):
- 			return True
- 		elif (text.lstrip()[0] == '*') and (fbp > 30):
- 			return True
+			return True
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
+			return True
+		else:
+			return False
+	elif year <= 1962:
+		if len([l for l in text if l.isalpha()]) == 0:
+		    return False
+		elif (fbp > 40):
+			return True
+		elif (fbp > 35) and ((float(count_upper(text))/float(count_alpha(text))) > 0.9):
+			return True
+		elif (entry_num < 3) and ((float(count_alpha(text))/float(count_alpha(text))) > 0.95):
+			return True
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
+			return True
+		else:
+			return False
+	elif year == 1964:
+		if int(count_alpha(text)) == 0:
+			return False
+		elif (fbp > 40):
+			return True
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
+			return True
+		else:
+			return False
+	elif year <= 1968:
+		if int(count_alpha(text)) == 0:
+		    return False
+		elif (fbp > 40):
+			return True
+		elif (fbp > 30) and (count_upper(text)/count_alnum(text) > 0.9):
+			return True
+		elif (entry_num < 3) and (fuzz.partial_ratio(text.partition('-')[2], 'Contd') >= 80):
+			return True
+		elif (text.lstrip()[0] == '*') and (fbp > 30):
+			return True
 		else:
 			return False
 	elif year <= 1990:
@@ -185,7 +190,7 @@ def chunk_process_ocr(chunk_files):
 	# chunking the process to increase efficiency
 	'''We process the OCR in chunks to avoid having to reload the API each time.'''
 	rlist = []
-	with PyTessBaseAPI() as api:
+	with PyTessBaseAPI(lang="osd") as api:
 		for file in chunk_files:
 			print(file)
 			rlist.append(ocr_file(file, api))
@@ -369,7 +374,7 @@ def process_data(folder, params):
 		search_list = [(i, params['stringParse']) for i in data['Text'].tolist()]
 		output_tuples = pool.map(stringParse.search, search_list)
 	else:
-		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
+		output_tuples = [stringParse.search(searchr_text) for search_text in data['Text'].tolist()]
 	#streets,company_names = zip(*output_tuples)
 	streets = [output_tuple[0] for output_tuple in output_tuples]
 	company_names = [output_tuple[1] for output_tuple in output_tuples]

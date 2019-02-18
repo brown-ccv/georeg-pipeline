@@ -53,8 +53,8 @@ def removeAds(im_bw, file, do_diagnostics, perimeter_cutoff):
     minContour = perimeter_cutoff * sf
 
     # finds all the ad boxes and stuff
-    im2, contours, hierarchy = cv2.findContours(im_bw_copy,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
-    
+    contours, hierarchy = cv2.findContours(im_bw_copy,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+    im2 = im_bw_copy
     for cnt in contours:
         perimeter = cv2.arcLength(cnt, True)
         x,y,w,h = cv2.boundingRect(cnt)
@@ -234,7 +234,7 @@ def process_image(input_tuple):
     cv2.imwrite(os.path.join('no_ads', chop_file.partition('jp2')[0].partition('png')[0] + 'png'), im_bw)
     t2 = time.time()
     print('Image write time: ' + str(round(t2-t1, 2)) + ' s')
-    print file + '-no ads'
+    print(file + '-no ads')
 
     return
 

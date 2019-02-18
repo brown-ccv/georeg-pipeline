@@ -93,7 +93,7 @@ def cropRight(image, p_cutoff):
 def cropMargins(filename_param_tuple):
     file, params = filename_param_tuple
     p_cutoff = params['p_cutoff']
-    print file + '-margins cropped'
+    print(file + '-margins cropped')
     image = cv2.imread(file, 0)
     top = cropTop(image, p_cutoff)
     bottom = cropBottom(image, p_cutoff)
