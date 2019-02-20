@@ -347,7 +347,7 @@ def process_data(folder, params):
 	try:
 		header_match_dict = pkl.load("header_match_dict")
 	except:
-		true_headers = list(pd.read_csv("true_headers.csv")['Headers'])
+		true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
 		header_match_dict = generate_dict(data, true_headers)
 		print('match dict built')
 	

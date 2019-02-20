@@ -66,10 +66,10 @@ def match(headers, true_headers, map_dict):
             score_tuple = sorted_score[0]
             # if above threshold, match
             if score_tuple[0] > THRESHOLD:
-                print("LOG: Matched! " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
+                #print("LOG: Matched! " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
                 map_dict[header] = (score_tuple[0], score_tuple[1], "TRUE")
             else:
-                print("LOG: Not matched, " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
+                #print("LOG: Not matched, " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
                 map_dict[header] = (score_tuple[0], "no_header", "FALSE")
     return map_dict
 
@@ -82,7 +82,7 @@ def calculate_scores(df):
     for h in df["clean_headers"]:
         # create the scored matrix
         score_matrix[i, :] = df["clean_headers"].apply(score, args=(h,)).values
-        print("Row number: {} of {}".format(i, l - 1))
+        #print("Row number: {} of {}".format(i, l - 1))
         i += 1
     return score_matrix
 
