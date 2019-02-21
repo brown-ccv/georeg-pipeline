@@ -131,8 +131,15 @@ def marginCrop(params):
         return
 
     #create list of image/param tuples.
-    x = sorted(glob.glob(os.getcwd() + "/no_ads/*.png"), key=naturalSort)
-    params_and_files = [(i, params) for i in x]
+    file_list = glob.glob(os.getcwd() + "/no_ads/*.png")
+    for chop_file in file_list:
+        if re.match('.*\.chop\.png', chop_file):
+            unchopped_file = chop_file.partition('.chop.png')[0] + '.png'
+            file_list.remove(unchopped_file)
+            print('ALERT: Chop file override!\nInstead of ' + unchopped_file + ', using: ' + chop_file)
+    file_list.sort(key=naturalSort) 
+    file_list = [(i, params) for i in file_list]
+    params_and_files = [(i, params) for i in file_list]
 
     # map params_and_files to cropMargins.
     if params['do_multiprocessing']:
