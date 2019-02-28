@@ -40,4 +40,10 @@ Within ~/anaconda3/envs/georeg/etc/conda/deactivate.d (might be anaconda2), crea
 
 You will need to produce a StreetZipCity.csv file for your area.  It can be missing the zipcode data, which are not necessary to the code.
 
+### For MacOS
+
+Build tesserocr this way:
+
+```CC=clang XCC=clang++ CPPFLAGS="-stdlib=libc++ -DUSE_STD_NAMESPACE -mmacosx-version-min=10.8" pip install tesseroc```
+
 
