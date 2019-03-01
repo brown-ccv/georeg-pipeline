@@ -94,15 +94,15 @@ def getFBP(image_file, sf):
 
 def count_alpha(text):
 	# returns the number of alphabetic chars in the string
-	return len([l for l in text if l.isalpha()])
+	return len([l for l in str(text) if l.isalpha()])
 
 def count_alnum(text):
 	# returns the number of alphanumeric chars in the string
-	return len([l for l in text if l.isalnum()])
+	return len([l for l in str(text) if l.isalnum()])
 
 def count_upper(text):
 	# returns the number of uppercase chars in the string
-	return len([l for l in text if l.isupper()])
+	return len([l for l in str(text) if l.isupper()])
 
 def is_header(fbp, text, file, entry_num):
 	# Determines if the text is a header entry
@@ -212,7 +212,7 @@ def process_data(folder, params):
 		sfs = []
 		entry_nums = []
 		flat_ocr_results = []
-		with PyTessBaseAPI() as api:
+		with PyTessBaseAPI(lang='osd') as api:
 			for file in file_list:
 				flat_ocr_results.append(ocr_file(file, api))
 		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
@@ -237,7 +237,7 @@ def process_data(folder, params):
 			flat_ocr_results = [item for sublist in ocr_results for item in sublist]
 		else:
 			flat_ocr_results = []
-			with PyTessBaseAPI() as api:
+			with PyTessBaseAPI(lang='osd') as api:
 				for file in file_list:
 					print(file)
 					flat_ocr_results.append(ocr_file(file, api))
@@ -349,7 +349,6 @@ def process_data(folder, params):
 
 	# processed data
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
-	print(data.columns)
 	try:
 		header_match_dict = pkl.load("header_match_dict")
 	except:

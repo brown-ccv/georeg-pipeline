@@ -60,10 +60,10 @@ def match(headers, true_headers, map_dict):
             score_tuple = sorted_score[0]
             # if above threshold, match
             if score_tuple[0] > THRESHOLD:
-                print("LOG: Matched! " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
+                #print("LOG: Matched! " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
                 map_dict[header] = (score_tuple[0], score_tuple[1], "TRUE")
             else:
-                print("LOG: Not matched, " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
+                #print("LOG: Not matched, " + header + " and " + score_tuple[1] + " with score " + str(score_tuple[0]))
                 map_dict[header] = (score_tuple[0], "no_header", "FALSE")
     return map_dict
 
@@ -76,7 +76,7 @@ def calculate_scores(df):
     for h in df["clean_headers"]:
         # create the scored matrix
         score_matrix[i, :] = df["clean_headers"].apply(score, args=(h,)).values
-        print("Row number: {} of {}".format(i, l - 1))
+        #print("Row number: {} of {}".format(i, l - 1))
         i += 1
     return score_matrix
 
@@ -97,7 +97,7 @@ def remove_repeat(df, scores):
                 # check if can be removed, if yes, remove.
                 try:
                     df = df[df["clean_headers"] != prelist[j]]
-                    print("LOG: " + prelist[j] + " deleted!")
+                    #print("LOG: " + prelist[j] + " deleted!")
                 except KeyError:
                     print("LOG: " + prelist[j] + " Already deleted")
             j += 1
@@ -113,7 +113,7 @@ def assign_matched(D, map_dict):
         if h in map_dict: 
             matched.append(map_dict[h][1])
         else: 
-            print("Known: ", h, " not in map_dict")
+            #print("Known: ", h, " not in map_dict")
             matched.append(h)
     return matched
 
@@ -123,7 +123,7 @@ def assign_score(D, map_dict):
         if h in map_dict: 
             scores.append(map_dict[h][0])
         else:
-            print("Known: ", h, " not in map_dict")
+            #print("Known: ", h, " not in map_dict")
             scores.append(np.nan)
     return scores
 
@@ -133,7 +133,7 @@ def assign_bool(D, map_dict):
         if h in map_dict:
             is_matched.append(map_dict[h][2])
         else:
-            print("Known: ", h, " not in map_dict")
+            #print("Known: ", h, " not in map_dict")
             is_matched.append("TRUE")
     return is_matched
 

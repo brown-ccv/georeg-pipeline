@@ -2,7 +2,16 @@ import glob, os, re
 import cv2
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt
+
+import sys
+if sys.platform == "darwin":
+    import matplotlib
+    matplotlib.use("Tkagg")
+    from matplotlib import pyplot as plt 
+else:
+    from matplotlib import pyplot as plt
+
+
 import time
 from multiprocessing import Pool
 import shutil
@@ -221,6 +230,7 @@ def process_image(input_tuple):
     t1 = time.time()
     im_bw = get_binary(file, params['threshold'], params['do_diagnostics'], params['do_plots'])
     t2 = time.time()
+    print('Binary conversion time: ' + str(round(t2-t1, 2)) + ' s')
 
     # remove the ads from the img
     t1 = time.time()
@@ -273,7 +283,7 @@ def rmAds(params):
     if os.path.isfile('hardcoded_thresholds.csv'):
         threshold_dict = pd.read_csv('hardcoded_thresholds.csv' , index_col=0).to_dict()['threshold']
         print('hardcoded thresholds found:')
-        #print(threshold_dict)
+        print(threshold_dict)
     else:
         threshold_dict = {}
     os.system('echo ",threshold" > threshold_used.csv')

@@ -169,7 +169,7 @@ def cleanImage(image):
 def fineCrop(image):
     height, width = image.shape[:2]
     clean = cleanImage(image)
-    sWidth = width/5
+    sWidth = int(width/5.0)
     cropLeft = sWidth
     cropRight = sWidth
     histogram  = pd.Series([height - cv2.countNonZero(clean[:,i]) for i in list(range(width))])
