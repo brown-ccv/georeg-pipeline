@@ -1,8 +1,13 @@
 This is a pipeline for extracting data from city directories
 
-### How to install packages
 
-This is tested on Python 3.5.3 and should work on 3.6 as well. First start by setting up the Python virtualenv folder:
+## Installing Packages
+
+This is tested on Python 3.5.3.
+
+**Note:** You will need to install two specific packages, libtesseract and libleptonica, due to the tesserocr package. These are system specific and instructions will vary depending on your OS or distro. If any issues arise, please look here https://github.com/sirfz/tesserocr and Google as necessary.
+
+First start by setting up the Python virtualenv folder:
 
 ``` 
     python3 -m venv /path/to/env
@@ -14,13 +19,50 @@ Then activate the environment by running:
     source /path/to/env/bin/activate
 ```
 
-Then run the following command to install the packages from pip
+### MacOS
 
 ```
-    pip install -r requirements_py3.txt
+    pip install -r requirements_py3_macos.txt
 ```
 
-You will need to install two specific packages, libtesseract and libleptonica, due to the tesserocr package. These are system specific and instructions will vary depending on your OS or distro. Please follow instructions here and Google as necessary: https://github.com/sirfz/tesserocr. 
+Install homebrew here: https://brew.sh/
+
+Then run:
+
+``` 
+    brew install leptonica tesseract
+```
+
+Then install tesserocr by this command (tested on MacOS 10.14.1)
+
+
+```CC=clang XCC=clang++ CPPFLAGS="-stdlib=libc++ -DUSE_STD_NAMESPACE -mmacosx-version-min=10.8" pip install tesseroc```
+
+### Linux
+
+```
+    pip install -r requirements_py3_linux.txt
+```
+
+Then install the following packages based on your distro. 
+
+For Ubuntu:
+
+``` 
+    sudo apt install tesseract-ocr libtesseract-dev libleptonica-dev
+```
+
+Then install tesserocr
+
+```
+    pip install tesserocr
+```
+
+### Windows
+
+Follow the instructions given here: https://pypi.org/project/tesserocr/
+
+
 
 Once finished, you can deactivate your environment by typing: `deactivate`. 
 
@@ -40,10 +82,5 @@ Within ~/anaconda3/envs/georeg/etc/conda/deactivate.d (might be anaconda2), crea
 
 You will need to produce a StreetZipCity.csv file for your area.  It can be missing the zipcode data, which are not necessary to the code.
 
-### For MacOS
-
-Build tesserocr this way:
-
-```CC=clang XCC=clang++ CPPFLAGS="-stdlib=libc++ -DUSE_STD_NAMESPACE -mmacosx-version-min=10.8" pip install tesseroc```
 
 
