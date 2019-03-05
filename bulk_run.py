@@ -47,8 +47,11 @@ def column_error_tracking(year_dir, d):
 
 # same as image_process code.
 def run_year(year_dir, d):
-	os.chdir("..")
+	#print(os.getcwd())
+	#os.chdir("..")
+	print(os.getcwd())
 	os.chdir(year_dir)
+	print(os.getcwd())
 	d['year_folder'] = year_dir
 	img_p = d['image_process']
 	all_params = [d['no_ads'], d['margins'],d['columns'],d['entries']]
@@ -74,16 +77,16 @@ if __name__ == '__main__':
 		d = json.load(json_data)
 
 	# runs the code on each year, starting at the start folder.
-	start = "cd1936"
-	os.chdir(start)
+	start = "cd1990" # FIX 1968 !!!!!!!!!!!!!!!!!
+	#os.chdir(start)
 
-	# # runs the actual image-process/parse code. 
-	# for i in range(folders.index(start), len(folders)):
-	#  	run_year(folders[i], d)
+	# runs the actual image-process/parse code. 
+	for i in range(folders.index(start), len(folders)):
+		run_year(folders[i], d)
 
-	# # prints all pages with column errors. 
-	# for i in folders:
-	#  	column_error_tracking(i, d)
+	# prints all pages with column errors. 
+	for i in folders:
+		column_error_tracking(i, d)
 
 	os.chdir("..")
 

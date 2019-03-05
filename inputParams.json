@@ -6,7 +6,7 @@
     "ads": false,
     "margins": false,
     "columns": false,
-    "entries": false,
+    "entries": true,
     "parse": true
     },
   "no_ads": {
@@ -28,7 +28,7 @@
     "do_plots": false
   },
   "entries": {
-    "do_multiprocessing": true,
+    "do_multiprocessing": false,
     "pool_num": 6,
     "padding": 0
   },
