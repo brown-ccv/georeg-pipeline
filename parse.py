@@ -191,7 +191,7 @@ def chunk_process_ocr(chunk_files):
 	# chunking the process to increase efficiency
 	'''We process the OCR in chunks to avoid having to reload the API each time.'''
 	rlist = []
-	with PyTessBaseAPI(lang="osd") as api:
+	with PyTessBaseAPI(lang="eng") as api:
 		for file in chunk_files:
 			print(file)
 			rlist.append(ocr_file(file, api))
@@ -212,7 +212,7 @@ def process_data(folder, params):
 		sfs = []
 		entry_nums = []
 		flat_ocr_results = []
-		with PyTessBaseAPI(lang='osd') as api:
+		with PyTessBaseAPI(lang='eng') as api:
 			for file in file_list:
 				flat_ocr_results.append(ocr_file(file, api))
 		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
@@ -237,7 +237,7 @@ def process_data(folder, params):
 			flat_ocr_results = [item for sublist in ocr_results for item in sublist]
 		else:
 			flat_ocr_results = []
-			with PyTessBaseAPI(lang='osd') as api:
+			with PyTessBaseAPI(lang='eng') as api:
 				for file in file_list:
 					print(file)
 					flat_ocr_results.append(ocr_file(file, api))
