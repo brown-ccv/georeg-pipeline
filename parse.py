@@ -322,14 +322,12 @@ def process_data(folder, params):
 	t1 = time.time()
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(0,raw_data.shape[0]))
-	tb = time.time()
 
-	# dict comprehension where the key is each page's index, val is the # of entries on that page
+
+	# dict where the key is each page's index, val is the # of entries on that page
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
-	tb = time.time()
-	# dict comprehension, key = pg index, val = first black pixel locale
+	# dict where key = pg index, val = first black pixel locale
 	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
-	tb = time.time()
 
 	# get relative first black pixel- so like accounts for page slanting
 	def get_relative_fbp(i):
@@ -341,16 +339,12 @@ def process_data(folder, params):
 		return rval
 
 	# adds new relative fbp column to the dataframe
-	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
-
 	# adds new is_header column to the df which is true if an entry is a header
+	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+
 	raw_data_length = raw_data.shape[0]
 	
 	#determines if subsequent header lines should be concantenated into one
@@ -374,8 +368,6 @@ def process_data(folder, params):
 
 	# adds new cq column to df
 	raw_data = raw_data.assign(cq = raw_data.index.map(concatenateQ))
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
 	# saves raw data as a csv
 	raw_data.to_csv(dir_dir + '/raw_data.csv')
@@ -390,8 +382,6 @@ def process_data(folder, params):
 	cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
 	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
 	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
-	tb = time.time()
-
 
 	for index in raw_data.index:
 		#raw_row = raw_data.iloc[i]
