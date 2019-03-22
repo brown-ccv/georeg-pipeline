@@ -138,25 +138,21 @@ def geocode(dataFrame, dir_dir):
 				lon = match["location"]["x"]
 
 				# cuts off the zipcode part of the address
-				patt = r"(.+RI,)(.+)"
-				if re.search(patt, str(result)):
-					sep = re.search(patt, str(result))
-					pt1 = sep.group(1)
-					pt2 = sep.group(2)
+				address_from_geocoder = str(result).rpartition('RI,')[0] + 'RI'
 
 				# make row for it
 				rowFrame = {
 					'Query': [faddress],
-					'Address - From Geocoder': [pt1],
+					'Address - From Geocoder': address_from_geocoder,
 					'Geocode Score': conf_score,
 					'Match Score': score,
-					'Latitude': [lat],
-					'Longitude': [lon],
+					'Latitude': lat,
+					'Longitude': lon,
 					'Date_Added': today,
-					'File_List': [flist],
+					'File_List': flist,
 					'Text': [text],
-					'Company_Name': [coName],
-					'Header': [group]
+					'Company_Name': coName,
+					'Header': group
 					}
 
 				# if the row has a good score, add it to the masterlist
@@ -165,7 +161,7 @@ def geocode(dataFrame, dir_dir):
 				else:
 					errors_list.append(row)
 			except:
-				print('Error for location: ' + location)
+				#print('Error for location: ' + location)
 				errors_list.append(row)
 		
 		# if it's already hardcoded just make a row for it
@@ -173,16 +169,16 @@ def geocode(dataFrame, dir_dir):
 			lat,lon = hardcode_dict[(address,city)]
 			rowFrame = {
 					'Query': [faddress],
-					'Address - From Geocoder': ['HARDCODE'],
+					'Address - From Geocoder': 'HARDCODE',
 					'Geocode Score': 100.0,
 					'Match Score': score,
-					'Latitude': [lat],
-					'Longitude': [lon],
+					'Latitude': lat,
+					'Longitude': lon,
 					'Date_Added': today,
-					'File_List': [flist],
+					'File_List': flist,
 					'Text': [text],
-					'Company_Name': [coName],
-					'Header': [group]
+					'Company_Name': coName,
+					'Header': group
 					}
 			master_list.append(rowFrame)
 		else:
