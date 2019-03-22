@@ -87,6 +87,7 @@ class BrownArcGIS(ArcGIS):
         if not len(response['candidates']):
             return None
 
+        #TODO 
         geocoded = []
         candidate_cnt = 1
         for candidate in response['candidates']:
