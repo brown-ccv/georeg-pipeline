@@ -110,7 +110,6 @@ def geocode(dataFrame, dir_dir):
 				lat = match["location"]["y"]
 				lon = match["location"]["x"]
 
-
 				address_from_geocoder = str(result).rpartition('RI,')[0] + 'RI'
 
 				rowFrame = {

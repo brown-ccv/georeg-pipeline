@@ -260,14 +260,9 @@ def process_data(folder, params):
 	t1 = time.time()
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(0,raw_data.shape[0]))
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+
 	def get_relative_fbp(i):
 		pbi = page_break[i]
 		if i <= pbi + 8:
@@ -275,15 +270,12 @@ def process_data(folder, params):
 		else:
 			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(i-8,min(i+2,len(fbp_dict)-1)))])
 		return rval
-	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
+	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+
 	raw_data_length = raw_data.shape[0]
 	def concatenateQ(i):
 		# decides whether to concatenate files or not
@@ -305,8 +297,6 @@ def process_data(folder, params):
 			return False
 
 	raw_data = raw_data.assign(cq = raw_data.index.map(concatenateQ))
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
 	# saves raw data as a csv
 	raw_data.to_csv(dir_dir + '/raw_data.csv')
@@ -320,8 +310,6 @@ def process_data(folder, params):
 	cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
 	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
 	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
-	tb = time.time()
-	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	for index in raw_data.index:
 		#raw_row = raw_data.iloc[i]
 		row_text = text_dict[index].decode("utf-8")
