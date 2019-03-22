@@ -36,7 +36,7 @@ Then run:
 Then install tesserocr by this command (tested on MacOS 10.14.1)
 
 
-```CC=clang XCC=clang++ CPPFLAGS="-stdlib=libc++ -DUSE_STD_NAMESPACE -mmacosx-version-min=10.8" pip install tesseroc```
+```CC=clang XCC=clang++ CPPFLAGS="-stdlib=libc++ -DUSE_STD_NAMESPACE -mmacosx-version-min=10.8" pip install tesserocr```
 
 ### Linux
 

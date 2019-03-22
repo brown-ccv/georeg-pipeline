@@ -6,7 +6,7 @@ import time
 import glob, re
 
 
-folders = ["cd1936","cd1937","cd1938","cd1940","cd1941","cd1943","cd1944","cd1945","cd1946","cd1948","cd1950","cd1952","cd1954","cd1956","cd1959","cd1960","cd1961","cd1962","cd1964","cd1966","cd1968","cd1970","cd1972","cd1976","cd1978","cd1980","cd1985","cd1990"]
+folders = ["cd1936","cd1937","cd1938","cd1940","cd1941","cd1943","cd1944","cd1945","cd1946","cd1948","cd1950","cd1952","cd1954","cd1956","cd1959","cd1960","cd1962","cd1964","cd1966","cd1968","cd1970","cd1972","cd1976","cd1978","cd1980","cd1985","cd1990"]
 
 if not sys.argv[1]:
 	raise Exception('You need to pass in the parameter files.')
@@ -77,7 +77,7 @@ if __name__ == '__main__':
 		d = json.load(json_data)
 
 	# runs the code on each year, starting at the start folder.
-	start = "cd1990" # FIX 1968 !!!!!!!!!!!!!!!!!
+	start = "cd1936"
 	#os.chdir(start)
 
 	# runs the actual image-process/parse code. 

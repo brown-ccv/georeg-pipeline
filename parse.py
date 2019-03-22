@@ -125,7 +125,7 @@ def is_header(fbp, text, file, entry_num):
 			return True
 		elif (fbp > 35) and ((float(count_upper(text))/float(count_alpha(text))) > 0.9):
 			return True
-		elif (entry_num < 3) and ((float(count_alpha(text))/float(count_alpha(text))) > 0.95):
+		elif (entry_num < 3) and ((float(count_upper(text))/float(count_alpha(text))) > 0.95):
 			return True
 		elif (text.lstrip()[0] == '*') and (fbp > 30):
 			return True
@@ -193,7 +193,7 @@ def chunk_process_ocr(chunk_files):
 	rlist = []
 	with PyTessBaseAPI(lang="eng") as api:
 		for file in chunk_files:
-			print(file)
+			#print(file)
 			rlist.append(ocr_file(file, api))
 	return rlist
 
@@ -261,13 +261,13 @@ def process_data(folder, params):
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(0,raw_data.shape[0]))
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	def get_relative_fbp(i):
 		pbi = page_break[i]
 		if i <= pbi + 8:
@@ -277,13 +277,13 @@ def process_data(folder, params):
 		return rval
 	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	raw_data_length = raw_data.shape[0]
 	def concatenateQ(i):
 		# decides whether to concatenate files or not
@@ -306,7 +306,7 @@ def process_data(folder, params):
 
 	raw_data = raw_data.assign(cq = raw_data.index.map(concatenateQ))
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 
 	# saves raw data as a csv
 	raw_data.to_csv(dir_dir + '/raw_data.csv')
@@ -321,7 +321,7 @@ def process_data(folder, params):
 	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
 	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
 	tb = time.time()
-	print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
+	#print('Time so far: ' + str(round(tb-t1, 3)) + ' s')
 	for index in raw_data.index:
 		#raw_row = raw_data.iloc[i]
 		row_text = text_dict[index].decode("utf-8")

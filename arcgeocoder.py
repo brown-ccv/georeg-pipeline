@@ -110,46 +110,43 @@ def geocode(dataFrame, dir_dir):
 				lat = match["location"]["y"]
 				lon = match["location"]["x"]
 
-				patt = r"(.+RI,)(.+)"
-				if re.search(patt, str(result)):
-					sep = re.search(patt, str(result))
-					pt1 = sep.group(1)
-					pt2 = sep.group(2)
+
+				address_from_geocoder = str(result).rpartition('RI,')[0] + 'RI'
 
 				rowFrame = {
 					'Query': [faddress],
-					'Address - From Geocoder': [pt1],
+					'Address - From Geocoder': address_from_geocoder,
 					'Geocode Score': conf_score,
 					'Match Score': score,
-					'Latitude': [lat],
-					'Longitude': [lon],
+					'Latitude': lat,
+					'Longitude': lon,
 					'Date_Added': today,
-					'File_List': [flist],
+					'File_List': flist,
 					'Text': [text],
-					'Company_Name': [coName],
-					'Header': [group]
+					'Company_Name': coName,
+					'Header': group
 					}
 				if conf_score > 85:
 					master_list.append(rowFrame)
 				else:
 					errors_list.append(row)
 			except:
-				print('Error for location: ' + location)
+				#print('Error for location: ' + location)
 				errors_list.append(row)
 		elif (address,city) in hardcode_dict.keys():
 			lat,lon = hardcode_dict[(address,city)]
 			rowFrame = {
 					'Query': [faddress],
-					'Address - From Geocoder': ['HARDCODE'],
+					'Address - From Geocoder': 'HARDCODE',
 					'Geocode Score': 100.0,
 					'Match Score': score,
-					'Latitude': [lat],
-					'Longitude': [lon],
+					'Latitude': lat,
+					'Longitude': lon,
 					'Date_Added': today,
-					'File_List': [flist],
+					'File_List': flist,
 					'Text': [text],
-					'Company_Name': [coName],
-					'Header': [group]
+					'Company_Name': coName,
+					'Header': group
 					}
 			master_list.append(rowFrame)
 		else:
