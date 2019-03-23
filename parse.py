@@ -37,10 +37,16 @@ def makeCSV(dataFrame):
 	dataFrame['Text'] = dataFrame['Text'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Query'] = dataFrame['Query'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
-	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
+	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').
+	-str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
 
-def dfProcess(dataFrame):
+
+def local_search(df, location_dict):
+
+	return df
+
+def dfProcess(dataFrame, params):
 	# this processes the dataframe to match streets and geocode
 	print('Matching city and street...')
 	t1 = time.time()
@@ -53,7 +59,11 @@ def dfProcess(dataFrame):
 	t1 = time.time()
 	#frame.to_pickle('frame.pkl')
 	#frame = pd.read_pickle('frame.pkl')
-	fDF = arcgeocoder.geocode(frame, dir_dir)
+	if params["geocode"] == True:
+		fDF = arcgeocoder.geocode(frame, dir_dir)
+	else:
+		fDF = local_search(frame, location_dict)
+
 	#print(str(len(fDF)) + ' addresses')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -357,7 +367,6 @@ def process_data(folder, params):
 		print('match dict built')
 	
 	matched, match_failed, all_headers = match_headers(data, header_match_dict)
-
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -401,7 +410,7 @@ def process_data(folder, params):
 
 	print('Matching city and street and geocoding...')
 	t1 = time.time()
-	result = dfProcess(data)
+	result = dfProcess(data, params)
 	t2 = time.time()
 	print('Collective runtime: ' + str(round(t2-t1, 3)) + ' s')
 	if not result.empty:

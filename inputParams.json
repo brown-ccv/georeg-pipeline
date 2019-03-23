@@ -38,6 +38,7 @@
     "do_ocr": true,
     "make_table": false,
     "stringParse" : {
-    }
+    },
+    "geocode": true
   }
 }
