@@ -44,13 +44,11 @@ def makeCSV(dataFrame):
 	dataFrame['Text'] = dataFrame['Text'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Query'] = dataFrame['Query'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame['Latitude'] = dataFrame['Latitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
-	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').
-	-str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
+	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
 
 
 def local_search(df, location_dict):
-
 	return df
 
 def dfProcess(dataFrame, params):
@@ -249,6 +247,10 @@ def chunk_process_ocr(chunk_files):
 			rlist.append(ocr_file(file, api))
 	return rlist
 
+
+def assign_matched(D):
+	return [h if m == "no_header" else m for h,m in zip(D["Header"], D["matched"])]
+
 """
 Main processing/driver script
 """
@@ -435,6 +437,9 @@ def process_data(folder, params):
 	
 	# see if you can match headers
 	matched, match_failed, all_headers = match_headers(data, header_match_dict)
+	
+	data["Header"] = all_headers.assign(matched_header=assign_matched)["matched_header"]
+	
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -451,7 +456,7 @@ def process_data(folder, params):
 		search_list = [(i, params['stringParse']) for i in data['Text'].tolist()]
 		output_tuples = pool.map(stringParse.search, search_list)
 	else:
-		output_tuples = [stringParse.search(searchr_text) for search_text in data['Text'].tolist()]
+		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
 	
 	# add streets and company names to the datagrame
 	#streets,company_names = zip(*output_tuples)
