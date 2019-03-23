@@ -93,6 +93,9 @@ city_dict = {
 	'N/A': 'N/A'
 }
 
+"""
+given two cities, scores how likely they are to be the same city
+"""
 def city_scorer(str1, str2):
 	if str1[0] == str2[0]:
 		fscore = 100.0
@@ -102,7 +105,9 @@ def city_scorer(str1, str2):
 		fscore = 25.0
 	rscore = (fscore + 3 * fuzz.ratio(str1, str2)) / 4.0
 	return rscore
-
+"""
+given a city, extracts the city in the city dict that most closely matches it
+"""
 def city_match(city):
 	cty, score = process.extractOne(city, city_dict.keys(), scorer = city_scorer)
 	if score > 85:

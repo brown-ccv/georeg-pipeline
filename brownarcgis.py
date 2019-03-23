@@ -13,8 +13,15 @@ from geopy.exc import GeocoderServiceError, GeocoderAuthenticationFailure
 from geopy.exc import ConfigurationError
 from geopy.location import Location
 from geopy.util import logger
+import urllib
 
 __all__ = ("BrownArcGIS", )
+
+def read_file(path):
+    with open(path, 'r') as path_stream:
+        rstr = path_stream.read()
+        path_stream.close()
+    return rstr
 
 class BrownArcGIS(ArcGIS):
     """
@@ -73,6 +80,10 @@ class BrownArcGIS(ArcGIS):
 
         url = "?".join((self.api, urlencode(params)))
 
+        #print(url)
+
+        #url = url.encode('utf-8')
+
         logger.debug("%s.geocode: %s", self.__class__.__name__, url)
         response = self._call_geocoder(url, timeout=timeout)
 
@@ -87,6 +98,7 @@ class BrownArcGIS(ArcGIS):
         if not len(response['candidates']):
             return None
 
+        #TODO 
         geocoded = []
         candidate_cnt = 1
         for candidate in response['candidates']:
@@ -102,6 +114,14 @@ class BrownArcGIS(ArcGIS):
         return {'candidates':geocoded}
 
     def _refresh_authentication_token(self):
+        self.retry = 0
+        self.token_expiry = int(time()) + self.token_lifetime
+        self.token = read_file('token.txt')
+
+
+
+
+    def _refresh_authentication_token_broken(self):
         """
         POST to ArcGIS requesting a new token.
         """
@@ -112,17 +132,23 @@ class BrownArcGIS(ArcGIS):
         token_request_arguments = {
             'username': self.username,
             'password': self.password,
-            'client': 'referer',
-            'referer': self.referer,
+            'client': 'requestip',
+            #'referer': 'requestip',
             'expiration': self.token_lifetime,
             'f': 'json'
         }
         self.token_expiry = int(time()) + self.token_lifetime
         data = urlencode(token_request_arguments)
+        print(data)
+        data = data.encode("utf-8")
+        print(data)
         req = Request(url=self.auth_api, headers=self.headers)
+        print(req)
         page = urlopen(req, data=data, timeout=self.timeout)
+        print(page)
         page = page.read()
-        response = json.loads(page)
+        print(page)
+        response = json.loads(page.decode('unicode_escape'))
         if not 'token' in response:
             raise GeocoderAuthenticationFailure(
                 'Missing token in auth request. '
