@@ -125,7 +125,7 @@ def geocode(dataFrame, dir_dir):
 					'Company_Name': coName,
 					'Header': group
 					}
-				if conf_score > 85:
+				if conf_score > 99:
 					master_list.append(rowFrame)
 				else:
 					errors_list.append(row)
@@ -143,7 +143,7 @@ def geocode(dataFrame, dir_dir):
 					'Longitude': lon,
 					'Date_Added': today,
 					'File_List': flist,
-					'Text': [text],
+					'Text': text,
 					'Company_Name': coName,
 					'Header': group
 					}

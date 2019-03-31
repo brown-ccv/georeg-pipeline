@@ -337,14 +337,16 @@ def process_data(folder, params):
 
 	# processed data
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
-	try:
-		header_match_dict = pkl.load("header_match_dict")
-	except:
-		true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
-		header_match_dict = generate_dict(data, true_headers)
-		print('match dict built')
-	
-	matched, match_failed, all_headers = match_headers(data, header_match_dict)
+
+	if False:
+		try:
+			header_match_dict = pkl.load("header_match_dict")
+		except:
+			true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
+			header_match_dict = generate_dict(data, true_headers)
+			print('match dict built')
+		
+		matched, match_failed, all_headers = match_headers(data, header_match_dict)
 
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
