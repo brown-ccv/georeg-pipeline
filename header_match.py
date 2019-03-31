@@ -156,7 +156,9 @@ def generate_dict(df, true_headers):
 def match_headers(df, map_dict):
 
     df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
-    df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
+    
+    # the line below filters unreasonable headers but can screw up the matching. 
+    # df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
     df = df.assign(
         matched = lambda D: assign_matched(D, map_dict),

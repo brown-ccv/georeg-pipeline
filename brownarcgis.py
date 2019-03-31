@@ -98,6 +98,7 @@ class BrownArcGIS(ArcGIS):
         if not len(response['candidates']):
             return None
 
+        #TODO 
         geocoded = []
         candidate_cnt = 1
         for candidate in response['candidates']:
@@ -116,6 +117,9 @@ class BrownArcGIS(ArcGIS):
         self.retry = 0
         self.token_expiry = int(time()) + self.token_lifetime
         self.token = read_file('token.txt')
+
+
+
 
     def _refresh_authentication_token_broken(self):
         """

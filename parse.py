@@ -26,6 +26,13 @@ dir_dir = ""
 def naturalSort(String_):
 	return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
 
+"""
+turns a pandas dataframe into a csv. strips various characters off.
+writes to FOutput.csv 
+
+Args:
+    dataFrame: the pandas datafram
+"""
 def makeCSV(dataFrame):
 	# creates the csv FOutput
 	today = datetime.date.today()
@@ -40,7 +47,11 @@ def makeCSV(dataFrame):
 	dataFrame['Longitude'] = dataFrame['Longitude'].astype('str').str.strip('[[]]').str.lstrip('u\'').str.rstrip('\'').str.strip('[\\n ]')
 	dataFrame.to_csv(dir_dir + '/FOutput.csv', sep = ',')
 
-def dfProcess(dataFrame):
+
+def local_search(df, location_dict):
+	return df
+
+def dfProcess(dataFrame, params):
 	# this processes the dataframe to match streets and geocode
 	print('Matching city and street...')
 	t1 = time.time()
@@ -53,23 +64,32 @@ def dfProcess(dataFrame):
 	t1 = time.time()
 	#frame.to_pickle('frame.pkl')
 	#frame = pd.read_pickle('frame.pkl')
-	fDF = arcgeocoder.geocode(frame, dir_dir)
+	if params["geocode"] == True:
+		fDF = arcgeocoder.geocode(frame, dir_dir)
+	else:
+		fDF = local_search(frame, location_dict)
+
 	#print(str(len(fDF)) + ' addresses')
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 	return fDF
 
+"""
+gets horizontal histogram of the number of white pixels in each column
+"""
 def getHorzHist(image):
 	height, width = image.shape[:2]
 	i=0
 	histogram = [0]*width
-	#count white pixels in each row
 	while i<width:
 		histogram[i] = height - cv2.countNonZero(image[:, i])
 		# print(cv2.countNonZero(image[:, i]))
 		i=i+1
 	return histogram
 
+"""
+returns the location of the first black pixel in the image from the left
+"""
 def getFBP(image_file, sf):
 	# Gets the first black pixel
 	fbp_thresh = 3
@@ -78,7 +98,6 @@ def getFBP(image_file, sf):
 	hlow = int(float(h)*0.25)
 	hhigh = int(float(h)*0.75)
 	hhist = getHorzHist(im[hlow:hhigh,:])
-	#get location of first black pixel
 	histstr = ','.join([str(li) for li in hhist])
 	strpart = histstr.partition('0,')
 	listStringPart = strpart[2].split(',')
@@ -87,25 +106,44 @@ def getFBP(image_file, sf):
 	while ((listIntPart[min(i,len(listIntPart)-1)] < fbp_thresh) or (listIntPart[min(i+2,len(listIntPart)-1)] < fbp_thresh)) and (i < len(listIntPart)):
 		i+=1
 	blackindx = i
-	# print(listIntPart, blackindx)
 	cut = len(strpart[0].split(',')) + len(strpart[1].split(','))
 	firstBlackPix = cut + blackindx - fbp_thresh
 	return sf*float(firstBlackPix)
 
+# returns the number of alphabetic chars in the string
 def count_alpha(text):
-	# returns the number of alphabetic chars in the string
 	return len([l for l in str(text) if l.isalpha()])
 
+# returns the number of alphanumeric chars in the string
 def count_alnum(text):
-	# returns the number of alphanumeric chars in the string
 	return len([l for l in str(text) if l.isalnum()])
 
+# returns the number of uppercase chars in the string
 def count_upper(text):
-	# returns the number of uppercase chars in the string
 	return len([l for l in str(text) if l.isupper()])
 
+"""
+Determines if the text is a header entry
+
+Algorithm is as follows:
+	1954 or under: 
+		- no capitalization
+		- indented
+		- starts with star and indented
+	1955-1962:
+		- there are letters in it
+		- indented
+		- indented a bit and 90%+ capital letters
+		- less than 3 entries and w h a t
+		- starts with * and lightly indented
+	1964: 
+		- has letters
+		- indented
+		- starts with star and indented
+
+	... and so on.
+"""
 def is_header(fbp, text, file, entry_num):
-	# Determines if the text is a header entry
 	year = int(file.partition('/')[0].lstrip('cd'))
 	text = text.decode("utf-8")
 	# divides logic by year
@@ -172,8 +210,18 @@ def is_header(fbp, text, file, entry_num):
 		else:
 			return False
 
+"""
+Performs the ocr for an entry
+
+returns:
+	the file that was ocr'd
+	the text outputted by ocr
+	the first black pixel in the image
+	the scale factor for the entry
+	the entry's number (in terms of the number of entries in a page)
+"""
 def ocr_file(file, api):
-	# Performs the ocr for the page, returning a tuple of data
+	
 	image = Image.open(file)
 	api.SetImage(image)
 	api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -187,9 +235,11 @@ def ocr_file(file, api):
 	entry_num = int(file.rpartition('_')[2].rpartition('.png')[0])
 	return file,text,fbp,sf,entry_num
 
+
+"""
+processes the OCR in chunks to avoid having to reload the API each time.
+"""
 def chunk_process_ocr(chunk_files):
-	# chunking the process to increase efficiency
-	'''We process the OCR in chunks to avoid having to reload the API each time.'''
 	rlist = []
 	with PyTessBaseAPI(lang="eng") as api:
 		for file in chunk_files:
@@ -197,28 +247,43 @@ def chunk_process_ocr(chunk_files):
 			rlist.append(ocr_file(file, api))
 	return rlist
 
+
+def assign_matched(D):
+	return [h if m == "no_header" else m for h,m in zip(D["Header"], D["matched"])]
+
+"""
+Main processing/driver script
+"""
 def process_data(folder, params):
-	# Main processing/driver script
+	
 	do_OCR = params['do_ocr']
 	make_table = params['make_table']
 	#Make the zip code to city lookup table
 	if make_table:
 		streetTable()
+
+	# only triggers for single image runs
 	if do_OCR and 'img' in params:
 		file_list = sorted(glob.glob(folder +"/" +  params['img'] + "*.png"), key = naturalSort)
-		#files = []
 		texts = []
 		first_black_pixels = []
 		sfs = []
 		entry_nums = []
 		flat_ocr_results = []
+
+		# do ocr for each entry, append resulting tuple to flat_ocr+results
 		with PyTessBaseAPI(lang='eng') as api:
 			for file in file_list:
 				flat_ocr_results.append(ocr_file(file, api))
+
+		# turn it into a pandas df
 		single_raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
+		
+		# add the image to the raw_data pkl file
 		raw_data = pd.read_pickle(dir_dir + '/raw_data.pkl')
 		raw_data = pd.concat([raw_data[~raw_data.file.isin(file_list)], single_raw_data], ignore_index = True)
 		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
+
 	elif do_OCR:
 		files = []
 		texts = []
@@ -229,6 +294,8 @@ def process_data(folder, params):
 		t1 = time.time()
 		file_list = sorted(glob.glob(folder.rstrip('/') + '/*.png'), key = naturalSort)
 		print('Processing ' + str(len(file_list)) + ' files...')
+
+		# performs the ocr on all entries, appends tuple results to flat_ocr_results
 		if params['do_multiprocessing']:
 			pool = multiprocessing.Pool(params['pool_num'])
 			chunk_size = min(max(int(len(file_list)/50.0), 1), 20)
@@ -241,6 +308,8 @@ def process_data(folder, params):
 				for file in file_list:
 					print(file)
 					flat_ocr_results.append(ocr_file(file, api))
+
+		# writes results to the raw data pkl file
 		raw_data = pd.DataFrame(flat_ocr_results, columns = ['file','text','first_black_pixel','sf','entry_num'])
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -249,6 +318,8 @@ def process_data(folder, params):
 		raw_data.to_pickle(dir_dir + '/raw_data.pkl')
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+	
+	# doesn't perform ocr, just reads the data in from the pkl
 	else:
 		print('Reading raw data from raw_data.pkl...')
 		t1 = time.time()
@@ -256,13 +327,20 @@ def process_data(folder, params):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
+	# finds the first entry for each page and builds an index list based on that
 	print('Concatenating entries...')
 	t1 = time.time()
+
 	page_breaks = raw_data[raw_data['entry_num'] == 1].index.tolist()
 	ilist = list(range(0,raw_data.shape[0]))
+
+
+	# dict where the key is each page's index, val is the # of entries on that page
 	page_break = {i:max([num for num in page_breaks if i>=num]) for i in ilist}
+	# dict where key = pg index, val = first black pixel locale
 	fbp_dict = {index:value for index,value in raw_data['first_black_pixel'].iteritems()}
 
+	# get relative first black pixel- so like accounts for page slanting
 	def get_relative_fbp(i):
 		pbi = page_break[i]
 		if i <= pbi + 8:
@@ -271,14 +349,17 @@ def process_data(folder, params):
 			rval = fbp_dict[i] - min([fbp_dict[j] for j in list(range(i-8,min(i+2,len(fbp_dict)-1)))])
 		return rval
 
+	# adds new relative fbp column to the dataframe
+	# adds new is_header column to the df which is true if an entry is a header
 	raw_data = raw_data.assign(relative_fbp = [get_relative_fbp(i) for i in ilist])
 	raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
 	is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
 	entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
 
 	raw_data_length = raw_data.shape[0]
+	
+	#determines if subsequent header lines should be concantenated into one
 	def concatenateQ(i):
-		# decides whether to concatenate files or not
 		if i==raw_data_length - 1:
 			return False
 		elif i==0 and is_header_dict[i]:
@@ -296,11 +377,13 @@ def process_data(folder, params):
 		else:
 			return False
 
+	# adds new cq column to df
 	raw_data = raw_data.assign(cq = raw_data.index.map(concatenateQ))
 
 	# saves raw data as a csv
 	raw_data.to_csv(dir_dir + '/raw_data.csv')
 
+	
 	file_lists = []
 	file_list = []
 	texts = []
@@ -310,22 +393,29 @@ def process_data(folder, params):
 	cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
 	text_dict = {index:value for index,value in raw_data['text'].iteritems()}
 	file_dict = {index:value for index,value in raw_data['file'].iteritems()}
+
 	for index in raw_data.index:
 		#raw_row = raw_data.iloc[i]
 		row_text = text_dict[index].decode("utf-8")
 		cq = cq_dict[index]
 		file = file_dict[index]
+		
+		# concat headers
 		if is_header_dict[index]:
 			if cq:
 				header += ' ' + row_text.strip()
 				#print(header)
 			else:
 				header = row_text.strip()
+
+		# if it's a page number
 		elif entry_num_dict[index] == 1 and row_text == file.rpartition('_Page_')[2].rpartition(' ')[0]:
 			pass
+		# concat
 		elif cq:
 			file_list.append(file)
 			text += ' ' + row_text.strip()
+		# add the headers, text, files to their lists
 		else:
 			file_list.append(file)
 			text += ' ' + row_text.strip()
@@ -335,19 +425,28 @@ def process_data(folder, params):
 			file_list = []
 			text = ''
 
-	# processed data
+	# throw it all into a dataframe
 	data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
+	
+	t2 = time.time()
+	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-	if False:
-		try:
-			header_match_dict = pkl.load("header_match_dict")
-		except:
-			true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
-			header_match_dict = generate_dict(data, true_headers)
-			print('match dict built')
-		
-		matched, match_failed, all_headers = match_headers(data, header_match_dict)
+	print('Matching headers...')
+	t1 = time.time()
 
+	# try to load pickle file for headers, otherwise make it yourself
+	try:
+		header_match_dict = pkl.load("header_match_dict")
+	except:
+		true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
+		header_match_dict = generate_dict(data, true_headers)
+		print('match dict built')
+	
+	# see if you can match headers
+	matched, match_failed, all_headers = match_headers(data, header_match_dict)
+	
+	data["Header"] = all_headers.assign(matched_header=assign_matched)["matched_header"]
+	
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
@@ -364,7 +463,9 @@ def process_data(folder, params):
 		search_list = [(i, params['stringParse']) for i in data['Text'].tolist()]
 		output_tuples = pool.map(stringParse.search, search_list)
 	else:
-		output_tuples = [stringParse.search(searchr_text) for search_text in data['Text'].tolist()]
+		output_tuples = [stringParse.search(search_text) for search_text in data['Text'].tolist()]
+	
+	# add streets and company names to the datagrame
 	#streets,company_names = zip(*output_tuples)
 	streets = [output_tuple[0] for output_tuple in output_tuples]
 	company_names = [output_tuple[1] for output_tuple in output_tuples]
@@ -372,6 +473,9 @@ def process_data(folder, params):
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
+
+	# make sure that row_streets isn't a list of streets
+	# if it is, every street gets its own row
 	print('Expanding...')
 	t1 = time.time()
 	#data_list = [row for row in data.iterrows()]
@@ -391,9 +495,11 @@ def process_data(folder, params):
 
 	print('Matching city and street and geocoding...')
 	t1 = time.time()
-	result = dfProcess(data)
+	result = dfProcess(data, params)
 	t2 = time.time()
 	print('Collective runtime: ' + str(round(t2-t1, 3)) + ' s')
+
+	# save to csv
 	if not result.empty:
 		print('Saving to FOutput.csv...')
 		t1 = time.time()
@@ -401,16 +507,27 @@ def process_data(folder, params):
 		t2 = time.time()
 		print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
+
+"""
+takes in input params, starts off the parse process according to those params
+"""
 def main(inputParams):
 	global dir_dir
 	dir_dir = "./" + inputParams['year_folder']
 	
+	# runs on single images if specificed in params
 	if inputParams['image_process']['single_image']:
 		inputParams['parse']['img'] = inputParams['image_process']['img_name']
+
 	process_data(inputParams['year_folder'] + '/entry', inputParams['parse'])
+
 	mt2 = time.time()
 	print('Full runtime: ' + str(round(mt2-mt1, 3)) + ' s')
 
+
+"""
+for terminal input
+"""
 if __name__ == '__main__':
 	if not sys.argv[1]:
 		raise Exception('You need to input a parameters file. try inputParams.json.')
