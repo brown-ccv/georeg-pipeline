@@ -87,30 +87,46 @@ def match_headers(df, map_dict):
 
     #df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
     t1 = time.time()
+
     header_dict = {}
+    score_dict = {}
+    bool_dict = {}
+
     print(len(set(df['Header'])))
     for header in set(df['Header']):
         cleaned_header = clean_header(header)
         if cleaned_header in map_dict.keys():
             if map_dict[cleaned_header][1] != "no_header":
                 header_dict[header] = map_dict[cleaned_header][1]
+                score_dict[header] = map_dict[cleaned_header][0]
+                bool_dict[header] = map_dict[cleaned_header][2]
             else:
                 header_dict[header] = cleaned_header
+                score_dict[header] = map_dict[cleaned_header][0]
+                bool_dict[header] = map_dict[cleaned_header][2]
         else:
             header_dict[header] = cleaned_header
+            score_dict[header] = 0
+            bool_dict[header] = "ERR: NOT IN MAPDICT"
+
     t2 = time.time()
     print('clean header assigning time: ' + str(round(t2-t1,3)) + ' s')
     print(set(header_dict.keys()) - set(df['Header']))
 
     t1 = time.time()
     header_list = []
+    score_list = []
+    bool_list = []
+
     for row in df.itertuples():
         raw_header = row.Header
-        matched_header = header_dict[raw_header]
-        header_list.append(matched_header)
+        header_list.append(header_dict[raw_header])
+        score_list.append(score_dict[raw_header])
+        bool_list.append(bool_dict[raw_header])
+    
     t2 = time.time()
     print('assigning time: ' + str(round(t2-t1, 3)) + ' s')
-    df = df.assign(clean_header=header_list)
+    df = df.assign(clean_header=header_list,score=score_list,matched=bool_list)
 
     return df
 
