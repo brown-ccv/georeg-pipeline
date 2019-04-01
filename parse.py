@@ -436,17 +436,18 @@ def process_data(folder, params):
 
 	# try to load pickle file for headers, otherwise make it yourself
 	try:
-		header_match_dict = pkl.load("header_match_dict")
+		header_match_dict = pkl.load(open("header_match_dict.pkl", 'rb'))
 	except:
 		true_headers = list(pd.read_csv("true_headers.csv")['Headers'].dropna())
 		header_match_dict = generate_dict(data, true_headers)
 		print('match dict built')
 	
 	# see if you can match headers
-	matched, match_failed, all_headers = match_headers(data, header_match_dict)
+	# matched, match_failed, all_headers = match_headers(data, header_match_dict)
+	data = match_headers(data, header_match_dict)
 	
-	data["Header"] = all_headers.assign(matched_header=assign_matched)["matched_header"]
-	
+	#data["Header"] = all_headers.assign(matched_header=assign_matched)["matched_header"]
+
 	t2 = time.time()
 	print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 

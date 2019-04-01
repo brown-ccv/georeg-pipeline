@@ -37,6 +37,7 @@
     "pool_num": 6,
     "do_ocr": false,
     "make_table": false,
+    "geocode": true,
     "stringParse" : {
     },
     "geocode": true

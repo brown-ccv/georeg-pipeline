@@ -3,13 +3,13 @@ from fuzzywuzzy import fuzz
 import string
 import pickle as pkl
 import numpy as np
-
+import time
 
 # Global constants, should be in input_Params
 THRESHOLD = 85
 
 # can be in input_params, but this is stuff that needs to be replaced or removed.
-replace_char = ["*", "&", "%", "/", "\\"]
+replace_char = ["*", "%", "/", "\\"]
 strip_char = ["'", "-", ".", "!", ":", ";"]
 num_char =  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 red_flag_char = [" AVE ", " ST ", " AV ", " BLVD ", " BLV ", " RD ", " DR "]
@@ -20,8 +20,9 @@ common_errors = {
     "8": "B"
 }
 
-def clean_header(h):
+def clean_header(h_raw):
     # cleans the header
+    h = h_raw.partition(' (')[0]
     red_flag = False
     for s in replace_char:
         h = h.replace(s, "")
@@ -155,22 +156,55 @@ def generate_dict(df, true_headers):
 # driver function to header match given a map_dict
 def match_headers(df, map_dict):
 
-    df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
-    
+    #df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
+    t1 = time.time()
+    header_dict = {}
+    print(len(set(df['Header'])))
+    for header in set(df['Header']):
+        cleaned_header = clean_header(header)
+        if cleaned_header in map_dict.keys():
+            if map_dict[cleaned_header][1] != "no_header":
+                header_dict[header] = map_dict[cleaned_header][1]
+            else:
+                header_dict[header] = cleaned_header
+        else:
+            header_dict[header] = cleaned_header
+    t2 = time.time()
+    print('clean header assigning time: ' + str(round(t2-t1,3)) + ' s')
+    print(set(header_dict.keys()) - set(df['Header']))
+
+    t1 = time.time()
+    header_list = []
+    for row in df.itertuples():
+        raw_header = row.Header
+        matched_header = header_dict[raw_header]
+        header_list.append(matched_header)
+    t2 = time.time()
+    print('assigning time: ' + str(round(t2-t1, 3)) + ' s')
+    df = df.assign(clean_header=header_list)
+
+
     # the line below filters unreasonable headers but can screw up the matching. 
     # df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
 
-    df = df.assign(
-        matched = lambda D: assign_matched(D, map_dict),
-        score = lambda D: assign_score(D, map_dict), 
-        is_matched = lambda D: assign_bool(D, map_dict))
+    # df = df.assign(
+    #     matched = lambda D: assign_matched(D, map_dict),
+    #     score = lambda D: assign_score(D, map_dict), 
+    #     is_matched = lambda D: assign_bool(D, map_dict))
 
-    known = df.loc[df.matched != "no_header"].reset_index(drop=True)
-    unknown = df.loc[df.matched == "no_header"].reset_index(drop=True)
+    # known = df.loc[df.matched != "no_header"].reset_index(drop=True)
+    # unknown = df.loc[df.matched == "no_header"].reset_index(drop=True)
 
-    scores = calculate_scores(unknown)
-    removal_matrix = (scores > THRESHOLD) & (scores < 100)
-    internal_unmatched = remove_repeat(unknown, removal_matrix)
-    internal_unmatched = internal_unmatched.reset_index(drop=True)
+    # scores = calculate_scores(unknown)
+    # removal_matrix = (scores > THRESHOLD) & (scores < 100)
+    # internal_unmatched = remove_repeat(unknown, removal_matrix)
+    # internal_unmatched = internal_unmatched.reset_index(drop=True)
 
-    return known, internal_unmatched, df
+    # return known, internal_unmatched, df
+
+    return df
+
+
+
+
+
