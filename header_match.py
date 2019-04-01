@@ -68,77 +68,6 @@ def match(headers, true_headers, map_dict):
                 map_dict[header] = (score_tuple[0], "no_header", "FALSE")
     return map_dict
 
-def calculate_scores(df):
-    # find the total length
-    l = len(df["clean_headers"])
-    # initialize the matrix
-    score_matrix = np.zeros((l,l))
-    i = 0
-    for h in df["clean_headers"]:
-        # create the scored matrix
-        score_matrix[i, :] = df["clean_headers"].apply(score, args=(h,)).values
-        #print("Row number: {} of {}".format(i, l - 1))
-        i += 1
-    return score_matrix
-
-def remove_repeat(df, scores):
-    # remove the repeated unknown headers
-    prelist = list(df["clean_headers"])
-    i = 0
-    for _ in df["clean_headers"]:
-        j = 0
-        for removal in scores[i, :]:
-            if removal and j > i: # the j > i ensures that only one copy of the header to header match is removed. 
-                #   A B C
-                # A . . .
-                # B . . .
-                # C . . .
-                # AC <==> CA, only one is removed
-
-                # check if can be removed, if yes, remove.
-                try:
-                    df = df[df["clean_headers"] != prelist[j]]
-                    #print("LOG: " + prelist[j] + " deleted!")
-                except KeyError:
-                    print("LOG: " + prelist[j] + " Already deleted")
-            j += 1
-        i += 1
-    return df
-
-
-# Functions to assign to the dataframe
-
-def assign_matched(D, map_dict):
-    matched = []
-    for h in D["clean_headers"]:
-        if h in map_dict: 
-            matched.append(map_dict[h][1])
-        else: 
-            #print("Known: ", h, " not in map_dict")
-            matched.append(h)
-    return matched
-
-def assign_score(D, map_dict):
-    scores = []
-    for h in D["clean_headers"]:
-        if h in map_dict: 
-            scores.append(map_dict[h][0])
-        else:
-            #print("Known: ", h, " not in map_dict")
-            scores.append(np.nan)
-    return scores
-
-def assign_bool(D, map_dict):
-    is_matched = []
-    for h in D["clean_headers"]:
-        if h in map_dict:
-            is_matched.append(map_dict[h][2])
-        else:
-            #print("Known: ", h, " not in map_dict")
-            is_matched.append("TRUE")
-    return is_matched
-
-
 
 # driver function to create the map_dict
 def generate_dict(df, true_headers):
@@ -182,25 +111,6 @@ def match_headers(df, map_dict):
     t2 = time.time()
     print('assigning time: ' + str(round(t2-t1, 3)) + ' s')
     df = df.assign(clean_header=header_list)
-
-
-    # the line below filters unreasonable headers but can screw up the matching. 
-    # df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
-
-    # df = df.assign(
-    #     matched = lambda D: assign_matched(D, map_dict),
-    #     score = lambda D: assign_score(D, map_dict), 
-    #     is_matched = lambda D: assign_bool(D, map_dict))
-
-    # known = df.loc[df.matched != "no_header"].reset_index(drop=True)
-    # unknown = df.loc[df.matched == "no_header"].reset_index(drop=True)
-
-    # scores = calculate_scores(unknown)
-    # removal_matrix = (scores > THRESHOLD) & (scores < 100)
-    # internal_unmatched = remove_repeat(unknown, removal_matrix)
-    # internal_unmatched = internal_unmatched.reset_index(drop=True)
-
-    # return known, internal_unmatched, df
 
     return df
 
