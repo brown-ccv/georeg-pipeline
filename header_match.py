@@ -159,7 +159,6 @@ def match_headers(df, map_dict):
     #df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
     t1 = time.time()
     header_dict = {}
-    print(len(set(df['Header'])))
     for header in set(df['Header']):
         cleaned_header = clean_header(header)
         if cleaned_header in map_dict.keys():
@@ -171,7 +170,6 @@ def match_headers(df, map_dict):
             header_dict[header] = cleaned_header
     t2 = time.time()
     print('clean header assigning time: ' + str(round(t2-t1,3)) + ' s')
-    print(set(header_dict.keys()) - set(df['Header']))
 
     t1 = time.time()
     header_list = []
