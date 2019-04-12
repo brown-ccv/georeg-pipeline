@@ -5,6 +5,10 @@ from address import sts
 
 #Parses the text into street, city, phone number, and company name.
 
+
+"""
+
+"""
 def split_on_st(string, st):
 	words = string.split()
 	i = words.index(st)
@@ -97,6 +101,7 @@ def search(str_param_tuple):
 	string = string.partition(' telephone')[0].partition(' Telephone')[0].partition('-See ')[0].partition('See page')[0]
 	string = string.partition(' phone')[0].partition(' phone')[0].partition(' TELEPHONE')[0].partition(' PHONE')[0]
 
+	#TODO: what
 	text_words = string.split()
 	text_words = string.split()
 	cut_text = re.search(' \d+ ', string)

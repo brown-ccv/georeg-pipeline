@@ -127,36 +127,10 @@ def cropEntries(image, file, padding):
     #pkl.dump(crop_points, open('crop_points.' + file + '.pkl', 'wb'))
     return croppedImages, crop_points
 
-def adjustMargins(top, bottom, image):
-    """ Adjust top/bottom margins because image cleaning sometimes clips 
-    top/bottom of letters 
-    """
-    t = 0
-    b = 0
-    while t <= 10 and blackPixel(image, top - t):
-        t += 1
-    while b <= 10 and blackPixel(image, bottom + b):
-        b += 1
-    return top - t, bottom + b
-
-def blackPixel(image, y):
-    height, width = image.shape[:2]
-    for i in range(0, width):
-        if image[y, i] == 0:
-            return True
-    return False
-
-
-def inRange(x1, x2):
-	if (x1 - x2) <= 15:
-		insideRange = True
-	elif x2 > x1:
-		insideRange = False
-	else:
-		insideRange = False
-	return insideRange
-    
-
+ 
+"""
+cleans the image of noise
+"""
 def cleanImage(image):
     inv = cv2.bitwise_not(image)
     #kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (4,2))
@@ -166,6 +140,11 @@ def cleanImage(image):
     return cv2.bitwise_not(opening)
     #return opening
 
+"""
+first cropping pass. 
+crops the left and right by seeing if there are any black pixels in a given column
+and stopping when there is one. 
+"""
 def fineCrop(image):
     height, width = image.shape[:2]
     clean = cleanImage(image)
@@ -184,30 +163,43 @@ def fineCrop(image):
         cropRight += 1
     return image[0 : height, cropLeft  : cropRight]
 
-
+"""
+high level wrapper function that takes in one image (+params) and outputs
+a crop points dictionary 
+"""
 def entry_wrapper(file_param_tuple):
     crop_points_dict = {}
     file, params = file_param_tuple
     #print 'Chopping: ' + file
     fileN = file[:-4].split("/")[-1]
     ext = file[-4:]
+
+    # read in the img
     #t1 = time.time()
     original = cv2.imread(file, 0)
     #t2 = time.time()
     #print('Read time: ' + str(round(t2-t1, 2)) + ' s')
+    
+    #crop it once
     #t1 = time.time()
     original = fineCrop(original)
     #t2 = time.time()
     #print('fineCrop time: ' + str(round(t2-t1, 2)) + ' s')
+    
+    # make border 
     #t1 = time.time()
     original = cv2.copyMakeBorder(original,4,4,10,10, borderType= cv2.BORDER_CONSTANT, value=[255,255,255])
     #t2 = time.time()
     #print('copyMakeBorder time: ' + str(round(t2-t1, 2)) + ' s')
+    
+    # crop again with better algorithm
     #t1 = time.time()
     #clean = cleanImage(original)
     entries, points = cropEntries(original, file, params['padding'])
     #t2 = time.time()
     #print('Entry crop time: ' + str(round(t2-t1, 2)) + ' s')
+    
+    #write entries to files
     #print('Saving...')
     #t1 = time.time()
     i = 1
@@ -218,8 +210,6 @@ def entry_wrapper(file_param_tuple):
         i += 1
     #t2 = time.time()
     #print('Done in: ' + str(round(t2-t1, 3)) + ' s')
-    #cv2.imwrite(os.path.join(nDirectory, file), clean)
-    #cv2.imwrite(os.path.join(nDirectory, "og_" + file), original)
     return crop_points_dict
 
 def entryChop(params):
@@ -238,14 +228,15 @@ def entryChop(params):
     files_and_params = [(i, params) for i in x]
 
     # map files/params to entry_wrapper
-    # entry_wrapper outputs a crop points dict, 
-    # which is thrown into results and then merged together
+    # entry_wrapper outputs a crop points dict, which is thrown into results 
     result = []
     if params['do_multiprocessing']:
         pool = Pool(params['pool_num'])
         result = pool.map(entry_wrapper, files_and_params)
     for file_param_tuple in files_and_params:
         result.append(entry_wrapper(file_param_tuple))
+
+    # merge all the dictionaries into one
     crop_points_dict = { k: v for d in result for k, v in d.items() }
 
     # dump crop points dict into pickle file. 

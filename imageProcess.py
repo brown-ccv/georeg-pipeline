@@ -23,11 +23,12 @@ if __name__ == '__main__':
 	img_p = d['image_process']
 	all_params = [d['no_ads'], d['margins'],d['columns'],d['entries']]
 	
-	#checks if you only wish to parse a single image. 
+	# checks if you only wish to parse a single image. 
 	if img_p['single_image']:
 		for p in all_params:
 			p.update({'img_name': img_p['img_name']})
 	
+	# performs img filtering operations
 	if img_p['ads']:
 		print('Removing ads...')
 		t1 = time.time()
