@@ -60,6 +60,7 @@ def streetMatcher(dataFrame, dir_dir):
                 'City': city,
                 'Conf_Score': score,
                 'Header': row.Header,
+                'Clean_Header': row.clean_header,
                 'File_List': row.File_List,
                 'Text': row.Text,
                 'Company_Name': row.Company_Name

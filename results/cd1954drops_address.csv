@@ -1,0 +1,806 @@
+,Drop_Reason,File_List,Street,Text
+0,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_1 (1)_31.png', 'cd1954/entry/1954_Page_1 (1)_32.png']",N/A,*Denotes Certified Public Account- ants
+1,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_2 (1)_1.png'],N/A,
+2,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_2 (1)_6.png'],N/A,"Accountants, PublicCon"
+3,"SCORE LESS THAN CUTOFF: Canal room 401,76.5,PROVIDENCE","['cd1954/entry/1954_Page_2 (2)_63.png', 'cd1954/entry/1954_Page_2 (2)_64.png']",CANAL ST,General Adjustment Bureau Ine 31 Ca- nal room 401 (insurance)
+4,"SCORE LESS THAN CUTOFF: Lincoln Boston, Mass,77.0,PROVIDENCE","['cd1954/entry/1954_Page_2 (3)_17.png', 'cd1954/entry/1954_Page_2 (3)_18.png', 'cd1954/entry/1954_Page_2 (3)_19.png']",LINCOLN AVE,"POLK RL & CO District Office 179 Lincoln Boston, Mass tel HAncock 6-6309"
+5,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1954/entry/1954_Page_3 (1)_36.png'],I 95,@ rm 519
+6,"SCORE LESS THAN CUTOFF: Main Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_3 (1)_58.png', 'cd1954/entry/1954_Page_3 (1)_59.png', 'cd1954/entry/1954_Page_3 (1)_60.png']",PAWTUXET AV,DUPUIS FRANK COMPANY 599 Main Pawtucket tel PAwtucket 2-0800 See page 93 Buyers Guide
+7,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_3 (2)_4.png', 'cd1954/entry/1954_Page_3 (2)_5.png']",N/A,"Eastern Air Lines, Sheraton-Biltmore Hotel"
+8,"SCORE LESS THAN CUTOFF: Sheraton-Biltmore,65.0,PROVIDENCE","['cd1954/entry/1954_Page_3 (2)_6.png', 'cd1954/entry/1954_Page_3 (2)_7.png']",SHERMAN AVE,United Air Lines 111 Westminster rm 1220 and Sheraton-Biltmore
+9,"SCORE LESS THAN CUTOFF: Sheraton-Biltmore Hotel,60.0,PROVIDENCE","['cd1954/entry/1954_Page_3 (2)_45.png', 'cd1954/entry/1954_Page_3 (2)_46.png', 'cd1954/entry/1954_Page_3 (2)_47.png']",SHERMAN AVE,NARRAGANSETT RACING ASSN Inc 131 Sheraton-Biltmore Hotel and 49 Manton Pawtucket
+10,"SCORE LESS THAN CUTOFF: Manton Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_3 (2)_45.png', 'cd1954/entry/1954_Page_3 (2)_46.png', 'cd1954/entry/1954_Page_3 (2)_47.png']",PAWTUXET AV,NARRAGANSETT RACING ASSN Inc 131 Sheraton-Biltmore Hotel and 49 Manton Pawtucket
+11,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_3 (2)_55.png', 'cd1954/entry/1954_Page_3 (2)_56.png', 'cd1954/entry/1954_Page_3 (2)_57.png', 'cd1954/entry/1954_Page_3 (2)_58.png']",N/A,"MASSACHUSETTS MUTUAL LIFE IN- SURANCE CoO, Turks Head bldg tel GAsee 1-2672See page 53 Buyers Guide and left top lines"
+12,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_3 (3)_1.png'],N/A,Rowley Construction Co.
+13,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_3 (3)_5.png', 'cd1954/entry/1954_Page_3 (3)_6.png']",N/A,"260 Central Ave., Pawtucket, R. I. Telephone PA wtucket 5-4600"
+14,"SCORE LESS THAN CUTOFF: Burrill,73,PROVIDENCE",['cd1954/entry/1954_Page_3 (3)_47.png'],RILL ST,Central Apartments 21 Burrill
+15,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_4 (1)_1.png'],N/A,Apartment BuildingsCon
+16,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_4 (2)_35.png', 'cd1954/entry/1954_Page_4 (2)_36.png', 'cd1954/entry/1954_Page_4 (2)_37.png', 'cd1954/entry/1954_Page_4 (2)_38.png']",PAWTUXET AV,GALLAGHER MATTHEW J AGENCY Inc 347 Main Pawtucket tel PAwtuc- ket 38-1290 Blackstone Valley and Attleboros
+17,"SCORE LESS THAN CUTOFF: Post road, Apponaug,57.0,PROVIDENCE","['cd1954/entry/1954_Page_4 (2)_47.png', 'cd1954/entry/1954_Page_4 (2)_48.png', 'cd1954/entry/1954_Page_4 (2)_49.png']",EAST APPROACH,"WALLACE R E 3129 Post road, Appon- aug tel REgent 7-9100See page 103 Buyers Guide"
+18,"SCORE LESS THAN CUTOFF: Hewes,73.0,PROVIDENCE","['cd1954/entry/1954_Page_4 (3)_29.png', 'cd1954/entry/1954_Page_4 (3)_30.png']",HAWKES ST,Nationwide House Plan Service 17 Hewes
+19,"SCORE LESS THAN CUTOFF: Aborn apt 30,79.5,PROVIDENCE",['cd1954/entry/1954_Page_4 (3)_71.png'],ABORN ST,Caione Edw 23 Aborn apt 30
+20,EMPTY STREET,"['cd1954/entry/1954_Page_5 (1).chop_70.png', 'cd1954/entry/1954_Page_5 (1).chop_71.png', 'cd1954/entry/1954_Page_5 (1).chop_72.png']",,"GAMMINO M A CONSTRUCTION CO ING, Ernest st tel STuart 1-5130See page 30 Buyers Guide"
+21,"SCORE LESS THAN CUTOFF: Turks Head bidg 76 Westminster,77.0,PROVIDENCE","['cd1954/entry/1954_Page_5 (2).chop_38.png', 'cd1954/entry/1954_Page_5 (2).chop_39.png', 'cd1954/entry/1954_Page_5 (2).chop_40.png']",WESTMINSTER ST,Jordan Raymond E (Sherwood & Clif- ford) 1003 Turks Head bidg 76 West- minster tel GAspee 1-2154
+22,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_5 (3).chop_1.png'],N/A,
+23,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_5 (3).chop_5.png'],N/A,1119 Industrial Bank Building
+24,"SCORE LESS THAN CUTOFF: Warren av, East Providence,78.5,PROVIDENCE","['cd1954/entry/1954_Page_6 (2)_55.png', 'cd1954/entry/1954_Page_6 (2)_56.png', 'cd1954/entry/1954_Page_6 (2)_57.png', 'cd1954/entry/1954_Page_6 (2)_58.png']",PROVIDENCE ST,"ADAMS SALES AND SERVICE (Hud- son Sales & Service) 317 Warren av, East Providence tel EAst Providence 1-0571"
+25,"SCORE LESS THAN CUTOFF: Charles, N Providence,79.5,PROVIDENCE","['cd1954/entry/1954_Page_6 (2)_65.png', 'cd1954/entry/1954_Page_6 (2)_66.png', 'cd1954/entry/1954_Page_6 (2)_67.png']",PROVIDENCE ST,"CALS PONTIAC CO (Authorized Sales & Service) 915 Charles, N Providence tel PAwtucket 2-5700"
+26,"SCORE LESS THAN CUTOFF: Mineral Spring av, North Providence,72.5,PROVIDENCE","['cd1954/entry/1954_Page_6 (3)_41.png', 'cd1954/entry/1954_Page_6 (3)_42.png', 'cd1954/entry/1954_Page_6 (3)_43.png']",PROVIDENCE ST,"NOTARANTONIO BROS Ine (Ford) 1703 Mineral Spring av, North Provi- dence tel ELmhurst 3-3350"
+27,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_6 (3)_73.png', 'cd1954/entry/1954_Page_6 (3)_74.png', 'cd1954/entry/1954_Page_6 (3)_75.png', 'cd1954/entry/1954_Page_6 (3)_76.png']",PAWTUXET AV,"WINTERS WALTER Ine 483 Main Pawtucket tel PAwtucket 3-2100 (Dodge, Plymouth cars and trucks) See page 3 Buyers Guide"
+28,"SCORE LESS THAN CUTOFF: S Main near Crawford st,79.0,PROVIDENCE","['cd1954/entry/1954_Page_7 (3).chop_52.png', 'cd1954/entry/1954_Page_7 (3).chop_53.png']",CRAWFORD ST,Court House Parking Station 99 S Main near Crawford st
+29,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_7 (3).chop_58.png', 'cd1954/entry/1954_Page_7 (3).chop_59.png']",N/A,"Gaspee Parking Grounds, W Exchange cor Gaspee sts"
+30,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_8 (1)_1.png'],N/A,Automobile ParkingCon
+31,EMPTY STREET,['cd1954/entry/1954_Page_8 (1)_20.png'],,"Rossignoli Paul, Canal st"
+32,EMPTY STREET,"['cd1954/entry/1954_Page_8 (1)_23.png', 'cd1954/entry/1954_Page_8 (1)_24.png']",,"Sherman & Violet, Chapel st cor Sy- monds st"
+33,"SCORE LESS THAN CUTOFF: Main Pawtucekt,73.0,PROVIDENCE","['cd1954/entry/1954_Page_8 (1)_30.png', 'cd1954/entry/1954_Page_8 (1)_31.png', 'cd1954/entry/1954_Page_8 (1)_32.png', 'cd1954/entry/1954_Page_8 (1)_33.png']",PAWTUXET AV,WINTERS WALTER Inc 483 Main Pawtucekt tel PAwtucket 3-2100 (Dodge-Plymouth cars and trucks) See page 3 Buyers Guide
+34,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_8 (1)_36.png', 'cd1954/entry/1954_Page_8 (1)_37.png', 'cd1954/entry/1954_Page_8 (1)_38.png']",PAWTUXET AV,MOPAR (Walter Winters Inc) 483 Main Pawtucket tel PAwtucket 3-2100 See page 3 Buyers Guide
+35,"SCORE LESS THAN CUTOFF: Ormsbee av,73,PROVIDENCE",['cd1954/entry/1954_Page_8 (1)_60.png'],ORMS ST,Andrews Auto Service 19 Ormsbee av
+36,"SCORE LESS THAN CUTOFF: Eddy Iacono Frank 17 Slocum,52.5,PROVIDENCE",['cd1954/entry/1954_Page_8 (2)_39.png'],BEACON CIR,"Hobins Walt Garage 1117 Eddy
+Iacono Frank 17 Slocum"
+37,"SCORE LESS THAN CUTOFF: Ormsbee av,73.0,PROVIDENCE",['cd1954/entry/1954_Page_8 (2)_57.png'],ORMS ST,Perlows Auto Repairs 53 Ormsbee av
+38,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_8 (3)_60.png', 'cd1954/entry/1954_Page_8 (3)_61.png', 'cd1954/entry/1954_Page_8 (3)_62.png', 'cd1954/entry/1954_Page_8 (3)_63.png']",PAWTUXET AV,DODGE-PLYMOUTH MOTOR CARS (Walter Winters Inc) 483 Main Paw- tucket tel PAwtucket 3-2100See page 3 Buyers Guide
+39,"SCORE LESS THAN CUTOFF: 8d,40.0,PROVIDENCE","['cd1954/entry/1954_Page_9 (1)_41.png', 'cd1954/entry/1954_Page_9 (1)_42.png', 'cd1954/entry/1954_Page_9 (1)_43.png']",ADA ST,WILLIAMS & ANDERSON CO Inc The 14 8d tels GAspee 1-3621-1-4622See page 67 Buyers Guide
+40,"SCORE LESS THAN CUTOFF: Shawmut,73,PROVIDENCE",['cd1954/entry/1954_Page_9 (1)_56.png'],SHAW ST,Atlantic Burlap Bag Co 10 Shawmut
+41,"SCORE LESS THAN CUTOFF: Dexter Central Falls,76.0,PROVIDENCE","['cd1954/entry/1954_Page_9 (3)_43.png', 'cd1954/entry/1954_Page_9 (3)_44.png']",CENTRAL AVE,GORMANS BAKERY Inc 817 Dexter Central Falls tel PAwtucket 2-5650
+42,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_9 (3)_61.png', 'cd1954/entry/1954_Page_9 (3)_62.png', 'cd1954/entry/1954_Page_9 (3)_63.png']",N/A,"RUMFORD COMPANY The Rumford, Rhode Island tel EAst Providence 1-2880See page 25 Buyers Guide"
+43,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_10 (1)_57.png', 'cd1954/entry/1954_Page_10 (1)_58.png']",N/A,Broad tel WIlliams 1-4400See page 16 Buyers Guide and left top lines
+44,"SCORE LESS THAN CUTOFF: Item av,67.0,PROVIDENCE",['cd1954/entry/1954_Page_10 (1)_78.png'],WHITE ST,Aleone Watson L 246 Item av
+45,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_10 (2)_60.png'],N/A,"Corvese Ernest, Union sta"
+46,"SCORE LESS THAN CUTOFF: STOW,75.0,PROVIDENCE","['cd1954/entry/1954_Page_10 (3)_46.png', 'cd1954/entry/1954_Page_10 (3)_47.png']",SNOW ST,Hotel Abbott Park Barber Shop 133 STOW
+47,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_11 (2)_21.png', 'cd1954/entry/1954_Page_11 (2)_22.png']",N/A,Sheraton-Biltmore Hotel Barber Shop Prov-Biltmore
+48,EMPTY STREET,"['cd1954/entry/1954_Page_11 (3)_24.png', 'cd1954/entry/1954_Page_11 (3)_25.png']",,"Federal Hill Pool, Dept of Recreation Gesler st"
+49,"SCORE LESS THAN CUTOFF: Quaid,71.0,PROVIDENCE",['cd1954/entry/1954_Page_11 (3)_33.png'],QUAIL RIDGE RD,Quaid St Bath House 47 Quaid (public)
+50,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_12 (3)_6.png', 'cd1954/entry/1954_Page_12 (3)_7.png']",N/A,"Lanthere Beauty Salon, Sheraton-Bilt- more"
+51,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_13 (3)_10.png', 'cd1954/entry/1954_Page_13 (3)_11.png']",GEORGE M COHAN BLVD,Plibrico Sales & Service Co 251 Geo M Cohan blvd (boiler setters)
+52,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_13 (3)_14.png'],GEORGE M COHAN BLVD,Smith P H Co 251 Geo M Cohan blvd
+53,"SCORE LESS THAN CUTOFF: Howard bidg 171 Westminster,79.0,PROVIDENCE","['cd1954/entry/1954_Page_14 (1)_5.png', 'cd1954/entry/1954_Page_14 (1)_6.png', 'cd1954/entry/1954_Page_14 (1)_7.png']",WESTMINSTER ST,HOLT HAROLD & CO all forms of in- surance 521 Howard bidg 171 West- minster tel GAspee 1-7771
+54,EMPTY STREET,"['cd1954/entry/1954_Page_14 (2)_34.png', 'cd1954/entry/1954_Page_14 (2)_35.png']",10 ,Bruin Paper Box Inc 387 Charles bldg 10 (paper)
+55,"SCORE LESS THAN CUTOFF: Sabin Pawtucket,71.5,PROVIDENCE","['cd1954/entry/1954_Page_14 (2)_61.png', 'cd1954/entry/1954_Page_14 (2)_62.png', 'cd1954/entry/1954_Page_14 (2)_63.png']",PAWTUXET AV,SHAW PAPER BOX CO 37 Sabin Paw- tucket tels PAwtucket 2-0410 and 2-0411See page 20 Buyers Guide
+56,"SCORE LESS THAN CUTOFF: Sabins Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_14 (2)_65.png', 'cd1954/entry/1954_Page_14 (2)_66.png', 'cd1954/entry/1954_Page_14 (2)_67.png']",PAWTUXET AV,SHAW PAPER BOX CO 37 Sabins Paw- tucket tels PAwtucket 2-0410 and 2-0411See page 20 Buyers Guide
+57,"SCORE LESS THAN CUTOFF: Child, Warren, R. I.,78.0,PROVIDENCE","['cd1954/entry/1954_Page_14 (2)_69.png', 'cd1954/entry/1954_Page_14 (2)_70.png', 'cd1954/entry/1954_Page_14 (2)_71.png', 'cd1954/entry/1954_Page_14 (2)_72.png']",WARREN WY,"TAYLOR BOX COMPANY new location 293 Child, Warren, R. I. tel WArren 1-2540 (set-up boxes, industrial jewel- ry)"
+58,"SCORE LESS THAN CUTOFF: Hospital Trust bldg,79,PROVIDENCE","['cd1954/entry/1954_Page_15 (1)_51.png', 'cd1954/entry/1954_Page_15 (1)_52.png', 'cd1954/entry/1954_Page_15 (1)_53.png']",HOSPITAL ST,RICHARDSON & CLARK 340 Hospital Trust bldg tel GAspee 1-6202See page 21 Buyers Guide
+59,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_15 (2)_25.png', 'cd1954/entry/1954_Page_15 (2)_26.png', 'cd1954/entry/1954_Page_15 (2)_27.png', 'cd1954/entry/1954_Page_15 (2)_28.png']",PAWTUXET AV,CENTRAL ENGINEERING & CON- STRUCTION CO 155 Main Pawtucket tel PAwtucket 5-5400See page 26 Buvers Guide
+60,"SCORE LESS THAN CUTOFF: Walcott Pawtucket,69,PROVIDENCE","['cd1954/entry/1954_Page_15 (2)_43.png', 'cd1954/entry/1954_Page_15 (2)_44.png', 'cd1954/entry/1954_Page_15 (2)_45.png']",PAWTUXET AV,SOULE HENRY M CO 421 Walcott Pawtucket tel PAwtucket 2-2110See page 32 Buyers Guide
+61,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_15 (3)_45.png', 'cd1954/entry/1954_Page_15 (3)_46.png', 'cd1954/entry/1954_Page_15 (3)_47.png']",PAWTUXET AV,"NEWELL COAL & LUMBER CO 28 High, Pawtucket tel PAwtucket 2-7900See page 76 Buyers Guide"
+62,EMPTY STREET,"['cd1954/entry/1954_Page_15 (3)_70.png', 'cd1954/entry/1954_Page_15 (3)_71.png']",,"Jannetta Bros, Silver Spring cor Bacheller av"
+63,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (1)_26.png', 'cd1954/entry/1954_Page_16 (1)_27.png']",N/A,"Brown John Carter Library, Brown opp George sts"
+64,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (1)_46.png', 'cd1954/entry/1954_Page_16 (1)_47.png']",N/A,"Citizens Savings Bank Bldg, Westmin- ster june Cranston sts"
+65,"SCORE LESS THAN CUTOFF: Crawford sq,69,PROVIDENCE",['cd1954/entry/1954_Page_16 (1)_62.png'],BRADFORD ST,Day Building 5 Crawford sq
+66,EMPTY STREET,"['cd1954/entry/1954_Page_16 (1)_80.png', 'cd1954/entry/1954_Page_16 (1)_81.png']",,"Equitable Bldg, Custom House st cor Weybosset st"
+67,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (1)_83.png', 'cd1954/entry/1954_Page_16 (1)_84.png']",N/A,"Federal Bldg, Exchange cor Exchange pl"
+68,EMPTY STREET,"['cd1954/entry/1954_Page_16 (2)_1.png', 'cd1954/entry/1954_Page_16 (2)_2.png']",,Forty-Nine Westminster St Bldg 49 Westminster
+69,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (2)_74.png', 'cd1954/entry/1954_Page_16 (2)_75.png']",N/A,New England Telephone & Telegraph Co Bldg 234 Wash
+70,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_16 (2)_77.png'],N/A,"NYNH&HRR Bidgs, Exchange ter"
+71,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (2)_79.png', 'cd1954/entry/1954_Page_16 (2)_80.png']",N/A,Odd Fellows Temple Building Associa- tion of RI
+72,"SCORE LESS THAN CUTOFF: Weybosset Eddy Pine Garnet sts,73.0,PROVIDENCE","['cd1954/entry/1954_Page_16 (2)_88.png', 'cd1954/entry/1954_Page_16 (2)_89.png']",WEYBOSSET ST,"Outlet Building 176 Weybosset, Eddy, Pine and Garnet sts"
+73,EMPTY STREET,['cd1954/entry/1954_Page_16 (3)_8.png'],,"Post Office, Exchange st"
+74,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_16 (3)_9.png', 'cd1954/entry/1954_Page_16 (3)_10.png']",N/A,"Post Office Annex, Exchange cor Ex- change ter"
+75,EMPTY STREET,"['cd1954/entry/1954_Page_16 (3)_37.png', 'cd1954/entry/1954_Page_16 (3)_38.png']",,"RI School of Design Auditorium, Canal st"
+76,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_16 (3)_84.png'],N/A,"Union Station, Exchange ter"
+77,"SCORE LESS THAN CUTOFF: Benefit Brown Typewriter Service 27 Bway,48.0,PROVIDENCE",['cd1954/entry/1954_Page_17 (1)_80.png'],PRINTERY ST,"Apco Typewriter Hospital 38 Benefit
+Brown Typewriter Service 27 Bway"
+78,"SCORE LESS THAN CUTOFF: Westminster business office 17 Warren,73.0,PROVIDENCE","['cd1954/entry/1954_Page_17 (2)_14.png', 'cd1954/entry/1954_Page_17 (2)_15.png', 'cd1954/entry/1954_Page_17 (2)_16.png']",WESTMINSTER ST,Grants Money-Meters Co exec office 204 Westminster business office 17 Warren (coin collecting)
+79,"SCORE LESS THAN CUTOFF: 8 Main,73.5,PROVIDENCE","['cd1954/entry/1954_Page_17 (2)_55.png', 'cd1954/entry/1954_Page_17 (2)_56.png']",MAIDEN LN,RI Cabinet & Woodworking Co 224 8 Main
+80,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_17 (2)_69.png'],N/A,MONROE .CALCULATING MACHINE
+81,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_17 (3)_8.png', 'cd1954/entry/1954_Page_17 (3)_9.png']",GEORGE M COHAN BLVD,Saltesea Packing Co 315 Geo M Cohan blvd (clam chowder)
+82,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE",['cd1954/entry/1954_Page_17 (3)_27.png'],2ND ST,RELCO CARBIDE TOOL COMPANY 12
+83,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_17 (3)_28.png'],N/A,Anthony av tel STuart 1-5800
+84,"SCORE LESS THAN CUTOFF: Walcott Pawtucket,69,PROVIDENCE","['cd1954/entry/1954_Page_17 (3)_74.png', 'cd1954/entry/1954_Page_17 (3)_75.png', 'cd1954/entry/1954_Page_17 (3)_76.png']",PAWTUXET AV,SOULE HENRY M CO 421 Walcott Pawtucket tel PAwtucket 2-2110 See page 32 Buyers Guide
+85,"SCORE LESS THAN CUTOFF: Weybosset Randall Supply Co 109 Charles,69.0,PROVIDENCE",['cd1954/entry/1954_Page_18 (1)_35.png'],WEYBOSSET ST,"Pauls Floor Covering 366 Weybosset
+Randall Supply Co 109 Charles"
+86,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_18 (1)_43.png'],GEORGE M COHAN BLVD,"Gold Sanford & Co 285 Geo M Cohan
+blvd"
+87,"SCORE LESS THAN CUTOFF: Stiller Carpet Co 32 Park,64.0,PROVIDENCE",['cd1954/entry/1954_Page_18 (1)_44.png'],STILLWATER AVE,"Leif Albert O Co 387 Charles bldg 4
+Stiller Carpet Co 32 Park"
+88,"SCORE LESS THAN CUTOFF: Dexter, Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_18 (1)_56.png', 'cd1954/entry/1954_Page_18 (1)_57.png']",PAWTUXET AV,"WHITE J S CO 22 Dexter, Pawtucket tel PAwtucket 2-0342See page 45
+Buyers Guide"
+89,EMPTY STREET,['cd1954/entry/1954_Page_18 (2)_9.png'],,Marocco A & Sons.294 Pocasset av
+90,EMPTY STREET,"['cd1954/entry/1954_Page_18 (2)_48.png', 'cd1954/entry/1954_Page_18 (2)_49.png']",,"North Burial Ground, Branch av cor N"
+91,"SCORE LESS THAN CUTOFF: Blackstone blvd office 15 Westminster,73.0,PROVIDENCE","['cd1954/entry/1954_Page_18 (2)_53.png', 'cd1954/entry/1954_Page_18 (2)_54.png']",WESTMINSTER ST,Swan Point Cemetery 585 Blackstone blvd office 15 Westminster rm 535
+92,"SCORE LESS THAN CUTOFF: , Georgiaville, RI,69.0,PROVIDENCE","['cd1954/entry/1954_Page_18 (2)_59.png', 'cd1954/entry/1954_Page_18 (2)_60.png', 'cd1954/entry/1954_Page_18 (2)_61.png']",GEORGIA AVE,"ECONOMY CESSPOOL CLEANERS. PO Box 95, Georgiaville, RI tel CEn- tredale 1-7982"
+93,"SCORE LESS THAN CUTOFF: Ormsbee av,73,PROVIDENCE","['cd1954/entry/1954_Page_18 (3)_42.png', 'cd1954/entry/1954_Page_18 (3)_43.png']",ORMS ST,Aborn Chemical Industries 24 Ormsbee av
+94,EMPTY STREET,"['cd1954/entry/1954_Page_18 (3)_61.png', 'cd1954/entry/1954_Page_18 (3)_62.png', 'cd1954/entry/1954_Page_18 (3)_63.png', 'cd1954/entry/1954_Page_18 (3)_64.png', 'cd1954/entry/1954_Page_18 (3)_65.png']",,"HARRISON A & CO Inc offices and works Hurdis st off Charles, North Providence PO Box 494 Pawtucket tels PAwtucket 5-7450-5-7451See page 24 Buyers Guide"
+95,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_19 (1).chop_6.png', 'cd1954/entry/1954_Page_19 (1).chop_7.png', 'cd1954/entry/1954_Page_19 (1).chop_8.png', 'cd1954/entry/1954_Page_19 (1).chop_9.png']",N/A,"RUMFORD CHEMICAL WORKS Rum- ford, Rhode Island tel EAst Provi- dence 1-2880See page 25 Buyers Guide"
+96,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_19 (1).chop_12.png'],GEORGE M COHAN BLVD,Wilson G E Co 251 Geo M Cohan blvd
+97,EMPTY STREET,"['cd1954/entry/1954_Page_19 (3).chop_44.png', 'cd1954/entry/1954_Page_19 (3).chop_45.png']",,Federal Hill Italian Church. Knight cor Tell st
+98,EMPTY STREET,['cd1954/entry/1954_Page_19 (3).chop_61.png'],,"United Church, Park cor Jewett st"
+99,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_19 (3).chop_62.png', 'cd1954/entry/1954_Page_19 (3).chop_63.png']",N/A,Unristian science First Church of Christ Scientist.
+100,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_19 (3).chop_67.png', 'cd1954/entry/1954_Page_19 (3).chop_68.png']",N/A,Congregational Armenian Euphrates Evangelical
+101,"SCORE LESS THAN CUTOFF: Weybosset Central Church 296 Angell Central Portuguese Chapel 51,40.0,PROVIDENCE","['cd1954/entry/1954_Page_19 (3).chop_71.png', 'cd1954/entry/1954_Page_19 (3).chop_72.png', 'cd1954/entry/1954_Page_19 (3).chop_73.png']",SPRAGUE CIR,Beneficent Church 300 Weybosset Central Church 296 Angell Central Portuguese Chapel 51
+102,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1954/entry/1954_Page_19 (3).chop_80.png'],4TH ST,Plymouth Union Church 1014
+103,"SCORE LESS THAN CUTOFF: Benefit Sheldon Street Church 51 Sheldon,65.0,PROVIDENCE","['cd1954/entry/1954_Page_19 (3).chop_82.png', 'cd1954/entry/1954_Page_19 (3).chop_83.png', 'cd1954/entry/1954_Page_19 (3).chop_84.png']",BENEFIT ST,Congregational Unitarian First Church 285 Benefit Sheldon Street Church 51 Sheldon
+104,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE","['cd1954/entry/1954_Page_19 (3).chop_85.png', 'cd1954/entry/1954_Page_19 (3).chop_86.png']",4TH ST,Episcopal All Saints Memorial Church 674
+105,"SCORE LESS THAN CUTOFF: N Main Christ Church 909 Eddy,53.5,PROVIDENCE","['cd1954/entry/1954_Page_19 (3).chop_88.png', 'cd1954/entry/1954_Page_19 (3).chop_89.png']",CHRISTOPHER ST,Cathedral of StJohn 265 N Main Christ Church 909 Eddy
+106,"SCORE LESS THAN CUTOFF: Hope Church of the Saviour 517 N Main Grace Church, Mathewson cor,61.5,PROVIDENCE","['cd1954/entry/1954_Page_20 (1)_6.png', 'cd1954/entry/1954_Page_20 (1)_7.png', 'cd1954/entry/1954_Page_20 (1)_8.png']",MATHEWSON ST,"Church of the Redeemer 655 Hope Church of the Saviour 517 N Main Grace Church, Mathewson cor"
+107,EMPTY STREET,"['cd1954/entry/1954_Page_20 (1)_11.png', 'cd1954/entry/1954_Page_20 (1)_12.png']",,"StAnsgarius Swedish, Beacon av cor Maple st"
+108,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1954/entry/1954_Page_20 (1)_22.png', 'cd1954/entry/1954_Page_20 (1)_23.png']",10TH ST,Jewish Ahavath Sholom Synagogue 20
+109,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1954/entry/1954_Page_20 (1)_25.png'],1ST ST,Beth Israel Ansche Austria 51
+110,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1954/entry/1954_Page_20 (1)_29.png'],4TH ST,Congregation Sons of Abraham 364
+111,EMPTY STREET,"['cd1954/entry/1954_Page_20 (1)_36.png', 'cd1954/entry/1954_Page_20 (1)_37.png']",,"Temple Beth-El, Orchard av at Orchard pl"
+112,"SCORE LESS THAN CUTOFF: Hayes StPauls Evangelical 443 Elmwood,57.0,PROVIDENCE","['cd1954/entry/1954_Page_20 (1)_45.png', 'cd1954/entry/1954_Page_20 (1)_46.png', 'cd1954/entry/1954_Page_20 (1)_47.png']",EVANGELINE DR,Lutheran Gloria Dei Evangelical 17 Hayes StPauls Evangelical 443 Elmwood
+113,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_20 (1)_58.png', 'cd1954/entry/1954_Page_20 (1)_59.png']",N/A,Nazarene Peoples Church of the Nazarene
+114,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_20 (1)_61.png'],N/A,Wesleyan Church of the Nazarene
+115,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_20 (1)_68.png', 'cd1954/entry/1954_Page_20 (1)_69.png']",N/A,Roman Catholic CHANCERY OFFICE OF THE
+116,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_20 (1)_72.png'],N/A,Church of Our Lady of the Holy
+117,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1954/entry/1954_Page_20 (1)_75.png'],I 95,Church of The Assumption 795
+118,EMPTY STREET,"['cd1954/entry/1954_Page_20 (2)_4.png', 'cd1954/entry/1954_Page_20 (2)_5.png']",,"Holy Ghost, Knight st cor Atwells av"
+119,EMPTY STREET,['cd1954/entry/1954_Page_20 (2)_18.png'],,"StCasimirs, Smith st"
+120,EMPTY STREET,"['cd1954/entry/1954_Page_20 (2)_21.png', 'cd1954/entry/1954_Page_20 (2)_22.png']",,"StGeorges, America st opp Europe st"
+121,EMPTY STREET,['cd1954/entry/1954_Page_20 (2)_24.png'],,"StJohns, Atwells av cor Sutton st"
+122,EMPTY STREET,['cd1954/entry/1954_Page_20 (2)_28.png'],,"StPatricks, Smith st cor Davis st"
+123,"SCORE LESS THAN CUTOFF: Council,67,PROVIDENCE","['cd1954/entry/1954_Page_20 (2)_59.png', 'cd1954/entry/1954_Page_20 (2)_60.png']",COLONIAL DR,Church of The First Born 15 Coun- cil
+124,"SCORE LESS THAN CUTOFF: Lincoln, Boston, Mass,77.0,PROVIDENCE","['cd1954/entry/1954_Page_20 (3)_50.png', 'cd1954/entry/1954_Page_20 (3)_51.png', 'cd1954/entry/1954_Page_20 (3)_52.png']",LINCOLN AVE,"POLK RL & CO, District Office 179 Lincoln, Boston, Mass tel HAncock 6-6309"
+125,"SCORE LESS THAN CUTOFF: Plainfield, 182 Admiral, 47A Camp,79.0,PROVIDENCE","['cd1954/entry/1954_Page_21 (1)_73.png', 'cd1954/entry/1954_Page_21 (1)_74.png']",PLAINFIELD CIR,"Grande Cleansers & Tailors Ine 192 Plainfield, 182 Admiral, 47A Camp"
+126,"SCORE LESS THAN CUTOFF: Broad, 271 Plain, 88 Weybosset,74.5,PROVIDENCE","['cd1954/entry/1954_Page_21 (2)_62.png', 'cd1954/entry/1954_Page_21 (2)_63.png']",WEYBOSSET ST,"Scott Cleansers 981 Broad, 271 Plain, 88 Weybosset"
+127,"SCORE LESS THAN CUTOFF: Hillside road Garden City Cranston Narragansett blvd do,73.5,PROVIDENCE","['cd1954/entry/1954_Page_21 (2)_82.png', 'cd1954/entry/1954_Page_21 (2)_83.png', 'cd1954/entry/1954_Page_21 (2)_84.png', 'cd1954/entry/1954_Page_21 (2)_85.png', 'cd1954/entry/1954_Page_21 (2)_86.png', 'cd1954/entry/1954_Page_21 (2)_87.png', 'cd1954/entry/1954_Page_21 (2)_88.png', 'cd1954/entry/1954_Page_21 (2)_89.png']",NARRAGANSETT BLVD,"SWISS CLEANSING CO 675 Elmwood av branches 248 Thayer, 169 West- minster, 16 S Angell, 49 Hillside road, Garden City Cranston, Narragansett blvd do and 2763 Pawtucket av, East Providence 1504 Smith, North Provi- dence, 1840 County rd Barrington, RI tels HOpkins 1-1040-1-4000"
+128,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_34.png'],N/A,AbbreviationsAC signifies Advent
+129,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_35.png'],N/A,"Christian; AME, African Methodist"
+130,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_36.png'],N/A,"Episcopal; Bapt, Baptist; C Bapt, Cal-"
+131,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_37.png'],N/A,"vinist Baptist; Ch, Christian; Cong,"
+132,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_38.png'],N/A,"Congregational; CT, Congregational"
+133,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_39.png'],N/A,"Trinitarian; CH, Congregational Uni-"
+134,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_40.png'],N/A,"tarian; DC, Disciples of Christ; Epis"
+135,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_41.png'],N/A,"Episcopalian; EA, Evangelical Ad-"
+136,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_42.png'],N/A,"vent; E Luth, Evangelical Lutheran;"
+137,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_43.png'],N/A,"FB, Free Baptist; FE, Free Evangeli-"
+138,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_44.png'],N/A,"cal; FEC, Free Evangelical Congrega-"
+139,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_45.png'],N/A,"tional; FM, Free Methodist; G, Greek;"
+140,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_46.png'],N/A,"J, Jewish; Luth, Lutheran; LDS,"
+141,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_47.png'],N/A,"Latter Day Saints; M, Methodist; N,"
+142,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_48.png'],N/A,"Nazarene: NJ, New Jerusalem; Pent,"
+143,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_49.png'],N/A,"Pentacostal; Presb, Presbyterian; PM,"
+144,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_50.png'],N/A,"Primitive Methodist; RC, Roman"
+145,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_51.png'],N/A,"Catholic; SA, Second Advent; Swed,"
+146,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_52.png'],N/A,"Swedenborgian; Unit, Unitarian; UP,"
+147,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_21 (3)_53.png'],N/A,"United Presbyterian; UV, Universalist;"
+148,"SCORE LESS THAN CUTOFF: PB, Six,55.5,PROVIDENCE",['cd1954/entry/1954_Page_21 (3)_54.png'],DIX AVE,"WM, Wesleyan Methodist: 6 PB, Six"
+149,"SCORE LESS THAN CUTOFF: th DA, Seventh Day,56.5,PROVIDENCE",['cd1954/entry/1954_Page_21 (3)_55.png'],STEVENS RD,"Principle Baptist; 7th DA, Seventh Day"
+150,"SCORE LESS THAN CUTOFF: th DB, Seventh Day Baptist,54.5,PROVIDENCE",['cd1954/entry/1954_Page_21 (3)_56.png'],STEVENS RD,"Advent; 7th DB, Seventh Day Baptist"
+151,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_22 (1)_1.png'],N/A,ClerqymenCon
+152,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_22 (2)_18.png'],BROADWAY,Mahoney Chas J (RC) 538 Bwav
+153,"SCORE LESS THAN CUTOFF: Sutton McConnell Chas,68.5,PROVIDENCE",['cd1954/entry/1954_Page_22 (2)_19.png'],OCONNELL ST,"McAteer Leonard J (RC) 57 Sutton
+McConnell Chas (RC) 65 Fruit Hill av"
+154,"SCORE LESS THAN CUTOFF: Pratt Moore-Browne P G,67.5,PROVIDENCE",['cd1954/entry/1954_Page_22 (2)_33.png'],CHAD BROWN ST,"Montgomery Leroy J (AME) 63 Pratt
+Moore-Browne P G (Epis) 66 Benefit"
+155,"SCORE LESS THAN CUTOFF: Pond Myrick Thos I,51.5,PROVIDENCE",['cd1954/entry/1954_Page_22 (2)_43.png'],HENDRICK ST,"Murray Wm F Very Rev (RC) 26 Pond
+Myrick Thos I (RC) 239 Regent av"
+156,"SCORE LESS THAN CUTOFF: George Walsh Dominic J,52.5,PROVIDENCE",['cd1954/entry/1954_Page_22 (3)_20.png'],GOLINI DR,"Wagner Wm H jr (Epis) 114 George
+Walsh Dominic J (RC) 18 8th"
+157,"SCORE LESS THAN CUTOFF: Orchard pl Wright Donald D,78.0,PROVIDENCE","['cd1954/entry/1954_Page_22 (3)_26.png', 'cd1954/entry/1954_Page_22 (3)_27.png']",ORCHARD PL,"Wilding Chas W (Epis) 24 Orchard pl
+Wright Donald D (Meth) 295 Olney and 134 Mathewson"
+158,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_22 (3)_34.png', 'cd1954/entry/1954_Page_22 (3)_35.png']",N/A,Diptheria Immunization Clinic Health Dept City Hall
+159,"SCORE LESS THAN CUTOFF: Weybosset Donnellys Swan Cleansing & Tailoring 790 Broad,64.5,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_4.png'],WEYBOSSET ST,"Bond Stores Inc 165 Weybosset
+
+Donnellys Swan Cleansing & Tailoring
+790 Broad"
+160,"SCORE LESS THAN CUTOFF: Burlington Esquire Formal Wear 88 Dorrance,69.0,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_5.png'],BURLINGTON ST,"HKastern Pants Co 73 Burlington
+Esquire Formal Wear 88 Dorrance rm
+1"
+161,"SCORE LESS THAN CUTOFF: N Main Hillhouse Ltd 135 Thayer,57.0,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_13.png'],HILLHURST AVE,"Hall Robert Clothes 1287 N Main
+Hillhouse Ltd 135 Thayer"
+162,"SCORE LESS THAN CUTOFF: Weybosset Jackson Mens Store 16 Olneyville sq Kennedys Inc 180 Westminster,63.0,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_14.png'],WESTMINSTER ST,"Howard Clothes Corp 138 Weybosset
+Jackson Mens Store 16 Olneyville sq
+Kennedys Inc 180 Westminster"
+163,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_15.png'],BROADWAY,Leader Ine 679 Bwav
+164,"SCORE LESS THAN CUTOFF: Richmond Nasher-Gordon Clothing Mfg Co Ine 23 broad,66.0,PROVIDENCE","['cd1954/entry/1954_Page_23 (1)_17.png', 'cd1954/entry/1954_Page_23 (1)_18.png']",RICHMOND SQ,"Morris Clothes Shoppe 101 Richmond
+Nasher-Gordon Clothing Mfg Co Ine 23 broad"
+165,"SCORE LESS THAN CUTOFF: Richmond ODonnells Ine 40 Wash,59.5,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_19.png'],OCONNELL ST,"National Pant Store 36 Richmond
+ODonnells Ine 40 Wash"
+166,"SCORE LESS THAN CUTOFF: Weybosset Palow Saml 4 Olneyville sq Pickars Clothing Co 385 Westminster,63.5,PROVIDENCE","['cd1954/entry/1954_Page_23 (1)_22.png', 'cd1954/entry/1954_Page_23 (1)_23.png']",WESTMINSTER ST,"Packard Clothes 207 Weybosset
+Palow Saml 4 Olneyville sq
+Pickars Clothing Co 385 Westminster rm 14"
+167,"SCORE LESS THAN CUTOFF: Wash Read & White 171 Westminster,76.0,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_24.png'],WESTMINSTER ST,"Providence Clothing Market 95 Wash
+Read & White 171 Westminster rm 214
+Richards Clothes 141 Mathewson"
+168,"SCORE LESS THAN CUTOFF: Weybosset Rogers Co Ine 35 Richmond,70.5,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_28.png'],WEYBOSSET ST,"Rochester Clothes 219 Weybosset
+Rogers Co Ine 35 Richmond"
+169,"SCORE LESS THAN CUTOFF: Eddv,75,PROVIDENCE",['cd1954/entry/1954_Page_23 (1)_35.png'],EDDY ST,"36 Buyers Guide and right top iines
+Silverman L & Son 489 Eddv"
+170,"SCORE LESS THAN CUTOFF: A Thaver,77.0,PROVIDENCE",['cd1954/entry/1954_Page_23 (2)_6.png'],THAYER ST,Grossman Marilyn 222A Thaver
+171,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_23 (2)_27.png'],N/A,"set tel ELmhurst 1-3800See page 35
+Buyers Guide and left side lines
+Over Five Seven Shops Inc 256 West-
+
+minster rm 22"
+172,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_23 (2)_37.png'],N/A,"Rands, Sheraton-Biltmore"
+173,"SCORE LESS THAN CUTOFF: th Ward 278-280 Bway,66.5,PROVIDENCE","['cd1954/entry/1954_Page_23 (3)_48.png', 'cd1954/entry/1954_Page_23 (3)_49.png']",WARD AVE,Republican Club 13th Ward 278-280 Bway
+174,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_24 (1)_1.png'],N/A,"Clubs, SocialCon"
+175,"SCORE LESS THAN CUTOFF: Areade bldg,76.5,PROVIDENCE","['cd1954/entry/1954_Page_24 (1)_29.png', 'cd1954/entry/1954_Page_24 (1)_30.png']",READE ST,League of Women Voters of Rhode Is- land 60 Areade bldg
+176,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE","['cd1954/entry/1954_Page_24 (1)_41.png', 'cd1954/entry/1954_Page_24 (1)_42.png']",1ST ST,"Narragansett Racing Assn Inc, Shera- ton-Biltmore Hotel rm 131"
+177,"SCORE LESS THAN CUTOFF: Charles Order of Vasa Gustaf II Adolf No 17. 380 Elmwood av,61.5,PROVIDENCE","['cd1954/entry/1954_Page_24 (1)_44.png', 'cd1954/entry/1954_Page_24 (1)_45.png']",CHARLES ST,"North End Social Club 6423 Charles
+Order of Vasa Gustaf II Adolf No 17. 380 Elmwood av"
+178,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_24 (2)_24.png', 'cd1954/entry/1954_Page_24 (2)_25.png', 'cd1954/entry/1954_Page_24 (2)_26.png', 'cd1954/entry/1954_Page_24 (2)_27.png']",N/A,McDUFF COAL & LUMBER CO il High Pawtucket tel PAwtucket 2-2400 (coal and coke)-See page 76 Buy- ers Guide
+179,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_24 (2)_30.png', 'cd1954/entry/1954_Page_24 (2)_31.png', 'cd1954/entry/1954_Page_24 (2)_32.png']",PAWTUXET AV,"NEWELL COAL & LUMBER CO 28 High, Pawtucket tel PAwtucket 2-7900See page 76 Buyers Guide"
+180,"SCORE LESS THAN CUTOFF: Charles, 100 Pilsudski, 28 Olneyville sq,75.5,PROVIDENCE","['cd1954/entry/1954_Page_24 (2)_39.png', 'cd1954/entry/1954_Page_24 (2)_40.png', 'cd1954/entry/1954_Page_24 (2)_41.png', 'cd1954/entry/1954_Page_24 (2)_42.png']",OLNEYVILLE SQ,"ATLANTIC COAL CO 160 Charles, 100 Pilsudski, 28 Olneyville sq tel ELm- hurst 1-7000See page 25 Buyers Guide and left bottom lines"
+181,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_24 (2)_52.png', 'cd1954/entry/1954_Page_24 (2)_53.png']",N/A,"New England Coal & Coke Co, Fields Point"
+182,"SCORE LESS THAN CUTOFF: Jefferson blvd Hillsgrove, RI,53.0,PROVIDENCE","['cd1954/entry/1954_Page_24 (3)_13.png', 'cd1954/entry/1954_Page_24 (3)_14.png', 'cd1954/entry/1954_Page_24 (3)_15.png', 'cd1954/entry/1954_Page_24 (3)_16.png', 'cd1954/entry/1954_Page_24 (3)_17.png']",ELMGROVE AVE,"CAMPANELLA & CARDI READY MIXED CONCRETE CO 780 Jeffer- son blvd Hillsgrove, RI tel REgent 7-1300See pages 26 and 29 Buyers Guide"
+183,"SCORE LESS THAN CUTOFF: Walcott, Pawtucket,69.0,PROVIDENCE","['cd1954/entry/1954_Page_24 (3)_36.png', 'cd1954/entry/1954_Page_24 (3)_37.png', 'cd1954/entry/1954_Page_24 (3)_38.png']",PAWTUXET AV,"SOULE HENRY M CO 421 Walcott, Pawtucket tel PAwtucket 2-2110See page 32 Buyers Guide"
+184,"SCORE LESS THAN CUTOFF: Spring, Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_24 (3)_43.png', 'cd1954/entry/1954_Page_24 (3)_44.png', 'cd1954/entry/1954_Page_24 (3)_45.png']",PAWTUXET AV,"MAGUIRE ROOFING COMPANY 118 Spring, Pawtucket tel PAwtucket 5-3394-See page 107 Buyers Guide"
+185,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_25 (1)_6.png', 'cd1954/entry/1954_Page_25 (1)_7.png']",N/A,"Main Louis E, State Office bldg corri- dor"
+186,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_25 (1)_44.png', 'cd1954/entry/1954_Page_25 (1)_45.png', 'cd1954/entry/1954_Page_25 (1)_46.png', 'cd1954/entry/1954_Page_25 (1)_47.png']",N/A,"MAGUIRE CHARLES AND ASSO. CIATES, Turks Head bldg tel GAs- pee 1-2051See page 40 Buyers Guide"
+187,"SCORE LESS THAN CUTOFF: Main, Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_25 (1)_58.png', 'cd1954/entry/1954_Page_25 (1)_59.png', 'cd1954/entry/1954_Page_25 (1)_60.png', 'cd1954/entry/1954_Page_25 (1)_61.png', 'cd1954/entry/1954_Page_25 (1)_62.png']",PAWTUXET AV,"CENTRAL ENGINEERING & CON- STRUCTION CO, Division of Gilbane Building Company 155 Main, Paw- tucket tel PAwtucket 5-5400See page 26 Buyers Guide"
+188,"SCORE LESS THAN CUTOFF: Main, Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_25 (2)_21.png', 'cd1954/entry/1954_Page_25 (2)_22.png', 'cd1954/entry/1954_Page_25 (2)_23.png', 'cd1954/entry/1954_Page_25 (2)_24.png', 'cd1954/entry/1954_Page_25 (2)_25.png']",PAWTUXET AV,"CENTRAL ENGINEERING & CON- STRUCTION CO, Division of Gilbane Building Company 155 Main, Paw- tucket tel PAwtucket 5-5400See page 26 Buyers Guide"
+189,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_25 (3)_1.png'],N/A,-- -srw
+190,"SCORE LESS THAN CUTOFF: Walcott Pawtucket,69,PROVIDENCE","['cd1954/entry/1954_Page_25 (3)_38.png', 'cd1954/entry/1954_Page_25 (3)_39.png', 'cd1954/entry/1954_Page_25 (3)_40.png']",PAWTUXET AV,SOULE HENRY M CO 421 Walcott Pawtucket tel PAwtucket 2-2110See page 32 Buyers Guide
+191,"SCORE LESS THAN CUTOFF: Wilcox,77.0,PROVIDENCE","['cd1954/entry/1954_Page_26 (2)_51.png', 'cd1954/entry/1954_Page_26 (2)_52.png']",WILCOMB RD,Immaculate Conception Convent 29 Wilcox
+192,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_26 (3)_15.png', 'cd1954/entry/1954_Page_26 (3)_16.png', 'cd1954/entry/1954_Page_26 (3)_17.png']",N/A,"KENNECOTT WIRE & CABLE CO Phillipsdale, RI tel HAst Providence 1-2800-See page 115 Buyers Guide"
+193,EMPTY STREET,"['cd1954/entry/1954_Page_27 (1)_2.png', 'cd1954/entry/1954_Page_27 (1)_3.png', 'cd1954/entry/1954_Page_27 (1)_4.png', 'cd1954/entry/1954_Page_27 (1)_5.png']",,"RHODE ISLAND SAND & GRAVEL CO Inc, Kilvert st Hillsgrove tels REgent 7-8400 and 7-8401 (sand) See page 34 Buyers Guide"
+194,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_27 (1)_68.png', 'cd1954/entry/1954_Page_27 (1)_69.png', 'cd1954/entry/1954_Page_27 (1)_70.png']",N/A,IMPERIAL KNIFE CO Inc Imperial pl tel UNion 1-4700See page 77 Buy- ers Guide
+195,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_27 (1)_71.png', 'cd1954/entry/1954_Page_27 (1)_72.png']",N/A,KINGSTON CUTLERY CO Imperial pl tel UNion 1-4700
+196,"SCORE LESS THAN CUTOFF: Broadway East Providence,79.5,PROVIDENCE","['cd1954/entry/1954_Page_27 (2)_18.png', 'cd1954/entry/1954_Page_27 (2)_19.png', 'cd1954/entry/1954_Page_27 (2)_20.png']",PROVIDENCE ST,VIALL W C DAIRY Inc 912 Broadway East Providence tel EAst Providence 1-1255See page 78 Buyers Guide
+197,"SCORE LESS THAN CUTOFF: Codding,67,PROVIDENCE","['cd1954/entry/1954_Page_27 (2)_74.png', 'cd1954/entry/1954_Page_27 (2)_75.png']",GOULDING ST,Watchman Community Center and Day Nursery 140 Codding
+198,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE","['cd1954/entry/1954_Page_28 (1)_1.png', 'cd1954/entry/1954_Page_28 (1)_2.png', 'cd1954/entry/1954_Page_28 (1)_3.png', 'cd1954/entry/1954_Page_28 (1)_4.png']",I 95,PROGRESSIVE PROTECTION SINCE 1799
+199,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_28 (1)_5.png'],N/A,DentistsCon
+200,"SCORE LESS THAN CUTOFF: 803,33.0,PROVIDENCE","['cd1954/entry/1954_Page_28 (1)_28.png', 'cd1954/entry/1954_Page_28 (1)_29.png']",3RD ST,Blum Ira 170 Westminster rms 802 and 803
+201,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_28 (1)_36.png'],BROADWAY,Calenda Chas C 171 Bwav
+202,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_28 (1)_62.png'],BROADWAY,Decesare Wm F 216 Bwav
+203,"SCORE LESS THAN CUTOFF: Cranston Deutch Richd E 170 Westminster,71.0,PROVIDENCE","['cd1954/entry/1954_Page_28 (1)_69.png', 'cd1954/entry/1954_Page_28 (1)_70.png']",WESTMINSTER ST,"Deslandes Leo E 4854 Cranston
+Deutch Richd E 170 Westminster rm 505"
+204,"SCORE LESS THAN CUTOFF: Smith rms 4-5,78.0,PROVIDENCE",['cd1954/entry/1954_Page_28 (1)_73.png'],SMITH ST,Dimond Harry L 428 Smith rms 4-5
+205,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_28 (2)_1.png', 'cd1954/entry/1954_Page_28 (2)_2.png']",N/A,PROVIDENCE WASHINGT( PROVIDENCE WASHINGT
+206,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_28 (3)_1.png'],N/A,JN INSURANCE COMPANY
+207,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_28 (3)_2.png', 'cd1954/entry/1954_Page_28 (3)_3.png']",N/A,"JN INDEMNITY COMPANY PROVIDENCE, RHODE ISLAND"
+208,"SCORE LESS THAN CUTOFF: to $1.00 Store 138 Charles,72.0,PROVIDENCE",['cd1954/entry/1954_Page_29 (1).chop_66.png'],CHARLES ST,Kolligians 5 to $1.00 Store 138 Charles
+209,EMPTY STREET,"['cd1954/entry/1954_Page_29 (2).chop_21.png', 'cd1954/entry/1954_Page_29 (2).chop_22.png', 'cd1954/entry/1954_Page_29 (2).chop_23.png']",58 ,Allen John F & Son Inc 509 Westmin- ster rm 58 (imitation and semi- precious)
+210,"SCORE LESS THAN CUTOFF: Lincoln, Boston, Mass,77.0,PROVIDENCE","['cd1954/entry/1954_Page_29 (3).chop_18.png', 'cd1954/entry/1954_Page_29 (3).chop_19.png', 'cd1954/entry/1954_Page_29 (3).chop_20.png']",LINCOLN AVE,"POLK RL & CO District Office 179 Lincoln, Boston, Mass tel HAncock 6-6309"
+211,"SCORE LESS THAN CUTOFF: Transit Parrillo Marie J 334 Westminster rm. 523,69.0,PROVIDENCE",['cd1954/entry/1954_Page_30 (1)_63.png'],WESTMINSTER ST,"Newsome Gertrude E Mrs 145 Transit
+
+Parrillo Marie J 334 Westminster rm.
+523"
+212,"SCORE LESS THAN CUTOFF: Braneh ay,75.0,PROVIDENCE",['cd1954/entry/1954_Page_30 (3)_72.png'],BRANCH AVE,Wanskuck Pharmacy 872 Braneh ay
+213,"SCORE LESS THAN CUTOFF: Conanicut,74.0,PROVIDENCE",['cd1954/entry/1954_Page_31 (2)_19.png'],MOSWANICUT DR,Liquid Carbonic Corp 15 Conanicut
+214,"SCORE LESS THAN CUTOFF: North Broadway Rumford,78.0,PROVIDENCE","['cd1954/entry/1954_Page_31 (2)_40.png', 'cd1954/entry/1954_Page_31 (2)_41.png', 'cd1954/entry/1954_Page_31 (2)_42.png']",GRAND BROADWAY,du PONT E I de NEMOURS & CO 50 North Broadway Rumford tel EAst Providence 1-6522
+215,"SCORE LESS THAN CUTOFF: -264 Wey-: bosset,79.0,PROVIDENCE","['cd1954/entry/1954_Page_31 (2)_78.png', 'cd1954/entry/1954_Page_31 (2)_79.png', 'cd1954/entry/1954_Page_31 (2)_80.png']",WEYBOSSET ST,WALKER ELECTRIC CO 262-264 Wey-: bosset tels GAspee 1-8200-1-8201See page 40 Buyers Guide
+216,"SCORE LESS THAN CUTOFF: Bayley Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_31 (3)_11.png', 'cd1954/entry/1954_Page_31 (3)_12.png', 'cd1954/entry/1954_Page_31 (3)_13.png']",PAWTUXET AV,NEW ENGLAND MACHINE & ELEC. TRIC CO 77 Bayley Pawtucket tel PAwtucket 3-2540
+217,EMPTY STREET,"['cd1954/entry/1954_Page_32 (2)_70.png', 'cd1954/entry/1954_Page_32 (2)_71.png', 'cd1954/entry/1954_Page_32 (2)_72.png', 'cd1954/entry/1954_Page_32 (2)_73.png']",,"CITY HALL HARDWARE, West Ex- change cor Aborn st tel JAckson 1-2000-See page 50 Buyers Guide and right top lines."
+218,"SCORE LESS THAN CUTOFF: Snow 24d floor,61.0,PROVIDENCE","['cd1954/entry/1954_Page_32 (3)_8.png', 'cd1954/entry/1954_Page_32 (3)_9.png', 'cd1954/entry/1954_Page_32 (3)_10.png']",FLORA ST,TECHNIC Inc 39 Snow 24d floor tel JAckson 1-4200See page 93 Buyers Guide
+219,"SCORE LESS THAN CUTOFF: Third,67,PROVIDENCE","['cd1954/entry/1954_Page_32 (3)_27.png', 'cd1954/entry/1954_Page_32 (3)_28.png', 'cd1954/entry/1954_Page_32 (3)_29.png']",TIDD ST,WILLIAMS & ANDERSON CO INC The 14 Third tels GAspee 1-3621- 1-3622See page 67 Buyers Guide
+220,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_33 (1)_42.png', 'cd1954/entry/1954_Page_33 (1)_43.png', 'cd1954/entry/1954_Page_33 (1)_44.png']",N/A,MAGUIRE CHARLES A AND ASSOCI- ATES Turks Head bldg tel GAspee 1-2051See page 40 Buyers Guide
+221,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1954/entry/1954_Page_33 (1)_47.png'],10TH ST,GILBANE BUILDING COMPANY 90
+222,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_33 (1)_48.png', 'cd1954/entry/1954_Page_33 (1)_49.png', 'cd1954/entry/1954_Page_33 (1)_50.png']",N/A,Calverley tel JAckson 1-5400See page 27 Buyers Guide and right bot- tom lines
+223,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_33 (1)_63.png', 'cd1954/entry/1954_Page_33 (1)_64.png', 'cd1954/entry/1954_Page_33 (1)_65.png']",N/A,MAGUIRE CHARLES A AND ASSOCI- ATES Turks Head bldg tel GAspee 1-2051-See page 40 Buyers Guide
+224,"SCORE LESS THAN CUTOFF: Rodney ct,73.0,PROVIDENCE","['cd1954/entry/1954_Page_33 (2)_55.png', 'cd1954/entry/1954_Page_33 (2)_56.png']",OLNEY ST,Pantograph Engraving Co The 10 Rod- ney ct
+225,EMPTY STREET,"['cd1954/entry/1954_Page_33 (3)_36.png', 'cd1954/entry/1954_Page_33 (3)_37.png', 'cd1954/entry/1954_Page_33 (3)_38.png', 'cd1954/entry/1954_Page_33 (3)_39.png']",,RHODE ISLAND SAND & GRAVEL CO Ince Kilvert st Hillsgrove tels REgent 7-8400-7-8401See page 34 Buyers Guide
+226,"SCORE LESS THAN CUTOFF: Jefferson blvd Hillsgrove, RI,53.0,PROVIDENCE","['cd1954/entry/1954_Page_33 (3)_41.png', 'cd1954/entry/1954_Page_33 (3)_42.png', 'cd1954/entry/1954_Page_33 (3)_43.png', 'cd1954/entry/1954_Page_33 (3)_44.png']",ELMGROVE AVE,"CAMPANELLA & CARDI CONSTRUC- TION CO 780 Jefferson blvd Hills- grove, RI tel Regent 7-1300See pages 26 and 29 Buyers Guide"
+227,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_33 (3)_51.png', 'cd1954/entry/1954_Page_33 (3)_52.png', 'cd1954/entry/1954_Page_33 (3)_53.png', 'cd1954/entry/1954_Page_33 (3)_54.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Ine 20 Spice Charlestown tel CHarles- town 2-4600See page 41 Buyers Guide and right side lines
+228,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_33 (3)_57.png', 'cd1954/entry/1954_Page_33 (3)_58.png', 'cd1954/entry/1954_Page_33 (3)_59.png', 'cd1954/entry/1954_Page_33 (3)_60.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarles- town 2-4600See page 41 Buyers Guide and right side lines
+229,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_34 (1)_1.png'],N/A,
+230,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_34 (1)_11.png'],N/A,"Fruit Growers Express Co, Union Sta"
+231,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_34 (1)_12.png'],N/A,"Railway Express Agency Inc, Union Sta"
+232,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_35 (1).chop_44.png', 'cd1954/entry/1954_Page_35 (1).chop_45.png', 'cd1954/entry/1954_Page_35 (1).chop_46.png', 'cd1954/entry/1954_Page_35 (1).chop_47.png']",N/A,PROVIDENCE MUTUAL FIRE INSUR. ANCE CO The Mutual pl tel GAspee 1-1091-See page 56 Buyers Guide and left top lines
+233,"SCORE LESS THAN CUTOFF: Shawmut,73,PROVIDENCE",['cd1954/entry/1954_Page_35 (1).chop_70.png'],SHAW ST,Covinsky Harry 48 Shawmut
+234,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_35 (2).chop_39.png', 'cd1954/entry/1954_Page_35 (2).chop_40.png']",GEORGE M COHAN BLVD,National Decorating Co 67 Geo M Cohan blvd
+235,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE","['cd1954/entry/1954_Page_35 (2).chop_47.png', 'cd1954/entry/1954_Page_35 (2).chop_48.png']",I 95,Crown Flavor Laboratory Inc 387 Charles bldg 15
+236,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_35 (3).chop_1.png'],N/A,Rowley Construction Co.
+237,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_35 (3).chop_5.png', 'cd1954/entry/1954_Page_35 (3).chop_6.png']",N/A,"260 Central Ave., Pawtucket, R. I. Telephone PA wtucket 5-4600"
+238,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_35 (3).chop_30.png', 'cd1954/entry/1954_Page_35 (3).chop_31.png']",N/A,"Cut Rate Flower Shop, Arcade bldg rm"
+239,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_36 (1)_1.png'],N/A,"Florists, Wholesale-Con"
+240,"SCORE LESS THAN CUTOFF: Dexter, Pawtucket,70.0,PROVIDENCE","['cd1954/entry/1954_Page_36 (2)_20.png', 'cd1954/entry/1954_Page_36 (2)_21.png', 'cd1954/entry/1954_Page_36 (2)_22.png']",PAWTUXET AV,"WHITE JS CO (iron and semi-steel) 22 Dexter, Pawtucket tel PAwtucket 2-0342-See page 45 Buyers Guide"
+241,"SCORE LESS THAN CUTOFF: Main Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_36 (3)_63.png', 'cd1954/entry/1954_Page_36 (3)_64.png', 'cd1954/entry/1954_Page_36 (3)_65.png', 'cd1954/entry/1954_Page_36 (3)_66.png']",PAWTUXET AV,DUPUIS FRANK COMPANY (24 hour service) 599 Main Pawtucket tel PAwtucket 2-0080See page 93 Buy- ers Guide
+242,"SCORE LESS THAN CUTOFF: Charles, 100 Pilsudski, 28 Olneyville sq,75.5,PROVIDENCE","['cd1954/entry/1954_Page_37 (1).chop_22.png', 'cd1954/entry/1954_Page_37 (1).chop_23.png', 'cd1954/entry/1954_Page_37 (1).chop_24.png', 'cd1954/entry/1954_Page_37 (1).chop_25.png']",OLNEYVILLE SQ,"ATLANTIC COAL CO 160 Charles, 100 Pilsudski, 28 Olneyville sq tel ELm- hurst 1-7000See page 25 Buyers Guide and left bottom lines"
+243,"SCORE LESS THAN CUTOFF: Freight Pawtucket,69.0,PROVIDENCE","['cd1954/entry/1954_Page_37 (1).chop_52.png', 'cd1954/entry/1954_Page_37 (1).chop_53.png', 'cd1954/entry/1954_Page_37 (1).chop_54.png']",PAWTUXET AV,KALLAHER COAL CO Inc 111 Freight Pawtucket tels PAwtucket 5-6000 and GAspee 1-8121
+244,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_37 (1).chop_61.png', 'cd1954/entry/1954_Page_37 (1).chop_62.png', 'cd1954/entry/1954_Page_37 (1).chop_63.png']",PAWTUXET AV,"McDUFF COAL & LUMBER CO 11 High, Pawtucket tel PAwtucket 2-2400See page 76 Buyers Guide"
+245,"SCORE LESS THAN CUTOFF: 754-756 Broad,78.0,PROVIDENCE","['cd1954/entry/1954_Page_37 (2).chop_64.png', 'cd1954/entry/1954_Page_37 (2).chop_65.png', 'cd1954/entry/1954_Page_37 (2).chop_66.png', 'cd1954/entry/1954_Page_37 (2).chop_67.png']",BROAD ST,JUHLIN-PEARSON established 1899 754-756 Broad tel HOpkins 1-1213 See page 47 Buyers Guide and left side lines
+246,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_37 (3).chop_1.png'],N/A,
+247,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_37 (3).chop_5.png'],N/A,1119 Industrial Bank Building
+248,"SCORE LESS THAN CUTOFF: , 754-756 Broad,78.0,PROVIDENCE","['cd1954/entry/1954_Page_37 (3).chop_29.png', 'cd1954/entry/1954_Page_37 (3).chop_30.png', 'cd1954/entry/1954_Page_37 (3).chop_31.png', 'cd1954/entry/1954_Page_37 (3).chop_32.png']",BROAD ST,"PEARSON A RAYMOND (Juhlin-Pear- son) established 1899, 754-756 Broad tel HOpkins 1-1213See page 47 Buy- ers Guide and left side lines"
+249,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_37 (3).chop_40.png', 'cd1954/entry/1954_Page_37 (3).chop_41.png']",GEORGE M COHAN BLVD,Rebello Funeral Home 166 Geo M Cohan blvd
+250,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_38 (1)_1.png'],N/A,Funeral HomesCon
+251,"SCORE LESS THAN CUTOFF: -1191 Eddy,43.0,PROVIDENCE",['cd1954/entry/1954_Page_38 (2)_33.png'],I 195,Little Furniture Store 1189-1191 Eddy
+252,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_38 (2)_42.png', 'cd1954/entry/1954_Page_38 (2)_43.png']",GEORGE M COHAN BLVD,Murphy W A & Co 182 Geo M Cohan blvd
+253,"SCORE LESS THAN CUTOFF: Eddv,75,PROVIDENCE",['cd1954/entry/1954_Page_38 (2)_70.png'],EDDY ST,Squillante Furniture Co 555 Eddv
+254,"SCORE LESS THAN CUTOFF: Crawford sq,69,PROVIDENCE","['cd1954/entry/1954_Page_38 (3)_25.png', 'cd1954/entry/1954_Page_38 (3)_26.png']",BRADFORD ST,National Furniture Distributors Co 5 Crawford sq
+255,"SCORE LESS THAN CUTOFF: -27 Hewes,65.0,PROVIDENCE",['cd1954/entry/1954_Page_38 (3)_38.png'],HAWKES ST,Roh Roy Mfg Co Ine 21-27 Hewes
+256,"SCORE LESS THAN CUTOFF: Geo M Cohan bivd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_39 (1)_63.png'],CHAPIN AVE,Caddick John E 11 Geo M Cohan bivd
+257,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_39 (1)_69.png', 'cd1954/entry/1954_Page_39 (1)_70.png']",GEORGE M COHAN BLVD,Chases Service Station 109 Geo M Cohan blvd
+258,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_39 (2)_72.png'],GEORGE M COHAN BLVD,Gerry Albert 29 Geo M Cohan blvd
+259,"SCORE LESS THAN CUTOFF: Geo M Cohan bivd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_39 (3)_4.png', 'cd1954/entry/1954_Page_39 (3)_5.png']",CHAPIN AVE,Gulf Oil Corp 165 Charles and 51 Geo M Cohan bivd
+260,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_40 (1)_1.png'],N/A,Gasoline StationsCon
+261,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_40 (1)_53.png', 'cd1954/entry/1954_Page_40 (1)_54.png']",GEORGE M COHAN BLVD,Reposas Shell Service 118 Geo M Cohan blvd
+262,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_40 (1)_55.png', 'cd1954/entry/1954_Page_40 (1)_56.png']",GEORGE M COHAN BLVD,Ringuette Amedee J 84 Geo M Cohan blvd
+263,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_40 (2)_12.png'],GEORGE M COHAN BLVD,Sylvia Jos jr 87 Geo M Cohan blvd
+264,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_40 (3)_6.png', 'cd1954/entry/1954_Page_40 (3)_7.png']",N/A,Biltmore Gift Shop lobby Hotel Shera- ton-Biltmore
+265,EMPTY STREET,"['cd1954/entry/1954_Page_41 (1).chop_11.png', 'cd1954/entry/1954_Page_41 (1).chop_12.png']",28 ,Quality Products Co 387 Charles bldg 28 (blowers)
+266,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_42 (1)_1.png'],N/A,"Grocers, RetailCon"
+267,"SCORE LESS THAN CUTOFF: Amherst branches,70.5,PROVIDENCE","['cd1954/entry/1954_Page_42 (1)_2.png', 'cd1954/entry/1954_Page_42 (1)_3.png', 'cd1954/entry/1954_Page_42 (1)_4.png', 'cd1954/entry/1954_Page_42 (1)_5.png', 'cd1954/entry/1954_Page_42 (1)_6.png', 'cd1954/entry/1954_Page_42 (1)_7.png', 'cd1954/entry/1954_Page_42 (1)_8.png', 'cd1954/entry/1954_Page_42 (1)_9.png']",BRANCH AVE,"First National Stores Inc office 210 Amherst, branches 296 Branch av, 863 Broad, 71B and 190 Camp, 1052 Chalkstone av, 486 Cranston, 297 Elm- wood av, 727 Hope, 917 Manton av, 297 Plain, 283 and 536 Plainfield, 28 Pontiac, 165 and 472 Smith, 291 Thayer and 55 Walling"
+268,"SCORE LESS THAN CUTOFF: B,50,PROVIDENCE","['cd1954/entry/1954_Page_42 (1)_2.png', 'cd1954/entry/1954_Page_42 (1)_3.png', 'cd1954/entry/1954_Page_42 (1)_4.png', 'cd1954/entry/1954_Page_42 (1)_5.png', 'cd1954/entry/1954_Page_42 (1)_6.png', 'cd1954/entry/1954_Page_42 (1)_7.png', 'cd1954/entry/1954_Page_42 (1)_8.png', 'cd1954/entry/1954_Page_42 (1)_9.png']",JOB ST,"First National Stores Inc office 210 Amherst, branches 296 Branch av, 863 Broad, 71B and 190 Camp, 1052 Chalkstone av, 486 Cranston, 297 Elm- wood av, 727 Hope, 917 Manton av, 297 Plain, 283 and 536 Plainfield, 28 Pontiac, 165 and 472 Smith, 291 Thayer and 55 Walling"
+269,"SCORE LESS THAN CUTOFF: Item av,67.0,PROVIDENCE",['cd1954/entry/1954_Page_42 (1)_75.png'],WHITE ST,Jimton Gilbert K 247 Item av
+270,"SCORE LESS THAN CUTOFF: Quaid,71.0,PROVIDENCE",['cd1954/entry/1954_Page_42 (3)_1.png'],QUAIL RIDGE RD,Papalas John 40 Quaid
+271,EMPTY STREET,"['cd1954/entry/1954_Page_43 (2).chop_33.png', 'cd1954/entry/1954_Page_43 (2).chop_34.png']",,"Federal Hill Pool, Dept of Recreation Gesler st"
+272,EMPTY STREET,"['cd1954/entry/1954_Page_43 (2).chop_51.png', 'cd1954/entry/1954_Page_43 (2).chop_52.png']",,"Albertus Magnus Hall, Eaton cor River av"
+273,EMPTY STREET,['cd1954/entry/1954_Page_43 (2).chop_54.png'],,"Antoninus Hall, Eaton cor River av"
+274,EMPTY STREET,['cd1954/entry/1954_Page_43 (2).chop_55.png'],,"Aquinas Hall, Eaton cor River av"
+275,"SCORE LESS THAN CUTOFF: Codding,67,PROVIDENCE",['cd1954/entry/1954_Page_43 (2).chop_57.png'],GOULDING ST,Barton Hall rear 140 Codding
+276,EMPTY STREET,"['cd1954/entry/1954_Page_43 (2).chop_58.png', 'cd1954/entry/1954_Page_43 (2).chop_59.png']",,"Blessed Martin House, Eaton cor River av"
+277,EMPTY STREET,['cd1954/entry/1954_Page_43 (2).chop_64.png'],,"Donnelly Hall, Eaton cor River av"
+278,EMPTY STREET,['cd1954/entry/1954_Page_43 (2).chop_69.png'],,"Guzman Hall, Eaton cor River av"
+279,EMPTY STREET,"['cd1954/entry/1954_Page_43 (3).chop_4.png', 'cd1954/entry/1954_Page_43 (3).chop_5.png']",,"Matthew Harkins Hall, Eaton cor River av"
+280,EMPTY STREET,['cd1954/entry/1954_Page_43 (3).chop_28.png'],,"StThomas House, Eaton cor River av"
+281,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_43 (3).chop_29.png', 'cd1954/entry/1954_Page_43 (3).chop_30.png']",N/A,Sayles Hall (BU) Brown on BU Cam- pus
+282,EMPTY STREET,['cd1954/entry/1954_Page_43 (3).chop_39.png'],,"Wheeler Memorial Hall, Cabot st"
+283,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_44 (1)_1.png'],N/A,"Hardware Dealers, RetailCon"
+284,"SCORE LESS THAN CUTOFF: Main Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_44 (3)_30.png', 'cd1954/entry/1954_Page_44 (3)_31.png', 'cd1954/entry/1954_Page_44 (3)_32.png']",PAWTUXET AV,DUPUIS FRANK COMPANY 599 Main Pawtucket tel PAwtucket 2-0080See page 93 Buyers Guide
+285,EMPTY STREET,"['cd1954/entry/1954_Page_44 (3)_58.png', 'cd1954/entry/1954_Page_44 (3)_59.png']",,Munger Heating & Air Conditioning Co i Wash av
+286,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_45 (1)_47.png'],N/A,"Vassar Hosiery Shop, Arcade Bldg"
+287,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_45 (2)_21.png', 'cd1954/entry/1954_Page_45 (2)_22.png']",N/A,US Veterans Administration Hospital Davis Park
+288,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_45 (2)_73.png', 'cd1954/entry/1954_Page_45 (2)_74.png']",PAWTUXET AV,ROGER WILLIAMS HOTEL 179 Main Pawtucket tel PAwtucket 2-5800
+289,"SCORE LESS THAN CUTOFF: rooms with bath,60.0,PROVIDENCE","['cd1954/entry/1954_Page_45 (3)_1.png', 'cd1954/entry/1954_Page_45 (3)_2.png', 'cd1954/entry/1954_Page_45 (3)_3.png', 'cd1954/entry/1954_Page_45 (3)_4.png', 'cd1954/entry/1954_Page_45 (3)_5.png', 'cd1954/entry/1954_Page_45 (3)_6.png', 'cd1954/entry/1954_Page_45 (3)_7.png']",BROOM ST,"SHERATON-BILTMORE civic center opp RR station, 600 rooms with bath, 4 famous public rooms serving food and beverages 11 Dorrance corner Washington tel GAspee 1-9200See page 116 Buyers Guide and right bot- tom lines"
+290,"SCORE LESS THAN CUTOFF: famous public rooms serving food beverages,47.0,PROVIDENCE","['cd1954/entry/1954_Page_45 (3)_1.png', 'cd1954/entry/1954_Page_45 (3)_2.png', 'cd1954/entry/1954_Page_45 (3)_3.png', 'cd1954/entry/1954_Page_45 (3)_4.png', 'cd1954/entry/1954_Page_45 (3)_5.png', 'cd1954/entry/1954_Page_45 (3)_6.png', 'cd1954/entry/1954_Page_45 (3)_7.png']",BELVEDERE ST,"SHERATON-BILTMORE civic center opp RR station, 600 rooms with bath, 4 famous public rooms serving food and beverages 11 Dorrance corner Washington tel GAspee 1-9200See page 116 Buyers Guide and right bot- tom lines"
+291,"SCORE LESS THAN CUTOFF: -10-12 Arcade bldg,76.0,PROVIDENCE","['cd1954/entry/1954_Page_45 (3)_18.png', 'cd1954/entry/1954_Page_45 (3)_19.png']",ARCADE ST,Fairchild A W & Co Ine 8-10-12 Arcade bldg
+292,"SCORE LESS THAN CUTOFF: -20 Academp av,78.5,PROVIDENCE","['cd1954/entry/1954_Page_45 (3)_58.png', 'cd1954/entry/1954_Page_45 (3)_59.png']",ACADEMY AVE,MtPleasant Enterprises Inc 218-20 Acad- emp av
+293,"SCORE LESS THAN CUTOFF: Broadway East Providence,79.5,PROVIDENCE","['cd1954/entry/1954_Page_46 (1)_38.png', 'cd1954/entry/1954_Page_46 (1)_39.png', 'cd1954/entry/1954_Page_46 (1)_40.png']",PROVIDENCE ST,VIALL W C DAIRY Inc 912 Broadway East Providence tel EAst Providence 1-1255See page 78 Buyers Guide
+294,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_46 (2)_33.png', 'cd1954/entry/1954_Page_46 (2)_34.png']",N/A,Travelers Aid Society of Providence Inc Union Station
+295,"SCORE LESS THAN CUTOFF: Westminster service office in lobby,74.0,PROVIDENCE","['cd1954/entry/1954_Page_47 (1)_29.png', 'cd1954/entry/1954_Page_47 (1)_30.png', 'cd1954/entry/1954_Page_47 (1)_31.png', 'cd1954/entry/1954_Page_47 (1)_32.png', 'cd1954/entry/1954_Page_47 (1)_33.png']",WESTMINSTER ST,KAGAN & SHAWCROSS 805 Industrial Bank bldg 111 Westminster service office in lobby tel JAckston 1-3900 See page 56 Buyers Guide and right top lines
+296,"SCORE LESS THAN CUTOFF: Westminster service office in lobbby,73.5,PROVIDENCE","['cd1954/entry/1954_Page_47 (1)_66.png', 'cd1954/entry/1954_Page_47 (1)_67.png', 'cd1954/entry/1954_Page_47 (1)_68.png', 'cd1954/entry/1954_Page_47 (1)_69.png', 'cd1954/entry/1954_Page_47 (1)_70.png']",WESTMINSTER ST,KAGAN & SHAWCROSS 805 Industrial Bank bldg 111 Westminster service office in lobbby tel JAckson 1-3900 See page 56 Buyers Guide and right top lines
+297,"SCORE LESS THAN CUTOFF: Main, Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_47 (2)_17.png', 'cd1954/entry/1954_Page_47 (2)_18.png', 'cd1954/entry/1954_Page_47 (2)_19.png', 'cd1954/entry/1954_Page_47 (2)_20.png']",PAWTUXET AV,"GALLAGHER MATTHEW J AGENCY Inc 347 Main, Pawtucket tel PAw- tucket 3-1290, Blackstone Valley and the Attleboros"
+298,"SCORE LESS THAN CUTOFF: Hospital Trust bldg,79,PROVIDENCE","['cd1954/entry/1954_Page_47 (2)_21.png', 'cd1954/entry/1954_Page_47 (2)_22.png', 'cd1954/entry/1954_Page_47 (2)_23.png', 'cd1954/entry/1954_Page_47 (2)_24.png', 'cd1954/entry/1954_Page_47 (2)_25.png']",HOSPITAL ST,"MUTUAL LIFE INSURANCE CO OF NEW YORK The, E Herbert Peirce mgr 640 Hospital Trust bldg tel GAs- pee 1-6964See page 59 Buyers Guide"
+299,"SCORE LESS THAN CUTOFF: Westminster service office in lobby,74.0,PROVIDENCE","['cd1954/entry/1954_Page_47 (2)_54.png', 'cd1954/entry/1954_Page_47 (2)_55.png', 'cd1954/entry/1954_Page_47 (2)_56.png', 'cd1954/entry/1954_Page_47 (2)_57.png', 'cd1954/entry/1954_Page_47 (2)_58.png']",WESTMINSTER ST,KAGAN & SHAWCROSS 805 Industrial Bank bldg 111 Westminster service office in lobby tel JAckston 1-3900 See page 56 Buyers Guide and right top lines
+300,"SCORE LESS THAN CUTOFF: Westminster service office in lobby,74.0,PROVIDENCE","['cd1954/entry/1954_Page_47 (3)_10.png', 'cd1954/entry/1954_Page_47 (3)_11.png', 'cd1954/entry/1954_Page_47 (3)_12.png', 'cd1954/entry/1954_Page_47 (3)_13.png', 'cd1954/entry/1954_Page_47 (3)_14.png', 'cd1954/entry/1954_Page_47 (3)_15.png', 'cd1954/entry/1954_Page_47 (3)_16.png']",WESTMINSTER ST,"FRANKLIN LIFE INSURANCE COM- PANY The (Kagan & Shawcross, branch megrs) 805 Industrial Bank bldg 111 Westminster service office in lobby tel JAckson 1-3900See page 56 Buyers Guide and right top lines"
+301,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_47 (3)_23.png'],N/A,See page 59 Buyers Guide
+302,"SCORE LESS THAN CUTOFF: Main, Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_48 (1)_9.png', 'cd1954/entry/1954_Page_48 (1)_10.png']",PAWTUXET AV,"BAIN ANDREW C 301 Main, Pawtuck- et tel PAwtucket 5-4447"
+303,"SCORE LESS THAN CUTOFF: Waterman teis UNion,79.5,PROVIDENCE","['cd1954/entry/1954_Page_48 (1)_38.png', 'cd1954/entry/1954_Page_48 (1)_39.png', 'cd1954/entry/1954_Page_48 (1)_40.png']",WATERMAN ST,CALDWELL MAURICE H 181 Water- man teis UNion 1-1808 and GAspee 1-4282-See page 104 Buyers Guide
+304,"SCORE LESS THAN CUTOFF: -1808 GAspee 1-4282,75.0,PROVIDENCE","['cd1954/entry/1954_Page_48 (1)_38.png', 'cd1954/entry/1954_Page_48 (1)_39.png', 'cd1954/entry/1954_Page_48 (1)_40.png']",GASPEE ST,CALDWELL MAURICE H 181 Water- man teis UNion 1-1808 and GAspee 1-4282-See page 104 Buyers Guide
+305,"SCORE LESS THAN CUTOFF: Industrial Bank bidg 111 Westminster service office in lobby,65.5,PROVIDENCE","['cd1954/entry/1954_Page_48 (2)_53.png', 'cd1954/entry/1954_Page_48 (2)_54.png', 'cd1954/entry/1954_Page_48 (2)_55.png', 'cd1954/entry/1954_Page_48 (2)_56.png', 'cd1954/entry/1954_Page_48 (2)_57.png']",WESTMINSTER ST,KAGAN & SHAWCROSS 805 Industrial Bank bidg 111 Westminster service office in lobby tel JAckson 1-3900 See page 56 Buyers Guide and right top lines
+306,"SCORE LESS THAN CUTOFF: Industrial Bank bidg 111 Westminster,73.5,PROVIDENCE","['cd1954/entry/1954_Page_48 (2)_60.png', 'cd1954/entry/1954_Page_48 (2)_61.png', 'cd1954/entry/1954_Page_48 (2)_62.png']",WESTMINSTER ST,KNIBB C W CO 1430 Industrial Bank bidg 111 Westminster tel DExter 1-7100
+307,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_48 (3)_1.png', 'cd1954/entry/1954_Page_48 (3)_2.png', 'cd1954/entry/1954_Page_48 (3)_3.png', 'cd1954/entry/1954_Page_48 (3)_4.png']",N/A,MASSACHUSETTS MUTUAL LIFE INSURANCE CO Turks Head bldg tel GAGspee 1-2672See page 53 Buyers Guide and left top lines
+308,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_48 (3)_46.png', 'cd1954/entry/1954_Page_48 (3)_47.png', 'cd1954/entry/1954_Page_48 (3)_48.png']",N/A,PIRNIE RODERICK Turks Head bldg tel GAspee 1-2672See page 53 Buy- ers Guide and left top lines
+309,"SCORE LESS THAN CUTOFF: rm 833,27.5,PROVIDENCE","['cd1954/entry/1954_Page_49 (1)_70.png', 'cd1954/entry/1954_Page_49 (1)_71.png']",3RD ST,Aetna Life Ins Co 111 Westminster rm 1502 and rm 833
+310,"SCORE LESS THAN CUTOFF: claim dept,67.5,PROVIDENCE","['cd1954/entry/1954_Page_49 (3)_11.png', 'cd1954/entry/1954_Page_49 (3)_12.png', 'cd1954/entry/1954_Page_49 (3)_13.png']",CLAIRE CT,"Globe Indemnity Co 111 Westminster rm 521, claim dept and 171 West- minster rm 316"
+311,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_49 (3)_81.png', 'cd1954/entry/1954_Page_49 (3)_82.png', 'cd1954/entry/1954_Page_49 (3)_83.png', 'cd1954/entry/1954_Page_49 (3)_84.png']",N/A,MASSACHUSETTS MUTUAL LIFE INSURANCE CO Turks Head bldg tel GAspee 1-2672See page 53 Buy- ers Guide and left top lines
+312,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_50 (1)_1.png'],N/A,Insurance CompaniesCon
+313,"SCORE LESS THAN CUTOFF: Hospital Trust bldg,79,PROVIDENCE","['cd1954/entry/1954_Page_50 (1)_25.png', 'cd1954/entry/1954_Page_50 (1)_26.png', 'cd1954/entry/1954_Page_50 (1)_27.png', 'cd1954/entry/1954_Page_50 (1)_28.png', 'cd1954/entry/1954_Page_50 (1)_29.png']",HOSPITAL ST,"MUTUAL LIFE INSURANCE CO OF NEW YORK The, E Herbert Peirce mgr 640 Hospital Trust bldg tels GAspee 1-6964-1-6965See page 59 Buyers Guide"
+314,"SCORE LESS THAN CUTOFF: Mapie, Pawtucket,71.5,PROVIDENCE","['cd1954/entry/1954_Page_50 (1)_74.png', 'cd1954/entry/1954_Page_50 (1)_75.png', 'cd1954/entry/1954_Page_50 (1)_76.png']",PAWTUXET AV,"PAWTUCKET MUTUAL INS CO 25 Mapie, Pawtucket tel PAwtucket 5-5600"
+315,"SCORE LESS THAN CUTOFF: 930,34.5,PROVIDENCE","['cd1954/entry/1954_Page_50 (1)_77.png', 'cd1954/entry/1954_Page_50 (1)_78.png']",I 95,Peerless Casualty Co 111 Westminster rm 615 and 930
+316,EMPTY STREET,"['cd1954/entry/1954_Page_50 (2)_3.png', 'cd1954/entry/1954_Page_50 (2)_4.png']",301 ,Phoenix Indemnity Co 170 Westminster rm 301 and 914 (liability)
+317,EMPTY STREET,"['cd1954/entry/1954_Page_50 (2)_3.png', 'cd1954/entry/1954_Page_50 (2)_4.png']",914 ,Phoenix Indemnity Co 170 Westminster rm 301 and 914 (liability)
+318,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_50 (2)_16.png', 'cd1954/entry/1954_Page_50 (2)_17.png', 'cd1954/entry/1954_Page_50 (2)_18.png', 'cd1954/entry/1954_Page_50 (2)_19.png']",N/A,"PROVIDENCE MUTUAL FIRE INSUR- ANCE CO The, Mutual pl tel GAspee 1-1091See page 56 Buyers Guide and left top lines"
+319,"SCORE LESS THAN CUTOFF: do rm 1112,39.5,PROVIDENCE","['cd1954/entry/1954_Page_50 (2)_35.png', 'cd1954/entry/1954_Page_50 (2)_36.png', 'cd1954/entry/1954_Page_50 (2)_37.png']",11TH ST,Prudential Ins Co of America 15 West- minster rms 814 and 940 and 111 do rm 1112
+320,"SCORE LESS THAN CUTOFF: do rm 1112,39.5,PROVIDENCE","['cd1954/entry/1954_Page_50 (2)_35.png', 'cd1954/entry/1954_Page_50 (2)_36.png', 'cd1954/entry/1954_Page_50 (2)_37.png']",11TH ST,Prudential Ins Co of America 15 West- minster rms 814 and 940 and 111 do rm 1112
+321,"SCORE LESS THAN CUTOFF: do rm 1112,39.5,PROVIDENCE","['cd1954/entry/1954_Page_50 (2)_35.png', 'cd1954/entry/1954_Page_50 (2)_36.png', 'cd1954/entry/1954_Page_50 (2)_37.png']",11TH ST,Prudential Ins Co of America 15 West- minster rms 814 and 940 and 111 do rm 1112
+322,"SCORE LESS THAN CUTOFF: S Main next to Court House,75.0,PROVIDENCE","['cd1954/entry/1954_Page_50 (2)_72.png', 'cd1954/entry/1954_Page_50 (2)_73.png', 'cd1954/entry/1954_Page_50 (2)_74.png', 'cd1954/entry/1954_Page_50 (2)_75.png', 'cd1954/entry/1954_Page_50 (2)_76.png']",SOUTH MAIN ST,TITLE GUARANTEE COMPANY OF RHODE ISLAND 66 S Main next to Court House tel DExter 1-5331See page 102 Buyers Guide and right top lines
+323,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_50 (3)_34.png', 'cd1954/entry/1954_Page_50 (3)_35.png', 'cd1954/entry/1954_Page_50 (3)_36.png', 'cd1954/entry/1954_Page_50 (3)_37.png']",N/A,"PROVIDENCE MUTUAL FIRE INSUR- ANCE CO The, Mutual pl tel GAspee 1-1091See page 56 Buyers Guide and left top lines"
+324,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_50 (3)_43.png', 'cd1954/entry/1954_Page_50 (3)_44.png', 'cd1954/entry/1954_Page_50 (3)_45.png', 'cd1954/entry/1954_Page_50 (3)_46.png']",N/A,MASSACHUSETTS MUTUAL LIFE INSURANCE CO Turks Head bldg tel GAspee 1-2672See page 53 Buy- ers Guide and left top lines
+325,"SCORE LESS THAN CUTOFF: Hospital Trust bldg,79,PROVIDENCE","['cd1954/entry/1954_Page_51 (2).chop_30.png', 'cd1954/entry/1954_Page_51 (2).chop_31.png', 'cd1954/entry/1954_Page_51 (2).chop_32.png']",HOSPITAL ST,RICHARDSON & CLARK 340 Hospital Trust bldg tel GAspee 1-6202See page 21 Buyers Guide
+326,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_52 (1)_1.png'],N/A,"Jewelers, MfiqCon"
+327,"SCORE LESS THAN CUTOFF: Eddy rms 403-405,70.0,PROVIDENCE",['cd1954/entry/1954_Page_52 (1)_43.png'],EDDY ST,Dambi Co 55 Eddy rms 403-405
+328,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE","['cd1954/entry/1954_Page_52 (2)_68.png', 'cd1954/entry/1954_Page_52 (2)_69.png']",I 95,Jewels By Scitarelli Inc 387 Charles Bldg 9
+329,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1954/entry/1954_Page_52 (3)_19.png'],I 95,"LaRay Jewelers Inc 387 Charles Bldg
+9"
+330,"SCORE LESS THAN CUTOFF: Eddv,75,PROVIDENCE","['cd1954/entry/1954_Page_52 (3)_55.png', 'cd1954/entry/1954_Page_52 (3)_56.png']",EDDY ST,Marquardt-Hudes Ine 339 Eddv (chains)
+331,"SCORE LESS THAN CUTOFF: Bucklin tek GAspee 1-7310,72.0,PROVIDENCE","['cd1954/entry/1954_Page_52 (3)_62.png', 'cd1954/entry/1954_Page_52 (3)_63.png']",BUCKLIN ST,McGRATH-HAMIN Inc 43 Bucklin tek GAspee 1-7310
+332,"SCORE LESS THAN CUTOFF: Empire rms 308309,76.0,PROVIDENCE","['cd1954/entry/1954_Page_52 (3)_72.png', 'cd1954/entry/1954_Page_52 (3)_73.png']",EMPIRE ST,Mode-Craft Jewelry 51 Empire rms 308- 309
+333,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE","['cd1954/entry/1954_Page_53 (1).chop_2.png', 'cd1954/entry/1954_Page_53 (1).chop_3.png']",8TH ST,National Chain Co Inc 387 Charles Bldg 28
+334,"SCORE LESS THAN CUTOFF: Bishop,62,PROVIDENCE",['cd1954/entry/1954_Page_53 (2).chop_26.png'],BRISTOW ST,Tru Kay Mfg Co 16 Bishop
+335,"SCORE LESS THAN CUTOFF: 38d,67.0,PROVIDENCE","['cd1954/entry/1954_Page_53 (2).chop_64.png', 'cd1954/entry/1954_Page_53 (2).chop_65.png', 'cd1954/entry/1954_Page_53 (2).chop_66.png']",3RD ST,WILLIAMS & ANDERSON CO Inc The 14 38d tels GAspee 1-3621-1-3622See page 67 Buyers Guide
+336,"SCORE LESS THAN CUTOFF: Broad shop A,79.5,PROVIDENCE","['cd1954/entry/1954_Page_53 (3).chop_17.png', 'cd1954/entry/1954_Page_53 (3).chop_18.png']",BROAD ST,PARISI TOOL CORP 861 Broad shop A tel STuart 1-4141
+337,"SCORE LESS THAN CUTOFF: Areade bldg,76.5,PROVIDENCE",['cd1954/entry/1954_Page_53 (3).chop_22.png'],READE ST,Pettengill Clifton A 24 Areade bldg
+338,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_54 (1)_1.png'],N/A,Jewelers FindingsCon
+339,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1954/entry/1954_Page_54 (1)_5.png'],4TH ST,Ajax Findings Co 387 Charles bldg 24
+340,EMPTY STREET,"['cd1954/entry/1954_Page_54 (1)_45.png', 'cd1954/entry/1954_Page_54 (1)_46.png']",4 ,Meller Adolf Co 387 Charles bidg 4 (onyx and synthetic stones)
+341,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE","['cd1954/entry/1954_Page_54 (1)_53.png', 'cd1954/entry/1954_Page_54 (1)_54.png']",6TH ST,National Tool & Findings Co 387 Charles bldg 6
+342,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1954/entry/1954_Page_54 (1)_74.png', 'cd1954/entry/1954_Page_54 (1)_75.png']",10TH ST,Sullivan Chas F Inc 387 Charles bldg 10
+343,"SCORE LESS THAN CUTOFF: Codding,67,PROVIDENCE",['cd1954/entry/1954_Page_54 (2)_22.png'],GOULDING ST,Dexter Case Corp 36 Codding (cases)
+344,EMPTY STREET,"['cd1954/entry/1954_Page_54 (3)_17.png', 'cd1954/entry/1954_Page_54 (3)_18.png']",4 ,Beliveau Fred J 535 Broad rms 4 and 5 (chains)
+345,EMPTY STREET,"['cd1954/entry/1954_Page_54 (3)_17.png', 'cd1954/entry/1954_Page_54 (3)_18.png']",5 ,Beliveau Fred J 535 Broad rms 4 and 5 (chains)
+346,"SCORE LESS THAN CUTOFF: Admiral Curtis Jewelry Mfg Co 11 Dearborn,66.5,PROVIDENCE",['cd1954/entry/1954_Page_54 (3)_42.png'],DEARBORN ST,"Cumberland Jewelry 607 Admiral
+Curtis Jewelry Mfg Co 11 Dearborn"
+347,"SCORE LESS THAN CUTOFF: Bough Dauer Ernest I & Son Inc 239 W Exchange,72.0,PROVIDENCE","['cd1954/entry/1954_Page_54 (3)_46.png', 'cd1954/entry/1954_Page_54 (3)_47.png']",WEST EXCHANGE ST,"Darlene Jewelry Mfg Co 15 Bough
+Dauer Ernest I & Son Inc 239 W Ex- change"
+348,"SCORE LESS THAN CUTOFF: Valley Delber Soldering Co 114 Silver Spring,51.5,PROVIDENCE","['cd1954/entry/1954_Page_54 (3)_48.png', 'cd1954/entry/1954_Page_54 (3)_49.png']",COLD SPRING ST,"DeCesari Bros Jewelry Co 3 Valley
+Delber Soldering Co 114 Silver Spring (Ssolderers)"
+349,"SCORE LESS THAN CUTOFF: Aborn Delma Mfg Co Inc 50 Aleppo,66.0,PROVIDENCE",['cd1954/entry/1954_Page_54 (3)_50.png'],ALEPPO ST,"Del-Fine Jewelry Co Inc 223 Aborn
+Delma Mfg Co Inc 50 Aleppo"
+350,"SCORE LESS THAN CUTOFF: Trov,75.0,PROVIDENCE",['cd1954/entry/1954_Page_54 (3)_63.png'],TROY ST,Forest Hills Mfg Co 71 Trov
+351,"SCORE LESS THAN CUTOFF: Aleppo J & H Jobbers 218 Dexter,46.5,PROVIDENCE",['cd1954/entry/1954_Page_54 (3)_73.png'],ROBERT CIR,"Improved Products Mfg Co 50 Aleppo
+J & H Jobbers 218 Dexter"
+352,"SCORE LESS THAN CUTOFF: Bishop,62,PROVIDENCE",['cd1954/entry/1954_Page_55 (1)_5.png'],BRISTOW ST,Lorea Mfg Co Inc 16 Bishop
+353,"SCORE LESS THAN CUTOFF: Sabin rms 9-10,76.5,PROVIDENCE","['cd1954/entry/1954_Page_55 (1)_33.png', 'cd1954/entry/1954_Page_55 (1)_34.png']",SABIN ST,Oriental Glass & Novelty Co Ine 101 Sabin rms 9-10
+354,"SCORE LESS THAN CUTOFF: Shawmut,73,PROVIDENCE",['cd1954/entry/1954_Page_55 (2)_50.png'],SHAW ST,Fink Louis 21 Shawmut
+355,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_55 (2)_70.png', 'cd1954/entry/1954_Page_55 (2)_71.png', 'cd1954/entry/1954_Page_55 (2)_72.png', 'cd1954/entry/1954_Page_55 (2)_73.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarles- town 2-4600See page 41 Buyers Guide and right side lines
+356,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_55 (3)_13.png', 'cd1954/entry/1954_Page_55 (3)_14.png', 'cd1954/entry/1954_Page_55 (3)_15.png']",N/A,IMPERIAL KNIFE CO Inc Imperial pl tel UNion 1-4700See page 77 Buy- ers Guide
+357,"SCORE LESS THAN CUTOFF: Mathewson Feldstein Leopold 225 Thayer,69.0,PROVIDENCE",['cd1954/entry/1954_Page_55 (3)_18.png'],MATHEWSON ST,"Dundee Knitting Mills 86 Mathewson
+Feldstein Leopold 225 Thayer"
+358,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1954/entry/1954_Page_55 (3)_28.png'],7TH ST,GRAPHIC ARTS ASSOCIATES 387
+359,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_55 (3)_29.png'],N/A,"Charles tel JAckson 1-1711See page
+96 Buyers Guide and left side lines
+
+RHODE ISLAND LABEL WORKS Inc
+91 Sabin tel GAspee 1-0170See page
+70 Buyers Guide"
+360,"SCORE LESS THAN CUTOFF: Smith East Side Clinical Laboratory 154 Waterman,48.0,PROVIDENCE","['cd1954/entry/1954_Page_55 (3)_31.png', 'cd1954/entry/1954_Page_55 (3)_32.png']",LIBRARY RD,"Central Medical Laboratory 272 Smith
+East Side Clinical Laboratory 154 Waterman"
+361,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1954/entry/1954_Page_55 (3)_51.png'],4TH ST,"Atlantic Knitting Corp 387 Charles bldg
+4"
+362,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1954/entry/1954_Page_55 (3)_52.png'],3RD ST,"Fleurette Net Corp 387 Charles bldg
+53"
+363,"SCORE LESS THAN CUTOFF: Dorrance Harris Land Co 49 Weybosset,70.0,PROVIDENCE",['cd1954/entry/1954_Page_56 (1)_25.png'],WEYBOSSET ST,"Freemasons Hall Co 127 Dorrance
+Harris Land Co 49 Weybosset rm 21
+Hopelands Co 50 S Main"
+364,"SCORE LESS THAN CUTOFF: Richmond Patton-MacGuyer Realty Co 17 Vir&inia av,66.0,PROVIDENCE","['cd1954/entry/1954_Page_56 (1)_32.png', 'cd1954/entry/1954_Page_56 (1)_33.png']",RICHMOND SQ,"Nemo Realty Co 222 Richmond
+Patton-MacGuyer Realty Co 17 Vir- &inia av"
+365,"SCORE LESS THAN CUTOFF: Dorrance Donnelly Steph F 16 Cold Spring,71.0,PROVIDENCE",['cd1954/entry/1954_Page_56 (1)_39.png'],DORRANCE PLZ,"Landscape Gardeners
+Bradley Woodworth Ine 131 Dorrance
+Donnelly Steph F 16 Cold Spring"
+366,"SCORE LESS THAN CUTOFF: Eddv,75,PROVIDENCE",['cd1954/entry/1954_Page_56 (2)_38.png'],EDDY ST,Parkway Laundry 897 Eddv
+367,"SCORE LESS THAN CUTOFF: Croom Sing Charlie 450 Branch av,59.5,PROVIDENCE",['cd1954/entry/1954_Page_56 (2)_44.png'],CHARLES ST,"Red Top Laundry 120 Croom
+Sing Charlie 450 Branch av (Chinese)
+Sing Sam 121 N Main (Chinese)
+
+Soohoo Kai 541 Chalkstone ay (Chin-
+ese)"
+368,"SCORE LESS THAN CUTOFF: Cleveland Square Deal Laundry 147 Chad Brown State Cleansers & Laundry 70 Croom State Wet Wash Laundry 155 Douglas av,57.5,PROVIDENCE",['cd1954/entry/1954_Page_56 (2)_45.png'],CLEVELAND ST,"Special Laundry Service 181 Cleveland
+
+Square Deal Laundry 147 Chad Brown
+
+State Cleansers & Laundry 70 Croom
+
+State Wet Wash Laundry 155 Douglas
+av"
+369,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_56 (2)_48.png'],BROADWAY,Wah Chin 55 Bwav
+370,"SCORE LESS THAN CUTOFF: Court Rm,71.0,PROVIDENCE","['cd1954/entry/1954_Page_56 (3)_64.png', 'cd1954/entry/1954_Page_56 (3)_65.png']",CROUT ST,"Andrews Harold A, Prov County Court House, No 8 Court Rm"
+371,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE","['cd1954/entry/1954_Page_56 (3)_68.png', 'cd1954/entry/1954_Page_56 (3)_69.png']",2ND ST,"Arabian Aram A, Prov County Court House rm 202"
+372,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (1).chop_3.png', 'cd1954/entry/1954_Page_57 (1).chop_4.png']",COUNTY ST,Baker Hugh B 712 Prov County Court House
+373,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (1).chop_46.png', 'cd1954/entry/1954_Page_57 (1).chop_47.png']",COUNTY ST,Booth John M 301 Prov County Court House
+374,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (2).chop_37.png', 'cd1954/entry/1954_Page_57 (2).chop_38.png']",COUNTY ST,Capotosto Antonio A 712 Prov County Court House
+375,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (2).chop_41.png', 'cd1954/entry/1954_Page_57 (2).chop_42.png']",COUNTY ST,Cappelli Louis W 32 Bway rm 129 and justice 515 Prov County Court House
+376,"SCORE LESS THAN CUTOFF: Howard bldg,76,PROVIDENCE","['cd1954/entry/1954_Page_57 (3).chop_6.png', 'cd1954/entry/1954_Page_57 (3).chop_7.png', 'cd1954/entry/1954_Page_57 (3).chop_8.png']",NORTH HOWARD AVE,"Coen, Rosenstein & Jacques 416 and 417 Howard bldg 171 Westminster tels GAspee 1-7814-1-2005 and 1-1676"
+377,"SCORE LESS THAN CUTOFF: Howard bldg,76,PROVIDENCE","['cd1954/entry/1954_Page_57 (3).chop_6.png', 'cd1954/entry/1954_Page_57 (3).chop_7.png', 'cd1954/entry/1954_Page_57 (3).chop_8.png']",NORTH HOWARD AVE,"Coen, Rosenstein & Jacques 416 and 417 Howard bldg 171 Westminster tels GAspee 1-7814-1-2005 and 1-1676"
+378,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (3).chop_18.png', 'cd1954/entry/1954_Page_57 (3).chop_19.png']",COUNTY ST,Condon Francis B 712 Prov County Court House
+379,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_57 (3).chop_55.png', 'cd1954/entry/1954_Page_57 (3).chop_56.png']",COUNTY ST,Curran Patk P 303 Prov County Court House
+380,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_58 (1)_1.png'],N/A,Law OfficesCon
+381,"SCORE LESS THAN CUTOFF: Benefit Eden Chas H 15 Westminster,74.5,PROVIDENCE",['cd1954/entry/1954_Page_58 (1)_42.png'],WESTMINSTER ST,"Easton Chas R 368 Benefit
+Eden Chas H 15 Westminster rm 1005
+Edwards & Angell 1109 Hospital Trust
+
+bldg 15 Westminster tel JAckson
+1-1100"
+382,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_58 (1)_56.png', 'cd1954/entry/1954_Page_58 (1)_57.png']",COUNTY ST,Flynn Edmund W 712 Prov County Court House
+383,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_58 (2)_21.png', 'cd1954/entry/1954_Page_58 (2)_22.png']",COUNTY ST,Frost G Fredk 533 Prov County Court House
+384,"SCORE LESS THAN CUTOFF: Hospital Trust bidg 15 Westminster,74.5,PROVIDENCE","['cd1954/entry/1954_Page_58 (3)_1.png', 'cd1954/entry/1954_Page_58 (3)_2.png', 'cd1954/entry/1954_Page_58 (3)_3.png', 'cd1954/entry/1954_Page_58 (3)_4.png']",WESTMINSTER ST,"Greenough William B (Greenough, Cross, Reid & Ewing) 1130 Hospital Trust bidg 15 Westminster tel GAs- pee 1-7730"
+385,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_58 (3)_5.png'],N/A,"Griffin J Henry A, City Hall"
+386,"SCORE LESS THAN CUTOFF: Westminster tel DExter 1-2400,77.5,PROVIDENCE","['cd1954/entry/1954_Page_59 (1)_36.png', 'cd1954/entry/1954_Page_59 (1)_37.png']",WESTMINSTER ST,"Ives Stephen B jr, associate Hinckley,
+Allen, Salisbury & Parsons 2200 In- dustrial Trust bldg 111 Westminster
+tel DExter 1-2400"
+387,"SCORE LESS THAN CUTOFF: Prov County Court riouse,71.0,PROVIDENCE","['cd1954/entry/1954_Page_59 (1)_52.png', 'cd1954/entry/1954_Page_59 (1)_53.png']",COUNTRY VIEW DR,Joslin Philip C 511 Prov County Court riouse
+388,"SCORE LESS THAN CUTOFF: Kanilos Wm T,53.0,PROVIDENCE",['cd1954/entry/1954_Page_59 (1)_55.png'],ANGELO AVE,"Kamaras Leonard A 111 Westminster
+rm 523 and 428 Smith rm 2
+
+Kanilos Wm T 111 Westminster rm
+619"
+389,"SCORE LESS THAN CUTOFF: Bway Marcotte Leroy V 170 Westminster,73.0,PROVIDENCE","['cd1954/entry/1954_Page_59 (3)_11.png', 'cd1954/entry/1954_Page_59 (3)_12.png']",WESTMINSTER ST,"Marcaccio Vincent P jr 225 Bway
+Marcotte Leroy V 170 Westminster rm 902"
+390,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_59 (3)_23.png', 'cd1954/entry/1954_Page_59 (3)_24.png']",COUNTY ST,McCabe Francis J 301 Prov County Court House
+391,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE",['cd1954/entry/1954_Page_59 (3)_30.png'],COUNTY ST,"McCormick Matthew M 528 Prov Coun-
+ty Court House"
+392,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_60 (1)_1.png'],N/A,Law OfficesCon
+393,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE","['cd1954/entry/1954_Page_60 (1)_36.png', 'cd1954/entry/1954_Page_60 (1)_37.png']",2ND ST,"rm 1712 tel GAspee 1-5262
+Morrissey Danl H 111 Westminster rm 1712"
+394,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_60 (1)_47.png', 'cd1954/entry/1954_Page_60 (1)_48.png']",COUNTY ST,Mullen John E 316 Prov County Court House
+395,ERROR IN STREET MATCHING,"['cd1954/entry/1954_Page_60 (1)_62.png', 'cd1954/entry/1954_Page_60 (1)_63.png']",733-,Nugent J Jos 49 Westminster rms 733- 734 and 428 Smith rm 3
+396,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_60 (1)_68.png', 'cd1954/entry/1954_Page_60 (1)_69.png']",COUNTY ST,OConnell Jeremiah E 712 Prov County Court House
+397,"SCORE LESS THAN CUTOFF: 32,40.0,PROVIDENCE","['cd1954/entry/1954_Page_60 (1)_78.png', 'cd1954/entry/1954_Page_60 (1)_79.png']",2ND ST,Ortoleva Jos V 29 Weybosset suite 31 and 32 tels GAspee 1-7112 and 1-8351
+398,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_60 (1)_83.png', 'cd1954/entry/1954_Page_60 (1)_84.png']",COUNTY ST,Paine Harry M 528 Prov County Court House
+399,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_60 (2)_19.png', 'cd1954/entry/1954_Page_60 (2)_20.png']",N/A,"Perkins Fred B, Prov County Court House"
+400,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_60 (2)_76.png', 'cd1954/entry/1954_Page_60 (2)_77.png']",COUNTY ST,Roberts Thos H 512 Prov County Court House
+401,"SCORE LESS THAN CUTOFF: Hosp Trust bdg 15 Westminster,77.5,PROVIDENCE","['cd1954/entry/1954_Page_60 (3)_56.png', 'cd1954/entry/1954_Page_60 (3)_57.png']",WESTMINSTER ST,Sloan Wm M 1030 Hosp Trust bdg 15 Westminster
+402,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_61 (3)_1.png'],N/A,
+403,"SCORE LESS THAN CUTOFF: Richmond Rounds T W Co,78.0,PROVIDENCE","['cd1954/entry/1954_Page_61 (3)_2.png', 'cd1954/entry/1954_Page_61 (3)_3.png']",RICHMOND SQ,"Luggage Center Inc The 53 Richmond
+Rounds T W Co 52 Wash and 180 Wayland av"
+404,"SCORE LESS THAN CUTOFF: Empire LETTER SHOP The 129 Canal,72.5,PROVIDENCE","['cd1954/entry/1954_Page_61 (3)_10.png', 'cd1954/entry/1954_Page_61 (3)_11.png', 'cd1954/entry/1954_Page_61 (3)_12.png']",EMPIRE PLAZA,"Graphic Letter Service 26 Empire
+LETTER SHOP The 129 Canal tel GAspee 1-6650See page 77 Buyers Guide"
+405,"SCORE LESS THAN CUTOFF: Peck Public Stenography Service 77 Wash,45.0,PROVIDENCE","['cd1954/entry/1954_Page_61 (3)_15.png', 'cd1954/entry/1954_Page_61 (3)_16.png']",TERNAY GARDEN ST,"Providence Multigraphing Co 59 Peck
+Public Stenography Service 77 Wash rm 206"
+406,"SCORE LESS THAN CUTOFF: Weybosset tel JAckson 1-9100,74.5,PROVIDENCE","['cd1954/entry/1954_Page_61 (3)_23.png', 'cd1954/entry/1954_Page_61 (3)_24.png']",WEYBOSSET ST,"FACTORY MUTUAL LIABILITY IN-
+SURANCE COMPANY OF AMERICA Grosvenor building 10 Weybosset
+tel JAckson 1-9100"
+407,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_61 (3)_35.png', 'cd1954/entry/1954_Page_61 (3)_36.png']",N/A,"Brown John Carter Library, Brown opp George"
+408,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_61 (3)_37.png', 'cd1954/entry/1954_Page_61 (3)_38.png']",N/A,"Brown University, Prospect cor Col- lege"
+409,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_61 (3)_64.png', 'cd1954/entry/1954_Page_61 (3)_65.png']",N/A,Sampson & Murdock Co (See R L Polk & Co) 509 Westminster rm 43
+410,"SCORE LESS THAN CUTOFF: Prov County Court House,70.5,PROVIDENCE","['cd1954/entry/1954_Page_61 (3)_66.png', 'cd1954/entry/1954_Page_61 (3)_67.png']",COUNTY ST,State Law Library 802 Prov County Court House
+411,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_62 (1)_2.png', 'cd1954/entry/1954_Page_62 (1)_3.png', 'cd1954/entry/1954_Page_62 (1)_4.png', 'cd1954/entry/1954_Page_62 (1)_5.png']",N/A,MASSACHUSETTS MUTUAL LIFE INSURANCE CO Turks Head bldg tel GAspee 1-2672See page 53 Buy- ers Guide and left top lines
+412,"SCORE LESS THAN CUTOFF: Hospital Trust bldg,79,PROVIDENCE","['cd1954/entry/1954_Page_62 (1)_6.png', 'cd1954/entry/1954_Page_62 (1)_7.png', 'cd1954/entry/1954_Page_62 (1)_8.png', 'cd1954/entry/1954_Page_62 (1)_9.png', 'cd1954/entry/1954_Page_62 (1)_10.png']",HOSPITAL ST,"MUTUAL LIFE INSURANCE CO OF NEW YORK The, E Herbert Peirce mgr 640 Hospital Trust bldg tels GAspee 1-6964-1-6965See page 59 Buyers Guide"
+413,"SCORE LESS THAN CUTOFF: Waterman av, East Providence,77.0,PROVIDENCE","['cd1954/entry/1954_Page_62 (1)_11.png', 'cd1954/entry/1954_Page_62 (1)_12.png', 'cd1954/entry/1954_Page_62 (1)_13.png', 'cd1954/entry/1954_Page_62 (1)_14.png']",PROVIDENCE ST,"PHOENIX MUTUAL LIFE INSUR- ANCE CO 312 Waterman av, East Providence tel EAst Providence 1-6700-See page 60 Buyers Guide"
+414,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_62 (1)_20.png', 'cd1954/entry/1954_Page_62 (1)_21.png', 'cd1954/entry/1954_Page_62 (1)_22.png', 'cd1954/entry/1954_Page_62 (1)_23.png']",N/A,MASSACHUSETTS MUTUAL LIFE INSURANCE CO Turks Head bldg tel GAspee 1-2672See page 53 Buyers Guide and left top lines
+415,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE","['cd1954/entry/1954_Page_62 (1)_39.png', 'cd1954/entry/1954_Page_62 (1)_40.png']",6TH ST,Allied Fluorescent Mfg Co 387 Charles bldg 6
+416,"SCORE LESS THAN CUTOFF: Bishop,62,PROVIDENCE",['cd1954/entry/1954_Page_62 (2)_41.png'],BRISTOW ST,Buds Tap 22 Bishop
+417,"SCORE LESS THAN CUTOFF: Burrill,73.0,PROVIDENCE",['cd1954/entry/1954_Page_63 (2)_73.png'],RILL ST,Richards Bar 23 Burrill
+418,"SCORE LESS THAN CUTOFF: Eddv,75,PROVIDENCE",['cd1954/entry/1954_Page_63 (3)_27.png'],EDDY ST,Sportsmans Tavern 1113 Eddv
+419,"SCORE LESS THAN CUTOFF: Westminster State House Liquors 185 Smith,71.0,PROVIDENCE",['cd1954/entry/1954_Page_63 (3)_32.png'],WESTMINSTER ST,"Star Liquor Store 1079 Westminster
+State House Liquors 185 Smith"
+420,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_64 (1)_1.png'],N/A,"Liquor Dealers, WholesaleCon"
+421,"SCORE LESS THAN CUTOFF: Cranston, Cranston, RI,78.5,PROVIDENCE","['cd1954/entry/1954_Page_64 (1)_52.png', 'cd1954/entry/1954_Page_64 (1)_53.png', 'cd1954/entry/1954_Page_64 (1)_54.png', 'cd1954/entry/1954_Page_64 (1)_55.png']",CRANSTON ST,"CRANSTON LOAN COMPANY main office 1647 Cranston, Cranston, RI tel UNion 1-0215See page 72 Buy- ers Guide"
+422,"SCORE LESS THAN CUTOFF: Cranston, Cranston, RI,78.5,PROVIDENCE","['cd1954/entry/1954_Page_64 (3)_28.png', 'cd1954/entry/1954_Page_64 (3)_29.png', 'cd1954/entry/1954_Page_64 (3)_30.png', 'cd1954/entry/1954_Page_64 (3)_31.png']",CRANSTON ST,"CRANSTON LOAN COMPANY main office 1647 Cranston, Cranston, RI tel UNion 1-0215See page 72 Buyers Guide"
+423,"SCORE LESS THAN CUTOFF: F,40.0,PROVIDENCE","['cd1954/entry/1954_Page_65 (2).chop_43.png', 'cd1954/entry/1954_Page_65 (2).chop_44.png']",FERA ST,"Boulais Arth 33 Manton av, 99F and 1142 Westminster"
+424,"SCORE LESS THAN CUTOFF: Major,67.0,PROVIDENCE",['cd1954/entry/1954_Page_65 (3).chop_19.png'],MARK DR,DiMauro Ursula J Mrs 16 Major
+425,"SCORE LESS THAN CUTOFF: Weybosset Franklin Manor The 83 Franklin,68.5,PROVIDENCE",['cd1954/entry/1954_Page_65 (3).chop_47.png'],WEYBOSSET ST,"Frand Emma M Mrs 352 Weybosset
+Franklin Manor The 83 Franklin"
+426,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_65 (3).chop_59.png'],BROADWAY,Grady Julia J Mrs 216 Bwav
+427,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_66 (1)_1.png'],N/A,
+428,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_66 (1)_6.png'],N/A,Lodging HousesCon
+429,"SCORE LESS THAN CUTOFF: Gould,77.0,PROVIDENCE","['cd1954/entry/1954_Page_66 (2)_52.png', 'cd1954/entry/1954_Page_66 (2)_53.png']",GOULDING ST,"Scheller Ernest 5 and 11 Byron, 15 Claverick, 20 Gould and 41 Stewart"
+430,"SCORE LESS THAN CUTOFF: -1386 Park,31.0,PROVIDENCE",['cd1954/entry/1954_Page_66 (3)_20.png'],PARK ST,West Helene 134-1386 Park
+431,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_67 (1)_1.png', 'cd1954/entry/1954_Page_67 (1)_2.png', 'cd1954/entry/1954_Page_67 (1)_3.png']",PAWTUXET AV,"McDUFF COAL & LUMBER CO 11 High, Pawtucket tel PAwtucket 2-2400See page 76 Buyers Guide"
+432,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_67 (1)_13.png', 'cd1954/entry/1954_Page_67 (1)_14.png', 'cd1954/entry/1954_Page_67 (1)_15.png']",PAWTUXET AV,"NEWELL COAL & LUMBER CO 28 High, Pawtucket tel PAwtucket 2-7900See page 76 Buyers Guide"
+433,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_67 (1)_32.png', 'cd1954/entry/1954_Page_67 (1)_33.png']",N/A,"Dant & Russell, Municipal Wharf, Fields Point"
+434,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_67 (1)_34.png', 'cd1954/entry/1954_Page_67 (1)_35.png']",N/A,"Dutton A C Lumber Corp, Harbor Junce- tion, Fields Point"
+435,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE","['cd1954/entry/1954_Page_67 (2)_33.png', 'cd1954/entry/1954_Page_67 (2)_34.png']",6TH ST,"C I Metalsmith Co 387 Charles, Bldg 26"
+436,"SCORE LESS THAN CUTOFF: Hewes,73.0,PROVIDENCE",['cd1954/entry/1954_Page_67 (2)_78.png'],HAWKES ST,Ear! Chas Inc 25 Hewes
+437,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_67 (3)_24.png', 'cd1954/entry/1954_Page_67 (3)_25.png', 'cd1954/entry/1954_Page_67 (3)_26.png']",N/A,"KENNECOTT WIRE & CABLE CO Phillipsdale, R I tel EAst Providence 1-2800See pare 115 Buyers Guide"
+438,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_68 (1)_1.png'],N/A,Manufacturers AqentsCon
+439,EMPTY STREET,"['cd1954/entry/1954_Page_68 (1)_4.png', 'cd1954/entry/1954_Page_68 (1)_5.png']",420 ,Howe Chas W i111 Westminster rm 420 (textiles)
+440,"SCORE LESS THAN CUTOFF: Lincoln, Boston, Mass,77.0,PROVIDENCE","['cd1954/entry/1954_Page_68 (1)_40.png', 'cd1954/entry/1954_Page_68 (1)_41.png', 'cd1954/entry/1954_Page_68 (1)_42.png']",LINCOLN AVE,"POLK RL & CO, District Office 179 Lincoln, Boston, Mass tel HAncock 6-6309"
+441,"SCORE LESS THAN CUTOFF: Crawford,75,PROVIDENCE",['cd1954/entry/1954_Page_68 (2)_15.png'],BRADFORD ST,Marine Sporting Center 1 Crawford
+442,"SCORE LESS THAN CUTOFF: Empire rms 423-424,75.0,PROVIDENCE","['cd1954/entry/1954_Page_68 (2)_52.png', 'cd1954/entry/1954_Page_68 (2)_53.png']",EMPIRE ST,Langlais Health Institute 51 Empire rms 423-424
+443,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_69 (1)_29.png'],BROADWAY,Schiano Vincent J 349 Bwav
+444,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_69 (2)_44.png'],N/A,"Hillhouse Ltd, Sheraton-Biltmore"
+445,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_69 (3)_1.png', 'cd1954/entry/1954_Page_69 (3)_2.png']",N/A,
+446,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_69 (3)_5.png'],N/A,1119 Industrial Bank Building
+447,"SCORE LESS THAN CUTOFF: Areade bldg,76.5,PROVIDENCE","['cd1954/entry/1954_Page_70 (1)_2.png', 'cd1954/entry/1954_Page_70 (1)_3.png', 'cd1954/entry/1954_Page_70 (1)_4.png', 'cd1954/entry/1954_Page_70 (1)_5.png']",READE ST,SMITH MAURICE C CO Ine 52 Pine and 11 Areade bldg tel GAspee 1-1064 See page 111 Buyers Guide and right top lines
+448,"SCORE LESS THAN CUTOFF: Tweed Pawtucket,71.5,PROVIDENCE","['cd1954/entry/1954_Page_70 (1)_12.png', 'cd1954/entry/1954_Page_70 (1)_13.png', 'cd1954/entry/1954_Page_70 (1)_14.png', 'cd1954/entry/1954_Page_70 (1)_15.png']",PAWTUXET AV,METZ PAPER CO 110 Tweed Pawtuc- ket tel PAwtucket 2-4402See page 92 Buyers Guide and left top corner cards
+449,"SCORE LESS THAN CUTOFF: Ormsbee,73,PROVIDENCE",['cd1954/entry/1954_Page_70 (1)_17.png'],ORMS ST,Metallized Products Corp 54 Ormsbee
+450,"SCORE LESS THAN CUTOFF: Broadwav East Providence,79.5,PROVIDENCE","['cd1954/entry/1954_Page_70 (1)_33.png', 'cd1954/entry/1954_Page_70 (1)_34.png', 'cd1954/entry/1954_Page_70 (1)_35.png']",PROVIDENCE ST,VIALL W C DAIRY 912 Broadwav East Providence tel EAst Providence 1-1255-See page 78 Buyers Guide
+451,"SCORE LESS THAN CUTOFF: -78383,25.0,PROVIDENCE",['cd1954/entry/1954_Page_70 (2)_72.png'],3RD ST,_ 1-78383See page 95 Buyers Guide
+452,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1954/entry/1954_Page_71 (1).chop_31.png', 'cd1954/entry/1954_Page_71 (1).chop_32.png']",10TH ST,1-4400See page 16 Buyers Guide and left top lines
+453,"SCORE LESS THAN CUTOFF: Main, W Warwick,79.0,PROVIDENCE","['cd1954/entry/1954_Page_71 (2).chop_25.png', 'cd1954/entry/1954_Page_71 (2).chop_26.png']",WARWICK AV,"KNIGHT A W & SON 1017 Main, W Warwick tel VAlley 1-4831"
+454,EMPTY STREET,"['cd1954/entry/1954_Page_71 (2).chop_39.png', 'cd1954/entry/1954_Page_71 (2).chop_40.png']",,Providence City of Museum foot of Miller av
+455,EMPTY STREET,"['cd1954/entry/1954_Page_71 (3).chop_52.png', 'cd1954/entry/1954_Page_71 (3).chop_53.png']",26 ,Irons Ethel B 385 Westminster rm 26 (voice and piano)
+456,EMPTY STREET,"['cd1954/entry/1954_Page_71 (3).chop_54.png', 'cd1954/entry/1954_Page_71 (3).chop_55.png']",213 ,Irons Helen J Mrs 144 Westminster rm 213 (piano and ogran)
+457,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_72 (1)_1.png'],N/A,Music TeachersCon
+458,EMPTY STREET,"['cd1954/entry/1954_Page_72 (1)_23.png', 'cd1954/entry/1954_Page_72 (1)_24.png']",509 ,Piacitelli Andrew W 109 Wash rm 509 (saxophone and clarinet)
+459,EMPTY STREET,"['cd1954/entry/1954_Page_72 (1)_25.png', 'cd1954/entry/1954_Page_72 (1)_26.png']",510 ,Piacitelli Jos A 109 Wash rm 510 (saxophone and clarinet)
+460,"SCORE LESS THAN CUTOFF: Wash rm-508,76.5,PROVIDENCE","['cd1954/entry/1954_Page_72 (1)_62.png', 'cd1954/entry/1954_Page_72 (1)_63.png']",WASHINGTON ST,Tancredi Julio 109 Wash rm-508 (cor- net)
+461,EMPTY STREET,"['cd1954/entry/1954_Page_72 (2)_2.png', 'cd1954/entry/1954_Page_72 (2)_3.png']",21 ,Geers Geo B Drum Shop 358 Westmin- ster rm 21 (drums and traps)
+462,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_72 (2)_41.png', 'cd1954/entry/1954_Page_72 (2)_42.png']",N/A,"RI State Bureau for the Blind, Federal bldg"
+463,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_72 (2)_47.png'],N/A,"Union News Co, Union Station"
+464,EMPTY STREET,"['cd1954/entry/1954_Page_72 (2)_48.png', 'cd1954/entry/1954_Page_72 (2)_49.png']",,"Voccola John, Washington cor Mathew- son st"
+465,"SCORE LESS THAN CUTOFF: Ormsbee,73,PROVIDENCE",['cd1954/entry/1954_Page_72 (3)_53.png'],ORMS ST,B & F Pearlizing Co 30 Ormsbee
+466,"SCORE LESS THAN CUTOFF: Sabin rms 9-10,76.5,PROVIDENCE","['cd1954/entry/1954_Page_72 (3)_73.png', 'cd1954/entry/1954_Page_72 (3)_74.png']",SABIN ST,Oriental Glass & Novelty Co Inc 101 Sabin rms 9-10
+467,"SCORE LESS THAN CUTOFF: Charles Field apt 102,75.0,PROVIDENCE","['cd1954/entry/1954_Page_73 (2)_55.png', 'cd1954/entry/1954_Page_73 (2)_56.png']",CHARLES ST,Faford Laurette Y 100 Charles Field apt 102
+468,"SCORE LESS THAN CUTOFF: Calderwood rd,75,PROVIDENCE",['cd1954/entry/1954_Page_73 (2)_71.png'],CALDER ST,Gill Mary I 9 Calderwood rd
+469,"SCORE LESS THAN CUTOFF: Calderwood rd,75,PROVIDENCE",['cd1954/entry/1954_Page_73 (3)_2.png'],CALDER ST,Haskins Cath V 12 Calderwood rd
+470,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_74 (1)_1.png'],N/A,"Nurses, GraduateCon"
+471,"SCORE LESS THAN CUTOFF: Charles Field apt 202,75.0,PROVIDENCE","['cd1954/entry/1954_Page_74 (1)_34.png', 'cd1954/entry/1954_Page_74 (1)_35.png']",CHARLES ST,Smith Harriet 100 Charles Field apt 202
+472,"SCORE LESS THAN CUTOFF: Olneyville sa tel. ELmhurst 1-7000,76.0,PROVIDENCE","['cd1954/entry/1954_Page_74 (3)_78.png', 'cd1954/entry/1954_Page_74 (3)_79.png', 'cd1954/entry/1954_Page_74 (3)_80.png', 'cd1954/entry/1954_Page_74 (3)_81.png']",OLNEYVILLE SQ,ATLANTIC COAL CO 160 Charles. 100 Pilsudski and 28 Olneyville sa tel. ELmhurst 1-7000See page 25 Buy- ers Guide and left bottom lines
+473,EMPTY STREET,"['cd1954/entry/1954_Page_75 (1)_4.png', 'cd1954/entry/1954_Page_75 (1)_5.png', 'cd1954/entry/1954_Page_75 (1)_6.png', 'cd1954/entry/1954_Page_75 (1)_7.png']",,"DeBLOIS PETROLEUM SERVICE CO,. Colfax st City Line, Pawtucket tels UNion 1-5800 and PAwtucket 2-8000 See page 87 Buyers Guide"
+474,"SCORE LESS THAN CUTOFF: Main Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_75 (1)_9.png', 'cd1954/entry/1954_Page_75 (1)_10.png', 'cd1954/entry/1954_Page_75 (1)_11.png', 'cd1954/entry/1954_Page_75 (1)_12.png']",PAWTUXET AV,DUPUIS FRANK COMPANY (24 hour service) 599 Main Pawtucket tel PAwtucket 2-0080See page 93 Buy- ers Guide
+475,"SCORE LESS THAN CUTOFF: High, Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_75 (1)_39.png', 'cd1954/entry/1954_Page_75 (1)_40.png', 'cd1954/entry/1954_Page_75 (1)_41.png']",PAWTUXET AV,"McDUFF COAL & LUMBER CO 11 High, Pawtucket tel PAwtucket 2-2400See page 76 Buyers Guide"
+476,"SCORE LESS THAN CUTOFF: High Pawtucket,73,PROVIDENCE","['cd1954/entry/1954_Page_75 (1)_69.png', 'cd1954/entry/1954_Page_75 (1)_70.png', 'cd1954/entry/1954_Page_75 (1)_71.png']",PAWTUXET AV,NEWELL COAL & LUMBER CO 28 High Pawtucket tel PAwtucket 2-7900 See page 76 Buyers Guide
+477,"SCORE LESS THAN CUTOFF: rear,75.0,PROVIDENCE","['cd1954/entry/1954_Page_75 (2)_24.png', 'cd1954/entry/1954_Page_75 (2)_25.png']",EARL DR,Atlantic Refining Co The 15 Westmin- ster rm 430 and rear 890 Elmwood av
+478,EMPTY STREET,"['cd1954/entry/1954_Page_75 (2)_29.png', 'cd1954/entry/1954_Page_75 (2)_30.png', 'cd1954/entry/1954_Page_75 (2)_31.png', 'cd1954/entry/1954_Page_75 (2)_32.png']",,"DE BLOIS PETROLEUM SERVICE Co, Colfax st City Line Pawtucket tels UNion 1-5800 and PAwtuckett 2-8000 See page 87 Buyers Guide"
+479,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_75 (2)_52.png', 'cd1954/entry/1954_Page_75 (2)_53.png']",GEORGE M COHAN BLVD,Petroleum Service Co Inc 271 Geo M Cohan blvd
+480,EMPTY STREET,['cd1954/entry/1954_Page_75 (2)_60.png'],,"Richfield Oil Corp of NY, Terminal rd"
+481,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_75 (2)_66.png'],N/A,"Sun Oil Co, Fields Point"
+482,"SCORE LESS THAN CUTOFF: Crawford,75,PROVIDENCE",['cd1954/entry/1954_Page_75 (3)_17.png'],BRADFORD ST,Jones & Co 15 Crawford
+483,"SCORE LESS THAN CUTOFF: Wash rin 208,75.0,PROVIDENCE",['cd1954/entry/1954_Page_75 (3)_32.png'],WASHINGTON ST,Collins Leo F 56 Wash rin 208
+484,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_76 (1)_1.png'],N/A,OptometristsCon
+485,"SCORE LESS THAN CUTOFF: Wash rm 205,76.5,PROVIDENCE","['cd1954/entry/1954_Page_76 (1)_28.png', 'cd1954/entry/1954_Page_76 (1)_29.png']",WASHINGTON ST,Handanyan Donald J 188 Broad and 56 Wash rm 205
+486,"SCORE LESS THAN CUTOFF: Areade bide,76.5,PROVIDENCE",['cd1954/entry/1954_Page_76 (1)_40.png'],READE ST,Klibanoff Harold F 20 Areade bide
+487,"SCORE LESS THAN CUTOFF: Thomas Canton Providence No 1, 279 Plain-,75.0,PROVIDENCE","['cd1954/entry/1954_Page_76 (2)_24.png', 'cd1954/entry/1954_Page_76 (2)_25.png', 'cd1954/entry/1954_Page_76 (2)_26.png']",PROVIDENCE PL,"Independent Order of Odd Fellows Canonicus Lodge No 9, 6 Thomas Canton Providence No 1, 279 Plain-"
+488,"SCORE LESS THAN CUTOFF: , 109,58.5,PROVIDENCE",['cd1954/entry/1954_Page_76 (2)_28.png'],I 195,"Dorcas Rebekah Lodge No 7, 109"
+489,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_76 (2)_30.png'],N/A,Manchester Unity Loyal Bud of
+490,"SCORE LESS THAN CUTOFF: , 13,40.0,PROVIDENCE",['cd1954/entry/1954_Page_76 (2)_56.png'],1ST ST,"J A Finnegan Council No 111, 13"
+491,"SCORE LESS THAN CUTOFF: Greene Providence Council No 95, 14,75.5,PROVIDENCE","['cd1954/entry/1954_Page_76 (2)_58.png', 'cd1954/entry/1954_Page_76 (2)_59.png']",PROVIDENCE PL,"Hope Council No 398, 14 Greene Providence Council No 95, 14"
+492,"SCORE LESS THAN CUTOFF: Charles Tyler Council No 45, 14 Greene,66.0,PROVIDENCE","['cd1954/entry/1954_Page_76 (2)_61.png', 'cd1954/entry/1954_Page_76 (2)_62.png', 'cd1954/entry/1954_Page_76 (2)_63.png']",CHARLES ST,"StAnthonys Council No 1618, 687 Charles Tyler Council No 45, 14 Greene"
+493,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE","['cd1954/entry/1954_Page_76 (2)_69.png', 'cd1954/entry/1954_Page_76 (2)_70.png']",7TH ST,Masonic Societies Ancient Accepted Scottish Rite 127
+494,"SCORE LESS THAN CUTOFF: , 127,57.0,PROVIDENCE",['cd1954/entry/1954_Page_76 (2)_72.png'],12TH ST,"Calvary Commandery No 18, 127"
+495,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1954/entry/1954_Page_76 (2)_74.png'],7TH ST,Grand Council R&SM of RI 127
+496,"SCORE LESS THAN CUTOFF: Dorrance MtVernon Lodge No 4, 127 Dorrance,69.0,PROVIDENCE","['cd1954/entry/1954_Page_76 (2)_76.png', 'cd1954/entry/1954_Page_76 (2)_77.png', 'cd1954/entry/1954_Page_76 (2)_78.png']",DORRANCE PLZ,"Grand Lodge of RI 127 Dorrance MtVernon Lodge No 4, 127 Dor- rance"
+497,"SCORE LESS THAN CUTOFF: , 380,33,PROVIDENCE",['cd1954/entry/1954_Page_76 (3)_31.png'],3RD ST,"What Cheer Temple No 14, 380"
+498,"SCORE LESS THAN CUTOFF: , 210,57.0,PROVIDENCE","['cd1954/entry/1954_Page_76 (3)_39.png', 'cd1954/entry/1954_Page_76 (3)_40.png']",10TH ST,"Sons of Italy Giosue Carducci Lodge No 625, 210"
+499,"SCORE LESS THAN CUTOFF: Bway Grand Lodge of Rhode Island 210,75.0,PROVIDENCE","['cd1954/entry/1954_Page_76 (3)_42.png', 'cd1954/entry/1954_Page_76 (3)_43.png']",RHODE ISLAND AVE,"Gloria Lodge No 1098, 210 Bway Grand Lodge of Rhode Island 210"
+500,"SCORE LESS THAN CUTOFF: , 210,57.0,PROVIDENCE",['cd1954/entry/1954_Page_76 (3)_49.png'],10TH ST,"San Michele Lodge No 566, 210"
+501,"SCORE LESS THAN CUTOFF: -211,57,PROVIDENCE","['cd1954/entry/1954_Page_76 (3)_76.png', 'cd1954/entry/1954_Page_76 (3)_77.png']",11TH ST,"Jewelers Protective Assn, Sheraton- Biltmore rms 209-211"
+502,"SCORE LESS THAN CUTOFF: -105,58.5,PROVIDENCE","['cd1954/entry/1954_Page_76 (3)_80.png', 'cd1954/entry/1954_Page_76 (3)_81.png']",I 195,"Manufacturing Jewelers Sales Assn Inc, Sheraton-Biltmore rms 103-105"
+503,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_77 (1)_49.png', 'cd1954/entry/1954_Page_77 (1)_50.png']",N/A,Interfraternity Governing Board Uni- versity Hall Brown University
+504,"SCORE LESS THAN CUTOFF: Wash rm 307,76.5,PROVIDENCE","['cd1954/entry/1954_Page_77 (2)_3.png', 'cd1954/entry/1954_Page_77 (2)_4.png']",WASHINGTON ST,"Barbers Union No 224, 830 Westmins- ter and 109 Wash rm 307"
+505,ERROR IN STREET MATCHING,"['cd1954/entry/1954_Page_77 (2)_32.png', 'cd1954/entry/1954_Page_77 (2)_33.png']","1142,","International Assn of Machinists Brown & Sharpe Lodge No 1142,"
+506,"SCORE LESS THAN CUTOFF: Smith Lodge No 1142, 14 Holden,67.0,PROVIDENCE","['cd1954/entry/1954_Page_77 (2)_35.png', 'cd1954/entry/1954_Page_77 (2)_36.png']",HOLDEN ST,"Dist No 64, 2554 Smith Lodge No 1142, 14 Holden"
+507,"SCORE LESS THAN CUTOFF: AFL 4 Ann,55.0,PROVIDENCE","['cd1954/entry/1954_Page_77 (2)_39.png', 'cd1954/entry/1954_Page_77 (2)_40.png', 'cd1954/entry/1954_Page_77 (2)_41.png', 'cd1954/entry/1954_Page_77 (2)_42.png']",MAFALDA ST,"International Brotherhood of Team- sters, Chauffeurs, Warehousemen and Helpers of America Local No 251 AFL 4 Ann"
+508,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_77 (2)_43.png', 'cd1954/entry/1954_Page_77 (2)_44.png']",N/A,"International Brotherhood of Telephone Workers Local No 5, 14 Greene"
+509,"SCORE LESS THAN CUTOFF: AF of L 67 Richmond,79.5,PROVIDENCE","['cd1954/entry/1954_Page_77 (2)_58.png', 'cd1954/entry/1954_Page_77 (2)_59.png']",RICHMOND ST,Jewelry Workers Union Local No 18 AF of L 67 Richmond
+510,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_77 (2)_77.png', 'cd1954/entry/1954_Page_77 (2)_78.png']",N/A,New England Federation of Telephone Traffic Workers 109 Wash rm 405
+511,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_77 (3)_1.png'],N/A,
+512,"SCORE LESS THAN CUTOFF: United Construction Workers 49 Westminster,62.0,PROVIDENCE","['cd1954/entry/1954_Page_77 (3)_46.png', 'cd1954/entry/1954_Page_77 (3)_47.png', 'cd1954/entry/1954_Page_77 (3)_48.png']",CONSTITUTION HILL ST,United Mine Workers of America Dist 50 United Construction Workers 49 Westminster rm 830
+513,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_77 (3)_53.png', 'cd1954/entry/1954_Page_77 (3)_54.png']",N/A,Womens Telephone Plant Organiza- tion 14 Greene
+514,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (1)_1.png'],N/A,"vryanizations, MiscellanousCon"
+515,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_78 (1)_50.png', 'cd1954/entry/1954_Page_78 (1)_51.png']",N/A,Travelers Aid Society of Providence Inc Union Station
+516,"SCORE LESS THAN CUTOFF: Admiral Gaspee Chapter 209 Williams,76.5,PROVIDENCE","['cd1954/entry/1954_Page_78 (1)_58.png', 'cd1954/entry/1954_Page_78 (1)_59.png', 'cd1954/entry/1954_Page_78 (1)_60.png']",ROGER WILLIAMS AVE,Daughters of the American Revolution Esek-Hopkins Chapter 97 Admiral Gaspee Chapter 209 Williams
+517,"SCORE LESS THAN CUTOFF: Benefit Dyer Camp Noa 7, 176 Benefit,66.5,PROVIDENCE","['cd1954/entry/1954_Page_78 (1)_62.png', 'cd1954/entry/1954_Page_78 (1)_63.png', 'cd1954/entry/1954_Page_78 (1)_64.png']",BENEFIT ST,"Sons of Union Veterans Dept of Rhode Island 176 Benefit Dyer Camp Noa 7, 176 Benefit"
+518,"SCORE LESS THAN CUTOFF: , 176,33.0,PROVIDENCE","['cd1954/entry/1954_Page_78 (1)_65.png', 'cd1954/entry/1954_Page_78 (1)_66.png']",1ST ST,"United Spanish War Veterans Allyn K Capron Camp No 1, 176"
+519,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (1)_68.png'],N/A,Auxiliary of Alyn K Capron Camp
+520,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1954/entry/1954_Page_78 (1)_70.png'],6TH ST,"Ladies Auxiliary Dept of RI, 176"
+521,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (1)_72.png'],N/A,Lieut Comndr Gardiner C Sims
+522,"SCORE LESS THAN CUTOFF: of Sidney F Hoar Camp 176 Benefit,67.5,PROVIDENCE","['cd1954/entry/1954_Page_78 (1)_74.png', 'cd1954/entry/1954_Page_78 (1)_75.png']",BENEFIT ST,Prov Auxiliary No 4 of Sidney F Hoar Camp 176 Benefit
+523,"SCORE LESS THAN CUTOFF: 113,57.0,PROVIDENCE","['cd1954/entry/1954_Page_78 (1)_85.png', 'cd1954/entry/1954_Page_78 (1)_86.png']",11TH ST,American Natl Red Cross The 100 Foun- tain rms 112 and 113
+524,"SCORE LESS THAN CUTOFF: , 32,40.0,PROVIDENCE","['cd1954/entry/1954_Page_78 (2)_20.png', 'cd1954/entry/1954_Page_78 (2)_21.png']",2ND ST,"American Legion Antoni Milewski Post No 65, 32"
+525,ERROR IN STREET MATCHING,['cd1954/entry/1954_Page_78 (2)_23.png'],"69,","Armstrong Gladding Post No 69,"
+526,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (2)_29.png'],N/A,203
+527,"SCORE LESS THAN CUTOFF: , Ladies,71.0,PROVIDENCE",['cd1954/entry/1954_Page_78 (2)_75.png'],FLANDERS ST,"Sackin-Shocket Post No 533, Ladies"
+528,ERROR IN STREET MATCHING,['cd1954/entry/1954_Page_78 (2)_82.png'],"45,","Capt Thos W Connell Post No 45,"
+529,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (3)_1.png'],N/A,Set Leonard Wasilewski Fost No
+530,ERROR IN STREET MATCHING,['cd1954/entry/1954_Page_78 (3)_3.png'],"174,","Sylvester S Payne Post No 174,"
+531,"SCORE LESS THAN CUTOFF: , 44,40,PROVIDENCE",['cd1954/entry/1954_Page_78 (3)_5.png'],4TH ST,"Yankee Division Post No 272, 44"
+532,"SCORE LESS THAN CUTOFF: N Main Catholic Youth Organization,49.0,PROVIDENCE",['cd1954/entry/1954_Page_78 (3)_53.png'],COMMUNICATIONS PL,"Camp Fire Girls 100 N Main
+Catholic Youth Organization 25 Fenner
+and 194 Oxford"
+533,"SCORE LESS THAN CUTOFF: Broad Greater Providence YMCA East Side Br 269 Thayer,66.5,PROVIDENCE",['cd1954/entry/1954_Page_78 (3)_55.png'],PROVIDENCE PL,"Greater Providence YMCA 160 Broad
+Greater Providence YMCA East Side Br
+269 Thayer"
+534,"SCORE LESS THAN CUTOFF: Jackson Prov Young Mens Christian Assn 160 Broad,47.5,PROVIDENCE","['cd1954/entry/1954_Page_78 (3)_56.png', 'cd1954/entry/1954_Page_78 (3)_57.png']",SETIAN CIR,"International Institute 58 Jackson
+Prov Young Mens Christian Assn 160 Broad"
+535,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_78 (3)_62.png'],N/A,
+536,"SCORE LESS THAN CUTOFF: Bishop,62,PROVIDENCE",['cd1954/entry/1954_Page_79 (3)_53.png'],BRISTOW ST,Huntley Earnest R 18 Bishop
+537,"SCORE LESS THAN CUTOFF: Thos & Vincent Luongo Mem Square,69.0,PROVIDENCE","['cd1954/entry/1954_Page_79 (3)_65.png', 'cd1954/entry/1954_Page_79 (3)_66.png']",VINCENT AVE,Magnatta Bros 5 Thos & Vincent Luon- go Mem Square
+538,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_80 (1)_26.png', 'cd1954/entry/1954_Page_80 (1)_27.png', 'cd1954/entry/1954_Page_80 (1)_28.png', 'cd1954/entry/1954_Page_80 (1)_29.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarlestown 2-4600See page 41 and right side lines
+539,"SCORE LESS THAN CUTOFF: Sabin, Pawtucket,71.5,PROVIDENCE","['cd1954/entry/1954_Page_80 (1)_31.png', 'cd1954/entry/1954_Page_80 (1)_32.png', 'cd1954/entry/1954_Page_80 (1)_33.png']",PAWTUXET AV,"SHAW PAPER BOX CO 37 Sabin, Paw- tucket tels PAwtucket 2-0410-2-0411 See page 20 Buyers Guide"
+540,"SCORE LESS THAN CUTOFF: Tweed Pawtucket,71.5,PROVIDENCE","['cd1954/entry/1954_Page_80 (1)_36.png', 'cd1954/entry/1954_Page_80 (1)_37.png', 'cd1954/entry/1954_Page_80 (1)_38.png', 'cd1954/entry/1954_Page_80 (1)_39.png']",PAWTUXET AV,METZ PAPER CO 110 Tweed Paw- tucket tels PAwtucket 2-4400-2-4401- 2-4402See page 92 Buyers Guide and left top corner cards
+541,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_80 (2)_3.png', 'cd1954/entry/1954_Page_80 (2)_4.png', 'cd1954/entry/1954_Page_80 (2)_5.png']",N/A,"KENNECOTT WIRE & CABLE CO, Phillipsdale, RI tel EAst Providence 1-2800See page 115 Buyers Guide"
+542,EMPTY STREET,"['cd1954/entry/1954_Page_80 (2)_42.png', 'cd1954/entry/1954_Page_80 (2)_43.png']",,"Sheehan V Lloyd Memorial Park, Rug- gles st"
+543,"SCORE LESS THAN CUTOFF: Industrial Trust bidg 111 Westminster,73.0,PROVIDENCE","['cd1954/entry/1954_Page_80 (2)_55.png', 'cd1954/entry/1954_Page_80 (2)_56.png', 'cd1954/entry/1954_Page_80 (2)_57.png']",WESTMINSTER ST,Armington and White 633 Industrial Trust bidg 111 Westminster tel GAs- pee 1-7267
+544,"SCORE LESS THAN CUTOFF: Bank of Commerce bidg 146 Westminster,73.0,PROVIDENCE","['cd1954/entry/1954_Page_80 (2)_74.png', 'cd1954/entry/1954_Page_80 (2)_75.png', 'cd1954/entry/1954_Page_80 (2)_76.png']",WESTMINSTER ST,Dellagrotta Guerino D 401 Bank of Commerce bidg 146 Westminster tel GAspee 1-3141
+545,"SCORE LESS THAN CUTOFF: New Englands Largest Pet Shop 369 Westminster,69.5,PROVIDENCE","['cd1954/entry/1954_Page_80 (3)_74.png', 'cd1954/entry/1954_Page_80 (3)_75.png', 'cd1954/entry/1954_Page_80 (3)_76.png', 'cd1954/entry/1954_Page_80 (3)_77.png']",WESTMINSTER ST,LUDLAWS PET SHOP established 1878 New Englands Largest Pet Shop 369 Westminster tel GAspee 1-4668
+546,EMPTY STREET,"['cd1954/entry/1954_Page_81 (1)_4.png', 'cd1954/entry/1954_Page_81 (1)_5.png']",,"SUN OIL COMPANY, Terminal rd Fields Point tel HOpkins 1-8100"
+547,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_81 (3)_69.png'],N/A,
+548,"SCORE LESS THAN CUTOFF: State Ofe bldg,77.0,PROVIDENCE","['cd1954/entry/1954_Page_81 (3)_73.png', 'cd1954/entry/1954_Page_81 (3)_74.png']",STATE HWY 10,*Corrigan krancis V 323 State Ofe bldg and 618 Angeil
+549,"SCORE LESS THAN CUTOFF: State Ofc bldg,77.0,PROVIDENCE",['cd1954/entry/1954_Page_81 (3)_89.png'],STATE HWY 10,*Deery Jas 331 State Ofc bldg
+550,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_83 (1).chop_76.png'],N/A,"*Smith Joseph, City Hall Health Dept"
+551,ERROR IN STREET MATCHING,"['cd1954/entry/1954_Page_83 (3).chop_7.png', 'cd1954/entry/1954_Page_83 (3).chop_8.png']",1902),"*PipesValves and Fittings
+ALLEN & REED CO Inc (Est 1902)
+178 Dorrance tel GAspee 1-2120See page 50 Buyers Guide"
+552,"SCORE LESS THAN CUTOFF: S Water tels GAspee 1-3569-1-9653,64.0,PROVIDENCE",['cd1954/entry/1954_Page_83 (3).chop_10.png'],GASPEE ST,"HORTON H R CO 459 S Water tels
+GAspee 1-3569-1-9653See page 22
+Buyers Guide and front cover"
+553,"SCORE LESS THAN CUTOFF: Chestnut Hope Plastic Co 248 Dyer M C A Sales Corporation 58 Weybosset,47.5,PROVIDENCE",['cd1954/entry/1954_Page_83 (3).chop_25.png'],CELEBRATION WY,"General Products Co Inc 59 Chestnut
+Hope Plastic Co 248 Dyer
+
+M C A Sales Corporation 58 Weybosset
+rm 802"
+554,"SCORE LESS THAN CUTOFF: Randall Molding Corp of America Inc,68.0,PROVIDENCE","['cd1954/entry/1954_Page_83 (3).chop_26.png', 'cd1954/entry/1954_Page_83 (3).chop_27.png']",RANDALL SQ,"Mars Mfg Co Ine 71 Troy (beads)
+Marvin Co 34 Dike (moulds and dies)
+Merit Molded Plastics Corp 51 Randall
+Molding Corp of America Inc 58 Wevy- bosset rm 802"
+555,"SCORE LESS THAN CUTOFF: -50 Ormsbee av,65.0,PROVIDENCE",['cd1954/entry/1954_Page_83 (3).chop_34.png'],ORMS ST,"Rosbro Plastics Corp 34-50 Ormsbee av
+(toys-novelties)"
+556,"SCORE LESS THAN CUTOFF: Addison pl Elmwood Plastics 31 Burnett Royal Plastics Co 108 Laurel Hill av,45.5,PROVIDENCE",['cd1954/entry/1954_Page_83 (3).chop_37.png'],PLEASANT VIEW AV,"Plastic ProductsWholesale
+Eastern Fabrics Corp 2 Addison pl
+Elmwood Plastics 31 Burnett
+Royal Plastics Co 108 Laurel Hill av"
+557,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1954/entry/1954_Page_83 (3).chop_42.png'],3RD ST,"A&A Polishing & Plating Co 296
+Atwells av (jwiry plating)
+
+A & J Polishing & Plating Co 387
+Charles bldg 53"
+558,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_84 (1)_1.png'],N/A,PiatersCon
+559,"SCORE LESS THAN CUTOFF: Main Pawtucket, RI,69.0,PROVIDENCE","['cd1954/entry/1954_Page_84 (2)_40.png', 'cd1954/entry/1954_Page_84 (2)_41.png', 'cd1954/entry/1954_Page_84 (2)_42.png']",PAWTUXET AV,"DUPUIS FRANK COMPANY 599 Main Pawtucket, RI tel PAwtucket 2-0080 See page 93 Buyers Guide"
+560,"SCORE LESS THAN CUTOFF: Snow rear of main store,61.0,PROVIDENCE","['cd1954/entry/1954_Page_84 (3)_32.png', 'cd1954/entry/1954_Page_84 (3)_33.png', 'cd1954/entry/1954_Page_84 (3)_34.png', 'cd1954/entry/1954_Page_84 (3)_35.png']",WESTMORE ST,CITY HALL HARDWARE 34 Snow rear of main store tel JAckson 1-2000 See page 50 Buyers Guide and right top lines
+561,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_85 (1).chop_11.png', 'cd1954/entry/1954_Page_85 (1).chop_12.png']",N/A,"(See also Numismatists)
+STAMP SHOP Inc 26 Custom House st tel GAspee 1-6282"
+562,"SCORE LESS THAN CUTOFF: Delaine Ciolfi Amato 142 Acorn,69.0,PROVIDENCE",['cd1954/entry/1954_Page_85 (1).chop_25.png'],DELAINE ST,"Calucci Phillip 164 Delaine
+Ciolfi Amato 142 Acorn"
+563,"SCORE LESS THAN CUTOFF: Acorn Forlini Luigi 229 Pocasset av,75.0,PROVIDENCE",['cd1954/entry/1954_Page_85 (1).chop_35.png'],OLD POCASSET LN,"Federal Hill Live Poultry Co 151 Acorn
+Forlini Luigi 229 Pocasset av
+
+Fox Point Live Poultry 265 Wickenden
+Franks Poultry Market 460 Wickenden
+Germana Guido 337 Academy av"
+564,"SCORE LESS THAN CUTOFF: Dean Grimes & Hauer Cut-Up Poultry 64 Washington,68.0,PROVIDENCE",['cd1954/entry/1954_Page_85 (1).chop_38.png'],WASHINGTON ST,"Greylawn Poultry Market 144 Dean
+
+Grimes & Hauer Cut-Up Poultry 64
+Washington"
+565,"SCORE LESS THAN CUTOFF: Shawmut,73,PROVIDENCE",['cd1954/entry/1954_Page_85 (1).chop_49.png'],SHAW ST,Shechet Eli 14 Shawmut
+566,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_86 (1)_1.png'],N/A,"Produce Dealers, WholesaleCon"
+567,"SCORE LESS THAN CUTOFF: Lincoln, Boston, Mass,77.0,PROVIDENCE","['cd1954/entry/1954_Page_86 (1)_61.png', 'cd1954/entry/1954_Page_86 (1)_62.png', 'cd1954/entry/1954_Page_86 (1)_63.png']",LINCOLN AVE,"POLK RL & CO District Office 179 Lincoln, Boston, Mass tel HAnccok 6-6309"
+568,"SCORE LESS THAN CUTOFF: Lincoin, Boston, Mass,66.0,PROVIDENCE","['cd1954/entry/1954_Page_86 (1)_80.png', 'cd1954/entry/1954_Page_86 (1)_81.png', 'cd1954/entry/1954_Page_86 (1)_82.png']",LINCOLN AVE,"POLK RL & CO District Office 179 Lincoin, Boston, Mass tel HAncock 6-6309"
+569,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE","['cd1954/entry/1954_Page_86 (2)_42.png', 'cd1954/entry/1954_Page_86 (2)_43.png']",I 95,Boston Radiator & Body Works Inc 185
+570,"SCORE LESS THAN CUTOFF: Bishop,62,PROVIDENCE",['cd1954/entry/1954_Page_86 (3)_16.png'],BRISTOW ST,Miller Wm H Co 86 Bishop
+571,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_87 (1)_29.png'],N/A,"NYNH&H Railroad, Exchange ter"
+572,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_87 (1)_53.png'],N/A,* denotes Realtors
+573,"SCORE LESS THAN CUTOFF: Bwav,75,PROVIDENCE",['cd1954/entry/1954_Page_87 (1)_66.png'],BROADWAY,Annotti Domenico 268 Bwav
+574,"SCORE LESS THAN CUTOFF: Westminster service office in Lobby,74.0,PROVIDENCE","['cd1954/entry/1954_Page_87 (3)_60.png', 'cd1954/entry/1954_Page_87 (3)_61.png', 'cd1954/entry/1954_Page_87 (3)_62.png', 'cd1954/entry/1954_Page_87 (3)_63.png', 'cd1954/entry/1954_Page_87 (3)_64.png']",WESTMINSTER ST,KAGAN & SHAWCROSS 805 Industrial Trust bldg 111 Westminster service office in Lobby tel JAckson 1-3900 See page 56 Buyers Guide and right top lines
+575,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_88 (1)_1.png'],N/A,Real Estate (See also Realtors)Con
+576,"SCORE LESS THAN CUTOFF: West Shore rd, Hoxsie, RI,56.0,PROVIDENCE","['cd1954/entry/1954_Page_88 (3)_3.png', 'cd1954/entry/1954_Page_88 (3)_4.png', 'cd1954/entry/1954_Page_88 (3)_5.png', 'cd1954/entry/1954_Page_88 (3)_6.png']",IRON HORSE WY,"WOODLAND MANOR REALTY CO 108 West Shore rd, Hoxsie, RI tels REgent 7-3200-7-3201See page 106 Buyers Guide"
+577,"SCORE LESS THAN CUTOFF: South Main next to Court House,75.0,PROVIDENCE","['cd1954/entry/1954_Page_88 (3)_56.png', 'cd1954/entry/1954_Page_88 (3)_57.png', 'cd1954/entry/1954_Page_88 (3)_58.png', 'cd1954/entry/1954_Page_88 (3)_59.png', 'cd1954/entry/1954_Page_88 (3)_60.png']",SOUTH MAIN ST,TITLE GUARANTEE COMPANY OF RHODE ISLAND 66 South Main next to Court House tel DExter 1-5331 See page 102 Buyers Guide and right top lines
+578,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_89 (2)_42.png'],N/A,"Bacchante The, Sheraton-Biltmore"
+579,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_89 (3)_1.png'],N/A,ss: ST ww
+580,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_89 (3)_61.png'],N/A,"Falstaff Room, Sheraton-Biltmore"
+581,"SCORE LESS THAN CUTOFF: Burrill,73,PROVIDENCE",['cd1954/entry/1954_Page_89 (3)_90.png'],RILL ST,Golden Dragon The 17 Burrill
+582,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_90 (1)_1.png'],N/A,RestaurantsCon
+583,EMPTY STREET,['cd1954/entry/1954_Page_90 (1)_16.png'],,"Haven Bros Lunch, Fulton st"
+584,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_90 (2)_35.png', 'cd1954/entry/1954_Page_90 (2)_36.png', 'cd1954/entry/1954_Page_90 (2)_37.png']",N/A,"MINUTE CHEF, Dorrance corner WashingtonSee page 116 Buyers Guide and right bottom lines"
+585,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_90 (2)_83.png'],N/A,"Providence Lunch Room, Union Sta"
+586,"SCORE LESS THAN CUTOFF: Dunnell av,67,PROVIDENCE","['cd1954/entry/1954_Page_91 (1)_19.png', 'cd1954/entry/1954_Page_91 (1)_20.png', 'cd1954/entry/1954_Page_91 (1)_21.png']",UDELL ST,PERRYS EXPRESS COMPANY Inc 171 Dunnell av Pawtucket tels PAw- tucket 2-0196-2-0197
+587,"SCORE LESS THAN CUTOFF: Jefferson blvd Hillsgrove, RI,53.0,PROVIDENCE","['cd1954/entry/1954_Page_91 (1)_29.png', 'cd1954/entry/1954_Page_91 (1)_30.png', 'cd1954/entry/1954_Page_91 (1)_31.png', 'cd1954/entry/1954_Page_91 (1)_32.png']",ELMGROVE AVE,"CAMPANELLA & CARDI CONSTRUC- TION CO 780 Jefferson blvd Hills- grove, RI tel REgent 7-1300See pages 26 and 29 Buyers Guide"
+588,"SCORE LESS THAN CUTOFF: Spring Pawtucket,70,PROVIDENCE","['cd1954/entry/1954_Page_91 (1)_63.png', 'cd1954/entry/1954_Page_91 (1)_64.png', 'cd1954/entry/1954_Page_91 (1)_65.png']",PAWTUXET AV,MAGUIRE ROOFING COMPANY 118 Spring Pawtucket tel PAwtucket 5-3394See page 107 Buyers Guide
+589,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_91 (2)_1.png'],N/A,PAWTUCKET WOONSOCKET
+590,"SCORE LESS THAN CUTOFF: Third,67,PROVIDENCE","['cd1954/entry/1954_Page_91 (2)_59.png', 'cd1954/entry/1954_Page_91 (2)_60.png', 'cd1954/entry/1954_Page_91 (2)_61.png']",TIDD ST,WILLIAMS & ANDERSON CO INC The 14 Third tels GAspee 1-3621-1-3622 See page 67 Buyers Guide
+591,"SCORE LESS THAN CUTOFF: Hewes,73.0,PROVIDENCE",['cd1954/entry/1954_Page_91 (2)_73.png'],HAWKES ST,Rubber Covered Products Inc 23 Hewes
+592,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_91 (3)_1.png'],N/A,W. WARWICK  N. PROVIDENCE
+593,"SCORE LESS THAN CUTOFF: -93 Empire, 22-30 Aborn,74.0,PROVIDENCE","['cd1954/entry/1954_Page_91 (3)_61.png', 'cd1954/entry/1954_Page_91 (3)_62.png', 'cd1954/entry/1954_Page_91 (3)_63.png', 'cd1954/entry/1954_Page_91 (3)_64.png']",EMPIRE PLAZA,"OLD STONE SAFE DEPOSIT & TRUST CO 87-93 Empire, 22-30 Aborn tel GAspee 1-3810See page 16 Buy- ers Guide and left top lines"
+594,EMPTY STREET,"['cd1954/entry/1954_Page_92 (1)_12.png', 'cd1954/entry/1954_Page_92 (1)_13.png', 'cd1954/entry/1954_Page_92 (1)_14.png', 'cd1954/entry/1954_Page_92 (1)_15.png']",,RHODE ISLAND SAND & GRAVEL CO Inc Kilvert st Hillsgrove tels REgent 7-8400 and 7-8401See page 34 Buyers Guide
+595,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_92 (2)_6.png', 'cd1954/entry/1954_Page_92 (2)_7.png', 'cd1954/entry/1954_Page_92 (2)_8.png']",PAWTUXET AV,PAWTUCKET INSTITUTION FOR SAVINGS 255 Main Pawtucket tel PAwtucket 5-3520
+596,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_92 (2)_24.png'],N/A,1477 Broad tel WIlliams 1-4400See
+597,"SCORE LESS THAN CUTOFF: Buyers Guide left top lines,52.0,PROVIDENCE","['cd1954/entry/1954_Page_92 (2)_25.png', 'cd1954/entry/1954_Page_92 (2)_26.png']",BURNS ST,page 16 Buyers Guide and left top lines
+598,EMPTY STREET,"['cd1954/entry/1954_Page_92 (2)_77.png', 'cd1954/entry/1954_Page_92 (2)_78.png']",,"Brown University, Prospect cor Col- lege st"
+599,EMPTY STREET,"['cd1954/entry/1954_Page_92 (3)_5.png', 'cd1954/entry/1954_Page_92 (3)_6.png']",,Horenstein Etta M School for Sewing 68 Arcade bldg (sewing)
+600,EMPTY STREET,['cd1954/entry/1954_Page_92 (3)_23.png'],,"Providence College, Eaton cor River av"
+601,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_92 (3)_36.png'],N/A,RI School of Design College
+602,"SCORE LESS THAN CUTOFF: Hewes,73.0,PROVIDENCE",['cd1954/entry/1954_Page_93 (1)_44.png'],HAWKES ST,Travers & Co 25 Hewes
+603,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_93 (1)_64.png', 'cd1954/entry/1954_Page_93 (1)_65.png']",N/A,Abbey Telephone & Secretarial Service 86 Weybosset rm 54
+604,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_93 (1)_66.png', 'cd1954/entry/1954_Page_93 (1)_67.png']",N/A,Advertisers Telephone Service 26 Cus- tom House st rm 202
+605,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_93 (1)_68.png', 'cd1954/entry/1954_Page_93 (1)_69.png']",N/A,Weeden Telephone Service 26 Custom House st rm 202
+606,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_93 (3)_2.png', 'cd1954/entry/1954_Page_93 (3)_3.png', 'cd1954/entry/1954_Page_93 (3)_4.png']",N/A,"(See also Transporation Lines)
+GOFF & PAGE CO 54 Custom House st rms 42-43-44 tel GAspee 1-9856See page 109 Buyers Guide"
+607,"SCORE LESS THAN CUTOFF: Wash 1m 301,76.5,PROVIDENCE",['cd1954/entry/1954_Page_93 (3)_22.png'],WASHINGTON ST,Style Shirt Co 131 Wash 1m 301
+608,ERROR IN STREET MATCHING,"['cd1954/entry/1954_Page_93 (3)_63.png', 'cd1954/entry/1954_Page_93 (3)_64.png']",136-,Kays-Newport 189 Wayland av and 136- 160 Westminster
+609,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_94 (1)_1.png'],N/A,"Shoe Dealers, RetailCon"
+610,"SCORE LESS THAN CUTOFF: Eddy rms 306, 307,70.0,PROVIDENCE",['cd1954/entry/1954_Page_94 (1)_4.png'],EDDY ST,"Powers Fashions 93 Eddy rms 306, 307"
+611,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE","['cd1954/entry/1954_Page_94 (1)_40.png', 'cd1954/entry/1954_Page_94 (1)_41.png']",4TH ST,Capitol Heel Lining Co 387 Charles bldg 24
+612,"SCORE LESS THAN CUTOFF: Sabin elev B,79,PROVIDENCE","['cd1954/entry/1954_Page_94 (1)_44.png', 'cd1954/entry/1954_Page_94 (1)_45.png']",SABIN ST,Haverhill Shoe Novelty Co 93 Sabin elev B
+613,"SCORE LESS THAN CUTOFF: Thos & Vincent Luonga Mem Sq,71.0,PROVIDENCE","['cd1954/entry/1954_Page_94 (3)_2.png', 'cd1954/entry/1954_Page_94 (3)_3.png']",VINCENT AVE,Pondolfini Joseph 20 Thos & Vincent Luonga Mem Sq
+614,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_94 (3)_41.png'],N/A,Arcade Shoe Shine rm B Arcade bldg
+615,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_94 (3)_52.png'],N/A,"Russo Giuseppi P, Union Station ~"
+616,EMPTY STREET,"['cd1954/entry/1954_Page_95 (3)_64.png', 'cd1954/entry/1954_Page_95 (3)_65.png']",,"Colonial Navigation Co, S Water st ft of Tockwotton st"
+617,EMPTY STREET,"['cd1954/entry/1954_Page_95 (3)_67.png', 'cd1954/entry/1954_Page_95 (3)_68.png']",,Providence Steamboat Co ft of Hender- son st
+618,"SCORE LESS THAN CUTOFF: Stukely,67.0,PROVIDENCE","['cd1954/entry/1954_Page_96 (1)_16.png', 'cd1954/entry/1954_Page_96 (1)_17.png', 'cd1954/entry/1954_Page_96 (1)_18.png']",WESTERLY AVE,PLANTATIONS STEEL COMPANY 12 Stukely tel ELmhurst 1-0810See page 112 Buyers Guide
+619,"SCORE LESS THAN CUTOFF: Stukely,67.0,PROVIDENCE","['cd1954/entry/1954_Page_96 (1)_64.png', 'cd1954/entry/1954_Page_96 (1)_65.png']",WESTERLY AVE,Plantations Steel Co 12 Stukely (re- inforced)
+620,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE","['cd1954/entry/1954_Page_96 (2)_54.png', 'cd1954/entry/1954_Page_96 (2)_55.png']",GEORGE M COHAN BLVD,Cole Teaming Warehouse Co 233 W Exchange and 251 Geo M Cohan blvd
+621,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_96 (3)_2.png', 'cd1954/entry/1954_Page_96 (3)_3.png', 'cd1954/entry/1954_Page_96 (3)_4.png', 'cd1954/entry/1954_Page_96 (3)_5.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarles- town 2-4600See page 41 Buyers Guide and right side lines
+622,"SCORE LESS THAN CUTOFF: Hewes,73.0,PROVIDENCE",['cd1954/entry/1954_Page_96 (3)_12.png'],HAWKES ST,Hope Store Fixture Co 21 Hewes
+623,"SCORE LESS THAN CUTOFF: Ormsbee av,73.0,PROVIDENCE","['cd1954/entry/1954_Page_96 (3)_16.png', 'cd1954/entry/1954_Page_96 (3)_17.png']",ORMS ST,Nu-Mode Store Fixtures Co 30 Ormsbee av
+624,"SCORE LESS THAN CUTOFF: Spice Charlestown, Mass,68.5,PROVIDENCE","['cd1954/entry/1954_Page_97 (1)_7.png', 'cd1954/entry/1954_Page_97 (1)_8.png', 'cd1954/entry/1954_Page_97 (1)_9.png', 'cd1954/entry/1954_Page_97 (1)_10.png']",CARLETON ST,"ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown, Mass tel CHarlestown 2-4600See page 41 Buyers Guide and right side lines"
+625,"SCORE LESS THAN CUTOFF: Spice Charlestown, Mass,68.5,PROVIDENCE","['cd1954/entry/1954_Page_97 (1)_12.png', 'cd1954/entry/1954_Page_97 (1)_13.png', 'cd1954/entry/1954_Page_97 (1)_14.png', 'cd1954/entry/1954_Page_97 (1)_15.png']",CARLETON ST,"ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown, Mass tel CHarlestown 2-4600See page 41 Buyers Guide and right side lines"
+626,"SCORE LESS THAN CUTOFF: Beach Union Sta,75.0,PROVIDENCE","['cd1954/entry/1954_Page_97 (3)_16.png', 'cd1954/entry/1954_Page_97 (3)_17.png']",BEACH ST,Yellow Cab Co 6 Beach and Union Sta
+627,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_97 (3)_27.png', 'cd1954/entry/1954_Page_97 (3)_28.png']",N/A,Acme Telephone Answering Service 118 Empire rm 8
+628,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_97 (3)_36.png', 'cd1954/entry/1954_Page_97 (3)_37.png']",N/A,Triangle Telephone Answering Service 1429 Broad
+629,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_97 (3)_38.png'],N/A,Triangle Telephone Service 1017 Broad
+630,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_97 (3)_40.png', 'cd1954/entry/1954_Page_97 (3)_41.png', 'cd1954/entry/1954_Page_97 (3)_42.png']",N/A,NEW ENGLAND TELEPHONE & TELEGRAPH CO 234 Washington tel PLantations 1-9950
+631,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_98 (1)_1.png'],N/A,
+632,EMPTY STREET,"['cd1954/entry/1954_Page_98 (1)_30.png', 'cd1954/entry/1954_Page_98 (1)_31.png', 'cd1954/entry/1954_Page_98 (1)_32.png', 'cd1954/entry/1954_Page_98 (1)_33.png', 'cd1954/entry/1954_Page_98 (1)_34.png']",,"HARRISON A & CO Ine offices and works Hurdis st off Charles, North Providence PO Box 494 Pawtucket tels PAwtucket 5-7450-5-7451See page 24 Buyers Guide"
+633,"SCORE LESS THAN CUTOFF: Pomfret,67,PROVIDENCE",['cd1954/entry/1954_Page_98 (1)_54.png'],SOMERSET ST,Cooper-Kenworthy Ine 1 Pomfret
+634,EMPTY STREET,"['cd1954/entry/1954_Page_98 (2)_20.png', 'cd1954/entry/1954_Page_98 (2)_21.png']",412 ,Wanskuck Co 15 Westminster rm 412 (woolen and worsted goods)
+635,EMPTY STREET,['cd1954/entry/1954_Page_98 (3)_2.png'],,Loews Drive-In Theatre ft White st
+636,"SCORE LESS THAN CUTOFF: S Main next to Court House,75.0,PROVIDENCE","['cd1954/entry/1954_Page_99 (1)_1.png', 'cd1954/entry/1954_Page_99 (1)_2.png', 'cd1954/entry/1954_Page_99 (1)_3.png', 'cd1954/entry/1954_Page_99 (1)_4.png']",SOUTH MAIN ST,"TITLE GUARANTEE COMPANY OF RHODE ISLAND 66 S Main next to Court House tel DExter 1-5331See page 102 Buyers Guide and right top
+lines"
+637,"SCORE LESS THAN CUTOFF: S Main next to Court House,75.0,PROVIDENCE","['cd1954/entry/1954_Page_99 (1)_10.png', 'cd1954/entry/1954_Page_99 (1)_11.png', 'cd1954/entry/1954_Page_99 (1)_12.png', 'cd1954/entry/1954_Page_99 (1)_13.png', 'cd1954/entry/1954_Page_99 (1)_14.png']",SOUTH MAIN ST,TITLE GUARANTEE COMPANY OF RHODE ISLAND 66 S Main next to Court House tel DExter 1-5331See page 102 Buyers Guide and right top lines
+638,EMPTY STREET,"['cd1954/entry/1954_Page_99 (1)_36.png', 'cd1954/entry/1954_Page_99 (1)_37.png']",7 ,Ansul Craft Inc 387 Charles bldg 7 (jwlry)
+639,EMPTY STREET,"['cd1954/entry/1954_Page_99 (2)_23.png', 'cd1954/entry/1954_Page_99 (2)_24.png']",24 ,Union Tool Co Ine 387 Charles bldg 24 (iwlrs)
+640,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_99 (3)_1.png'],N/A,Rowley Construction Co.
+641,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_99 (3)_5.png', 'cd1954/entry/1954_Page_99 (3)_6.png']",N/A,"260 Central Ave., Pawtucket, R. I. Telephone PA wtucket 5-4600"
+642,EMPTY STREET,"['cd1954/entry/1954_Page_99 (3)_28.png', 'cd1954/entry/1954_Page_99 (3)_29.png']",,"Acme Fast Freight Inc, Canal st No 2 frt hse (frt, auto)"
+643,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_100 (1)_1.png'],N/A,*Travelers ChequesCon
+644,EMPTY STREET,['cd1954/entry/1954_Page_100 (1)_34.png'],,"Associated Transport Inc, Okie st"
+645,"SCORE LESS THAN CUTOFF: -90 Dudlev,75.0,PROVIDENCE","['cd1954/entry/1954_Page_100 (1)_44.png', 'cd1954/entry/1954_Page_100 (1)_45.png']",DUDLEY ST,Cady Moving & Storage Co 80-90 Dud- lev
+646,"SCORE LESS THAN CUTOFF: Geo M Cohan blvd,54.5,PROVIDENCE",['cd1954/entry/1954_Page_100 (1)_56.png'],GEORGE M COHAN BLVD,Cole Teaming Co 251 Geo M Cohan blvd
+647,"SCORE LESS THAN CUTOFF: Plainfield Sudden Transportation Co 156 Public,52.0,PROVIDENCE","['cd1954/entry/1954_Page_100 (2)_79.png', 'cd1954/entry/1954_Page_100 (2)_80.png']",UNION STATION ST,Sturtevant Howard R 821 Plainfield Sudden Transportation Co 156 Public
+648,"SCORE LESS THAN CUTOFF: Main Pawtucket,73.0,PROVIDENCE","['cd1954/entry/1954_Page_100 (3)_35.png', 'cd1954/entry/1954_Page_100 (3)_36.png', 'cd1954/entry/1954_Page_100 (3)_37.png', 'cd1954/entry/1954_Page_100 (3)_38.png']",PAWTUXET AV,"WINTER WALTER Inc 483 Main Paw- tucket tel PAwtucket 3-2100 (Dodge, Plymouth cars and trucks)See page 3 Buyers Guide"
+649,"SCORE LESS THAN CUTOFF: , 754-756 Broad,78.0,PROVIDENCE","['cd1954/entry/1954_Page_101 (2)_1.png', 'cd1954/entry/1954_Page_101 (2)_2.png', 'cd1954/entry/1954_Page_101 (2)_3.png']",BROAD ST,"JUHLIN-PEARSON est 1899, 754-756 Broad tel HOpkins 1-1213See page 47 Buyers Guide and left side lines"
+650,"SCORE LESS THAN CUTOFF: ) 754-756 Broad,78.0,PROVIDENCE","['cd1954/entry/1954_Page_101 (2)_4.png', 'cd1954/entry/1954_Page_101 (2)_5.png', 'cd1954/entry/1954_Page_101 (2)_6.png', 'cd1954/entry/1954_Page_101 (2)_7.png']",BROAD ST,PEARSON A RAYMOND (Juhlin-Pear- son est 1899) 754-756 Broad tel HOp- kins 1-1213See page 47 Buyers Guide and left side lines
+651,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_101 (3)_1.png', 'cd1954/entry/1954_Page_101 (3)_2.png']",N/A,
+652,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_101 (3)_5.png'],N/A,1119 Industrial Bank Building
+653,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_101 (3)_25.png', 'cd1954/entry/1954_Page_101 (3)_26.png', 'cd1954/entry/1954_Page_101 (3)_27.png', 'cd1954/entry/1954_Page_101 (3)_28.png']",CARLETON ST,"*Upholstering Supplies
+ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarles- town 2-4600See page 41 and right side lines"
+654,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_102 (1)_1.png'],N/A,Variety StoresCon
+655,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_102 (2)_56.png', 'cd1954/entry/1954_Page_102 (2)_57.png']",N/A,Rhode Island State Bureau for the Blind Prov County Court House
+656,"SCORE LESS THAN CUTOFF: Bddy,75.0,PROVIDENCE",['cd1954/entry/1954_Page_102 (3)_40.png'],EDDY ST,Coffee-Mat Co 1290 Bddy
+657,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_103 (2).chop_1.png'],N/A,
+658,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_103 (2).chop_7.png', 'cd1954/entry/1954_Page_103 (2).chop_8.png']",N/A,"Great Atlantic & Pacific Tea Co, Muni- cipal Wharf, Fields Point"
+659,"SCORE LESS THAN CUTOFF: Shawmut,73,PROVIDENCE","['cd1954/entry/1954_Page_103 (2).chop_40.png', 'cd1954/entry/1954_Page_103 (2).chop_41.png']",SHAW ST,Narragansett Wiping Supply 11 Shaw- mut
+660,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_103 (3).chop_1.png'],N/A,"C ., INC. it
+ay  ODE xter"
+661,"SCORE LESS THAN CUTOFF: -8314,29.0,PROVIDENCE",['cd1954/entry/1954_Page_103 (3).chop_2.png'],1ST ST,NSTER 1-8314
+662,"SCORE LESS THAN CUTOFF: Olneyville sq Mansfield Brydon W 34 Arcade bldg,70.5,PROVIDENCE",['cd1954/entry/1954_Page_103 (3).chop_17.png'],OLNEYVILLE SQ,"Macklin and Bentley 6 Olneyville sq
+Mansfield Brydon W 34 Arcade bldg"
+663,"SCORE LESS THAN CUTOFF: Eddy rms 303-304,70.0,PROVIDENCE",['cd1954/entry/1954_Page_103 (3).chop_26.png'],EDDY ST,R & R Mfg Co 93 Eddy rms 303-304
+664,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_103 (3).chop_38.png'],N/A,"Winchester Herbert B, Arcade bldg rm
+Cc"
+665,"SCORE LESS THAN CUTOFF: Spice Charlestown,74.0,PROVIDENCE","['cd1954/entry/1954_Page_104 (1)_20.png', 'cd1954/entry/1954_Page_104 (1)_21.png', 'cd1954/entry/1954_Page_104 (1)_22.png', 'cd1954/entry/1954_Page_104 (1)_23.png']",CARLETON ST,ATLANTIC EXCELSIOR COMPANY Inc 20 Spice Charlestown tel CHarles- town 2-4600See page 41 Buyers Guide and right side lines
+666,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_104 (2)_8.png'],N/A,Barkley Window Home & Office Clean-
+667,"SCORE LESS THAN CUTOFF: Smith Boston Window & Building Cleaning Co Ine 31 Bourn,49.0,PROVIDENCE","['cd1954/entry/1954_Page_104 (2)_9.png', 'cd1954/entry/1954_Page_104 (2)_10.png']",GOULDING ST,"ing 283 Smith
+Boston Window & Building Cleaning Co Ine 31 Bourn"
+668,EMPTY STREET,"['cd1954/entry/1954_Page_104 (3)_10.png', 'cd1954/entry/1954_Page_104 (3)_11.png']",,Paramount Aluminum Window Col Wash av
+669,FAILED TO PARSE AN ADDRESS,"['cd1954/entry/1954_Page_104 (3)_52.png', 'cd1954/entry/1954_Page_104 (3)_53.png', 'cd1954/entry/1954_Page_104 (3)_54.png']",N/A,"KENNECOTT WIRE & CABLE CO Phillipsdale, R I tel EAst Providence 1-2800See page 115 Buvers Guide"
+670,EMPTY STREET,['cd1954/entry/1954_Page_104 (3)_62.png'],,Bernice of Hope St 807 Hope
+671,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_105 (1)_2.png'],N/A,"minster tel DExter 1-7500See page
+36 Buyers Guide and right top lines
+Shoppers Bazaar 27 Arcade bldg"
+672,FAILED TO PARSE AN ADDRESS,['cd1954/entry/1954_Page_105 (3)_6.png'],N/A,Synthetic Yarns Div of D W Rich & Co

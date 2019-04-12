@@ -1,0 +1,695 @@
+,Drop_Reason,File_List,Street,Text
+0,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_86 (1)_2.png', 'cd1990/entry/1990_Page_86 (1)_3.png']",N/A,American Airlines Inc-U S Air Westminster Sq Bldg
+1,"SCORE LESS THAN CUTOFF: Beverage Hill Rd,63.5,PROVIDENCE","['cd1990/entry/1990_Page_86 (2)_16.png', 'cd1990/entry/1990_Page_86 (2)_17.png', 'cd1990/entry/1990_Page_86 (2)_18.png']",BEVERLY ST,"A-1 ANSWERING SERVICE 368 Beverage Hill Rd (02861), Tel 724- 3322"
+2,"SCORE LESS THAN CUTOFF: Zambarano Ave,67.0,PROVIDENCE","['cd1990/entry/1990_Page_86 (3)_19.png', 'cd1990/entry/1990_Page_86 (3)_20.png']",MAURAN ST,Azalea Court Condominiums 1 Zambarano Av (NP)
+3,"SCORE LESS THAN CUTOFF: Garibaldi St,74.5,PROVIDENCE","['cd1990/entry/1990_Page_86 (3)_36.png', 'cd1990/entry/1990_Page_86 (3)_37.png']",GARFIELD ST,Brickhouse Condominiums 5 Garibaldi St (NP)
+4,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_87 (1)_2.png'],N/A,
+5,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_87 (1)_29.png'],N/A,Erics Place Condominiums Erics Pl (NP)
+6,"SCORE LESS THAN CUTOFF: Fenway Ave,71.0,PROVIDENCE",['cd1990/entry/1990_Page_87 (1)_37.png'],GREENWAY ST,Fenway Apartments 10 Fenway Av (NP)
+7,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_87 (2)_19.png', 'cd1990/entry/1990_Page_87 (2)_20.png']",N/A,Louisquisset Country Club Condominiums Nipmuc Trl (NP)
+8,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_87 (3)_1.png', 'cd1990/entry/1990_Page_87 (3)_2.png']",N/A,FOE FRAN BivRasAV ew Seaver awe
+9,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_87 (3)_7.png'],N/A,Regency East Apartments le Jackson Walkway
+10,"SCORE LESS THAN CUTOFF: Bicentennial Way,57.5,PROVIDENCE","['cd1990/entry/1990_Page_87 (3)_34.png', 'cd1990/entry/1990_Page_87 (3)_35.png']",CENTRAL AVE,Stoney Brook Apartments 1776 Bicentennial Way (NP)
+11,"SCORE LESS THAN CUTOFF: -14 Ternay Gardens,72.0,PROVIDENCE","['cd1990/entry/1990_Page_88 (1)_5.png', 'cd1990/entry/1990_Page_88 (1)_6.png']",GARDEN ST,"(NP)
+Yorktown Village Apartments 1-14 Ternay Gardens"
+12,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE","['cd1990/entry/1990_Page_88 (1)_62.png', 'cd1990/entry/1990_Page_88 (1)_63.png']",2ND ST,Holmes John M le Jackson Walkway Apt 1012
+13,"SCORE LESS THAN CUTOFF: Broadway Paxson Edw 151 Broadway,78.5,PROVIDENCE","['cd1990/entry/1990_Page_88 (1)_75.png', 'cd1990/entry/1990_Page_88 (1)_76.png']",GRAND BROADWAY,Olivelli Associates 354 Broadway Paxson Edw 151 Broadway Rm 20
+14,"SCORE LESS THAN CUTOFF: Merritt Ave,69.0,PROVIDENCE",['cd1990/entry/1990_Page_88 (3)_17.png'],MORRIS AVE,Bjurman John 5 Merritt Av (NP)
+15,"SCORE LESS THAN CUTOFF: llth St,67.5,PROVIDENCE",['cd1990/entry/1990_Page_89 (1)_5.png'],ALTHEA ST,Poschesci Linda 84 llth St
+16,"SCORE LESS THAN CUTOFF: Belcourt Ave,72.5,PROVIDENCE",['cd1990/entry/1990_Page_89 (1)_8.png'],BELMONT AVE,Ribeiro Arlene M Mrs 3 Belcourt Av (NP)
+17,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_89 (1)_41.png'],N/A,Carlson Alan Graphics le Jackson Walkway
+18,"SCORE LESS THAN CUTOFF: th Floor,71.0,PROVIDENCE","['cd1990/entry/1990_Page_89 (2)_39.png', 'cd1990/entry/1990_Page_89 (2)_40.png', 'cd1990/entry/1990_Page_89 (2)_41.png']",FLORA ST,"Davis Jenckes Kilmarx & Swan Inc One Hospital Trust Plaza, 14th Floor (02903), Tel 273-9000"
+19,"SCORE LESS THAN CUTOFF: Turks Head Bldg, 76 Westminster St, Providence, RI,69.0,PROVIDENCE","['cd1990/entry/1990_Page_89 (2)_42.png', 'cd1990/entry/1990_Page_89 (2)_43.png', 'cd1990/entry/1990_Page_89 (2)_44.png', 'cd1990/entry/1990_Page_89 (2)_45.png']",WESTMINSTER ST,"GARDNER SAWYER GATES & SLOAN 1309 Turks Head Bldg, 76 Westminster St, Providence, RI (02903), Tel 421-5927, FAX 421-9506"
+20,EMPTY STREET,"['cd1990/entry/1990_Page_89 (2)_52.png', 'cd1990/entry/1990_Page_89 (2)_53.png', 'cd1990/entry/1990_Page_89 (2)_54.png', 'cd1990/entry/1990_Page_89 (2)_55.png', 'cd1990/entry/1990_Page_89 (2)_56.png']",,"HANSON CURRAN PARKS & WHITMAN 1210 Turks Head Bldg (02903-2274), Tel 421-2154, Telecopier (401) 521- 7040"
+21,"SCORE LESS THAN CUTOFF: Pine St, 3d Fl, Providence,79.5,PROVIDENCE","['cd1990/entry/1990_Page_89 (3)_6.png', 'cd1990/entry/1990_Page_89 (3)_7.png', 'cd1990/entry/1990_Page_89 (3)_8.png']",PROVIDENCE ST,"MARKOFF & BORISKIN 55 Pine St, 3d Fl, Providence (02903), Tel 272- 9330"
+22,"SCORE LESS THAN CUTOFF: Smithfield Av, Lincoln, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_89 (3)_12.png', 'cd1990/entry/1990_Page_89 (3)_13.png', 'cd1990/entry/1990_Page_89 (3)_14.png', 'cd1990/entry/1990_Page_89 (3)_15.png']",SMITHFIELD AVE,"OSTER GROFF ATTORNEYS AT LAW 9386 Smithfield Av, Lincoln, RI (02865), Tel 724-2400, FAX 724-1188"
+23,"SCORE LESS THAN CUTOFF: -7196),,50.5,PROVIDENCE","['cd1990/entry/1990_Page_89 (3)_22.png', 'cd1990/entry/1990_Page_89 (3)_23.png', 'cd1990/entry/1990_Page_89 (3)_24.png', 'cd1990/entry/1990_Page_89 (3)_25.png', 'cd1990/entry/1990_Page_89 (3)_26.png']",I 195,"ROBERTS CARROLL FELDSTEIN & TUCKER INCORPORATED One Old Stone Square, Providence, RI (02903-7196), Tel (401) 521-7000, Telecopier (401) 521-1328"
+24,"SCORE LESS THAN CUTOFF: Bellows St, Warwick, RI,53.5,PROVIDENCE","['cd1990/entry/1990_Page_89 (3)_44.png', 'cd1990/entry/1990_Page_89 (3)_45.png', 'cd1990/entry/1990_Page_89 (3)_46.png', 'cd1990/entry/1990_Page_89 (3)_47.png', 'cd1990/entry/1990_Page_89 (3)_48.png', 'cd1990/entry/1990_Page_89 (3)_49.png']",BIGELOW RD,"MASS AV MASS AUDIO VISUAL EQUIPMENT CORP 100 Bellows St, Warwick, RI (02888), Tel (401) 941- 2780, Corporate Address 103 Terrace Hall Av (Burlington, Ma; 01803), Tel (617) 270-0027"
+25,"SCORE LESS THAN CUTOFF: Elmwood Av, Warwick, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_90 (2)_20.png', 'cd1990/entry/1990_Page_90 (2)_21.png', 'cd1990/entry/1990_Page_90 (2)_22.png']",ELMWOOD AVE,"ALLENDALE AUTO BODY & SALES 2058 Elmwood Av, Warwick, RI (02888), Tel (401) 781-2300"
+26,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE","['cd1990/entry/1990_Page_90 (2)_53.png', 'cd1990/entry/1990_Page_90 (2)_54.png', 'cd1990/entry/1990_Page_90 (2)_55.png']",TARA DR,"GINOS AUTO SALES INC 4 Tag Dr (North Providence; 02911), Tels 353-3773 And 231-8000"
+27,EMPTY STREET,"['cd1990/entry/1990_Page_90 (3)_7.png', 'cd1990/entry/1990_Page_90 (3)_8.png', 'cd1990/entry/1990_Page_90 (3)_9.png']",,"ROSSI AUTO BODY INC & Humbert St (North Providence; 02911), Tel 231-9725"
+28,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_90 (3)_26.png'],N/A,
+29,"SCORE LESS THAN CUTOFF: Francis Av, North Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_90 (3)_33.png', 'cd1990/entry/1990_Page_90 (3)_34.png']",PROVIDENCE PL,"BREGGIA AUTO SALES 248 Francis Av, North Providence, RI (02904)"
+30,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE",['cd1990/entry/1990_Page_90 (3)_58.png'],TARA DR,Gino's Auto Sales Inc 4 Tag Dr (NP)
+31,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE",['cd1990/entry/1990_Page_90 (3)_81.png'],TARA DR,Route Six Auto Sales Inc 11 Tag Dr (NP)
+32,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_91 (1)_3.png', 'cd1990/entry/1990_Page_91 (1)_4.png', 'cd1990/entry/1990_Page_91 (1)_5.png']",02771),285 HIGHLAND AVENUE (SEEKONE MA 02771) TELEPHONE 336-3144
+33,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE",['cd1990/entry/1990_Page_91 (1)_56.png'],TARA DR,Lion Auto Inc 5 Tag Dr (NP)
+34,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_91 (3)_3.png', 'cd1990/entry/1990_Page_91 (3)_4.png']","02860),","206 Pine St, Pawtucket (02860), Tel (401) 728-0088"
+35,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE",['cd1990/entry/1990_Page_91 (3)_67.png'],TARA DR,Charlie's Auto Service 1 Tag Dr (NP)
+36,"SCORE LESS THAN CUTOFF: BREWERY PARK,70.0,PROVIDENCE","['cd1990/entry/1990_Page_92 (2)_51.png', 'cd1990/entry/1990_Page_92 (2)_52.png']",BREWSTER ST,POLK RL & CO 1155 BREWERY PARK
+37,"SCORE LESS THAN CUTOFF: -2697,50.5,PROVIDENCE","['cd1990/entry/1990_Page_92 (2)_54.png', 'cd1990/entry/1990_Page_92 (2)_55.png']",I 295,"DETROIT, MI 48207-2697 TELEPHONE (313) 393-0880"
+38,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_92 (3)_1.png'],N/A,AULUIIVUDILE WACMAINU mine
+39,"SCORE LESS THAN CUTOFF: BREWERY PARK,70.0,PROVIDENCE","['cd1990/entry/1990_Page_92 (3)_22.png', 'cd1990/entry/1990_Page_92 (3)_23.png']",BREWSTER ST,POLK RL & CO 1155 BREWERY PARK
+40,"SCORE LESS THAN CUTOFF: -2697,50.5,PROVIDENCE","['cd1990/entry/1990_Page_92 (3)_25.png', 'cd1990/entry/1990_Page_92 (3)_26.png']",I 295,"DETROIT, MI 48207-2697 TELEPHONE (313) 393-0880"
+41,"SCORE LESS THAN CUTOFF: ELM HILL PIKE NASHVILLE TN,57.5,PROVIDENCE","['cd1990/entry/1990_Page_93 (1)_53.png', 'cd1990/entry/1990_Page_93 (1)_54.png', 'cd1990/entry/1990_Page_93 (1)_55.png', 'cd1990/entry/1990_Page_93 (1)_56.png']",OLD SIMMONSVILLE RD,POLK RL & CO 2001 ELM HILL PIKE NASHVILLE TN (37210) TELEPHONE (615) 871-0142
+42,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (1)_58.png', 'cd1990/entry/1990_Page_93 (1)_59.png']",N/A,BANK OF NEW ENGLAND-OLD COLONY
+43,"SCORE LESS THAN CUTOFF: -0100,50.0,PROVIDENCE",['cd1990/entry/1990_Page_93 (1)_62.png'],10TH ST,TELEPHONE 431-0100
+44,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_93 (1)_65.png'],029093),58 WEYBOSSET STREET (029093)
+45,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (1)_66.png'],N/A,CITIZENS BANK
+46,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (1)_68.png'],N/A,870 WESTMINSTER STREET
+47,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (1)_70.png', 'cd1990/entry/1990_Page_93 (1)_71.png']",02903),(02903) TELEPHONE 4586-7000
+48,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (1)_73.png'],N/A,146 WESTMINSTER STREET
+49,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (1)_75.png', 'cd1990/entry/1990_Page_93 (1)_76.png']",02908),(02908) TELEPHONE 456-7440
+50,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_3.png'],N/A,63 WESTMINSTER STREET
+51,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (2)_5.png', 'cd1990/entry/1990_Page_93 (2)_6.png', 'cd1990/entry/1990_Page_93 (2)_7.png']",02903),(02903) TELEPHONE 456-7010 270 ACADEMY AVENUE
+52,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (2)_9.png', 'cd1990/entry/1990_Page_93 (2)_10.png']",02908),(02908) TELEPHONE 456-7070
+53,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_11.png'],N/A,732 PLAINFIELD STREET
+54,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_12.png'],N/A,PROVIDENCE RI
+55,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_93 (2)_13.png'],02909),(02909)
+56,"SCORE LESS THAN CUTOFF: -7080,29.0,PROVIDENCE",['cd1990/entry/1990_Page_93 (2)_14.png'],7TH ST,TELEPHONE 456-7080
+57,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_15.png'],N/A,120 WATERMAN STREET
+58,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_16.png'],N/A,PROVIDENCE RI
+59,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_93 (2)_17.png'],029086),(029086)
+60,"SCORE LESS THAN CUTOFF: -7050,29.0,PROVIDENCE",['cd1990/entry/1990_Page_93 (2)_18.png'],I 95,TELEPHONE 456-7050
+61,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_19.png'],N/A,1 EMPIRE PLAZA
+62,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_20.png'],N/A,PROVIDENCE RI
+63,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_93 (2)_21.png'],02903),(02903)
+64,"SCORE LESS THAN CUTOFF: -7155,50.5,PROVIDENCE",['cd1990/entry/1990_Page_93 (2)_22.png'],I 195,TELEPHONE 456-7155
+65,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_24.png'],N/A,1525 SMITH STREET
+66,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (2)_25.png', 'cd1990/entry/1990_Page_93 (2)_26.png']",02911),(02911) TELEPHONE 456-7020
+67,"SCORE LESS THAN CUTOFF: Pontiac Av, PO Box 8830, Cranston, RI,69.0,PROVIDENCE","['cd1990/entry/1990_Page_93 (2)_27.png', 'cd1990/entry/1990_Page_93 (2)_28.png', 'cd1990/entry/1990_Page_93 (2)_29.png', 'cd1990/entry/1990_Page_93 (2)_30.png']",CRANSTON ST,"COLONIAL BANK 1210 Pontiac Av, PO Box 8830, Cranston, RI (02920), Tels (401) 467- 8800, 1-800-234-5855"
+68,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_31.png'],N/A,FLEET NATIONAL BANK
+69,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (2)_33.png', 'cd1990/entry/1990_Page_93 (2)_34.png']",02903),111 WESTMINSTER STREET (02903) TELEPHONE 278-6000
+70,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_36.png', 'cd1990/entry/1990_Page_93 (2)_37.png']",N/A,215 ATWELLS AVENUE TELEPHONE 278-6020
+71,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_39.png', 'cd1990/entry/1990_Page_93 (2)_40.png']",N/A,2073 SMITH STREET TELEPHONE 231-6300
+72,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_41.png', 'cd1990/entry/1990_Page_93 (2)_42.png']",N/A,814 HOPE STREET TELEPHONE 278-6030
+73,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_43.png', 'cd1990/entry/1990_Page_93 (2)_44.png']",N/A,575 CHARLES STREET TELEPHONE 278-6040
+74,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_45.png', 'cd1990/entry/1990_Page_93 (2)_46.png']",N/A,661 BROADWAY TELEPHONE 278-6050
+75,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_47.png', 'cd1990/entry/1990_Page_93 (2)_48.png']",N/A,1473 BROAD STREET TELEPHONE 278-6025
+76,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_49.png', 'cd1990/entry/1990_Page_93 (2)_50.png']",N/A,457 ANGELL STREET TELEPHONE 278-6090
+77,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (2)_51.png'],N/A,HUNTINGTON PARK
+78,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_52.png', 'cd1990/entry/1990_Page_93 (2)_53.png']",N/A,125 DUPONT DRIVE TELEPHONE 278-6035
+79,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (2)_77.png', 'cd1990/entry/1990_Page_93 (2)_78.png']",N/A,BANK OF NEW ENGLAND-OLD COLONY
+80,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (2)_80.png', 'cd1990/entry/1990_Page_93 (2)_81.png', 'cd1990/entry/1990_Page_93 (2)_82.png']",02803),58 WEYBOSSET STREET (02803) TELEPHONE 431-0100
+81,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (3)_3.png'],N/A,BANK OF NEW ENGLAND-OLD
+82,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_5.png', 'cd1990/entry/1990_Page_93 (3)_6.png']",N/A,489 ANGELL STREET TELEPHONE 421-2243
+83,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_8.png', 'cd1990/entry/1990_Page_93 (3)_9.png', 'cd1990/entry/1990_Page_93 (3)_10.png', 'cd1990/entry/1990_Page_93 (3)_11.png', 'cd1990/entry/1990_Page_93 (3)_12.png']",N/A,11 WATERMAN STREET TELEPHONE 231-7900 1080 CHARLES STREET (02911) TELEPHONE 728-6001
+84,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_93 (3)_13.png'],1st,Citizens Bank 1st Fl One Empire Plaza
+85,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (3)_37.png'],N/A,FLEET NATIONAL BANK
+86,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_93 (3)_39.png', 'cd1990/entry/1990_Page_93 (3)_40.png']",02903),111 WESTMINSTER STREET (02903) TELEPHONE 278-6000
+87,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_42.png', 'cd1990/entry/1990_Page_93 (3)_43.png']",N/A,215 ATWELLS AVENUE TELEPHONE 278-6020
+88,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_45.png', 'cd1990/entry/1990_Page_93 (3)_46.png']",N/A,2073 SMITH STREET TELEPHONE 231-6300
+89,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_47.png', 'cd1990/entry/1990_Page_93 (3)_48.png']",N/A,814 HOPE STREET TELEPHONE 278-6030
+90,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_49.png', 'cd1990/entry/1990_Page_93 (3)_50.png']",N/A,575 CHARLES STREET TELEPHONE 278-6040
+91,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_51.png', 'cd1990/entry/1990_Page_93 (3)_52.png']",N/A,661 BROADWAY TELEPHONE 278-6050
+92,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_53.png', 'cd1990/entry/1990_Page_93 (3)_54.png']",N/A,1473 BROAD STREET TELEPHONE 278-6025
+93,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_55.png', 'cd1990/entry/1990_Page_93 (3)_56.png']",N/A,457 ANGELL STREET TELEPHONE 278-6090
+94,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_93 (3)_57.png'],N/A,HUNTINGTON PARK
+95,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_93 (3)_58.png', 'cd1990/entry/1990_Page_93 (3)_59.png']",N/A,125 DUPONT DRIVE TELEPHONE 278-6085
+96,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_94 (1)_7.png', 'cd1990/entry/1990_Page_94 (1)_8.png']",N/A,OLD STONE CORPORATION
+97,EMPTY STREET,"['cd1990/entry/1990_Page_94 (1)_10.png', 'cd1990/entry/1990_Page_94 (1)_11.png']",,"150 S Main St (Providence; 02903), Tel 278-2000"
+98,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_94 (1)_12.png', 'cd1990/entry/1990_Page_94 (1)_13.png', 'cd1990/entry/1990_Page_94 (1)_14.png']",N/A,RHODE ISLAND HOSPITAL TRUST NATIONAL BANK
+99,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_16.png', 'cd1990/entry/1990_Page_94 (1)_17.png', 'cd1990/entry/1990_Page_94 (1)_18.png', 'cd1990/entry/1990_Page_94 (1)_19.png', 'cd1990/entry/1990_Page_94 (1)_20.png']",02903),(02903) TELEPHONE 278-8454 10 DORRANCE STREET (02903) TELEPHONE 278-8100
+100,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_21.png', 'cd1990/entry/1990_Page_94 (1)_22.png']",02906),238 THAYER STREET (02906)
+101,"SCORE LESS THAN CUTOFF: -8138,29.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_23.png'],1ST ST,TELEPHONE 278-8138
+102,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_24.png', 'cd1990/entry/1990_Page_94 (1)_25.png']",02904),501 N MAIN STREET (02904)
+103,"SCORE LESS THAN CUTOFF: -8090,29.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_26.png'],I 95,TELEPHONE 278-8090
+104,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_27.png'],N/A,RHODE ISLAND HOSPITAL
+105,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_29.png', 'cd1990/entry/1990_Page_94 (1)_30.png']",02902),583 EDDY STREET (02902)
+106,"SCORE LESS THAN CUTOFF: -1330,50.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_31.png'],10TH ST,TELEPHONE 276-1330
+107,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_32.png'],N/A,PROVIDENCE COLLEGE OFFICE
+108,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_33.png', 'cd1990/entry/1990_Page_94 (1)_34.png']",02918),SLAVIN CENTER (02918)
+109,"SCORE LESS THAN CUTOFF: -1354,50.5,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_35.png'],I 195,TELEPHONE 276-1354
+110,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_36.png'],N/A,ATWELLS AVENUE OFFICE
+111,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_37.png', 'cd1990/entry/1990_Page_94 (1)_38.png']",029808),280 ATWELLS AVENUE (029808)
+112,"SCORE LESS THAN CUTOFF: -3244,29.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_39.png'],2ND ST,TELEPHONE 421-3244
+113,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_40.png'],N/A,CHARLES STREET OFFICE
+114,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_41.png', 'cd1990/entry/1990_Page_94 (1)_42.png']",02904),591 CHARLES STREET (02904)
+115,"SCORE LESS THAN CUTOFF: -9260,29.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_43.png'],I 95,TELEPHONE 751-9260
+116,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_44.png'],N/A,ELMGROVE AVENUE OFFICE
+117,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_45.png', 'cd1990/entry/1990_Page_94 (1)_46.png']",02906),131 ELMGROVE AVENUE (02906)
+118,"SCORE LESS THAN CUTOFF: -9220,29.0,PROVIDENCE",['cd1990/entry/1990_Page_94 (1)_47.png'],I 95,TELEPHONE 751-9220
+119,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_48.png'],N/A,ELMHURST OFFICE
+120,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_94 (1)_49.png'],N/A,1025 SMITH STREET
+121,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_94 (1)_50.png', 'cd1990/entry/1990_Page_94 (1)_51.png']",02908),(02908) TELEPHONE 274-1025
+122,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_94 (1)_83.png', 'cd1990/entry/1990_Page_94 (1)_84.png']",N/A,Hospital Trust Barber Shop One Hosp Trust Plaza Ist Fl
+123,"SCORE LESS THAN CUTOFF: Park Av, Cranston, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_95 (3)_53.png', 'cd1990/entry/1990_Page_95 (3)_54.png', 'cd1990/entry/1990_Page_95 (3)_55.png', 'cd1990/entry/1990_Page_95 (3)_56.png']",CRANSTON ST,"CULLCO COMMUNICATIONS 1424 Park Av, Cranston, RI (02920). Tels 946-3150, 942-0050"
+124,"SCORE LESS THAN CUTOFF: Barton St, PO Box 520, Pawtucket,59.5,PROVIDENCE","['cd1990/entry/1990_Page_96 (1)_21.png', 'cd1990/entry/1990_Page_96 (1)_22.png', 'cd1990/entry/1990_Page_96 (1)_23.png', 'cd1990/entry/1990_Page_96 (1)_24.png', 'cd1990/entry/1990_Page_96 (1)_25.png']",PAWTUXET AV,"M & F CASE CO INC 335 Barton St, PO Box 520, Pawtucket (02860), Tels (401) 722- 4830, FAX (401) 725-8652, 1-800-343- 8820"
+125,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_22.png', 'cd1990/entry/1990_Page_96 (3)_23.png']",4TH ST,Dean Witter Reynolds Inc One Hosp Trust Plaza 20th Fl
+126,"SCORE LESS THAN CUTOFF: KENNEDY PLAZA 1200 FLEET CENTER,76.0,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_27.png', 'cd1990/entry/1990_Page_96 (3)_28.png', 'cd1990/entry/1990_Page_96 (3)_29.png', 'cd1990/entry/1990_Page_96 (3)_30.png', 'cd1990/entry/1990_Page_96 (3)_31.png']",KENNEDY PLZ,KIDDER PEABODY & CO INC 50 KENNEDY PLAZA 1200 FLEET CENTER (02903) TELEPHONE 863-8200
+127,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_32.png', 'cd1990/entry/1990_Page_96 (3)_33.png']",4TH ST,Merrill Lynch Pierce Fenner & Smith Inc One Hosp Trust Plaza 18th Fl
+128,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_37.png', 'cd1990/entry/1990_Page_96 (3)_38.png']",4TH ST,Paine Webber Inc One Hosp Trust Plaza 15th Fl
+129,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_42.png', 'cd1990/entry/1990_Page_96 (3)_43.png']",4TH ST,Schwab Charles & Co One Hosp Trust Plaza 17th Fl
+130,"SCORE LESS THAN CUTOFF: Federal Way, Johnston, RI,70.0,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_57.png', 'cd1990/entry/1990_Page_96 (3)_58.png', 'cd1990/entry/1990_Page_96 (3)_59.png']",JOHNSON ST,"DAY-LOR CREATIONS INC 100 Federal Way, Johnston, RI (02919), Tel 274-2360"
+131,"SCORE LESS THAN CUTOFF: Esten Av, Pawtucket, RI,65.0,PROVIDENCE","['cd1990/entry/1990_Page_96 (3)_63.png', 'cd1990/entry/1990_Page_96 (3)_64.png', 'cd1990/entry/1990_Page_96 (3)_65.png', 'cd1990/entry/1990_Page_96 (3)_66.png', 'cd1990/entry/1990_Page_96 (3)_67.png']",PAWTUXET AV,"FASHION ORNAMENTS BY LARRY ALBINIANO  25 Esten Av, Pawtucket, RI (02860), Tel 725-8484"
+132,EMPTY STREET,['cd1990/entry/1990_Page_97 (1)_3.png'],,"51 Lee St (02861), Tel 726-1310"
+133,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_97 (1)_38.png', 'cd1990/entry/1990_Page_97 (1)_39.png', 'cd1990/entry/1990_Page_97 (1)_40.png', 'cd1990/entry/1990_Page_97 (1)_41.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+134,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_97 (2)_81.png', 'cd1990/entry/1990_Page_97 (2)_82.png']",N/A,Hospital Trust Nat] Bank Building One Hosp Trust Plaza
+135,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_97 (2)_83.png'],N/A,HOSPITAL TRUST TOWER-HOSPITAL
+136,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_97 (2)_87.png', 'cd1990/entry/1990_Page_97 (2)_88.png']",02903),PROVIDENCE RI (02903) TELEPHONE 278-8196
+137,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_97 (3)_30.png', 'cd1990/entry/1990_Page_97 (3)_31.png']",N/A,New England Telephone Co Bldg 234 Washington St
+138,EMPTY STREET,['cd1990/entry/1990_Page_97 (3)_43.png'],,One Empire Plaza Empire St
+139,EMPTY STREET,['cd1990/entry/1990_Page_97 (3)_74.png'],,Sixty Ship St (Ofc Bldg) 60 Ship St
+140,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_98 (1)_25.png', 'cd1990/entry/1990_Page_98 (1)_26.png']",N/A,Basic Service Corp (Sonitrol) le Jackson Walkway
+141,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_98 (1)_67.png', 'cd1990/entry/1990_Page_98 (1)_68.png']",4TH ST,O C E Business Systems One Hosp Trust Plaza 19th Fl
+142,"SCORE LESS THAN CUTOFF: ROLFE STREET,78.5,PROVIDENCE","['cd1990/entry/1990_Page_98 (1)_70.png', 'cd1990/entry/1990_Page_98 (1)_71.png', 'cd1990/entry/1990_Page_98 (1)_72.png', 'cd1990/entry/1990_Page_98 (1)_73.png']",POINT STREET BRG,PROVIDENCE BUSINESS FORMS 100 ROLFE STREET (02910) PO BOX 606 ANNEX 02901 TELEPHONE 941-2500
+143,"SCORE LESS THAN CUTOFF: Armistice Blvd,61.0,PROVIDENCE","['cd1990/entry/1990_Page_98 (2)_17.png', 'cd1990/entry/1990_Page_98 (2)_18.png', 'cd1990/entry/1990_Page_98 (2)_19.png']",HARBORSIDE BLVD,"CANNON CABLE COMPANY INC 255 Armistice Blvd (02860), Tel (401) 122-4400, FAX 726-8915"
+144,"SCORE LESS THAN CUTOFF: Mineral Spring Av, N Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_98 (2)_51.png', 'cd1990/entry/1990_Page_98 (2)_52.png', 'cd1990/entry/1990_Page_98 (2)_53.png', 'cd1990/entry/1990_Page_98 (2)_54.png', 'cd1990/entry/1990_Page_98 (2)_55.png']",PROVIDENCE PL,"CARPET CONNECTION INC 1825 Mineral Spring Av, N Providence, RI (02904), Tels (401) 353-3727, (401) 353-5050"
+145,"SCORE LESS THAN CUTOFF: UUD chavay awww COVERINGSRETAIL-CONTD,46.0,PROVIDENCE",['cd1990/entry/1990_Page_98 (3)_1.png'],ORIENTAL ST,"VATE DAD, S0UUD chavay  awww
+
+COVERINGS- RETAIL-CONTD"
+146,"SCORE LESS THAN CUTOFF: Catamore Blvd,66.0,PROVIDENCE","['cd1990/entry/1990_Page_98 (3)_12.png', 'cd1990/entry/1990_Page_98 (3)_13.png', 'cd1990/entry/1990_Page_98 (3)_14.png']",SYCAMORE ST,"N C R CORPORATION 60 Catamore Blvd (East Providence; 02914), Tel 438-2600"
+147,EMPTY STREET,"['cd1990/entry/1990_Page_99 (1)_20.png', 'cd1990/entry/1990_Page_99 (1)_21.png', 'cd1990/entry/1990_Page_99 (1)_22.png']",,"H:GHLAND MEMORIAL PARK Rhode Island Av (Johnston; 02919), Tel 231-9120"
+148,EMPTY STREET,['cd1990/entry/1990_Page_99 (1)_29.png'],,R One Historical Cemetery Rutherglen Av
+149,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_99 (1)_35.png'],N/A,SWAN POINT CEMETERY
+150,"SCORE LESS THAN CUTOFF: ) TLEEPHONE 272-1314,55.5,PROVIDENCE","['cd1990/entry/1990_Page_99 (1)_37.png', 'cd1990/entry/1990_Page_99 (1)_38.png', 'cd1990/entry/1990_Page_99 (1)_39.png']",STEPHANIE DR,585 BLACKSTONE BOULEVARD (02906) TLEEPHONE 272-1314
+151,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_99 (2)_20.png', 'cd1990/entry/1990_Page_99 (2)_21.png']",N/A,ifANN GEORGE & CO INC
+152,"SCORE LESS THAN CUTOFF: -5600,29.0,PROVIDENCE",['cd1990/entry/1990_Page_99 (2)_23.png'],I 95,TELEPHONE 781-5600
+153,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1990/entry/1990_Page_99 (2)_39.png'],10TH ST,421-8400
+154,"SCORE LESS THAN CUTOFF: FENNER STREET PROVIDENCE RI,77.5,PROVIDENCE","['cd1990/entry/1990_Page_99 (3)_39.png', 'cd1990/entry/1990_Page_99 (3)_40.png', 'cd1990/entry/1990_Page_99 (3)_41.png', 'cd1990/entry/1990_Page_99 (3)_42.png', 'cd1990/entry/1990_Page_99 (3)_43.png', 'cd1990/entry/1990_Page_99 (3)_44.png']",PROVIDENCE PL,CATHEDRAL OF SAINTS PETER AND PAUL 30 FENNER STREET PROVIDENCE RI (02903) TELEPHONES 331-2434 AND 278-4515
+155,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_100 (1)_3.png', 'cd1990/entry/1990_Page_100 (1)_4.png']",N/A,PROVIDENCE (CATHOLIC)
+156,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_100 (1)_7.png', 'cd1990/entry/1990_Page_100 (1)_8.png', 'cd1990/entry/1990_Page_100 (1)_9.png']",02808),(02808) TELEPHONES 278-4500 AND 278-4515
+157,EMPTY STREET,"['cd1990/entry/1990_Page_100 (1)_26.png', 'cd1990/entry/1990_Page_100 (1)_27.png', 'cd1990/entry/1990_Page_100 (1)_28.png', 'cd1990/entry/1990_Page_100 (1)_29.png']",,"FIRST UNITARIAN CHURCH One Benevolent St (02906), Tel 421- 7970"
+158,"SCORE LESS THAN CUTOFF: Oakleigh Ave,72.5,PROVIDENCE","['cd1990/entry/1990_Page_100 (1)_37.png', 'cd1990/entry/1990_Page_100 (1)_38.png']",OAKDALE AVE,Greystone Primitive Methodist Church 7 Oakleigh Av (NP)
+159,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_100 (3)_1.png'],N/A,VEU SOW ERI Chaves Wests ewe Sn
+160,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_100 (3)_48.png', 'cd1990/entry/1990_Page_100 (3)_49.png']",N/A,CITY DIRECTORY LIBRARY
+161,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE","['cd1990/entry/1990_Page_100 (3)_52.png', 'cd1990/entry/1990_Page_100 (3)_53.png', 'cd1990/entry/1990_Page_100 (3)_54.png']",3RD ST,30 EXCHANGE TERRACE PROVIDENCE 02903 TELEPHONE (401) 521-5000
+162,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_100 (3)_57.png'],N/A,POLK RL & CO
+163,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE","['cd1990/entry/1990_Page_100 (3)_59.png', 'cd1990/entry/1990_Page_100 (3)_60.png', 'cd1990/entry/1990_Page_100 (3)_61.png', 'cd1990/entry/1990_Page_100 (3)_62.png']",8TH ST,"300 COMMERCIAL STREET MALDEN, MA 02148 TELEPHONE (617) 322-0500"
+164,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_101 (2)_2.png'],N/A,Rhode Island Hearing Center Corliss Park
+165,"SCORE LESS THAN CUTOFF: -59 Foundry St,73.5,PROVIDENCE","['cd1990/entry/1990_Page_102 (2)_13.png', 'cd1990/entry/1990_Page_102 (2)_14.png', 'cd1990/entry/1990_Page_102 (2)_15.png']",BOUNDARY AVE,"GENERAL POLYMER INC 57-59 Foundry St (Central Falls; 02863), Tel (401) 723-6660"
+166,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_102 (2)_21.png'],N/A,Arnold Lounge West Quadrangle
+167,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_102 (3)_2.png', 'cd1990/entry/1990_Page_102 (3)_3.png', 'cd1990/entry/1990_Page_102 (3)_4.png']","02108),","WALKER ASSOCIATES One Court St, Boston, Ma (02108), Tel (617), 227- 4488, National Tel 1-800-225-6789"
+168,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_102 (3)_9.png'],N/A,SWAN POINT CEMETERY
+169,"SCORE LESS THAN CUTOFF: ) TLEEPHONE 272-1314,55.5,PROVIDENCE","['cd1990/entry/1990_Page_102 (3)_11.png', 'cd1990/entry/1990_Page_102 (3)_12.png', 'cd1990/entry/1990_Page_102 (3)_13.png']",STEPHANIE DR,585 BLACKSTONE BOULEVARD (02906) TLEEPHONE 272-1314
+170,"SCORE LESS THAN CUTOFF: Smithfield Rd, North Providence,75.0,PROVIDENCE","['cd1990/entry/1990_Page_102 (3)_20.png', 'cd1990/entry/1990_Page_102 (3)_21.png', 'cd1990/entry/1990_Page_102 (3)_22.png']",SMITHFIELD AVE,"COMPUTER CONSULTANTS 520 Smithfield Rd, North Providence (02904)"
+171,"SCORE LESS THAN CUTOFF: Park Av, Cranston, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_102 (3)_34.png', 'cd1990/entry/1990_Page_102 (3)_35.png', 'cd1990/entry/1990_Page_102 (3)_36.png', 'cd1990/entry/1990_Page_102 (3)_37.png']",CRANSTON ST,"CULLCO COMMUNICATIONS 1424 Park Av, Cranston, RI (02920), Tels 946-3150, 942-0500"
+172,"SCORE LESS THAN CUTOFF: Burgess St,72,PROVIDENCE",['cd1990/entry/1990_Page_102 (3)_59.png'],BURNS ST,Hope John Settlement House 7 Burgess St
+173,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_103 (1)_24.png', 'cd1990/entry/1990_Page_103 (1)_25.png', 'cd1990/entry/1990_Page_103 (1)_26.png', 'cd1990/entry/1990_Page_103 (1)_27.png', 'cd1990/entry/1990_Page_103 (1)_28.png']","02906),","COMFACS INC COMPUTER FACILITIES SUPPORT One Richmond Sq (02906), Tel (401) 521-6330"
+174,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_103 (1)_30.png'],N/A,Computer Telephone 2 Richmond Sq
+175,"SCORE LESS THAN CUTOFF: PUtnam Pike, Smithfield, RI,78.5,PROVIDENCE","['cd1990/entry/1990_Page_103 (1)_35.png', 'cd1990/entry/1990_Page_103 (1)_36.png', 'cd1990/entry/1990_Page_103 (1)_37.png']",SMITHFIELD AVE,"CUSTOM SYSTEM DESIGN 365 PUtnam Pike, Smithfield, RI (02917), Tel (401) 231-0260"
+176,"SCORE LESS THAN CUTOFF: Catamore Blvd,66.0,PROVIDENCE","['cd1990/entry/1990_Page_103 (1)_49.png', 'cd1990/entry/1990_Page_103 (1)_50.png', 'cd1990/entry/1990_Page_103 (1)_51.png']",SYCAMORE ST,"N C R CORPORATION 60 Catamore Blvd (East Providence; 02914), Tel 438-2600"
+177,"SCORE LESS THAN CUTOFF: Merrick St, PO Box 1713, Pawtucket,58.5,PROVIDENCE","['cd1990/entry/1990_Page_103 (2)_55.png', 'cd1990/entry/1990_Page_103 (2)_56.png', 'cd1990/entry/1990_Page_103 (2)_57.png']",PAWTUXET AV,"ROBERTS CONSTRUCTION 15 Merrick St, PO Box 1713, Pawtucket (02860), Tel 726-6730"
+178,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE",['cd1990/entry/1990_Page_103 (3)_20.png'],2ND ST,Allied Buying le Jackson Walkway Ste 12
+179,"SCORE LESS THAN CUTOFF: Merchant St,71.5,PROVIDENCE",['cd1990/entry/1990_Page_104 (1)_2.png'],AMERICA ST,Mc Govern Peter J 116 Merchant St (NP)
+180,"SCORE LESS THAN CUTOFF: Ferncliff Ave,72.0,PROVIDENCE",['cd1990/entry/1990_Page_104 (2)_79.png'],RADCLIFFE AVE,Mc Arthur Mich] D 27 Ferncliff Av (NP)
+181,"SCORE LESS THAN CUTOFF: Anderson Av, Warwick, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_104 (2)_86.png', 'cd1990/entry/1990_Page_104 (2)_87.png', 'cd1990/entry/1990_Page_104 (2)_88.png', 'cd1990/entry/1990_Page_104 (2)_89.png']",ANDERSON ST,"MONTGOMERY DONALD R CONTRACTOR 87 Anderson Av, Warwick, RI (02888), Tel (401) 467- 5863"
+182,"SCORE LESS THAN CUTOFF: Elmwood Av, Warwick, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_104 (3)_37.png', 'cd1990/entry/1990_Page_104 (3)_38.png', 'cd1990/entry/1990_Page_104 (3)_39.png']",ELMWOOD AVE,"SHEAN ASSOCIATES INC 1808 Elmwood Av, Warwick, RI (02888), Tels 781-7340, 781-7341"
+183,"SCORE LESS THAN CUTOFF: Merchant St,71.5,PROVIDENCE","['cd1990/entry/1990_Page_104 (3)_42.png', 'cd1990/entry/1990_Page_104 (3)_43.png']",AMERICA ST,Special T Construction Co 39 Merchant St (NP)
+184,"SCORE LESS THAN CUTOFF: Gaudet St,77.5,PROVIDENCE",['cd1990/entry/1990_Page_104 (3)_54.png'],MAUDE ST,Turchetti John 62 Gaudet St (NP)
+185,"SCORE LESS THAN CUTOFF: Oakleigh Ave,72.5,PROVIDENCE",['cd1990/entry/1990_Page_105 (1)_13.png'],OAKDALE AVE,Gaskin Timothy J 14 Oakleigh Av (NP)
+186,"SCORE LESS THAN CUTOFF: Merchant St,71.5,PROVIDENCE",['cd1990/entry/1990_Page_105 (1)_81.png'],AMERICA ST,Sechio Gilbert J 71 Merchant St (NP)
+187,"SCORE LESS THAN CUTOFF: Elmwood Av, Warwick, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_105 (2)_15.png', 'cd1990/entry/1990_Page_105 (2)_16.png', 'cd1990/entry/1990_Page_105 (2)_17.png']",ELMWOOD AVE,"SHEAN ASSOCIATES INC 1809 Elmwood Av, Warwick, RI (02888), Tels 781-7340, 781-7341"
+188,"SCORE LESS THAN CUTOFF: Industrial Way, Seekonk, Ma,78.5,PROVIDENCE","['cd1990/entry/1990_Page_106 (1)_6.png', 'cd1990/entry/1990_Page_106 (1)_7.png', 'cd1990/entry/1990_Page_106 (1)_8.png']",INDUSTRIAL DR,"Q A S INSULATION INC 60 Industrial Way, Seekonk, Ma (02771), Tel 336-8581"
+189,"SCORE LESS THAN CUTOFF: Redfern St,77.5,PROVIDENCE",['cd1990/entry/1990_Page_106 (1)_66.png'],FERN ST,Carpenter Roy 16 Redfern St (NP)
+190,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_106 (2)_4.png'],N/A,Four Seasons Paint Corp le Jackson Walkway
+191,"SCORE LESS THAN CUTOFF: Greenville Av, Johnston, R I,78.0,PROVIDENCE","['cd1990/entry/1990_Page_106 (2)_24.png', 'cd1990/entry/1990_Page_106 (2)_25.png']",GREENVILLE AVE,"MILLER CHAS CO 484 Greenville Av, Johnston, R I (02819), Tels 231-0680"
+192,"SCORE LESS THAN CUTOFF: Zipporah St,68.0,PROVIDENCE",['cd1990/entry/1990_Page_106 (2)_61.png'],BORAH ST,Sorbo John 29 Zipporah St (NP)
+193,"SCORE LESS THAN CUTOFF: Oak Grove Blvd,76.5,PROVIDENCE",['cd1990/entry/1990_Page_106 (2)_89.png'],GROVE ST,Olivieri Mario 1 Oak Grove Blvd (NP)
+194,"SCORE LESS THAN CUTOFF: Zambarano Ave,67.0,PROVIDENCE",['cd1990/entry/1990_Page_106 (3)_66.png'],MAURAN ST,Zambarano Edw V 24 Zambarano Av (NP)
+195,EMPTY STREET,"['cd1990/entry/1990_Page_107 (1)_30.png', 'cd1990/entry/1990_Page_107 (1)_31.png', 'cd1990/entry/1990_Page_107 (1)_32.png', 'cd1990/entry/1990_Page_107 (1)_33.png']",,"RHODE ISLAND VENTILATING CO INC Carrington St (Lincoln; 02865), Tel 723-8920"
+196,"SCORE LESS THAN CUTOFF: Waterman Av, East Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_107 (1)_47.png', 'cd1990/entry/1990_Page_107 (1)_48.png', 'cd1990/entry/1990_Page_107 (1)_49.png', 'cd1990/entry/1990_Page_107 (1)_50.png']",PROVIDENCE PL,"PURINGTON BUILDING SYSTEMS INC 870 Waterman Av, East Providence, RI (02914), Tel 438-0880"
+197,"SCORE LESS THAN CUTOFF: Edendale Ave,79,PROVIDENCE",['cd1990/entry/1990_Page_107 (2)_47.png'],VERNDALE AVE,Saint Thomas Convent 41 Edendale Av
+198,EMPTY STREET,['cd1990/entry/1990_Page_107 (2)_53.png'],,Sisters Of St Joseph 37 Jewett St
+199,"SCORE LESS THAN CUTOFF: Airport Rd,67,PROVIDENCE","['cd1990/entry/1990_Page_107 (3)_80.png', 'cd1990/entry/1990_Page_107 (3)_81.png', 'cd1990/entry/1990_Page_107 (3)_82.png']",ARBOR DR,"SASCHAS PLACE 95 Airport Rd (Warwick, RI; 02889), Tel (401) 7382- 5681"
+200,"SCORE LESS THAN CUTOFF: Armistice Blvd,61.0,PROVIDENCE","['cd1990/entry/1990_Page_108 (1)_6.png', 'cd1990/entry/1990_Page_108 (1)_7.png', 'cd1990/entry/1990_Page_108 (1)_8.png', 'cd1990/entry/1990_Page_108 (1)_9.png']",HARBORSIDE BLVD,"LANDLORDS CREDIT DATA SERVICE OF AMERICA INC 95 Armistice Blvd (Pawtucket; 02860), Tel (401) 723-1293"
+201,"SCORE LESS THAN CUTOFF: Midstate Dr, Auburn, Ma,59.5,PROVIDENCE","['cd1990/entry/1990_Page_108 (1)_14.png', 'cd1990/entry/1990_Page_108 (1)_15.png', 'cd1990/entry/1990_Page_108 (1)_16.png']",STATE HWY 10,"MERCHANTS REPORTING SERVICE 15 Midstate Dr, Auburn, Ma (01501), Tel (608) 832-9021"
+202,"SCORE LESS THAN CUTOFF: City Hall,72.5,PROVIDENCE","['cd1990/entry/1990_Page_108 (1)_23.png', 'cd1990/entry/1990_Page_108 (1)_24.png']",CITY VIEW CIR,Co-Op Municipal Employees Credit Union 108 City Hall
+203,"SCORE LESS THAN CUTOFF: Dexter St, Pawtucket, RI,64.5,PROVIDENCE","['cd1990/entry/1990_Page_108 (1)_39.png', 'cd1990/entry/1990_Page_108 (1)_40.png', 'cd1990/entry/1990_Page_108 (1)_41.png', 'cd1990/entry/1990_Page_108 (1)_42.png']",PAWTUXET AV,"EQUITABLE CREDIT UNION 20 Dexter St, Pawtucket, RI (02860), Tel 723-8500"
+204,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_108 (1)_51.png', 'cd1990/entry/1990_Page_108 (1)_52.png', 'cd1990/entry/1990_Page_108 (1)_53.png', 'cd1990/entry/1990_Page_108 (1)_54.png', 'cd1990/entry/1990_Page_108 (1)_55.png', 'cd1990/entry/1990_Page_108 (1)_56.png', 'cd1990/entry/1990_Page_108 (1)_57.png', 'cd1990/entry/1990_Page_108 (1)_58.png']","02895),","MARQUETTE CREDIT UNION Marquette Credit Union Plaza-Box H (Woonsocket; 02895), Tel 762-1400 (RI Toll Free 1-800-525-8333), 56 Railroad St (Manville; 02838), Tel 767-3510, 623 Broad St (Cumberland; 02864), Tel 724-2460"
+205,"SCORE LESS THAN CUTOFF: Federal Bidg Uspo,79.5,PROVIDENCE","['cd1990/entry/1990_Page_108 (1)_61.png', 'cd1990/entry/1990_Page_108 (1)_62.png']",FEDERAL WY,Providence Postal Employees Credit Union 105 Federal Bidg Uspo
+206,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_108 (2)_6.png'],N/A,SWAN POINT CEMETERY
+207,"SCORE LESS THAN CUTOFF: ) TLEEPHONE 272-1314,55.5,PROVIDENCE","['cd1990/entry/1990_Page_108 (2)_8.png', 'cd1990/entry/1990_Page_108 (2)_9.png', 'cd1990/entry/1990_Page_108 (2)_10.png']",STEPHANIE DR,585 BLACKSTONE BOULEVARD (02906) TLEEPHONE 272-1314
+208,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1990/entry/1990_Page_108 (2)_60.png'],4TH ST,Regency Mart le Jackson Walkway Ste 14
+209,"SCORE LESS THAN CUTOFF: PAWTUCKET AVENUE,70.0,PROVIDENCE","['cd1990/entry/1990_Page_108 (3)_18.png', 'cd1990/entry/1990_Page_108 (3)_19.png', 'cd1990/entry/1990_Page_108 (3)_20.png', 'cd1990/entry/1990_Page_108 (3)_21.png']",PAWTUXET AV,AUTOMATIC DATA PROCESSING 2290 PAWTUCKET AVENUE (02914) TELEPHONE 438-9740
+210,EMPTY STREET,['cd1990/entry/1990_Page_108 (3)_43.png'],,Beasley Willie Mae qi9 Wiggin-Van Slyck Ct
+211,"SCORE LESS THAN CUTOFF: Burgess St,72,PROVIDENCE",['cd1990/entry/1990_Page_108 (3)_61.png'],BURNS ST,Hope John Day Care Center 7 Burgess St
+212,"SCORE LESS THAN CUTOFF: Charles St, N Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_109 (1)_44.png', 'cd1990/entry/1990_Page_109 (1)_45.png', 'cd1990/entry/1990_Page_109 (1)_46.png', 'cd1990/entry/1990_Page_109 (1)_47.png']",PROVIDENCE PL,"ARISTOCRAT DENTAL LABORATORY INC 868 Charles St, N Providence, RI (02904), Tel (401) 728-0486"
+213,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_109 (2)_78.png', 'cd1990/entry/1990_Page_109 (2)_79.png']",N/A,Poompanich Thongchai le Jackson Walkway Ste 7
+214,"SCORE LESS THAN CUTOFF: INC,75,PROVIDENCE",['cd1990/entry/1990_Page_110 (1)_2.png'],FINCH AVE,C18 INC (COUNTER
+215,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_110 (1)_4.png'],"02805),","California St (02805), Tel 726-6280"
+216,"SCORE LESS THAN CUTOFF: ELLIOT STREET,73.5,PROVIDENCE","['cd1990/entry/1990_Page_110 (1)_38.png', 'cd1990/entry/1990_Page_110 (1)_39.png']",ELIOT AVE,POLK R L & CO 385 ELLIOT STREET
+217,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_110 (1)_41.png', 'cd1990/entry/1990_Page_110 (1)_42.png']",02164),(02164) TELEPHONE (617) 965-6113
+218,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_110 (1)_44.png'],N/A,POLK R L & CO
+219,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE","['cd1990/entry/1990_Page_110 (1)_46.png', 'cd1990/entry/1990_Page_110 (1)_47.png', 'cd1990/entry/1990_Page_110 (1)_48.png']",8TH ST,"800 COMMERCIAL STREET MALDEN, MA 02148 TELEPHONE (617) 322-0500"
+220,"SCORE LESS THAN CUTOFF: -233-5710,41.5,PROVIDENCE",['cd1990/entry/1990_Page_110 (1)_66.png'],10TH ST,1-600-233-5710
+221,"SCORE LESS THAN CUTOFF: Exchange St, Pawtucket, RI,63.0,PROVIDENCE","['cd1990/entry/1990_Page_110 (2)_31.png', 'cd1990/entry/1990_Page_110 (2)_32.png', 'cd1990/entry/1990_Page_110 (2)_33.png', 'cd1990/entry/1990_Page_110 (2)_34.png']",PAWTUXET AV,"CANINE EMPORIUM & TRAINING CENTER 58 Exchange St, Pawtucket, RI (02860), Tel (401) 723-PETS"
+222,EMPTY STREET,"['cd1990/entry/1990_Page_110 (3)_3.png', 'cd1990/entry/1990_Page_110 (3)_4.png']",,"219 Manton Av (02908), Tel 351- 9307"
+223,"SCORE LESS THAN CUTOFF: Warren Av, PO Box 4114, E Providence, RI,71.0,PROVIDENCE","['cd1990/entry/1990_Page_110 (3)_26.png', 'cd1990/entry/1990_Page_110 (3)_27.png', 'cd1990/entry/1990_Page_110 (3)_28.png', 'cd1990/entry/1990_Page_110 (3)_29.png']",PROVIDENCE PL,"DUNRITE DRYWALL SYSTEMS INC 689 Warren Av, PO Box 4114, E Providence, RI (02914), Tels (401) 488-8863, (617) 336-4125"
+224,"SCORE LESS THAN CUTOFF: MELROSE STREET PROVIDENCE R I,76.0,PROVIDENCE","['cd1990/entry/1990_Page_110 (3)_54.png', 'cd1990/entry/1990_Page_110 (3)_55.png', 'cd1990/entry/1990_Page_110 (3)_56.png', 'cd1990/entry/1990_Page_110 (3)_57.png', 'cd1990/entry/1990_Page_110 (3)_58.png']",PROVIDENCE PL,NARRAGANSETT ELECTRIC COMPANY  280 MELROSE STREET PROVIDENCE R I (02907)
+225,"SCORE LESS THAN CUTOFF: ) 941-1400,41.5,PROVIDENCE",['cd1990/entry/1990_Page_110 (3)_60.png'],10TH ST,(401) 941-1400
+226,"SCORE LESS THAN CUTOFF: ELECTRIC MOTORS AND,52.0,PROVIDENCE","['cd1990/entry/1990_Page_110 (3)_62.png', 'cd1990/entry/1990_Page_110 (3)_63.png']",LECIA DR,781-0100 ELECTRIC MOTORS AND
+227,EMPTY STREET,"['cd1990/entry/1990_Page_111 (1)_4.png', 'cd1990/entry/1990_Page_111 (1)_5.png', 'cd1990/entry/1990_Page_111 (1)_6.png']",9047 ,"ENGINEERING AID CO INC PO Box 9047 (Pawtucket, RI; 02862), Tel (401) 724-7241"
+228,"SCORE LESS THAN CUTOFF: Reservoir Av, Providence, R I,77.5,PROVIDENCE","['cd1990/entry/1990_Page_111 (1)_67.png', 'cd1990/entry/1990_Page_111 (1)_68.png', 'cd1990/entry/1990_Page_111 (1)_69.png', 'cd1990/entry/1990_Page_111 (1)_70.png']",PROVIDENCE PL,"TOWER MANUFACTURING CORP 25 Reservoir Av, Providence, R I (20807), Tel (401) 467-7550"
+229,"SCORE LESS THAN CUTOFF: Eastern Av, PO Box 4158, East Providence,71.0,PROVIDENCE","['cd1990/entry/1990_Page_111 (2)_32.png', 'cd1990/entry/1990_Page_111 (2)_33.png', 'cd1990/entry/1990_Page_111 (2)_34.png', 'cd1990/entry/1990_Page_111 (2)_35.png']",PROVIDENCE ST,"EVANS FINDINGS CO INC 38 Eastern Av, PO Box 4158, East Providence (02914-4158), Tel (401) 434-5600, FAX (401) 434-6908"
+230,"SCORE LESS THAN CUTOFF: Woonasquatucket Av, North Providence, RI,78.5,PROVIDENCE","['cd1990/entry/1990_Page_111 (2)_37.png', 'cd1990/entry/1990_Page_111 (2)_38.png', 'cd1990/entry/1990_Page_111 (2)_39.png']",WOONASQUATUCKET AV,"GORDONS ELECTRONICS 121 Woonasquatucket Av, North Providence, RI (02911), Tel 353-1860"
+231,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_111 (2)_42.png', 'cd1990/entry/1990_Page_111 (2)_43.png', 'cd1990/entry/1990_Page_111 (2)_44.png']","02876),","PHILIPS COMPONENTS Providence Pike, Slatersville, RI (02876), Tels 762-3800 And 762-9000"
+232,"SCORE LESS THAN CUTOFF: Sockanosesect Cross Road, Cranston,50.5,PROVIDENCE","['cd1990/entry/1990_Page_111 (3)_12.png', 'cd1990/entry/1990_Page_111 (3)_13.png', 'cd1990/entry/1990_Page_111 (3)_14.png', 'cd1990/entry/1990_Page_111 (3)_15.png']",POCASSET AVE,"ALTERNATIVE PLACEMENT RESOURCES INC 68 Sockanosesect Cross Road, Cranston (02910), Tel (401) 463-3260"
+233,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_111 (3)_21.png'],N/A,Career Consultants le Jackson Walkway Ste 4
+234,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_111 (3)_52.png', 'cd1990/entry/1990_Page_111 (3)_53.png']",4TH ST,Providence Exec Cntr (Div Of Natl Exec Cntrs Inc) One Hosp Trust Plaza 19th Fl
+235,"SCORE LESS THAN CUTOFF: Jefferson Blvd, Warwick, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_111 (3)_79.png', 'cd1990/entry/1990_Page_111 (3)_80.png', 'cd1990/entry/1990_Page_111 (3)_81.png', 'cd1990/entry/1990_Page_111 (3)_82.png', 'cd1990/entry/1990_Page_111 (3)_83.png', 'cd1990/entry/1990_Page_111 (3)_84.png', 'cd1990/entry/1990_Page_111 (3)_85.png', 'cd1990/entry/1990_Page_111 (3)_86.png', 'cd1990/entry/1990_Page_111 (3)_87.png']",JEFFERSON ST,"KELLY TEMPORARY SERVICES INC 70 Jefferson Blvd, Warwick, RI (02888-1057), Tel (401) 467-2100, 260 Center St, Suite 3, Middleboro, Ma (02346-2235), Tel (508) 947-7666, 52 Exchange St, Pawtucket, RI (02862- 0488), Tel (401) 727-1166, 1010 Grand Army Hwy, Swansea, Ma"
+236,"SCORE LESS THAN CUTOFF: -4501),,29.0,PROVIDENCE",['cd1990/entry/1990_Page_111 (3)_88.png'],I 95,"(02777-4501), Tel (508) 674-4627,"
+237,"SCORE LESS THAN CUTOFF: -9999),,29.0,PROVIDENCE","['cd1990/entry/1990_Page_111 (3)_90.png', 'cd1990/entry/1990_Page_111 (3)_91.png']",I 95,"St, Lower Level, Woonsocket, RI (02895-9999), Tel (401) 769-7010"
+238,"SCORE LESS THAN CUTOFF: Oak St, No B-2,69.0,PROVIDENCE","['cd1990/entry/1990_Page_112 (1)_28.png', 'cd1990/entry/1990_Page_112 (1)_29.png']",OAK ST,"T D EPOXY 230 Oak St, No B-2 (02909), Tel (401) 831-9290"
+239,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1990/entry/1990_Page_112 (1)_58.png', 'cd1990/entry/1990_Page_112 (1)_59.png']",10TH ST,Camp Dresser & Mc Kee Inc One Hosp Trust Plaza Rm 1030
+240,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_112 (1)_75.png'],N/A,MAGUIRE C E INC
+241,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_112 (1)_77.png', 'cd1990/entry/1990_Page_112 (1)_78.png', 'cd1990/entry/1990_Page_112 (1)_79.png']",029038),(029038) TELEPHONE 272-6000 FAX (401) 272-9185
+242,"SCORE LESS THAN CUTOFF: D Apt 11,53.5,PROVIDENCE","['cd1990/entry/1990_Page_112 (1)_85.png', 'cd1990/entry/1990_Page_112 (1)_86.png']",DART ST,Snyder David H 1776 Bicentennial Way (NP) Bldg D Apt 11
+243,EMPTY STREET,"['cd1990/entry/1990_Page_112 (2)_3.png', 'cd1990/entry/1990_Page_112 (2)_4.png']",4 ,"84 Pontiac Av, Rm 4 (02907), Tel 941-2510"
+244,"SCORE LESS THAN CUTOFF: Cranston St, Cranston, RI,76.0,PROVIDENCE","['cd1990/entry/1990_Page_112 (2)_7.png', 'cd1990/entry/1990_Page_112 (2)_8.png', 'cd1990/entry/1990_Page_112 (2)_9.png', 'cd1990/entry/1990_Page_112 (2)_10.png']",CRANSTON ST,"ZAINO F N & ASSOCIATES INC 1040 Cranston St, Cranston, RI (02920), Tel (401) 944-9650, FAX (401) 946-5590, WATS 1-800-431-8888"
+245,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE","['cd1990/entry/1990_Page_112 (2)_64.png', 'cd1990/entry/1990_Page_112 (2)_65.png']",I 95,Stuart Ralph Music Inc le Jackson Walkway Ste 19
+246,EMPTY STREET,"['cd1990/entry/1990_Page_112 (3)_18.png', 'cd1990/entry/1990_Page_112 (3)_19.png', 'cd1990/entry/1990_Page_112 (3)_20.png', 'cd1990/entry/1990_Page_112 (3)_21.png']",,"BUSINESS & ESTATE PLANNING SERVICES $370 Atwood Av (Cranston; 02920), Tels (401) 275-5050, (401) 275-5060"
+247,"SCORE LESS THAN CUTOFF: Hospital Trust Plaza,78,PROVIDENCE","['cd1990/entry/1990_Page_112 (3)_23.png', 'cd1990/entry/1990_Page_112 (3)_24.png', 'cd1990/entry/1990_Page_112 (3)_25.png', 'cd1990/entry/1990_Page_112 (3)_26.png', 'cd1990/entry/1990_Page_112 (3)_27.png', 'cd1990/entry/1990_Page_112 (3)_28.png', 'cd1990/entry/1990_Page_112 (3)_29.png', 'cd1990/entry/1990_Page_112 (3)_30.png', 'cd1990/entry/1990_Page_112 (3)_31.png']",HOSPITAL ST,"RHODE ISLAND HOSPITAL TRUST NATIONAL BANK 1 Hospital Trust Plaza (02903), Tel 278-8454, 10 Dorrance St, Tel 278- 8100 (02903), 238 Thayer St (02908), Tel 278-8138, 501 N Main St (02904), Tel 278-8090, Rhode Island Hospital Office, 593 Eddy St"
+248,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_112 (3)_32.png'],"02902),","(02902), Tel 276-1330, Providence"
+249,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_112 (3)_33.png'],N/A,"College Office, Slavin Center"
+250,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_112 (3)_34.png'],"02918),","(02918), Tel 276-1354, Atwells"
+251,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_112 (3)_36.png'],"02903),","(02903), Tel 421-3244, Charles Street"
+252,"SCORE LESS THAN CUTOFF: Elmgrove Avenue Office,,76.5,PROVIDENCE",['cd1990/entry/1990_Page_112 (3)_38.png'],ELMGROVE AVE,"751-9260 Elmgrove Avenue Office,"
+253,EMPTY STREET,['cd1990/entry/1990_Page_112 (3)_39.png'],,"131 Elmgrove Av (02906), Tel 751-"
+254,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1990/entry/1990_Page_112 (3)_40.png'],I 95,"9220, Smith Street Office, 1025"
+255,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_112 (3)_41.png'],"02908),","Smith St (02908), Tel 274-1025"
+256,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_113 (1)_41.png', 'cd1990/entry/1990_Page_113 (1)_42.png']",4TH ST,Rhode Island Escrow One Hosp Trust Plaza 19th Fl
+257,"SCORE LESS THAN CUTOFF: WAMPANOAG TRAIL,60.5,PROVIDENCE","['cd1990/entry/1990_Page_113 (1)_45.png', 'cd1990/entry/1990_Page_113 (1)_46.png', 'cd1990/entry/1990_Page_113 (1)_47.png', 'cd1990/entry/1990_Page_113 (1)_48.png']",AMANA DR,DUN & BRADSTREET 1275 WAMPANOAG TRAIL (EAST PROVIDENCE 02915) TELEPHONE (401) 488-4600
+258,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_113 (1)_64.png', 'cd1990/entry/1990_Page_113 (1)_65.png', 'cd1990/entry/1990_Page_113 (1)_66.png', 'cd1990/entry/1990_Page_113 (1)_67.png']","02903),","GOFF ROBERT H JR/CPA/APFS One Turks Head Place (02903), Tel (401) 861-9010"
+259,"SCORE LESS THAN CUTOFF: C,50.0,PROVIDENCE","['cd1990/entry/1990_Page_113 (1)_68.png', 'cd1990/entry/1990_Page_113 (1)_69.png', 'cd1990/entry/1990_Page_113 (1)_70.png']",CYR ST,"GUARDIAN THE 250 Centerville Rd, Bldg C (Warwick, RI; 02886), Tel (401) 737-2880"
+260,"SCORE LESS THAN CUTOFF: Mineral Spring Av, N Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_113 (2)_24.png', 'cd1990/entry/1990_Page_113 (2)_25.png', 'cd1990/entry/1990_Page_113 (2)_26.png', 'cd1990/entry/1990_Page_113 (2)_27.png']",PROVIDENCE PL,"STATE RHODE ISLAND FIRE MARSHAL 1270 Mineral Spring Av, N Providence, RI (02904), Tel 277- 2335"
+261,"SCORE LESS THAN CUTOFF: Wollet Ave,73.0,PROVIDENCE","['cd1990/entry/1990_Page_113 (3)_29.png', 'cd1990/entry/1990_Page_113 (3)_30.png', 'cd1990/entry/1990_Page_113 (3)_31.png']",WOLFE ST,"DEES FLORIST & GIFTS 198 Wollet Av (Riverside, RI; 02915), Tel 437- 0692"
+262,"SCORE LESS THAN CUTOFF: Jackson Walkway, Regency West, Suite 9,79.5,PROVIDENCE","['cd1990/entry/1990_Page_113 (3)_39.png', 'cd1990/entry/1990_Page_113 (3)_40.png', 'cd1990/entry/1990_Page_113 (3)_41.png']",JACKSON WALKWAY,"FLOWER BOUTIQUE 2 Jackson Walkway, Regency West, Suite 9 (02904), Tel 272-3113"
+263,"SCORE LESS THAN CUTOFF: Main Av, Warwick, RI,78.0,PROVIDENCE","['cd1990/entry/1990_Page_113 (3)_52.png', 'cd1990/entry/1990_Page_113 (3)_53.png', 'cd1990/entry/1990_Page_113 (3)_54.png']",WARWICK AV,"GREENWOOD FLOWER & GARDEN INC 782 Main Av, Warwick, RI (02886), Tel (401) 739-8290"
+264,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_44.png'],N/A,Alpha Delta Phi Wriston Quadrangle
+265,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_45.png'],N/A,Alpha Pi Lambda Phi Wriston Quadrangle
+266,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_46.png'],N/A,Beta Theta Pi Wriston Quadrangle
+267,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_48.png'],N/A,Delta Phi Omega Wriston Quadrangle
+268,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_49.png'],N/A,Delta Upsilon Wriston Quadrangle
+269,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_50.png'],N/A,Lambda Chi Alpha Wriston Quadrangle
+270,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_51.png'],N/A,Lambda Sigma Nu Wriston Quadrangle
+271,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_52.png'],N/A,Phi Delta Beta Wriston Quadrangle
+272,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_53.png'],N/A,Phi Kappa PSi Wriston Quadrangle
+273,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_54.png'],N/A,Theta Delta Chi Wriston Quadrangle
+274,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_114 (1)_55.png'],N/A,Zeta PSi Wriston Quadrangle
+275,"SCORE LESS THAN CUTOFF: Tag Drive,71.5,PROVIDENCE","['cd1990/entry/1990_Page_114 (2)_15.png', 'cd1990/entry/1990_Page_114 (2)_16.png', 'cd1990/entry/1990_Page_114 (2)_17.png']",WEST RIVER ST,"BRENNAN OIL & HEATING CO INC 9 Tag Drive (N Providence; 02911), Tel 353-4210"
+276,"SCORE LESS THAN CUTOFF: Cranberry St,75.5,PROVIDENCE",['cd1990/entry/1990_Page_114 (2)_19.png'],CRARY ST,Delaine Oil Co Inc 15 Cranberry St (NP)
+277,"SCORE LESS THAN CUTOFF: S BROADWAY EAST PROVIDENCE RI,74.0,PROVIDENCE","['cd1990/entry/1990_Page_114 (2)_26.png', 'cd1990/entry/1990_Page_114 (2)_27.png', 'cd1990/entry/1990_Page_114 (2)_28.png', 'cd1990/entry/1990_Page_114 (2)_29.png', 'cd1990/entry/1990_Page_114 (2)_30.png']",PROVIDENCE PL,EAST PROVIDENCE FUEL OIL CO 1015 S BROADWAY EAST PROVIDENCE RI (02914) TELEPHONE 434-1160
+278,"SCORE LESS THAN CUTOFF: Whelden Av, E Providence, RI,76.0,PROVIDENCE","['cd1990/entry/1990_Page_114 (2)_41.png', 'cd1990/entry/1990_Page_114 (2)_42.png', 'cd1990/entry/1990_Page_114 (2)_43.png']",PROVIDENCE PL,"SAVARD OIL CO 29 Whelden Av, E Providence, RI (02914), Tel 438-5622"
+279,EMPTY STREET,"['cd1990/entry/1990_Page_114 (2)_55.png', 'cd1990/entry/1990_Page_114 (2)_56.png', 'cd1990/entry/1990_Page_114 (2)_57.png', 'cd1990/entry/1990_Page_114 (2)_58.png', 'cd1990/entry/1990_Page_114 (2)_59.png']",,CATHOLIC CHARITY FUND APPEAL 80 ST MARY DRIVE CRANSTON RI (02920) TELEPHONE 943-6550
+280,"SCORE LESS THAN CUTOFF: Hope St, Corner Doyle Av,,58.5,PROVIDENCE","['cd1990/entry/1990_Page_114 (3)_41.png', 'cd1990/entry/1990_Page_114 (3)_42.png', 'cd1990/entry/1990_Page_114 (3)_43.png', 'cd1990/entry/1990_Page_114 (3)_44.png']",CORNPLANTER ROW,"SUGARMAN MAX FUNERAL HOME 458 Hope St, Corner Doyle Av, Tel 331-8094"
+281,"SCORE LESS THAN CUTOFF: Douglas Av, North Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_115 (1)_61.png', 'cd1990/entry/1990_Page_115 (1)_62.png']",PROVIDENCE PL,"SALS FURNITURE 1251 Douglas Av, North Providence, RI (02904)"
+282,EMPTY STREET,['cd1990/entry/1990_Page_115 (2)_22.png'],,Denny W E Petrolane Fields Point Dr
+283,"SCORE LESS THAN CUTOFF: Northsmith Field,64.5,PROVIDENCE","['cd1990/entry/1990_Page_115 (3)_59.png', 'cd1990/entry/1990_Page_115 (3)_60.png', 'cd1990/entry/1990_Page_115 (3)_61.png', 'cd1990/entry/1990_Page_115 (3)_62.png', 'cd1990/entry/1990_Page_115 (3)_63.png']",SMITH HILL ST,"COMTORGAGE CORPORATION 53 Northsmith Field (NS), Industrial Drive, Slatersville, RI (02876), Tel (401) 765-0900, FAX 765-2846"
+284,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_116 (1)_21.png', 'cd1990/entry/1990_Page_116 (1)_22.png']",N/A,Esthers Cards & Gifts One Hosp Trust Plaza Ist Fl
+285,"SCORE LESS THAN CUTOFF: Baird Av, North Providence, RI,77.0,PROVIDENCE","['cd1990/entry/1990_Page_116 (2)_3.png', 'cd1990/entry/1990_Page_116 (2)_4.png', 'cd1990/entry/1990_Page_116 (2)_5.png']",PROVIDENCE PL,"NORTH PROVIDENCE GLASS & ALUMINUM 112 Baird Av, North Providence, RI (02904), Tel 725-0110"
+286,"SCORE LESS THAN CUTOFF: Industrial Way, Seekonk, Ma,78.5,PROVIDENCE","['cd1990/entry/1990_Page_117 (2)_44.png', 'cd1990/entry/1990_Page_117 (2)_45.png', 'cd1990/entry/1990_Page_117 (2)_46.png']",INDUSTRIAL DR,"GUTTER KING THE 50 Industrial Way, Seekonk, Ma (02771), Tel 336-8581"
+287,"SCORE LESS THAN CUTOFF: Cabot St,77,PROVIDENCE",['cd1990/entry/1990_Page_117 (3)_28.png'],TALBOT ST,Wheeler Memorial Hall 15 Cabot St
+288,"SCORE LESS THAN CUTOFF: Park Av, Cranston, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_117 (3)_38.png', 'cd1990/entry/1990_Page_117 (3)_39.png', 'cd1990/entry/1990_Page_117 (3)_40.png', 'cd1990/entry/1990_Page_117 (3)_41.png', 'cd1990/entry/1990_Page_117 (3)_42.png']",CRANSTON ST,"ARMENS HARDWARE CO INC 1010 Park Av, Cranston, RI (02910), Tel 943-1020, 765 Broad St (02907), Tel 941-3600"
+289,"SCORE LESS THAN CUTOFF: Pocasset St, Johnston, RI,76.0,PROVIDENCE","['cd1990/entry/1990_Page_118 (1)_2.png', 'cd1990/entry/1990_Page_118 (1)_3.png', 'cd1990/entry/1990_Page_118 (1)_4.png']",POCASSET AVE,"LANGELLA SUPPLY CO 75 Pocasset St, Johnston, RI (02919), Tel 943- 8270"
+290,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_118 (1)_31.png'],N/A,PROVIDENCE AMBULATORY HEALTH
+291,"SCORE LESS THAN CUTOFF: Mineral Spring Av, North Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_118 (1)_48.png', 'cd1990/entry/1990_Page_118 (1)_49.png', 'cd1990/entry/1990_Page_118 (1)_50.png', 'cd1990/entry/1990_Page_118 (1)_51.png']",PROVIDENCE PL,"HOLIDAY HEALTH FITNESS CENTER Mini Mall, 1920 Mineral Spring Av, North Providence, RI (02904), Tel (401) 353-9230"
+292,"SCORE LESS THAN CUTOFF: Boyd Av, PO Box 4406, East Providence, RI,71.5,PROVIDENCE","['cd1990/entry/1990_Page_118 (2)_17.png', 'cd1990/entry/1990_Page_118 (2)_18.png', 'cd1990/entry/1990_Page_118 (2)_19.png']",PROVIDENCE PL,"ENERGY SYSTEMS CORP 72 Boyd Av, PO Box 4406, East Providence, RI (02914), Tel 434-0200"
+293,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_118 (3)_3.png', 'cd1990/entry/1990_Page_118 (3)_4.png', 'cd1990/entry/1990_Page_118 (3)_5.png']","02906),","INC One Richmond Square (02906), Tel (401) 751-0360"
+294,"SCORE LESS THAN CUTOFF: Toll Gate Rd,65.5,PROVIDENCE","['cd1990/entry/1990_Page_118 (3)_51.png', 'cd1990/entry/1990_Page_118 (3)_52.png', 'cd1990/entry/1990_Page_118 (3)_53.png', 'cd1990/entry/1990_Page_118 (3)_54.png']",TALL OAKS CT,"KENT COUNTY MEMORIAL HOSPITAL 455 Toll Gate Rd (Warwick, RI; 02886), Tel (401) 737- 7000"
+295,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_119 (1)_1.png'],N/A,i HOSPITALS-CONTD
+296,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_119 (1)_4.png', 'cd1990/entry/1990_Page_119 (1)_5.png', 'cd1990/entry/1990_Page_119 (1)_6.png', 'cd1990/entry/1990_Page_119 (1)_7.png']",N/A,"Public Relations Department Tel 456-2090 Fund Development & Memorial Gifts Tel 456-2020, Social Services Tel 456-2190"
+297,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_119 (1)_38.png', 'cd1990/entry/1990_Page_119 (1)_39.png']","02903),","OMNI BILTMORE HOTEL Kennedy Plaza (02903), Tel 421-0700"
+298,"SCORE LESS THAN CUTOFF: Elmwood Av, PO Box 10309, Cranston, RI,68.5,PROVIDENCE","['cd1990/entry/1990_Page_119 (3)_2.png', 'cd1990/entry/1990_Page_119 (3)_3.png', 'cd1990/entry/1990_Page_119 (3)_4.png', 'cd1990/entry/1990_Page_119 (3)_5.png']",CRANSTON ST,"FIRST-IN IMPORTS INC 1655 Elmwood Av, PO Box 10309, Cranston, RI (02910), Tel (401) 461- 7400, FAX (401) 461-3640"
+299,"SCORE LESS THAN CUTOFF: Warwick Av, Warwick, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_119 (3)_33.png', 'cd1990/entry/1990_Page_119 (3)_34.png', 'cd1990/entry/1990_Page_119 (3)_35.png', 'cd1990/entry/1990_Page_119 (3)_36.png']",WARWICK AV,"BRUNT INDUSTRIAL SUPPLY INC 905 Warwick Av, Warwick, RI (02888), Tel (401) 781-6400, FAX (401) 781-6402"
+300,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE",['cd1990/entry/1990_Page_119 (3)_68.png'],4TH ST,"National Information Surety Corp One Hosp
+Trust Plaza 19th Fl"
+301,"SCORE LESS THAN CUTOFF: Industrial Way, Seekonk, Ma,78.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (1)_3.png', 'cd1990/entry/1990_Page_120 (1)_4.png', 'cd1990/entry/1990_Page_120 (1)_5.png']",INDUSTRIAL DR,"Q@ A S INSULATION INC ~ 80 Industrial Way, Seekonk, Ma (02771), Tel 336-8581"
+302,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (1)_7.png', 'cd1990/entry/1990_Page_120 (1)_8.png', 'cd1990/entry/1990_Page_120 (1)_9.png', 'cd1990/entry/1990_Page_120 (1)_10.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+303,"SCORE LESS THAN CUTOFF: Dorrance St, Suite 910, Providence, RI,73.0,PROVIDENCE","['cd1990/entry/1990_Page_120 (1)_51.png', 'cd1990/entry/1990_Page_120 (1)_52.png', 'cd1990/entry/1990_Page_120 (1)_53.png']",PROVIDENCE PL,"BURNS & COTTER INC 10 Dorrance St, Suite 910, Providence, RI (02908), Tel (401) 421-0100"
+304,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_120 (2)_19.png'],N/A,HALL FRANK B & CO OF RI
+305,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_120 (2)_21.png'],N/A,1600 FLEET NATIONAL BANK
+306,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_120 (2)_23.png', 'cd1990/entry/1990_Page_120 (2)_24.png']",02903),111 WESTMINSTER STREET (02903) TELEPHONE 331-7700
+307,"SCORE LESS THAN CUTOFF: Angell St, PO Box 6287,72.0,PROVIDENCE","['cd1990/entry/1990_Page_120 (2)_29.png', 'cd1990/entry/1990_Page_120 (2)_30.png', 'cd1990/entry/1990_Page_120 (2)_31.png', 'cd1990/entry/1990_Page_120 (2)_32.png']",ANGELL RD,"INSURANCE UNDERWRITERS INC 211 Angell St, PO Box 6287 (02906), Tel 273-4100"
+308,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_120 (2)_61.png'],N/A,MEDICAL MALPRACTICE JOINT
+309,"SCORE LESS THAN CUTOFF: Bignall St, Warwick, RI,52.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (2)_63.png', 'cd1990/entry/1990_Page_120 (2)_64.png', 'cd1990/entry/1990_Page_120 (2)_65.png', 'cd1990/entry/1990_Page_120 (2)_66.png', 'cd1990/entry/1990_Page_120 (2)_67.png']",BINGLEY TERR,"RHODE ISLAND 100 Bignall St, Warwick, RI (02888), Tels (401) 461- 8840 (Underwriting), (401) 941-7880 (Claims), (401) 461-8845 (FAX), 1-800- 822-6658"
+310,"SCORE LESS THAN CUTOFF: Wampanoag Trail,60.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (2)_72.png', 'cd1990/entry/1990_Page_120 (2)_73.png', 'cd1990/entry/1990_Page_120 (2)_74.png', 'cd1990/entry/1990_Page_120 (2)_75.png', 'cd1990/entry/1990_Page_120 (2)_76.png']",AMANA DR,"METROPOLITAN INSURANCE COMPANIES 1865 Wampanoag Trail (02915), Tel 433-4700"
+311,"SCORE LESS THAN CUTOFF: Mineral Spring, North Providence,74.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (3)_2.png', 'cd1990/entry/1990_Page_120 (3)_3.png']",PROVIDENCE ST,"CO 18380 Mineral Spring, North Providence (02904), Tel 353-6930"
+312,"SCORE LESS THAN CUTOFF: Sockanosset Crossroad, Cranston, RI,54.0,PROVIDENCE","['cd1990/entry/1990_Page_120 (3)_7.png', 'cd1990/entry/1990_Page_120 (3)_8.png', 'cd1990/entry/1990_Page_120 (3)_9.png', 'cd1990/entry/1990_Page_120 (3)_10.png']",POCASSET AVE,"MUTUAL/UNITED OF OMAHA 105 Sockanosset Crossroad, Cranston, RI (02920), Tel 944-7600"
+313,"SCORE LESS THAN CUTOFF: Jefferson Blvd, PO Box 6880, Warwick, RI,69.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (3)_11.png', 'cd1990/entry/1990_Page_120 (3)_12.png', 'cd1990/entry/1990_Page_120 (3)_13.png', 'cd1990/entry/1990_Page_120 (3)_14.png']",JEFFERSON ST,"N I F SERVICES OF NEW ENGLAND INC 10 Jefferson Blvd, PO Box 6880, Warwick, RI (02887), Tel (401) 941-1200"
+314,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_120 (3)_23.png', 'cd1990/entry/1990_Page_120 (3)_24.png', 'cd1990/entry/1990_Page_120 (3)_25.png', 'cd1990/entry/1990_Page_120 (3)_26.png']","02903),","NEW YORK LIFE INSURANCE CO One Smith Hill (02903), Tel 521- 2200"
+315,EMPTY STREET,"['cd1990/entry/1990_Page_120 (3)_28.png', 'cd1990/entry/1990_Page_120 (3)_29.png', 'cd1990/entry/1990_Page_120 (3)_30.png']",,"NORTHWESTERN MUTUAL LIFE INSURANCE One Custom House St (02903), Tel 331-8300"
+316,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_120 (3)_31.png'],N/A,OLERIO JOSEPH JR INSURANCE
+317,"SCORE LESS THAN CUTOFF: Reservoir Av, Cranston, RI,77.5,PROVIDENCE","['cd1990/entry/1990_Page_120 (3)_33.png', 'cd1990/entry/1990_Page_120 (3)_34.png', 'cd1990/entry/1990_Page_120 (3)_35.png']",RESERVOIR AVE,"INVESTMENT AGENCY 900 Reservoir Av, Cranston, RI (02910), Tel (401) 946-0900"
+318,"SCORE LESS THAN CUTOFF: d,50,PROVIDENCE","['cd1990/entry/1990_Page_121 (1)_3.png', 'cd1990/entry/1990_Page_121 (1)_4.png']",ADA ST,Travelers Insurance Co The 2d Fl One Empire Plaza
+319,"SCORE LESS THAN CUTOFF: Lafayette St, Pawtucket, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_121 (1)_20.png', 'cd1990/entry/1990_Page_121 (1)_21.png', 'cd1990/entry/1990_Page_121 (1)_22.png']",LAFAYETTE ST,"YOUNG & PAIGE INSURANCE INC 100 Lafayette St, Pawtucket, RI (02860), Tel (401) 728-3940"
+320,"SCORE LESS THAN CUTOFF: Lavan St, Warwick, RI,77.0,PROVIDENCE","['cd1990/entry/1990_Page_121 (1)_31.png', 'cd1990/entry/1990_Page_121 (1)_32.png', 'cd1990/entry/1990_Page_121 (1)_33.png', 'cd1990/entry/1990_Page_121 (1)_34.png']",WARWICK AV,"ANDERTON INSURANCE AGENCY INC 166 Lavan St, Warwick, RI (02888), Tel 467-4575, FAX 461-6040"
+321,"SCORE LESS THAN CUTOFF: Katherine Dr, Johnston, RI,77.5,PROVIDENCE","['cd1990/entry/1990_Page_121 (1)_35.png', 'cd1990/entry/1990_Page_121 (1)_36.png', 'cd1990/entry/1990_Page_121 (1)_37.png']",KATHERINE DR,"CARROCCIO RALPH INSURANCE 8 Katherine Dr, Johnston, RI (02919), Tel 231-1227"
+322,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_121 (1)_44.png', 'cd1990/entry/1990_Page_121 (1)_45.png']",N/A,AFFILIATED FM INSURANCE COMPANY
+323,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_121 (1)_50.png', 'cd1990/entry/1990_Page_121 (1)_51.png']",N/A,ALLENDALE MUTUAL INSURANCE COMPANY
+324,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_121 (1)_56.png', 'cd1990/entry/1990_Page_121 (1)_57.png']",N/A,AMICA MUTUAL INSURANCE CO
+325,EMPTY STREET,['cd1990/entry/1990_Page_121 (1)_58.png'],,"10 Weybosset St (02940),"
+326,"SCORE LESS THAN CUTOFF: -9100,50.0,PROVIDENCE",['cd1990/entry/1990_Page_121 (1)_59.png'],10TH ST,Tel 521-9100
+327,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_121 (1)_60.png', 'cd1990/entry/1990_Page_121 (1)_61.png']",N/A,APPALACHIAN INSURANCE CO
+328,EMPTY STREET,"['cd1990/entry/1990_Page_121 (2)_5.png', 'cd1990/entry/1990_Page_121 (2)_6.png']",,"S Main St (02903), Tel 331-5331 And FAX Tel (401) 331-4922"
+329,"SCORE LESS THAN CUTOFF: James P Murphy Highway, West Warwick, RI,46.5,PROVIDENCE","['cd1990/entry/1990_Page_121 (2)_7.png', 'cd1990/entry/1990_Page_121 (2)_8.png', 'cd1990/entry/1990_Page_121 (2)_9.png', 'cd1990/entry/1990_Page_121 (2)_10.png', 'cd1990/entry/1990_Page_121 (2)_11.png']",RIDGEWAY AVE,"JOHN HANCOCK MUTUAL LIFE INSURANCE CO 1 James P Murphy Highway, West Warwick, RI (02893), Tel 828-6800"
+330,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_121 (2)_34.png'],N/A,COMMONWEALTH LAND TITLE
+331,EMPTY STREET,"['cd1990/entry/1990_Page_121 (2)_37.png', 'cd1990/entry/1990_Page_121 (2)_38.png']",,"S Main St (02803), Tel 331-5331 And FAX Tel (401) 331-4922"
+332,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_121 (3)_21.png'],N/A,A A A SECURITY TASK FORCE A
+333,"SCORE LESS THAN CUTOFF: DEAN STREET,79.5,PROVIDENCE","['cd1990/entry/1990_Page_121 (3)_33.png', 'cd1990/entry/1990_Page_121 (3)_34.png', 'cd1990/entry/1990_Page_121 (3)_35.png', 'cd1990/entry/1990_Page_121 (3)_36.png']",POINT STREET BRG,S A S SECURITY INC 179 DEAN STREET (02903) TELEPHONE (401) 351-0760
+334,"SCORE LESS THAN CUTOFF: B Post Rd, Warwick, RI,76.0,PROVIDENCE","['cd1990/entry/1990_Page_121 (3)_45.png', 'cd1990/entry/1990_Page_121 (3)_46.png', 'cd1990/entry/1990_Page_121 (3)_47.png']",WARWICK AV,"CAPITAL CONCEPTS INC 1221B Post Rd, Warwick, RI (02888), Tels (401) 467-2010, (401) 467-2710"
+335,"SCORE LESS THAN CUTOFF: N Court 17th FI,74.0,PROVIDENCE","['cd1990/entry/1990_Page_121 (3)_51.png', 'cd1990/entry/1990_Page_121 (3)_52.png']",NORTH MAIN ST,D W @ ASSOCS 38 N Court 17th FI Tel 273-5220
+336,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_122 (1)_2.png', 'cd1990/entry/1990_Page_122 (1)_3.png']",4TH ST,Kinship Capital Corp One Hosp Trust Plaza 24th Fl
+337,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_122 (1)_36.png', 'cd1990/entry/1990_Page_122 (1)_37.png', 'cd1990/entry/1990_Page_122 (1)_38.png', 'cd1990/entry/1990_Page_122 (1)_39.png']",N/A,215 ATWELLS AVENUE TELEPHONE 278-6020 814 HOPE STREET TELEPHONE 278-6030
+338,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (1)_40.png'],N/A,575 CHARLES STREET
+339,"SCORE LESS THAN CUTOFF: -6040,29.0,PROVIDENCE",['cd1990/entry/1990_Page_122 (1)_41.png'],4TH ST,TELEPHONE 278-6040
+340,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (1)_42.png'],N/A,661 BROADWAY
+341,"SCORE LESS THAN CUTOFF: -6050,29.0,PROVIDENCE",['cd1990/entry/1990_Page_122 (1)_43.png'],I 95,TELEPHONE 278-6050
+342,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (1)_44.png'],N/A,1473 BROAD STREET
+343,"SCORE LESS THAN CUTOFF: -6025,50.5,PROVIDENCE",['cd1990/entry/1990_Page_122 (1)_45.png'],I 295,TELEPHONE 278-6025
+344,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (1)_46.png'],N/A,457 ANGELL STREET
+345,"SCORE LESS THAN CUTOFF: -6090,29.0,PROVIDENCE",['cd1990/entry/1990_Page_122 (1)_47.png'],I 95,TELEPHONE 278-6090
+346,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (1)_48.png'],N/A,125 DUPONT DRIVE
+347,"SCORE LESS THAN CUTOFF: -6035,29.0,PROVIDENCE",['cd1990/entry/1990_Page_122 (1)_49.png'],I 95,TELEPHONE 278-6035
+348,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_122 (1)_50.png', 'cd1990/entry/1990_Page_122 (1)_51.png']",N/A,2073 SMITH STREET TELEPHONE 231-6300
+349,"SCORE LESS THAN CUTOFF: Mineral Spring Av, N Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_122 (2)_27.png', 'cd1990/entry/1990_Page_122 (2)_28.png', 'cd1990/entry/1990_Page_122 (2)_29.png', 'cd1990/entry/1990_Page_122 (2)_30.png']",PROVIDENCE PL,"BRADFORD JEWELERS 1903 Mineral Spring Av, N Providence, RI (02904), Tel (401) 353-5404"
+350,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (2)_62.png'],N/A,Eisman Irving Inc le Jackson Walkway
+351,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_122 (3)_1.png'],N/A,JEW BLE ROwVUVINiL
+352,"SCORE LESS THAN CUTOFF: Tag Dr,67.0,PROVIDENCE",['cd1990/entry/1990_Page_122 (3)_86.png'],TARA DR,Simco Jewelry Inc 2 Tag Dr (NP)
+353,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1990/entry/1990_Page_123 (1)_7.png'],10TH ST,421-8400
+354,EMPTY STREET,"['cd1990/entry/1990_Page_123 (2)_21.png', 'cd1990/entry/1990_Page_123 (2)_22.png', 'cd1990/entry/1990_Page_123 (2)_23.png']",3 ,"EMERALD JEWELRY CO 166 Valley St, Bldg 3 (02909), Tel (401) 331-7979"
+355,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE","['cd1990/entry/1990_Page_123 (2)_28.png', 'cd1990/entry/1990_Page_123 (2)_29.png']",I 95,Fashion Jewelry Association Of America le Jackson Walkway Ste 15
+356,"SCORE LESS THAN CUTOFF: Douglas Av, N Providence,77.0,PROVIDENCE","['cd1990/entry/1990_Page_123 (2)_38.png', 'cd1990/entry/1990_Page_123 (2)_39.png', 'cd1990/entry/1990_Page_123 (2)_40.png', 'cd1990/entry/1990_Page_123 (2)_41.png']",PROVIDENCE ST,"GABRIELE INDUSTRIES INC 1164 Douglas Av, N Providence (02904), Tel 353-5950"
+357,"SCORE LESS THAN CUTOFF: Aleppo St, 32B 2d,77.5,PROVIDENCE","['cd1990/entry/1990_Page_123 (3)_2.png', 'cd1990/entry/1990_Page_123 (3)_3.png']",ALEPPO ST,"LOUPAL ORIGINALS INC 50 Aleppo St, 32B 2d Fl (02909), Tel 421-1962"
+358,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_124 (1)_34.png'],N/A,FORMOST RUBBER &
+359,EMPTY STREET,"['cd1990/entry/1990_Page_124 (1)_36.png', 'cd1990/entry/1990_Page_124 (1)_37.png']",,"530 Kinsley Av (02908), Tel 274- 4010"
+360,"SCORE LESS THAN CUTOFF: Specatacle St, Cranston, RI,74.0,PROVIDENCE","['cd1990/entry/1990_Page_124 (1)_56.png', 'cd1990/entry/1990_Page_124 (1)_57.png', 'cd1990/entry/1990_Page_124 (1)_58.png', 'cd1990/entry/1990_Page_124 (1)_59.png']",SPECTACLE ST,"TECHNIC INC 1 Specatacle St, Cranston, RI (02910), Mail PO Box 965, (02001), Tel (401) 781-6100, FAX (401) 781-2880"
+361,EMPTY STREET,"['cd1990/entry/1990_Page_124 (1)_63.png', 'cd1990/entry/1990_Page_124 (1)_64.png', 'cd1990/entry/1990_Page_124 (1)_65.png']",,"UNION TOOL CO INC JEWELERS FINDINGS ""387 Charles St (02904), Tel 421-8696"
+362,EMPTY STREET,"['cd1990/entry/1990_Page_124 (2)_20.png', 'cd1990/entry/1990_Page_124 (2)_21.png', 'cd1990/entry/1990_Page_124 (2)_22.png']",6 ,"A F G ENTERPRISE $89 Charles St, Bldg 6 (02904), Tel (401) 272-9700"
+363,EMPTY STREET,"['cd1990/entry/1990_Page_124 (2)_30.png', 'cd1990/entry/1990_Page_124 (2)_31.png', 'cd1990/entry/1990_Page_124 (2)_32.png']",,"ACCENT INC $89 Charles St (02904), Tel (401) 272-9700"
+364,"SCORE LESS THAN CUTOFF: , 2d Floor,71.0,PROVIDENCE","['cd1990/entry/1990_Page_124 (2)_34.png', 'cd1990/entry/1990_Page_124 (2)_35.png', 'cd1990/entry/1990_Page_124 (2)_36.png']",FLORA ST,"ADAMS EPOXY 166 Valley, Bldg 8, 2d Floor (02909), Tel 273-8726"
+365,EMPTY STREET,"['cd1990/entry/1990_Page_124 (2)_55.png', 'cd1990/entry/1990_Page_124 (2)_56.png', 'cd1990/entry/1990_Page_124 (2)_57.png', 'cd1990/entry/1990_Page_124 (2)_58.png', 'cd1990/entry/1990_Page_124 (2)_59.png']",,"166 Valley St (02909), Tel (401) 831-7658 ATLAS CHAIN CO 175 Dupont Dr (02907), Tel (401) 943-2600"
+366,"SCORE LESS THAN CUTOFF: Fletcher Ave,71.0,PROVIDENCE","['cd1990/entry/1990_Page_124 (2)_60.png', 'cd1990/entry/1990_Page_124 (2)_61.png', 'cd1990/entry/1990_Page_124 (2)_62.png', 'cd1990/entry/1990_Page_124 (2)_63.png']",LESTER ST,"AVON JEWELRY MANUFACTURING INC 45 Fletcher Av (Cranston; 02920), Tel 943-9060"
+367,"SCORE LESS THAN CUTOFF: County St, 30 Frank Mossberg Dr, Attleboro, Ma,46.0,PROVIDENCE","['cd1990/entry/1990_Page_124 (2)_66.png', 'cd1990/entry/1990_Page_124 (2)_67.png', 'cd1990/entry/1990_Page_124 (2)_68.png', 'cd1990/entry/1990_Page_124 (2)_69.png']",ALBRO ST,"BALFOUR L G CO 25 County St, 30 Frank Mossberg Dr, Attleboro, Ma (02703), Tel (617) 222-3600"
+368,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_124 (3)_1.png'],N/A,SRW Lh WAL Avi 2
+369,"SCORE LESS THAN CUTOFF: Oak St, PO Box 3244,23.5,PROVIDENCE","['cd1990/entry/1990_Page_124 (3)_2.png', 'cd1990/entry/1990_Page_124 (3)_3.png', 'cd1990/entry/1990_Page_124 (3)_4.png']",NOLAN ST EXT,"BAR-TAN MANUFACTURING 244 Oak St, PO Box 3244 (Prov; 02909), Tel 331-5824"
+370,"SCORE LESS THAN CUTOFF: , 1st Floor,68.5,PROVIDENCE","['cd1990/entry/1990_Page_124 (3)_14.png', 'cd1990/entry/1990_Page_124 (3)_15.png']",FLORA ST,"BOFRANC LTD 166 Valley St, Bldg 3, 1st Floor (02909), Tel 861-7040"
+371,"SCORE LESS THAN CUTOFF: Valley St, 1st Floor,,76.0,PROVIDENCE","['cd1990/entry/1990_Page_124 (3)_68.png', 'cd1990/entry/1990_Page_124 (3)_69.png', 'cd1990/entry/1990_Page_124 (3)_70.png', 'cd1990/entry/1990_Page_124 (3)_71.png']",VALLEY GREEN CT,"DESIGNS BY FUTURECRAFT INC 166 Valley St, 1st Floor, Tel 331- 4090, FAX 331-9764"
+372,EMPTY STREET,"['cd1990/entry/1990_Page_125 (1)_3.png', 'cd1990/entry/1990_Page_125 (1)_4.png']",,"103 Webster St (02861), Tel (401) 727-0380, FAX (401) 722-4949"
+373,"SCORE LESS THAN CUTOFF: Woonasquatucket Av, N Providence, RI,78.5,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_16.png', 'cd1990/entry/1990_Page_125 (1)_17.png', 'cd1990/entry/1990_Page_125 (1)_18.png']",WOONASQUATUCKET AV,"FASHION SOLDERING COMPANY 245 Woonasquatucket Av, N Providence, RI (02911), Tel 353-1485"
+374,"SCORE LESS THAN CUTOFF: Manton Av, Unit 211,75.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_25.png', 'cd1990/entry/1990_Page_125 (1)_26.png', 'cd1990/entry/1990_Page_125 (1)_27.png']",MANTON AVE,"FLYNNS SOLDERING CO 118 Manton Av, Unit 211 (02909), Tel (401) 421- 4487"
+375,"SCORE LESS THAN CUTOFF: Chestnut St, 6th Floor,77.5,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_36.png', 'cd1990/entry/1990_Page_125 (1)_37.png', 'cd1990/entry/1990_Page_125 (1)_38.png']",CHESTNUT ST,"GEM-CRAFT INC 95 Chestnut St, 6th Floor (02903), Tel 331-4889, FAX 831-4068"
+376,"SCORE LESS THAN CUTOFF: Tag Dr, N Providence, RI,78.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_39.png', 'cd1990/entry/1990_Page_125 (1)_40.png']",PROVIDENCE ST,"GEM PLATING CO 2 Tag Dr, N Providence, RI (02908), Tel 353-4160"
+377,"SCORE LESS THAN CUTOFF: Kenny Drive,69.5,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_53.png', 'cd1990/entry/1990_Page_125 (1)_54.png', 'cd1990/entry/1990_Page_125 (1)_55.png']",KENNEDY DR,"IDEAL JEWELRY MFG CO INC 27 Kenny Drive (Cranston; 02920), Tel 463-6923"
+378,"SCORE LESS THAN CUTOFF: Manton Av, 2d Floor,75.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_61.png', 'cd1990/entry/1990_Page_125 (1)_62.png', 'cd1990/entry/1990_Page_125 (1)_63.png']",MANTON AVE,"JAIME-CRISTA LTD 100 Manton Av, 2d Floor (02909), Tel 273-7950"
+379,"SCORE LESS THAN CUTOFF: Railroad Av, PO Box 7310, Johnston, RI,73.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_70.png', 'cd1990/entry/1990_Page_125 (1)_71.png', 'cd1990/entry/1990_Page_125 (1)_72.png']",RAILROAD TERR,"JEWEL TECH INC 107 Railroad Av, PO Box 7310, Johnston, RI (02919), Tel 231-5020"
+380,"SCORE LESS THAN CUTOFF: Hartford Av, Johnston, RI,76.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (1)_82.png', 'cd1990/entry/1990_Page_125 (1)_83.png', 'cd1990/entry/1990_Page_125 (1)_84.png', 'cd1990/entry/1990_Page_125 (1)_85.png', 'cd1990/entry/1990_Page_125 (1)_86.png']",HARTFORD AVE,"KIMBERLY CREATIONS INC 1170 Hartford Av, Johnston, RI (02919), Tel (401) 881-3443, FAX (401) 831-3006"
+381,EMPTY STREET,['cd1990/entry/1990_Page_125 (2)_3.png'],,"25 Calhoun Av (02907), Tel 781-3729"
+382,"SCORE LESS THAN CUTOFF: Eddy St, PO Box 2145,67.5,PROVIDENCE","['cd1990/entry/1990_Page_125 (2)_19.png', 'cd1990/entry/1990_Page_125 (2)_20.png']",EDDY ST,"LITTLE & CO INC 908 Eddy St, PO Box 2145 (02905), Tel 461-1900"
+383,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_125 (2)_61.png', 'cd1990/entry/1990_Page_125 (2)_62.png']",N/A,Property Valuation Inc le Jackson Walkway Ste 3
+384,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_125 (2)_74.png'],N/A,Rinaldi Gloria D Arian Inc
+385,EMPTY STREET,"['cd1990/entry/1990_Page_125 (3)_3.png', 'cd1990/entry/1990_Page_125 (3)_4.png']",,"1117 Douglas Av (02904), Tel 861- 4800"
+386,"SCORE LESS THAN CUTOFF: Elmwood Av, PO Box 8769,74.0,PROVIDENCE","['cd1990/entry/1990_Page_125 (3)_66.png', 'cd1990/entry/1990_Page_125 (3)_67.png', 'cd1990/entry/1990_Page_125 (3)_68.png', 'cd1990/entry/1990_Page_125 (3)_69.png', 'cd1990/entry/1990_Page_125 (3)_70.png', 'cd1990/entry/1990_Page_125 (3)_71.png']",ELMWOOD AVE,"MARSHALL TRADING CORPORATION 1924 Elmwood Av, PO Box 8769 (Warwick, RI; 02888), Tels (401) 781-6674, 781-6675, FAX (401) 461- 3490"
+387,"SCORE LESS THAN CUTOFF: East Av, Pawtucket, RI,66.0,PROVIDENCE","['cd1990/entry/1990_Page_126 (1)_38.png', 'cd1990/entry/1990_Page_126 (1)_39.png', 'cd1990/entry/1990_Page_126 (1)_40.png', 'cd1990/entry/1990_Page_126 (1)_41.png']",PAWTUXET AV,"PROVIDENCE KITCHENS  727 East Av, Pawtucket, RI (02860), Tel (401) 728-9220"
+388,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_126 (2)_2.png'],N/A,"154 Waterman St, Tel 861-1818"
+389,"SCORE LESS THAN CUTOFF: Belcourt Ave,72.5,PROVIDENCE",['cd1990/entry/1990_Page_126 (2)_62.png'],BELMONT AVE,E & J Construction 49 Belcourt Av (NP)
+390,"SCORE LESS THAN CUTOFF: Knollwood Av, PO Box 3519,77.5,PROVIDENCE","['cd1990/entry/1990_Page_126 (2)_64.png', 'cd1990/entry/1990_Page_126 (2)_65.png', 'cd1990/entry/1990_Page_126 (2)_66.png']",KNOLLWOOD AV,"(NP)
+FOREST HILL NURSERY INC 310 Knollwood Av, PO Box 3519 (Cranston; 02910), Tel 944-8282"
+391,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_126 (3)_1.png'],N/A,BsCRLVESIW ee Bs NA s Bawes eee eewe =
+392,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_126 (3)_17.png'],N/A,Pate V & Sons Inc Tingley La (NP)
+393,"SCORE LESS THAN CUTOFF: Lafayette St, Pawtucket, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_127 (1)_18.png', 'cd1990/entry/1990_Page_127 (1)_19.png', 'cd1990/entry/1990_Page_127 (1)_20.png', 'cd1990/entry/1990_Page_127 (1)_21.png', 'cd1990/entry/1990_Page_127 (1)_22.png']",LAFAYETTE ST,"ABEDON HERBERT J ATTORNEY AT LAW 100 Lafayette St, Pawtucket, RI (02860), Tels Business (401) 723-9900, Res (401) 434-5977"
+394,"SCORE LESS THAN CUTOFF: d Fl,50.5,PROVIDENCE","['cd1990/entry/1990_Page_127 (1)_25.png', 'cd1990/entry/1990_Page_127 (1)_26.png']",FLORA ST,Adler Pollock & Sheehan Inc One Hosp Trust Plaza 23d Fl
+395,"SCORE LESS THAN CUTOFF: Main St, PO Box 1325,56.0,PROVIDENCE","['cd1990/entry/1990_Page_127 (2)_3.png', 'cd1990/entry/1990_Page_127 (2)_4.png', 'cd1990/entry/1990_Page_127 (2)_5.png']",MAIDEN LN,"CHESTER 150 Main St, PO Box 1325 (Pawtucket; 02862), Tel 723- 1122 Or 722-2150"
+396,"SCORE LESS THAN CUTOFF: WESTMINSTER STREET SUITE 401,78.0,PROVIDENCE","['cd1990/entry/1990_Page_127 (2)_13.png', 'cd1990/entry/1990_Page_127 (2)_14.png', 'cd1990/entry/1990_Page_127 (2)_15.png', 'cd1990/entry/1990_Page_127 (2)_16.png', 'cd1990/entry/1990_Page_127 (2)_17.png']",WESTMINSTER ST,BOYER REYNOLDS & DeMARCO 145 WESTMINSTER STREET SUITE 401 (02903) TELEPHONE (401) 861-5522 FAX (401) 331-4861
+397,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_127 (2)_56.png', 'cd1990/entry/1990_Page_127 (2)_57.png']",4TH ST,Chisholm & Feldman One Hosp Trust Plaza 20th Fl
+398,EMPTY STREET,"['cd1990/entry/1990_Page_127 (3)_3.png', 'cd1990/entry/1990_Page_127 (3)_4.png']",,"950 Smith St (02908), Tel (401) 421- 1170"
+399,"SCORE LESS THAN CUTOFF: th F!,68.5,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_13.png', 'cd1990/entry/1990_Page_127 (3)_14.png']",4TH ST,Danaher Tedford Lagnese & Meal One Hosp Trust Plaza 19th F!
+400,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_17.png', 'cd1990/entry/1990_Page_127 (3)_18.png']",4TH ST,Davis Jenckes Kilmarx & Swan Inc One Hosp Trust Plaza 14th Fl
+401,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_36.png', 'cd1990/entry/1990_Page_127 (3)_37.png']",4TH ST,Dicara Selig Sawyer & Holt One Hosp Trust Plaza 14th Fl
+402,"SCORE LESS THAN CUTOFF: Hospital Trust Tower, 1 Hospital Trust Plaza,65.5,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_38.png', 'cd1990/entry/1990_Page_127 (3)_39.png', 'cd1990/entry/1990_Page_127 (3)_40.png']",HOSPITAL ST,"Dick & Hague LTD 2020 Hospital Trust Tower, 1 Hospital Trust Plaza (02903), Tel 272-8200"
+403,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_127 (3)_52.png'],N/A,EDWARDS & ANGELL COUNSELLORS
+404,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_127 (3)_54.png', 'cd1990/entry/1990_Page_127 (3)_55.png', 'cd1990/entry/1990_Page_127 (3)_56.png', 'cd1990/entry/1990_Page_127 (3)_57.png', 'cd1990/entry/1990_Page_127 (3)_58.png']",20903),2700 HOSPITAL TRUST TOWER (20903) TELEPHONE (401) 274-9200 TELEX 952001 EA PUD TELECOPIER (401) 276-6611
+405,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_60.png', 'cd1990/entry/1990_Page_127 (3)_61.png']",4TH ST,Elbert Donald E One Hosp Trust Plaza 19th Fl
+406,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE","['cd1990/entry/1990_Page_127 (3)_74.png', 'cd1990/entry/1990_Page_127 (3)_75.png']",I 95,Gallagher & Gallagher One Hosp Trust Plaza Rm 805
+407,"SCORE LESS THAN CUTOFF: Graham John E Ill 111 Westminster St,76.5,PROVIDENCE","['cd1990/entry/1990_Page_128 (1)_4.png', 'cd1990/entry/1990_Page_128 (1)_5.png']",WESTMINSTER ST,"Rm 501
+Graham John E Ill 111 Westminster St Rm 1908"
+408,"SCORE LESS THAN CUTOFF: HALPERT & SCOLIARD 145 Wayland Ave,57.0,PROVIDENCE","['cd1990/entry/1990_Page_128 (1)_11.png', 'cd1990/entry/1990_Page_128 (1)_12.png']",TUSCOLA AVE,"Rm 410
+HALPERT & SCOLIARD 145 Wayland
+Av (02906), Tel 273-7788
+Hanson Curran Parks & Whitman 1 Turks Head Pl Rm 1210"
+409,"SCORE LESS THAN CUTOFF: FLEET CENTER,78.5,PROVIDENCE","['cd1990/entry/1990_Page_128 (1)_20.png', 'cd1990/entry/1990_Page_128 (1)_21.png', 'cd1990/entry/1990_Page_128 (1)_22.png']",CENTER PL,"1204
+HINCKLEY ALLEN SNYDER & COMEN
+1500 FLEET CENTER (02903) TELEPHONE 274-2000"
+410,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (1)_24.png'],N/A,HODOSH SPINELLA &
+411,"SCORE LESS THAN CUTOFF: Dorrance St, PO Box 1516,78.5,PROVIDENCE",['cd1990/entry/1990_Page_128 (1)_26.png'],DORRANCE PLZ,"450 Shakespeare Hall, 128 Dorrance
+St, PO Box 1516 (02901-1516), Tel"
+412,"SCORE LESS THAN CUTOFF: Broadway luliano Linda Celio 1063 Mineral Spring Ave,64.5,PROVIDENCE",['cd1990/entry/1990_Page_128 (1)_33.png'],BROADWAY ST,"Indeglia Gilbert 451 Broadway
+luliano Linda Celio 1063 Mineral Spring Av"
+413,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_128 (1)_39.png'],"02903),","(02903), Tel 272-1312
+Kelly Legal Services 76 Dorrance St Rm 402"
+414,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (2)_1.png'],N/A,LAW IB Roruvinas
+415,"SCORE LESS THAN CUTOFF: Airport Rd,67,PROVIDENCE",['cd1990/entry/1990_Page_128 (2)_4.png'],ARBOR DR,"LEVINE ALAN 64 Airport Rd
+(Warwick; 02889), Tel 738-3911"
+416,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (2)_6.png'],N/A,LICHT & SEMONOFF
+417,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_128 (2)_8.png', 'cd1990/entry/1990_Page_128 (2)_9.png', 'cd1990/entry/1990_Page_128 (2)_10.png']",02903),PROVIDENCE (02903) TELEPHONE (401) 421-8030 TELECOPIER (401) 272-9408
+418,"SCORE LESS THAN CUTOFF: Lonsdale Av, Central Falls, RI,57.0,PROVIDENCE","['cd1990/entry/1990_Page_128 (2)_17.png', 'cd1990/entry/1990_Page_128 (2)_18.png']",LYNDALE ST,"LUC R LaBROSSE INC
+
+914 Lonsdale Av, Central Falls, RI (02863), Tel (401) 722-6335"
+419,"SCORE LESS THAN CUTOFF: Broadway Marciano Anthony R 1063 Mineral Spring Ave,64.5,PROVIDENCE",['cd1990/entry/1990_Page_128 (2)_36.png'],BROADWAY ST,"Marcaccio Vincent P Jr 225 Broadway
+Marciano Anthony R 1063 Mineral Spring Av"
+420,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1990/entry/1990_Page_128 (2)_37.png'],1ST ST,"(NP)
+Marderosian Marderosian & Calenda 311"
+421,"SCORE LESS THAN CUTOFF: Mc Mahon & Mc Mahon 155 S Main St,54.5,PROVIDENCE",['cd1990/entry/1990_Page_128 (2)_51.png'],MATHEWSON ST,"Rm 1109
+Mc Mahon & Mc Mahon 155 S Main St Rm"
+422,"SCORE LESS THAN CUTOFF: Mc Osker Isserlis & Davignon 131 Waterman,47.0,PROVIDENCE",['cd1990/entry/1990_Page_128 (2)_53.png'],SERVICE RD NO. 1,"Rm 1208
+Mc Osker Isserlis & Davignon 131 Waterman"
+423,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (3)_22.png'],N/A,OSTER GROFF
+424,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_128 (3)_24.png'],"02865),","936 Smithfield Av, Lincoln,
+(02865), Tel 724- 2400, FAX Hy 24-1188"
+425,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (3)_28.png'],N/A,PALMISCIANO NANCY
+426,EMPTY STREET,"['cd1990/entry/1990_Page_128 (3)_30.png', 'cd1990/entry/1990_Page_128 (3)_31.png']",,"665 Smith St (02908), Tel (401) 521- 8958"
+427,"SCORE LESS THAN CUTOFF: Broadway Partridge Snow & Hahn 1 Old Stone Sq 4th Fl,65.5,PROVIDENCE","['cd1990/entry/1990_Page_128 (3)_32.png', 'cd1990/entry/1990_Page_128 (3)_33.png']",PARTRIDGE ST,"Paolino & Wallick 454 Broadway
+Partridge Snow & Hahn 1 Old Stone Sq 4th Fl"
+428,"SCORE LESS THAN CUTOFF: th wl,65.0,PROVIDENCE","['cd1990/entry/1990_Page_128 (3)_35.png', 'cd1990/entry/1990_Page_128 (3)_36.png']",4TH ST,Peabody & Arnold One Hosp Trust Plaza 19th wl
+429,"SCORE LESS THAN CUTOFF: Neutaconkanut Kd Pliakas Geo A 111 Westminster St,74.5,PROVIDENCE",['cd1990/entry/1990_Page_128 (3)_39.png'],NEUTACONKANUT ST,"Pisaturo Chas A 20 Neutaconkanut Kd
+Pliakas Geo A 111 Westminster St Rm 1908"
+430,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_128 (3)_41.png'],N/A,POWERS HARSCH &
+431,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_128 (3)_43.png', 'cd1990/entry/1990_Page_128 (3)_44.png', 'cd1990/entry/1990_Page_128 (3)_45.png', 'cd1990/entry/1990_Page_128 (3)_46.png', 'cd1990/entry/1990_Page_128 (3)_47.png']",02903),"20 WASHINGTON PLACE PROVIDENCE RI (02903) TELEPHONE (401) 421-2224 1722 EYE STREET NW WASHINGTON DC (20006)
+TELEPHONE (202) 466-5770"
+432,"SCORE LESS THAN CUTOFF: DYER STREET 2D FLOOR,75.0,PROVIDENCE","['cd1990/entry/1990_Page_128 (3)_50.png', 'cd1990/entry/1990_Page_128 (3)_51.png', 'cd1990/entry/1990_Page_128 (3)_52.png', 'cd1990/entry/1990_Page_128 (3)_53.png', 'cd1990/entry/1990_Page_128 (3)_54.png']",POINT STREET BRG,PUCCI & GOLDIN INC 123 DYER STREET 2D FLOOR (02903) TELEPHONE (401) 861-7400
+433,"SCORE LESS THAN CUTOFF: Turks Head Place, Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_129 (1)_85.png', 'cd1990/entry/1990_Page_129 (1)_86.png', 'cd1990/entry/1990_Page_129 (1)_87.png']",PROVIDENCE PL,"TEMKIN & MILLER LTD 1400 Turks Head Place, Providence, RI (02803), Tel 751-2400"
+434,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_129 (2)_4.png', 'cd1990/entry/1990_Page_129 (2)_5.png', 'cd1990/entry/1990_Page_129 (2)_6.png', 'cd1990/entry/1990_Page_129 (2)_7.png']",02903),PROVIDENCE RI (02903) TELEPHONE (401) 456-1200 FAX (401) 456-1210 TELEX 952166
+435,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1990/entry/1990_Page_129 (2)_9.png', 'cd1990/entry/1990_Page_129 (2)_10.png']",10TH ST,750 SOUTHEAST THIRD AVENUE SUITE 100
+436,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_129 (2)_11.png'],33316),FORT LAUDERDALE FL (33316)
+437,"SCORE LESS THAN CUTOFF: ) 467-5700 FAX,29.0,PROVIDENCE","['cd1990/entry/1990_Page_129 (2)_12.png', 'cd1990/entry/1990_Page_129 (2)_13.png']",I 95,TELEPHONE (305) 467-5700 FAX (305) 767-0109
+438,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_129 (3)_11.png', 'cd1990/entry/1990_Page_129 (3)_12.png', 'cd1990/entry/1990_Page_129 (3)_13.png', 'cd1990/entry/1990_Page_129 (3)_14.png']","02912),","BROWN UNIVERSITY LIBRARY Box A Brown University (02912), Tel 863-2167"
+439,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_129 (3)_15.png', 'cd1990/entry/1990_Page_129 (3)_16.png']",N/A,CITY DIRECTORY LIBRARY
+440,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE","['cd1990/entry/1990_Page_129 (3)_19.png', 'cd1990/entry/1990_Page_129 (3)_20.png', 'cd1990/entry/1990_Page_129 (3)_21.png']",3RD ST,80 EXCHANGE TERRACE PROVIDENCE 02903 TELEPHONE (401) 521-5000
+441,EMPTY STREET,"['cd1990/entry/1990_Page_129 (3)_39.png', 'cd1990/entry/1990_Page_129 (3)_40.png', 'cd1990/entry/1990_Page_129 (3)_41.png']",,"JOHN CARTER BROWN LIBRARY Brown St (Brown University) (02912), Tel 868-2725"
+442,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_129 (3)_48.png'],N/A,MAYOR SALVATORE MANCINI
+443,"SCORE LESS THAN CUTOFF: Sandy Lane Warwick,78.0,PROVIDENCE","['cd1990/entry/1990_Page_130 (1)_3.png', 'cd1990/entry/1990_Page_130 (1)_4.png', 'cd1990/entry/1990_Page_130 (1)_5.png']",WARWICK AV,"LIBRARY 600 Sandy Lane Warwick (02886), Tel 739-5440"
+444,"SCORE LESS THAN CUTOFF: Mineral Spring Av, North Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_130 (1)_17.png', 'cd1990/entry/1990_Page_130 (1)_18.png', 'cd1990/entry/1990_Page_130 (1)_19.png']",PROVIDENCE PL,"BLACKSTONE LIMOUSINE SERVICE 1860 Mineral Spring Av, North Providence, RI (02904), Tel 823-1660"
+445,"SCORE LESS THAN CUTOFF: Warren Av, East Providence,78.5,PROVIDENCE","['cd1990/entry/1990_Page_130 (1)_20.png', 'cd1990/entry/1990_Page_130 (1)_21.png', 'cd1990/entry/1990_Page_130 (1)_22.png']",PROVIDENCE ST,"CADILLAC LIMOUSINE 156 Warren Av, East Providence (02914), Tel 434-3500"
+446,"SCORE LESS THAN CUTOFF: Mineral Spring Av, North Providence,72.5,PROVIDENCE","['cd1990/entry/1990_Page_130 (1)_23.png', 'cd1990/entry/1990_Page_130 (1)_24.png', 'cd1990/entry/1990_Page_130 (1)_25.png']",PROVIDENCE ST,"FIVE-STAR LIMOUSINE SERVICE 1800 Mineral Spring Av, North Providence (02904), Tel 943-5535"
+447,"SCORE LESS THAN CUTOFF: R Mineral Spring Av, N Providence, RI,71.0,PROVIDENCE","['cd1990/entry/1990_Page_130 (1)_26.png', 'cd1990/entry/1990_Page_130 (1)_27.png', 'cd1990/entry/1990_Page_130 (1)_28.png', 'cd1990/entry/1990_Page_130 (1)_29.png', 'cd1990/entry/1990_Page_130 (1)_30.png', 'cd1990/entry/1990_Page_130 (1)_31.png']",PROVIDENCE PL,"SOPHISTICATED LIMOUSINE SERVICE LTD 1410R Mineral Spring Av, N Providence, RI (02904), Tel (401) 831-5466"
+448,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_130 (2)_57.png'],N/A,ZACHARYS FINE WINE
+449,EMPTY STREET,"['cd1990/entry/1990_Page_130 (2)_59.png', 'cd1990/entry/1990_Page_130 (2)_60.png']",,"123 N Main St (02903), Tel 831- 6811, Tel 521-7873"
+450,"SCORE LESS THAN CUTOFF: Slater Rd, PO Box 20217,71.5,PROVIDENCE","['cd1990/entry/1990_Page_130 (2)_65.png', 'cd1990/entry/1990_Page_130 (2)_66.png', 'cd1990/entry/1990_Page_130 (2)_67.png', 'cd1990/entry/1990_Page_130 (2)_68.png']",SLATER AVE,"MC LAUGHLIN & MORAN INC 40 Slater Rd, PO Box 20217 (Cranston; 02920), Tel (401) 463-5454"
+451,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_130 (3)_4.png', 'cd1990/entry/1990_Page_130 (3)_5.png']",N/A,BANK OF NEW ENGLAND-OLD COLONY
+452,"SCORE LESS THAN CUTOFF: -0100,50.0,PROVIDENCE",['cd1990/entry/1990_Page_130 (3)_8.png'],10TH ST,TELEPHONE 431-0100
+453,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_130 (3)_11.png'],02903),58 WEYBOSSET STREET (02903)
+454,"SCORE LESS THAN CUTOFF: Hospital Trust Plaza,78,PROVIDENCE","['cd1990/entry/1990_Page_130 (3)_34.png', 'cd1990/entry/1990_Page_130 (3)_35.png', 'cd1990/entry/1990_Page_130 (3)_36.png', 'cd1990/entry/1990_Page_130 (3)_37.png', 'cd1990/entry/1990_Page_130 (3)_38.png', 'cd1990/entry/1990_Page_130 (3)_39.png', 'cd1990/entry/1990_Page_130 (3)_40.png', 'cd1990/entry/1990_Page_130 (3)_41.png', 'cd1990/entry/1990_Page_130 (3)_42.png']",HOSPITAL ST,"RHODE ISLAND HOSPITAL TRUST NATIONAL BANK 1 Hospital Trust Plaza (02903), Tel 278-8454, 10 Dorrance St, Tel 278- 8100 (02903), 238 Thayer St (02906), Tel 278-8138, 501 N Main St (02904), Tel 278-8090, Rhode Island Hospital Office, 593 Eddy St"
+455,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_130 (3)_43.png'],"02902),","(02902), Tel 276-1330, Providence"
+456,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_130 (3)_44.png'],N/A,"College Office, Slavin Center"
+457,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_130 (3)_45.png'],"02918),","(02918), Tel 276-1354, Atwells"
+458,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_130 (3)_47.png'],"02903),","(02903), Tel 421-3244, Charles Street"
+459,"SCORE LESS THAN CUTOFF: Elmgrove Avenue Office,,76.5,PROVIDENCE",['cd1990/entry/1990_Page_130 (3)_49.png'],ELMGROVE AVE,"751-9260 Elmgrove Avenue Office,"
+460,EMPTY STREET,['cd1990/entry/1990_Page_130 (3)_50.png'],,"131 Elmgrove Av (02906), Tel 751-"
+461,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1990/entry/1990_Page_130 (3)_51.png'],I 95,"9220, Smith Street Office, 1025"
+462,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_130 (3)_52.png'],"02908),","Smith St (02908), Tel 274-1025"
+463,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_131 (2)_3.png'],N/A,385 ELLIOT STREET
+464,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_131 (2)_5.png', 'cd1990/entry/1990_Page_131 (2)_6.png']",02164),(02164) TELEPHONE (617) 965-6113
+465,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE",['cd1990/entry/1990_Page_131 (2)_18.png'],2ND ST,Davis Phillip le Jackson Walkway Apt 1102
+466,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1990/entry/1990_Page_131 (2)_20.png'],1ST ST,F & S Sales le Jackson Walkway Apt 311
+467,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1990/entry/1990_Page_131 (2)_25.png'],7TH ST,Gisele Inc le Jackson Walkway Ste 17
+468,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE","['cd1990/entry/1990_Page_131 (2)_27.png', 'cd1990/entry/1990_Page_131 (2)_28.png']",1ST ST,Klein Spitzer Inc le Jackson Walkway Apt 611
+469,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE","['cd1990/entry/1990_Page_131 (2)_41.png', 'cd1990/entry/1990_Page_131 (2)_42.png']",2ND ST,Stolberg Leo Associates le Jackson Walkway Apt 312
+470,"SCORE LESS THAN CUTOFF: TAYLOR, MI 48180,78.5,PROVIDENCE","['cd1990/entry/1990_Page_131 (3)_3.png', 'cd1990/entry/1990_Page_131 (3)_4.png', 'cd1990/entry/1990_Page_131 (3)_5.png', 'cd1990/entry/1990_Page_131 (3)_6.png']",TAYLOR ST,"6400 MONROE BLVD PO BOX 700 TAYLOR, MI 48180 TELEPHONE (313) 292-3200"
+471,"SCORE LESS THAN CUTOFF: ELLIOT STREET,73.5,PROVIDENCE","['cd1990/entry/1990_Page_131 (3)_7.png', 'cd1990/entry/1990_Page_131 (3)_8.png']",ELIOT AVE,POLK RL & CO 385 ELLIOT STREET
+472,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_131 (3)_10.png', 'cd1990/entry/1990_Page_131 (3)_11.png']",02164),(02164) TELEPHONE (617) 965-6113
+473,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_131 (3)_41.png'],N/A,SWAN POINT CEMETERY
+474,"SCORE LESS THAN CUTOFF: ) TLEEPHONE 272-1314,55.5,PROVIDENCE","['cd1990/entry/1990_Page_131 (3)_43.png', 'cd1990/entry/1990_Page_131 (3)_44.png', 'cd1990/entry/1990_Page_131 (3)_45.png']",STEPHANIE DR,585 BLACKSTONE BOULEVARD (02906) TLEEPHONE 272-1314
+475,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (1)_11.png'],N/A,PROVIDENCE CENTER FOR
+476,"SCORE LESS THAN CUTOFF: Park Av, Cranston, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_132 (2)_25.png', 'cd1990/entry/1990_Page_132 (2)_26.png', 'cd1990/entry/1990_Page_132 (2)_27.png', 'cd1990/entry/1990_Page_132 (2)_28.png']",CRANSTON ST,"CULLCO COMMUNICATIONS 1424 Park Av, Cranston, RI (02920), Tels 946-3150, 942-0500"
+477,EMPTY STREET,"['cd1990/entry/1990_Page_132 (2)_48.png', 'cd1990/entry/1990_Page_132 (2)_49.png']",,"PROVIDENCE MONUMENTAL WORKS $14 Branch Av (02904), Tel 274-4567"
+478,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (2)_52.png'],N/A,Williams Roger Monument Prospect Ter
+479,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_132 (3)_6.png', 'cd1990/entry/1990_Page_132 (3)_7.png']",N/A,BANK OF NEW ENGLAND-OLD COLONY
+480,"SCORE LESS THAN CUTOFF: -0100,50.0,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_10.png'],10TH ST,TELEPHONE 431-0100
+481,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_132 (3)_13.png'],02903),58 WEYBOSSET STREET (02903)
+482,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_132 (3)_19.png', 'cd1990/entry/1990_Page_132 (3)_20.png', 'cd1990/entry/1990_Page_132 (3)_21.png', 'cd1990/entry/1990_Page_132 (3)_22.png']",N/A,215 ATWELLS AVENUE TELEPHONE 278-6020 814 HOPE STREET TELEPHONE 278-6030
+483,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_23.png'],N/A,575 CHARLES STREET
+484,"SCORE LESS THAN CUTOFF: -6040,29.0,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_24.png'],4TH ST,TELEPHONE 278-6040
+485,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_25.png'],N/A,661 BROADWAY
+486,"SCORE LESS THAN CUTOFF: -6050,29.0,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_26.png'],I 95,TELEPHONE 278-6050
+487,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_27.png'],N/A,1478 BROAD STREET
+488,"SCORE LESS THAN CUTOFF: -6025,50.5,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_28.png'],I 295,TELEPHONE 278-6025
+489,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_29.png'],N/A,457 ANGELL STREET
+490,"SCORE LESS THAN CUTOFF: -6090,29.0,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_30.png'],I 95,TELEPHONE 278-6090
+491,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_31.png'],N/A,125 DUPONT DRIVE
+492,"SCORE LESS THAN CUTOFF: -6035,29.0,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_32.png'],I 95,TELEPHONE 278-6035
+493,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_132 (3)_33.png', 'cd1990/entry/1990_Page_132 (3)_34.png']",N/A,2073 SMITH STREET TELEPHONE 231-6300
+494,"SCORE LESS THAN CUTOFF: Hoszital Trust Plaza,69.0,PROVIDENCE","['cd1990/entry/1990_Page_132 (3)_39.png', 'cd1990/entry/1990_Page_132 (3)_40.png', 'cd1990/entry/1990_Page_132 (3)_41.png', 'cd1990/entry/1990_Page_132 (3)_42.png', 'cd1990/entry/1990_Page_132 (3)_43.png', 'cd1990/entry/1990_Page_132 (3)_44.png', 'cd1990/entry/1990_Page_132 (3)_45.png', 'cd1990/entry/1990_Page_132 (3)_46.png', 'cd1990/entry/1990_Page_132 (3)_47.png']",HOSPITAL ST,"RHODE ISLAND HOSPITAL TRUST NATIONAL BANK 1 Hoszital Trust Plaza (02903), Tel 278-8454, 10 Dorrance St, Tel 278- 8100 (02903), 238 Thayer St (02906), Tel 278-8138, 501 N Main St (02904), Tel 278-8090, Rhode Island Hospital Office, 593 Eddy St"
+495,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_132 (3)_48.png'],"02902),","(02902), Tel 276-1330, Providence"
+496,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_49.png'],N/A,"College Office, Slavin Center"
+497,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_132 (3)_50.png'],"02918),","(02918), Tel 276-1354, Atwells"
+498,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_132 (3)_52.png'],"02903),","(02903), Tel 421-3244, Charles Street"
+499,"SCORE LESS THAN CUTOFF: Elmgrove Avenue Office,,76.5,PROVIDENCE",['cd1990/entry/1990_Page_132 (3)_54.png'],ELMGROVE AVE,"751-9260 Elmgrove Avenue Office,"
+500,EMPTY STREET,['cd1990/entry/1990_Page_132 (3)_55.png'],,"181 Elmgrove Av (029086), Tel 751-"
+501,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_132 (3)_58.png'],N/A,RHODE ISLAND HOUSING &
+502,ERROR IN STREET MATCHING,['cd1990/entry/1990_Page_132 (3)_60.png'],"02903),","Eddy St (02903), Tel 751-5566"
+503,"SCORE LESS THAN CUTOFF: Amaral 8t, E Providence, RI,77.0,PROVIDENCE","['cd1990/entry/1990_Page_133 (1)_30.png', 'cd1990/entry/1990_Page_133 (1)_31.png', 'cd1990/entry/1990_Page_133 (1)_32.png']",PROVIDENCE PL,"CUNHA TRUCKING & MOVING CO INC 55 Amaral 8t, E Providence, RI (02915), Tel 438-6585"
+504,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_133 (2)_51.png'],N/A,Amenities Westminster Sq Bldg
+505,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_133 (2)_57.png'],N/A,Plaza Sweet News Ist Fl One Empire Plaza
+506,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_133 (3)_15.png', 'cd1990/entry/1990_Page_133 (3)_16.png', 'cd1990/entry/1990_Page_133 (3)_17.png', 'cd1990/entry/1990_Page_133 (3)_18.png']",N/A,PROVIDENCE JOURNAL & EVENING BULLETIN PROVIDENCE SUNDAY JOURNAL
+507,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_133 (3)_21.png', 'cd1990/entry/1990_Page_133 (3)_22.png']",02902),75 FOUNTAIN STREET (02902) TELEPHONE 277-7000
+508,"SCORE LESS THAN CUTOFF: Knollwood Av, PO Box 3519,77.5,PROVIDENCE","['cd1990/entry/1990_Page_133 (3)_53.png', 'cd1990/entry/1990_Page_133 (3)_54.png', 'cd1990/entry/1990_Page_133 (3)_55.png']",KNOLLWOOD AV,"FOREST HILL NURSERY INC 310 Knollwood Av, PO Box 3519 (Cranston; 02910), Tel 944-8282"
+509,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_134 (1)_8.png', 'cd1990/entry/1990_Page_134 (1)_9.png', 'cd1990/entry/1990_Page_134 (1)_10.png', 'cd1990/entry/1990_Page_134 (1)_11.png']","02906),","ELDER CARE RESOURCES INC One Richmond Square (02906), Tel (401) 751-0360"
+510,EMPTY STREET,"['cd1990/entry/1990_Page_134 (1)_59.png', 'cd1990/entry/1990_Page_134 (1)_60.png', 'cd1990/entry/1990_Page_134 (1)_61.png', 'cd1990/entry/1990_Page_134 (1)_62.png', 'cd1990/entry/1990_Page_134 (1)_63.png']",,"SERVICE OFFICE PRODUCTS $27 Westminister St (02903), Tel 273-8450, 1160 Bald Hill Rd, Warwick, RI (02887), Tel 828-8610"
+511,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1990/entry/1990_Page_134 (2)_42.png'],1ST ST,Stewart Associates le Jackson Walkway Ste 11
+512,EMPTY STREET,"['cd1990/entry/1990_Page_134 (3)_23.png', 'cd1990/entry/1990_Page_134 (3)_24.png', 'cd1990/entry/1990_Page_134 (3)_25.png']",,"BELLO RICHARD M DR 694 Park Avenue, Cranston, RI (02810), Tel (401) 461-3212"
+513,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_134 (3)_63.png', 'cd1990/entry/1990_Page_134 (3)_64.png', 'cd1990/entry/1990_Page_134 (3)_65.png']","02903),","STUART RALPH MUSIC INC Regency East, One Jackson Walkway (02903), Tel 274-4420"
+514,EMPTY STREET,['cd1990/entry/1990_Page_134 (3)_79.png'],,354 Fruit Hill Av (NP)
+515,"SCORE LESS THAN CUTOFF: Knights Of Columbus 1 Volturno St,75.0,PROVIDENCE","['cd1990/entry/1990_Page_134 (3)_80.png', 'cd1990/entry/1990_Page_134 (3)_81.png']",COLUMBUS ST,St Anthony Council 1618 Knights Of Columbus 1 Volturno St (NP)
+516,EMPTY STREET,"['cd1990/entry/1990_Page_135 (1)_32.png', 'cd1990/entry/1990_Page_135 (1)_33.png']",398 ,Hope Council 398 (K Of C Org) 212 Pocasset
+517,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_135 (1)_49.png'],N/A,MANUFACTURING JEWELERS &
+518,EMPTY STREET,"['cd1990/entry/1990_Page_135 (1)_51.png', 'cd1990/entry/1990_Page_135 (1)_52.png']",,"100 India St (02903), Tel (401) 274- 3840"
+519,"SCORE LESS THAN CUTOFF: Catamore Blvd,66.0,PROVIDENCE","['cd1990/entry/1990_Page_135 (2)_42.png', 'cd1990/entry/1990_Page_135 (2)_43.png', 'cd1990/entry/1990_Page_135 (2)_44.png', 'cd1990/entry/1990_Page_135 (2)_45.png']",SYCAMORE ST,"THE JEWELERS BOARD OF TRADE INC 70 Catamore Blvd (East Providence, RI; 02914), Tel 438-0750"
+520,"SCORE LESS THAN CUTOFF: S C M E-AMERICAN,70.0,PROVIDENCE",['cd1990/entry/1990_Page_135 (3)_60.png'],AMERICA ST,A F 8S C M E-AMERICAN
+521,EMPTY STREET,"['cd1990/entry/1990_Page_136 (2)_31.png', 'cd1990/entry/1990_Page_136 (2)_32.png']",,Chad Brown St Seniors Center 285 Chad Brown St Apt B
+522,EMPTY STREET,"['cd1990/entry/1990_Page_136 (2)_44.png', 'cd1990/entry/1990_Page_136 (2)_45.png', 'cd1990/entry/1990_Page_136 (2)_46.png', 'cd1990/entry/1990_Page_136 (2)_47.png', 'cd1990/entry/1990_Page_136 (2)_48.png']",,CATHOLIC CHARITY FUND APPEAL 80 ST MARY DRIVE CRANSTON RI (029820) TELEPHONE 943-6550
+523,"SCORE LESS THAN CUTOFF: Denver St, Pawtucket, RI,64.5,PROVIDENCE","['cd1990/entry/1990_Page_136 (3)_11.png', 'cd1990/entry/1990_Page_136 (3)_12.png', 'cd1990/entry/1990_Page_136 (3)_13.png', 'cd1990/entry/1990_Page_136 (3)_14.png', 'cd1990/entry/1990_Page_136 (3)_15.png', 'cd1990/entry/1990_Page_136 (3)_16.png', 'cd1990/entry/1990_Page_136 (3)_17.png', 'cd1990/entry/1990_Page_136 (3)_18.png', 'cd1990/entry/1990_Page_136 (3)_19.png']",PAWTUXET AV,"CATHOLIC YOUTH ORGANIZATION Blackstone Valley, 38 Denver St, Pawtucket, RI (02860), Tels 723-5111, 723-5119, East Bay, 25 Metropolitan Park Dr, Riverside, RI (02915), Tel 433-4327, Newport County, 2543 W Main Rd, Portsmouth, RI (02871), Tel 849-6587, Northern Rhode"
+524,"SCORE LESS THAN CUTOFF: Federal St, Box 518, Woonsocket, RI,55.0,PROVIDENCE","['cd1990/entry/1990_Page_136 (3)_20.png', 'cd1990/entry/1990_Page_136 (3)_21.png']",WOONASQUATUCKET AV,"Island, 53 Federal St, Box 518, Woonsocket, RI (02895), Tel 762-3252"
+525,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_137 (1)_26.png', 'cd1990/entry/1990_Page_137 (1)_27.png', 'cd1990/entry/1990_Page_137 (1)_28.png', 'cd1990/entry/1990_Page_137 (1)_29.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+526,"SCORE LESS THAN CUTOFF: Greenville Av, Johnston, R I,78.0,PROVIDENCE","['cd1990/entry/1990_Page_137 (1)_32.png', 'cd1990/entry/1990_Page_137 (1)_33.png']",GREENVILLE AVE,"MILLER CHAS CO 484 Greenville Av, Johnston, R I (02919), Tels 231-0680"
+527,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_137 (1)_40.png', 'cd1990/entry/1990_Page_137 (1)_41.png', 'cd1990/entry/1990_Page_137 (1)_42.png', 'cd1990/entry/1990_Page_137 (1)_43.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+528,"SCORE LESS THAN CUTOFF: Ferris Av, PO Box 4857, East Providence, RI,71.0,PROVIDENCE","['cd1990/entry/1990_Page_137 (1)_57.png', 'cd1990/entry/1990_Page_137 (1)_58.png', 'cd1990/entry/1990_Page_137 (1)_59.png', 'cd1990/entry/1990_Page_137 (1)_60.png']",PROVIDENCE PL,"NYMAN MANUFACTURING CO 275 Ferris Av, PO Box 4857, East Providence, RI (02916), Tel (401) 438-3410"
+529,EMPTY STREET,"['cd1990/entry/1990_Page_137 (2)_28.png', 'cd1990/entry/1990_Page_137 (2)_29.png']",,Fox Point Veterans Memorial Field (Gano St Playgd) 100 Freemont St
+530,EMPTY STREET,['cd1990/entry/1990_Page_137 (2)_33.png'],,Green The Brown St
+531,EMPTY STREET,['cd1990/entry/1990_Page_137 (2)_65.png'],,Vest Pocket Park Salisbury St
+532,EMPTY STREET,['cd1990/entry/1990_Page_137 (2)_66.png'],,Wanskuck Park Woodward Rd
+533,"SCORE LESS THAN CUTOFF: Sunnyside Av, Johnston, RI,77.5,PROVIDENCE","['cd1990/entry/1990_Page_137 (3)_27.png', 'cd1990/entry/1990_Page_137 (3)_28.png', 'cd1990/entry/1990_Page_137 (3)_29.png', 'cd1990/entry/1990_Page_137 (3)_30.png']",SUNNYSIDE AVE,"McFARLANE PEWTER CASTING CO INC 15 Sunnyside Av, Johnston, RI (02919), Tel (401) 272-8520"
+534,"SCORE LESS THAN CUTOFF: Waterman Av, East Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_138 (1)_15.png', 'cd1990/entry/1990_Page_138 (1)_16.png', 'cd1990/entry/1990_Page_138 (1)_17.png', 'cd1990/entry/1990_Page_138 (1)_18.png']",PROVIDENCE PL,"DONNELLY PHOTOGRAPHY 615 Waterman Av, East Providence, RI (02914), Tel 438-5050"
+535,EMPTY STREET,['cd1990/entry/1990_Page_140 (2)_36.png'],,Induplate Inc Greystone Av (NP)
+536,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_140 (2)_41.png', 'cd1990/entry/1990_Page_140 (2)_42.png']",N/A,L & S Plate & Wire Co le Jackson Walkway Ste 9
+537,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_140 (3)_5.png'],N/A,Greco Bros Plating Supply Corp Greco La
+538,"SCORE LESS THAN CUTOFF: Specatacle St, Cranston, RI,74.0,PROVIDENCE","['cd1990/entry/1990_Page_140 (3)_10.png', 'cd1990/entry/1990_Page_140 (3)_11.png', 'cd1990/entry/1990_Page_140 (3)_12.png', 'cd1990/entry/1990_Page_140 (3)_13.png']",SPECTACLE ST,"TECHNIC INC 1 Specatacle St, Cranston, RI (02910), Mail PO Box 965, (02901), Tel (401) 781-6100, FAX (401) 781-2890"
+539,"SCORE LESS THAN CUTOFF: Post Rd, Warwick, RI,78.0,PROVIDENCE","['cd1990/entry/1990_Page_140 (3)_20.png', 'cd1990/entry/1990_Page_140 (3)_21.png', 'cd1990/entry/1990_Page_140 (3)_22.png', 'cd1990/entry/1990_Page_140 (3)_23.png', 'cd1990/entry/1990_Page_140 (3)_24.png']",WARWICK AV,"J A C MECHANICAL CONTRACTORS INC 2900 Post Rd, Warwick, RI (02886), Tels (401) 737-5468 And (401) 737- 5450"
+540,"SCORE LESS THAN CUTOFF: DEAN STREET,79.5,PROVIDENCE","['cd1990/entry/1990_Page_141 (1)_9.png', 'cd1990/entry/1990_Page_141 (1)_10.png', 'cd1990/entry/1990_Page_141 (1)_11.png', 'cd1990/entry/1990_Page_141 (1)_12.png']",POINT STREET BRG,S A S SECURITY INC 179 DEAN STREET (02903) TELEPHONE (401) 351-0760
+541,"SCORE LESS THAN CUTOFF: , 4th Floor,68.5,PROVIDENCE","['cd1990/entry/1990_Page_141 (1)_37.png', 'cd1990/entry/1990_Page_141 (1)_38.png', 'cd1990/entry/1990_Page_141 (1)_39.png']",FLORA ST,"ACTON PRESS IMPRINTING SPECIALISTS 555 Valley St, Bldg 24, 4th Floor (02909), Tel 421-2687"
+542,"SCORE LESS THAN CUTOFF: Pawtucket Av, Pawtucket, RI,62.0,PROVIDENCE","['cd1990/entry/1990_Page_141 (1)_57.png', 'cd1990/entry/1990_Page_141 (1)_58.png', 'cd1990/entry/1990_Page_141 (1)_59.png']",PAWTUXET AV,"SAMOS PRESS 181 Pawtucket Av, Pawtucket, RI (02860), Tel (401) 722-1920"
+543,"SCORE LESS THAN CUTOFF: Hatherly St,71.5,PROVIDENCE",['cd1990/entry/1990_Page_141 (2)_23.png'],WAVERLY ST,Hiatt Barbara Mrs 48 Hatherly St (NP)
+544,"SCORE LESS THAN CUTOFF: DEAN STREET,79.5,PROVIDENCE","['cd1990/entry/1990_Page_141 (2)_80.png', 'cd1990/entry/1990_Page_141 (2)_81.png', 'cd1990/entry/1990_Page_141 (2)_82.png', 'cd1990/entry/1990_Page_141 (2)_83.png']",POINT STREET BRG,S A S SECURITY INC 178 DEAN STREET (02903) TELEPHONE (401) 351-0760
+545,"SCORE LESS THAN CUTOFF: Bay Spring Av, Box 229, Barrington, RI,65.0,PROVIDENCE","['cd1990/entry/1990_Page_141 (3)_31.png', 'cd1990/entry/1990_Page_141 (3)_32.png', 'cd1990/entry/1990_Page_141 (3)_33.png', 'cd1990/entry/1990_Page_141 (3)_34.png', 'cd1990/entry/1990_Page_141 (3)_35.png']",CARRINGTON AVE,"MARTEK CORPORATION 60 Bay Spring Av, Box 229, Barrington, RI (02806), Tels (401) 246-1900, FAX (401) 246-0224, TELEX 705430"
+546,"SCORE LESS THAN CUTOFF: DORRANCE STREET SUITE 300,74.5,PROVIDENCE","['cd1990/entry/1990_Page_141 (3)_45.png', 'cd1990/entry/1990_Page_141 (3)_46.png', 'cd1990/entry/1990_Page_141 (3)_47.png', 'cd1990/entry/1990_Page_141 (3)_48.png', 'cd1990/entry/1990_Page_141 (3)_49.png', 'cd1990/entry/1990_Page_141 (3)_50.png']",DORRANCE PLZ,PAOLINO JOSEPH R REAL ESTATE AND INVESTMENTS 76 DORRANCE STREET SUITE 300 (02903) TELEPHONE 274-6611
+547,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_142 (1)_55.png'],N/A,POLK R L & CO
+548,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE","['cd1990/entry/1990_Page_142 (1)_57.png', 'cd1990/entry/1990_Page_142 (1)_58.png', 'cd1990/entry/1990_Page_142 (1)_59.png']",8TH ST,"800 COMMERCIAL STREET MALDEN, MA 02148 TELEPHONE (617) 322-0500"
+549,"SCORE LESS THAN CUTOFF: Kilvert St, Suite D,64.5,PROVIDENCE","['cd1990/entry/1990_Page_142 (2)_3.png', 'cd1990/entry/1990_Page_142 (2)_4.png', 'cd1990/entry/1990_Page_142 (2)_5.png']",SILVER SPRING ST,"RADIO-PHONE COMMUNICATIONS INC 405 Kilvert St, Suite D (Warwick, RI; 02886), Tel (401) 732-4400"
+550,"SCORE LESS THAN CUTOFF: Broad St, Cranston, RI,78.5,PROVIDENCE","['cd1990/entry/1990_Page_142 (2)_58.png', 'cd1990/entry/1990_Page_142 (2)_59.png', 'cd1990/entry/1990_Page_142 (2)_60.png', 'cd1990/entry/1990_Page_142 (2)_61.png', 'cd1990/entry/1990_Page_142 (2)_62.png']",CRANSTON ST,"BAYSIDE REALTY GROUP INC 2139 Broad St, Cranston, RI (02905), Tel (401) 785-2630, 206 Gano St (02906), Tel (401) 521-9897"
+551,"SCORE LESS THAN CUTOFF: Smithfield Av, Pawtucket, RI,78.0,PROVIDENCE","['cd1990/entry/1990_Page_142 (2)_67.png', 'cd1990/entry/1990_Page_142 (2)_68.png', 'cd1990/entry/1990_Page_142 (2)_69.png', 'cd1990/entry/1990_Page_142 (2)_70.png']",SMITHFIELD AVE,"BERETTA REALTY CO 463 Smithfield Av, Pawtucket, RI (02860), Tel (401) 724-7980, FAX (401) 726-5159"
+552,"SCORE LESS THAN CUTOFF: Pawtucket Av, East Providence, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_142 (3)_28.png', 'cd1990/entry/1990_Page_142 (3)_29.png', 'cd1990/entry/1990_Page_142 (3)_30.png', 'cd1990/entry/1990_Page_142 (3)_31.png', 'cd1990/entry/1990_Page_142 (3)_32.png', 'cd1990/entry/1990_Page_142 (3)_33.png']",PROVIDENCE PL,"CARNEVALE GIANFRANCO YORKTOWN ASSOCIATES INC 2719 Pawtucket Av, East Providence, RI (02914), Tel 438-7751"
+553,"SCORE LESS THAN CUTOFF: BUTTERMAN & KRYSTON ASSOCIATES 727 East Av, Pawtucket, RI,45.0,PROVIDENCE","['cd1990/entry/1990_Page_142 (3)_41.png', 'cd1990/entry/1990_Page_142 (3)_42.png', 'cd1990/entry/1990_Page_142 (3)_43.png', 'cd1990/entry/1990_Page_142 (3)_44.png', 'cd1990/entry/1990_Page_142 (3)_45.png']",SCITUATE AVE,"CENTURY 21 BUTTERMAN & KRYSTON ASSOCIATES 727 East Av, Pawtucket, RI (02860), Tel (401) 521-9490"
+554,"SCORE LESS THAN CUTOFF: Kelly Associates 202 Broadway,49.5,PROVIDENCE",['cd1990/entry/1990_Page_142 (3)_46.png'],SCITUATE AVE,Century 21 Kelly Associates 202 Broadway
+555,"SCORE LESS THAN CUTOFF: County Rd, Barrington,78.5,PROVIDENCE","['cd1990/entry/1990_Page_142 (3)_54.png', 'cd1990/entry/1990_Page_142 (3)_55.png', 'cd1990/entry/1990_Page_142 (3)_56.png', 'cd1990/entry/1990_Page_142 (3)_57.png']",CARRINGTON AVE,"CHILD & LITTLE INC REALTORS 270 County Rd, Barrington (02806), Tel 245-5151"
+556,"SCORE LESS THAN CUTOFF: th Fl,65,PROVIDENCE",['cd1990/entry/1990_Page_142 (3)_69.png'],4TH ST,Concepts Inc One Hosp Trust Plaza 19th Fl
+557,"SCORE LESS THAN CUTOFF: Mineral Spring Av, North Providence, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_143 (1)_2.png', 'cd1990/entry/1990_Page_143 (1)_3.png', 'cd1990/entry/1990_Page_143 (1)_4.png', 'cd1990/entry/1990_Page_143 (1)_5.png']",PROVIDENCE PL,"DiBIASE ASSOCIATES INC 2010 Mineral Spring Av, North Providence, RI (02911), Tel (401) 232-1300"
+558,"SCORE LESS THAN CUTOFF: Champlain Pl,75.0,PROVIDENCE",['cd1990/entry/1990_Page_143 (1)_59.png'],CHAMBERLAIN ST,Glover Mary Lou 21 Champlain Pl
+559,"SCORE LESS THAN CUTOFF: Warwick Av. Warwick, RI,75.0,PROVIDENCE","['cd1990/entry/1990_Page_143 (2)_87.png', 'cd1990/entry/1990_Page_143 (2)_88.png', 'cd1990/entry/1990_Page_143 (2)_89.png']",WARWICK AV,"NOEL ASSOCIATES 2660 Warwick Av. Warwick, RI (02889), Tel (401) 732- 1110"
+560,"SCORE LESS THAN CUTOFF: Diamond Hill Rd, Cumberland, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_143 (2)_95.png', 'cd1990/entry/1990_Page_143 (2)_96.png']",CUMBERLAND ST,"ODONNELL REALTORS 2550 Diamond Hill Rd, Cumberland, RI (02864),
+Tel 334-3611"
+561,"SCORE LESS THAN CUTOFF: DORRANCE STREET SUITE 300,74.5,PROVIDENCE","['cd1990/entry/1990_Page_143 (3)_3.png', 'cd1990/entry/1990_Page_143 (3)_4.png', 'cd1990/entry/1990_Page_143 (3)_5.png', 'cd1990/entry/1990_Page_143 (3)_6.png', 'cd1990/entry/1990_Page_143 (3)_7.png']",DORRANCE PLZ,REAL ESTATE AND INVESTMENTS 76 DORRANCE STREET SUITE 300 (02903) TELEPHONE 274-6611
+562,"SCORE LESS THAN CUTOFF: Pleasant View Av, Greenville, RI,77.5,PROVIDENCE","['cd1990/entry/1990_Page_143 (3)_13.png', 'cd1990/entry/1990_Page_143 (3)_14.png', 'cd1990/entry/1990_Page_143 (3)_15.png', 'cd1990/entry/1990_Page_143 (3)_16.png']",OLD GREENVILLE RD,"PENTA REALTORS INC 39 Pleasant View Av, Greenville, RI (02828), Tels Business (401) 949-2468, (401) 949-2020"
+563,"SCORE LESS THAN CUTOFF: Alteri Way, Metro Center,58.5,PROVIDENCE","['cd1990/entry/1990_Page_143 (3)_29.png', 'cd1990/entry/1990_Page_143 (3)_30.png', 'cd1990/entry/1990_Page_143 (3)_31.png', 'cd1990/entry/1990_Page_143 (3)_32.png', 'cd1990/entry/1990_Page_143 (3)_33.png']",SALTER ST,"PROFILE PROPERTIES LTD 2 Alteri Way, Metro Center (Warwick, RI; 02886), Tel (401) 737- 7070"
+564,"SCORE LESS THAN CUTOFF: Zipporah St,68.0,PROVIDENCE",['cd1990/entry/1990_Page_143 (3)_79.png'],BORAH ST,Rossi Realty 15 Zipporah St (NP)
+565,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (1)_19.png', 'cd1990/entry/1990_Page_144 (1)_20.png', 'cd1990/entry/1990_Page_144 (1)_21.png']","02906),","STARR PROPERTIES One Richmond Square (02906), Tel 751-0818"
+566,"SCORE LESS THAN CUTOFF: Jefferson BLvd, Warwick,79.0,PROVIDENCE","['cd1990/entry/1990_Page_144 (1)_56.png', 'cd1990/entry/1990_Page_144 (1)_57.png', 'cd1990/entry/1990_Page_144 (1)_58.png', 'cd1990/entry/1990_Page_144 (1)_59.png']",JEFFERSON ST,"WARBURTON WILLIAM R AGENCY INC 585 Jefferson BLvd, Warwick (02886), Tel (401) 732-1500"
+567,EMPTY STREET,"['cd1990/entry/1990_Page_144 (1)_77.png', 'cd1990/entry/1990_Page_144 (1)_78.png', 'cd1990/entry/1990_Page_144 (1)_79.png', 'cd1990/entry/1990_Page_144 (1)_80.png']",,"NYBERG LEONARD J ASSOCIATES INC Three Fifteen Plainfield St (02909), Tel (401) 942-2070"
+568,"SCORE LESS THAN CUTOFF: Chestnut St, 4th Floor,77.5,PROVIDENCE","['cd1990/entry/1990_Page_144 (2)_12.png', 'cd1990/entry/1990_Page_144 (2)_13.png', 'cd1990/entry/1990_Page_144 (2)_14.png', 'cd1990/entry/1990_Page_144 (2)_15.png']",CHESTNUT ST,"COMMERCIAL PROPERTIES INC 95 Chestnut St, 4th Floor (02903), Tel 421-2222"
+569,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_144 (2)_21.png', 'cd1990/entry/1990_Page_144 (2)_22.png']",N/A,RESIDENTIAL PROPERTIES
+570,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (2)_25.png', 'cd1990/entry/1990_Page_144 (2)_26.png', 'cd1990/entry/1990_Page_144 (2)_27.png']",02903),140 WICKENDEN STREET (02903) TELEPHONE 274-6740 FAX 272-9068
+571,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_144 (2)_30.png', 'cd1990/entry/1990_Page_144 (2)_31.png']",N/A,RESIDENTIAL PROPERTIES
+572,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (2)_34.png', 'cd1990/entry/1990_Page_144 (2)_35.png', 'cd1990/entry/1990_Page_144 (2)_36.png']",02903),140 WICKENDEN STREET (02903) TELEPHONE 274-6740 FAX 272-9068
+573,"SCORE LESS THAN CUTOFF: Orms St, Suite 400,54.0,PROVIDENCE","['cd1990/entry/1990_Page_144 (2)_42.png', 'cd1990/entry/1990_Page_144 (2)_43.png', 'cd1990/entry/1990_Page_144 (2)_44.png']",UNITED ST,"ROBBINS PROPERTIES INC 10 Orms St, Suite 400 (02904), Tels (401) 272-8765, FAX (401) 273-9230"
+574,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_144 (2)_64.png', 'cd1990/entry/1990_Page_144 (2)_65.png']",N/A,RESIDENTIAL PROPERTIES
+575,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (2)_68.png', 'cd1990/entry/1990_Page_144 (2)_69.png', 'cd1990/entry/1990_Page_144 (2)_70.png']",02903),140 WICKENDEN STREET (02903) TELEPHONE 274-6740 FAX 272-9068
+576,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_144 (2)_73.png', 'cd1990/entry/1990_Page_144 (2)_74.png']",N/A,RESIDENTIAL PROPERTIES
+577,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (2)_77.png', 'cd1990/entry/1990_Page_144 (2)_78.png', 'cd1990/entry/1990_Page_144 (2)_79.png']",029038),140 WICKENDEN STREET (029038) TELEPHONE 274-6740 FAX 272-8068
+578,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_144 (3)_21.png'],N/A,RYAN ELLIOTT & CO OF RHODE
+579,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (3)_23.png', 'cd1990/entry/1990_Page_144 (3)_24.png', 'cd1990/entry/1990_Page_144 (3)_25.png']",02803),10 DORRANCE STREET PROVIDENCE RI (02803) TELEPHONE 331-0350
+580,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_144 (3)_26.png', 'cd1990/entry/1990_Page_144 (3)_27.png', 'cd1990/entry/1990_Page_144 (3)_28.png']","02906),","STARR PROPERTIES One Richmond Square (02906), Tel 751-0818"
+581,"SCORE LESS THAN CUTOFF: Broad St, Central Falls, RI,72.0,PROVIDENCE","['cd1990/entry/1990_Page_144 (3)_32.png', 'cd1990/entry/1990_Page_144 (3)_33.png', 'cd1990/entry/1990_Page_144 (3)_34.png']",CENTRAL AVE,"COLUMBIA RECORD & GIFT SHOPS 753 Broad St, Central Falls, RI (02863), Tel (401) 725-9155"
+582,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_145 (1)_43.png'],N/A,PROFESSIONAL MUSIC AUDIO
+583,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_145 (1)_45.png', 'cd1990/entry/1990_Page_145 (1)_46.png']","02919),","681 Killingly St, Johnston, RI (02919), Tel 421-6221"
+584,EMPTY STREET,['cd1990/entry/1990_Page_145 (1)_53.png'],,Tri-State Equipment Corp Fields Point Dr
+585,"SCORE LESS THAN CUTOFF: WAMPANOAG TRAIL,60.5,PROVIDENCE","['cd1990/entry/1990_Page_145 (1)_62.png', 'cd1990/entry/1990_Page_145 (1)_63.png', 'cd1990/entry/1990_Page_145 (1)_64.png', 'cd1990/entry/1990_Page_145 (1)_65.png']",AMANA DR,DUN & BRADSTREET 1275 WAMPANOAG TRAIL (EAST PROVIDENCE 02915) TELEPHONE (401) 433-4600
+586,"SCORE LESS THAN CUTOFF: Midstate Dr, Auburn, Ma,59.5,PROVIDENCE","['cd1990/entry/1990_Page_145 (1)_66.png', 'cd1990/entry/1990_Page_145 (1)_67.png', 'cd1990/entry/1990_Page_145 (1)_68.png']",STATE HWY 10,"MERCHANTS REPORTING SERVICE 15 Midstate Dr, Auburn, Ma (01501), Tel (508) 832-9021"
+587,"SCORE LESS THAN CUTOFF: ELLIOT STREET,73.5,PROVIDENCE","['cd1990/entry/1990_Page_145 (2)_18.png', 'cd1990/entry/1990_Page_145 (2)_19.png']",ELIOT AVE,POLK RL & CO 385 ELLIOT STREET
+588,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_145 (2)_21.png', 'cd1990/entry/1990_Page_145 (2)_22.png']",02164),(02164) TELEPHONE (617) 965-6113
+589,EMPTY STREET,['cd1990/entry/1990_Page_145 (2)_38.png'],,Maxcy Hall Brown St
+590,"SCORE LESS THAN CUTOFF: Esten Av, Pawtucket, RI,65.0,PROVIDENCE","['cd1990/entry/1990_Page_145 (2)_46.png', 'cd1990/entry/1990_Page_145 (2)_47.png', 'cd1990/entry/1990_Page_145 (2)_48.png']",PAWTUXET AV,"ALLSTATE RESTAURANT EQUIPMENT INC 265 Esten Av, Pawtucket, RI (02860), Tel 727-0880"
+591,"SCORE LESS THAN CUTOFF: Friendship St. Providence, RI,77.0,PROVIDENCE","['cd1990/entry/1990_Page_145 (3)_51.png', 'cd1990/entry/1990_Page_145 (3)_52.png', 'cd1990/entry/1990_Page_145 (3)_53.png']",FRIENDSHIP ST,"CECELIAS WEST AFRICAN RESTAURANT 488 Friendship St. Providence, RI (02907), Tel 621-8031"
+592,"SCORE LESS THAN CUTOFF: Atwells Av, Providence. RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_145 (3)_63.png', 'cd1990/entry/1990_Page_145 (3)_64.png']",PROVIDENCE ST,"CHEF HO 243 Atwells Av, Providence. RI (02903), Tel 831-0777"
+593,EMPTY STREET,['cd1990/entry/1990_Page_146 (1)_10.png'],,Fifty Four South St 54 South St
+594,"SCORE LESS THAN CUTOFF: Jefferson Blvd, Warwick, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_146 (1)_28.png', 'cd1990/entry/1990_Page_146 (1)_29.png', 'cd1990/entry/1990_Page_146 (1)_30.png', 'cd1990/entry/1990_Page_146 (1)_31.png']",JEFFERSON ST,"GREENWOOD INN THE 1350 Jefferson Blvd, Warwick, RI (02886), Tels (401) 738-3334 And 738- 8336"
+595,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_146 (1)_59.png'],N/A,Ivy Room Wriston Quadrangle
+596,"SCORE LESS THAN CUTOFF: Uspo,67,PROVIDENCE",['cd1990/entry/1990_Page_146 (3)_52.png'],RUSSO ST,Snack Bar 201b Federal Bldg Uspo
+597,"SCORE LESS THAN CUTOFF: b State House,78.0,PROVIDENCE","['cd1990/entry/1990_Page_146 (3)_53.png', 'cd1990/entry/1990_Page_146 (3)_54.png']",STATE HWY 10,Spankys State House Restaurant 7b State House
+598,EMPTY STREET,"['cd1990/entry/1990_Page_147 (1)_13.png', 'cd1990/entry/1990_Page_147 (1)_14.png', 'cd1990/entry/1990_Page_147 (1)_15.png']",,"ZABBYS RESTAURANT Corner Of River Av And Admiral St, 651 Admiral St (02908), Tel 331-4141"
+599,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_147 (1)_41.png', 'cd1990/entry/1990_Page_147 (1)_42.png', 'cd1990/entry/1990_Page_147 (1)_43.png', 'cd1990/entry/1990_Page_147 (1)_44.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+600,"SCORE LESS THAN CUTOFF: Edgeworth Ave,75.5,PROVIDENCE",['cd1990/entry/1990_Page_147 (1)_60.png'],EDGEWOOD AVE,Di Scullio Donald F Jr 90 Edgeworth Av
+601,EMPTY STREET,['cd1990/entry/1990_Page_147 (2)_43.png'],,Brown University Prospect St
+602,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_147 (2)_57.png', 'cd1990/entry/1990_Page_147 (2)_58.png', 'cd1990/entry/1990_Page_147 (2)_59.png', 'cd1990/entry/1990_Page_147 (2)_60.png', 'cd1990/entry/1990_Page_147 (2)_61.png']","02865),","COMMUNITY COLLEGE OF RHODE ISLAND- FLANAGAN CAMPUS Louisquisset Pike, Lincoln, RI (02865), Tel 333-7058"
+603,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_147 (3)_39.png'],N/A,PROVIDENCE COLLEGE ADMISSIONS
+604,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_147 (3)_41.png', 'cd1990/entry/1990_Page_147 (3)_42.png']","02908),","River Av At Eaton St (02908), Tel (401) 865-1000"
+605,EMPTY STREET,"['cd1990/entry/1990_Page_147 (3)_43.png', 'cd1990/entry/1990_Page_147 (3)_44.png', 'cd1990/entry/1990_Page_147 (3)_45.png']",,"PROVIDENCE COLLEGE LIBRARY River Av At Eaton St (02918), Tel 865-2242"
+606,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_147 (3)_67.png', 'cd1990/entry/1990_Page_147 (3)_68.png']","02809),","ROGER WILLIAMS COLLEGE Ferry Road (Bristol; 02809), Tel 253-1040"
+607,"SCORE LESS THAN CUTOFF: Edendale Ave,79,PROVIDENCE",['cd1990/entry/1990_Page_148 (1).chop_17.png'],VERNDALE AVE,Saint Thomas School 15 Edendale Av
+608,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_148 (1).chop_63.png', 'cd1990/entry/1990_Page_148 (1).chop_64.png', 'cd1990/entry/1990_Page_148 (1).chop_65.png']","02908),","RHODE ISLAND SCHOOL FOR THE DEAF Corliss Park (02908), Tel 277-3525"
+609,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_148 (2).chop_57.png'],N/A,BASIC SERVICE CORP/SONITROL &
+610,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_148 (2).chop_59.png', 'cd1990/entry/1990_Page_148 (2).chop_60.png']","02903),","One Jackson Walkway (02903), Tels 272-6655, 1-800-326-2600"
+611,"SCORE LESS THAN CUTOFF: DEAN STREET,79.5,PROVIDENCE","['cd1990/entry/1990_Page_148 (3).chop_9.png', 'cd1990/entry/1990_Page_148 (3).chop_10.png', 'cd1990/entry/1990_Page_148 (3).chop_11.png', 'cd1990/entry/1990_Page_148 (3).chop_12.png']",POINT STREET BRG,S A S SECURITY INC 179 DEAN STREET (02903) TELEPHONE (401) 351-0760
+612,"SCORE LESS THAN CUTOFF: BEVERAGE HILL AVENUE,63.0,PROVIDENCE","['cd1990/entry/1990_Page_148 (3).chop_13.png', 'cd1990/entry/1990_Page_148 (3).chop_14.png', 'cd1990/entry/1990_Page_148 (3).chop_15.png']",EVERGREEN ST,WACKENHUT CORPORATION THE 591 BEVERAGE HILL AVENUE
+613,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_148 (3).chop_17.png', 'cd1990/entry/1990_Page_148 (3).chop_18.png']",02861),(02861) TELEPHONE (401) 727-1490
+614,EMPTY STREET,"['cd1990/entry/1990_Page_148 (3).chop_38.png', 'cd1990/entry/1990_Page_148 (3).chop_39.png']",6 ,"KESSLERS SHEET METAL 375 Valley St, Bldg 6 (02908), Tel 421-3220"
+615,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_149 (1)_68.png'],N/A,
+616,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1990/entry/1990_Page_149 (2)_68.png'],3RD ST,Talbot House Spanish Outpatient Program 903
+617,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_149 (3)_37.png'],N/A,PROFESSIONAL MUSIC AUDIO
+618,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_149 (3)_39.png', 'cd1990/entry/1990_Page_149 (3)_40.png']","02919),","681 Killingly St, Johnston, RI (02919), Tel 421-6221"
+619,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_149 (3)_56.png', 'cd1990/entry/1990_Page_149 (3)_57.png', 'cd1990/entry/1990_Page_149 (3)_58.png']",N/A,QUALITY SPRAYING & STENCILING CO OT ee ee ee eee YN ee er
+620,"SCORE LESS THAN CUTOFF: Fall River Av, Rehoboth, Ma,49.0,PROVIDENCE","['cd1990/entry/1990_Page_150 (1)_40.png', 'cd1990/entry/1990_Page_150 (1)_41.png', 'cd1990/entry/1990_Page_150 (1)_42.png', 'cd1990/entry/1990_Page_150 (1)_43.png', 'cd1990/entry/1990_Page_150 (1)_44.png']",WINROOTH AVE,"EAST COAST PRESSURE AND STEAM MACHINES 74 Fall River Av, Rehoboth, Ma (02769), Tel (508) 836-5775, 1-800-537-0539, FAX (508) 886-3975"
+621,EMPTY STREET,"['cd1990/entry/1990_Page_150 (2)_3.png', 'cd1990/entry/1990_Page_150 (2)_4.png', 'cd1990/entry/1990_Page_150 (2)_5.png']",6 ,"COMPANY 387 Charles St, Bldg 6 (02904), Tel (401) 331-0569"
+622,"SCORE LESS THAN CUTOFF: Warren Av, East Providence, RI,77.0,PROVIDENCE","['cd1990/entry/1990_Page_150 (2)_9.png', 'cd1990/entry/1990_Page_150 (2)_10.png', 'cd1990/entry/1990_Page_150 (2)_11.png', 'cd1990/entry/1990_Page_150 (2)_12.png']",PROVIDENCE PL,"LLOYD FABRICATING & WELDING CO Rear 100 Warren Av, East Providence, RI (02914), Tel 434-1084"
+623,"SCORE LESS THAN CUTOFF: SIMS AVENUE PROVIDENCE RI,79.0,PROVIDENCE","['cd1990/entry/1990_Page_150 (2)_13.png', 'cd1990/entry/1990_Page_150 (2)_14.png', 'cd1990/entry/1990_Page_150 (2)_15.png', 'cd1990/entry/1990_Page_150 (2)_16.png', 'cd1990/entry/1990_Page_150 (2)_17.png']",PROVIDENCE PL,PROVIDENCE STEEL INC 27 SIMS AVENUE PROVIDENCE RI (02909) TELEPHONE 331-1810 FAX TELEPHONE 751-3475
+624,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_150 (2)_19.png'],N/A,Greco Bros Inc Greco La
+625,"SCORE LESS THAN CUTOFF: Main St, Suite 510,54.0,PROVIDENCE","['cd1990/entry/1990_Page_150 (2)_28.png', 'cd1990/entry/1990_Page_150 (2)_29.png']",UNITED ST,"KEBCO INC 255 Main St, Suite 510 (02860), Tel (401) 725-2979"
+626,"SCORE LESS THAN CUTOFF: Municipal Wharf,53.5,PROVIDENCE",['cd1990/entry/1990_Page_150 (2)_34.png'],MICHAEL ST,Orr John J & Son Inc 1 Municipal Wharf
+627,"SCORE LESS THAN CUTOFF: Fleet Center,78.5,PROVIDENCE","['cd1990/entry/1990_Page_150 (2)_45.png', 'cd1990/entry/1990_Page_150 (2)_46.png', 'cd1990/entry/1990_Page_150 (2)_47.png']",CENTER PL,"TUCKER ANTHONY INC 1000 Fleet Center (02903), Tel 457- 1900"
+628,EMPTY STREET,['cd1990/entry/1990_Page_150 (3)_3.png'],,"77 Pilsudski St (02909), Tel 944-4540"
+629,"SCORE LESS THAN CUTOFF: Charles St, N Providence, RI,75.5,PROVIDENCE","['cd1990/entry/1990_Page_150 (3)_58.png', 'cd1990/entry/1990_Page_150 (3)_59.png', 'cd1990/entry/1990_Page_150 (3)_60.png', 'cd1990/entry/1990_Page_150 (3)_61.png']",PROVIDENCE PL,"MADELENES TAILOR SHOP 885 Charles St, N Providence, RI (02904), Tel 725-5970"
+630,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_151 (1)_1.png'],N/A,fAILORS-CONTD
+631,EMPTY STREET,"['cd1990/entry/1990_Page_151 (1)_3.png', 'cd1990/entry/1990_Page_151 (1)_4.png']",,"517B Hartford Av (02908), Tel 831- 2288"
+632,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_151 (1)_7.png'],N/A,Zogers Tailor Shop Westminster Sq Bldg
+633,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_151 (1)_61.png'],N/A,Bigelow Lounge West Quadrangle
+634,"SCORE LESS THAN CUTOFF: ELLIOT STREET,73.5,PROVIDENCE","['cd1990/entry/1990_Page_151 (3)_14.png', 'cd1990/entry/1990_Page_151 (3)_15.png']",ELIOT AVE,POLK R L & CO 885 ELLIOT STREET
+635,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_151 (3)_17.png', 'cd1990/entry/1990_Page_151 (3)_18.png']",02164),(02164) TELEPHONE (617) 965-6113
+636,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_23.png', 'cd1990/entry/1990_Page_151 (3)_24.png']",N/A,Abbey Telephone & Secretarial Service 56 Pine St 3d Fl
+637,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_29.png', 'cd1990/entry/1990_Page_151 (3)_30.png']",N/A,Businessmens Telephone Answering Service 111 Westminster St Rm 1033
+638,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_36.png', 'cd1990/entry/1990_Page_151 (3)_37.png']",N/A,Metrocom Telephone Answering Service 1 Salvati Way
+639,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_40.png', 'cd1990/entry/1990_Page_151 (3)_41.png']",N/A,American Telephone & Telegraph 234 Washington St
+640,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_44.png', 'cd1990/entry/1990_Page_151 (3)_45.png']",N/A,M CI Telecommunications Corp Inc le Jackson Walkway Ste 8
+641,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_46.png', 'cd1990/entry/1990_Page_151 (3)_47.png', 'cd1990/entry/1990_Page_151 (3)_48.png', 'cd1990/entry/1990_Page_151 (3)_49.png', 'cd1990/entry/1990_Page_151 (3)_50.png', 'cd1990/entry/1990_Page_151 (3)_51.png']",N/A,"NEW ENGLAND TELEPHONE CO CUSTOMER SERVICES DIVISION 85 High St (Pawtucket, RI; 02861), Tel 727-9550"
+642,FAILED TO PARSE AN ADDRESS,"['cd1990/entry/1990_Page_151 (3)_52.png', 'cd1990/entry/1990_Page_151 (3)_53.png']",N/A,NEW ENGLAND TELEPHONE CO (MLAC)
+643,"SCORE LESS THAN CUTOFF: Park Av, Cranston, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_152 (1)_27.png', 'cd1990/entry/1990_Page_152 (1)_28.png', 'cd1990/entry/1990_Page_152 (1)_29.png', 'cd1990/entry/1990_Page_152 (1)_30.png']",CRANSTON ST,"CULLCO COMMUNICATIONS 1424 Park Av, Cranston, RI (02920), Tels 946-3150, 942-0500"
+644,"SCORE LESS THAN CUTOFF: 10 Orms St, Providence, RI,79.5,PROVIDENCE","['cd1990/entry/1990_Page_152 (1)_48.png', 'cd1990/entry/1990_Page_152 (1)_49.png', 'cd1990/entry/1990_Page_152 (1)_50.png', 'cd1990/entry/1990_Page_152 (1)_51.png']",PROVIDENCE ST,"W L N E-TV (CBS) CHANNEL 6 10 Orms St, Providence, RI (02904), Tel (401) 751-6666"
+645,EMPTY STREET,"['cd1990/entry/1990_Page_152 (1)_52.png', 'cd1990/entry/1990_Page_152 (1)_53.png']",12 ,W P RI TELEVISION CHANNEL 12 (ABC)
+646,EMPTY STREET,['cd1990/entry/1990_Page_152 (2)_42.png'],,Worcester Co Greystone Av (NP)
+647,EMPTY STREET,['cd1990/entry/1990_Page_152 (2)_53.png'],,Isabelle Russek Leeds Theatre Brown St
+648,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1990/entry/1990_Page_152 (2)_56.png'],10TH ST,Providence Performing Arts Center 220
+649,"SCORE LESS THAN CUTOFF: Bush Av, Port Chester, NY,73.5,PROVIDENCE","['cd1990/entry/1990_Page_152 (3)_3.png', 'cd1990/entry/1990_Page_152 (3)_4.png', 'cd1990/entry/1990_Page_152 (3)_5.png', 'cd1990/entry/1990_Page_152 (3)_6.png', 'cd1990/entry/1990_Page_152 (3)_7.png', 'cd1990/entry/1990_Page_152 (3)_8.png']",CHESTER AVE,"ROSCO LABORATORIES INC Corporate Office, 36 Bush Av, Port Chester, NY (10573), Local Manufacturing Plant, 31 Walnut St, Central Falls (02863), Tel 725-6765"
+650,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_152 (3)_48.png'],N/A,COMMONWEALTH LAND TITLE
+651,EMPTY STREET,"['cd1990/entry/1990_Page_152 (3)_51.png', 'cd1990/entry/1990_Page_152 (3)_52.png']",,"S Main St (02908), Tel 331-5331 And FAX Tel (401) 331-4922"
+652,EMPTY STREET,"['cd1990/entry/1990_Page_153 (1)_5.png', 'cd1990/entry/1990_Page_153 (1)_6.png']",,"8 Main St (02903), Tel 331-5331 And FAX Tel (401) 331-4922"
+653,EMPTY STREET,"['cd1990/entry/1990_Page_153 (1)_36.png', 'cd1990/entry/1990_Page_153 (1)_37.png']",,Universal Standard Ring Traveler Co Greystone Av (NP)
+654,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE","['cd1990/entry/1990_Page_153 (2)_35.png', 'cd1990/entry/1990_Page_153 (2)_36.png']",1ST ST,Crimson Travel Service le Jackson Walkway Suite 21
+655,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_153 (2)_55.png'],N/A,Paragon Tours Westminster Sq Bldg
+656,"SCORE LESS THAN CUTOFF: Kilvert St, Warwick, RI,65.0,PROVIDENCE","['cd1990/entry/1990_Page_153 (3)_23.png', 'cd1990/entry/1990_Page_153 (3)_24.png', 'cd1990/entry/1990_Page_153 (3)_25.png']",SILVER SPRING ST,"BICHUN TRUCK PARTS 100 Kilvert St, Warwick, RI (02886), Tel (401) 737-2524"
+657,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_155 (1)_20.png'],N/A,PROFESSIONAL MUSIC AUDIO
+658,ERROR IN STREET MATCHING,"['cd1990/entry/1990_Page_155 (1)_22.png', 'cd1990/entry/1990_Page_155 (1)_23.png']","02919),","681 Killingly St, Johnston, RI (02919), Tel 421-6221"
+659,"SCORE LESS THAN CUTOFF: East Av, West Warwick,76.0,PROVIDENCE","['cd1990/entry/1990_Page_155 (1)_32.png', 'cd1990/entry/1990_Page_155 (1)_33.png', 'cd1990/entry/1990_Page_155 (1)_34.png']",WARWICK AV,"MOTION STATE VIDEOGRAPHERS 645 East Av, West Warwick (02893), Tel 823-7310"
+660,"SCORE LESS THAN CUTOFF: Bath St, PO Box 9547,67.5,PROVIDENCE","['cd1990/entry/1990_Page_155 (1)_39.png', 'cd1990/entry/1990_Page_155 (1)_40.png', 'cd1990/entry/1990_Page_155 (1)_41.png', 'cd1990/entry/1990_Page_155 (1)_42.png']",BATH ST,"CARTIER M N & SONS CO INC 65 Bath St, PO Box 9547 (02940), Tel 331-0400, Toll Free Tel 1-800-662- 5119, FAX Tel (401) 274-8710"
+661,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_155 (1)_53.png'],N/A,A C E Warehouse Corp Municipal Wharf
+662,FAILED TO PARSE AN ADDRESS,['cd1990/entry/1990_Page_155 (1)_55.png'],N/A,KELLAWAY WAREHOUSE &
+663,"SCORE LESS THAN CUTOFF: Commerce St, Pawtucket, RI,63.0,PROVIDENCE","['cd1990/entry/1990_Page_155 (1)_57.png', 'cd1990/entry/1990_Page_155 (1)_58.png', 'cd1990/entry/1990_Page_155 (1)_59.png']",PAWTUXET AV,"INCORPORATED 24 Commerce St, Pawtucket, RI (02862), Tel (401) 724-6970, FAX (401) 725-8970"
+664,"SCORE LESS THAN CUTOFF: Mineral Spring Av, Pawtucket, RI,59.5,PROVIDENCE","['cd1990/entry/1990_Page_155 (2)_3.png', 'cd1990/entry/1990_Page_155 (2)_4.png', 'cd1990/entry/1990_Page_155 (2)_5.png']",PAWTUXET AV,"ANDERBERGS INC 560 Mineral Spring Av, Pawtucket, RI (02860), Tel 425-6960"
+665,"SCORE LESS THAN CUTOFF: Centre St, Pawtucket,67.0,PROVIDENCE","['cd1990/entry/1990_Page_155 (3)_27.png', 'cd1990/entry/1990_Page_155 (3)_28.png', 'cd1990/entry/1990_Page_155 (3)_29.png']",PAWTUXET AV,"ROBERTS WOODWORKING INC 27 Centre St, Pawtucket (02860), Tel 722-9578"
+666,EMPTY STREET,"['cd1990/entry/1990_Page_155 (3)_51.png', 'cd1990/entry/1990_Page_155 (3)_52.png', 'cd1990/entry/1990_Page_155 (3)_53.png']",25 ,"METRIC WIRE FORMING 555 Valley St, Bldg 25 (02908), Tel 521-1740 Or 521-1741"
+667,"SCORE LESS THAN CUTOFF: Jefferson Blvd, Warwick, RI,76.5,PROVIDENCE","['cd1990/entry/1990_Page_156 (2)_2.png', 'cd1990/entry/1990_Page_156 (2)_3.png', 'cd1990/entry/1990_Page_156 (2)_4.png']",JEFFERSON ST,"VAUGHN L CO 555 Jefferson Blvd, Warwick, RI (02886), Tels (401) 739- 2800, (401) 732-1321"

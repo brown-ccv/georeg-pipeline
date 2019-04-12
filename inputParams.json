@@ -1,5 +1,5 @@
 {
-  "year_folder": "cd1950",
+  "year_folder": "cd1936",
   "image_process": {
     "single_image": false,
     "img_name": "1968_Page_108",
@@ -37,7 +37,9 @@
     "pool_num": 6,
     "do_ocr": false,
     "make_table": false,
+    "geocode": true,
     "stringParse" : {
-    }
+    },
+    "geocode": true
   }
 }

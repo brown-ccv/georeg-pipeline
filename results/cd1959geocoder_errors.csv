@@ -1,0 +1,888 @@
+,Index,Address,City,Company_Name,Conf_Score,File_List,Header,Text
+0,5,922 INDUSTRIAL DR,PROVIDENCE,"Haskins & Sells,",83.5,"['cd1959/entry/1959_Page_93 (1).chop_17.png', 'cd1959/entry/1959_Page_93 (1).chop_18.png']",* ACCOUNTANTS--CERTIFIED PUBLIC,"Haskins & Sells, 922 Industrial Bank Bldg, Tel UNion 1-0740"
+1,7,354 BROADWAY ST,PROVIDENCE,Accinno & Campanella,100.0,['cd1959/entry/1959_Page_93 (1).chop_25.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,Accinno & Campanella 354 Broadway
+2,46,168 BROADWAY ST,PROVIDENCE,David & Villatico,100.0,['cd1959/entry/1959_Page_93 (1).chop_67.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,David & Villatico 168 Broadway
+3,49,20 OLNEYVILLE SQ,PROVIDENCE,DiMuro & Associates,100.0,['cd1959/entry/1959_Page_93 (2).chop_1.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,DiMuro & Associates 20 Olneyville sq
+4,81,270 BROADWAY ST,PROVIDENCE,Krupa and DiChiara,92.0,['cd1959/entry/1959_Page_93 (2).chop_37.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,Krupa and DiChiara 270 Broadway R2
+5,83,32 WESTMINSTER ST,PROVIDENCE,Lane Warren C,96.0,['cd1959/entry/1959_Page_93 (2).chop_39.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,Lane Warren C 32 Westminster 6th fl
+6,110,32 WESTMINSTER ST,PROVIDENCE,Pederella Victor,90.5,['cd1959/entry/1959_Page_93 (2).chop_70.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,Pederella Victor 32 Westminster R403
+7,133,182 BROADWAY ST,PROVIDENCE,Stasio Anthony S,100.0,['cd1959/entry/1959_Page_93 (3).chop_17.png'],ACCOUNTANTS PUBLIC *Denotes Certified Public Accoun-,Stasio Anthony S 182 Broadway
+8,164,24 MASON AV,PROVIDENCE,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg",100.0,"['cd1959/entry/1959_Page_94 (1)_6.png', 'cd1959/entry/1959_Page_94 (1)_7.png', 'cd1959/entry/1959_Page_94 (1)_8.png']",* ADVERTISING RADIO,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg 24 Mason, Tel PLantations 1-9766 (See Yellow Page 78)"
+9,165,24 MASON AV,PROVIDENCE,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg",100.0,"['cd1959/entry/1959_Page_94 (1)_11.png', 'cd1959/entry/1959_Page_94 (1)_12.png', 'cd1959/entry/1959_Page_94 (1)_13.png']",* ADVERTISING RADIO BROAD- CASTING,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg 24 Mason, Tel PLantations 1-9776 (See Yellow Page 78)"
+10,167,172 BROADWAY ST,PROVIDENCE,American Enterprises,100.0,['cd1959/entry/1959_Page_94 (1)_21.png'],ADVERTISING AGENCIES,American Enterprises 172 Broadway
+11,198,24 MASON AV,PROVIDENCE,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg",100.0,"['cd1959/entry/1959_Page_94 (1)_60.png', 'cd1959/entry/1959_Page_94 (1)_61.png', 'cd1959/entry/1959_Page_94 (1)_62.png', 'cd1959/entry/1959_Page_94 (1)_63.png']",* ADVERTISING COUNSE LRADIO,"W PRO BROADCASTING STATION AM, FM & TV, W PRO Bldg 24 Mason, Tel PLantations 1-9776 (See Yellow Page 78) ADVERTISING COUNSEL and"
+12,199,24 MASON AV,PROVIDENCE,Bernstein Bo & Co Inc,100.0,['cd1959/entry/1959_Page_94 (1)_65.png'],SERVICE,Bernstein Bo & Co Inc 24 Mason 4th fl
+13,200,24 MASON AV,PROVIDENCE,Cherry & Webb Broadcasting Co,100.0,['cd1959/entry/1959_Page_94 (1)_66.png'],SERVICE,Cherry & Webb Broadcasting Co 24 Mason
+14,208,170 BROADWAY ST,PROVIDENCE,Curtis Circulation Co,100.0,['cd1959/entry/1959_Page_94 (2)_3.png'],ADVERTISING RE PRESENTATIVES NEWSPAPER and MAGAZINE,Curtis Circulation Co 170 Broadway
+15,272,235 BROADWAY ST,PROVIDENCE,Broadway Apartments,100.0,['cd1959/entry/1959_Page_95 (1)_7.png'],APARTMENT BUILDINGS,Broadway Apartments 235 Broadway
+16,275,485 BROADWAY ST,PROVIDENCE,Carol Lois Apartments,100.0,['cd1959/entry/1959_Page_95 (1)_10.png'],APARTMENT BUILDINGS,Carol Lois Apartments 485 Broadway
+17,276,411 WEYBOSSET ST,PROVIDENCE,Cathedral Apartments,100.0,['cd1959/entry/1959_Page_95 (1)_11.png'],APARTMENT BUILDINGS,Cathedral Apartments 411 Weybosset
+18,277,104 FRANKLIN ST,PROVIDENCE,Charles Apartments,90.0,['cd1959/entry/1959_Page_95 (1)_13.png'],APARTMENT BUILDINGS,Charles Apartments 104-106 Franklin
+19,289,189 BROADWAY ST,PROVIDENCE,DeMoura Joseph,100.0,['cd1959/entry/1959_Page_95 (1)_27.png'],APARTMENT BUILDINGS,DeMoura Joseph  189 Broadway
+20,295,14 EARL DR,PROVIDENCE,Earl Apartments,100.0,['cd1959/entry/1959_Page_95 (1)_33.png'],APARTMENT BUILDINGS,Earl Apartments 14 Earl
+21,321,7 BROWNELL ST,PROVIDENCE,Hillcrest Apartments,100.0,['cd1959/entry/1959_Page_95 (1)_56.png'],APARTMENT BUILDINGS,Hillcrest Apartments 7 Brownell
+22,325,142 IRVING ST,PROVIDENCE,Jacksonian The,87.0,['cd1959/entry/1959_Page_95 (1)_60.png'],APARTMENT BUILDINGS,Jacksonian The 142-146 Irving av
+23,359,421 WEYBOSSET ST,PROVIDENCE,Paramount Apartments,100.0,['cd1959/entry/1959_Page_95 (2)_4.png'],APARTMENT BUILDINGS,Paramount Apartments 421 Weybosset
+24,361,454 BROADWAY ST,PROVIDENCE,Pascone Apartments,100.0,['cd1959/entry/1959_Page_95 (2)_6.png'],APARTMENT BUILDINGS,Pascone Apartments 454 Broadway
+25,373,103 BROADWAY ST,PROVIDENCE,Sherbrook The,100.0,['cd1959/entry/1959_Page_95 (2)_18.png'],APARTMENT BUILDINGS,Sherbrook The 103 Broadway
+26,438,48 ARCADE ST,PROVIDENCE,Rakatansky Ira,100.0,['cd1959/entry/1959_Page_95 (3)_31.png'],ARCHITECTS,Rakatansky Ira 48 Arcade
+27,469,58 ARCADE ST,PROVIDENCE,Gingras Ernest A,85.0,['cd1959/entry/1959_Page_95 (3)_78.png'],ARTISTSCOMMERCIAL,Gingras Ernest A 58 Arcade bldg
+28,483,545 PLEASANT AV,PROVIDENCE,Nincheri Guido,90.0,['cd1959/entry/1959_Page_96 (1)_13.png'],ARTISTSCOMMERCIAL,Nincheri Guido 545 MtPleasant av
+29,484,46 ARCADE ST,PROVIDENCE,Okerblom Wm H,85.0,['cd1959/entry/1959_Page_96 (1)_14.png'],ARTISTSCOMMERCIAL,Okerblom Wm H 46 Arcade bldg
+30,489,46 ARCADE ST,PROVIDENCE,Turner Don,85.0,['cd1959/entry/1959_Page_96 (1)_19.png'],ARTISTSCOMMERCIAL,Turner Don 46 Arcade bldg
+31,491,35 WESTMINSTER ST,PROVIDENCE,Young Andrew A,100.0,['cd1959/entry/1959_Page_96 (1)_21.png'],ARTISTSCOMMERCIAL,Young Andrew A 35 Westminster 3d fl
+32,504,63 VAN ZANDT AVE,PROVIDENCE,Providence Ash Removing Co,85.5,['cd1959/entry/1959_Page_96 (1)_50.png'],ASH and REFUSE REMOVERS,Providence Ash Removing Co 63 VanZandt
+33,511,609 INDUSTRIAL DR,PROVIDENCE,"AUTOMOBILE LEGAL ASSOCIATION,",83.5,"['cd1959/entry/1959_Page_96 (1)_72.png', 'cd1959/entry/1959_Page_96 (1)_73.png']","* ASSOCIATIONS, CLUBS and SOCIETIES","AUTOMOBILE LEGAL ASSOCIATION, 609 Industrial Bank Bldg, Tel GAspee 1-8723"
+34,532,186 BROADWAY ST,PROVIDENCE,A &J Auto Ignition Co,100.0,['cd1959/entry/1959_Page_96 (2)_65.png'],PARTSRETAIL,A &J Auto Ignition Co 186: Broadway
+35,533,573 BROADWAY ST,PROVIDENCE,A & V Auto Supply Co,100.0,['cd1959/entry/1959_Page_96 (2)_66.png'],PARTSRETAIL,A & V Auto Supply Co 573 Broadway
+36,536,584 BROADWAY ST,PROVIDENCE,Atlantic Motor Parts Co,100.0,['cd1959/entry/1959_Page_96 (2)_69.png'],PARTSRETAIL,Atlantic Motor Parts Co 584 Broadway
+37,549,91 BROADWAY ST,PROVIDENCE,Globe Auto Supply Inc,100.0,['cd1959/entry/1959_Page_96 (3)_6.png'],PARTSRETAIL,Globe Auto Supply Inc 91 Broadway
+38,553,137 CHARLES ST,PROVIDENCE,Hope Cycle & Auto Supply Co,100.0,['cd1959/entry/1959_Page_96 (3)_10.png'],PARTSRETAIL,Hope Cycle & Auto Supply Co 137 Charles
+39,569,323 PEARL AVE,PROVIDENCE,Cooper-Lewis Co Inc,100.0,['cd1959/entry/1959_Page_96 (3)_32.png'],AUTOMOBILE ACCESSORIES and PARTSWHOLESALE and JOBBERS,Cooper-Lewis Co Inc 323 Pearl
+40,575,135 BROADWAY ST,PROVIDENCE,Montgomery Distributors Inc,90.0,"['cd1959/entry/1959_Page_96 (3)_41.png', 'cd1959/entry/1959_Page_96 (3)_42.png']",AUTOMOBILE ACCESSORIES and PARTSWHOLESALE and JOBBERS,Montgomery Distributors Inc 135-141 Broadway
+41,581,609 INDUSTRIAL DR,PROVIDENCE,"AUTOMOBILE LEGAL ASSOCIATION,",83.5,"['cd1959/entry/1959_Page_96 (3)_51.png', 'cd1959/entry/1959_Page_96 (3)_52.png']",*AUTOMOBILE ASSOCIATIONS,"AUTOMOBILE LEGAL ASSOCIATION, 609 Industrial Bank Bldg, Tel GAspee 1-8723"
+42,586,353 PEARL AVE,PROVIDENCE,Badessas Auto Body Works,100.0,['cd1959/entry/1959_Page_96 (3)_62.png'],AUTOMOBILE BODY REPAIRERS,Badessas Auto Body Works 353 Pearl
+43,605,255 STONE ST,PROVIDENCE,General Welding Co Inc,83.5,['cd1959/entry/1959_Page_96 (3)_87.png'],AUTOMOBILE BODY REPAIRERS,General Welding Co Inc 255 Chal&stone av
+44,611,805 CRANSTON ST,PROVIDENCE,Neys Auto Body,100.0,['cd1959/entry/1959_Page_97 (1).chop_9.png'],GERSHKOFF BODY AND RADIATOR CO.,Neys Auto Body 805 Cranston
+45,627,126 BROADWAY ST,PROVIDENCE,"CHEVROLET, H T Mulry Chevrolet Co,",90.0,"['cd1959/entry/1959_Page_97 (1).chop_32.png', 'cd1959/entry/1959_Page_97 (1).chop_33.png', 'cd1959/entry/1959_Page_97 (1).chop_34.png', 'cd1959/entry/1959_Page_97 (1).chop_35.png']",AUTOMOBILE DEALERS,"CHEVROLET, H T Mulry Chevrolet Co, 126-128 Broadway. Tels GAspee 1-6394 through to GAspee 1-6399 (See Yellow Page 4)"
+46,644,630 BROADWAY ST,PROVIDENCE,Mack Trucks Inc,100.0,['cd1959/entry/1959_Page_97 (1).chop_64.png'],AUTOMOBILE DEALERS,Mack Trucks Inc 630 Broadway
+47,647,126 BROADWAY ST,PROVIDENCE,MULRY H T CHEVROLET CO.,90.0,"['cd1959/entry/1959_Page_97 (1).chop_67.png', 'cd1959/entry/1959_Page_97 (1).chop_68.png']",AUTOMOBILE DEALERS,"MULRY H T CHEVROLET CO. 126-128 Broadway, Tels GAspee 1-6394 through
+to GAspee 1-6399 (See Yellow Page 4)"
+48,655,365 BROADWAY ST,PROVIDENCE,Tramonti Motor Sales Inc,100.0,['cd1959/entry/1959_Page_97 (1).chop_89.png'],AUTOMOBILE DEALERS,Tramonti Motor Sales Inc 365 Broadway
+49,671,555 ELLWOOD AV,PROVIDENCE, CRISS CADILLAC CO,93.5,"['cd1959/entry/1959_Page_97 (2).chop_20.png', 'cd1959/entry/1959_Page_97 (2).chop_21.png', 'cd1959/entry/1959_Page_97 (2).chop_22.png']",AUTOMOBILE DEALERSUSED CARS,"CRISS CADILLAC CO, 555 and 610 Elwood av, Tel HOpkins 1-0086 (See Yellow Page 3)"
+50,672,610 ELLWOOD AV,PROVIDENCE, CRISS CADILLAC CO,93.5,"['cd1959/entry/1959_Page_97 (2).chop_20.png', 'cd1959/entry/1959_Page_97 (2).chop_21.png', 'cd1959/entry/1959_Page_97 (2).chop_22.png']",AUTOMOBILE DEALERSUSED CARS,"CRISS CADILLAC CO, 555 and 610 Elwood av, Tel HOpkins 1-0086 (See Yellow Page 3)"
+51,702,1070 BROADWAY ST,PROVIDENCE,Pocasset Motor Sales,100.0,['cd1959/entry/1959_Page_97 (2).chop_60.png'],AUTOMOBILE DEALERSUSED CARS,Pocasset Motor Sales 1070 Broadway
+52,731,55 PLEASANT AV,PROVIDENCE,MtPleasant Avenue Garage,80.0,['cd1959/entry/1959_Page_97 (3).chop_4.png'],AUTOMOBILE GARAGES,MtPleasant Avenue Garage 55 MtPleasantav
+53,748,291 PEARL AVE,PROVIDENCE,"""A &G Auto Painting Co",100.0,['cd1959/entry/1959_Page_97 (3).chop_44.png'],* AUTOMOBILE PAINTERS,"""A &G Auto Painting Co 291 Pearl"
+54,759,69 BROADWAY ST,PROVIDENCE,Broadway Parking Lot,100.0,['cd1959/entry/1959_Page_97 (3).chop_58.png'],AUTOMOBILE PARKING,Broadway Parking Lot 69 Broadway
+55,765,27 RAILROAD TERR,PROVIDENCE,Depot Parking Grounds,88.0,['cd1959/entry/1959_Page_97 (3).chop_66.png'],AUTOMOBILE PARKING,Depot Parking Grounds 27 Railroad
+56,774,145 MAIDEN LN,PROVIDENCE,Kelman Louis,80.0,['cd1959/entry/1959_Page_97 (3).chop_79.png'],AUTOMOBILE PARKING,Kelman Louis 145  Main
+57,788,101 STILLMAN ST,PROVIDENCE,Park N Lock,100.0,['cd1959/entry/1959_Page_98 (1)_13.png'],AUTOMOBILE PARKING,Park N Lock 101 Stillman
+58,810,416 FOUNTAIN ST,PROVIDENCE, Davis Drive Yourself Co Inc,100.0,"['cd1959/entry/1959_Page_98 (1)_45.png', 'cd1959/entry/1959_Page_98 (1)_46.png']",AUTOMOBILE RENTING,Davis Drive Yourself Co Inc 1 Dorrance and 416 Fountain
+59,812,370 WILLARD ST,PROVIDENCE,Sheridan & Dorr,100.0,['cd1959/entry/1959_Page_98 (1)_48.png'],AUTOMOBILE RENTING,Sheridan & Dorr 370 Willard av
+60,820,421 HARRISON ST,PROVIDENCE,Butler Auto Service rear,100.0,['cd1959/entry/1959_Page_98 (1)_59.png'],AUTOMOBILE RE PAIRING,Butler Auto Service rear 421 Harrison
+61,826,5044 BROADWAY ST,PROVIDENCE,Conti Albert R,100.0,['cd1959/entry/1959_Page_98 (1)_67.png'],AUTOMOBILE RE PAIRING,Conti Albert R 5044 Broadway
+62,832,287 PEARL AVE,PROVIDENCE,Dels Brake & Front End Service,100.0,['cd1959/entry/1959_Page_98 (1)_74.png'],AUTOMOBILE RE PAIRING,Dels Brake & Front End Service 287 Pearl
+63,838,138 RANDALL RD,PROVIDENCE,Fratus Brake & Wheel Service Inc,100.0,"['cd1959/entry/1959_Page_98 (1)_81.png', 'cd1959/entry/1959_Page_98 (1)_82.png']",AUTOMOBILE RE PAIRING,Fratus Brake & Wheel Service Inc 138 Ran- dall
+64,861,497 BROADWAY ST,PROVIDENCE,Payette Hervey E,100.0,['cd1959/entry/1959_Page_98 (2)_18.png'],AUTOMOBILE RE PAIRING,Payette Hervey E 497 Broadway
+65,864,566 BROADWAY ST,PROVIDENCE,Portland Transmission Exchange Inc,100.0,"['cd1959/entry/1959_Page_98 (2)_23.png', 'cd1959/entry/1959_Page_98 (2)_24.png']",AUTOMOBILE RE PAIRING,Portland Transmission Exchange Inc 566 Broadway
+66,865,120 BROADWAY ST,PROVIDENCE,Providence Auto Ignition Co,100.0,['cd1959/entry/1959_Page_98 (2)_25.png'],AUTOMOBILE RE PAIRING,Providence Auto Ignition Co 120 Broadway
+67,877,721 RESERVOIR AVE,PROVIDENCE,"ROSSI FORD INC (Ford and Thunderbird),",80.0,"['cd1959/entry/1959_Page_98 (2)_40.png', 'cd1959/entry/1959_Page_98 (2)_41.png', 'cd1959/entry/1959_Page_98 (2)_42.png']",AUTOMOBILE RE PAIRING,"ROSSI FORD INC (Ford and Thunderbird), 721 Reservoir av, Cranston, Tel STuart 1-8000 (See Yellow Page 4)"
+68,878,416 FOUNTAIN ST,PROVIDENCE,Ruerat Albert,100.0,['cd1959/entry/1959_Page_98 (2)_43.png'],AUTOMOBILE RE PAIRING,Ruerat Albert 416 Fountain
+69,883,31 BOURNE AVE,PROVIDENCE,Stanleys Auto Body Co,91.0,['cd1959/entry/1959_Page_98 (2)_48.png'],AUTOMOBILE RE PAIRING,Stanleys Auto Body Co 31 Bourn
+70,886,365 WILLARD ST,PROVIDENCE,Vespia John,100.0,['cd1959/entry/1959_Page_98 (2)_51.png'],AUTOMOBILE RE PAIRING,Vespia John 365 Willard av
+71,887,124 BROADWAY ST,PROVIDENCE,Weed Brake & Wheel Service,100.0,['cd1959/entry/1959_Page_98 (2)_52.png'],AUTOMOBILE RE PAIRING,Weed Brake & Wheel Service 124 Broadway
+72,888,150 BROADWAY ST,PROVIDENCE,White Electric Co,100.0,['cd1959/entry/1959_Page_98 (2)_53.png'],AUTOMOBILE RE PAIRING,White Electric Co 150 Broadway
+73,895,568 BROADWAY ST,PROVIDENCE, Franks Auto Top Co,100.0,"['cd1959/entry/1959_Page_98 (2)_68.png', 'cd1959/entry/1959_Page_98 (2)_69.png']",TRIMMINGS,Franks Auto Top Co 568 Broadway and 883 Elmwood av
+74,901,431 DETROIT AVE,PROVIDENCE, POLK RL& CO,83.5,"['cd1959/entry/1959_Page_98 (2)_77.png', 'cd1959/entry/1959_Page_98 (2)_78.png', 'cd1959/entry/1959_Page_98 (2)_79.png', 'cd1959/entry/1959_Page_98 (2)_80.png']",* AUTOMOBILE and TRUCKS OWNER LISTS,"POLK RL& CO 431 HOWARD DETROIT 31, MICHIGAN AUTOMOBILE WASHING and"
+75,905,104 WATER ST,PROVIDENCE,Court House Auto Laundry,100.0,['cd1959/entry/1959_Page_98 (3)_3.png'],POLISHING,Court House Auto Laundry 104  Water
+76,907,260 PEARL AVE,PROVIDENCE,Dealers Auto Cleaning Inc,100.0,['cd1959/entry/1959_Page_98 (3)_5.png'],POLISHING,Dealers Auto Cleaning Inc 260 Pearl
+77,914,100 BROADWAY ST,PROVIDENCE,Sasso Frank J,100.0,['cd1959/entry/1959_Page_98 (3)_13.png'],POLISHING,Sasso Frank J 100 Broadway
+78,915,95 BURRINGTON ST,PROVIDENCE,Carrs Benny Wrecking Shop,100.0,['cd1959/entry/1959_Page_98 (3)_15.png'],AUTOMOBILE WRECKERS,Carrs Benny Wrecking Shop 95 Burrington
+79,920,721 RESERVOIR AVE,PROVIDENCE,"ROSSI FORD INC (Ford and Thunderbird),",80.0,"['cd1959/entry/1959_Page_98 (3)_28.png', 'cd1959/entry/1959_Page_98 (3)_29.png', 'cd1959/entry/1959_Page_98 (3)_30.png']",* AUTOMOBILESNEW and USED,"ROSSI FORD INC (Ford and Thunderbird), 721 Reservoir av, Crapston, Tel STuart 1-8000 (See Yellow Page 4)"
+80,924,20 STEVENS RD,PROVIDENCE,Providence Awning & Flag Co (canvas),83.5,"['cd1959/entry/1959_Page_98 (3)_43.png', 'cd1959/entry/1959_Page_98 (3)_44.png']",* AVIATION INSURANCE,Providence Awning & Flag Co (canvas) 20 Stevens Ist fl
+81,936,11 ARCADE ST,PROVIDENCE, SMITH MAURICE C CO INC,85.0,"['cd1959/entry/1959_Page_98 (3)_67.png', 'cd1959/entry/1959_Page_98 (3)_68.png']","*BADGES PLASTIC, CELLULOID and METAL","SMITH MAURICE C CO INC, 52 Pine and 11 Arcade Bldg, Tel GAspee 1-1064 (See
+Yellow Page 87)"
+82,941,15 STEVENS RD,PROVIDENCE,Rhode Island Burlap Bag Co,87.0,['cd1959/entry/1959_Page_99 (1)_8.png'],BAG MANUFACTURERS,Rhode Island Burlap Bag Co 15 Stevens 2dfl
+83,969,2373 PRAIRIE AVE,PROVIDENCE,Dels Bakery,100.0,['cd1959/entry/1959_Page_99 (1)_39.png'],BAKED GOODSRETAIL,Dels Bakery 2373 Prairie av
+84,982,7273 HOPE ST,PROVIDENCE,Hope Street Bakery,100.0,['cd1959/entry/1959_Page_99 (1)_53.png'],BAKED GOODSRETAIL,Hope Street Bakery 7273 Hope
+85,999,506 KILLINGLY ST,PROVIDENCE,Mercurio Joseph W jr,100.0,['cd1959/entry/1959_Page_99 (1)_70.png'],BAKED GOODSRETAIL,Mercurio Joseph W jr 506 Killingly
+86,1034,6073 CHARLES ST,PROVIDENCE,Valentes Bakery,100.0,['cd1959/entry/1959_Page_99 (2)_17.png'],BAKED GOODSRETAIL,Valentes Bakery 6073 Charles
+87,1057,502 BROADWAY ST,PROVIDENCE,Borrelli Perry & His Orchestra,100.0,"['cd1959/entry/1959_Page_99 (2)_55.png', 'cd1959/entry/1959_Page_99 (2)_56.png']",*BAKING POWDER DISTRIBUTORS,Borrelli Perry & His Orchestra 502 Broad- way
+88,1074,661 BROADWAY ST,PROVIDENCE, Plantations Bank of Rhode Island,100.0,"['cd1959/entry/1959_Page_99 (3)_38.png', 'cd1959/entry/1959_Page_99 (3)_39.png']",* BANKS--CO-OPERATIVE,Plantations Bank of Rhode Island 950 Broad 661 Broadway and 61 Weybosset
+89,1078,1637 WARWICK AV,PROVIDENCE,"1-7730, Gateway -Warwick Office,",100.0,"['cd1959/entry/1959_Page_99 (3)_54.png', 'cd1959/entry/1959_Page_99 (3)_55.png']",* BANKS--CO-OPERATIVE,"1-7730, Gateway -Warwick Office, 1637 Warwick av (See Yellow Page 12)"
+90,1087,228 BROADWAY ST,PROVIDENCE,Masello Bros Inc,100.0,['cd1959/entry/1959_Page_99 (3)_75.png'],MENT and SUPPLIES,Masello Bros Inc 228 Broadway
+91,1105,29 ARCADE ST,PROVIDENCE,Arcade Barber Shop,85.5,['cd1959/entry/1959_Page_100 (1)_10.png'],BARBER SHOPS,Arcade Barber Shop 29 Arcade bidg
+92,1106,6803 CRANSTON ST,PROVIDENCE,Armens Barber Shop,100.0,['cd1959/entry/1959_Page_100 (1)_11.png'],BARBER SHOPS,Armens Barber Shop 6803 Cranston
+93,1111,5 ARCADE ST,PROVIDENCE,Barberette The,85.5,['cd1959/entry/1959_Page_100 (1)_16.png'],BARBER SHOPS,Barberette The 5 Arcade bidg
+94,1123,357 BROADWAY ST,PROVIDENCE,Broadway Barber Shop,100.0,['cd1959/entry/1959_Page_100 (1)_29.png'],BARBER SHOPS,Broadway Barber Shop 357 Broadway
+95,1124,560 BROADWAY ST,PROVIDENCE,Broadway Tonsorial Parlor,100.0,['cd1959/entry/1959_Page_100 (1)_30.png'],BARBER SHOPS,Broadway Tonsorial Parlor 560 Broadway
+96,1137,1284 PRAIRIE AVE,PROVIDENCE,Carney Irving O,91.0,['cd1959/entry/1959_Page_100 (1)_43.png'],BARBER SHOPS,Carney Irving O 1284 Prairie ay
+97,1167,54 PLEASANT AV,PROVIDENCE,DeRensis Ferdinand,90.0,['cd1959/entry/1959_Page_100 (1)_75.png'],BARBER SHOPS,DeRensis Ferdinand 54 MtPleasant av
+98,1177,943 DORRANCE ST,PROVIDENCE,Dorrance Street Barber Shop,100.0,['cd1959/entry/1959_Page_100 (1)_85.png'],BARBER SHOPS,Dorrance Street Barber Shop 943 Dorrance
+99,1200,29 BROADWAY ST,PROVIDENCE,Gallo Salvatore,100.0,['cd1959/entry/1959_Page_100 (2)_14.png'],BARBER SHOPS,Gallo Salvatore 29 Broadway
+100,1214,5084 ELMWOOD AV,PROVIDENCE,Hagopian Garabed,100.0,['cd1959/entry/1959_Page_100 (2)_28.png'],BARBER SHOPS,Hagopian Garabed 5084 Elmwood av
+101,1221,2853 POCASSET AVE,PROVIDENCE,Jannella Michele,100.0,['cd1959/entry/1959_Page_100 (2)_35.png'],BARBER SHOPS,Jannella Michele 2853 Pocasset av
+102,1222,2803 BROADWAY ST,PROVIDENCE,Imbruglia Saml,100.0,['cd1959/entry/1959_Page_100 (2)_36.png'],BARBER SHOPS,Imbruglia Saml 2803 Broadway
+103,1244,3393 POCASSET AVE,PROVIDENCE,LaBelle Maurice,100.0,['cd1959/entry/1959_Page_100 (2)_59.png'],BARBER SHOPS,LaBelle Maurice 3393 Pocasset av
+104,1252,5 PLEASANT AV,PROVIDENCE,Lemieux Arth,90.0,['cd1959/entry/1959_Page_100 (2)_67.png'],BARBER SHOPS,Lemieux Arth 5 MtPleasant av
+105,1254,2633 BROADWAY ST,PROVIDENCE,Lombardi Peter A,100.0,['cd1959/entry/1959_Page_100 (2)_69.png'],BARBER SHOPS,Lombardi Peter A 2633 Broadway
+106,1269,2323 CRANSTON ST,PROVIDENCE,Marios Barber Shop,100.0,['cd1959/entry/1959_Page_100 (2)_84.png'],BARBER SHOPS,Marios Barber Shop 2323 Cranston
+107,1271,5903 CHARLES ST,PROVIDENCE,Marios Tonsorial Parlor,100.0,['cd1959/entry/1959_Page_100 (2)_86.png'],BARBER SHOPS,Marios Tonsorial Parlor 5903 Charles
+108,1299,502 BROADWAY ST,PROVIDENCE,Perrys Barber Shop,100.0,['cd1959/entry/1959_Page_100 (3)_23.png'],BARBER SHOPS,Perrys Barber Shop 502 Broadway
+109,1304,2613 SMITH ST,PROVIDENCE,Petteruti John,100.0,['cd1959/entry/1959_Page_100 (3)_28.png'],BARBER SHOPS,Petteruti John 2613 Smith
+110,1312,681 BROADWAY ST,PROVIDENCE,Ralphs Barber Shop,88.0,['cd1959/entry/1959_Page_100 (3)_36.png'],BARBER SHOPS,Ralphs Barber Shop 681 Broadway R201
+111,1313,6803 ADMIRAL ST,PROVIDENCE,Rao Charles,100.0,['cd1959/entry/1959_Page_100 (3)_37.png'],BARBER SHOPS,Rao Charles 6803 Admiral
+112,1366,104 ANITA RD,PROVIDENCE,Yunge Steven M,80.0,['cd1959/entry/1959_Page_100 (3)_93.png'],BARBER SHOPS,Yunge Steven M 104 Banta
+113,1386,145 BROADWAY ST,PROVIDENCE,Fuller Battery & Supply Corp,100.0,['cd1959/entry/1959_Page_101 (1)_39.png'],BATTERY DEALERS and SERVICE,Fuller Battery & Supply Corp 145 Broadway
+114,1388,449 FOUNTAIN ST,PROVIDENCE,State Battery Service,100.0,['cd1959/entry/1959_Page_101 (1)_41.png'],BATTERY DEALERS and SERVICE,State Battery Service 449 Fountain
+115,1390,59 BROADWAY ST,PROVIDENCE, Mule Battery Mfg Co,100.0,"['cd1959/entry/1959_Page_101 (1)_44.png', 'cd1959/entry/1959_Page_101 (1)_45.png']",BATTERY MANUFACTURERS,Mule Battery Mfg Co 59 Broadway and 45 River av
+116,1413,194 HILLSIDE DR,PROVIDENCE,Anthony's Beauty Salon,100.0,['cd1959/entry/1959_Page_101 (1)_74.png'],BEAUTY SHOPS,Anthony's Beauty Salon 194 Hillside av
+117,1417,28 ARCADE ST,PROVIDENCE,Arcade House of Beauty,85.0,['cd1959/entry/1959_Page_101 (2)_4.png'],R402,Arcade House of Beauty 28 Arcade bldg
+118,1430,377 BROADWAY ST,PROVIDENCE,Betty-Lou Beauty Salon,100.0,['cd1959/entry/1959_Page_101 (2)_17.png'],R402,Betty-Lou Beauty Salon 377 Broadway
+119,1457,9573 ATWELLS AVE,PROVIDENCE,Denise Beauty Salon,100.0,['cd1959/entry/1959_Page_101 (2)_46.png'],R402,Denise Beauty Salon 9573 Atwells av
+120,1474,10054 SMITH ST,PROVIDENCE,Ettas Beauty Shop,100.0,['cd1959/entry/1959_Page_101 (2)_63.png'],R402,Ettas Beauty Shop 10054 Smith
+121,1523,211 BROADWAY ST,PROVIDENCE,Ladyfair Salon,100.0,['cd1959/entry/1959_Page_101 (3)_30.png'],R502,Ladyfair Salon 211 Broadway
+122,1525,504 BROADWAY ST,PROVIDENCE,LaMode Beauty Salon,100.0,['cd1959/entry/1959_Page_101 (3)_32.png'],R502,LaMode Beauty Salon 504 Broadway
+123,1562,347 BROADWAY ST,PROVIDENCE,Miss Louise Beauty Salon,100.0,['cd1959/entry/1959_Page_101 (3)_82.png'],R502,Miss Louise Beauty Salon 347 Broadway
+124,1581,681 BROADWAY ST,PROVIDENCE,Payette Alice Beauty Salon,88.0,"['cd1959/entry/1959_Page_102 (1)_8.png', 'cd1959/entry/1959_Page_102 (1)_9.png']",R502,Payette Alice Beauty Salon 681 Broadway R212
+125,1583,1394 POCASSET AVE,PROVIDENCE,Peggys Beauty Salon,100.0,['cd1959/entry/1959_Page_102 (1)_11.png'],R502,Peggys Beauty Salon 1394 Pocasset av
+126,1586,100 PACIFIC AVE,PROVIDENCE,Pleasant View Beauty Shop,100.0,['cd1959/entry/1959_Page_102 (1)_14.png'],R502,Pleasant View Beauty Shop 100 Pacific av
+127,1590,6823 CRANSTON ST,PROVIDENCE,Renees Beauty Salon,100.0,['cd1959/entry/1959_Page_102 (1)_18.png'],R502,Renees Beauty Salon 6823 Cranston
+128,1621,6033 CHARLES ST,PROVIDENCE,Town Beauty Shop,100.0,['cd1959/entry/1959_Page_102 (1)_56.png'],R502,Town Beauty Shop 6033 Charles
+129,1625,36 OLNEYVILLE SQ,PROVIDENCE,Vilmas Beauty Shoppe,95.0,['cd1959/entry/1959_Page_102 (1)_61.png'],R502,Vilmas Beauty Shoppe 36 Olneyville sq R8
+130,1668,125 BROADWAY ST,PROVIDENCE,Broadway Bar,100.0,['cd1959/entry/1959_Page_102 (2)_18.png'],BEERRETAIL,Broadway Bar 125 Broadway
+131,1680,18 ASHBURTON ST,PROVIDENCE,Club,93.0,['cd1959/entry/1959_Page_102 (2)_31.png'],BEERRETAIL,Club 18 18 Ashburton
+132,1696,19 LUONGO MEMORIAL SQ,PROVIDENCE,Decatur Bar,86.5,"['cd1959/entry/1959_Page_102 (2)_47.png', 'cd1959/entry/1959_Page_102 (2)_48.png']",BEERRETAIL,Decatur Bar 19 Thos & Vincent Luongo Memorial sq
+133,1745,10 OLNEYVILLE SQ,PROVIDENCE,Jim's Bar,100.0,['cd1959/entry/1959_Page_102 (2)_97.png'],BEERRETAIL,Jim's Bar 10 Olneyville sq
+134,1757,53 BROADWAY ST,PROVIDENCE,LaSalle Tap The,100.0,['cd1959/entry/1959_Page_102 (3)_6.png'],BEERRETAIL,LaSalle Tap The 53 Broadway
+135,1780,122 RANDALL RD,PROVIDENCE,Midway Bar,100.0,['cd1959/entry/1959_Page_102 (3)_29.png'],BEERRETAIL,Midway Bar 122 Randall
+136,1785,3 PLEASANT AV,PROVIDENCE,MtPleasant Bar,90.0,['cd1959/entry/1959_Page_102 (3)_33.png'],BEERRETAIL,MtPleasant Bar 3 MtPleasant av
+137,1791,52 PLEASANT AV,PROVIDENCE,Old Times Tap,90.0,['cd1959/entry/1959_Page_102 (3)_39.png'],BEERRETAIL,Old Times Tap 52 MtPleasant av
+138,1814,31 PETTIS ST,PROVIDENCE,Rudis Bar,100.0,['cd1959/entry/1959_Page_102 (3)_63.png'],BEERRETAIL,Rudis Bar 31 Pettis
+139,1876,35 WESTMINSTER ST,PROVIDENCE,American Blue Print Co Inc,89.5,"['cd1959/entry/1959_Page_103 (1)_42.png', 'cd1959/entry/1959_Page_103 (1)_43.png']",BLUE PRINTS,American Blue Print Co Inc 35 Westminster 2d fi
+140,1890,1119 INDUSTRIAL DR,PROVIDENCE,"TRONS E M ASSOCIATES INC,",83.5,"['cd1959/entry/1959_Page_103 (2)_22.png', 'cd1959/entry/1959_Page_103 (2)_23.png', 'cd1959/entry/1959_Page_103 (2)_24.png']",*BONDS-COURTCONTRAC T FIDELITY and SURETY,"TRONS E M ASSOCIATES INC, 1119 Indus- trial Bank Bldg, Tel GAspee 1-7345, If No Answer Call CEntredale 1-9236"
+141,1896,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_103 (2)_42.png', 'cd1959/entry/1959_Page_103 (2)_43.png', 'cd1959/entry/1959_Page_103 (2)_44.png']",*BONDSFIDELITY and SURETY,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+142,1901,35 WESTMINSTER ST,PROVIDENCE,Accounting Associates,100.0,"['cd1959/entry/1959_Page_103 (2)_56.png', 'cd1959/entry/1959_Page_103 (2)_57.png']",BOOKKEE PING SERVICE,Accounting Associates 35 Westminster 3d fl
+143,1906,170 BROADWAY ST,PROVIDENCE,Advance Distributors,100.0,['cd1959/entry/1959_Page_103 (3)_2.png'],BOOKSRETAIL,Advance Distributors 170 Broadway
+144,1909,443 WEYBOSSET ST,PROVIDENCE,Dana's Old Corner Book Shop,100.0,['cd1959/entry/1959_Page_103 (3)_5.png'],BOOKSRETAIL,Dana's Old Corner Book Shop 443 Weybosset
+145,1926,100 WILLARD ST,PROVIDENCE,Clicquot Club Distributing Co,93.0,['cd1959/entry/1959_Page_103 (3)_33.png'],BOTTLERSCARBONATED BEVERAGES,Clicquot Club Distributing Co 100 Willarda -
+146,1939,32 OLNEYVILLE SQ,PROVIDENCE,Manhattan Bowling Alleys,100.0,['cd1959/entry/1959_Page_103 (3)_56.png'],BOWLING LANES,Manhattan Bowling Alleys 32 Olneyville sq
+147,1941,480 BENEFIT ST,PROVIDENCE,Sunnyside Alleys,100.0,['cd1959/entry/1959_Page_103 (3)_58.png'],BOWLING LANES,Sunnyside Alleys 480 Benefit
+148,1955,12 LIBRARY RD,PROVIDENCE,"DIAMOND PAPER BOX CO,",100.0,"['cd1959/entry/1959_Page_104 (1)_14.png', 'cd1959/entry/1959_Page_104 (1)_15.png']",*BOXESPAPER and METAL,"DIAMOND PAPER BOX CO, 12 Library ct, Tel ELmhurst 1~-5689"
+149,1986,37 WESTMINSTER ST,PROVIDENCE,M-A-C Finance Plan Inc,100.0,['cd1959/entry/1959_Page_104 (2)_8.png'],R1012,M-A-C Finance Plan Inc 37 Westminster
+150,1990,20 WESTMINSTER ST,PROVIDENCE,"KIDDER, PEABODY & CO,",100.0,"['cd1959/entry/1959_Page_104 (2)_18.png', 'cd1959/entry/1959_Page_104 (2)_19.png']",(See also Investment Bankers),"KIDDER, PEABODY & CO, 20 Westminster, Tel GAspee 1-3500 (See Yellow Page 18)"
+151,2075,89 BROADWAY ST,PROVIDENCE,Carpenters Building Inc,100.0,['cd1959/entry/1959_Page_105 (1)_23.png'],BUILDINGSOFFICE and PUBLIC,Carpenters Building Inc 89 Broadway
+152,2136,36 OLNEYVILLE SQ,PROVIDENCE,Irons Block,100.0,['cd1959/entry/1959_Page_105 (1)_91.png'],BUILDINGSOFFICE and PUBLIC,Irons Block 36 Olneyville sq
+153,2146,32 BROADWAY ST,PROVIDENCE,LaSalle Square Building,100.0,['cd1959/entry/1959_Page_105 (1)_103.png'],BUILDINGSOFFICE and PUBLIC,LaSalle Square Building 32 Broadway
+154,2155,170 BROADWAY ST,PROVIDENCE,Marson Building,100.0,['cd1959/entry/1959_Page_105 (2)_9.png'],BUILDINGSOFFICE and PUBLIC,Marson Building 170 Broadway
+155,2179,124 FRANKLIN ST,PROVIDENCE,Otis Building,100.0,['cd1959/entry/1959_Page_105 (2)_39.png'],BUILDINGSOFFICE and PUBLIC,Otis Building 124 Franklin
+156,2201,117 BROADWAY ST,PROVIDENCE,Realty Building,100.0,['cd1959/entry/1959_Page_105 (2)_72.png'],BUILDINGSOFFICE and PUBLIC,Realty Building 117 Broadway
+157,2206,106 FRANCIS AVE,PROVIDENCE,Rhode Island Medical Society Library Build- ing,100.0,"['cd1959/entry/1959_Page_105 (2)_81.png', 'cd1959/entry/1959_Page_105 (2)_82.png']",BUILDINGSOFFICE and PUBLIC,Rhode Island Medical Society Library Build- ing 106 Francis
+158,2212,681 BROADWAY ST,PROVIDENCE,Rotelli Building,100.0,['cd1959/entry/1959_Page_105 (2)_91.png'],BUILDINGSOFFICE and PUBLIC,Rotelli Building 681 Broadway
+159,2223,20 OLNEYVILLE SQ,PROVIDENCE,Smith Building The,100.0,['cd1959/entry/1959_Page_105 (2)_102.png'],BUILDINGSOFFICE and PUBLIC,Smith Building The 20 Olneyville sq
+160,2253,24 MASON AV,PROVIDENCE,WP RO Building,100.0,['cd1959/entry/1959_Page_105 (3)_34.png'],BUILDINGSOFFICE and PUBLIC,WP RO Building 24 Mason
+161,2257,30 OLNEYVILLE SQ,PROVIDENCE,Wales Building,100.0,['cd1959/entry/1959_Page_105 (3)_38.png'],BUILDINGSOFFICE and PUBLIC,Wales Building 30 Olneyville sq
+162,2261,12 OLNEYVILLE SQ,PROVIDENCE,Waterman Building,100.0,['cd1959/entry/1959_Page_105 (3)_42.png'],BUILDINGSOFFICE and PUBLIC,Waterman Building 12 Olneyville sq
+163,2284,406 FOUNTAIN ST,PROVIDENCE,Interstate Buses Corp,100.0,['cd1959/entry/1959_Page_105 (3)_77.png'],BUS LINES,Interstate Buses Corp 406 Fountain
+164,2290,400 FOUNTAIN ST,PROVIDENCE,Rhode Island Bus Co,100.0,['cd1959/entry/1959_Page_105 (3)_83.png'],BUS LINES,Rhode Island Bus Co 400 Fountain
+165,2293,406 FOUNTAIN ST,PROVIDENCE, Short Line Inc The,100.0,['cd1959/entry/1959_Page_105 (3)_86.png'],BUS LINES,Short Line Inc The 5 Eddy and 406 Fountain
+166,2296,400 FOUNTAIN ST,PROVIDENCE,"RHODE ISLAND BUS CO, Chartered Service Anywhere,",100.0,"['cd1959/entry/1959_Page_105 (3)_90.png', 'cd1959/entry/1959_Page_105 (3)_91.png', 'cd1959/entry/1959_Page_105 (3)_92.png']",*BUS SERVICE,"RHODE ISLAND BUS CO, Chartered Service Anywhere, 400 Fountain, Tel UNion 1-5000"
+167,2304,4173 SMITH ST,PROVIDENCE,Business Machines Inc,100.0,['cd1959/entry/1959_Page_106 (1)_31.png'],SERVICE,Business Machines Inc 4173 Smith
+168,2318,4173 SMITH ST,PROVIDENCE,McKenna Ray Sales Co,100.0,['cd1959/entry/1959_Page_106 (1)_47.png'],SERVICE,McKenna Ray Sales Co 4173 Smith
+169,2325,11 ARCADE ST,PROVIDENCE,Smith Maurice C Co Inc,85.0,['cd1959/entry/1959_Page_106 (1)_58.png'],SERVICE,Smith Maurice C Co Inc 11 Arcade bldg
+170,2335,92 WINCHESTER ST,PROVIDENCE,Di Bonaventura Anthony,100.0,['cd1959/entry/1959_Page_106 (1)_73.png'],CABINET MAKERS,Di Bonaventura Anthony 92 Winchester
+171,2351,3 TOWER ST,PROVIDENCE,Westcott Chas H,91.0,['cd1959/entry/1959_Page_106 (2)_6.png'],CABINET MAKERS,Westcott Chas H 3 Towner
+172,2385,44 PLEASANT AV,PROVIDENCE,Weiner Harry,100.0,['cd1959/entry/1959_Page_106 (2)_72.png'],CARPENTERS JOB,Weiner Harry 44 Pleasant
+173,2452,401 RESERVOIR AV,PROVIDENCE,Temple Beth E L Cemetery,100.0,"['cd1959/entry/1959_Page_107 (1)_13.png', 'cd1959/entry/1959_Page_107 (1)_14.png']",CEMETERIES,Temple Beth E L Cemetery 401 Reservoir av
+174,2480,15 STEVENS RD,PROVIDENCE,Laboratory Products rear,100.0,['cd1959/entry/1959_Page_107 (1)_75.png'],CHEMICALSMANUFACTURERS,Laboratory Products rear 15 Stevens
+175,2482,15 STEVENS RD,PROVIDENCE,Mercutron Co rear,100.0,['cd1959/entry/1959_Page_107 (1)_77.png'],CHEMICALSMANUFACTURERS,Mercutron Co rear 15 Stevens
+176,2517,227 BROADWAY ST,PROVIDENCE,DeCesare Thos jr,100.0,['cd1959/entry/1959_Page_107 (2)_61.png'],CHIROPODISTS,DeCesare Thos jr 227 Broadway
+177,2520,1 WESTMINSTER ST,PROVIDENCE,Goldman Harry [,85.5,['cd1959/entry/1959_Page_107 (2)_64.png'],CHIROPODISTS,Goldman Harry [1 187 Westminster R401
+178,2546,151 BROADWAY ST,PROVIDENCE,Lancellotti Wm E,100.0,['cd1959/entry/1959_Page_107 (3)_4.png'],CHIROPRACTORS,Lancellotti Wm E 151 Broadway
+179,2549,372 BROADWAY ST,PROVIDENCE,Natal Romeo,100.0,['cd1959/entry/1959_Page_107 (3)_7.png'],CHIROPRACTORS,Natal Romeo 372 Broadway
+180,2550,372 BROADWAY ST,PROVIDENCE,Natal Thos R,100.0,['cd1959/entry/1959_Page_107 (3)_8.png'],CHIROPRACTORS,Natal Thos R 372 Broadway
+181,2578,64 JEFFERSON ST,PROVIDENCE,Armenian Apostolic Church,100.0,['cd1959/entry/1959_Page_107 (3)_44.png'],CHURCHES,Armenian Apostolic Church 64 Jefferson
+182,2585,197 BROADWAY ST,PROVIDENCE,Broadway Italian Methodist Church,100.0,"['cd1959/entry/1959_Page_107 (3)_54.png', 'cd1959/entry/1959_Page_107 (3)_55.png']",CHURCHES,Broadway Italian Methodist Church 197 Broadway
+183,2586,149 CALHOUN AVE,PROVIDENCE,Calhoun Avenue Baptist Church,100.0,['cd1959/entry/1959_Page_107 (3)_56.png'],CHURCHES,Calhoun Avenue Baptist Church 149 Calhoun
+184,2600,68 POND ST,PROVIDENCE,Church of God & Saints of Christ,100.0,['cd1959/entry/1959_Page_107 (3)_71.png'],CHURCHES,Church of God & Saints of Christ 68 Pond
+185,2607,647 BROADWAY ST,PROVIDENCE,Church of the Master (Bapt),100.0,"['cd1959/entry/1959_Page_107 (3)_84.png', 'cd1959/entry/1959_Page_107 (3)_85.png']",CHURCHES,Church of the Master (Bapt) 647 Broadway cor Valley
+186,2666,780 PLEASANT AV,PROVIDENCE,StAugustines Church (Roman Catholic),90.0,"['cd1959/entry/1959_Page_108 (1)_89.png', 'cd1959/entry/1959_Page_108 (1)_90.png']",CHURCHES,StAugustines Church (Roman Catholic) 780 MtPleasant av
+187,2675,50 ORCHARD LN,PROVIDENCE,StMartins Episcopal Church,100.0,['cd1959/entry/1959_Page_108 (2)_6.png'],CHURCHES,StMartins Episcopal Church 50 Orchard av
+188,2685,402 BROADWAY ST,PROVIDENCE,StVartanantz Armenian Apostolic Church,100.0,"['cd1959/entry/1959_Page_108 (2)_29.png', 'cd1959/entry/1959_Page_108 (2)_30.png']",CHURCHES,StVartanantz Armenian Apostolic Church 402 Broadway
+189,2686,430 WEYBOSSET ST,PROVIDENCE,StsPeter & Paul Roman Catholic Cathedral,89.0,"['cd1959/entry/1959_Page_108 (2)_31.png', 'cd1959/entry/1959_Page_108 (2)_32.png']",CHURCHES,StsPeter & Paul Roman Catholic Cathedral 430 Wevbosset cor Fenner
+190,2697,70 ORCHARD LN,PROVIDENCE,Temple Beth-El (Jewish),100.0,['cd1959/entry/1959_Page_108 (2)_48.png'],CHURCHES,Temple Beth-El (Jewish) 70 Orchard av
+191,2723,319 BROADWAY ST,PROVIDENCE,Giso Bros Cigar Co Inc,100.0,['cd1959/entry/1959_Page_108 (2)_81.png'],SALE,Giso Bros Cigar Co Inc 319 Broadway
+192,2733,25 ARCADE ST,PROVIDENCE,Arcade Cleansers,100.0,['cd1959/entry/1959_Page_108 (3)_14.png'],*CITY DIRECTORY PUBLISHERS,Arcade Cleansers 25 Arcade
+193,2741,646 BROADWAY ST,PROVIDENCE,Bianche Cleansers,100.0,['cd1959/entry/1959_Page_108 (3)_21.png'],*CITY DIRECTORY PUBLISHERS,Bianche Cleansers 646 Broadway
+194,2746,312 BROADWAY ST,PROVIDENCE,Broadway Cleanswers,100.0,['cd1959/entry/1959_Page_108 (3)_26.png'],*CITY DIRECTORY PUBLISHERS,Broadway Cleanswers 312 Broadway
+195,2779,7683 BROAD ST,PROVIDENCE,Embassy Cleansers & Tailors,100.0,['cd1959/entry/1959_Page_108 (3)_61.png'],*CITY DIRECTORY PUBLISHERS,Embassy Cleansers & Tailors 7683 Broad
+196,2798,67 PLEASANT AV,PROVIDENCE,Jackson Cleansers,90.0,['cd1959/entry/1959_Page_108 (3)_82.png'],*CITY DIRECTORY PUBLISHERS,Jackson Cleansers 67 MtPleasant av
+197,2814,30 BROADWAY ST,PROVIDENCE,LaSalle Cieaners,100.0,['cd1959/entry/1959_Page_109 (1)_2.png'],*CITY DIRECTORY PUBLISHERS,LaSalle Cieaners 30 Broadway
+198,2822,110 BROADWAY ST,PROVIDENCE,Luxor Cleansers,100.0,['cd1959/entry/1959_Page_109 (1)_10.png'],*CITY DIRECTORY PUBLISHERS,Luxor Cleansers 110 Broadway
+199,2847,486 BROADWAY ST,PROVIDENCE,Post War Cleansers,100.0,['cd1959/entry/1959_Page_109 (1)_38.png'],*CITY DIRECTORY PUBLISHERS,Post War Cleansers 486 Broadway
+200,2856,2494 DEXTER ST,PROVIDENCE,Sno-White Wee-Wash-It Laundry,100.0,"['cd1959/entry/1959_Page_109 (1)_47.png', 'cd1959/entry/1959_Page_109 (1)_48.png']",*CITY DIRECTORY PUBLISHERS,Sno-White Wee-Wash-It Laundry 2494 Dex- ter
+201,2879,42 CYR ST,BRISTOL, Victor Cleansing Co (office & plant),100.0,"['cd1959/entry/1959_Page_109 (1)_68.png', 'cd1959/entry/1959_Page_109 (1)_69.png']",*CITY DIRECTORY PUBLISHERS,Victor Cleansing Co (office & plant) 42 Cyr (brs) 483 Angell and 72 Dorrance
+202,2914,538 BROADWAY ST,PROVIDENCE,Canole John J Rev (RC),100.0,['cd1959/entry/1959_Page_109 (2)_30.png'],CLERGYMEN,Canole John J Rev (RC) 538 Broadway
+203,2915,26 POND ST,PROVIDENCE,Carey Wm J Very Rev Msgr (RC),100.0,['cd1959/entry/1959_Page_109 (2)_31.png'],CLERGYMEN,Carey Wm J Very Rev Msgr (RC) 26 Pond
+204,2929,538 BROADWAY ST,PROVIDENCE,Connoly James Rev (RC),100.0,['cd1959/entry/1959_Page_109 (2)_46.png'],CLERGYMEN,Connoly James Rev (RC) 538 Broadway
+205,2930,334 WILLARD ST,PROVIDENCE,Connor Jesse L Rev (Bapt),100.0,['cd1959/entry/1959_Page_109 (2)_47.png'],CLERGYMEN,Connor Jesse L Rev (Bapt) 334 Willard av
+206,2954,776 PLEASANT AV,PROVIDENCE,Dyer Raymond Rev (RC),90.0,['cd1959/entry/1959_Page_109 (2)_72.png'],CLERGYMEN,Dyer Raymond Rev (RC) 776 MtPleasant av
+207,2975,776 PLEASANT AV,PROVIDENCE,Gilfillan Thos P Rev (RC),90.0,['cd1959/entry/1959_Page_109 (2)_93.png'],CLERGYMEN,Gilfillan Thos P Rev (RC) 776 MtPleasant av
+208,2978,44 PLEASANT AV,PROVIDENCE,Gordon Sami R Rev,100.0,['cd1959/entry/1959_Page_109 (2)_96.png'],CLERGYMEN,Gordon Sami R Rev 44 Pleasant
+209,2981,26 POND ST,PROVIDENCE,Greaves John G Rev (RC),100.0,['cd1959/entry/1959_Page_109 (2)_99.png'],CLERGYMEN,Greaves John G Rev (RC) 26 Pond
+210,2986,70 ORCHARD LN,PROVIDENCE,Gurland Jerome (J),100.0,['cd1959/entry/1959_Page_109 (3)_1.png'],CLERGYMEN,Gurland Jerome (J) 70 Orchard av
+211,2988,776 PLEASANT AV,PROVIDENCE,Harrington Wm Rev (RC),90.0,['cd1959/entry/1959_Page_109 (3)_3.png'],CLERGYMEN,Harrington Wm Rev (RC) 776 MtPleasant av
+212,2993,41 PLEASANT AV,PROVIDENCE,Hoard Walter B Rev,100.0,['cd1959/entry/1959_Page_109 (3)_9.png'],CLERGYMEN,Hoard Walter B Rev 41 Pleasant
+213,3017,25 JEFFERSON ST,PROVIDENCE,Lawton Arth J (non denominational),100.0,"['cd1959/entry/1959_Page_109 (3)_34.png', 'cd1959/entry/1959_Page_109 (3)_35.png']",CLERGYMEN,Lawton Arth J (non denominational) 25 Jefferson
+214,3019,9 PARKSIDE DR,PROVIDENCE,Leeman Saul (J),100.0,['cd1959/entry/1959_Page_109 (3)_37.png'],CLERGYMEN,Leeman Saul (J) 9 Parkside dr
+215,3021,26 POND ST,PROVIDENCE,Lynch Cornelius B Rev (RC),100.0,['cd1959/entry/1959_Page_109 (3)_39.png'],CLERGYMEN,Lynch Cornelius B Rev (RC) 26 Pond
+216,3023,538 BROADWAY ST,PROVIDENCE,Mahoney Chas J Rt Rev Msgr (RC),100.0,"['cd1959/entry/1959_Page_109 (3)_41.png', 'cd1959/entry/1959_Page_109 (3)_42.png']",CLERGYMEN,Mahoney Chas J Rt Rev Msgr (RC) 538 Broadway
+217,3026,901 ATWELLS AVE,PROVIDENCE,Martineau Ernest (RC),100.0,['cd1959/entry/1959_Page_109 (3)_45.png'],CLERGYMEN,Martineau Ernest (RC) 901 Atwells av
+218,3038,26 POND ST,PROVIDENCE,McVinney Russell J Most Rev (RC),100.0,['cd1959/entry/1959_Page_109 (3)_62.png'],CLERGYMEN,McVinney Russell J Most Rev (RC) 26 Pond
+219,3049,26 POND ST,PROVIDENCE,Murray Wm F Monsignor (RC),100.0,['cd1959/entry/1959_Page_109 (3)_73.png'],CLERGYMEN,Murray Wm F Monsignor (RC) 26 Pond
+220,3069,26 POND ST,PROVIDENCE,Reilly Danl P Rev (RC),100.0,['cd1959/entry/1959_Page_109 (3)_93.png'],CLERGYMEN,Reilly Danl P Rev (RC) 26 Pond
+221,3072,901 ATWELLS AVE,PROVIDENCE,Robert Emile (RC),100.0,['cd1959/entry/1959_Page_109 (3)_96.png'],CLERGYMEN,Robert Emile (RC) 901 Atwells av
+222,3076,26 POND ST,PROVIDENCE,Roque Francis X Rev (RC),100.0,['cd1959/entry/1959_Page_109 (3)_100.png'],CLERGYMEN,Roque Francis X Rev (RC) 26 Pond
+223,3093,538 BROADWAY ST,PROVIDENCE,Sullivan Timothy J Rev (RC),100.0,['cd1959/entry/1959_Page_110 (1)_16.png'],CLERGYMEN,Sullivan Timothy J Rev (RC) 538 Broadway
+224,3107,26 POND ST,PROVIDENCE,Walsh John J Rev (RC),100.0,['cd1959/entry/1959_Page_110 (1)_32.png'],CLERGYMEN,Walsh John J Rev (RC) 26 Pond
+225,3131,9 PLEASANT AV,PROVIDENCE,Anderson- Little Co Inc (mens),100.0,['cd1959/entry/1959_Page_110 (1)_74.png'],CLOTHING RETAIL,Anderson- Little Co Inc (mens) 9 Pleasant
+226,3141,1082 WATERMAN ST,PROVIDENCE,Betz John Esq (mens),100.0,['cd1959/entry/1959_Page_110 (2)_6.png'],CLOTHING RETAIL,Betz John Esq (mens) 1082 Waterman
+227,3151,463 ANGELA CT,PROVIDENCE,Childrens Colony,83.0,['cd1959/entry/1959_Page_110 (2)_18.png'],CLOTHING RETAIL,Childrens Colony 463 Angeli
+228,3154,19 ARCADE ST,PROVIDENCE,Colbys,85.0,['cd1959/entry/1959_Page_110 (2)_22.png'],CLOTHING RETAIL,Colbys 19 Arcade bldg
+229,3156,123 SABIN ST,PROVIDENCE,Danbury Hat Co (mens),100.0,['cd1959/entry/1959_Page_110 (2)_24.png'],CLOTHING RETAIL,Danbury Hat Co (mens) 123 Sabin
+230,3192,679 BROADWAY ST,PROVIDENCE,Leader Inc (mens),100.0,['cd1959/entry/1959_Page_110 (2)_67.png'],CLOTHING RETAIL,Leader Inc (mens) 679 Broadway
+231,3221,18 ARCADE ST,PROVIDENCE,Out West Store,85.0,['cd1959/entry/1959_Page_110 (3)_12.png'],CLOTHING RETAIL,Out West Store 18 Arcade bldg
+232,3233,7643 HOPE ST,PROVIDENCE,Queens Teens,100.0,['cd1959/entry/1959_Page_110 (3)_28.png'],CLOTHING RETAIL,Queens Teens 7643 Hope
+233,3235,3193 SMITH ST,PROVIDENCE,Raymonds Mary Dress Shop,100.0,['cd1959/entry/1959_Page_110 (3)_30.png'],CLOTHING RETAIL,Raymonds Mary Dress Shop 3193 Smith
+234,3249,4 OLNEYVILLE SQ,PROVIDENCE,Sams Clothing (mens),100.0,['cd1959/entry/1959_Page_110 (3)_48.png'],CLOTHING RETAIL,Sams Clothing (mens) 4 Olneyville sq
+235,3262,15 ARCADE ST,PROVIDENCE,Tie Bar The (mens),85.0,['cd1959/entry/1959_Page_110 (3)_63.png'],CLOTHING RETAIL,Tie Bar The (mens) 15 Arcade bldg
+236,3288,35 WESTMINSTER ST,PROVIDENCE,AE Club (social),100.0,['cd1959/entry/1959_Page_111 (1)_20.png'],CLUBS,AE Club (social) 35 Westminster 4th fl
+237,3306,289 BROADWAY ST,PROVIDENCE,Aurora Civic Assn (social},100.0,['cd1959/entry/1959_Page_111 (1)_46.png'],CLUBS,Aurora Civic Assn (social} 289 Broadway
+238,3310,30 IANTHE ST,PROVIDENCE,Berardinellis Sportsmen Club (social),83.0,"['cd1959/entry/1959_Page_111 (1)_52.png', 'cd1959/entry/1959_Page_111 (1)_53.png']",CLUBS,Berardinellis Sportsmen Club (social) 30 Tanthe
+239,3327,276 BROADWAY ST,PROVIDENCE,Federal Sporting Club (social),100.0,"['cd1959/entry/1959_Page_111 (1)_79.png', 'cd1959/entry/1959_Page_111 (1)_80.png']",CLUBS,Federal Sporting Club (social) 276 Broad- way
+240,3330,278 BROADWAY ST,PROVIDENCE,Fondi Society Dramatic Club,100.0,['cd1959/entry/1959_Page_111 (1)_84.png'],CLUBS,Fondi Society Dramatic Club 278 Broadway
+241,3336,6423 CHARLES ST,PROVIDENCE,G I Community Club (social),100.0,['cd1959/entry/1959_Page_111 (1)_94.png'],CLUBS,G I Community Club (social) 6423 Charles
+242,3344,256 BROADWAY ST,PROVIDENCE,Italo American Club of Rhode Island (civic),100.0,"['cd1959/entry/1959_Page_111 (2)_10.png', 'cd1959/entry/1959_Page_111 (2)_11.png']",CLUBS,Italo American Club of Rhode Island (civic) 256 Broadway
+243,3349,3004 ATWELLS AVE,PROVIDENCE,LaBasilicata Club (social),100.0,['cd1959/entry/1959_Page_111 (2)_18.png'],CLUBS,LaBasilicata Club (social) 3004 Atwells av
+244,3350,60 ARCADE ST,PROVIDENCE,League of Women Voters of Rhode Island (social),85.0,"['cd1959/entry/1959_Page_111 (2)_19.png', 'cd1959/entry/1959_Page_111 (2)_20.png']",CLUBS,League of Women Voters of Rhode Island (social) 60 Arcade bldg
+245,3359,740 ANGELL RD,PROVIDENCE,Narragansett Boat Club,100.0,['cd1959/entry/1959_Page_111 (2)_30.png'],CLUBS,Narragansett Boat Club 740 Angell
+246,3360,49 MANTON AVE,PAWTUCKET,and Narragansett Park,100.0,"['cd1959/entry/1959_Page_111 (2)_31.png', 'cd1959/entry/1959_Page_111 (2)_32.png', 'cd1959/entry/1959_Page_111 (2)_33.png']",CLUBS,Narragansett Racing Assn Inc Sheraton- Biltmore Hotel R131 and Narragansett Park 49 Manton (Pawtucket)
+247,3393,56 JEFFERSON ST,PROVIDENCE,Smith Hill Girls Club Inc,100.0,['cd1959/entry/1959_Page_111 (2)_86.png'],CLUBS,Smith Hill Girls Club Inc 56 Jefferson
+248,3394,5824 CHARLES ST,PROVIDENCE,Sotial St Club (social),100.0,['cd1959/entry/1959_Page_111 (2)_87.png'],CLUBS,Sotial St Club (social) 5824 Charles
+249,3398,5 LAVAUGHN ST,PROVIDENCE,Teramano Scoial Ciub,100.0,['cd1959/entry/1959_Page_111 (2)_91.png'],CLUBS,Teramano Scoial Ciub 5 Lavaughn
+250,3418,459 BROADWAY ST,PROVIDENCE,Young Italian Imperial Club (social),100.0,"['cd1959/entry/1959_Page_111 (3)_15.png', 'cd1959/entry/1959_Page_111 (3)_16.png']",CLUBS,Young Italian Imperial Club (social) 459 Broadway
+251,3421,28 OLNEYVILLE SQ,PROVIDENCE, ATLANTIC COAL CO.,100.0,"['cd1959/entry/1959_Page_111 (3)_20.png', 'cd1959/entry/1959_Page_111 (3)_21.png', 'cd1959/entry/1959_Page_111 (3)_22.png']",COAL DEALERSRETAIL,"ATLANTIC COAL CO. 100 Pilsudski and 28 Olneyville sq, Tel ELmhurst 1-7000 (See Yellow Page 23)"
+252,3439,307 SWAN CT,PROVIDENCE,Velleco Carlo F,100.0,['cd1959/entry/1959_Page_111 (3)_49.png'],COAL DEALERSRETAIL,Velleco Carlo F 307 Swan
+253,3461,1494 POCASSET AVE,PROVIDENCE,Arden Jane Candies Inc,100.0,['cd1959/entry/1959_Page_112 (1)_23.png'],CONFEC TIONERS--MANUFAC - TURING,Arden Jane Candies Inc 1494 Pocasset av
+254,3467,1493 POCASSET AVE,PROVIDENCE, Arden Jane Candies Inc,100.0,"['cd1959/entry/1959_Page_112 (1)_32.png', 'cd1959/entry/1959_Page_112 (1)_33.png']",CONFECTIONERY RETAIL,Arden Jane Candies Inc 1493 Pocasset av and 79 Washington
+255,3506,32 WESTMINSTER ST,PROVIDENCE,fl Engles Robt T,90.5,['cd1959/entry/1959_Page_112 (2)_9.png'],CONSULTANTS,"fl
+Engles Robt T 32 Westminster R407"
+256,3508,32 WESTMINSTER ST,PROVIDENCE,Taylor C Geo,90.5,['cd1959/entry/1959_Page_112 (2)_11.png'],CONSULTANTS,Taylor C Geo 32 Westminster R407
+257,3512,50 VALLEY VIEW DR,PROVIDENCE,Packhem C L Co Inc,83.5,['cd1959/entry/1959_Page_112 (2)_26.png'],CONTRACTORSACOUSTICAL,Packhem C L Co Inc 50 Valley Bidg 4
+258,3518,35 WESTMINSTER ST,PROVIDENCE,Ayers-Hagen-Booth Inc,90.0,['cd1959/entry/1959_Page_112 (2)_39.png'],CONTRAC TORSBUILDING GENERAL,Ayers-Hagen-Booth Inc 35 Westminster 2dfl
+259,3535,12 WESTMINSTER ST,PROVIDENCE,Colonial Homes Inc,100.0,['cd1959/entry/1959_Page_112 (2)_63.png'],CONTRAC TORSBUILDING GENERAL,Colonial Homes Inc 12 Westminster 2d fl
+260,3550,431 PLEASANT AV,PROVIDENCE,Fiocca Jasper A,90.0,['cd1959/entry/1959_Page_112 (3)_3.png'],CONTRAC TORSBUILDING GENERAL,Fiocca Jasper A 431 MtPleasant av
+261,3554,90 CALVERLY ST,PROVIDENCE,Gilbane Building Co,94.0,['cd1959/entry/1959_Page_112 (3)_10.png'],CONTRAC TORSBUILDING GENERAL,Gilbane Building Co 90 Calverley
+262,3581,1611 BRANCH AV,PROVIDENCE,Providence Crane Service,100.0,['cd1959/entry/1959_Page_112 (3)_43.png'],CONTRAC TORSBUILDING GENERAL,Providence Crane Service 1611 Branch av
+263,3719,12 SOUTH OLNEY ST,PROVIDENCE,Lonergan John,93.0,['cd1959/entry/1959_Page_113 (2)_21.png'],CONTRACTORSE LECTRICAL,Lonergan John 12 South lane
+264,3737,451 PLEASANT AV,PROVIDENCE,Santaniello James,90.0,['cd1959/entry/1959_Page_113 (2)_39.png'],CONTRACTORSE LECTRICAL,Santaniello James 451 MtPleasant av
+265,3791,514 KILLINGLY ST,PROVIDENCE,Adessi John,100.0,['cd1959/entry/1959_Page_113 (3)_33.png'],DECORATING,Adessi John 514 Killingly
+266,3794,480 BROADWAY ST,PROVIDENCE,Anzevino Mich] L,100.0,['cd1959/entry/1959_Page_113 (3)_36.png'],DECORATING,Anzevino Mich] L 480 Broadway
+267,3823,348 WILLARD ST,PROVIDENCE,Cole Ralph E,100.0,['cd1959/entry/1959_Page_113 (3)_65.png'],DECORATING,Cole Ralph E 348 Willard av
+268,3830,16 MARIA AV,PROVIDENCE,DeCesare Anthony C,100.0,['cd1959/entry/1959_Page_113 (3)_72.png'],DECORATING,DeCesare Anthony C 16 Maria av
+269,3840,96 WATERMAN AV,PROVIDENCE,Duffy Interiors,100.0,['cd1959/entry/1959_Page_113 (3)_82.png'],DECORATING,Duffy Interiors 96 Waterman av
+270,3870,35 THACKERY ST,PROVIDENCE,Joly Joseph V,94.0,['cd1959/entry/1959_Page_114 (1)_18.png'],DECORATING,Joly Joseph V 35 Thackeray
+271,3885,5 LUONGO MEMORIAL SQ,PROVIDENCE,Magnatta Bros,82.5,"['cd1959/entry/1959_Page_114 (1)_33.png', 'cd1959/entry/1959_Page_114 (1)_34.png']",DECORATING,Magnatta Bros 5 Thomas & Vincent Luongo Memorial square
+272,3886,15 BERCLAY ST,PROVIDENCE,Magnelli Fred,86.0,['cd1959/entry/1959_Page_114 (1)_35.png'],DECORATING,Magnelli Fred 15 Barclay
+273,3896,175 IRVING ST,PROVIDENCE,Melamut Jacob,100.0,['cd1959/entry/1959_Page_114 (1)_45.png'],DECORATING,Melamut Jacob 175 Irving av
+274,3984,8 LIBERTY ST,PROVIDENCE,Brooks Vernon,91.0,['cd1959/entry/1959_Page_114 (2)_41.png'],CONTRACTORSPLUMBING,Brooks Vernon 8 19 Liberty
+275,3995,147 IVY AV,PROVIDENCE,Cunningham Joseph X,100.0,['cd1959/entry/1959_Page_114 (2)_52.png'],CONTRACTORSPLUMBING,Cunningham Joseph X 147 Ivy
+276,4009,44 POND ST,PROVIDENCE,Fish Max,100.0,['cd1959/entry/1959_Page_114 (2)_67.png'],CONTRACTORSPLUMBING,Fish Max 44 Pond
+277,4026,55 JEFFERSON ST,PROVIDENCE,Leckney Gustave,100.0,['cd1959/entry/1959_Page_114 (2)_86.png'],CONTRACTORSPLUMBING,Leckney Gustave 55 Jefferson
+278,4083,94 CALVERLY ST,PROVIDENCE,Barnes John Roofing Co,94.0,['cd1959/entry/1959_Page_114 (3)_60.png'],SIDING,Barnes John Roofing Co 94 Calverley
+279,4164,64 WOONASQUATUCKET AV,PROVIDENCE,StThomas Convent,100.0,['cd1959/entry/1959_Page_115 (1)_69.png'],CONVENTS,StThomas Convent 64 Woonasquatucket av
+280,4177,1830 MATHEWSON ST,PROVIDENCE,Mayer Corset Shoppe,100.0,['cd1959/entry/1959_Page_115 (2)_26.png'],CORSE TIERES,Mayer Corset Shoppe 1830 Mathewson
+281,4184,50 OLNEYVILLE SQ,PROVIDENCE,Bagieys,100.0,['cd1959/entry/1959_Page_115 (2)_36.png'],COSMETICS,Bagieys 50 Olneyville sq
+282,4255,96 PATERSON ST,PROVIDENCE,Lincoln Nursery School,100.0,['cd1959/entry/1959_Page_115 (3)_80.png'],DAY NURSERIES,Lincoln Nursery School 96 Paterson
+283,4274,1034 WEYBOSSET ST,PROVIDENCE,Rhode Island Delicatessen Inc,100.0,"['cd1959/entry/1959_Page_116 (1)_30.png', 'cd1959/entry/1959_Page_116 (1)_31.png']",DE LICATESSE NRETAIL,Rhode Island Delicatessen Inc 1034 Wey- bosset
+284,4284,30 OLNEYVILLE SQ,PROVIDENCE,Acme Dental Laboratory,93.5,"['cd1959/entry/1959_Page_116 (1)_45.png', 'cd1959/entry/1959_Page_116 (1)_46.png']",DENTAL LABORATORIES,Acme Dental Laboratory 30 Olneyville sq R10
+285,4285,270 BROADWAY ST,PROVIDENCE,Almar Dental Laboratory,100.0,['cd1959/entry/1959_Page_116 (1)_47.png'],DENTAL LABORATORIES,Almar Dental Laboratory 270 Broadway
+286,4286,354 BROADWAY ST,PROVIDENCE,Aristocrat Dental Laboratory,100.0,['cd1959/entry/1959_Page_116 (1)_48.png'],DENTAL LABORATORIES,Aristocrat Dental Laboratory 354 Broadway
+287,4314,390 BROADWAY ST,PROVIDENCE,Andreozzi A Edmund,100.0,['cd1959/entry/1959_Page_116 (2)_1.png'],DENTISTS,Andreozzi A Edmund 390 Broadway
+288,4326,32 WOONASQUATUCKET AV,PROVIDENCE,Boianelli Vincent A,100.0,['cd1959/entry/1959_Page_116 (2)_13.png'],DENTISTS,Boianelli Vincent A 32 Woonasquatucket av
+289,4328,154 FRANCIS AVE,PROVIDENCE,Brady James J,100.0,['cd1959/entry/1959_Page_116 (2)_15.png'],DENTISTS,Brady James J 154 Francis
+290,4333,171 BROADWAY ST,PROVIDENCE,Calenda Chas C,100.0,['cd1959/entry/1959_Page_116 (2)_20.png'],DENTISTS,Calenda Chas C 171 Broadway
+291,4346,30 OLNEYVILLE SQ,PROVIDENCE,Coletti Alf,95.0,['cd1959/entry/1959_Page_116 (2)_33.png'],DENTISTS,Coletti Alf 30 Olneyville sq R4
+292,4350,216 BROADWAY ST,PROVIDENCE,Decesare Wm F,100.0,['cd1959/entry/1959_Page_116 (2)_37.png'],DENTISTS,Decesare Wm F 216 Broadway
+293,4356,4853 CRANSTON ST,PROVIDENCE,Deslandes Leo E,100.0,['cd1959/entry/1959_Page_116 (2)_43.png'],DENTISTS,Deslandes Leo E 4853 Cranston
+294,4358,215 BROADWAY ST,PROVIDENCE,DiMaio Anthony V,100.0,['cd1959/entry/1959_Page_116 (2)_45.png'],DENTISTS,DiMaio Anthony V 215 Broadway
+295,4360,259 PLEASANT AV,PROVIDENCE,DiMuccio Edw A,90.0,['cd1959/entry/1959_Page_116 (2)_47.png'],DENTISTS,DiMuccio Edw A 259 MtPleasant av
+296,4400,30 OLNEYVILLE SQ,PROVIDENCE,Heaton Chas E,95.0,['cd1959/entry/1959_Page_116 (2)_89.png'],DENTISTS,Heaton Chas E 30 Olneyville sq R7
+297,4407,347 BROADWAY ST,PROVIDENCE,Iacono Orlando,100.0,['cd1959/entry/1959_Page_116 (2)_96.png'],DENTISTS,Iacono Orlando 347 Broadway
+298,4424,438 BROADWAY ST,PROVIDENCE,Leccese Maria RS,100.0,['cd1959/entry/1959_Page_116 (3)_9.png'],DENTISTS,Leccese Maria RS 438 Broadway
+299,4465,322 BROADWAY ST,PROVIDENCE,Plaziak Edw P,100.0,['cd1959/entry/1959_Page_116 (3)_53.png'],DENTISTS,Plaziak Edw P 322 Broadway
+300,4477,354 BROADWAY ST,PROVIDENCE,Savastano Gennaro P M,100.0,['cd1959/entry/1959_Page_116 (3)_65.png'],DENTISTS,Savastano Gennaro P M 354 Broadway
+301,4482,30 OLNEYVILLE SQ,PROVIDENCE,Shaghalian Sarkis M,90.0,['cd1959/entry/1959_Page_116 (3)_70.png'],DENTISTS,Shaghalian Sarkis M 30 Olneyville sa R12
+302,4488,277 BROADWAY ST,PROVIDENCE,Sollitto Paul H,100.0,['cd1959/entry/1959_Page_116 (3)_76.png'],DENTISTS,Sollitto Paul H 277 Broadway
+303,4489,117 BROADWAY ST,PROVIDENCE,Spacagna Chas A,92.0,['cd1959/entry/1959_Page_116 (3)_77.png'],DENTISTS,Spacagna Chas A 117 Broadway R6
+304,4498,36 OLNEYVILLE SQ,PROVIDENCE,Tierney O Edw,91.5,['cd1959/entry/1959_Page_116 (3)_86.png'],DENTISTS,Tierney O Edw 36 Olneyville sa R2
+305,4503,298 BROADWAY ST,PROVIDENCE,Turcone Albert E,100.0,['cd1959/entry/1959_Page_116 (3)_91.png'],DENTISTS,Turcone Albert E 298 Broadway
+306,4505,30 OLNEYVILLE SQ,PROVIDENCE,Wasilewski Edw J,91.5,['cd1959/entry/1959_Page_116 (3)_93.png'],DENTISTS,Wasilewski Edw J 30 Olneyville sa R2
+307,4521,52 OLNEYVILLE SQ,PROVIDENCE,Peoples Department Store,100.0,"['cd1959/entry/1959_Page_117 (1)_14.png', 'cd1959/entry/1959_Page_117 (1)_15.png']",DEPARTMENT STORES,Peoples Department Store 52 Olneyville sq
+308,4551,170 BROADWAY ST,PROVIDENCE,Gottfried Kurt & Co Inc (imitation stones),88.0,"['cd1959/entry/1959_Page_117 (1)_73.png', 'cd1959/entry/1959_Page_117 (1)_74.png']",(See also Jewelers),Gottfried Kurt & Co Inc (imitation stones) 170 Broadway R207
+309,4563,11 WESTMINSTER ST,PROVIDENCE,Autograph The,86.5,['cd1959/entry/1959_Page_117 (2)_4.png'],DICTATING MACHINES,Autograph The 11i Westminster R1219
+310,4572,166 VALLEY VIEW DR,PROVIDENCE,Cut Rite Steel Rule Dies,83.5,['cd1959/entry/1959_Page_117 (2)_17.png'],DIE MAKERS,Cut Rite Steel Rule Dies 166 Valley Bidg 3
+311,4581,35 WESTMINSTER ST,PROVIDENCE,"CENTRAL RUBBER STAMP WORKS, We Make Them? (Stencils, Inks, Numberers, Daters and Marking Devices),",92.5,"['cd1959/entry/1959_Page_117 (2)_34.png', 'cd1959/entry/1959_Page_117 (2)_35.png', 'cd1959/entry/1959_Page_117 (2)_36.png', 'cd1959/entry/1959_Page_117 (2)_37.png', 'cd1959/entry/1959_Page_117 (2)_38.png']",*DIESRUBBER PRINTING,"CENTRAL RUBBER STAMP WORKS, We Make Them? (Stencils, Inks, Numberers, Daters and Marking Devices), 35 West- minster, R11, Tel DExter 1-9609 (See Yellow Page 87)"
+312,4583,400 WEYBOSSET ST,PROVIDENCE,Crown Displays Inc,100.0,['cd1959/entry/1959_Page_117 (2)_51.png'],DISINFECTANT MANUFACTURERS,Crown Displays Inc 400 Weybosset
+313,4606,70 ARCADE ST,PROVIDENCE,Hileens,85.0,['cd1959/entry/1959_Page_117 (3)_28.png'],DRESSMAKE RS,Hileens 70 Arcade bldg
+314,4618,441 BROADWAY ST,PROVIDENCE,Jennies Dressmaking Salon,100.0,['cd1959/entry/1959_Page_117 (3)_42.png'],DRESSMAKE RS,Jennies Dressmaking Salon 441 Broadway
+315,4626,127 CALVERLY ST,PROVIDENCE,Minellian Rose,94.0,['cd1959/entry/1959_Page_117 (3)_53.png'],DRESSMAKE RS,Minellian Rose 127 Calverley
+316,4627,441 ANGELA CT,PROVIDENCE,Nardolillo Angie,83.0,['cd1959/entry/1959_Page_117 (3)_54.png'],DRESSMAKE RS,Nardolillo Angie 441 Angeli
+317,4633,421 WEYBOSSET ST,PROVIDENCE,Robichaud Louise A,100.0,['cd1959/entry/1959_Page_117 (3)_61.png'],DRESSMAKE RS,Robichaud Louise A 421 Weybosset
+318,4662,400 BROADWAY ST,PROVIDENCE,Broadway Pharmacy,100.0,['cd1959/entry/1959_Page_118 (1)_7.png'],DRUGGISTSRETAIL,Broadway Pharmacy 400 Broadway
+319,4675,506 BROADWAY ST,PROVIDENCE,Conti Pharmacy,100.0,['cd1959/entry/1959_Page_118 (1)_20.png'],DRUGGISTSRETAIL,Conti Pharmacy 506 Broadway
+320,4679,344 BROADWAY ST,PROVIDENCE,D Andrea Pharmacy Inc,100.0,['cd1959/entry/1959_Page_118 (1)_24.png'],DRUGGISTSRETAIL,D Andrea Pharmacy Inc 344 Broadway
+321,4682,267 BROADWAY ST,PROVIDENCE,DePasquale Professional Pharmacy,100.0,"['cd1959/entry/1959_Page_118 (1)_27.png', 'cd1959/entry/1959_Page_118 (1)_28.png']",DRUGGISTSRETAIL,DePasquale Professional Pharmacy 267 Broadway
+322,4687,206 CAMDEN AVE,PROVIDENCE,Eaton Pharmacy,100.0,['cd1959/entry/1959_Page_118 (1)_33.png'],DRUGGISTSRETAIL,Eaton Pharmacy 206 Camden av
+323,4691,3023 ATWELLS AVE,PROVIDENCE,Farmacia Del Leone,100.0,['cd1959/entry/1959_Page_118 (1)_37.png'],DRUGGISTSRETAIL,Farmacia Del Leone 3023 Atwells av
+324,4724,19 OLNEYVILLE SQ,PROVIDENCE,McCaffrey Inc,100.0,['cd1959/entry/1959_Page_118 (1)_73.png'],DRUGGISTSRETAIL,McCaffrey Inc 19 Olneyville sq
+325,4751,9 WAYLAND SQ,PROVIDENCE,Wayland Square Pharmacy Inc,100.0,['cd1959/entry/1959_Page_118 (1)_100.png'],DRUGGISTSRETAIL,Wayland Square Pharmacy Inc 9 Wayland sq
+326,4771,40 BALBO AVE,PROVIDENCE,Cedar Chest Show Room,100.0,['cd1959/entry/1959_Page_118 (2)_26.png'],DRY GOODSRETAIL,Cedar Chest Show Room 40 Balbo av
+327,4821,554 WEST ST,PROVIDENCE,Addressograph-Multigraph Corp,100.0,['cd1959/entry/1959_Page_118 (3)_6.png'],DUPLICATING MACHINES,Addressograph-Multigraph Corp 554 West-
+328,4852,566 BROADWAY ST,PROVIDENCE,Allen Distributing Inc,100.0,['cd1959/entry/1959_Page_119 (1).chop_26.png'],SUPPLIESDEALERS,Allen Distributing Inc 566 Broadway
+329,4864,90 BROADWAY ST,PROVIDENCE,DeMambro Radio Supply Inc,100.0,['cd1959/entry/1959_Page_119 (1).chop_38.png'],SUPPLIESDEALERS,DeMambro Radio Supply Inc 90 Broadway
+330,4881,4283 BRANCH AVE,PROVIDENCE,Petes Electrical Appliances,86.0,['cd1959/entry/1959_Page_119 (1).chop_57.png'],SUPPLIESDEALERS,Petes Electrical Appliances 4283 Branchav
+331,4915,566 BROADWAY ST,PROVIDENCE,Allen Distributing Inc,100.0,['cd1959/entry/1959_Page_119 (2).chop_26.png'],SUPPLIESDEALERS,Allen Distributing Inc 566 Broadway
+332,4927,90 BROADWAY ST,PROVIDENCE,DeMambro Radio Supply Inc,100.0,['cd1959/entry/1959_Page_119 (2).chop_38.png'],SUPPLIESDEALERS,DeMambro Radio Supply Inc 90 Broadway
+333,4944,4283 BRANCH AVE,PROVIDENCE,Petes Electrical Appliances,86.0,['cd1959/entry/1959_Page_119 (2).chop_57.png'],SUPPLIESDEALERS,Petes Electrical Appliances 4283 Branchav
+334,4977,24 DESOTO ST,PROVIDENCE,DeSoto Soft Enameling Co,100.0,['cd1959/entry/1959_Page_119 (3).chop_10.png'],SUPPLIESMANUFACTURERS,DeSoto Soft Enameling Co 24 DeSoto
+335,5040,117 BROADWAY ST,PROVIDENCE,Bassett E R Company and M M Art Com- pany,100.0,"['cd1959/entry/1959_Page_120 (1)_27.png', 'cd1959/entry/1959_Page_120 (1)_28.png']",ENGRAVERSJEWELRY,Bassett E R Company and M M Art Com- pany 117 Broadway
+336,5106,36 BURRINGTON ST,PROVIDENCE,Providence Wire Works Inc,100.0,['cd1959/entry/1959_Page_120 (2)_77.png'],FENCE MANUFACTURERS,Providence Wire Works Inc 36 Burrington
+337,5125,159 BROADWAY ST,PROVIDENCE,City Finance Inc,100.0,['cd1959/entry/1959_Page_120 (3)_25.png'],FINANCE COMPANIES,City Finance Inc 159 Broadway
+338,5158,50 ARCADE ST,PROVIDENCE,Yacht Finance,85.5,['cd1959/entry/1959_Page_120 (3)_75.png'],FINANCE COMPANIES,Yacht Finance 50 Arcade bidg
+339,5241,371 SHARON DR,PROVIDENCE,Noonan Bros,100.0,['cd1959/entry/1959_Page_121 (2)_45.png'],FLORISTSRETAIL,Noonan Bros 371 Sharon
+340,5261,36 BURRINGTON ST,PROVIDENCE,Bottiers Associates Inc,100.0,['cd1959/entry/1959_Page_121 (2)_79.png'],FOOD PRODUCTS MANUFAC - TURERS PRE PARED,Bottiers Associates Inc 36 Burrington
+341,5303,13 NEWELL RD,PROVIDENCE,Arrigo Joseph,80.0,['cd1959/entry/1959_Page_121 (3)_71.png'],FRUIT DEALERS~RETAIL,Arrigo Joseph 13 Hunnewell av
+342,5335,563 DE PASQUALE AVE,PROVIDENCE,lannitti Victor,92.0,['cd1959/entry/1959_Page_122 (1)_22.png'],FRUIT DEALERS~RETAIL,lannitti Victor 563 DePasquale av
+343,5350,115 BROADWAY ST,PROVIDENCE,Mercurio Louis,100.0,['cd1959/entry/1959_Page_122 (1)_37.png'],FRUIT DEALERS~RETAIL,Mercurio Louis 115 Broadway
+344,5364,22 OLNEYVILLE SQ,PROVIDENCE,Tropical Fruit Co,95.0,['cd1959/entry/1959_Page_122 (1)_51.png'],FRUIT DEALERS~RETAIL,Tropical Fruit Co 22-23 Olneyville sq
+345,5398,24 HIGH SERVICE AVE,PROVIDENCE, HENRY OIL CO (Sales Installation of Oil Burners & Heating Equipment),87.5,"['cd1959/entry/1959_Page_122 (1)_92.png', 'cd1959/entry/1959_Page_122 (1)_93.png', 'cd1959/entry/1959_Page_122 (1)_94.png', 'cd1959/entry/1959_Page_122 (1)_95.png', 'cd1959/entry/1959_Page_122 (1)_96.png', 'cd1959/entry/1959_Page_122 (1)_97.png']",chants),"HENRY OIL CO (Sales and Installation of Oil Burners & Heating Equipment), 904
+or 924 Manton av, Te mple 1-9621 and UNion 1-7766, Night Call UNion 1-1874, 24 Hour Service (See Yellow Page 69) *FUEL OIL"
+346,5410,100 OLNEYVILLE SQ,PROVIDENCE,"ATLANTIC COAL CO,",83.5,"['cd1959/entry/1959_Page_122 (2)_25.png', 'cd1959/entry/1959_Page_122 (2)_26.png', 'cd1959/entry/1959_Page_122 (2)_27.png']",*FUEL OIL DEALERS,"ATLANTIC COAL CO, 100 Pilsudski, 28 Olneyville sq, Tel ELmhurst 1-7000 (See Yellow Page 23)"
+347,5427,1196 CRANSTON ST,PROVIDENCE,"CRANSTON OIL SERVICE INC,",82.0,"['cd1959/entry/1959_Page_122 (2)_45.png', 'cd1959/entry/1959_Page_122 (2)_46.png', 'cd1959/entry/1959_Page_122 (2)_47.png']",*FUEL OIL DEALERS,"CRANSTON OIL SERVICE INC, 1196 Crans- ton, Cranston, Tel ELmhurst 1-5200 (See Yellow Page 67)"
+348,5434,2343 POWER ST,PROVIDENCE,Economy Oil Co,100.0,['cd1959/entry/1959_Page_122 (2)_54.png'],*FUEL OIL DEALERS,Economy Oil Co 2343 Power
+349,5441,1124 CRANSTON ST,PROVIDENCE,"GUERTIN OIL CO,",100.0,"['cd1959/entry/1959_Page_122 (2)_61.png', 'cd1959/entry/1959_Page_122 (2)_62.png']",*FUEL OIL DEALERS,"GUERTIN OIL CO, 1124 Cranston, Tel ELmhurst 1-2107 (See Yellow Page 67)"
+350,5482,504 BROADWAY ST,PROVIDENCE,Tammelleo John,100.0,['cd1959/entry/1959_Page_122 (3)_1.png'],*FUEL OIL DEALERS,Tammelleo John 504} Broadway
+351,5488,177 BROOM ST,PROVIDENCE,Viti Bros Inc,80.0,['cd1959/entry/1959_Page_122 (3)_7.png'],*FUEL OIL DEALERS,Viti Bros Inc 177 Croom
+352,5500,477 BROADWAY ST,PROVIDENCE, Berarducci & Sons,100.0,"['cd1959/entry/1959_Page_122 (3)_30.png', 'cd1959/entry/1959_Page_122 (3)_31.png']",FUNERAL DIRECTORS,Berarducci & Sons 230 Atwells av and 477 Broadway
+353,5515,334 BROADWAY ST,PROVIDENCE,Gattone Thos & Son,100.0,['cd1959/entry/1959_Page_122 (3)_52.png'],FUNERAL DIRECTORS,Gattone Thos & Son 334 Broadway
+354,5545,1604 CRANSTON ST,PROVIDENCE,"REMINGTON FRANK E INC,",83.5,['cd1959/entry/1959_Page_122 (3)_94.png'],FUNERAL DIRECTORS,"REMINGTON FRANK E INC, 1604 Broad,
+_. Cranston, Tel HOpkins 1-7739"
+355,5588,1050 MAIDEN LN,PROVIDENCE,Bartons Furniture Co,80.0,['cd1959/entry/1959_Page_123 (1)_82.png'],FURNITURE DEALERSRETAIL,Bartons Furniture Co 1050  Main
+356,5617,163 BROADWAY ST,PROVIDENCE,Johns Furniture Store,100.0,['cd1959/entry/1959_Page_123 (2)_18.png'],FURNITURE DEALERSRETAIL,Johns Furniture Store 163 Broadway
+357,5660,554 CAMP ST,PROVIDENCE,Used Merchandise Exchange,90.0,['cd1959/entry/1959_Page_123 (2)_75.png'],FURNITURE DEALERSUSED,Used Merchandise Exchange 554A Camp
+358,5667,21 STEVENS RD,PROVIDENCE,Zolis Furniture Shop,94.0,['cd1959/entry/1959_Page_123 (2)_87.png'],FURNITURE FINISHERS,Zolis Furniture Shop 21C Stevens
+359,5675,224 MAIDEN LN,PROVIDENCE,McDonald Furniture Repairing rear,80.0,"['cd1959/entry/1959_Page_123 (3)_8.png', 'cd1959/entry/1959_Page_123 (3)_9.png']",FURNITURE RE PAIRING,McDonald Furniture Repairing rear 224 $ Main
+360,5676,739 HARTFORD AVE,PROVIDENCE,Pinto R J Co,100.0,['cd1959/entry/1959_Page_123 (3)_10.png'],FURNITURE RE PAIRING,Pinto R J Co 739 Hartford av
+361,5705,392 BROADWAY ST,PROVIDENCE,Aspry Atlantic Station,100.0,['cd1959/entry/1959_Page_124 (1)_2.png'],GASOLINE STATIONS,Aspry Atlantic Station 392 Broadway
+362,5729,502 WEST EXCHANGE ST,PROVIDENCE,Catonis Service Station,100.0,['cd1959/entry/1959_Page_124 (1)_27.png'],GASOLINE STATIONS,Catonis Service Station 502 W Exchange
+363,5744,250 BROADWAY ST,PROVIDENCE,Dans Texaco Station,100.0,['cd1959/entry/1959_Page_124 (1)_46.png'],GASOLINE STATIONS,Dans Texaco Station 250 Broadway
+364,5752,393 BROADWAY ST,PROVIDENCE,DiPaolo Bros Gulf Station,100.0,['cd1959/entry/1959_Page_124 (1)_55.png'],GASOLINE STATIONS,DiPaolo Bros Gulf Station 393 Broadway
+365,5758,435 PLEASANT AV,PROVIDENCE,DUva's Vinnie Esso Station,90.0,"['cd1959/entry/1959_Page_124 (1)_61.png', 'cd1959/entry/1959_Page_124 (1)_62.png']",GASOLINE STATIONS,DUva's Vinnie Esso Station 435 MtPleasant av
+366,5781,306 BROADWAY ST,PROVIDENCE,Gentile Service Station,88.0,['cd1959/entry/1959_Page_124 (1)_89.png'],GASOLINE STATIONS,Gentile Service Station 306 Broadwav
+367,5784,2 PLEASANT AV,PROVIDENCE,Girard Bros,90.0,['cd1959/entry/1959_Page_124 (1)_93.png'],GASOLINE STATIONS,Girard Bros 2 MtPleasant av
+368,5789,113 SABIN ST,PROVIDENCE,Grillis Atlantic Service Station,100.0,['cd1959/entry/1959_Page_124 (1)_99.png'],GASOLINE STATIONS,Grillis Atlantic Service Station 113 Sabin
+369,5801,507 BROADWAY ST,PROVIDENCE,Johnnys Service Station,100.0,['cd1959/entry/1959_Page_124 (1)_112.png'],GASOLINE STATIONS,Johnnys Service Station 507 Broadway
+370,5830,301 BROADWAY ST,PROVIDENCE,Marios Shell Service,100.0,['cd1959/entry/1959_Page_124 (2)_36.png'],GASOLINE STATIONS,Marios Shell Service 301 Broadway
+371,5860,497 BROADWAY ST,PROVIDENCE,Payette Hervey E,100.0,['cd1959/entry/1959_Page_124 (2)_68.png'],GASOLINE STATIONS,Payette Hervey E 497 Broadway
+372,5941,7613 BROAD ST,PROVIDENCE,Barbara Anns Specialty Shoppe,100.0,['cd1959/entry/1959_Page_124 (3)_54.png'],GIFT SHOPS,Barbara Anns Specialty Shoppe 7613 Broad
+373,5942,558 BROADWAY ST,PROVIDENCE,Camellias Gift Shoppe,100.0,['cd1959/entry/1959_Page_124 (3)_55.png'],GIFT SHOPS,Camellias Gift Shoppe 558 Broadway
+374,5946,10 ARCADE ST,PROVIDENCE,Fairchild A W & Co Inc,90.0,['cd1959/entry/1959_Page_124 (3)_59.png'],GIFT SHOPS,Fairchild A W & Co Inc 10-12 Arcade
+375,5965,106 BROADWAY ST,PROVIDENCE,Altman Glass Co Inc,88.0,['cd1959/entry/1959_Page_124 (3)_84.png'],PLATE,Altman Glass Co Inc 106 Broadwav
+376,5981,49 BROADWAY ST,PROVIDENCE,Standard Glass Co,100.0,['cd1959/entry/1959_Page_125 (1).chop_4.png'],PLATE,Standard Glass Co 49 Broadway
+377,5991,160 RANDALL RD,PROVIDENCE,"SUGARMAN MAX,",100.0,"['cd1959/entry/1959_Page_125 (1).chop_29.png', 'cd1959/entry/1959_Page_125 (1).chop_30.png']",GOLF SCHOOLS,"SUGARMAN MAX, 160 Randall, Tels DEx- ter 1-8094, 1-8095 (See Yellow Page 37)"
+378,5993,683 BROADWAY ST,PROVIDENCE,Browns Greeting Cards,100.0,['cd1959/entry/1959_Page_125 (1).chop_33.png'],GREETING CARDS,Browns Greeting Cards 683 Broadway
+379,6004,9 ARCADE ST,PROVIDENCE,Plaza Card Shop,85.0,['cd1959/entry/1959_Page_125 (1).chop_44.png'],GREETING CARDS,Plaza Card Shop 9 Arcade bldg
+380,6052,447 BROADWAY ST,PROVIDENCE,Broadway Super Market Inc,100.0,['cd1959/entry/1959_Page_125 (2).chop_34.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Broadway Super Market Inc 447 Broadway
+381,6059,163 CALHOUN AVE,PROVIDENCE,Calhoun Avenue Market,100.0,['cd1959/entry/1959_Page_125 (2).chop_41.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Calhoun Avenue Market 163 Calhoun av
+382,6074,211 MONTICELLO ST,PROVIDENCE,Ciolli Francesco,100.0,['cd1959/entry/1959_Page_125 (2).chop_56.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Ciolli Francesco 211 Monticello
+383,6088,7 PLEASANT AV,PROVIDENCE,Correntes Market,87.0,['cd1959/entry/1959_Page_125 (2).chop_69.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Correntes Market 7-9 MtPleasant av
+384,6109,54 PENN ST,PROVIDENCE,DeiRossil G A Store,86.5,['cd1959/entry/1959_Page_125 (2).chop_90.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),DeiRossil G A Store 54-56 Penn
+385,6121,13 DESOTO ST,PROVIDENCE,Domnarski Chas K,100.0,['cd1959/entry/1959_Page_125 (3).chop_8.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Domnarski Chas K 13 DeSoto
+386,6178,130 CALVERLY ST,PROVIDENCE,Hanoian Serpoohi Mrs,94.0,['cd1959/entry/1959_Page_125 (3).chop_58.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Hanoian Serpoohi Mrs 130 Calverley
+387,6200,90 PLEASANT AV,PROVIDENCE,Izzo Andrew F,90.0,['cd1959/entry/1959_Page_125 (3).chop_81.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Izzo Andrew F 90 MtPleasant av
+388,6204,349 BROADWAY ST,PROVIDENCE,Jimmies Market,100.0,['cd1959/entry/1959_Page_125 (3).chop_85.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Jimmies Market 349 Broadway
+389,6221,6923 EDDY ST,PROVIDENCE,Lautieri Joseph,100.0,['cd1959/entry/1959_Page_126 (1)_9.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Lautieri Joseph 6923 Eddy
+390,6229,412 PLAIN ST,PROVIDENCE,Little Bear Market,80.0,['cd1959/entry/1959_Page_126 (1)_17.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Little Bear Market 412 Piain
+391,6234,281 WILLARD ST,PROVIDENCE,Lury Ida M Mrs,100.0,['cd1959/entry/1959_Page_126 (1)_22.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Lury Ida M Mrs 281 Willard av
+392,6238,204 CEDAR ST,PROVIDENCE, Mallozzi Antonio,100.0,['cd1959/entry/1959_Page_126 (1)_26.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Mallozzi Antonio 204 Cedar and 31 Meader
+393,6270,321 WILLARD ST,PROVIDENCE,Nesvest Isador,100.0,['cd1959/entry/1959_Page_126 (1)_58.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Nesvest Isador 321 Willard av
+394,6289,1443 CARPENTER ST,PROVIDENCE,Petrucci Frank,100.0,['cd1959/entry/1959_Page_126 (1)_77.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Petrucci Frank 1443 Carpenter
+395,6293,18 PLEASANT AV,PROVIDENCE,Plante Wm A,90.0,['cd1959/entry/1959_Page_126 (1)_81.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Plante Wm A 18 MtPleasant av
+396,6294,77 PLEASANT AV,PROVIDENCE,Pleasant Street Market,100.0,['cd1959/entry/1959_Page_126 (1)_82.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Pleasant Street Market 77 Pleasant
+397,6312,441 SHARON DR,PROVIDENCE,Restivos Traveling Market,100.0,['cd1959/entry/1959_Page_126 (2)_8.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Restivos Traveling Market 441 Sharon
+398,6327,3 LUONGO MEMORIAL SQ,PROVIDENCE,Sarcione Elena,82.5,"['cd1959/entry/1959_Page_126 (2)_23.png', 'cd1959/entry/1959_Page_126 (2)_24.png']",GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Sarcione Elena 3 Thomas & Vincent Luongo Memorial square
+399,6374,3225 POCASSET AVE,PROVIDENCE,Valcarenghi Eugenia Mrs,100.0,['cd1959/entry/1959_Page_126 (2)_73.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Valcarenghi Eugenia Mrs 3225 Pocasset av
+400,6376,103 CENTRAL AVE,PROVIDENCE,Vartian Harry P,100.0,['cd1959/entry/1959_Page_126 (2)_75.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Vartian Harry P 103 Central
+401,6384,34 AVERY RD,PROVIDENCE,Votta Vincenzo,80.0,['cd1959/entry/1959_Page_126 (2)_83.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Votta Vincenzo 34 Alvey
+402,6393,6 WARNERS LN,PROVIDENCE,Wing on Lung,87.0,['cd1959/entry/1959_Page_126 (2)_92.png'],GRINDING WHEE LS MANUFAC - TURERS (See also Abrasives),Wing on Lung 6 Warners lane
+403,6398,110 ANITA RD,PROVIDENCE,Kasond Henry R,80.0,['cd1959/entry/1959_Page_126 (3)_4.png'],GROCERS,Kasond Henry R 110 Banta
+404,6433,333 ALTON RD,PROVIDENCE,Antoninus Hall,80.0,['cd1959/entry/1959_Page_126 (3)_61.png'],HALLS,Antoninus Hall 333 Katon
+405,6436,2554 SMITH ST,PROVIDENCE,Bartletts Hall,100.0,['cd1959/entry/1959_Page_126 (3)_64.png'],HALLS,Bartletts Hall 2554 Smith
+406,6449,12 OLNEYVILLE SQ,PROVIDENCE,Library Hall,100.0,['cd1959/entry/1959_Page_127 (1)_2.png'],HALLS,Library Hall 12 Olneyville sq
+407,6475,210 BROADWAY ST,PROVIDENCE,Sons of Italy Hall,100.0,['cd1959/entry/1959_Page_127 (1)_30.png'],HALLS,Sons of Italy Hall 210 Broadway
+408,6482,20 BROWNELL ST,PROVIDENCE,Veterans Memorial. Auditorium,100.0,['cd1959/entry/1959_Page_127 (1)_37.png'],HALLS,Veterans Memorial. Auditorium 20 Brownell
+409,6487,667 BROADWAY ST,PROVIDENCE,A C Electric Supply Co,100.0,['cd1959/entry/1959_Page_127 (1)_54.png'],HARDWARE DEALERSRETAIL,A C Electric Supply Co 667 Broadway
+410,6496,656 BROADWAY ST,PROVIDENCE,Broadway Hardware & Paint Co,100.0,"['cd1959/entry/1959_Page_127 (1)_63.png', 'cd1959/entry/1959_Page_127 (1)_64.png']",HARDWARE DEALERSRETAIL,Broadway Hardware & Paint Co 656 Broad- way
+411,6509,2595 SOUTH MAIN ST,PROVIDENCE,General Hardware & Equipment Co,100.0,"['cd1959/entry/1959_Page_127 (1)_79.png', 'cd1959/entry/1959_Page_127 (1)_80.png']",HARDWARE DEALERSRETAIL,General Hardware & Equipment Co 2595S Main
+412,6540,5 OLNEYVILLE SQ,PROVIDENCE,John the Hatter,100.0,['cd1959/entry/1959_Page_127 (2)_42.png'],HAT CLEANERS and BLOCKERS,John the Hatter 5 Olneyville sq
+413,6553,23 ARCADE ST,PROVIDENCE,Maico Hearing Service,85.0,['cd1959/entry/1959_Page_127 (2)_67.png'],HEARING AIDS,Maico Hearing Service 23 Arcade bldg
+414,6607,371 BROADWAY ST,PROVIDENCE,"McALPINE MEMORIAL GENERAL HOSPI- TAL INC,",100.0,"['cd1959/entry/1959_Page_128 (1)_43.png', 'cd1959/entry/1959_Page_128 (1)_44.png', 'cd1959/entry/1959_Page_128 (1)_45.png', 'cd1959/entry/1959_Page_128 (1)_46.png']",*HOSPITALS,"McALPINE MEMORIAL GENERAL HOSPI- TAL INC, 371 Broadway, Tels UNion 1-5713 and JAckson 1-9452 HOSPITALS and DISPENSARIES"
+415,6611,371 BROADWAY ST,PROVIDENCE,McAlpine Memorial General Hospital Inc,100.0,"['cd1959/entry/1959_Page_128 (1)_50.png', 'cd1959/entry/1959_Page_128 (1)_51.png']",*HOSPITALS,McAlpine Memorial General Hospital Inc 371 Broadway
+416,6613,1763 EDGEWOOD AV,PROVIDENCE,"OSTEOPATHIC GENERAL HOSPITAL OF RHODE ISLAND INC,",86.5,"['cd1959/entry/1959_Page_128 (1)_53.png', 'cd1959/entry/1959_Page_128 (1)_54.png', 'cd1959/entry/1959_Page_128 (1)_55.png']",*HOSPITALS,"OSTEOPATHIC GENERAL HOSPITAL OF RHODE ISLAND INC, 1763 Broad, Edge- wood, Tel HOpkins 1-5400"
+417,6623,20 STEVENS RD,PROVIDENCE,Paramount Fountain & Restaurant Supply Corp,100.0,"['cd1959/entry/1959_Page_128 (2)_10.png', 'cd1959/entry/1959_Page_128 (2)_11.png']",and EQUIPMENT,Paramount Fountain & Restaurant Supply Corp 20 Stevens
+418,6649,10 ARCADE ST,PROVIDENCE,Fairchild A W & Co Inc,80.0,['cd1959/entry/1959_Page_128 (2)_60.png'],HOUSE FURNISHING GOODS RETAIL,Fairchild A W & Co Inc 10-12 Arcade bldg
+419,6698,141 PLEASANT AV,PROVIDENCE,Carrier Angelo,90.0,['cd1959/entry/1959_Page_128 (3)_62.png'],ICEDEALERS,Carrier Angelo 141 MtPleasant av
+420,6708,172 BROADWAY ST,PROVIDENCE,Ansonia Distributors,100.0,['cd1959/entry/1959_Page_128 (3)_74.png'],IMPORTERS,"Ansonia Distributors 172 Broadway,"
+421,6730,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_129 (2)_18.png', 'cd1959/entry/1959_Page_129 (2)_19.png', 'cd1959/entry/1959_Page_129 (2)_20.png']",*INSURANCEAUTOMOBILE,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+422,6734,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_129 (2)_33.png', 'cd1959/entry/1959_Page_129 (2)_34.png', 'cd1959/entry/1959_Page_129 (2)_35.png']",*INSURANCEBURGLARY,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+423,6735,1119 INDUSTRIAL DR,PROVIDENCE,IRONS E M ASSOCIATES INC.,83.5,"['cd1959/entry/1959_Page_129 (2)_36.png', 'cd1959/entry/1959_Page_129 (2)_37.png']",*INSURANCEBURGLARY,"IRONS E M ASSOCIATES INC. 1119 Indus- trial Bank Bldg, Tel GAspee 1-7345, If
+No Answer Ca 1 CEntredale 1-9236"
+424,6741,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_129 (2)_52.png', 'cd1959/entry/1959_Page_129 (2)_53.png']",*INSURANCE--FIRE,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See"
+425,6759,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_129 (3)_71.png', 'cd1959/entry/1959_Page_129 (3)_72.png', 'cd1959/entry/1959_Page_129 (3)_73.png']",*INSURANCE MAP'NE,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+426,6761,1119 INDUSTRIAL DR,PROVIDENCE,"IRONS E M ASSOCIATES INC,",83.5,"['cd1959/entry/1959_Page_129 (3)_77.png', 'cd1959/entry/1959_Page_129 (3)_78.png', 'cd1959/entry/1959_Page_129 (3)_79.png']",*INSURANCE MAP'NE,"IRONS E M ASSOCIATES INC, 1119 Indus- trial Bank Bldg, Tel GAspee 1-7345, If No Answer Call CEntredale 1-9236"
+427,6767,354 BROADWAY ST,PROVIDENCE,A & C Insurance Agency,100.0,['cd1959/entry/1959_Page_130 (1)_27.png'],INSURANCE AGENTS,A & C Insurance Agency 354 Broadway
+428,6836,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_130 (2)_41.png', 'cd1959/entry/1959_Page_130 (2)_42.png', 'cd1959/entry/1959_Page_130 (2)_43.png']",INSURANCE AGENTS,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+429,6855,1119 INDUSTRIAL DR,PROVIDENCE,"IRONS E M ASSOCIATES INC,",83.5,"['cd1959/entry/1959_Page_130 (2)_72.png', 'cd1959/entry/1959_Page_130 (2)_73.png', 'cd1959/entry/1959_Page_130 (2)_74.png']",INSURANCE AGENTS,"IRONS E M ASSOCIATES INC, 1119 Indus- trial Bank Bldg, Tel GAspee 1-7345, If No Answer Call CEntredale 1-9236"
+430,6880,32 WESTMINSTER ST,PROVIDENCE,McGrath Jams J & Sons,96.0,"['cd1959/entry/1959_Page_130 (3)_20.png', 'cd1959/entry/1959_Page_130 (3)_21.png']",INSURANCE AGENTS,McGrath Jams J & Sons 32 Westminster 6th fl
+431,6886,189 BROADWAY ST,PROVIDENCE,Moura Insurance & Realty Co,100.0,['cd1959/entry/1959_Page_130 (3)_28.png'],INSURANCE AGENTS,Moura Insurance & Realty Co 189 Broadway
+432,6948,500 BROADWAY ST,PROVIDENCE,Zelano Joseph,100.0,['cd1959/entry/1959_Page_131 (1)_33.png'],INSURANCE AGENTS,Zelano Joseph 500 Broadway
+433,6990,1129 A ST,PROVIDENCE,Columbian National Life Insurance Co lil Westminster R,100.0,"['cd1959/entry/1959_Page_131 (2)_17.png', 'cd1959/entry/1959_Page_131 (2)_18.png']",INSURANCE COMPANIES,Columbian National Life Insurance Co lil Westminster R1129A
+434,7175,20 WESTMINSTER ST,PROVIDENCE,"KIDDER, PEABODY & CO,",100.0,"['cd1959/entry/1959_Page_132 (3)_59.png', 'cd1959/entry/1959_Page_132 (3)_60.png']",*INVESTMENT BROKERS,"KIDDER, PEABODY & CO, 20 Westminster, Tel GAspee 1-3500 (See Yellow Page 18)"
+435,7191,14 KANE ST,PROVIDENCE,Monzack Joseph & Sons,100.0,['cd1959/entry/1959_Page_133 (1)_18.png'],*INVESTMENTS,Monzack Joseph & Sons 14 Kane
+436,7264,100 SOUTH CT,PROVIDENCE,Budlong Docherty & Armstrong Inc,100.0,"['cd1959/entry/1959_Page_133 (2)_27.png', 'cd1959/entry/1959_Page_133 (2)_28.png']",JEWE LERSMANUFAC TURING,Budlong Docherty & Armstrong Inc 100 South
+437,7279,90 SOUTH CT,PROVIDENCE,Charlotte Jewelry Co (jobbers),100.0,['cd1959/entry/1959_Page_133 (2)_45.png'],JEWE LERSMANUFAC TURING,Charlotte Jewelry Co (jobbers) 90 South
+438,7286,593 LEDGE ST,PROVIDENCE,Co-Ed Jewelry Inc,100.0,['cd1959/entry/1959_Page_133 (2)_52.png'],JEWE LERSMANUFAC TURING,Co-Ed Jewelry Inc 593 Ledge
+439,7296,32 BROADWAY ST,PROVIDENCE,Dalton Jewelry Co,90.0,['cd1959/entry/1959_Page_133 (2)_68.png'],JEWE LERSMANUFAC TURING,Dalton Jewelry Co 32 Broadway R23
+440,7306,191 SOUTH CT,PROVIDENCE,Dexeco Inc,100.0,['cd1959/entry/1959_Page_133 (2)_79.png'],JEWE LERSMANUFAC TURING,Dexeco Inc 191 South
+441,7323,117 BROADWAY ST,PROVIDENCE,Elmar Creations,100.0,['cd1959/entry/1959_Page_133 (3)_4.png'],JEWE LERSMANUFAC TURING,Elmar Creations 117 Broadway
+442,7341,681 BROADWAY ST,PROVIDENCE,Freeway Jewelry & Pearl Inc,88.0,"['cd1959/entry/1959_Page_133 (3)_23.png', 'cd1959/entry/1959_Page_133 (3)_24.png']",JEWE LERSMANUFAC TURING,Freeway Jewelry & Pearl Inc 681 Broadway R211
+443,7366,14 THIRD AV,PROVIDENCE,"IRONS & RUSSELL CO (Emblems),",100.0,"['cd1959/entry/1959_Page_133 (3)_55.png', 'cd1959/entry/1959_Page_133 (3)_56.png']",JEWE LERSMANUFAC TURING,"IRONS & RUSSELL CO (Emblems), 14 Third, Tel GAspee 1-9001"
+444,7369,10 DESOTO ST,PROVIDENCE,Jencal Jewelry Co rear,100.0,['cd1959/entry/1959_Page_133 (3)_59.png'],JEWE LERSMANUFAC TURING,Jencal Jewelry Co rear 10 DeSoto
+445,7373,50 VALLEY VIEW DR,PROVIDENCE,Joel Jewelry Inc,82.0,['cd1959/entry/1959_Page_133 (3)_66.png'],JEWE LERSMANUFAC TURING,Joel Jewelry Inc 50 Valley Bidg 14
+446,7377,85 SOUTH CT,PROVIDENCE,Jonette Jewelry Co,100.0,['cd1959/entry/1959_Page_133 (3)_70.png'],JEWE LERSMANUFAC TURING,Jonette Jewelry Co 85 South
+447,7404,270 BROADWAY ST,PROVIDENCE,M &S Jewelry Novelties,100.0,['cd1959/entry/1959_Page_134 (1)_8.png'],JEWE LERSMANUFAC TURING,M &S Jewelry Novelties 270 Broadway
+448,7434,9 OLNEYVILLE SQ,PROVIDENCE,Monarch Novelty Co (jobbers),100.0,"['cd1959/entry/1959_Page_134 (1)_42.png', 'cd1959/entry/1959_Page_134 (1)_43.png']",JEWE LERSMANUFAC TURING,Monarch Novelty Co (jobbers) 9 Olneyville sq 2d fl
+449,7489,63 BROADWAY ST,PROVIDENCE,Royal Jewelry Mfg Co Inc,100.0,['cd1959/entry/1959_Page_134 (2)_5.png'],JEWE LERSMANUFAC TURING,Royal Jewelry Mfg Co Inc 63 Broadway
+450,7516,264 BROADWAY ST,PROVIDENCE,Style Art Jewelry Co,92.0,['cd1959/entry/1959_Page_134 (2)_37.png'],JEWE LERSMANUFAC TURING,Style Art Jewelry Co 264 Broadway R2
+451,7549,150 WILLARD ST,PROVIDENCE,Wiesner Mfg Co,100.0,['cd1959/entry/1959_Page_134 (2)_76.png'],JEWE LERSMANUFAC TURING,Wiesner Mfg Co 150 Willard av
+452,7576,259 BROADWAY ST,PROVIDENCE,Midway Jewelers,100.0,['cd1959/entry/1959_Page_134 (3)_9.png'],pairing),Midway Jewelers 259 Broadway
+453,7580,24 ARCADE ST,PROVIDENCE,Pettengill Clifton A,85.0,['cd1959/entry/1959_Page_134 (3)_13.png'],pairing),Pettengill Clifton A 24 Arcade bldg
+454,7636,112 CALVERLY ST,PROVIDENCE,Joyce L D Co,94.0,['cd1959/entry/1959_Page_134 (3)_86.png'],JEWELERS FINDINGS,Joyce L D Co 112 Calverley
+455,7645,455 FOUNTAIN ST,PROVIDENCE,Mondo Co Inc,100.0,['cd1959/entry/1959_Page_134 (3)_99.png'],JEWELERS FINDINGS,Mondo Co Inc 455 Fountain
+456,7649,20 STEVENS RD,PROVIDENCE,N C Findings Co,100.0,['cd1959/entry/1959_Page_135 (1)_5.png'],JEWELERS FINDINGS,N C Findings Co 20 Stevens
+457,7668,56 SOUTH CT,PROVIDENCE,Allen Walter Co Inc (display pads),83.5,"['cd1959/entry/1959_Page_135 (1)_30.png', 'cd1959/entry/1959_Page_135 (1)_31.png']",JEWELERS SUPPLIES,Allen Walter Co Inc (display pads) 56 Pine Sth fl
+458,7701,147 SOUTH CT,PROVIDENCE,Zoller Nat Inc,100.0,['cd1959/entry/1959_Page_135 (1)_76.png'],JEWELERS SUPPLIES,Zoller Nat Inc 147 South
+459,7712,484 BROADWAY ST,PROVIDENCE,J & J Soldering Co,100.0,['cd1959/entry/1959_Page_135 (2)_3.png'],JEWELRY JOBBERS,J & J Soldering Co 484 Broadway (rear)
+460,7715,104 CANDACE ST,PROVIDENCE,Abo Jewelry,100.0,['cd1959/entry/1959_Page_135 (2)_8.png'],JEWELRY MANUFACTURERS,Abo Jewelry 104 Candace
+461,7717,44 FRANKLIN SQ,PROVIDENCE,Acropolis Jewelry Co The,81.0,"['cd1959/entry/1959_Page_135 (2)_10.png', 'cd1959/entry/1959_Page_135 (2)_11.png']",JEWELRY MANUFACTURERS,Acropolis Jewelry Co The 44 Franklin R101-101A
+462,7725,166 VALLEY VIEW DR,PROVIDENCE,An-Lin Inc,83.5,['cd1959/entry/1959_Page_135 (2)_20.png'],JEWELRY MANUFACTURERS,An-Lin Inc 166 Valley Bidg 3
+463,7729,90 SOUTH CT,PROVIDENCE,Argonne Jewelry Co,100.0,['cd1959/entry/1959_Page_135 (2)_26.png'],JEWELRY MANUFACTURERS,Argonne Jewelry Co 90 South
+464,7755,32 BROADWAY ST,PROVIDENCE,Cheb Jewelry Co (stone setters),90.0,"['cd1959/entry/1959_Page_135 (2)_58.png', 'cd1959/entry/1959_Page_135 (2)_59.png']",JEWELRY MANUFACTURERS,Cheb Jewelry Co (stone setters) 32 Broad- way Ri9
+465,7777,44 FRANKLIN SQ,PROVIDENCE,Emo's Jewelry Co (soldering),82.0,"['cd1959/entry/1959_Page_135 (2)_83.png', 'cd1959/entry/1959_Page_135 (2)_84.png']",JEWELRY MANUFACTURERS,Emo's Jewelry Co (soldering) 44 Franklin R208-209
+466,7782,20 GARDEN ST,PROVIDENCE,Fashions In Jewels,100.0,['cd1959/entry/1959_Page_135 (3)_1.png'],JEWELRY MANUFACTURERS,Fashions In Jewels 20 Garden
+467,7797,90 SOUTH CT,PROVIDENCE,J F Jewelry Co (jobbers),100.0,['cd1959/entry/1959_Page_135 (3)_18.png'],JEWELRY MANUFACTURERS,J F Jewelry Co (jobbers) 90 South
+468,7835,32 BROADWAY ST,PROVIDENCE,P&M Art Jewelry Co,90.0,['cd1959/entry/1959_Page_135 (3)_60.png'],JEWELRY MANUFACTURERS,P&M Art Jewelry Co 32 Broadway R25
+469,7846,32 BROADWAY ST,PROVIDENCE,Roach's Job Shop (jobbers),90.0,['cd1959/entry/1959_Page_135 (3)_72.png'],JEWELRY MANUFACTURERS,Roach's Job Shop (jobbers) 32 Broadway R28
+470,7864,6 PRINCE ST,PROVIDENCE,Style Manor Jewelry Co (jobbers),100.0,['cd1959/entry/1959_Page_135 (3)_93.png'],JEWELRY MANUFACTURERS,Style Manor Jewelry Co (jobbers) 6 Prince
+471,7872,2453 WEBSTER AVE,PROVIDENCE,V-El Jewelry Co (jobbers),100.0,['cd1959/entry/1959_Page_136 (1)_11.png'],JEWELRY MANUFACTURERS,V-El Jewelry Co (jobbers) 2453 Webster av
+472,7882,166 VALLEY VIEW DR,PROVIDENCE,Carol-Jane Creations,83.5,['cd1959/entry/1959_Page_136 (1)_36.png'],JEWE LRY WHOLESALE,Carol-Jane Creations 166 Valley Bidg 6
+473,7906,205 POE ST,PROVIDENCE,Seaboard Salvage Co,100.0,['cd1959/entry/1959_Page_136 (1)_64.png'],JUNK DEALERS,Seaboard Salvage Co 205 Poe
+474,7920,171 BROADWAY ST,PROVIDENCE,Hopkins Medical Laboratory,100.0,['cd1959/entry/1959_Page_136 (2)_18.png'],LABORATORIES,Hopkins Medical Laboratory 171 Broadway
+475,7964,323 PINE ST,PROVIDENCE,Charlie Mah (Chinese),100.0,['cd1959/entry/1959_Page_136 (3)_21.png'],LAUNDRIES,Charlie Mah (Chinese) 323 Pine
+476,7971,44 ARNOLD CT,PROVIDENCE, Colonial Laundries Inc,100.0,"['cd1959/entry/1959_Page_136 (3)_26.png', 'cd1959/entry/1959_Page_136 (3)_27.png']",LAUNDRIES,Colonial Laundries Inc 799 Hope and 472 Potters av and 44 Arnold
+477,7972,506 WEST EXCHANGE ST,PROVIDENCE,Commercial Laundry,100.0,['cd1959/entry/1959_Page_136 (3)_28.png'],LAUNDRIES,Commercial Laundry 506 W Exchange
+478,7990,2493 BROOK ST,PROVIDENCE,Kwong Chin (Chinese),100.0,['cd1959/entry/1959_Page_136 (3)_47.png'],LAUNDRIES,Kwong Chin (Chinese) 2493 Brook
+479,8008,120 BROOM ST,PROVIDENCE,Red Top Laundry,80.0,['cd1959/entry/1959_Page_136 (3)_69.png'],LAUNDRIES,Red Top Laundry 120 Croom
+480,8018,55 BROADWAY ST,PROVIDENCE,Wah Chin (Chinese),88.0,['cd1959/entry/1959_Page_136 (3)_81.png'],LAUNDRIES,Wah Chin (Chinese) 55 Broadwav
+481,8041,1763 PRAIRIE AVE,PROVIDENCE,L &G Automatic Laundry,100.0,['cd1959/entry/1959_Page_137 (1)_15.png'],LAUNDRIESSE LF SERVE,L &G Automatic Laundry 1763 Prairie av
+482,8055,2553 SMITH ST,PROVIDENCE,Smith Hill Laundramaid,100.0,['cd1959/entry/1959_Page_137 (1)_33.png'],LAUNDRIESSE LF SERVE,Smith Hill Laundramaid 2553 Smith
+483,8058,2493 DEXTER ST,PROVIDENCE,Sno-White Wee-Wash-It Laundry,100.0,"['cd1959/entry/1959_Page_137 (1)_36.png', 'cd1959/entry/1959_Page_137 (1)_37.png']",LAUNDRIESSE LF SERVE,Sno-White Wee-Wash-It Laundry 2493 Dex- ter
+484,8102,354 BROADWAY ST,PROVIDENCE,Baccari Vincent J,100.0,['cd1959/entry/1959_Page_137 (1)_94.png'],LAW OFFICES,Baccari Vincent J 354 Broadway
+485,8146,32 WESTMINSTER ST,PROVIDENCE,Brodsky Irving,100.0,['cd1959/entry/1959_Page_137 (2)_48.png'],LAW OFFICES,Brodsky Irving 32 Westminster 5th fl
+486,8171,362 BROADWAY ST,PROVIDENCE,Capasso Joseph,100.0,['cd1959/entry/1959_Page_137 (2)_76.png'],LAW OFFICES,Capasso Joseph 362 Broadway
+487,8172,362 BROADWAY ST,PROVIDENCE,Capasso Luigi,100.0,['cd1959/entry/1959_Page_137 (2)_77.png'],LAW OFFICES,Capasso Luigi 362 Broadway
+488,8173,354 BROADWAY ST,PROVIDENCE,Capomacchio Edw A,100.0,['cd1959/entry/1959_Page_137 (2)_78.png'],LAW OFFICES,Capomacchio Edw A 354 Broadway
+489,8175,32 BROADWAY ST,PROVIDENCE,Cappelli Albert F,90.0,['cd1959/entry/1959_Page_137 (2)_80.png'],LAW OFFICES,Cappelli Albert F 32 Broadway R21
+490,8198,32 WESTMINSTER ST,PROVIDENCE,Choiniere Edw F,100.0,['cd1959/entry/1959_Page_137 (3)_12.png'],LAW OFFICES,Choiniere Edw F 32 Westminster 3d fl
+491,8200,433 BROADWAY ST,PROVIDENCE,Cianciarulo Angelo,100.0,['cd1959/entry/1959_Page_137 (3)_14.png'],LAW OFFICES,Cianciarulo Angelo 433 Broadway
+492,8214,32 WESTMINSTER ST,PROVIDENCE,Conlong Nelson J,100.0,['cd1959/entry/1959_Page_137 (3)_36.png'],LAW OFFICES,Conlong Nelson J 32 Westminster 5th fl
+493,8241,314 FEDERAL ST,PROVIDENCE,Day Edw W,87.0,['cd1959/entry/1959_Page_137 (3)_66.png'],LAW OFFICES,Day Edw W 314 Federal bldg
+494,8303,32 WESTMINSTER ST,PROVIDENCE,Folcarelli Giovanni,100.0,['cd1959/entry/1959_Page_138 (1)_66.png'],LAW OFFICES,Folcarelli Giovanni 32 Westminster 5th fl
+495,8333,32 WESTMINSTER ST,PROVIDENCE,Goldberg Bernard S,89.5,['cd1959/entry/1959_Page_138 (2)_11.png'],LAW OFFICES,Goldberg Bernard S 32 Westminster Sth fl
+496,8375,311 FEDERAL ST,PROVIDENCE,Hartigan John P,87.0,['cd1959/entry/1959_Page_138 (2)_75.png'],LAW OFFICES,Hartigan John P 311 Federal bldg
+497,8415, WESTMINSTER ST,PROVIDENCE,"Hogan Thomas J (Hinckley, Allen, Salisbury & Parsons),",92.5,"['cd1959/entry/1959_Page_138 (3)_29.png', 'cd1959/entry/1959_Page_138 (3)_30.png', 'cd1959/entry/1959_Page_138 (3)_31.png']",LAW OFFICES,"Hogan Thomas J (Hinckley, Allen, Salisbury & Parsons), 2200 Industrial Bank Bldg ~ 111 Westminster, Tel DExter 1-2400"
+498,8455,32 WESTMINSTER ST,PROVIDENCE,Kenyon Archibald B jr,100.0,['cd1959/entry/1959_Page_138 (3)_84.png'],LAW OFFICES,Kenyon Archibald B jr 32 Westminster
+499,8458,32 WESTMINSTER ST,PROVIDENCE,Kiernan Francis J,100.0,['cd1959/entry/1959_Page_138 (3)_87.png'],LAW OFFICES,Kiernan Francis J 32 Westminster 5th fl
+500,8497,32 WESTMINSTER ST,PROVIDENCE,Little Francis E jr,100.0,['cd1959/entry/1959_Page_139 (1).chop_43.png'],LAW OFFICES,Little Francis E jr 32 Westminster 3d fl
+501,8498,32 WESTMINSTER ST,PROVIDENCE,Little Joseph T,100.0,['cd1959/entry/1959_Page_139 (1).chop_44.png'],LAW OFFICES,Little Joseph T 32 Westminster 3d fl
+502,8505,538 BROADWAY ST,PROVIDENCE,Mahoney Chas J Rt Rev Msgr,100.0,['cd1959/entry/1959_Page_139 (1).chop_55.png'],LAW OFFICES,Mahoney Chas J Rt Rev Msgr 538 Broadway
+503,8540,32 WESTMINSTER ST,PROVIDENCE,McGrath J Howard,96.0,['cd1959/entry/1959_Page_139 (1).chop_101.png'],LAW OFFICES,McGrath J Howard 32 Westminster 6th fl
+504,8547,48 WESTMINSTER ST,PROVIDENCE,McLaughlin Chas H,90.5,['cd1959/entry/1959_Page_139 (2).chop_6.png'],LAW OFFICES,McLaughlin Chas H 48 Westminster R605
+505,8576,32 WESTMINSTER ST,PROVIDENCE,Moskal Harold S,100.0,['cd1959/entry/1959_Page_139 (2).chop_40.png'],LAW OFFICES,Moskal Harold S 32 Westminster 3d fl
+506,8589,32 WESTMINSTER ST,PROVIDENCE,Newton Brodsky & Kiernan,88.0,"['cd1959/entry/1959_Page_139 (2).chop_59.png', 'cd1959/entry/1959_Page_139 (2).chop_60.png']",LAW OFFICES,Newton Brodsky & Kiernan 32 Westminster 5th f1
+507,8590,32 WESTMINSTER ST,PROVIDENCE,Newton Mortimer W,100.0,['cd1959/entry/1959_Page_139 (2).chop_61.png'],LAW OFFICES,Newton Mortimer W 32 Westminster 5th fl
+508,8594,32 WESTMINSTER ST,PROVIDENCE,Nugent J Joseph,100.0,['cd1959/entry/1959_Page_139 (2).chop_65.png'],LAW OFFICES,Nugent J Joseph 32 Westminster 3d fl
+509,8635,32 WESTMINSTER ST,PROVIDENCE,Rabinowitz Sidney L,100.0,['cd1959/entry/1959_Page_139 (3).chop_26.png'],LAW OFFICES,Rabinowitz Sidney L 32 Westminster 2d fl
+510,8656,32 WESTMINSTER ST,PROVIDENCE,Rosedale Peter K,100.0,['cd1959/entry/1959_Page_139 (3).chop_58.png'],LAW OFFICES,Rosedale Peter K 32 Westminster 3d fl
+511,8669,154 CUSTOM HOUSE ST,PROVIDENCE,StGermaine Fernand J,93.0,"['cd1959/entry/1959_Page_139 (3).chop_72.png', 'cd1959/entry/1959_Page_139 (3).chop_73.png']",LAW OFFICES,StGermaine Fernand J 154 Custom House R22
+512,8745,1 WESTMINSTER ST,PROVIDENCE,Temkin Saml,86.5,['cd1959/entry/1959_Page_140 (1)_61.png'],LAW OFFICES,Temkin Saml1 15 Westminster R540
+513,8808,66 MAIDEN LN,PROVIDENCE,Zeiser Bruce H,80.0,['cd1959/entry/1959_Page_140 (2)_51.png'],LAW OFFICES,Zeiser Bruce H 66  Main
+514,8818,508 BENEFIT ST,PROVIDENCE,Gravely Tractors rear,100.0,['cd1959/entry/1959_Page_140 (2)_63.png'],LAWN MOWER REPAIRERS,Gravely Tractors rear 508 Benefit
+515,8851,12 OLNEYVILLE SQ,PROVIDENCE,Providence Public Library (Olneyville Branch),100.0,"['cd1959/entry/1959_Page_140 (3)_34.png', 'cd1959/entry/1959_Page_140 (3)_35.png']",LIBRARIES,Providence Public Library (Olneyville Branch) 12 Olneyville sq
+516,8856,106 FRANCIS AVE,PROVIDENCE,Rhode Island Medical Society Library,100.0,"['cd1959/entry/1959_Page_140 (3)_47.png', 'cd1959/entry/1959_Page_140 (3)_48.png']",LIBRARIES,Rhode Island Medical Society Library 106 Francis
+517,8859,313 FEDERAL ST,PROVIDENCE,US Court Library,87.0,['cd1959/entry/1959_Page_140 (3)_54.png'],LIBRARIES,US Court Library 313 Federal bldg
+518,8868,1 WAYLAND SQ,PROVIDENCE,Robinson Mrs,100.0,['cd1959/entry/1959_Page_141 (1)_4.png'],LINENSRETAIL,Robinson Mrs 1 Wayland sq
+519,8894,105 BROADWAY ST,PROVIDENCE,Broadway Liquor Store (package),100.0,"['cd1959/entry/1959_Page_141 (1)_34.png', 'cd1959/entry/1959_Page_141 (1)_35.png']",*LIQUOR DEALERSRETAIL,Broadway Liquor Store (package) 105 Broad- way
+520,8951,361 BROADWAY ST,PROVIDENCE,Knights Liquor Store Inc,100.0,['cd1959/entry/1959_Page_141 (1)_97.png'],*LIQUOR DEALERSRETAIL,Knights Liquor Store Inc 361 Broadway
+521,8968,19 OLNEYVILLE SQ,PROVIDENCE,McCaffrey Inc,100.0,['cd1959/entry/1959_Page_141 (2)_18.png'],*LIQUOR DEALERSRETAIL,McCaffrey Inc 19 Olneyville sq
+522,8999,1033 WEYBOSSET ST,PROVIDENCE,Rhode Island Liquor Store,100.0,['cd1959/entry/1959_Page_141 (2)_54.png'],*LIQUOR DEALERSRETAIL,Rhode Island Liquor Store 1033 Weybosset
+523,9000,436 BROADWAY ST,PROVIDENCE,Riccios Liquor Store,100.0,['cd1959/entry/1959_Page_141 (2)_55.png'],*LIQUOR DEALERSRETAIL,Riccios Liquor Store 436 Broadway
+524,9015,305 PINE ST,PROVIDENCE,Socks Liquor Store,100.0,['cd1959/entry/1959_Page_141 (2)_70.png'],*LIQUOR DEALERSRETAIL,Socks Liquor Store 305 Pine
+525,9050,100 WILLARD ST,PROVIDENCE,Wintman S H Co,100.0,['cd1959/entry/1959_Page_141 (3)_14.png'],*LIQUOR DEALERSRETAIL,Wintman S H Co 100 Willard av
+526,9063,37 WESTMINSTER ST,PROVIDENCE,"M-A-C FINANCE PLAN,",100.0,"['cd1959/entry/1959_Page_141 (3)_52.png', 'cd1959/entry/1959_Page_141 (3)_53.png']",*LOANS,"M-A-C FINANCE PLAN, 37 Westminster, Tel DExter 1-5373"
+527,9074,1143 COMMODORE ST,PROVIDENCE,Community Loan Co,89.0,['cd1959/entry/1959_Page_141 (3)_87.png'],LOANS--AUTOMOBILE,Community Loan Co 1143 Commodare
+528,9075,2894 POCASSET AVE,PROVIDENCE,County Loan & Finance Corp,100.0,['cd1959/entry/1959_Page_141 (3)_88.png'],LOANS--AUTOMOBILE,County Loan & Finance Corp 2894 Pocasset
+529,9107,1 OLNEYVILLE SQ,PROVIDENCE, RHODE ISLAND HOSPITAL TRUST CO. Hospital Trust Bldg,100.0,"['cd1959/entry/1959_Page_142 (1)_77.png', 'cd1959/entry/1959_Page_142 (1)_78.png', 'cd1959/entry/1959_Page_142 (1)_79.png']",LOANS MORTGAGE,"RHODE ISLAND HOSPITAL TRUST CO. Hospital Trust Bldg 15 Westminster, Tel
+JAckson 1-6700, cor Dorrance and West- minster, 244 Weybosset, 238 Thayer,
+434 Smith, 1 Olneyville sq (See Yellow
+Page 13)"
+530,9126,111 POND ST,PROVIDENCE,Ackerman Marion Baer,100.0,['cd1959/entry/1959_Page_142 (2)_54.png'],LODGING HOUSES,Ackerman Marion Baer 111 Pond
+531,9130,319 PINE ST,PROVIDENCE,Alacoski Selma Mrs,100.0,['cd1959/entry/1959_Page_142 (2)_57.png'],LODGING HOUSES,Alacoski Selma Mrs 319 Pine
+532,9131,332 PINE ST,PROVIDENCE,Albert The,100.0,['cd1959/entry/1959_Page_142 (2)_58.png'],LODGING HOUSES,Albert The 332 Pine
+533,9134,337 PINE ST,PROVIDENCE, Angivino Dominic,100.0,"['cd1959/entry/1959_Page_142 (2)_61.png', 'cd1959/entry/1959_Page_142 (2)_62.png']",LODGING HOUSES,Angivino Dominic 337 Pine and 21 and 28 Portland
+534,9154,110 POND ST,PROVIDENCE, Bernard Ernest,100.0,"['cd1959/entry/1959_Page_142 (2)_78.png', 'cd1959/entry/1959_Page_142 (2)_79.png']",LODGING HOUSES,Bernard Ernest 47 Parkis av 352 Pine and 110 Pond
+535,9160,322 PINE ST,PROVIDENCE,Blanchette Joseph R,100.0,['cd1959/entry/1959_Page_142 (2)_85.png'],LODGING HOUSES,Blanchette Joseph R 322 Pine
+536,9167,144 FRANCIS AVE,PROVIDENCE,Boudreau Lauda A Mrs,100.0,['cd1959/entry/1959_Page_142 (3)_6.png'],LODGING HOUSES,Boudreau Lauda A Mrs 144 Francis
+537,9174,19 BROWNELL ST,PROVIDENCE,Capital Chambers,100.0,['cd1959/entry/1959_Page_142 (3)_13.png'],LODGING HOUSES,Capital Chambers 19 Brownell
+538,9198,150 FRANCIS AVE,PROVIDENCE,Cummings Emma M,100.0,['cd1959/entry/1959_Page_142 (3)_36.png'],LODGING HOUSES,Cummings Emma M 150 Francis
+539,9206,216 BROADWAY ST,PROVIDENCE,DeCesare Wm F,100.0,['cd1959/entry/1959_Page_142 (3)_43.png'],LODGING HOUSES,DeCesare Wm F 216 Broadway
+540,9209,582 CARPENTER ST,PROVIDENCE,Delmont The,100.0,['cd1959/entry/1959_Page_142 (3)_46.png'],LODGING HOUSES,Delmont The 582 Carpenter
+541,9212,10 FOSTER ST,PROVIDENCE,Dick Alice Mrs,100.0,['cd1959/entry/1959_Page_142 (3)_49.png'],LODGING HOUSES,Dick Alice Mrs 10 Foster
+542,9223,340 PINE ST,PROVIDENCE,Edward The,100.0,['cd1959/entry/1959_Page_142 (3)_59.png'],LODGING HOUSES,Edward The 340 Pine
+543,9238,285 PEARL AVE,PROVIDENCE,Gamba Joseph F,100.0,['cd1959/entry/1959_Page_142 (3)_75.png'],LODGING HOUSES,Gamba Joseph F 285 Pearl
+544,9241,339 PINE ST,PROVIDENCE,Gaudreau Emile,100.0,['cd1959/entry/1959_Page_142 (3)_78.png'],LODGING HOUSES,Gaudreau Emile 339 Pine
+545,9258,93 BROADWAY ST,PROVIDENCE,Inamae Apartments,100.0,['cd1959/entry/1959_Page_142 (3)_94.png'],LODGING HOUSES,Inamae Apartments 93 Broadway
+546,9263,346 PINE ST,PROVIDENCE,Jasionowski Wm,100.0,['cd1959/entry/1959_Page_143 (1)_6.png'],LODGING HOUSES,Jasionowski Wm 346 Pine
+547,9289,120 FRANKLIN ST,PROVIDENCE,MacLean Agnes Mrs,100.0,['cd1959/entry/1959_Page_143 (1)_32.png'],LODGING HOUSES,MacLean Agnes Mrs 120 Franklin
+548,9295,671 BROADWAY ST,PROVIDENCE,Maple House The,100.0,['cd1959/entry/1959_Page_143 (1)_38.png'],LODGING HOUSES,Maple House The 671 Broadway
+549,9304,102 BROADWAY ST,PROVIDENCE,Melanson Delia Mrs,100.0,['cd1959/entry/1959_Page_143 (1)_47.png'],LODGING HOUSES,Melanson Delia Mrs 102 Broadway
+550,9305,306 PINE ST,PROVIDENCE,Menditto Mabel,100.0,['cd1959/entry/1959_Page_143 (1)_48.png'],LODGING HOUSES,Menditto Mabel 306 Pine
+551,9310,333 PINE ST,PROVIDENCE,Morrissette Ann Mrs,100.0,['cd1959/entry/1959_Page_143 (1)_53.png'],LODGING HOUSES,Morrissette Ann Mrs 333 Pine
+552,9312,179 BROADWAY ST,PROVIDENCE,Murray Thos J,100.0,['cd1959/entry/1959_Page_143 (1)_55.png'],LODGING HOUSES,Murray Thos J 179 Broadway
+553,9314,196 POND ST,PROVIDENCE,Naheem Rose Mrs,100.0,['cd1959/entry/1959_Page_143 (1)_57.png'],LODGING HOUSES,Naheem Rose Mrs 196 Pond
+554,9315,347 PINE ST,PROVIDENCE,Needham James E,100.0,['cd1959/entry/1959_Page_143 (1)_58.png'],LODGING HOUSES,Needham James E 347 Pine
+555,9335,11 PRINCE ST,PROVIDENCE,Pickering Fredk G,100.0,['cd1959/entry/1959_Page_143 (1)_76.png'],LODGING HOUSES,Pickering Fredk G 11 Prince
+556,9349,210 PEARL AVE,PROVIDENCE,Royal The,100.0,['cd1959/entry/1959_Page_143 (1)_90.png'],LODGING HOUSES,Royal The 210 Pearl
+557,9351,115 BROADWAY ST,PROVIDENCE,Sacco Louis & Ralph,100.0,['cd1959/entry/1959_Page_143 (1)_92.png'],LODGING HOUSES,Sacco Louis & Ralph 115 Broadway
+558,9364,98 POND ST,PROVIDENCE, Scheller Ernest,100.0,"['cd1959/entry/1959_Page_143 (1)_101.png', 'cd1959/entry/1959_Page_143 (1)_102.png']",LODGING HOUSES,Scheller Ernest 38 Broad 15 Claverick 98 Pond and 41 Stewart
+559,9393,328 PINE ST,PROVIDENCE,Victoria The,100.0,['cd1959/entry/1959_Page_143 (2)_28.png'],LODGING HOUSES,Victoria The 328 Pine
+560,9401,134 PARK ST,PROVIDENCE,West Helene,83.5,['cd1959/entry/1959_Page_143 (2)_36.png'],LODGING HOUSES,West Helene 134-136 Park
+561,9406,336 PINE ST,PROVIDENCE,Windsor The,100.0,['cd1959/entry/1959_Page_143 (2)_41.png'],LODGING HOUSES,Windsor The 336 Pine
+562,9444,3125 MAIDEN LN,PROVIDENCE,Perry's Second Hand Store,80.0,['cd1959/entry/1959_Page_143 (3)_27.png'],MACHINERY DEALERS USED,Perry's Second Hand Store 3125 Main
+563,9455,93 BROADWAY ST,PROVIDENCE,Matthews Equipment Co (textile),94.5,"['cd1959/entry/1959_Page_143 (3)_46.png', 'cd1959/entry/1959_Page_143 (3)_47.png']",MACHINERY MANUFACTURERS,Matthews Equipment Co (textile) 93A Broad- way
+564,9457,304 PEARL AVE,PROVIDENCE,New England Butt Co (Div of Wanskuck Co),100.0,"['cd1959/entry/1959_Page_143 (3)_49.png', 'cd1959/entry/1959_Page_143 (3)_50.png']",MACHINERY MANUFACTURERS,New England Butt Co (Div of Wanskuck Co) 304 Pearl
+565,9464,66 PENN ST,PROVIDENCE,A NC Machine Co,100.0,['cd1959/entry/1959_Page_143 (3)_67.png'],MACHINISTS,A NC Machine Co 66 Penn
+566,9471,159 BROOM ST,PROVIDENCE,Machine Service Co,80.0,['cd1959/entry/1959_Page_143 (3)_75.png'],MACHINISTS,Machine Service Co 159 Croom
+567,9475,159 BROOM ST,PROVIDENCE,Ruesch H J,80.0,['cd1959/entry/1959_Page_143 (3)_81.png'],MACHINISTS,Ruesch H J 159 Croom
+568,9479,445 FOUNTAIN ST,PROVIDENCE,Sharkey Tool Shop (used),100.0,['cd1959/entry/1959_Page_143 (3)_88.png'],MACHINISTS,Sharkey Tool Shop (used) 445 Fountain
+569,9491,422 BROADWAY ST,PROVIDENCE,Genuine Trading Co,100.0,['cd1959/entry/1959_Page_144 (1)_25.png'],MANUFACTURERS AGENTS,Genuine Trading Co 422} Broadway
+570,9492,110 HILLSIDE DR,PROVIDENCE,Goddard Joseph E F (textiles),100.0,"['cd1959/entry/1959_Page_144 (1)_26.png', 'cd1959/entry/1959_Page_144 (1)_27.png']",MANUFACTURERS AGENTS,Goddard Joseph E F (textiles) 110 Hillside av
+571,9541,1703 PRAIRIE AVE,PROVIDENCE,Bernsteins Meat Market,100.0,['cd1959/entry/1959_Page_144 (2)_55.png'],MEATS RETAIL,Bernsteins Meat Market 1703 Prairie av
+572,9603,11 ARCADE ST,PROVIDENCE, SMITH MAURICE C CO INC.,85.0,"['cd1959/entry/1959_Page_144 (3)_45.png', 'cd1959/entry/1959_Page_144 (3)_46.png', 'cd1959/entry/1959_Page_144 (3)_47.png']",*MECHANICAL ENGRAVING,"SMITH MAURICE C CO INC. 52 Pine and 11 Arcade Bldg, Tel GAspee 1-1064 (See Yellow Page 87)"
+573,9606,147 LUONGO MEMORIAL SQ,PROVIDENCE,Josephs Patent Medicines,83.5,"['cd1959/entry/1959_Page_144 (3)_53.png', 'cd1959/entry/1959_Page_144 (3)_54.png']",MEDICINES,Josephs Patent Medicines 147 Brook *MEMORIALS
+574,9616,70 CALVERLY ST,PROVIDENCE,New England Metal Co Inc,94.0,['cd1959/entry/1959_Page_145 (1)_10.png'],METAL DEALERS,New England Metal Co Inc 70 Calverley
+575,9640,736 HARTFORD AVE,PROVIDENCE,Jerry's Dairy,100.0,['cd1959/entry/1959_Page_145 (1)_58.png'],MILK DEALERS,Jerry's Dairy 736 Hartford av
+576,9647,3 CULVER ST,PROVIDENCE,Collier John W Co Inc (textile),100.0,['cd1959/entry/1959_Page_145 (1)_75.png'],MILL SUPPLIES,Collier John W Co Inc (textile) 3 Culver
+577,9651,116 CALVERLY ST,PROVIDENCE,Hanson Tool & Supply Co,100.0,['cd1959/entry/1959_Page_145 (2)_3.png'],MILL SUPPLIES,Hanson Tool & Supply Co 116 Calverly
+578,9698,1637 WARWICK AV,PROVIDENCE,"Gateway-Warwick Office,",100.0,"['cd1959/entry/1959_Page_145 (3)_51.png', 'cd1959/entry/1959_Page_145 (3)_52.png']",*MORTGAGES-REAL ESTATE,"Gateway-Warwick Office, 1637 Warwick av (See Yellow Page 12)"
+579,9708,59 CENTRAL AVE,PROVIDENCE,"JONES WAREHOUSES INC,",100.0,"['cd1959/entry/1959_Page_145 (3)_81.png', 'cd1959/entry/1959_Page_145 (3)_82.png']",*MOVING,"JONES WAREHOUSES INC, 59 Central, Tel GAspee 1-0081 (See Yellow Page 63)"
+580,9835,24 MASON AV,PROVIDENCE,"W PRO BROADCASTING STATION, AM, FM and T V, W PRO Bldg",100.0,"['cd1959/entry/1959_Page_146 (3)_16.png', 'cd1959/entry/1959_Page_146 (3)_17.png', 'cd1959/entry/1959_Page_146 (3)_18.png', 'cd1959/entry/1959_Page_146 (3)_19.png']",*NEWS SERVICE RADIO,"W PRO BROADCASTING STATION, AM, FM and T V, W PRO Bldg 24 Mason, Tel PLantations 1-9776 (See Yellow Page 78)"
+581,9837,178 BROADWAY ST,PROVIDENCE,Italian Echo,100.0,['cd1959/entry/1959_Page_146 (3)_25.png'],NEWS PA PERS,Italian Echo 178 Broadway
+582,9891,4 ATTILA ST,PROVIDENCE,Sunnyside Nursery,81.5,"['cd1959/entry/1959_Page_147 (1)_33.png', 'cd1959/entry/1959_Page_147 (1)_34.png']",NUMISMATISTS,Sunnyside Nursery 4 Attila NURSES
+583,9897,1345 ANGELL RD,PROVIDENCE,Babcock Marion E,100.0,['cd1959/entry/1959_Page_147 (1)_40.png'],NUMISMATISTS,Babcock Marion E 1345 Angell
+584,9930,52 BATES ST,PROVIDENCE,Chapman Lillian Mrs,100.0,['cd1959/entry/1959_Page_147 (1)_73.png'],NUMISMATISTS,Chapman Lillian Mrs 52 Bates
+585,9967,16 HUNTER AVE,PROVIDENCE,Fenton Alice T,100.0,['cd1959/entry/1959_Page_147 (2)_17.png'],NUMISMATISTS,Fenton Alice T 16 Hunter
+586,9995,14 LAVAUGHN ST,PROVIDENCE,Keefe Cath T Mrs,100.0,['cd1959/entry/1959_Page_147 (2)_46.png'],NUMISMATISTS,Keefe Cath T Mrs 14 Lavaughn
+587,10013,290 SHARON DR,PROVIDENCE,Macrae Barbara,100.0,['cd1959/entry/1959_Page_147 (2)_64.png'],NUMISMATISTS,Macrae Barbara  290 Sharon
+588,10054,122 PLEASANT AV,PROVIDENCE,OConnell Anne B,100.0,['cd1959/entry/1959_Page_147 (3)_2.png'],NUMISMATISTS,OConnell Anne B 122 Pleasant
+589,10165,7 ARCADE ST,PROVIDENCE,Providence Pen Co,85.0,['cd1959/entry/1959_Page_148 (1)_50.png'],MORRIS E L CO INC,Providence Pen Co 7 Arcade bldg
+590,10167,21 STEVENS RD,PROVIDENCE,Rhode Island Associates Inc,94.0,['cd1959/entry/1959_Page_148 (1)_53.png'],MORRIS E L CO INC,Rhode Island Associates Inc 21C Stevens
+591,10185,28 OLNEYVILLE SQ,PROVIDENCE, ATLANTIC COAL CO,100.0,"['cd1959/entry/1959_Page_148 (1)_84.png', 'cd1959/entry/1959_Page_148 (1)_85.png', 'cd1959/entry/1959_Page_148 (1)_86.png']",*OIL BURNERSRETAIL,"ATLANTIC COAL CO, 100 Pilsudski and 28 Olneyville sq, Tel ELmhurst 1-7000 (See Yellow Page 23)"
+592,10189,1196 CRANSTON ST,PROVIDENCE,"CRANSTON OIL SERVICE INC,",82.0,"['cd1959/entry/1959_Page_148 (2)_3.png', 'cd1959/entry/1959_Page_148 (2)_4.png', 'cd1959/entry/1959_Page_148 (2)_5.png']",*OIL BURNERSRETAIL,"CRANSTON OIL SERVICE INC, 1196 Cran- ston, Cranston, Tel ELmhurst 1-5200- (See Yellow Page 67)"
+593,10190,262 BROADWAY ST,PROVIDENCE,Diamond Oil Burner Mfg Co,100.0,['cd1959/entry/1959_Page_148 (2)_9.png'],*OIL BURNERSRETAIL,Diamond Oil Burner Mfg Co 262 Broadway
+594,10194,1124 ARLINGTON AVE,PROVIDENCE,"GUERTIN OIL CO,",83.5,"['cd1959/entry/1959_Page_148 (2)_23.png', 'cd1959/entry/1959_Page_148 (2)_24.png', 'cd1959/entry/1959_Page_148 (2)_25.png']",*OIL BURNERSRETAIL,"GUERTIN OIL CO, 1124 Cranston, Arling- ton, Tels ELmhurst 1-2107, 1-2108 (See Yellow Page 67)"
+595,10195,20 STEVENS RD,PROVIDENCE,Hammel Oil Burning Equipment Co Inc,89.0,"['cd1959/entry/1959_Page_148 (2)_26.png', 'cd1959/entry/1959_Page_148 (2)_27.png']",*OIL BURNERSRETAIL,Hammel Oil Burning Equipment Co Inc 20 Stevens ist fl rear
+596,10240,303 PEARL AVE,PROVIDENCE,Clarol Mfg Co,100.0,['cd1959/entry/1959_Page_148 (3)_30.png'],OPTICAL GOODS MANUFAC- TURERS,Clarol Mfg Co 303 Pearl
+597,10287,253 BROADWAY ST,PROVIDENCE,Ceontillo Raymond J,100.0,['cd1959/entry/1959_Page_149 (1)_2.png'],OPTOMETRISTS,Ceontillo Raymond J 253 Broadway
+598,10290,354 BROADWAY ST,PROVIDENCE,DeCesare Roland H,100.0,['cd1959/entry/1959_Page_149 (1)_5.png'],OPTOMETRISTS,DeCesare Roland H 354 Broadway
+599,10293,49 OLNEYVILLE SQ,PROVIDENCE,Garfinkel Benj,100.0,['cd1959/entry/1959_Page_149 (1)_8.png'],OPTOMETRISTS,Garfinkel Benj 49 Olneyville sq
+600,10304,20 ARCADE ST,PROVIDENCE,Klibanoff Harold F,85.0,['cd1959/entry/1959_Page_149 (1)_20.png'],OPTOMETRISTS,Klibanoff Harold F 20 Arcade bldg
+601,10312,100 WASHINGTON PL,PROVIDENCE,Palmieri Gerardo A,96.0,['cd1959/entry/1959_Page_149 (1)_30.png'],OPTOMETRISTS,Palmieri Gerardo A 100 Washington Rl
+602,10314,36 OLNEYVILLE SQ,PROVIDENCE,Pezzullo Anthony B,95.0,['cd1959/entry/1959_Page_149 (1)_32.png'],OPTOMETRISTS,Pezzullo Anthony B 36 Olneyville sq Rl
+603,10345,210 BROADWAY ST,PROVIDENCE,Grand Lodge of Rhode Island Sons of Italy,100.0,"['cd1959/entry/1959_Page_149 (1)_79.png', 'cd1959/entry/1959_Page_149 (1)_80.png']",ORGANIZATIONS BENEVOLENT and FRATERNAL,Grand Lodge of Rhode Island Sons of Italy 210 Broadway
+604,10359,931 PEARL AVE,PROVIDENCE,Otha-Boon Lodge of Elks No,85.5,['cd1959/entry/1959_Page_149 (2)_13.png'],ORGANIZATIONS BENEVOLENT and FRATERNAL,Otha-Boon Lodge of Elks No 931 327 Pearl
+605,10386,215 DORRANCE ST,PROVIDENCE,Democratic State Committee Narragansett Hotel R,92.0,"['cd1959/entry/1959_Page_149 (2)_94.png', 'cd1959/entry/1959_Page_149 (2)_95.png']","ORGANIZATIONS BUSINESS, PRO- FESSIONAL and CIVIC",Democratic State Committee Narragansett Hotel R215 97 Dorrance
+606,10399,60 ARCADE ST,PROVIDENCE,League of Women Voters of Rhode Island,85.0,"['cd1959/entry/1959_Page_149 (3)_21.png', 'cd1959/entry/1959_Page_149 (3)_22.png']","ORGANIZATIONS BUSINESS, PRO- FESSIONAL and CIVIC",League of Women Voters of Rhode Island 60 Arcade bldg
+607,10409,106 FRANCIS AVE,PROVIDENCE,Providence Medical Assn,100.0,['cd1959/entry/1959_Page_149 (3)_43.png'],"ORGANIZATIONS BUSINESS, PRO- FESSIONAL and CIVIC",Providence Medical Assn 106 Francis
+608,10426,106 FRANCIS AVE,PROVIDENCE,Rhode Island Medical Society,100.0,['cd1959/entry/1959_Page_149 (3)_73.png'],"ORGANIZATIONS BUSINESS, PRO- FESSIONAL and CIVIC",Rhode Island Medical Society 106 Francis
+609,10442,28 WESTMINSTER ST,PROVIDENCE,Amaigamated Clothing Workers of America Journeyman Tailors Local,81.5,"['cd1959/entry/1959_Page_150 (1)_2.png', 'cd1959/entry/1959_Page_150 (1)_3.png', 'cd1959/entry/1959_Page_150 (1)_4.png']",ORGANIZATIONS LABOR,Amaigamated Clothing Workers of America Journeyman Tailors Local 28 CIO 385 Westminster R310
+610,10443,26 GREEN ST,PROVIDENCE,Amalgamated Lithographers Local No,88.5,"['cd1959/entry/1959_Page_150 (1)_7.png', 'cd1959/entry/1959_Page_150 (1)_8.png']",ORGANIZATIONS LABOR,Amalgamated Lithographers Local No 26 14 Green
+611,10448,224 WASHINGTON PL,PROVIDENCE,Barbers Union Local No,84.5,"['cd1959/entry/1959_Page_150 (1)_21.png', 'cd1959/entry/1959_Page_150 (1)_22.png']",ORGANIZATIONS LABOR,Barbers Union Local No 224 109 Washing- ton R307
+612,10453,103 GREENE ST,PROVIDENCE,Brotherhood of Railway Clerks Local,90.0,"['cd1959/entry/1959_Page_150 (1)_31.png', 'cd1959/entry/1959_Page_150 (1)_32.png']",ORGANIZATIONS LABOR,Brotherhood of Railway Clerks Local 103 14 Greene
+613,10458,1695 BROADWAY ST,PROVIDENCE,Carpenters Local,92.0,['cd1959/entry/1959_Page_150 (1)_40.png'],ORGANIZATIONS LABOR,Carpenters Local 1695 89 Broadway
+614,10459,94 BROADWAY ST,PROVIDENCE,Carpenters Local Union No,92.0,"['cd1959/entry/1959_Page_150 (1)_41.png', 'cd1959/entry/1959_Page_150 (1)_42.png']",ORGANIZATIONS LABOR,Carpenters Local Union No 94 89 Broad- way
+615,10460,1327 BROADWAY ST,PROVIDENCE,Electricians Local,92.0,['cd1959/entry/1959_Page_150 (1)_43.png'],ORGANIZATIONS LABOR,Electricians Local 1327 89 Broadway
+616,10461,799 BROADWAY ST,PROVIDENCE,Fire Fighters Local,92.0,['cd1959/entry/1959_Page_150 (1)_44.png'],ORGANIZATIONS LABOR,Fire Fighters Local 799 89 Broadway
+617,10462,285 WASHINGTON PL,PROVIDENCE,Hotel & Restaurant Employees and Barten- ders International Union Local,84.5,"['cd1959/entry/1959_Page_150 (1)_45.png', 'cd1959/entry/1959_Page_150 (1)_46.png', 'cd1959/entry/1959_Page_150 (1)_47.png']",ORGANIZATIONS LABOR,Hotel & Restaurant Employees and Barten- ders International Union Local 285 131 Washington R403
+618,10464,89 BROADWAY ST,PROVIDENCE,International Association of Heat & Frost Insulators & Asbestos Workers,100.0,"['cd1959/entry/1959_Page_150 (1)_50.png', 'cd1959/entry/1959_Page_150 (1)_51.png', 'cd1959/entry/1959_Page_150 (1)_52.png']",ORGANIZATIONS LABOR,International Association of Heat & Frost Insulators & Asbestos Workers 89 Broadway
+619,10466,1142 HOLDEN ST,PROVIDENCE,International Assn of Machinists Lodge No,90.0,"['cd1959/entry/1959_Page_150 (1)_55.png', 'cd1959/entry/1959_Page_150 (1)_56.png']",ORGANIZATIONS LABOR,International Assn of Machinists Lodge No 1142 14 Holden
+620,10468,99 BROADWAY ST,PROVIDENCE,International Brotherhood of Electrical Workers Local No,86.5,"['cd1959/entry/1959_Page_150 (1)_59.png', 'cd1959/entry/1959_Page_150 (1)_60.png']",ORGANIZATIONS LABOR,International Brotherhood of Electrical Workers Local No 99 85 Broadway R6
+621,10469,271 WASHINGTON PL,PROVIDENCE,International Hod Carriers Bidg & Common Laborers Union of America Local,85.5,"['cd1959/entry/1959_Page_150 (1)_66.png', 'cd1959/entry/1959_Page_150 (1)_67.png', 'cd1959/entry/1959_Page_150 (1)_68.png']",ORGANIZATIONS LABOR,International Hod Carriers Bidg & Common Laborers Union of America Local 271 77 Washington R216
+622,10470,1329 SOUTH MAIN ST,PROVIDENCE,International Longshoremens Assn No,91.5,"['cd1959/entry/1959_Page_150 (1)_69.png', 'cd1959/entry/1959_Page_150 (1)_70.png']",ORGANIZATIONS LABOR,International Longshoremens Assn No 1329 314 S Main
+623,10471,1684 WICKENDEN ST,PROVIDENCE,International Longshoremens Assn Local No,91.0,"['cd1959/entry/1959_Page_150 (1)_71.png', 'cd1959/entry/1959_Page_150 (1)_72.png']",ORGANIZATIONS LABOR,International Longshoremens Assn Local No 1684 328 Wickenden
+624,10476,271 CLEMENCE ST,PROVIDENCE,Laborers Union Local No,92.0,"['cd1959/entry/1959_Page_150 (1)_82.png', 'cd1959/entry/1959_Page_150 (1)_83.png']",ORGANIZATIONS LABOR,Laborers Union Local No 271 37 Clemence 3d fl
+625,10477,359 CLEMENCE ST,PROVIDENCE,Lathers Union Local No,92.0,"['cd1959/entry/1959_Page_150 (1)_84.png', 'cd1959/entry/1959_Page_150 (1)_85.png']",ORGANIZATIONS LABOR,Lathers Union Local No 359 37 Clemence 3d fl
+626,10478,89 BROADWAY ST,PROVIDENCE,Machine Printers Beneficial Association,100.0,"['cd1959/entry/1959_Page_150 (1)_86.png', 'cd1959/entry/1959_Page_150 (1)_87.png']",ORGANIZATIONS LABOR,Machine Printers Beneficial Association 89 Broadway
+627,10481,195 BROADWAY ST,PROVIDENCE,Painters Local,92.0,['cd1959/entry/1959_Page_150 (1)_93.png'],ORGANIZATIONS LABOR,Painters Local 195 89 Broadway
+628,10484,28 WESTMINSTER ST,PROVIDENCE,Providence Journeymen Plumbers Local No,92.5,"['cd1959/entry/1959_Page_150 (1)_100.png', 'cd1959/entry/1959_Page_150 (1)_101.png']",ORGANIZATIONS LABOR,Providence Journeymen Plumbers Local No 28 552 Westminster
+629,10485,114 BROADWAY ST,PROVIDENCE,Providence PP&A Union,92.0,['cd1959/entry/1959_Page_150 (1)_102.png'],ORGANIZATIONS LABOR,Providence PP&A Union 114 89 Broadway
+630,10486,89 BROADWAY ST,PROVIDENCE,Providence-Pawtucket & Central Falis Carpenters District Council,100.0,"['cd1959/entry/1959_Page_150 (2)_1.png', 'cd1959/entry/1959_Page_150 (2)_2.png', 'cd1959/entry/1959_Page_150 (2)_3.png']",ORGANIZATIONS LABOR,Providence-Pawtucket & Central Falis Carpenters District Council 89 Broad- way
+631,10488,89 BROADWAY ST,PROVIDENCE,Railroad Workers,100.0,['cd1959/entry/1959_Page_150 (2)_10.png'],ORGANIZATIONS LABOR,Railroad Workers 89 Broadway
+632,10492,21172 WARREN ST,PROVIDENCE,Rubber Workers Union AFL-CIO No,90.0,"['cd1959/entry/1959_Page_150 (2)_18.png', 'cd1959/entry/1959_Page_150 (2)_19.png']",ORGANIZATIONS LABOR,Rubber Workers Union AFL-CIO No 21172 44 Warren
+633,10494,726 BROADWAY ST,PROVIDENCE,Sign & Pictorial Painters Local,92.0,"['cd1959/entry/1959_Page_150 (2)_22.png', 'cd1959/entry/1959_Page_150 (2)_23.png']",ORGANIZATIONS LABOR,Sign & Pictorial Painters Local 726 89 Broadway
+634,10495,476 BROADWAY ST,PROVIDENCE,Steamfitters Local Union No,81.0,"['cd1959/entry/1959_Page_150 (2)_24.png', 'cd1959/entry/1959_Page_150 (2)_25.png']",ORGANIZATIONS LABOR,Steamfitters Local Union No 476 87 Broad- wav
+635,10499,39 BROADWAY ST,PROVIDENCE,Union of Elevator Constructors Internation- al,92.0,"['cd1959/entry/1959_Page_150 (2)_34.png', 'cd1959/entry/1959_Page_150 (2)_35.png']",ORGANIZATIONS LABOR,Union of Elevator Constructors Internation- al 39 89 Broadway
+636,10524,9855 VEAZIE ST,PROVIDENCE,Veterans of Foreign Wars Post,87.5,"['cd1959/entry/1959_Page_150 (3)_36.png', 'cd1959/entry/1959_Page_150 (3)_37.png']",VETERANS,Veterans of Foreign Wars Post 9855 320 Veazie
+637,10541,99 HILLSIDE DR,PROVIDENCE,Jewish Home for Aged of Rhode Island,100.0,"['cd1959/entry/1959_Page_150 (3)_73.png', 'cd1959/entry/1959_Page_150 (3)_74.png']",RELIEF,Jewish Home for Aged of Rhode Island 99 Hillside av
+638,10543,301 PINE ST,PROVIDENCE,Nazareth Home,100.0,['cd1959/entry/1959_Page_150 (3)_77.png'],RELIEF,Nazareth Home 301 Pine
+639,10564,51 ARCADE ST,PROVIDENCE,United China Relief Inc,85.0,['cd1959/entry/1959_Page_151 (1)_21.png'],*ORGANIZ ATIONSYOUNG PEOPLES,United China Relief Inc 51 Arcade bldg
+640,10567,546 EMPIRE ST,PROVIDENCE,Boy Scouts of America Narragansett Coun- cil No,80.0,"['cd1959/entry/1959_Page_151 (1)_26.png', 'cd1959/entry/1959_Page_151 (1)_27.png']",ORGANIZATIONS MISCELLANEOUS,Boy Scouts of America Narragansett Coun- cil No 546 51 Empire R202
+641,10580,100 NORTH CT,PROVIDENCE,Legal Aid Society of Rhode Island,100.0,['cd1959/entry/1959_Page_151 (1)_46.png'],ORGANIZATIONS MISCELLANEOUS,Legal Aid Society of Rhode Island 100 N
+642,10608,59 CENTRAL AVE,PROVIDENCE,"JONES WAREHOUSES INC,",100.0,"['cd1959/entry/1959_Page_151 (2)_14.png', 'cd1959/entry/1959_Page_151 (2)_15.png']",* PACKING,"JONES WAREHOUSES INC, 59 Central. Tel GAspee 1-0081 (See Yellow Page 63)"
+643,10618,563 BROADWAY ST,PROVIDENCE,Fairlane Paint Co Inc,100.0,['cd1959/entry/1959_Page_151 (2)_40.png'],PAINTRETAIL,Fairlane Paint Co Inc 563 Broadway
+644,10630,8 ARCADE ST,PROVIDENCE,"STARKWEATHER & WILLIAMS INC (Glid- den, Sapolin Barreled Sunlight),",85.5,"['cd1959/entry/1959_Page_151 (2)_56.png', 'cd1959/entry/1959_Page_151 (2)_57.png', 'cd1959/entry/1959_Page_151 (2)_58.png', 'cd1959/entry/1959_Page_151 (2)_59.png']",PAINTRETAIL,"STARKWEATHER & WILLIAMS INC (Glid- den, Sapolin Barreled Sunlight), 8 Arcade Bldg, Tel GAspee 1-7350 (See Yellow Page 74)"
+645,10637,563 BROADWAY ST,PROVIDENCE,Fairlane Paint Co Inc,100.0,['cd1959/entry/1959_Page_151 (2)_73.png'],PAINT WHOLESA LE,Fairlane Paint Co Inc 563 Broadway
+646,10673,1 STEVENS RD,PROVIDENCE,Republic Paper Co,100.0,['cd1959/entry/1959_Page_151 (3)_75.png'],PAPER PRODUCTS MANUFAC- TURERS,Republic Paper Co 1 Stevens
+647,10684,800 BLACKSTONE BLVD,PROVIDENCE,Farnum- Lippitt Memorial Park,100.0,"['cd1959/entry/1959_Page_152 (1)_17.png', 'cd1959/entry/1959_Page_152 (1)_18.png']",PAPER STOCK,Farnum- Lippitt Memorial Park 800 Black- stone blvd cor Hope
+648,10750,681 BROADWAY ST,PROVIDENCE,Caroll John Studio,88.0,['cd1959/entry/1959_Page_152 (2)_57.png'],PHOTOGRA PHERS,Caroll John Studio 681 Broadway R204
+649,10759,64 ARCADE ST,PROVIDENCE,Gaylord Studio,85.0,['cd1959/entry/1959_Page_152 (2)_66.png'],PHOTOGRA PHERS,Gaylord Studio 64 Arcade bldg
+650,10777,26 ARCADE ST,PROVIDENCE,Roberts Studio,85.0,['cd1959/entry/1959_Page_152 (2)_84.png'],PHOTOGRA PHERS,Roberts Studio 26 Arcade bldg
+651,10790,58 ARCADE ST,PROVIDENCE,Tilley Lawrence E,85.0,['cd1959/entry/1959_Page_152 (3)_4.png'],R35-38,Tilley Lawrence E 58 Arcade bldg
+652,10798,8 ARCADE ST,PROVIDENCE,"STARKWEATHER & WILLIAMS INC,",85.5,"['cd1959/entry/1959_Page_152 (3)_18.png', 'cd1959/entry/1959_Page_152 (3)_19.png', 'cd1959/entry/1959_Page_152 (3)_20.png']",* PHOTOGRAPHIC APPARATUS and SUPPLIES,"STARKWEATHER & WILLIAMS INC, 8 Ar- cade Bldg, Tel GAspee 1-7350 (See Yel- low Page 74)"
+653,10826,547 BROADWAY ST,PROVIDENCE,Badway Joseph M,100.0,['cd1959/entry/1959_Page_152 (3)_64.png'],cal Society,Badway Joseph M 547 Broadway
+654,10846,409 BROADWAY ST,PROVIDENCE,*Berrillo Anacleto,100.0,['cd1959/entry/1959_Page_152 (3)_84.png'],cal Society,*Berrillo Anacleto 409 Broadway
+655,10871,171 BROADWAY ST,PROVIDENCE,Calenda Daniel G,100.0,['cd1959/entry/1959_Page_153 (1)_14.png'],cal Society,Calenda Daniel G 171 Broadway
+656,10872,441 BROADWAY ST,PROVIDENCE,*Calise Domenico,100.0,['cd1959/entry/1959_Page_153 (1)_15.png'],cal Society,*Calise Domenico 441 Broadway
+657,10875,358 BROADWAY ST,PROVIDENCE,sCardillo Edw,100.0,['cd1959/entry/1959_Page_153 (1)_18.png'],cal Society,sCardillo Edw 358 Broadway
+658,10879,227 ANGELA CT,PROVIDENCE,sCashman Chas W jr,83.0,['cd1959/entry/1959_Page_153 (1)_22.png'],cal Society,sCashman Chas W jr 227 Angeli
+659,10880,426 BROADWAY ST,PROVIDENCE,Castronovo Joseph,100.0,['cd1959/entry/1959_Page_153 (1)_23.png'],cal Society,Castronovo Joseph 426 Broadway
+660,10883,514 BROADWAY ST,PROVIDENCE,*Cella Louis J,100.0,['cd1959/entry/1959_Page_153 (1)_26.png'],cal Society,*Cella Louis J 514 Broadway
+661,10890,376 BROADWAY ST,PROVIDENCE,Ciccone Arnold W,100.0,['cd1959/entry/1959_Page_153 (1)_33.png'],cal Society,Ciccone Arnold W 376 Broadway
+662,10896,288 BROADWAY ST,PROVIDENCE,*Colagiovanni Marco,100.0,['cd1959/entry/1959_Page_153 (1)_39.png'],cal Society,*Colagiovanni Marco 288 Broadway
+663,10905,408 BROADWAY ST,PROVIDENCE,*Coppoline Dominic L,100.0,['cd1959/entry/1959_Page_153 (1)_48.png'],cal Society,*Coppoline Dominic L 408 Broadway
+664,10906,194 BROADWAY ST,PROVIDENCE,*Corcione Mary B,100.0,['cd1959/entry/1959_Page_153 (1)_49.png'],cal Society,*Corcione Mary B 194 Broadway
+665,10907,323 POST OFFICE CT,PROVIDENCE, *Corrigan Francis V,82.0,"['cd1959/entry/1959_Page_153 (1)_50.png', 'cd1959/entry/1959_Page_153 (1)_51.png']",cal Society,*Corrigan Francis V 323 State Office bidg and 613 Angell
+666,10909,331 BROADWAY ST,PROVIDENCE,*Corsello Joseph N,100.0,['cd1959/entry/1959_Page_153 (1)_52.png'],cal Society,*Corsello Joseph N 331 Broadway
+667,10910,243 BROADWAY ST,PROVIDENCE,tGorvese Anthony,100.0,['cd1959/entry/1959_Page_153 (1)_53.png'],cal Society,tGorvese Anthony 243 Broadway
+668,10923,331 POST OFFICE CT,PROVIDENCE,WDeery James P,82.0,['cd1959/entry/1959_Page_153 (1)_66.png'],cal Society,WDeery James P 331 State Office bidg
+669,10924,410 BROADWAY ST,PROVIDENCE,DeFusco Bruno G,100.0,['cd1959/entry/1959_Page_153 (1)_67.png'],cal Society,DeFusco Bruno G 410 Broadway
+670,10925,271 BROADWAY ST,PROVIDENCE,DelSelva Americo,100.0,['cd1959/entry/1959_Page_153 (1)_68.png'],cal Society,DelSelva Americo 271 Broadway
+671,10930,223 BROADWAY ST,PROVIDENCE,*DiLeone Ralph L,100.0,['cd1959/entry/1959_Page_153 (1)_73.png'],cal Society,*DiLeone Ralph L 223 Broadway
+672,10936,420 BROADWAY ST,PROVIDENCE,DiSanto Vincenzo,100.0,['cd1959/entry/1959_Page_153 (1)_79.png'],cal Society,DiSanto Vincenzo 420 Broadway
+673,10941,282 BROADWAY ST,PROVIDENCE,*D'Ugo Wm P,100.0,['cd1959/entry/1959_Page_153 (1)_87.png'],cal Society,*D'Ugo Wm P 282 Broadway
+674,10951,463 BROADWAY ST,PROVIDENCE,Ernst Geo A,88.0,['cd1959/entry/1959_Page_153 (1)_97.png'],cal Society,Ernst Geo A 463 Broadwav
+675,10981,154 FRANCIS AVE,PROVIDENCE,*Garside Francis V,100.0,['cd1959/entry/1959_Page_153 (2)_27.png'],cal Society,*Garside Francis V 154 Francis
+676,10986,448 BROADWAY ST,PROVIDENCE,*Giannini Pio,100.0,['cd1959/entry/1959_Page_153 (2)_32.png'],cal Society,*Giannini Pio 448 Broadway
+677,10993,371 BROADWAY ST,PROVIDENCE,*Golini Carlotta N,100.0,['cd1959/entry/1959_Page_153 (2)_39.png'],cal Society,*Golini Carlotta N 371 Broadway
+678,11010,154 FRANCIS AVE,PROVIDENCE,Hanushevsky Toras,100.0,['cd1959/entry/1959_Page_153 (2)_56.png'],cal Society,Hanushevsky Toras 154 Francis
+679,11035,451 BROADWAY ST,PROVIDENCE,*Indeglia Pasquale V,100.0,['cd1959/entry/1959_Page_153 (2)_81.png'],cal Society,*Indeglia Pasquale V 451 Broadway
+680,11081,299 BROADWAY ST,PROVIDENCE,Maiello Robt,100.0,['cd1959/entry/1959_Page_153 (3)_25.png'],cal Society,Maiello Robt 299 Broadway
+681,11095,463 BROADWAY ST,PROVIDENCE,*Matteo Frank I,100.0,['cd1959/entry/1959_Page_153 (3)_39.png'],cal Society,*Matteo Frank I 463 Broadway-
+682,11116,196 BROADWAY ST,PROVIDENCE,*Migliaccio Anthony V,100.0,['cd1959/entry/1959_Page_153 (3)_60.png'],cal Society,*Migliaccio Anthony V 196 Broadway
+683,11127,214 BROADWAY ST,PROVIDENCE,*Monti Emilio J,100.0,['cd1959/entry/1959_Page_153 (3)_71.png'],cal Society,*Monti Emilio J 214 Broadway
+684,11145,547 BROADWAY ST,PROVIDENCE,Nodarse Raul,100.0,['cd1959/entry/1959_Page_153 (3)_89.png'],cal Society,Nodarse Raul 547 Broadway
+685,11149,322 BROADWAY ST,PROVIDENCE,*Oddo Vincent J,100.0,['cd1959/entry/1959_Page_153 (3)_93.png'],cal Society,*Oddo Vincent J 322 Broadway
+686,11157,376 BROADWAY ST,PROVIDENCE,*Parrillo Joseph M,100.0,['cd1959/entry/1959_Page_153 (3)_101.png'],cal Society,*Parrillo Joseph M 376 Broadway.
+687,11159,242 BROADWAY ST,PROVIDENCE,*Pedorella Americo J,100.0,['cd1959/entry/1959_Page_153 (3)_103.png'],cal Society,*Pedorella Americo J 242 Broadway
+688,11180,529 BROADWAY ST,PROVIDENCE,Raia Joseph E,100.0,['cd1959/entry/1959_Page_154 (1)_22.png'],cal Society,Raia Joseph E 529 Broadway
+689,11198,485 BROADWAY ST,PROVIDENCE,Rocco Albert F,100.0,['cd1959/entry/1959_Page_154 (1)_39.png'],cal Society,Rocco Albert F 485 Broadway
+690,11199,462 BROADWAY ST,PROVIDENCE,*Romano Anthony,100.0,['cd1959/entry/1959_Page_154 (1)_40.png'],cal Society,*Romano Anthony 462 Broadway
+691,11204,201 BROADWAY ST,PROVIDENCE,*Rossignoli Vincent P,100.0,['cd1959/entry/1959_Page_154 (1)_45.png'],cal Society,*Rossignoli Vincent P 201 Broadway
+692,11270,380 BROADWAY ST,PROVIDENCE,*Troppoli Dan] V,100.0,['cd1959/entry/1959_Page_154 (1)_111.png'],cal Society,*Troppoli Dan] V 380 Broadway
+693,11277,354 BROADWAY ST,PROVIDENCE,*Valentino Angelo G,100.0,['cd1959/entry/1959_Page_154 (2)_6.png'],cal Society,*Valentino Angelo G 354 Broadway
+694,11279,185 BROADWAY ST,PROVIDENCE,*Verrone Anthony C,100.0,['cd1959/entry/1959_Page_154 (2)_8.png'],cal Society,*Verrone Anthony C 185 Broadway
+695,11303,134 FRANCIS AVE,PROVIDENCE,*Young Danl D,100.0,['cd1959/entry/1959_Page_154 (2)_32.png'],cal Society,*Young Danl D 134 Francis
+696,11342,61 ARCADE ST,PROVIDENCE,Arcade Art Store The,85.0,['cd1959/entry/1959_Page_154 (2)_91.png'],DEALERS,Arcade Art Store The 61 Arcade bldg
+697,11345,6 ARCADE ST,PROVIDENCE,Providence Picture Frame Co,85.5,"['cd1959/entry/1959_Page_154 (2)_96.png', 'cd1959/entry/1959_Page_154 (2)_97.png']",DEALERS,Providence Picture Frame Co 6{ Arcade bldg
+698,11356,20 STEVENS RD,PROVIDENCE,Belon Chemical Co,89.0,['cd1959/entry/1959_Page_154 (3)_36.png'],PLASTIC PRODUC TS MANUFAC- TURERS,Belon Chemical Co 20 Stevens 1st fl rear
+699,11382,19 STEVENS RD,PROVIDENCE,Winde-McCormick Laminates Inc,100.0,"['cd1959/entry/1959_Page_154 (3)_69.png', 'cd1959/entry/1959_Page_154 (3)_70.png']",PLASTIC PRODUC TS MANUFAC- TURERS,Winde-McCormick Laminates Inc 19 Ste- vens
+700,11394,70 SOUTH CT,PROVIDENCE,Charles Plating Co,100.0,['cd1959/entry/1959_Page_154 (3)_86.png'],PLATERS,Charles Plating Co 70 South
+701,11397,12 DESOTO ST,PROVIDENCE,DeSoto Plating rear,100.0,['cd1959/entry/1959_Page_154 (3)_90.png'],PLATERS,DeSoto Plating rear 12 DeSoto ~
+702,11407,50 VALLEY VIEW DR,PROVIDENCE,Gleam Metal Finishing Co Inc (metals),82.0,"['cd1959/entry/1959_Page_155 (1)_12.png', 'cd1959/entry/1959_Page_155 (1)_13.png']",PLATERS,Gleam Metal Finishing Co Inc (metals) 50 Valley Bidg 14
+703,11418,47 CULVER ST,PROVIDENCE,"MILLARD WIRE CO INC (Rolled Gold),",100.0,"['cd1959/entry/1959_Page_155 (1)_26.png', 'cd1959/entry/1959_Page_155 (1)_27.png', 'cd1959/entry/1959_Page_155 (1)_28.png']",PLATERS,"MILLARD WIRE CO INC (Rolled Gold), 47 Culver, Tels GAspee 1-4946 and JAck- son 1-0917 (See Yellow Page 91)"
+704,11446,68 GANSETT AV,PROVIDENCE, EMMA ANTHONY HEATING CO INC (Heat- ing Gas Oil Burners Sales & Serv- ice),93.5,"['cd1959/entry/1959_Page_155 (1)_75.png', 'cd1959/entry/1959_Page_155 (1)_76.png', 'cd1959/entry/1959_Page_155 (1)_77.png', 'cd1959/entry/1959_Page_155 (1)_78.png', 'cd1959/entry/1959_Page_155 (1)_79.png', 'cd1959/entry/1959_Page_155 (1)_80.png']",MENT,"EMMA ANTHONY HEATING CO INC (Heat- ing, Gas and Oil Burners Sales & Serv- ice), 68-72 Gansett av, Cranston, Tel UNion 1-1511 (Gee Yellow Page 39) PLUMBING SUPPLIES DEALERS ente Supply Co 404 Valley"
+705,11507,2713 POCASSET AVE,PROVIDENCE,Annex Printing,100.0,['cd1959/entry/1959_Page_155 (3)_3.png'],R302,Annex Printing 2713 Pocasset av
+706,11514,178 BROADWAY ST,PROVIDENCE,Broadway Press,100.0,['cd1959/entry/1959_Page_155 (3)_10.png'],R302,Broadway Press 178 Broadway
+707,11523,32 WESTMINSTER ST,PROVIDENCE,Goldman Printing Co,90.5,['cd1959/entry/1959_Page_155 (3)_20.png'],R302,Goldman Printing Co 32 Westminster R400
+708,11528,569 BROADWAY ST,PROVIDENCE,Jay Printing Co,90.0,['cd1959/entry/1959_Page_155 (3)_25.png'],R302,Jay Printing Co 569-571 Broadway
+709,11545,57 BROADWAY ST,PROVIDENCE,Guality Press The,100.0,['cd1959/entry/1959_Page_155 (3)_45.png'],R302,Guality Press The 57 Broadway
+710,11554,263 BROADWAY ST,PROVIDENCE,Social Printing Co,100.0,['cd1959/entry/1959_Page_155 (3)_54.png'],R302,Social Printing Co 263 Broadway
+711,11555,77 ARCADE ST,PROVIDENCE,Society Press,85.0,['cd1959/entry/1959_Page_155 (3)_55.png'],R302,Society Press 77 Arcade bldg
+712,11619,24 MASON AV,PROVIDENCE,"W PR O BROADCASTING STATION, AM, FM and T V, W PR O Bldg",100.0,"['cd1959/entry/1959_Page_156 (2)_12.png', 'cd1959/entry/1959_Page_156 (2)_13.png', 'cd1959/entry/1959_Page_156 (2)_14.png', 'cd1959/entry/1959_Page_156 (2)_15.png', 'cd1959/entry/1959_Page_156 (2)_16.png']",*RADIO ADVERTISING,"W PR O BROADCASTING STATION, AM, FM and T V, W PR O Bldg 24 Mason, Tel PLantations 1-9776 (See Yellow Page 78) RADIO and T V BROADCASTING"
+713,11624,24 MASON AV,PROVIDENCE,"W PR O BROADCASTING STATION, AM, FM and T V, W PR O Bldg",100.0,"['cd1959/entry/1959_Page_156 (2)_27.png', 'cd1959/entry/1959_Page_156 (2)_28.png', 'cd1959/entry/1959_Page_156 (2)_29.png', 'cd1959/entry/1959_Page_156 (2)_30.png', 'cd1959/entry/1959_Page_156 (2)_31.png']",COMPANIES and STATIONS,"W PR O BROADCASTING STATION, AM, FM and T V, W PR O Bldg 24 Mason, Tel PLantations 1-9776 (See Yellow Page 78) RADIO and TELEVISION EQUIPMENT"
+714,11633,41 JEFFERSON ST,PROVIDENCE,Perrys Al TV Service,100.0,['cd1959/entry/1959_Page_156 (2)_46.png'],--SALES and SERVICE,Perrys Al TV Service 41 Jefferson
+715,11652,4803 BROADWAY ST,PROVIDENCE,Dial Television Co,100.0,['cd1959/entry/1959_Page_156 (2)_72.png'],SALES and SERVICE,Dial Television Co 4803 Broadway
+716,11656,300 BROADWAY ST,PROVIDENCE,Federal TV & Electronics Inc,100.0,"['cd1959/entry/1959_Page_156 (2)_77.png', 'cd1959/entry/1959_Page_156 (2)_78.png']",SALES and SERVICE,Federal TV & Electronics Inc 300 Broad- way
+717,11667,603 CAMP ST,PROVIDENCE,Johnson Kenneth G,100.0,['cd1959/entry/1959_Page_156 (2)_90.png'],SALES and SERVICE,Johnson Kenneth G 603 Camp
+718,11668,8 HAWKES ST,PROVIDENCE,Klumbis Anthony J,91.0,['cd1959/entry/1959_Page_156 (2)_91.png'],SALES and SERVICE,Klumbis Anthony J 8 Hawes
+719,11673,67 PLEASANT AV,PROVIDENCE,MtPleasant Radio & Television Co,90.5,"['cd1959/entry/1959_Page_156 (2)_97.png', 'cd1959/entry/1959_Page_156 (2)_98.png']",SALES and SERVICE,MtPleasant Radio & Television Co 67} Mt- Pleasant av
+720,11698,41 BROADWAY ST,PROVIDENCE,Del Padre Supply of Rhode Island Inc,92.0,"['cd1959/entry/1959_Page_156 (3)_31.png', 'cd1959/entry/1959_Page_156 (3)_32.png']",SUPPLIES WHOLESALE,Del Padre Supply of Rhode Island Inc 41-45 Broadway
+721,11701,8 RAILROAD TERR,PROVIDENCE,N Y NH &,83.5,['cd1959/entry/1959_Page_156 (3)_40.png'],RAILROADS,N Y NH & 8H Railroad Exchange ter
+722,11708,100 SOUTH CT,PROVIDENCE,Alfred Co The,100.0,['cd1959/entry/1959_Page_156 (3)_57.png'],REAL ESTATE,Alfred Co The 100 South
+723,11712,268 BROADWAY ST,PROVIDENCE,Annotti Domenic,100.0,['cd1959/entry/1959_Page_156 (3)_61.png'],REAL ESTATE,Annotti Domenic 268 Broadway
+724,11729,12 WESTMINSTER ST,PROVIDENCE,Brassard Roger,89.5,['cd1959/entry/1959_Page_156 (3)_79.png'],REAL ESTATE,Brassard Roger 12 Westminster 2d fi
+725,11771,166 VALLEY VIEW DR,PROVIDENCE,Donstan Corp,83.5,['cd1959/entry/1959_Page_157 (1)_36.png'],REAL ESTATE,Donstan Corp 166 Valley bidg 3
+726,11773,21 OAKDALE AV,PROVIDENCE,Doyle Wm W,100.0,['cd1959/entry/1959_Page_157 (1)_38.png'],REAL ESTATE,Doyle Wm W 21 Oakdale
+727,11790,116 ANITA RD,PROVIDENCE,Fabbel Roy L,80.0,['cd1959/entry/1959_Page_157 (1)_55.png'],REAL ESTATE,Fabbel Roy L 116 Banta
+728,11802,32 WESTMINSTER ST,PROVIDENCE,"GARRAHAN WILLIAM H & CO INC,",100.0,"['cd1959/entry/1959_Page_157 (1)_73.png', 'cd1959/entry/1959_Page_157 (1)_74.png', 'cd1959/entry/1959_Page_157 (1)_75.png']",REAL ESTATE,"GARRAHAN WILLIAM H & CO INC, 32 Westminster, Tel DExter 1-8313 (See Yellow Page 45)"
+729,11818,33 ARCADE ST,PROVIDENCE,"HOME CENTER THE,",87.5,"['cd1959/entry/1959_Page_157 (2)_5.png', 'cd1959/entry/1959_Page_157 (2)_6.png']",REAL ESTATE,"HOME CENTER THE, 33 The Arcade, Tel UNion 1-5910"
+730,11857,32 WESTMINSTER ST,PROVIDENCE,*McGrath James J & Sons,96.0,"['cd1959/entry/1959_Page_157 (2)_52.png', 'cd1959/entry/1959_Page_157 (2)_53.png']",REAL ESTATE,*McGrath James J & Sons 32 Westminster 6th fl
+731,11867,117 BROADWAY ST,PROVIDENCE,Millmather Mfg Co,92.0,['cd1959/entry/1959_Page_157 (2)_68.png'],REAL ESTATE,Millmather Mfg Co 117 Broadway R2
+732,11875,33 ARCADE ST,PROVIDENCE,*Nicholson Stephen B jr,85.5,['cd1959/entry/1959_Page_157 (2)_80.png'],REAL ESTATE,*Nicholson Stephen B jr 33 Arcade blag
+733,11891,32 BROADWAY ST,PROVIDENCE,Pioneer Realty Corp,90.0,['cd1959/entry/1959_Page_157 (3)_7.png'],REAL ESTATE,Pioneer Realty Corp 32 Broadway R21
+734,11906,32 WESTMINSTER ST,PROVIDENCE,Rhode Island Industries Inc,96.0,"['cd1959/entry/1959_Page_157 (3)_22.png', 'cd1959/entry/1959_Page_157 (3)_23.png']",REAL ESTATE,Rhode Island Industries Inc 32 Westminster 6th fl
+735,11914,24 MASON AV,PROVIDENCE,*Rosedale Realty Co,100.0,['cd1959/entry/1959_Page_157 (3)_34.png'],REAL ESTATE,*Rosedale Realty Co 24 Mason 4th fl
+736,11942,15 STEVENS RD,PROVIDENCE,Trebla Corp,100.0,['cd1959/entry/1959_Page_157 (3)_64.png'],REAL ESTATE,Trebla Corp 15 Stevens
+737,11943,381 BROADWAY ST,PROVIDENCE,Trillo Joseph Realty Co,100.0,['cd1959/entry/1959_Page_157 (3)_65.png'],REAL ESTATE,Trillo Joseph Realty Co 381 Broadway
+738,11949,2900 WARWICK AV,PROVIDENCE,"WALLACE R E (Realtor),",82.0,"['cd1959/entry/1959_Page_157 (3)_71.png', 'cd1959/entry/1959_Page_157 (3)_72.png']",REAL ESTATE,"WALLACE R E (Realtor), 2900 Post rd, Warwick, Tel REgent 7-9100"
+739,11955,32 WESTMINSTER ST,PROVIDENCE,Westminster Corp,90.5,['cd1959/entry/1959_Page_157 (3)_80.png'],REAL ESTATE,Westminster Corp 32 Westminster R400
+740,11964,500 BROADWAY ST,PROVIDENCE,Zelano Joseph,100.0,['cd1959/entry/1959_Page_157 (3)_90.png'],REAL ESTATE,Zelano Joseph 500 Broadway
+741,11983,81 BROADWAY ST,PROVIDENCE,Rhode Island Refrigeration Supply Co Inc,100.0,"['cd1959/entry/1959_Page_158 (1)_62.png', 'cd1959/entry/1959_Page_158 (1)_63.png']",REFRIGERATION COMMERCIAL and INDUSTRIAL,Rhode Island Refrigeration Supply Co Inc 81 Broadway
+742,12004,20 STEVENS RD,PROVIDENCE,"PARAMOUNT FOUNTAIN AND RESTAU- RANT SUPPLY CORP,",100.0,"['cd1959/entry/1959_Page_158 (2)_56.png', 'cd1959/entry/1959_Page_158 (2)_57.png', 'cd1959/entry/1959_Page_158 (2)_58.png']",MENT WHOLESALE,"PARAMOUNT FOUNTAIN AND RESTAU- RANT SUPPLY CORP, 20 Stevens, Tel ELmhurst 1-6000"
+743,12017,7054 CRANSTON ST,PROVIDENCE,Ann & Bills Diner,100.0,['cd1959/entry/1959_Page_158 (3)_10.png'],RESTAURANTS,Ann & Bills Diner 7054 Cranston
+744,12045,500 BROADWAY ST,PROVIDENCE,Broadway Lunch,100.0,['cd1959/entry/1959_Page_158 (3)_40.png'],RESTAURANTS,Broadway Lunch 500 Broadway
+745,12138,101 BROADWAY ST,PROVIDENCE,Gansett Diner Restaurant,100.0,['cd1959/entry/1959_Page_159 (1)_47.png'],RESTAURANTS,Gansett Diner Restaurant 101 Broadway
+746,12152,1913 PRAIRIE AVE,PROVIDENCE,Haighs Fish & Chips,100.0,['cd1959/entry/1959_Page_159 (1)_63.png'],RESTAURANTS,Haighs Fish & Chips 1913 Prairie av
+747,12153,68 BROADWAY ST,PROVIDENCE,Happy Days Cafe,100.0,['cd1959/entry/1959_Page_159 (1)_64.png'],RESTAURANTS,Happy Days Cafe 68 Broadway
+748,12160,9641 ATWELLS AVE,PROVIDENCE,Hill Top Fish & Chips,100.0,['cd1959/entry/1959_Page_159 (1)_73.png'],RESTAURANTS,Hill Top Fish & Chips 9641 Atwells av
+749,12173,24 MASON AV,PROVIDENCE,Integlia Pasquale,100.0,['cd1959/entry/1959_Page_159 (1)_86.png'],RESTAURANTS,Integlia Pasquale 24 Mason
+750,12194,33 BROADWAY ST,PROVIDENCE,Koerners,100.0,['cd1959/entry/1959_Page_159 (2)_15.png'],RESTAURANTS,Koerners 33 Broadway
+751,12204,3334 POCASSET AVE,PROVIDENCE,Lillians Lunch,100.0,['cd1959/entry/1959_Page_159 (2)_25.png'],RESTAURANTS,Lillians Lunch 3334 Pocasset av
+752,12221,3893 CHARLES ST,PROVIDENCE,Mancinis Diner.,100.0,['cd1959/entry/1959_Page_159 (2)_42.png'],RESTAURANTS,Mancinis Diner. 3893 Charles
+753,12242,673 GORDON AVE,PROVIDENCE,Mooshoian John,100.0,['cd1959/entry/1959_Page_159 (2)_67.png'],RESTAURANTS,Mooshoian John 673 Gordon av
+754,12280,95 SOUTH CT,PROVIDENCE,Ralphs Restaurant,100.0,['cd1959/entry/1959_Page_159 (3)_16.png'],RESTAURANTS,Ralphs Restaurant 95 South
+755,12302,155 BROADWAY ST,PROVIDENCE,Shirley's Snack Bar,100.0,['cd1959/entry/1959_Page_159 (3)_40.png'],RESTAURANTS,Shirley's Snack Bar 155 Broadway
+756,12306,7694 HOPE ST,PROVIDENCE,Skipper's Diner,100.0,['cd1959/entry/1959_Page_159 (3)_44.png'],RESTAURANTS,Skipper's Diner 7694 Hope
+757,12313,40 BROADWAY ST,PROVIDENCE,Southern Belle Diner,100.0,['cd1959/entry/1959_Page_159 (3)_51.png'],RESTAURANTS,Southern Belle Diner 40 Broadway
+758,12315,983 KNIGHT ST,PROVIDENCE,Spero Anthony A,100.0,['cd1959/entry/1959_Page_159 (3)_53.png'],RESTAURANTS,Spero Anthony A 983 Knight
+759,12324,8 OLNEYVILLE SQ,PROVIDENCE,Teddys Grill,100.0,['cd1959/entry/1959_Page_159 (3)_63.png'],RESTAURANTS,Teddys Grill 8 Olneyville sq
+760,12347,318 BROADWAY ST,PROVIDENCE,Uptown Luncheonette,100.0,['cd1959/entry/1959_Page_159 (3)_89.png'],RESTAURANTS,Uptown Luncheonette 318 Broadway
+761,12348,5 WOODLAND ST,PROVIDENCE,Valelli Carmine,100.0,['cd1959/entry/1959_Page_159 (3)_90.png'],RESTAURANTS,Valelli Carmine 5 Woodland
+762,12352,10 WESTMINSTER ST,PROVIDENCE, Waldorf System Inc,100.0,"['cd1959/entry/1959_Page_159 (3)_93.png', 'cd1959/entry/1959_Page_159 (3)_94.png']",RESTAURANTS,Waldorf System Inc 108 Mathewson and 10 and 160 Westminster
+763,12360,9 WAYLAND SQ,PROVIDENCE,Wayland Square Pharmacy Inc,100.0,['cd1959/entry/1959_Page_160 (1)_8.png'],RESTAURANTS,Wayland Square Pharmacy Inc 9 Wayland sq
+764,12365,401 WEYBOSSET ST,PROVIDENCE,White Front Lunch,100.0,['cd1959/entry/1959_Page_160 (1)_14.png'],RESTAURANTS,White Front Lunch 401 Weybosset
+765,12369,673 BROADWAY ST,PROVIDENCE, White Tower Management Corp,100.0,"['cd1959/entry/1959_Page_160 (1)_17.png', 'cd1959/entry/1959_Page_160 (1)_18.png', 'cd1959/entry/1959_Page_160 (1)_19.png']",RESTAURANTS,White Tower Management Corp 673 Broad- way 68 Dorrance 191 Washington and 785 Westminster
+766,12382,7128 VALLEY ST,PROVIDENCE,"GAMMINO M A CONSTRUCTION CO INC,",100.0,"['cd1959/entry/1959_Page_160 (1)_31.png', 'cd1959/entry/1959_Page_160 (1)_32.png', 'cd1959/entry/1959_Page_160 (1)_33.png']",*ROAD BUILDERS,"GAMMINO M A CONSTRUCTION CO INC, 7128 Valley, Tel GAspee 1-0234 (See Yellow Page 26)"
+767,12386,70 ATWOOD AVE,PROVIDENCE,"MOORE J W ROOFING CO,",100.0,"['cd1959/entry/1959_Page_160 (1)_48.png', 'cd1959/entry/1959_Page_160 (1)_49.png', 'cd1959/entry/1959_Page_160 (1)_50.png']",*ROCK SALT,"MOORE J W ROOFING CO, 70 Atwood, Tel ELmhurst 1-8891 (See Yellow Page 85) *ROOFING MATERIALS"
+768,12401,35 WESTMINSTER ST,PROVIDENCE,"CENTRAL RUBBER STAMP WORKS, We Make Them? (Stencils, Inks, Numberers, Daters. Marking Devices),",92.5,"['cd1959/entry/1959_Page_160 (2)_19.png', 'cd1959/entry/1959_Page_160 (2)_20.png', 'cd1959/entry/1959_Page_160 (2)_21.png', 'cd1959/entry/1959_Page_160 (2)_22.png', 'cd1959/entry/1959_Page_160 (2)_23.png']",RUBBER GOODS WHOLESALE,"CENTRAL RUBBER STAMP WORKS, We Make Them? (Stencils, Inks, Numberers, Daters. Marking Devices), 35 Westmin- ster, R11, Tel DExter 1-9609 (See Yel- low Page 87)"
+769,12403,11 ARCADE ST,PROVIDENCE, SMITH MAURICE C CO INC,85.0,"['cd1959/entry/1959_Page_160 (2)_25.png', 'cd1959/entry/1959_Page_160 (2)_26.png', 'cd1959/entry/1959_Page_160 (2)_27.png', 'cd1959/entry/1959_Page_160 (2)_28.png']",*RUBBER STAMPS,"SMITH MAURICE C CO INC, 52 Pine and 11 Arcade Bldg, Tel GAspee 1-1064 (See Yellow Page 87) RUBBER STAMPS and SEALS"
+770,12404,35 WESTMINSTER ST,PROVIDENCE,Central Rubber Stamp Works,100.0,"['cd1959/entry/1959_Page_160 (2)_29.png', 'cd1959/entry/1959_Page_160 (2)_30.png']",*RUBBER STAMPS,Central Rubber Stamp Works 35 Westmin- ster 3d fl
+771,12433,15 CHERRY ST,PROVIDENCE,Price Nursing Home,100.0,['cd1959/entry/1959_Page_160 (3)_30.png'],SANITARIUMS,Price Nursing Home 15 Cherry 2d fl
+772,12447,1 WESTMINSTER ST,PROVIDENCE,Williams,82.5,['cd1959/entry/1959_Page_161 (1)_20.png'],*SAVINGS BANKS,"Williams 1-4400; Westminster Office,"
+773,12448,1637 WARWICK AV,PROVIDENCE,", Gateway-Warwick Office,",100.0,"['cd1959/entry/1959_Page_161 (1)_22.png', 'cd1959/entry/1959_Page_161 (1)_23.png']",*SAVINGS BANKS,"Tel TEmple 1-7730, Gateway-Warwick
+Office, 1637 Warwick av (See Yellow 12)"
+774,12467,199 WELLINGTON AVE,PROVIDENCE,"UNITED LEASE & SERVICE CO,",81.0,"['cd1959/entry/1959_Page_161 (1)_62.png', 'cd1959/entry/1959_Page_161 (1)_63.png', 'cd1959/entry/1959_Page_161 (1)_64.png']",*SCHOOL BUSES,"UNITED LEASE & SERVICE CO, 199 Wel- lington av, Cranston, Tel HOpkins 7-8700 SCHOOLS and COLLEGES"
+775,12483,70 ORCHARD LN,PROVIDENCE,Providence Hebrew Day School,100.0,['cd1959/entry/1959_Page_161 (2)_26.png'],*SCHOOL BUSES,Providence Hebrew Day School 70 Orchard
+776,12488,520 THORNE ST,PROVIDENCE,Rhode Island School for the Deaf,80.0,['cd1959/entry/1959_Page_161 (2)_35.png'],*SCHOOL BUSES,Rhode Island School for the Deaf 520 Hone
+777,12504,70 ORCHARD LN,PROVIDENCE,Temple-Beth-El-Religious School,100.0,"['cd1959/entry/1959_Page_161 (2)_58.png', 'cd1959/entry/1959_Page_161 (2)_59.png']",*SCHOOL BUSES,Temple-Beth-El-Religious School 70 Orch- ard av
+778,12517,635 PLEASANT AV,PROVIDENCE,StAugustines Parochial School,90.0,"['cd1959/entry/1959_Page_161 (2)_74.png', 'cd1959/entry/1959_Page_161 (2)_75.png']",SCHOOLS PAROCHIAL,StAugustines Parochial School 635 MtPleas- ant av
+779,12541,170 POND ST,PROVIDENCE,Central High School,100.0,['cd1959/entry/1959_Page_161 (3)_14.png'],SCHOOLS PUBLIC,Central High School 170 Pond
+780,12543,160 BUCK HILL RD,PROVIDENCE,Gilbert Stuart Elementary School,81.0,"['cd1959/entry/1959_Page_161 (3)_16.png', 'cd1959/entry/1959_Page_161 (3)_17.png']",SCHOOLS PUBLIC,Gilbert Stuart Elementary School 160 Buck-
+781,12583,35 WESTMINSTER ST,PROVIDENCE,"CENTRAL RUBBER STAMP WORKS. We Make Them (Stencils, Inks, Numberers, Daters and Marking Devices),",92.5,"['cd1959/entry/1959_Page_161 (3)_74.png', 'cd1959/entry/1959_Page_161 (3)_75.png', 'cd1959/entry/1959_Page_161 (3)_76.png', 'cd1959/entry/1959_Page_161 (3)_77.png', 'cd1959/entry/1959_Page_161 (3)_78.png']",*SEALS NOTARY and COR PORA- TION,"CENTRAL RUBBER STAMP WORKS. We Make Them (Stencils, Inks, Numberers, Daters and Marking Devices), 35 West- minster, R11, Tel DExter 1-9609 (See Yellow Page 87)"
+782,12607,2965 SOUTH MAIN ST,PROVIDENCE,Drain Wm H,100.0,['cd1959/entry/1959_Page_162 (1)_57.png'],SHEET METAL WORKERS,Drain Wm H 2965S Main
+783,12611,70 ATWOOD AVE,PROVIDENCE,"MOORE J W ROOFING CO,",100.0,"['cd1959/entry/1959_Page_162 (1)_65.png', 'cd1959/entry/1959_Page_162 (1)_66.png']",SHEET METAL WORKERS,"MOORE J W ROOFING CO, 70 Atwood, Tel ELmhurst 1-8891 (See Yellow Page 85)"
+784,12616,2514 SMITH ST,PROVIDENCE,Providence Sheet Metal Works,100.0,['cd1959/entry/1959_Page_162 (1)_71.png'],SHEET METAL WORKERS,Providence Sheet Metal Works 2514 Smith
+785,12630,35 WESTMINSTER ST,PROVIDENCE,"CENTRAL RUBBER STAMP WORKS, We Make Them (Stencils, Inks, Numberers, Daters and Marking Devices),",92.5,"['cd1959/entry/1959_Page_162 (2)_20.png', 'cd1959/entry/1959_Page_162 (2)_21.png', 'cd1959/entry/1959_Page_162 (2)_22.png', 'cd1959/entry/1959_Page_162 (2)_23.png', 'cd1959/entry/1959_Page_162 (2)_24.png']",SHIPPING ROOM SUPPLIES,"CENTRAL RUBBER STAMP WORKS, We Make Them (Stencils, Inks, Numberers, Daters and Marking Devices), 35 West- minster. R11, Tel DExter 1-9609 (See Yellow Page 87)"
+786,12637,17 ARCADE ST,PROVIDENCE,Childrens Shoe Center,85.5,['cd1959/entry/1959_Page_162 (2)_39.png'],SHIRT MANUFACTURERS,Childrens Shoe Center 17 Arcade bidg
+787,12659,15 STEVENS RD,PROVIDENCE,John The Shoeman,92.0,['cd1959/entry/1959_Page_162 (2)_63.png'],SHIRT MANUFACTURERS,John The Shoeman 15 Steven
+788,12687,1523 CHARLES ST,PROVIDENCE,Tattersall Shoe Store,100.0,['cd1959/entry/1959_Page_162 (3)_11.png'],SHIRT MANUFACTURERS,Tattersall Shoe Store 1523 Charles
+789,12699,20 STEVENS RD,PROVIDENCE,Biltmore Textiles (laces),100.0,['cd1959/entry/1959_Page_162 (3)_28.png'],SUPPLIES,Biltmore Textiles (laces) 20 Stevens 2d fl
+790,12703,20 STEVENS RD,PROVIDENCE,Jette Wm M & Co,100.0,['cd1959/entry/1959_Page_162 (3)_33.png'],SUPPLIES,Jette Wm M & Co 20 Stevens 3d fl
+791,12726,16 PLEASANT AV,PROVIDENCE,Charron Arthur J,90.0,['cd1959/entry/1959_Page_162 (3)_59.png'],SHOE REPAIRERS,Charron Arthur J 16 MtPleasant av
+792,12727,84 PLEASANT AV,PROVIDENCE,Cimino Antonio,100.0,['cd1959/entry/1959_Page_162 (3)_60.png'],SHOE REPAIRERS,Cimino Antonio 84 Pleasant
+793,12734,4223 MANTON AVE,PROVIDENCE,DeClemente Innocenzio,83.0,['cd1959/entry/1959_Page_162 (3)_67.png'],SHOE REPAIRERS,DeClemente Innocenzio 4223 Mantoh av
+794,12742,194 HILLSIDE DR,PROVIDENCE,Franks Shoe Service,100.0,['cd1959/entry/1959_Page_162 (3)_75.png'],SHOE REPAIRERS,Franks Shoe Service 194 Hillside av
+795,12761,5644 CRANSTON ST,PROVIDENCE,Kayata Shoe Service,100.0,['cd1959/entry/1959_Page_163 (1)_9.png'],SHOE REPAIRERS,Kayata Shoe Service 5644 Cranston
+796,12766,314 BROADWAY ST,PROVIDENCE,Liberty Shoe Repairing,100.0,['cd1959/entry/1959_Page_163 (1)_14.png'],SHOE REPAIRERS,Liberty Shoe Repairing 314 Broadway
+797,12783,484 BROADWAY ST,PROVIDENCE,New Liberty Shoe Repair,100.0,['cd1959/entry/1959_Page_163 (1)_31.png'],SHOE REPAIRERS,New Liberty Shoe Repair 484 Broadway
+798,12791,20 LUONGO MEMORIAL SQ,PROVIDENCE, Pondolfino Joseph,85.5,"['cd1959/entry/1959_Page_163 (1)_40.png', 'cd1959/entry/1959_Page_163 (1)_41.png']",SHOE REPAIRERS,Pondolfino Joseph 20 Thomas and Vincent Luongo Memorial sq
+799,12807,1903 CAMP ST,PROVIDENCE,Vono Antonio,100.0,['cd1959/entry/1959_Page_163 (1)_69.png'],SHOE REPAIRERS,Vono Antonio 1903 Camp
+800,12813,5 OLNEYVILLE SQ,PROVIDENCE,John the Hatter,100.0,['cd1959/entry/1959_Page_163 (1)_78.png'],SHOE SHINERS,John the Hatter 5 Olneyville sq
+801,12817,405 WEYBOSSET ST,PROVIDENCE,Ace Sign Co,100.0,['cd1959/entry/1959_Page_163 (2)_5.png'],TURERS,Ace Sign Co 405 Weybosset
+802,12822,915 POTTERS AVE,PROVIDENCE,Barber Alfred C,89.0,['cd1959/entry/1959_Page_163 (2)_10.png'],TURERS,Barber Alfred C 915-517 Potters av
+803,12845,628 BROADWAY ST,PROVIDENCE,Tri-R Signs Co,100.0,['cd1959/entry/1959_Page_163 (2)_33.png'],TURERS,Tri-R Signs Co 628 Broadway.
+804,12847,3254 PLAINFIELD ST,PROVIDENCE,Warning Lights Inc,100.0,['cd1959/entry/1959_Page_163 (2)_37.png'],TURERS,Warning Lights Inc 3254 Plainfield
+805,12856,20 STEVENS RD,PROVIDENCE,Well-Made Mfg Co,100.0,['cd1959/entry/1959_Page_163 (2)_50.png'],SLIP COVERS MANUFACTURERS,Well-Made Mfg Co 20 Stevens
+806,12882,34 POND ST,PROVIDENCE,Southern N E Supply Co,100.0,['cd1959/entry/1959_Page_163 (3)_26.png'],SPORTING GOODS WHOLESALE,Southern N E Supply Co 34 Pond
+807,12912,115 BROADWAY ST,PROVIDENCE,Peerless Stationery Co,100.0,['cd1959/entry/1959_Page_164 (1)_24.png'],STATIONERSRETAIL,Peerless Stationery Co 115 Broadway
+808,12919,1483 CAMDEN AVE,PROVIDENCE,Piascitelli Louis A,100.0,['cd1959/entry/1959_Page_164 (1)_34.png'],STEAM FITTERS,Piascitelli Louis A 1483 Camden av
+809,12949,20 WESTMINSTER ST,PROVIDENCE,"KIDDER, PEABODY & CO,",100.0,"['cd1959/entry/1959_Page_164 (2)_42.png', 'cd1959/entry/1959_Page_164 (2)_43.png']",*STOCKS and BONDS,"KIDDER, PEABODY & CO, 20 Westminster, Tel GAspee 1-3500 (See Yellow Page 18)"
+810,12962,59 CENTRAL AVE,PROVIDENCE,"JONES WAREHOUSES INC,",100.0,"['cd1959/entry/1959_Page_164 (2)_78.png', 'cd1959/entry/1959_Page_164 (2)_79.png']",STORAGE,"JONES WAREHOUSES INC, 59 Central. Tel GAspee 1-0081 (See Yellow Page 63)"
+811,12971,20 STEVENS RD,PROVIDENCE,"MONARCH STORE FIXTURES INC,",100.0,"['cd1959/entry/1959_Page_164 (3)_17.png', 'cd1959/entry/1959_Page_164 (3)_18.png']",*STORAGE FURS and GARMENTS,"MONARCH STORE FIXTURES INC, 20 Stevens, Tel GAspee 1-5390"
+812,13009,266 BROADWAY ST,PROVIDENCE,Fiore Salvatore,100.0,['cd1959/entry/1959_Page_165 (1)_15.png'],TAILORS,Fiore Salvatore 266 Broadway
+813,13043,493 LEDGE ST,PROVIDENCE,H & J Custom Tailoring,100.0,['cd1959/entry/1959_Page_165 (1)_66.png'],TAILORS,H & J Custom Tailoring 493; Ledge
+814,13058,2844 POCASSET AVE,PROVIDENCE,Pannone Frank,100.0,['cd1959/entry/1959_Page_165 (2)_8.png'],TAILORS,Pannone Frank 2844 Pocasset av
+815,13064,12323 BROAD ST,PROVIDENCE,Sackschneider Hyman,100.0,['cd1959/entry/1959_Page_165 (2)_14.png'],TAILORS,Sackschneider Hyman 12323 Broad
+816,13069,401 WEYBOSSET ST,PROVIDENCE,Stahl Bros,100.0,['cd1959/entry/1959_Page_165 (2)_19.png'],TAILORS,Stahl Bros 401 Weybosset
+817,13076,32 BROADWAY ST,PROVIDENCE,Vagnini Peter,90.0,['cd1959/entry/1959_Page_165 (2)_26.png'],TAILORS,Vagnini Peter 32 Broadway R21
+818,13124,166 VALLEY VIEW DR,PROVIDENCE,Dixelle The Co,83.5,['cd1959/entry/1959_Page_165 (3)_16.png'],TELE PHONE ANSWERING SERVICE,Dixelle The Co 166 Valley bidg 7
+819,13125,106 FRANCIS AVE,PROVIDENCE,Medical Bureau Providence Medical Assoc- iation,100.0,"['cd1959/entry/1959_Page_165 (3)_17.png', 'cd1959/entry/1959_Page_165 (3)_18.png']",TELE PHONE ANSWERING SERVICE,Medical Bureau Providence Medical Assoc- iation 106 Francis
+820,13158,2315 MAIDEN LN,PROVIDENCE,Windle JH & Co,80.0,['cd1959/entry/1959_Page_166 (1)_21.png'],TEXTILE MANUFACTURERS SUP- PLIES and EQUIPMENT MANU- FACTURERS,Windle JH & Co 2315 Main
+821,13176,270 BROADWAY ST,PROVIDENCE,Uptown Theatre Inc,100.0,['cd1959/entry/1959_Page_166 (1)_50.png'],THEATRES,Uptown Theatre Inc 270 Broadway
+822,13186,113 BROADWAY ST,PROVIDENCE,Broadway Tire Sales Co,100.0,['cd1959/entry/1959_Page_166 (1)_70.png'],TINWARE MANUFACTURERS,Broadway Tire Sales Co 113 Broadway
+823,13190,116 BROADWAY ST,PROVIDENCE,Engle Tire Co,100.0,['cd1959/entry/1959_Page_166 (1)_74.png'],TINWARE MANUFACTURERS,Engle Tire Co 116 Broadway
+824,13193,78 BROADWAY ST,PROVIDENCE,General Tire Service Inc,100.0,['cd1959/entry/1959_Page_166 (1)_78.png'],TINWARE MANUFACTURERS,General Tire Service Inc 78 Broadway
+825,13196,38 ACKERMAN ST,PROVIDENCE,Griffin Donald L,93.0,['cd1959/entry/1959_Page_166 (1)_81.png'],TINWARE MANUFACTURERS,Griffin Donald L 38 Akerman
+826,13204,60 BROADWAY ST,PROVIDENCE,Service Tire Sales Co,100.0,['cd1959/entry/1959_Page_166 (2)_9.png'],TINWARE MANUFACTURERS,Service Tire Sales Co 60 Broadway
+827,13205,121 BROADWAY ST,PROVIDENCE,Thompson & Rich,100.0,['cd1959/entry/1959_Page_166 (2)_10.png'],TINWARE MANUFACTURERS,Thompson & Rich 121 Broadway
+828,13264,224 MAIDEN LN,PROVIDENCE,Peerless Tool & Die Co,80.0,['cd1959/entry/1959_Page_166 (3)_16.png'],TOOL MANUFACTURERS,Peerless Tool & Die Co 224  Main
+829,13269,69 SOUTH CT,PROVIDENCE,Reinhardt Tool & Die Works Inc,100.0,['cd1959/entry/1959_Page_166 (3)_22.png'],TOOL MANUFACTURERS,Reinhardt Tool & Die Works Inc 69 South
+830,13280,16 ARCADE ST,PROVIDENCE,Crump & Pearson Travel Agency Inc,85.0,"['cd1959/entry/1959_Page_166 (3)_39.png', 'cd1959/entry/1959_Page_166 (3)_40.png']",TOURISTS AGENTS,Crump & Pearson Travel Agency Inc 16 Arcade bldg
+831,13282,40 ARNOLD CT,PROVIDENCE,Allen Towen & Linen Supply Inc,100.0,['cd1959/entry/1959_Page_166 (3)_45.png'],TOURISTS AGENTS,Allen Towen & Linen Supply Inc 40 Arnold
+832,13286,375 SHARON DR,PROVIDENCE,Industrial Towel Co,100.0,['cd1959/entry/1959_Page_166 (3)_50.png'],TOURISTS AGENTS,Industrial Towel Co 375 Sharon
+833,13294,21 ARCADE ST,PROVIDENCE,Doll Hospital The,85.0,['cd1959/entry/1959_Page_166 (3)_65.png'],TOYS and GAMESIMPORTERS and WHOLESALE,Doll Hospital The 21 Arcade bldg
+834,13301,30 OLNEYVILLE SQ,PROVIDENCE,World Green Stamps,91.0,['cd1959/entry/1959_Page_166 (3)_74.png'],TRADING STAMP COMPANIES,World Green Stamps 30 Olmeyville sq
+835,13312,12 UNION STATION ST,PROVIDENCE, New York New Haven & Hartford RR (freight rail water),90.5,"['cd1959/entry/1959_Page_167 (1)_20.png', 'cd1959/entry/1959_Page_167 (1)_21.png']",- TRANSPORTATION LINES,New York New Haven & Hartford RR (freight rail and water) 12 India and Union Station
+836,13314,172 BROADWAY ST,PROVIDENCE,Continental Travel Service,100.0,['cd1959/entry/1959_Page_167 (1)_24.png'],TRAVEL BUREAUS,Continental Travel Service 172 Broadway
+837,13316,21634 ATWELLS AVE,PROVIDENCE,Martinez-Martella Travel Bureau Inc,100.0,"['cd1959/entry/1959_Page_167 (1)_26.png', 'cd1959/entry/1959_Page_167 (1)_27.png']",TRAVEL BUREAUS,Martinez-Martella Travel Bureau Inc 21634 Atwells av
+838,13331,11 REED AV,PROVIDENCE,Arruda Joseph M,80.0,['cd1959/entry/1959_Page_167 (1)_61.png'],TRUCKING,Arruda Joseph M 11 Reeder
+839,13338,204 MAIDEN LN,PROVIDENCE,Burns M Trucking Co,80.0,['cd1959/entry/1959_Page_167 (1)_69.png'],TRUCKING,Burns M Trucking Co 204  Main
+840,13347,180 SWAN CT,PROVIDENCE,Ciliberto John,100.0,['cd1959/entry/1959_Page_167 (2)_5.png'],TRUCKING,Ciliberto John 180 Swan
+841,13348,138 ATWOOD AVE,PROVIDENCE,Circle Transportation Inc,100.0,['cd1959/entry/1959_Page_167 (2)_6.png'],TRUCKING,Circle Transportation Inc 138 Atwood
+842,13364,577 MAIDEN LN,PROVIDENCE,Garvey Transportation Co,80.0,['cd1959/entry/1959_Page_167 (2)_26.png'],TRUCKING,Garvey Transportation Co 577  Main
+843,13391,59 VAN ZANDT AVE,PROVIDENCE,Maynard & Sons,85.5,['cd1959/entry/1959_Page_167 (2)_55.png'],TRUCKING,Maynard & Sons 59 VanZandt
+844,13426,425 FOUNTAIN ST,PROVIDENCE,United Transportation Co of Rhode Island,100.0,"['cd1959/entry/1959_Page_167 (3)_8.png', 'cd1959/entry/1959_Page_167 (3)_9.png']",TRUCKING,United Transportation Co of Rhode Island 425 Fountain
+845,13427,177 BROOM ST,PROVIDENCE,Viti Bros Inc,80.0,['cd1959/entry/1959_Page_167 (3)_10.png'],TRUCKING,Viti Bros Inc 177 Croom
+846,13435,799 WELLINGTON AVE,PROVIDENCE,"HAMILTON GMC TRUCK SALES INC (Sales and Parts),",81.0,"['cd1959/entry/1959_Page_167 (3)_24.png', 'cd1959/entry/1959_Page_167 (3)_25.png', 'cd1959/entry/1959_Page_167 (3)_26.png']",*TRUCKS,"HAMILTON GMC TRUCK SALES INC (Sales and Parts), 799 Wellington av, Cranston. Tel HOpkins 7-8200"
+847,13440,799 WELLINGTON AVE,PROVIDENCE,UNITED LEASE & SERVICE CO.,81.0,"['cd1959/entry/1959_Page_167 (3)_34.png', 'cd1959/entry/1959_Page_167 (3)_35.png']",TRUCKS LEASING,"UNITED LEASE & SERVICE CO. 799 Wel- lington av, Cranston, Tel HOpkins 7-8200"
+848,13441,404 FOUNTAIN ST,PROVIDENCE,Bus Sales Corp,100.0,['cd1959/entry/1959_Page_167 (3)_37.png'],TRUCKS MOTOR,Bus Sales Corp 404 Fountain
+849,13456,1 OLNEYVILLE SQ,PROVIDENCE, Hospital Trust Bldg,100.0,"['cd1959/entry/1959_Page_168 (1)_3.png', 'cd1959/entry/1959_Page_168 (1)_4.png', 'cd1959/entry/1959_Page_168 (1)_5.png', 'cd1959/entry/1959_Page_168 (1)_6.png']","RHODE ISLAND HOSPITAL TRUST CO,","Hospital Trust Bldg 15 Westminster, Tel
+JAckson 1-6700; cor Dorrance and Westminster; 244 Weybosset; 238 Thayer;
+434 Smith and 1 Olneyville sq (See Yellow Page 13) *TRUSTEES"
+850,13460,1 OLNEYVILLE SQ,PROVIDENCE, NHODE ISLAND HOSPITAL TRUST CO Hospital Trust Bldg,100.0,"['cd1959/entry/1959_Page_168 (1)_7.png', 'cd1959/entry/1959_Page_168 (1)_8.png', 'cd1959/entry/1959_Page_168 (1)_9.png', 'cd1959/entry/1959_Page_168 (1)_10.png', 'cd1959/entry/1959_Page_168 (1)_11.png', 'cd1959/entry/1959_Page_168 (1)_12.png']","RHODE ISLAND HOSPITAL TRUST CO,","NHODE ISLAND HOSPITAL TRUST CO, Hospital Trust Bldg 15 Westminster, Tel
+JAckson 1-6700: cor Dorrance and West- minster; 244 Weybosset; 238 Thayer; 1 Olneyville sq and 434 Smith (See Yel- low Page 13) TUBE and TUBING MANUFAC-"
+851,13470,11 ARCADE ST,PROVIDENCE, SMITH MAURICE C CO INC.,85.0,"['cd1959/entry/1959_Page_168 (1)_34.png', 'cd1959/entry/1959_Page_168 (1)_35.png', 'cd1959/entry/1959_Page_168 (1)_36.png']",*TY PEWRITERS,"SMITH MAURICE C CO INC. 52 Pine and 11 Arcade Bldg, Tel GAspee 1-1064 (See Yellow Page 87)"
+852,13510,267 WILLARD ST,PROVIDENCE,Reliable Upholstering Co,100.0,['cd1959/entry/1959_Page_168 (2)_38.png'],UPHOLSTERERS,Reliable Upholstering Co 267 Willard av
+853,13538,209 BROADWAY ST,PROVIDENCE,Barrys Variety,100.0,['cd1959/entry/1959_Page_168 (2)_82.png'],VARIETY STORES,Barrys Variety 209 Broadway
+854,13554,1853 PRAIRIE AVE,PROVIDENCE,Burns Variety,100.0,['cd1959/entry/1959_Page_168 (3)_4.png'],VARIETY STORES,Burns Variety 1853 Prairie av
+855,13558,311 PINE ST,PROVIDENCE,Catlow Henry E,100.0,['cd1959/entry/1959_Page_168 (3)_8.png'],VARIETY STORES,Catlow Henry E 311 Pine
+856,13591,471 FOUNTAIN ST,PROVIDENCE,Fountain Spa,100.0,['cd1959/entry/1959_Page_168 (3)_41.png'],VARIETY STORES,Fountain Spa 471 Fountain
+857,13599,1393 ATWELLS AVE,PROVIDENCE,Galetti Peter,100.0,['cd1959/entry/1959_Page_168 (3)_49.png'],VARIETY STORES,Galetti Peter 1393 Atwells av
+858,13620,1293 ACADEMY AVE,PROVIDENCE,Jiggers Variety Store,100.0,['cd1959/entry/1959_Page_168 (3)_70.png'],VARIETY STORES,Jiggers Variety Store 1293 Academy av
+859,13635,3283 ATWELLS AVE,PROVIDENCE,Lonardo Ralph A,100.0,['cd1959/entry/1959_Page_168 (3)_85.png'],VARIETY STORES,Lonardo Ralph A 3283 Atwells av
+860,13687,107 BROADWAY ST,PROVIDENCE,Theresa's Variety,100.0,['cd1959/entry/1959_Page_169 (1).chop_36.png'],VARIETY STORES,Theresa's Variety 107 Broadway
+861,13700,149 BURRINGTON ST,PROVIDENCE,Zoglio Joseph,100.0,['cd1959/entry/1959_Page_169 (1).chop_49.png'],VARIETY STORES,Zoglio Joseph 149 Burrington
+862,13713,1763 GALLUP ST,PROVIDENCE,Pligrim Venetian Blind Laundry Co,100.0,"['cd1959/entry/1959_Page_169 (1).chop_70.png', 'cd1959/entry/1959_Page_169 (1).chop_71.png']",REPAIRERS,Pligrim Venetian Blind Laundry Co 1763 Gallup
+863,13714,144 BROADWAY ST,PROVIDENCE,Aborn Shade Co,100.0,['cd1959/entry/1959_Page_169 (1).chop_73.png'],VENETIAN BLINDS-- DEALERS,Aborn Shade Co 144 Broadway
+864,13743,8 ARCADE ST,PROVIDENCE,"STARKWEATHER & WILLIAMS INC,",85.5,"['cd1959/entry/1959_Page_169 (2).chop_48.png', 'cd1959/entry/1959_Page_169 (2).chop_49.png', 'cd1959/entry/1959_Page_169 (2).chop_50.png']",WALL PAPERRETAIL,"STARKWEATHER & WILLIAMS INC, 8 Arcade Bldg, Tel GAspee 1-7350 (See Yellow Page 74)"
+865,13745,34 BROADWAY ST,PROVIDENCE,Higgins E G Co,100.0,['cd1959/entry/1959_Page_169 (2).chop_53.png'],WALL PAPER WHOLESALE,Higgins E G Co 34 Broadway
+866,13767,24 STEVENS RD,PROVIDENCE,Podrat Bros,100.0,['cd1959/entry/1959_Page_169 (3)_29.png'],"WASTE DEALERSCOTTON, SILK and WOOL",Podrat Bros 24 Stevens
+867,13788,3003 POCASSET AVE,PROVIDENCE,Grandes Watch & Jewelry Co,100.0,"['cd1959/entry/1959_Page_169 (3)_55.png', 'cd1959/entry/1959_Page_169 (3)_56.png']",REPAIRING,Grandes Watch & Jewelry Co 3003 Pocas- set av
+868,13795,3 ARCADE ST,PROVIDENCE,Mansfields,85.0,['cd1959/entry/1959_Page_169 (3)_63.png'],REPAIRING,Mansfields 3 Arcade bldg
+869,13810,20 OLNEYVILLE SQ,PROVIDENCE,Ruggeiri Bambino,95.0,['cd1959/entry/1959_Page_169 (3)_79.png'],REPAIRING,Ruggeiri Bambino 20 Olneyville sq R4
+870,13862,331 PEARL AVE,PROVIDENCE,Peerless Display Service,100.0,['cd1959/entry/1959_Page_170 (2)_23.png'],WINDOW DISPLAYS,Peerless Display Service 331 Pearl
+871,13875,158 PINE HILL AVE,PROVIDENCE,Universal Mfg Co,88.0,['cd1959/entry/1959_Page_170 (2)_49.png'],WIRE GOODS MANUFACTURERS,Universal Mfg Co 158 Pine 4th fil
+872,13880,47 CULVER ST,PROVIDENCE,Millard Wire Co Inc,100.0,['cd1959/entry/1959_Page_170 (2)_60.png'],WIRE MANUFACTURERS,Millard Wire Co Inc 47 Culver
+873,13882,47 CULVER ST,PROVIDENCE,"MILLARD WIRE CO INC (Rolled Gold),",100.0,"['cd1959/entry/1959_Page_170 (2)_68.png', 'cd1959/entry/1959_Page_170 (2)_69.png', 'cd1959/entry/1959_Page_170 (2)_70.png']",*WIRE MANUFACTURERS FOR JEWELRY,"MILLARD WIRE CO INC (Rolled Gold), 47 Culver, Tels GAspee 1-4946 and JAck- son 1-0917 (See Yellow Page 91)"

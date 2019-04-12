@@ -1,0 +1,904 @@
+,Drop_Reason,File_List,Street,Text
+0,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_1 (1)_29.png'],"02903),","(02903), Tel 421-2742"
+1,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_1 (1)_51.png'],N/A,"Laventhol, Krekstein, Horwath &"
+2,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_1 (2)_18.png'],"02903),","(02903), Tel 421-5768"
+3,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_2 (1)_1.png'],N/A,ADJUSTERSContd
+4,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_2 (1)_44.png'],I 95,.Nolan Charles W Advertising Inc 189
+5,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_2 (1)_45.png'],N/A,Mathewson St Rm 1
+6,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_2 (1)_70.png', 'cd1970/entry/1970_Page_2 (1)_71.png']",N/A,POLK RL&CO POLK BUILDING
+7,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_2 (1)_72.png'],N/A,431 HOWARD STREET
+8,"SCORE LESS THAN CUTOFF: & TV 10,43.0,PROVIDENCE","['cd1970/entry/1970_Page_2 (2)_17.png', 'cd1970/entry/1970_Page_2 (2)_18.png', 'cd1970/entry/1970_Page_2 (2)_19.png']",TEVERE DR,W JAR RADIO 920 & TV 10 (THE OUTLET COMPANY) 176 WEYBOSSET STREET (02903)
+9,"SCORE LESS THAN CUTOFF: -9200,29.0,PROVIDENCE","['cd1970/entry/1970_Page_2 (2)_20.png', 'cd1970/entry/1970_Page_2 (2)_21.png']",I 95,TELEPHONE 861-9200
+10,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_2 (2)_33.png'],N/A,Advertisers)
+11,"SCORE LESS THAN CUTOFF: -8800,29.0,PROVIDENCE","['cd1970/entry/1970_Page_2 (2)_45.png', 'cd1970/entry/1970_Page_2 (2)_46.png']",8TH ST,TELEPHONE 831-8800 (See Index To Advertisers)
+12,EMPTY STREET,"['cd1970/entry/1970_Page_2 (3)_4.png', 'cd1970/entry/1970_Page_2 (3)_5.png', 'cd1970/entry/1970_Page_2 (3)_6.png']",300 ,"St, R300 (02903), Export Dept Tel 831-1800"
+13,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_2 (3)_35.png'],N/A,ALLSTATE AMBULANCE & OXYGEN
+14,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_2 (3)_45.png', 'cd1970/entry/1970_Page_2 (3)_46.png']",N/A,"ee Also Parks And Play- "" grounds)
+
+-"
+15,EMPTY STREET,"['cd1970/entry/1970_Page_3 (1)_3.png', 'cd1970/entry/1970_Page_3 (1)_4.png', 'cd1970/entry/1970_Page_3 (1)_5.png', 'cd1970/entry/1970_Page_3 (1)_6.png']",,"ANSERPHONE SERVICE. Fletcher St Ext (Plainville, Mass 02762), Tel 724-8912 (See Index To Advertisers)"
+16,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_3 (3)_49.png'],N/A,Advertisers)
+17,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_3 (3)_58.png'],N/A,Advertisers)
+18,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_3 (3)_62.png'],N/A,Advertisers)
+19,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_4 (1)_1.png'],N/A,ARC HITECTSContd
+20,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_4 (1)_29.png'],N/A,PROUT DONALD J & ASSOCIATES
+21,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_4 (1)_63.png'],"02903),","St (02903), Tel 421-4349"
+22,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_4 (2)_19.png', 'cd1970/entry/1970_Page_4 (2)_20.png']",N/A,ee Also Artists Commerc- ial)
+23,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_5 (1)_1.png'],N/A,
+24,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_5 (1)_20.png'],N/A,
+25,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_5 (2)_62.png'],10TH ST,"GREER AUTO BODY CO INC, 110"
+26,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_5 (2)_63.png', 'cd1970/entry/1970_Page_5 (2)_64.png', 'cd1970/entry/1970_Page_5 (2)_65.png']","02905),","Aldrich St (02905), Tel 781-6288
+INDUSTRIAL AUTO BODY, 17-21
+Cliff St (02908), Tels 421-9526, 421-3614 (See Index To Advertis- ers)"
+27,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_5 (3)_1.png'],N/A,
+28,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_5 (3)_5.png'],"02908),","St (02908), Tel 621-5172"
+29,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_5 (3)_6.png'],1ST ST,"PARK COLLISION SERVICE, 271"
+30,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_5 (3)_7.png', 'cd1970/entry/1970_Page_5 (3)_8.png']","02907),","Reservoir Av (02907), Tels 467-2765 942-8571 Gee Index To Advertisers)"
+31,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_5 (3)_38.png'],"02860),","St (Pawtucket, 02860), Tel 723-8000"
+32,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1970/entry/1970_Page_5 (3)_39.png'],3RD ST,"BEECROFT CHEVROLET CO, 333"
+33,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_5 (3)_40.png', 'cd1970/entry/1970_Page_5 (3)_41.png']","02907),","Niantic Av (02907), Tel 944-2500 (See Index To Advertisers)"
+34,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_5 (3)_54.png'],"02907),","Av (02907), Tel 467-8500"
+35,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_5 (3)_61.png', 'cd1970/entry/1970_Page_5 (3)_62.png']","02907),","Av (02907), Tel 467-9111 (See Index To Advertisers)"
+36,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_6 (1)_1.png'],N/A,AUTOMOBILE DEALERSContd
+37,EMPTY STREET,['cd1970/entry/1970_Page_6 (1)_16.png'],,Suburban Auto Sales Inc.720 Cranston St
+38,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_6 (1)_20.png'],N/A,tisers)
+39,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_6 (1)_46.png'],"02907),","_ Av (02907), Tel 467-8500"
+40,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_6 (1)_53.png'],"02907),","St (02907), Tels 467-8606, 467-8959"
+41,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_6 (2)_22.png', 'cd1970/entry/1970_Page_6 (2)_23.png']",N/A,(See Also Automobile Repair- ing)
+42,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_6 (2)_34.png'],N/A,Advertisers)
+43,"SCORE LESS THAN CUTOFF: In-,67.0,PROVIDENCE",['cd1970/entry/1970_Page_6 (2)_35.png'],PINE ST,"KAGAN & SHAWCROSS INC, 1430 In-"
+44,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_6 (2)_37.png', 'cd1970/entry/1970_Page_6 (2)_38.png']",N/A,"St, Tel 521-3900 (See Index To Ad- vertisers)"
+45,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_6 (3)_72.png'],N/A,(ee Also Automobile Garages)
+46,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_6 (3)_75.png'],"02904),","Main St (02904), Tel 831-6920; 1616"
+47,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_6 (3)_76.png', 'cd1970/entry/1970_Page_6 (3)_77.png', 'cd1970/entry/1970_Page_6 (3)_78.png', 'cd1970/entry/1970_Page_6 (3)_79.png']",02889).,Warwick Av (Warwick; 02889). Tel 737-0200 (See Index To Advertisers)
+48,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (1)_1.png'],N/A,
+49,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_7 (1)_10.png', 'cd1970/entry/1970_Page_7 (1)_11.png']","02907),","Av (02907), Tel 467-8981 (See Index To Advertisers)"
+50,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_7 (1)_15.png'],4TH ST,"CHRISTYS AUTO SERVICE, 534"
+51,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_7 (1)_16.png', 'cd1970/entry/1970_Page_7 (1)_17.png']","02909),","Manton Av (02909), Tel 621-6665 (See Index To Advertisers)"
+52,"SCORE LESS THAN CUTOFF: -21,40.0,PROVIDENCE",['cd1970/entry/1970_Page_7 (1)_41.png'],1ST ST,"INDUSTRIAL AUTO BODY, 17-21"
+53,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_7 (1)_42.png'],"02908),","Cliff St (02908), Tels 421-9526, 421-"
+54,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (1)_43.png'],N/A,3614 (See Index To Advertisers)
+55,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_7 (1)_84.png', 'cd1970/entry/1970_Page_7 (1)_85.png']","02909),","ton Av (02909), Tel 941-9560 See Index To Advertisers)"
+56,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (2)_1.png'],N/A,
+57,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (2)_3.png'],N/A,FOX POINT AUTO SALVAGE (FOX
+58,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE",['cd1970/entry/1970_Page_7 (2)_4.png'],2ND ST,POINT AUTO WRECKING INC). 32
+59,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_7 (2)_5.png'],"02903),","India St (02903), Tels 421-1980."
+60,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_7 (2)_6.png'],1ST ST,421-1961 (See Index To Advertisers)
+61,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_7 (2)_20.png', 'cd1970/entry/1970_Page_7 (2)_21.png']",N/A,POLK RL &CO - POLK BUILDING
+62,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (2)_22.png'],N/A,431 HOWARD STREET
+63,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_7 (2)_23.png'],1ST ST,"DETROIT, MICHIGAN 48231"
+64,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (2)_41.png'],N/A,Robo Car Wash (Self Serv) Harborside Blvd
+65,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_7 (2)_51.png', 'cd1970/entry/1970_Page_7 (2)_52.png']",N/A,POLK RL & Cu POLK BUILDING
+66,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_7 (2)_53.png'],N/A,431 HOWARD STREET
+67,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_7 (2)_54.png'],1ST ST,"DETROIT, MICHIGAN 48231"
+68,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (1)_1.png'],N/A,BAKED GOODSRETAILContd
+69,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (1)_33.png'],N/A,BENS BAKERIES INC. Home Office
+70,EMPTY STREET,['cd1970/entry/1970_Page_8 (1)_34.png'],,"4651 High St (Central Falls; 02863),"
+71,"SCORE LESS THAN CUTOFF: -3950,58.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (1)_35.png'],I 95,Tel 724-3950 (See Index To Adver-
+72,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (1)_36.png'],N/A,tisers)
+73,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (1)_65.png'],N/A,POLK RL &CO
+74,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (1)_66.png'],N/A,2001 ELM HILL PIKE
+75,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1970/entry/1970_Page_8 (1)_67.png'],7TH ST,"NASHVILLE, TENNESSEE 37217"
+76,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_4.png'],N/A,"02860), Tel 724-5000 (See Index To"
+77,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_5.png'],N/A,Advertiser s)
+78,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE",['cd1970/entry/1970_Page_8 (2)_7.png'],8TH ST,"CENTREVILLE SAVINGS BANK, 1218"
+79,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (2)_8.png', 'cd1970/entry/1970_Page_8 (2)_9.png', 'cd1970/entry/1970_Page_8 (2)_10.png']","02893),","Main St (West Warwick; 02893), Tel 821-9100. Branch: 777 Tiozue Av (Coventry, 02816), Tel 821-4120"
+80,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_16.png'],N/A,CITIZENS TRUST COMPANY. Main
+81,"SCORE LESS THAN CUTOFF: -5800, Downtown Office 63,55.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (2)_18.png'],DOWNING DRIVE,"Tel 351-5800, Downtown Office 63"
+82,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (2)_19.png', 'cd1970/entry/1970_Page_8 (2)_20.png']","02903),","Westminster St (02903), Tel 272- 1500, Mt Pleasant Office, 270"
+83,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (2)_21.png'],"02908),","Academy Av (02908), Tel 521-4550,"
+84,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_26.png'],N/A,COLUMBUS NATIONAL BANK OF
+85,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (2)_29.png'],"02903),","Av (02903), Tel 421-3244, 591"
+86,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (2)_30.png', 'cd1970/entry/1970_Page_8 (2)_31.png']","02904),","Charles St (02904), Tel 861-0250. 131 Elmgrove Av (02906), 1025"
+87,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (2)_36.png'],"02910),","Av (Cranston, 02910), Tel 944-1650,"
+88,EMPTY STREET,['cd1970/entry/1970_Page_8 (2)_37.png'],,7727 Post Rd (North Kingstown.
+89,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_38.png'],N/A,"02852), Tel 295-8808, 3040 West"
+90,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (2)_39.png', 'cd1970/entry/1970_Page_8 (2)_40.png']","02886),","Shore Rd (Warwick, 02886), Tel 739-8333 Gee Index To Advertisers)"
+91,EMPTY STREET,"['cd1970/entry/1970_Page_8 (2)_65.png', 'cd1970/entry/1970_Page_8 (2)_66.png']",,Industrial Natl Bank Of Ri (Hope St Br) 814 Hope St
+92,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (2)_69.png'],N/A,"OLD STONE SAVINGS BANK, Main"
+93,EMPTY STREET,['cd1970/entry/1970_Page_8 (2)_78.png'],,"1340 N Main St (02904), Tel 351-5450"
+94,EMPTY STREET,['cd1970/entry/1970_Page_8 (2)_79.png'],,1917 Westminster St (02909). Tel
+95,EMPTY STREET,['cd1970/entry/1970_Page_8 (3)_10.png'],,10 West Shore Rd (Warwick. RI
+96,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (3)_14.png', 'cd1970/entry/1970_Page_8 (3)_15.png']",02895),RI 02895) (See Index To Advertis- ers)
+97,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (3)_26.png'],"02904),","(02904), Tel $51-5450, 1917 West-"
+98,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (3)_27.png'],"02909),","minster St (02909), Tel 351-9830,"
+99,EMPTY STREET,['cd1970/entry/1970_Page_8 (3)_28.png'],,"1477 Broad St (02905), Tel 941-4400"
+100,"SCORE LESS THAN CUTOFF: ), 1859,50.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_32.png'],I 195,"(East Greenwich, RI 02818), 1859"
+101,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (3)_33.png'],N/A,"Pawtucket Av (East Providence,"
+102,"SCORE LESS THAN CUTOFF: Goff Ave,62.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_36.png'],GANO AVE,"(North Smithfield), 65 Goff Av"
+103,"SCORE LESS THAN CUTOFF: ), 521,34.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_38.png'],I 95,"town Rd (Wakefield, RI 02879), 521"
+104,"SCORE LESS THAN CUTOFF: ), 555,34.5,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_39.png'],I 95,"Main St (Warren, RI 02885), 555"
+105,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (3)_40.png'],"02886),","Greenwich Av (Warwick, RI 02886),"
+106,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_8 (3)_45.png', 'cd1970/entry/1970_Page_8 (3)_46.png']",02895),RI 02895) (See Index To Advertis- ers)
+107,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_47.png'],6TH ST,"PAWTUCKET TRUST COMPANY, 286"
+108,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_8 (3)_48.png'],"02860),","Main St (Pawtucket, 02860), Tel 724-"
+109,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (3)_49.png'],N/A,5000 Gee Index To Advertisers)
+110,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_8 (3)_58.png'],N/A,PEOPLE'S TRUST COMPANY. Main
+111,EMPTY STREET,['cd1970/entry/1970_Page_8 (3)_63.png'],,"326 County Rd (Barrington, 02806),"
+112,EMPTY STREET,['cd1970/entry/1970_Page_8 (3)_64.png'],,"208 Taunton Av (East Providence,"
+113,"SCORE LESS THAN CUTOFF: Namquid Dr,62.0,PROVIDENCE",['cd1970/entry/1970_Page_8 (3)_65.png'],AQUIDNECK ST,"o79aay 963 Namquid Dr (Warwick
+02888), 2 High St (Westerly, 02891),
+1440 Hartford Av (Johnston, 02919),"
+114,EMPTY STREET,['cd1970/entry/1970_Page_8 (3)_66.png'],,6633 Post Rd (North Kingstown.
+115,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_9 (1)_2.png'],N/A,Contd
+116,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_9 (2)_84.png'],N/A,Persia Mario (Persia Barber Salon)
+117,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_9 (3)_53.png'],N/A,Union Station Barber Shop Union Station
+118,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_10 (1)_4.png'],4TH ST,Battery Shop & Rebuilding Co Inc 294
+119,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_10 (1)_5.png'],N/A,Broadway
+120,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_10 (1)_23.png'],N/A,tisers)
+121,"SCORE LESS THAN CUTOFF: Edgeworth Ave,75.5,PROVIDENCE",['cd1970/entry/1970_Page_10 (2)_55.png'],EDGEWOOD AVE,Frechette Lola F 48 Edgeworth Av
+122,"SCORE LESS THAN CUTOFF: Ul nnteninntne G4 Don END,51.5,PROVIDENCE",['cd1970/entry/1970_Page_10 (2)_85.png'],HUNTINGTON AVE,Tauan OF Tala O00 Ul nnteninntne G4 Don END
+123,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_10 (3)_20.png', 'cd1970/entry/1970_Page_10 (3)_21.png']","02911),","St (North Providence, 02911), Tel 353-9872"
+124,"SCORE LESS THAN CUTOFF: Ananall Cr,65.5,PROVIDENCE",['cd1970/entry/1970_Page_10 (3)_85.png'],RANDALL SQ,Me Vado Uannae Of Raante A111 Ananall Cr
+125,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (1)_1.png'],N/A,BEAUTY SHOPSC ontd
+126,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (2)_17.png'],N/A,Advertisers)
+127,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (2)_22.png'],N/A,Advertisers)
+128,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_11 (2)_32.png', 'cd1970/entry/1970_Page_11 (2)_33.png']","02915),","St (East Providence; 02915), Tel 437- 1200"
+129,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_11 (2)_41.png', 'cd1970/entry/1970_Page_11 (2)_42.png']","02865),","ginson Av (Lincoln; 02865), Tel 723- 7600 (See Index To Advertisers)"
+130,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (3)_29.png'],N/A,PETROLEUM HEAT & POWER CO
+131,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (3)_32.png'],N/A,Advertisers)
+132,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_11 (3)_45.png'],N/A,Advertisers)
+133,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_11 (3)_49.png', 'cd1970/entry/1970_Page_11 (3)_50.png']","02906),","St (02906), Tel 861-6800 (See Index To Advertisers)"
+134,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_11 (3)_53.png', 'cd1970/entry/1970_Page_11 (3)_54.png']",N/A,Nites And Holidays Tel 884-1177 (See Index To Advertisers)
+135,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (1)_1.png'],N/A,BOOKBINDERSC ontd
+136,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (1)_19.png'],N/A,
+137,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (2)_2.png'],N/A,(See Also Billiards And Pool)
+138,"SCORE LESS THAN CUTOFF: Pomfret St,71,PROVIDENCE",['cd1970/entry/1970_Page_12 (2)_17.png'],SOMERSET ST,Waste Brokers Inc 1 Pomfret St
+139,EMPTY STREET,"['cd1970/entry/1970_Page_12 (2)_24.png', 'cd1970/entry/1970_Page_12 (2)_25.png']",,"NARRAGANSETT BREWING CO, Cranston St And Garfield Av (Crans-"
+140,EMPTY STREET,"['cd1970/entry/1970_Page_12 (2)_26.png', 'cd1970/entry/1970_Page_12 (2)_27.png']",6848 ,"ton, 02920), PO Box 6848 (Provi- dence, 02904), Tel 942-7000"
+141,"SCORE LESS THAN CUTOFF: & TV 10,43.0,PROVIDENCE",['cd1970/entry/1970_Page_12 (2)_33.png'],TEVERE DR,WJAR RADIO 920 & TV 10 (The
+142,"SCORE LESS THAN CUTOFF: -9200,29.0,PROVIDENCE",['cd1970/entry/1970_Page_12 (2)_35.png'],I 95,Tel 861-9200
+143,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (2)_54.png'],N/A,(See Also Investment Bankers)
+144,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (3)_13.png'],N/A,"PAINE, WEBBER, JACKSON &"
+145,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_12 (3)_15.png'],"408,","R408, Tel 274-6000 Gee Index To"
+146,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (3)_16.png'],N/A,Advertisers)
+147,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_12 (3)_45.png'],N/A,Advertisers)
+148,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_13 (1)_2.png'],N/A,Contd
+149,"SCORE LESS THAN CUTOFF: STATION STREET CRANSTON, RI 02910,70.0,PROVIDENCE","['cd1970/entry/1970_Page_13 (1)_17.png', 'cd1970/entry/1970_Page_13 (1)_18.png', 'cd1970/entry/1970_Page_13 (1)_19.png', 'cd1970/entry/1970_Page_13 (1)_20.png']",CRANSTON ST,"MANCHESTER & HUDSON CO 300 STATION STREET CRANSTON, RI 02910 TELEPHONE 467-8815"
+150,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_13 (1)_33.png'],10TH ST,"CRANSTON HARDWARE CO INC, 40"
+151,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_13 (1)_34.png', 'cd1970/entry/1970_Page_13 (1)_35.png']","02920),","Haven Av (Cranston, 02920), Tel 944- 1811 (See Index To Advertisers)"
+152,"SCORE LESS THAN CUTOFF: Hospital Trust Bldg. 15 Westminster,74.5,PROVIDENCE","['cd1970/entry/1970_Page_13 (2)_57.png', 'cd1970/entry/1970_Page_13 (2)_58.png']",WESTMINSTER ST,"HOSPITAL TRUST BUILDING, 540 Hospital Trust Bldg. 15 Westminster"
+153,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_13 (2)_59.png'],"62903),","St (62903), Tel 521-6700"
+154,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_13 (3)_8.png', 'cd1970/entry/1970_Page_13 (3)_9.png']",N/A,New England Telephone & Telegraph Co Bldg 234 Washington St
+155,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_14 (1)_2.png'],N/A,Contd
+156,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_14 (1)_56.png'],"02914),","(East Providence, 02914), Tel 434-"
+157,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_14 (1)_65.png'],N/A,"Sup lies, Tel 421-6057, Service Tel
+421-2011"
+158,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_14 (2)_54.png'],6TH ST,"PROVIDENCE CARPET CO, 626"
+159,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_14 (2)_55.png', 'cd1970/entry/1970_Page_14 (2)_56.png']","02910),","Reservoir Av (Cranston, 02910), Tel 331-8086 (Gee Index To Advertisers)"
+160,"SCORE LESS THAN CUTOFF: Pomfret St,71,PROVIDENCE",['cd1970/entry/1970_Page_14 (3)_28.png'],SOMERSET ST,Stiller Carpet Co 9 Pomfret St
+161,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_14 (3)_38.png'],N/A,
+162,EMPTY STREET,['cd1970/entry/1970_Page_14 (3)_46.png'],,Narragansett Casket Co:-30 Salmon St
+163,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (1)_1.png'],N/A,CATERERSContd
+164,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_15 (1)_34.png', 'cd1970/entry/1970_Page_15 (1)_35.png']","02903),","CATHOLIC CEMETERIES INC, Cathedral Sq (02903), Tel 861-9800"
+165,"SCORE LESS THAN CUTOFF: -1314,50.0,PROVIDENCE","['cd1970/entry/1970_Page_15 (1)_44.png', 'cd1970/entry/1970_Page_15 (1)_45.png']",11TH ST,TELEPHONE 272-1314 (See Index To Advertisers)
+166,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_15.png'],N/A,"OLD STONE TRUST CO, Main Office"
+167,EMPTY STREET,"['cd1970/entry/1970_Page_15 (2)_16.png', 'cd1970/entry/1970_Page_15 (2)_17.png', 'cd1970/entry/1970_Page_15 (2)_18.png', 'cd1970/entry/1970_Page_15 (2)_19.png', 'cd1970/entry/1970_Page_15 (2)_20.png', 'cd1970/entry/1970_Page_15 (2)_21.png', 'cd1970/entry/1970_Page_15 (2)_22.png', 'cd1970/entry/1970_Page_15 (2)_23.png']",,"86S Main St (02903), Tel 274-7800
+Downtown Providence Offices: 61 Wevbosset St (02903), Tel 751-1000 Westminster Mall (02903), Tel 831- 7730, 87 Empire St (02903), Tel
+831-7744. Providence Offices: 520 Elmwood Av (02907), Tel 781-2050, 792 Hope St (02906), Tel 861-2840, 1340 N Main St (02904), Tel 351- 5450, 1917 Westminster St (02909),"
+168,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (2)_25.png'],02905).,"(02905). Tel 941-4400, Other"
+169,"SCORE LESS THAN CUTOFF: ), 1450,50,PROVIDENCE",['cd1970/entry/1970_Page_15 (2)_30.png'],I 195,"(East Providence, RI 02914), 1450"
+170,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (2)_31.png'],"02919),","Hartford Av (Johnston, RI 02919),"
+171,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_32.png'],N/A,"22 Washington Sq (Newport, RI"
+172,EMPTY STREET,['cd1970/entry/1970_Page_15 (2)_33.png'],146 ,"02840), Park Sq, Rte 146 (North"
+173,"SCORE LESS THAN CUTOFF: Goff Ave,62.5,PROVIDENCE",['cd1970/entry/1970_Page_15 (2)_34.png'],GANO AVE,"Smithfield), 65 Goff Av (Pawtucket,"
+174,"SCORE LESS THAN CUTOFF: ), Hoxsie,,71.0,PROVIDENCE",['cd1970/entry/1970_Page_15 (2)_38.png'],HOMESIDE DR,"Av (Warwick, RI 02886), Hoxsie,"
+175,EMPTY STREET,['cd1970/entry/1970_Page_15 (2)_39.png'],,"10 West Shore Rd (Warwick, RI"
+176,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (2)_41.png'],"02891),","ping Plaza (Westerly, RI 02891),"
+177,EMPTY STREET,['cd1970/entry/1970_Page_15 (2)_42.png'],,"1155 Main St (West Warwick, RI"
+178,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (2)_44.png'],02895),RI 02895) (See Index To Advertis-
+179,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_45.png'],N/A,ers)
+180,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_46.png'],N/A,"PEOPLES TRUST COMPANY, Main"
+181,"SCORE LESS THAN CUTOFF: ), 208,33.0,PROVIDENCE",['cd1970/entry/1970_Page_15 (2)_50.png'],2ND ST,"County Rd (Barrington, 02806), 208"
+182,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_51.png'],N/A,Taunton Av (East Providence;
+183,EMPTY STREET,['cd1970/entry/1970_Page_15 (2)_52.png'],,02914). Namauid Dr (Warwick;
+184,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (2)_57.png'],62828),"field, 62828) (See Index To Adver-"
+185,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_15 (2)_58.png'],N/A,tisers)
+186,EMPTY STREET,"['cd1970/entry/1970_Page_15 (2)_62.png', 'cd1970/entry/1970_Page_15 (2)_63.png', 'cd1970/entry/1970_Page_15 (2)_64.png']",,"155 Angell St (02906), 1 Olneyville
+Sq (02909), 434 Smith St (02908) (See Index To Advertisers)"
+187,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_15 (3)_57.png'],"02903),","minster St (02903), Tel 831--6900"
+188,EMPTY STREET,['cd1970/entry/1970_Page_16 (1)_46.png'],,Cathedral Of St John The 271 N Main St
+189,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_16 (1)_51.png'],N/A,CHANCERY OFFICE OF THE PROVI-
+190,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_16 (1)_52.png', 'cd1970/entry/1970_Page_16 (1)_53.png']","02903),","DENCE DIOCESE. Cathedral Sa (02903), Tel (401) 861-9800"
+191,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_16 (3)_80.png'],N/A,POLK RL &CO
+192,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_16 (3)_81.png'],N/A,600 WASHINGTON STREET
+193,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_16 (3)_82.png'],1ST ST,"BOSTON, MASS 02111"
+194,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_17 (1)_1.png'],N/A,
+195,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_17 (1)_2.png', 'cd1970/entry/1970_Page_17 (1)_3.png']",N/A,
+196,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_17 (1)_27.png'],6TH ST,(Crown Cleansing & Tailoring Inc 66
+197,EMPTY STREET,['cd1970/entry/1970_Page_17 (1)_28.png'],,' Richmond St
+198,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_17 (2)_1.png', 'cd1970/entry/1970_Page_17 (2)_2.png']",N/A,97
+199,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_18 (1)_1.png'],N/A,CLERGYMENContd
+200,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_18 (2)_28.png'],6TH ST,Weish Elbridge B Rev 1866
+201,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_18 (2)_29.png'],N/A,Westminster St
+202,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_18 (2)_56.png'],N/A,
+203,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_18 (2)_68.png'],N/A,Advertisers)
+204,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_18 (3)_4.png', 'cd1970/entry/1970_Page_18 (3)_5.png']",N/A,. Advertisers)
+205,EMPTY STREET,"['cd1970/entry/1970_Page_18 (3)_24.png', 'cd1970/entry/1970_Page_18 (3)_25.png']",,"BRIGGS LIMITED INC,.13 Exchange St (02903), Tel 331-5000"
+206,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_19 (1)_1.png'],N/A,C LOTHINGRETAILContd _
+207,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_19 (2)_19.png'],N/A,Brown University Yacht Club River r .
+208,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_20 (1)_11.png'],N/A,tisers)
+209,"SCORE LESS THAN CUTOFF: Burgess St,72,PROVIDENCE",['cd1970/entry/1970_Page_20 (1)_15.png'],BURNS ST,Hope John Settlement House 7 Burgess St
+210,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_20 (1)_27.png', 'cd1970/entry/1970_Page_20 (1)_28.png']","02914),","Av (East Providence; 02914), Tel 438-2650"
+211,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_20 (1)_37.png'],N/A,Nixon Wallace R State Office Bidg
+212,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_20 (2)_1.png'],N/A,
+213,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_20 (2)_49.png'],N/A,
+214,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_20 (3)_1.png'],N/A,
+215,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_20 (3)_3.png', 'cd1970/entry/1970_Page_20 (3)_4.png']","02908),","(02908), Tel 831-3200 (See Index To Advertisers)"
+216,"SCORE LESS THAN CUTOFF: Lawn St. Tectonics Corp 40 Tockwotton St,75.0,PROVIDENCE",['cd1970/entry/1970_Page_20 (3)_81.png'],TOCKWOTTON ST,"Taglione Anselmo S 186 Lawn St.
+Tectonics Corp 40 Tockwotton St"
+217,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_21 (2)_12.png'],N/A,FANNING & DOORLEY CONSTRUC-
+218,"SCORE LESS THAN CUTOFF: -5065,29.0,PROVIDENCE",['cd1970/entry/1970_Page_21 (2)_14.png'],I 95,Tel 421-5065 (See Index To Adver-
+219,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_21 (2)_15.png'],N/A,tisers)
+220,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_21 (3)_58.png'],N/A,Advertisers)
+221,"SCORE LESS THAN CUTOFF: Tippecanoe St,67.5,PROVIDENCE",['cd1970/entry/1970_Page_21 (3)_71.png'],TAPPAN ST,Breer Warren 9 Tippecanoe St
+222,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_22 (1)_2.png'],N/A,
+223,EMPTY STREET,['cd1970/entry/1970_Page_22 (1)_7.png'],,Cimorelli Arth N44 Malvern St
+224,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_22 (2)_1.png'],N/A,10
+225,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_22 (2)_2.png'],I 95,"ODONNELL E F AND SONS INC, 75"
+226,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_22 (2)_3.png', 'cd1970/entry/1970_Page_22 (2)_4.png']","02909),","Dike St (02909), Tel 351-8505 See"" Index To Advertisers)"
+227,"SCORE LESS THAN CUTOFF: Cranston St, Cranston,78.5,PROVIDENCE","['cd1970/entry/1970_Page_22 (3)_19.png', 'cd1970/entry/1970_Page_22 (3)_20.png', 'cd1970/entry/1970_Page_22 (3)_21.png']",CRANSTON ST,"SION PLUMBING & HEATING INC. 1153 Cranston St, Cranston (02920), Tel 942-7220"
+228,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_22 (3)_45.png'],10TH ST,CAM PANELLA CORPORATION. 780
+229,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_22 (3)_46.png', 'cd1970/entry/1970_Page_22 (3)_47.png']","02886),","Jefferson Blvd (Warwick; 02886), Tel 737-1300"
+230,EMPTY STREET,"['cd1970/entry/1970_Page_22 (3)_78.png', 'cd1970/entry/1970_Page_22 (3)_79.png', 'cd1970/entry/1970_Page_22 (3)_80.png']",5097 ,"CAPALDI BROS CORP, PO Box 5097 (Esmond, 02917), Office Washington Hwy (Smithfield), Tel 231-1350"
+231,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (1)_1.png'],N/A,CONTRACTORSTILEContd
+232,"SCORE LESS THAN CUTOFF: Edendale Ave,79,PROVIDENCE",['cd1970/entry/1970_Page_23 (1)_65.png'],VERNDALE AVE,Saint Thomas Convent 41 Edendale Av
+233,"SCORE LESS THAN CUTOFF: Bishop St,68,PROVIDENCE",['cd1970/entry/1970_Page_23 (2)_23.png'],BRISTOW ST,Rankin Harold Inc 28 Bishop St
+234,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (2)_39.png'],N/A,BANKAMERICARD ASSOCIATION OF
+235,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_23 (2)_41.png'],"02860),","tucket; 02860), Tel 728-0650"
+236,"SCORE LESS THAN CUTOFF: City Hall,72.5,PROVIDENCE","['cd1970/entry/1970_Page_23 (2)_58.png', 'cd1970/entry/1970_Page_23 (2)_59.png']",CITY VIEW CIR,Municipal Employees Credit Union 205 City Hall
+237,"SCORE LESS THAN CUTOFF: Uspo,67,PROVIDENCE","['cd1970/entry/1970_Page_23 (3)_3.png', 'cd1970/entry/1970_Page_23 (3)_4.png']",RUSSO ST,Providence Postal Employees Credit Union 105 Federal Bldg Uspo
+238,"SCORE LESS THAN CUTOFF: Pierce St, 02909,,79.0,PROVIDENCE","['cd1970/entry/1970_Page_23 (3)_5.png', 'cd1970/entry/1970_Page_23 (3)_6.png', 'cd1970/entry/1970_Page_23 (3)_7.png']",PIERCE PL,"PROVIDENCE TEACHERS CREDIT UNION, 10 Pierce St, 02909, Tel 421- 5986"
+239,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (3)_45.png'],N/A,
+240,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (3)_48.png'],N/A,Advertisers)
+241,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (3)_50.png'],N/A,(See Also Milk Dealers)
+242,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_23 (3)_63.png'],N/A,(See Also Milk Dealers)
+243,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_24 (1).chop_1.png'],N/A,DAIRY STORESContd
+244,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_24 (1).chop_59.png'],N/A,iComputer Matching-Ri (Compatability
+245,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_25 (1)_1.png'],N/A,DENTISTSContd _
+246,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE","['cd1970/entry/1970_Page_25 (2)_3.png', 'cd1970/entry/1970_Page_25 (2)_4.png', 'cd1970/entry/1970_Page_25 (2)_5.png']",3RD ST,PROVIDENCE 02903 TELEPHONE 521-9800 (See Index To Advertisers)
+247,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_25 (2)_19.png', 'cd1970/entry/1970_Page_25 (2)_20.png']","02860),","St (Pawtucket, 02860), Tel 725-2100 (See Index To Advertisers)"
+248,"SCORE LESS THAN CUTOFF: To 1.00 Store 1074 Chalkstone,75.5,PROVIDENCE",['cd1970/entry/1970_Page_25 (2)_41.png'],CHALKSTONE AVE,Walcotts 5 To 1.00 Store 1074 Chalkstone
+249,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_25 (2)_80.png'],4TH ST,"FEDERAL PRODUCTS CORP, 1144"
+250,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_25 (2)_81.png', 'cd1970/entry/1970_Page_25 (2)_82.png']","02905),","Eddy St (02905), Tel 781-9300"
+251,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_25 (3)_1.png'],N/A,~ pIAMOND SETTERS
+252,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_25 (3)_6.png'],N/A,
+253,"SCORE LESS THAN CUTOFF: Tippecanoe St,68,PROVIDENCE",['cd1970/entry/1970_Page_25 (3)_35.png'],TAPPAN ST,Collins R A Co 12 Tippecanoe St
+254,"SCORE LESS THAN CUTOFF: HOWARD STREET,74.0,PROVIDENCE","['cd1970/entry/1970_Page_25 (3)_44.png', 'cd1970/entry/1970_Page_25 (3)_45.png', 'cd1970/entry/1970_Page_25 (3)_46.png']",NORTH HOWARD AVE,POLK RL &CO POLK BUILDING 431 HOWARD STREET
+255,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE","['cd1970/entry/1970_Page_25 (3)_47.png', 'cd1970/entry/1970_Page_25 (3)_48.png']",1ST ST,"DETROIT, MICHIGAN 48231"
+256,"SCORE LESS THAN CUTOFF: WASHINGTON STREET BOSTON, MASS 02111,73,PROVIDENCE","['cd1970/entry/1970_Page_25 (3)_50.png', 'cd1970/entry/1970_Page_25 (3)_51.png', 'cd1970/entry/1970_Page_25 (3)_52.png']",WASHINGTON PL,"POLK RL &CO 600 WASHINGTON STREET BOSTON, MASS 02111"
+257,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_26 (1)_17.png'],N/A,
+258,"SCORE LESS THAN CUTOFF: At-,67.0,PROVIDENCE",['cd1970/entry/1970_Page_26 (1)_27.png'],EAST ST,"HARRIS LUMBER CO INC, 546 At-"
+259,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_26 (1)_28.png', 'cd1970/entry/1970_Page_26 (1)_29.png']","02909),","wells Av (02909), Tel 421-4750 (Gee Index To Advertisers)"
+260,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_26 (2)_29.png'],"02903),","St (02903), Tel 421-5800 (See Index"
+261,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_26 (2)_30.png'],N/A,To Advertisers)
+262,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_26 (3)_64.png', 'cd1970/entry/1970_Page_26 (3)_65.png', 'cd1970/entry/1970_Page_26 (3)_66.png']",N/A,Gee Also Dairy Products; Also Produce Commission Merchants)
+263,EMPTY STREET,['cd1970/entry/1970_Page_26 (3)_67.png'],,American Egg Co Inc $29 Canal St
+264,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_27 (1)_34.png'],N/A,PETES ELECTRICAL APPLIANCES
+265,EMPTY STREET,['cd1970/entry/1970_Page_27 (1)_35.png'],,"414 Silver Spring St (02904), Tels"
+266,"SCORE LESS THAN CUTOFF: , 861-6074 Gee Index To,51.5,PROVIDENCE",['cd1970/entry/1970_Page_27 (1)_36.png'],LINDEN DR,"861-2340, 861-6074 Gee Index To"
+267,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_27 (1)_37.png'],N/A,Advertisers)
+268,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_27 (1)_49.png'],"02910),","Rd (Cranston, 02910), Tel 467-6200
+WALKER ELECTRIC CO, 262-264"
+269,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_27 (1)_50.png', 'cd1970/entry/1970_Page_27 (1)_51.png', 'cd1970/entry/1970_Page_27 (1)_52.png']","02903),","Weybosset St (02903), Tel 421-8200 (See Index To Advertisers)"
+270,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_27 (3)_4.png'],"02914),","man Av (East Providence, 02914),"
+271,"SCORE LESS THAN CUTOFF: -3150,50.5,PROVIDENCE",['cd1970/entry/1970_Page_27 (3)_5.png'],I 195,Tel 438-3150 (See Index To Adver-
+272,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_27 (3)_6.png'],N/A,tisers)
+273,"SCORE LESS THAN CUTOFF: Spectacle St,75,PROVIDENCE","['cd1970/entry/1970_Page_27 (3)_9.png', 'cd1970/entry/1970_Page_27 (3)_10.png']",PEACE ST,"TECHNIC INC. Main Plant And Office 88 Spectacle St (Cranston, 02910),"
+274,EMPTY STREET,"['cd1970/entry/1970_Page_27 (3)_11.png', 'cd1970/entry/1970_Page_27 (3)_12.png', 'cd1970/entry/1970_Page_27 (3)_13.png']",965 ,"Mailing Address PO Box 965 (Provi- dence, RI 02901), Tel 781-6100 (See Index To Advertisers)"
+275,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_27 (3)_42.png'],N/A,Advertisers)
+276,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (1)_1.png'],N/A,EMPLOYMENT AGENCIESContd
+277,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_28 (1)_3.png'],1ST ST,| St Rm 301
+278,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (1)_25.png'],N/A,it St
+279,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_28 (1)_26.png'],I 95,"LINCOLN-HALL COMPANY, 245"
+280,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (1)_29.png'],N/A,Advertisers)
+281,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_28 (1)_48.png'],1ST ST,"{RITA GIRL OF PROVIDENCE, 111"
+282,EMPTY STREET,['cd1970/entry/1970_Page_28 (1)_49.png'],721 ,"| Westminster St, R721 (02903), Tel _"
+283,"SCORE LESS THAN CUTOFF: -5714,29.0,PROVIDENCE",['cd1970/entry/1970_Page_28 (1)_50.png'],I 95,+ 861-5714 (See Index To Advertisers)
+284,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_28 (2)_71.png'],6TH ST,Barbett Photo Engraving Co Inc 236
+285,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_28 (3)_27.png', 'cd1970/entry/1970_Page_28 (3)_28.png', 'cd1970/entry/1970_Page_28 (3)_29.png']",N/A,vertisers)  EXPRESS COos
+286,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (3)_32.png'],N/A,(See Also Trucking)
+287,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (3)_52.png'],N/A,
+288,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (3)_58.png'],N/A,FIRST FEDERAL SAVINGS & LOAN
+289,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_28 (3)_59.png'],N/A,ASSOCIATION OF PROVIDENCE.
+290,EMPTY STREET,['cd1970/entry/1970_Page_28 (3)_60.png'],,"110 Westminster St (02901), Tel"
+291,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_28 (3)_61.png'],10TH ST,861-5400
+292,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_29 (1)_53.png'],N/A,
+293,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1970/entry/1970_Page_29 (1)_69.png'],3RD ST,St Rm 203
+294,EMPTY STREET,"['cd1970/entry/1970_Page_29 (2)_1.png', 'cd1970/entry/1970_Page_29 (2)_2.png']",,Security Credit Corp i11 Westminster St Rm 908
+295,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_29 (2)_31.png'],10TH ST,M F B MUTUAL INSURANCE Co. 150
+296,EMPTY STREET,['cd1970/entry/1970_Page_29 (2)_32.png'],,"S Main St (02903), Tel 272-6700"
+297,"SCORE LESS THAN CUTOFF: -264,33.0,PROVIDENCE",['cd1970/entry/1970_Page_29 (2)_34.png'],2ND ST,"WALKER ELECTRIC CO, 262-264"
+298,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_29 (2)_35.png', 'cd1970/entry/1970_Page_29 (2)_36.png']","02903),","Weybosset St (02903), Tel 421-8200 (See Index To Advertisers)"
+299,"SCORE LESS THAN CUTOFF: b Pomfret St,68,PROVIDENCE",['cd1970/entry/1970_Page_29 (2)_57.png'],SOMERSET ST,Allyns Products Inc 1b Pomfret St
+300,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_29 (3)_2.png'],N/A,
+301,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_29 (3)_19.png'],1ST ST,"NEW ENGLAND FLOORS WC, 1271"
+302,EMPTY STREET,"['cd1970/entry/1970_Page_29 (3)_20.png', 'cd1970/entry/1970_Page_29 (3)_21.png']",,"N Main St (02904), Tel 272-8300 (See Index To Advertisers)"
+303,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_29 (3)_31.png'],4TH ST,ELMWOOD FLOWER SHOP INC. 384
+304,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_29 (3)_32.png'],"02907),","Elmwood Av (02907), Tels 461-2823,
+461-2324"
+305,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_3.png'],N/A,COLUMBUS NATIONAL BANK OF
+306,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_30 (1)_6.png', 'cd1970/entry/1970_Page_30 (1)_7.png', 'cd1970/entry/1970_Page_30 (1)_8.png']","02903),","Av (02903), Tel 421-3244; 591 Charles St (02904). Tel 861-0250; 131 Elmgrove Av (02906), 1025"
+307,"SCORE LESS THAN CUTOFF: ), 1255,50.5,PROVIDENCE",['cd1970/entry/1970_Page_30 (1)_12.png'],I 195,"(North Providence, 02904), 1255"
+308,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_30 (1)_15.png', 'cd1970/entry/1970_Page_30 (1)_16.png']","02886),","(Warwick, 02886), Tel 739-8333 (See Index To Advertisers)"
+309,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_61.png'],N/A,Alpha Delta Phi Wriston Quadrangle
+310,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_62.png'],N/A,Alpha Pi Lambda Phi Wriston Quadrangle
+311,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_63.png'],N/A,Beta Theta Pi Wriston Quadrangle
+312,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_64.png'],N/A,Delta Phi Omeya Wriston Quadrangle
+313,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_65.png'],N/A,Delta Tau Delta Wriston Quadrangle
+314,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_66.png'],N/A,Lambda Chi Alpha Wriston Quadrangle
+315,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_67.png'],N/A,Lambda Sigma Na Wriston Quadrangle
+316,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_68.png'],N/A,Zeta Psi Wriston Quadrangle
+317,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (1)_69.png'],N/A,Zeta Psi Wriston Quadrangle
+318,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (2)_1.png'],N/A,110
+319,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (2)_10.png'],N/A,
+320,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (2)_51.png'],N/A,Ventura Geo R (Georges Fruit)
+321,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_30 (2)_84.png'],N/A,Index To Advertisers)
+322,"SCORE LESS THAN CUTOFF: See Inder Ts rs) DEY fan Om Line,53.5,PROVIDENCE","['cd1970/entry/1970_Page_30 (3)_6.png', 'cd1970/entry/1970_Page_30 (3)_7.png', 'cd1970/entry/1970_Page_30 (3)_8.png']",MINERAL SPRING AV,"G00 See Inder Ts rs)
+DEY fan Om Line (Pawtucket, 02860), Tel 722-8000 (See Index To Advertisers)"
+323,EMPTY STREET,"['cd1970/entry/1970_Page_30 (3)_28.png', 'cd1970/entry/1970_Page_30 (3)_29.png', 'cd1970/entry/1970_Page_30 (3)_30.png']",,"ATLANTIC COAL & OIL CO, TT Pilsud- ski St (02909), Tel 944-9000 (See Index To Advertisers)"
+324,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_31 (1)_1.png'],N/A,FUEL AND RANGE OILContd
+325,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_31 (1)_18.png'],N/A,BAILEY-SHIPPEE FUNERAL HOME
+326,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_31 (1)_19.png', 'cd1970/entry/1970_Page_31 (1)_20.png']",02857),"Danielson Pike (North Scituate, 02857) Tels 647-3381, 351-1149"
+327,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_31 (1)_82.png', 'cd1970/entry/1970_Page_31 (1)_83.png']",N/A,"2600 (See Index To Advertisers)
+Skeffington James F Funeral Home 925 Chalkstone Av"
+328,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_31 (2)_30.png', 'cd1970/entry/1970_Page_31 (2)_31.png']","02903),","GLADDINGS INC, Westminster Mall (02903), Tel 521-9800 (See Index To"
+329,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_31 (2)_32.png'],N/A,Advertisers)
+330,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_31 (3)_82.png'],N/A,Advertisers)
+331,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (1)_2.png'],N/A,Contd
+332,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (1)_10.png'],N/A,St
+333,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (1)_24.png'],N/A,
+334,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE",['cd1970/entry/1970_Page_32 (1)_28.png'],8TH ST,jCustom Furniture Refinishing Co 158
+335,EMPTY STREET,['cd1970/entry/1970_Page_32 (1)_29.png'],,| Delaine St
+336,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (1)_36.png'],N/A,FURNITURE MFRS
+337,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (1)_41.png'],N/A,(See Also Upholsterers)
+338,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_32 (2)_6.png', 'cd1970/entry/1970_Page_32 (2)_7.png']",N/A,"(See Also Light, Heat And Power Companies)"
+339,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (2)_16.png'],N/A,
+340,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_32 (2)_19.png', 'cd1970/entry/1970_Page_32 (2)_20.png', 'cd1970/entry/1970_Page_32 (2)_21.png']",N/A,Index To Advertisers)
+341,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (2)_40.png'],N/A,Index To Advertisers)
+342,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_32 (2)_81.png'],N/A,
+343,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_32 (3)_46.png', 'cd1970/entry/1970_Page_32 (3)_47.png']","02860),","Av (Pawtucket, 02860), Tel 726-8952 (See Index To Advertisers) - - ."
+344,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1970/entry/1970_Page_32 (3)_68.png'],7TH ST,"_ 9567 (See Index To Advertisers)
+Mobile Service 765 Cranston"
+345,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_33 (1)_1.png'],N/A,GASOLINE STATIONSContd
+346,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_33 (1)_47.png'],N/A,
+347,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_33 (2)_43.png'],N/A,Mark Leuben (M Marks Glass)
+348,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_33 (3)_9.png', 'cd1970/entry/1970_Page_33 (3)_10.png']",N/A,Bello Mary E Mrs Kathys Korner Card & Book Shop
+349,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_34 (1)_2.png'],N/A,Contd
+350,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_34 (2)_75.png'],N/A,Advertisers)
+351,"SCORE LESS THAN CUTOFF: Cabot St,77,PROVIDENCE",['cd1970/entry/1970_Page_34 (3)_41.png'],TALBOT ST,Wheeler Memorial Hall 15 Cabot St
+352,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_34 (3)_43.png'],N/A,
+353,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_35 (1)_2.png'],N/A,Contd
+354,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_8.png'],I 95,Mount Pleasant Hardware Co Inc 249
+355,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_35 (1)_17.png'],N/A,
+356,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_35 (1)_22.png'],N/A,HEALTH FOODSDEALERS
+357,"SCORE LESS THAN CUTOFF: Austins Hearing Aid Service 40 Richmond,67.0,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_26.png'],RICHMOND ST,"St Rm 809
+Austins Hearing Aid Service 40 Richmond"
+358,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_29.png'],I 95,Hearing Aids Of Rhode Island 49
+359,"SCORE LESS THAN CUTOFF: Leslie Hearing Aid Service 15 Westminster,71.0,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_30.png'],WESTMINSTER ST,"Weybosset St Rm 54
+Leslie Hearing Aid Service 15 Westminster"
+360,"SCORE LESS THAN CUTOFF: Lewis Hearing Aide Center Inc 764 Hope,56.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_31.png'],HARDING AV,"St Rm 809
+Lewis Hearing Aide Center Inc 764 Hope"
+361,"SCORE LESS THAN CUTOFF: New England Hearing Aid Center 187,54.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_33.png'],KENTLAND AVE,"Rm 23
+New England Hearing Aid Center 187"
+362,"SCORE LESS THAN CUTOFF: Rhode Island Hearing Aid Center 103,57.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (1)_34.png'],HARDING AV,"Westminster St Rm 301
+Rhode Island Hearing Aid Center 103"
+363,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_35 (3)_1.png'],N/A,VUEAPLL VLHGLITD Y LLUppllaLl .uw asain we
+364,"SCORE LESS THAN CUTOFF: Broadway -E & S Home Outfitters 98 Overhill Rd,46.5,PROVIDENCE",['cd1970/entry/1970_Page_35 (3)_38.png'],CUTTER'S GREEN,"De Carlo Anthony A 557 Broadway
+-E & S Home Outfitters 98 Overhill Rd"
+365,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_36 (1)_1.png', 'cd1970/entry/1970_Page_36 (1)_2.png']",N/A,
+366,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_36 (1)_3.png', 'cd1970/entry/1970_Page_36 (1)_4.png']",N/A,HOUSEHOLD APPLIANCES DEALERS _ Contd
+367,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_36 (2)_1.png'],N/A,116
+368,EMPTY STREET,['cd1970/entry/1970_Page_36 (2)_12.png'],,". wich St (02907), Tel 941-3200"
+369,EMPTY STREET,"['cd1970/entry/1970_Page_36 (2)_20.png', 'cd1970/entry/1970_Page_36 (2)_21.png', 'cd1970/entry/1970_Page_36 (2)_22.png']",,"SOUTH ELMWOOD OIL & ICE CO INC "" $62 Dexter St (02907), Tels 421-2608 941-9651, Emergency 781-8194 (See"
+370,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_36 (2)_23.png', 'cd1970/entry/1970_Page_36 (2)_24.png']",N/A,Index To Advertisers)
+371,"SCORE LESS THAN CUTOFF: -8800,29.0,PROVIDENCE","['cd1970/entry/1970_Page_36 (2)_43.png', 'cd1970/entry/1970_Page_36 (2)_44.png', 'cd1970/entry/1970_Page_36 (2)_45.png']",8TH ST,TELEPHONE 831-8800 (See Index To Advertisers)
+372,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_36 (2)_50.png'],N/A,tisers)
+373,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_36 (3)_1.png', 'cd1970/entry/1970_Page_36 (3)_2.png']",N/A,
+374,"SCORE LESS THAN CUTOFF: Turks Head Bldg, 76 Westminster,77.0,PROVIDENCE","['cd1970/entry/1970_Page_36 (3)_7.png', 'cd1970/entry/1970_Page_36 (3)_8.png', 'cd1970/entry/1970_Page_36 (3)_9.png', 'cd1970/entry/1970_Page_36 (3)_10.png']",WESTMINSTER ST,"HEYMAN ANDREW S, 304 Turks Head Bldg, 76 Westminster (02903), Tels 331-3360, 724-2822 (See Index To Advertisers)"
+375,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_36 (3)_17.png'],N/A,Index To Advertisers)
+376,"SCORE LESS THAN CUTOFF: Bishop St,68,PROVIDENCE",['cd1970/entry/1970_Page_36 (3)_27.png'],BRISTOW ST,Industrial Foundry Mills Inc 28 Bishop St
+377,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_36 (3)_57.png'],N/A,SWARTZ FRANK F & ASSOCIATES
+378,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_37 (1)_1.png'],N/A,
+379,"SCORE LESS THAN CUTOFF: Indus-,67.0,PROVIDENCE",['cd1970/entry/1970_Page_37 (1)_38.png'],INDUSTRIAL DR,"KAGAN & SHAWCROSS INC, 1430 Indus-"
+380,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_37 (1)_40.png'],N/A,Advertisers)
+381,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_37 (2)_1.png', 'cd1970/entry/1970_Page_37 (2)_2.png']",N/A,117
+382,"SCORE LESS THAN CUTOFF: KENWOOD STREET CRANSTON, RI 02910,70.0,PROVIDENCE","['cd1970/entry/1970_Page_37 (2)_54.png', 'cd1970/entry/1970_Page_37 (2)_55.png', 'cd1970/entry/1970_Page_37 (2)_56.png', 'cd1970/entry/1970_Page_37 (2)_57.png']",CRANSTON ST,"CORMACK-ROUTHIER AGENCY INC (INSURANCE-BONDS) 78 KENWOOD STREET CRANSTON, RI 02910"
+383,"SCORE LESS THAN CUTOFF: -9400,29.0,PROVIDENCE","['cd1970/entry/1970_Page_37 (2)_58.png', 'cd1970/entry/1970_Page_37 (2)_59.png', 'cd1970/entry/1970_Page_37 (2)_60.png']",I 95,TELEPHONE 944-9400 (See Index To Advertisers)
+384,EMPTY STREET,"['cd1970/entry/1970_Page_37 (2)_61.png', 'cd1970/entry/1970_Page_37 (2)_62.png']",,Coyne & arnevale & Associates mit St Rm 3
+385,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_37 (3)_1.png'],N/A,
+386,"SCORE LESS THAN CUTOFF: 2,50,PROVIDENCE",['cd1970/entry/1970_Page_37 (3)_3.png'],2ND ST,"GARRAHAN WILLIAM H & COINC., 32"
+387,"SCORE LESS THAN CUTOFF: d',50.0,PROVIDENCE","['cd1970/entry/1970_Page_37 (3)_4.png', 'cd1970/entry/1970_Page_37 (3)_5.png']",ADA ST,"Westminster St, 2d' Fl (02903). Tel 331-8313 (See Index To Advertisers)"
+388,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_37 (3)_71.png'],N/A,Advertisers)
+389,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_38 (1)_1.png'],N/A,INSURANCE AGENTSContd
+390,EMPTY STREET,"['cd1970/entry/1970_Page_38 (1)_3.png', 'cd1970/entry/1970_Page_38 (1)_4.png']",201 ,"357 Westminster Mall, R201 (02903) Tel 421-2588 (See Index To Adver-"
+391,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_38 (1)_31.png'],N/A,
+392,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_38 (2)_1.png'],N/A,118
+393,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_38 (2)_43.png', 'cd1970/entry/1970_Page_38 (2)_44.png']",N/A,"02906), Tel 421-6870
+02908). | Mutual Life College Agency 102 Waterman St Rm 14"
+394,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_38 (2)_80.png'],N/A,HARDWARE MUTUALS-SENTRY LIFE
+395,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_38 (2)_82.png'],"02906),","(02906), Tel 861-2929"
+396,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_38 (3)_1.png'],N/A,
+397,EMPTY STREET,"['cd1970/entry/1970_Page_38 (3)_57.png', 'cd1970/entry/1970_Page_38 (3)_58.png']",,Mutual Benefit Life Insurance Co Of Newark N J.469 Angell St
+398,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_39 (1)_1.png'],N/A,INSURANCE COMPANIESContd
+399,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_39 (1)_37.png'],N/A,State Mutual Life Assurance Co Of
+400,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_39 (1)_68.png'],N/A,
+401,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_39 (1)_69.png'],N/A,
+402,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_39 (1)_70.png'],N/A,INSURANCE RATING BUREAUS
+403,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_39 (2)_1.png', 'cd1970/entry/1970_Page_39 (2)_2.png']",N/A,119
+404,"SCORE LESS THAN CUTOFF: Tha er St,78.0,PROVIDENCE",['cd1970/entry/1970_Page_39 (2)_6.png'],THAYER ST,Lerner Sam] Associates 224 Tha er St .
+405,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_39 (2)_30.png', 'cd1970/entry/1970_Page_39 (2)_31.png']",N/A,(See Also BrokersStocks And Bonds)
+406,"SCORE LESS THAN CUTOFF: Industrial Bank Bldg, 111 Westminster St,76.5,PROVIDENCE","['cd1970/entry/1970_Page_39 (2)_55.png', 'cd1970/entry/1970_Page_39 (2)_56.png']",WESTMINSTER ST,"duPONT FRANCIS I & CO, 510 Industrial
+Bank Bldg, 111 Westminster St (02903) Tel 831-2800"
+407,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_40 (1)_73.png'],"02905),","(02905), Tel 781-5737
+Celart Jewelry Co Inc 86 Page St 4th Fl"
+408,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_40 (1)_78.png', 'cd1970/entry/1970_Page_40 (1)_79.png']","02903),","_ (02903), Tel 421-2978 __
+(Clementine Jewelry 69 Richmond St Rm 307"
+409,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_41 (1)_1.png'],N/A,JEWELERSMFGContd:
+410,"SCORE LESS THAN CUTOFF: -8400,29.0,PROVIDENCE","['cd1970/entry/1970_Page_41 (2)_76.png', 'cd1970/entry/1970_Page_41 (2)_77.png']",4TH ST,TELEPHONE 421-8400
+411,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_42 (1)_1.png'],N/A,JEWELERS FINDINGSC onid
+412,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_42 (1)_39.png'],N/A,
+413,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_42 (1)_42.png', 'cd1970/entry/1970_Page_42 (1)_43.png']","02909),","St (02909), Tel 831-6179"
+414,"SCORE LESS THAN CUTOFF: Eagle St_1st,53.5,PROVIDENCE","['cd1970/entry/1970_Page_42 (2)_36.png', 'cd1970/entry/1970_Page_42 (2)_37.png']",1ST ST,"Bond Manufacturing Co 75 Eagle St_1st Fl
+BRIER MANUFACTURING CO, 222 _ Richmond St (02903), Tel 521-1900"
+415,"SCORE LESS THAN CUTOFF: Bishop St,68,PROVIDENCE",['cd1970/entry/1970_Page_42 (3)_10.png'],BRISTOW ST,Jewel Craft Co 16 Bishop St
+416,"SCORE LESS THAN CUTOFF: Bishop St,68,PROVIDENCE",['cd1970/entry/1970_Page_42 (3)_41.png'],BRISTOW ST,Marley Hall Co Inc 16 Bishop St
+417,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_43 (1)_1.png'],N/A,JUNK DEALERSContd _
+418,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_43 (1)_37.png'],N/A,Advertisers)
+419,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_43 (2)_4.png'],N/A,tisers)
+420,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_43 (2)_10.png'],"02903),","minster St (02903), Tel 831-6900"
+421,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (1)_1.png'],N/A,
+422,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (1)_2.png'],N/A,LAW OFFICESContd
+423,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_44 (1)_9.png'],"02903),","._inster St (02903), Tel 521-1100 _"
+424,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_44 (1)_51.png'],"02903),","minster St (02903), Tel 521-1100"
+425,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (1)_62.png'],N/A,"Billings Richard W (Hinckley, Alien,"
+426,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (1)_72.png'],N/A,"Borod Richard M, Assoc Edwards &"
+427,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_44 (1)_86.png'],"02903),","minster St (02903), Tel 521-1100"
+428,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_44 (2)_1.png', 'cd1970/entry/1970_Page_44 (2)_2.png']",N/A,124
+429,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE","['cd1970/entry/1970_Page_44 (2)_33.png', 'cd1970/entry/1970_Page_44 (2)_34.png']",10TH ST,"Carlotti Stephen J, Assoc Hinckley, Allen, Salisbury & Parsons, 2200"
+430,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (2)_38.png'],N/A,"Carpenter Woodworth L (Hinckley,"
+431,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_44 (2)_39.png'],10TH ST,"Allen, Salisbury & Parsons), 2200"
+432,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_44 (2)_65.png'],"02903),","_minster St (02903), Tel 521-1100"
+433,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_44 (2)_68.png'],"02903),","minster St (02903), Tel 521-1100"
+434,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_44 (3)_1.png', 'cd1970/entry/1970_Page_44 (3)_2.png', 'cd1970/entry/1970_Page_44 (3)_3.png']",N/A,wa ~
+435,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_44 (3)_20.png'],N/A,"911
+Davis Robert S (Edwards & Angell),"
+436,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_44 (3)_22.png', 'cd1970/entry/1970_Page_44 (3)_23.png', 'cd1970/entry/1970_Page_44 (3)_24.png']","02903),","minster St (02903), Tel 521-1100 :
+Day Edward W Jr, 309-310 Turks Head : Bldg, 76 Westminster St (02903), Tel 421-5927"
+437,"SCORE LESS THAN CUTOFF: ), 'Tel 521-1100,37.5,PROVIDENCE",['cd1970/entry/1970_Page_44 (3)_61.png'],10TH ST,"minster St (02903), 'Tel 521-1100"
+438,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE","['cd1970/entry/1970_Page_44 (3)_75.png', 'cd1970/entry/1970_Page_44 (3)_76.png']",3RD ST,"Edwards William H, Counsel Edwards i & Angell, 1109 Hospital Trust Bldg
+
+3"
+439,EMPTY STREET,"['cd1970/entry/1970_Page_44 (3)_77.png', 'cd1970/entry/1970_Page_44 (3)_78.png']",,"15 Westminster St (02903), Tel 521- | 1100"
+440,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (1)_1.png'],N/A,LAW OFFKESContd
+441,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (1)_3.png'],N/A,315
+442,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (1)_5.png'],N/A,940
+443,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_45 (1)_13.png'],"02903),","_ (02903), Tel 244-2000"
+444,"SCORE LESS THAN CUTOFF: Indus-,67.0,PROVIDENCE","['cd1970/entry/1970_Page_45 (1)_50.png', 'cd1970/entry/1970_Page_45 (1)_51.png']",INDUSTRIAL DR,"Gidley Thomas D (Hinckley, Allen, Salisbury & Parsons), 2200 Indus-"
+445,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (1)_66.png'],N/A,934
+446,EMPTY STREET,"['cd1970/entry/1970_Page_45 (1)_84.png', 'cd1970/entry/1970_Page_45 (1)_85.png']",,Greene Robt N iit Westminster St Rm 910
+447,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_45 (1)_90.png'],10TH ST,! 410
+448,"SCORE LESS THAN CUTOFF: Armistice Blvd,61.0,PROVIDENCE","['cd1970/entry/1970_Page_45 (2)_81.png', 'cd1970/entry/1970_Page_45 (2)_82.png']",HARBORSIDE BLVD,"Katz Hebert, 393 Armistice Blvd (Pawtucket, 02861), Tel 722-6200"
+449,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_45 (2)_84.png'],I 95,"Kean John V (Edwards & Angell), 1109"
+450,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_45 (2)_91.png'],I 95,"Keenan, Rice, Dolan & Reardon, 705"
+451,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (3)_13.png'],N/A,735
+452,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_45 (3)_32.png'],"02903),","minster St (02903), Tel 521-1100"
+453,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (3)_40.png'],N/A,Long Beverly Glenn (tdwards &
+454,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_45 (3)_44.png'],N/A,"Lovegreen Robert W, Assoc Hinckley,"
+455,"SCORE LESS THAN CUTOFF: In-,67.0,PROVIDENCE",['cd1970/entry/1970_Page_45 (3)_45.png'],PINE ST,"Allen, Salisbury & Parsons, 2200 In-"
+456,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_46 (1)_1.png'],N/A,LAW OFFICESContd
+457,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_46 (3)_9.png'],"02903),","minster St (02903), Tel 521-1100"
+458,"SCORE LESS THAN CUTOFF: Indus-,67.0,PROVIDENCE",['cd1970/entry/1970_Page_46 (3)_28.png'],INDUSTRIAL DR,"Temkin, Merolla & Zurier, 905 Indus-"
+459,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_46 (3)_33.png', 'cd1970/entry/1970_Page_46 (3)_34.png']",2200.,"Thornton William P Jr, Assoc Hinck- ley, Allen, Salisbury & Parsons, 2200."
+460,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_46 (3)_36.png'],"02903),","St (02903), Tel 274-2000"
+461,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_46 (3)_37.png'],"1030""","Tillinghast, Collins & Graham, 1030"""
+462,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_47 (1)_1.png'],N/A,LAW OFFICESContd
+463,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_47 (1)_12.png'],"02903),","minster St (02903), Tel 521-1100"
+464,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_47 (1)_29.png'],"02910),","ton Av (Cranston, 02910), Tel 461-
+2900"
+465,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_47 (1)_57.png'],N/A,Advertisers) .
+466,"SCORE LESS THAN CUTOFF: -8800,29.0,PROVIDENCE","['cd1970/entry/1970_Page_47 (2)_41.png', 'cd1970/entry/1970_Page_47 (2)_42.png']",8TH ST,TELEPHONE 831-8800 (See Index To Advertisers)
+467,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_48 (1)_6.png'],N/A,LIVE STOCK DEALERS AND
+468,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (1)_49.png'],02906),238 ANGELL STREET (02906)
+469,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (1)_50.png'],02909),1 OLNEYVILLE SQUARE (02909)
+470,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (1)_51.png'],02908),434 SMITH STREET (02908)
+471,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (1)_52.png'],02903),244 WEYBOSSETT STREET (02903)
+472,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_48 (1)_53.png'],N/A,BANK AMERICARD DEPT
+473,EMPTY STREET,"['cd1970/entry/1970_Page_48 (1)_54.png', 'cd1970/entry/1970_Page_48 (1)_55.png']",1558 ,533 NORTH MAIN STREET PO BOX 1558 (02901)
+474,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_8.png'],02907).,Elmwood Av (02907). Tel 781-2050.
+475,EMPTY STREET,['cd1970/entry/1970_Page_48 (2)_9.png'],,"792 Hope St (02906), Tel 861-2840,"
+476,EMPTY STREET,['cd1970/entry/1970_Page_48 (2)_10.png'],,"1340 N Main St (02904), Tel 351-5450"
+477,EMPTY STREET,"['cd1970/entry/1970_Page_48 (2)_11.png', 'cd1970/entry/1970_Page_48 (2)_12.png']",,"1917 Westminster St (02909), Tel 351- 9830, 1477 Broad St (02905), Tel 941-"
+478,"SCORE LESS THAN CUTOFF: ), Hox-,57.0,PROVIDENCE",['cd1970/entry/1970_Page_48 (2)_23.png'],HOOD ST,"wich Av (Warwick, RI, 02886), Hox-"
+479,EMPTY STREET,"['cd1970/entry/1970_Page_48 (2)_27.png', 'cd1970/entry/1970_Page_48 (2)_28.png']",,"117 Main St (Woonsocket, RI, 02895) (See Index To Advertisers)"
+480,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_38.png'],"02909),","minster St (02909), Tel 351-9830, 1477"
+481,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_39.png'],"02905),","Broad St (02905), Tel 941-4400, Other"
+482,EMPTY STREET,['cd1970/entry/1970_Page_48 (2)_46.png'],146 ,"ton Sq (Newport RI, 02840) Park Sq-
+Rte 146 (North Smithfield), 65 Goff Av"
+483,"SCORE LESS THAN CUTOFF: ), Hoxsie-10,65.0,PROVIDENCE",['cd1970/entry/1970_Page_48 (2)_50.png'],HOMESIDE DR,"Av (Warwick. RI 02886), Hoxsie-10"
+484,EMPTY STREET,['cd1970/entry/1970_Page_48 (2)_51.png'],,"West Shore Rd (Warwick, RI 02888)"
+485,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_48 (2)_52.png'],N/A,"35 Broad St, Franklin Shopping Plaza"
+486,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_48 (2)_55.png', 'cd1970/entry/1970_Page_48 (2)_56.png']",02895),"St (Woonsocket, RI 02895) (See Index To Advertisers)"
+487,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_48 (2)_67.png', 'cd1970/entry/1970_Page_48 (2)_68.png']",N/A,RHODE ISLAND HOSPITAL TRUST NATIONAL BANK
+488,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_69.png'],02903),15 WESTMINSTER STREET (02903)
+489,"SCORE LESS THAN CUTOFF: -6700 BRANCHES,74.5,PROVIDENCE","['cd1970/entry/1970_Page_48 (2)_70.png', 'cd1970/entry/1970_Page_48 (2)_71.png']",BRANCH AVE,TELEPHONE 521-6700 BRANCHES
+490,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_72.png'],02903),10 DORRANCE STREET (02903)
+491,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_48 (2)_73.png', 'cd1970/entry/1970_Page_48 (2)_74.png']",02906),ANGELL AND THAYER STREETS (02906)
+492,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_75.png'],02909),1 OLNEYVILLE SQUARE (02909)
+493,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_76.png'],02908) |,434 SMITH STREET (02908) |
+494,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_48 (2)_77.png'],02903),244 WEYBOSSETT STREET (02903)
+495,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_48 (2)_78.png'],N/A,(See Index To Advertisers)
+496,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_48 (3)_82.png', 'cd1970/entry/1970_Page_48 (3)_83.png']",N/A,Shepard & Morse Lumber Co Fields Point
+497,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_49 (1)_5.png', 'cd1970/entry/1970_Page_49 (1)_6.png']",N/A,
+498,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_49 (1)_11.png'],"02861),","Pawtucket, R I; 02861), Tel 722-8889"
+499,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_12.png'],N/A,(See Index To Advertisers)
+500,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_13.png'],N/A,
+501,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_14.png'],N/A,*MACHINE WORKDESIGNING
+502,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_18.png'],N/A,
+503,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_19.png'],N/A,*MACHINE WORK REPAIRING
+504,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_20.png'],N/A,AND REBUILDING
+505,"SCORE LESS THAN CUTOFF: ; 02861);,25.0,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_22.png'],1ST ST,"(Pawtucket, R 1; 02861); Tel 722-8889"
+506,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_23.png'],N/A,if (See Index To Advertisers)
+507,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_24.png'],N/A,
+508,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_25.png'],N/A,MACHINERY DEALERS
+509,"SCORE LESS THAN CUTOFF: Aero Machinery & Equipment Co 636,51.0,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_26.png'],MACLAINE DR,"Sm
+sh
+
+*~)=6 Aero Machinery & Equipment Co 636"
+510,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_27.png'],N/A,Broadway
+511,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_29.png'],10TH ST,* Construction Equipment Supply Inc 40
+512,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_30.png'],N/A,Tockwotton St
+513,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_39.png'],N/A,
+514,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_40.png'],N/A,By
+515,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_41.png'],N/A,MACHINERY DEALERSUSED
+516,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_46.png'],N/A,
+517,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_47.png'],N/A,MACHINERY MFRS
+518,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_48.png'],N/A,
+519,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_50.png'],I 95,& BIF(A Unit Of General Signal Corp) 345
+520,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_51.png'],N/A,Harris Av.
+521,"SCORE LESS THAN CUTOFF: Tippecanoe St,68,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_52.png'],TAPPAN ST,Danoco Inc 12 Tippecanoe St
+522,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_54.png'],4TH ST,. Edmands Co (Div Of Wanskuck Co) 304
+523,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_55.png'],N/A,Pearl St
+524,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_49 (1)_56.png'],I 95,Holdsworth Manufacturing Co Inc 39
+525,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_57.png'],N/A,Manton Av
+526,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (1)_82.png'],N/A,
+527,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (2)_23.png'],N/A,
+528,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (2)_24.png'],N/A,POLK RL &CO
+529,"SCORE LESS THAN CUTOFF: HOWARD STREET,74.0,PROVIDENCE","['cd1970/entry/1970_Page_49 (2)_25.png', 'cd1970/entry/1970_Page_49 (2)_26.png']",NORTH HOWARD AVE,POLK BUILDING 431 HOWARD STREET
+530,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_49 (2)_27.png'],1ST ST,"DETROIT, MICHIGAN 48231"
+531,"SCORE LESS THAN CUTOFF: Georrta Ave,76.5,PROVIDENCE","['cd1970/entry/1970_Page_49 (2)_31.png', 'cd1970/entry/1970_Page_49 (2)_32.png']",GEORGIA AVE,"FEDERAL CHAIN CO. 141 Georrta Av (02905), Tel 461-2730 (See Index To"
+532,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (2)_33.png'],N/A,Advertisers)
+533,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (3)_10.png'],N/A,(See Index To Advertisers)
+534,"SCORE LESS THAN CUTOFF: -4406,29.0,PROVIDENCE",['cd1970/entry/1970_Page_49 (3)_27.png'],4TH ST,Tel 944-4406 (See Index To Adver-
+535,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_49 (3)_28.png'],N/A,tisers)
+536,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (1)_1.png'],N/A,MEATSRETAILContd
+537,"SCORE LESS THAN CUTOFF: Trivps Lane,59.0,PROVIDENCE","['cd1970/entry/1970_Page_50 (2)_22.png', 'cd1970/entry/1970_Page_50 (2)_23.png']",TRIPOLI ST,"WOOD A MCO INC. 65 Trivps Lane (East Providence, 02915), Tel 438-
+0111"
+538,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (2)_33.png'],N/A,(See Also Dairies)
+539,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (2)_38.png'],N/A,Index To Advertisers)
+540,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (2)_50.png'],N/A,(See Also Churches)
+541,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (3)_11.png'],N/A,
+542,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_50 (3)_22.png'],"02903),","Av (02903), Tel 421-3244, 591 Charles"
+543,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_50 (3)_23.png'],"02904),","St (02904), Tel 861-0250, 131 Elm-"
+544,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_50 (3)_26.png'],"02914),","dence; 02914), Tel 434-5670, 1925"
+545,EMPTY STREET,['cd1970/entry/1970_Page_50 (3)_27.png'],,Mineral Spring Av (North Providence
+546,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_50 (3)_29.png'],"02910),","ton, 02910), Tel 944-1650, 3040 West"
+547,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_50 (3)_30.png', 'cd1970/entry/1970_Page_50 (3)_31.png']","02886),","Shore Rd (Warwick, 02886), Tel 739- 8333 (See Index To Advertisers)"
+548,"SCORE LESS THAN CUTOFF: Namauid Dr,68.0,PROVIDENCE",['cd1970/entry/1970_Page_50 (3)_35.png'],ARMAND DR,Providence; 02914). 963 Namauid Dr
+549,"SCORE LESS THAN CUTOFF: Olnyattle Sq,67.5,PROVIDENCE","['cd1970/entry/1970_Page_50 (3)_45.png', 'cd1970/entry/1970_Page_50 (3)_46.png']",OLNEYVILLE SQ,"(02906) 1 Olnyattle Sq (02000) 438
+Smith St (02908 (See Intex To Adver- tisers)"
+550,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (3)_47.png'],N/A,ROGER WILLIAMS SAVINGS AND LOAN
+551,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_50 (3)_50.png'],N/A,Advertisers)
+552,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_2.png'],N/A,Contd
+553,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_3.png'],N/A,OLD STONE BANKContd
+554,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_5.png'],"02907),","(02907), Tel 781-2050. 792 Hove St"
+555,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_6.png'],"02906),","(02906), Tel 861-2840, 1340 N Main St"
+556,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_7.png'],"02904),","(02904), Tel 351-5450, 1917 Westmin-"
+557,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_8.png'],"02909),","ster St (02909), Tel 351-9830, 1477"
+558,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_9.png'],"02905),","Broad St (02905), Tel 941-4400, Other"
+559,"SCORE LESS THAN CUTOFF: _,18.0,PROVIDENCE",['cd1970/entry/1970_Page_51 (1)_15.png'],UNNAMED_76,"ford Av (Johnston, RI 02919), 22 _"
+560,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_16.png'],02840),"Washington Sq (Newport, RI 02840)"
+561,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_17.png'],146 ,Park Sa-Rte 146 (North Smithfield)
+562,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_18.png'],,"65 Goff Av (Pawtucket, RI 02860)"
+563,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_19.png'],,"401 Kingstown Rd (Wakefield, RI"
+564,"SCORE LESS THAN CUTOFF: ). Hoxie-10 West Shore Rd,54.0,PROVIDENCE",['cd1970/entry/1970_Page_51 (1)_22.png'],LAKE SHORE DR,"RI, 02886). Hoxie-10 West Shore Rd"
+565,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_24.png'],N/A,"Franklin Shopping Plaza (Westerly,"
+566,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_27.png'],02895),"socket, RI 02895) (See Index To"
+567,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_28.png'],N/A,Advertisers)
+568,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_38.png'],"02909),","Westminster St (02909), Tel 351-9830"
+569,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_39.png'],,"1477 Broad St (02905), Tel 941-4400"
+570,"SCORE LESS THAN CUTOFF: ), 1450,50,PROVIDENCE",['cd1970/entry/1970_Page_51 (1)_44.png'],I 195,"(East Providence, RI 02914), 1450"
+571,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_45.png'],02919),"Hartford Av (Johnston, RI 02919)"
+572,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_46.png'],14 ,"22 Washington Sq (Newport
+02840). Park Sa-Rte 14 (North Smith-"
+573,"SCORE LESS THAN CUTOFF: Goff Ave,62.5,PROVIDENCE",['cd1970/entry/1970_Page_51 (1)_47.png'],GANO AVE,"field), 65 Goff Av (Pawtucket, RI"
+574,EMPTY STREET,['cd1970/entry/1970_Page_51 (1)_51.png'],,02886). Hoxie-10 West Shore Rd
+575,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_53.png'],N/A,"Franklin Shopping Piaza (Westerly,"
+576,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_56.png'],02895),"socket, RI 02895) (See Index To Adver-"
+577,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (1)_57.png'],N/A,tisers)
+578,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_51 (1)_64.png', 'cd1970/entry/1970_Page_51 (1)_65.png']",02906),ANGELL AND THAYER STREETS (02906)
+579,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_66.png'],02909),1 OLNEYVILLE SQUARE (02909)
+580,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_67.png'],02908) |,434 SMITH STREET (02908) |
+581,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_51 (1)_68.png'],02903),244 WEYBOSSETT STREET (02903)
+582,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_51 (1)_69.png', 'cd1970/entry/1970_Page_51 (1)_70.png']",N/A,(See Index To Advertisers) MOTION PICTURE APPARATUS
+583,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_51 (1)_82.png', 'cd1970/entry/1970_Page_51 (1)_83.png']",N/A,Index To Advertisers)
+584,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (2)_5.png'],N/A,Index To Advertisers)
+585,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (2)_26.png'],N/A,MUSEUM OF ART (Rhode Island School
+586,"SCORE LESS THAN CUTOFF: -3507,29.0,PROVIDENCE",['cd1970/entry/1970_Page_51 (2)_28.png'],I 95,Tel 331-3507
+587,"SCORE LESS THAN CUTOFF: -8276,29.0,PROVIDENCE",['cd1970/entry/1970_Page_51 (3)_31.png'],2ND ST,Tel 737-8276
+588,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_51 (3)_32.png'],10TH ST,"KIDDER PEABODY & CO INC, 10"
+589,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_51 (3)_33.png', 'cd1970/entry/1970_Page_51 (3)_34.png']","02903),","Dorrance St (02903), Tel 421-3500 (See Index To Advertisers)"
+590,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_51 (3)_64.png'],N/A,Union News Co Union Station
+591,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (1)_6.png'],N/A,"EVENING BULLETIN, Providence"
+592,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_52 (1)_8.png'],"02903),","St (02903), Tel 331-0600 (See Index"
+593,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (1)_9.png'],N/A,To Advertisers)
+594,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (1)_15.png'],N/A,PROVIDENCE DAILY AND SUNDAY
+595,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (1)_16.png'],N/A,"JOURNAL. Providence Journal Co,"
+596,"SCORE LESS THAN CUTOFF: -0600,29.0,PROVIDENCE",['cd1970/entry/1970_Page_52 (1)_18.png'],6TH ST,Tel 331-0600 (See Index To Adver-
+597,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (1)_19.png'],N/A,tisers)
+598,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_52 (1)_23.png'],02860).,(Pawtucket; 02860). Tel 722-4000
+599,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_52 (1)_54.png'],"02903),","Main St (02903), Tel 521-2461"
+600,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_52 (3)_41.png', 'cd1970/entry/1970_Page_52 (3)_42.png', 'cd1970/entry/1970_Page_52 (3)_43.png']","02860),","DE BLOS OI. CO, Colfax St, City Line (Pawtucket; 02860), Tel 722- 8000 (See Index To Advertisers)"
+601,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_52 (3)_50.png', 'cd1970/entry/1970_Page_52 (3)_51.png']",N/A,"PETRO, PETROLEUM HEAT & POWER CO OF RHODE SLAND,"
+602,EMPTY STREET,"['cd1970/entry/1970_Page_52 (3)_52.png', 'cd1970/entry/1970_Page_52 (3)_53.png']",,"$75 Allens Av (02905), Tel 941-0050 (See Index To Advertisers)"
+603,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (3)_58.png'],N/A,PETROLEUM HEAT & POWER CO
+604,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_52 (3)_61.png'],N/A,Advertisers)
+605,EMPTY STREET,"['cd1970/entry/1970_Page_52 (3)_74.png', 'cd1970/entry/1970_Page_52 (3)_75.png']",,Sun Oil Co (Ne Central Storehouse) Seaview Dr
+606,EMPTY STREET,"['cd1970/entry/1970_Page_53 (1)_6.png', 'cd1970/entry/1970_Page_53 (1)_7.png', 'cd1970/entry/1970_Page_53 (1)_8.png']",,"DE BLOIS OIL CO, Colfax St Citv Line (Pawtucket; 02860), Tel 732- 8000 (See Index To Advertisers)"
+607,EMPTY STREET,['cd1970/entry/1970_Page_53 (1)_82.png'],,Cesaro Salvatore x z4u Academy Av
+608,"SCORE LESS THAN CUTOFF: Broadway Corrente Wm D 44 Washington St,75.0,PROVIDENCE",['cd1970/entry/1970_Page_53 (1)_83.png'],WASHINGTON ST,"Contillo Raymond J 236 Broadway
+Corrente Wm D 44 Washington St Rm 311"
+609,"SCORE LESS THAN CUTOFF: Afl-Cio 18 Health,76.0,PROVIDENCE",['cd1970/entry/1970_Page_54 (1).chop_10.png'],HEALTH AVE,Asbestos Local No 31 Afl-Cio 18 Health
+610,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_54 (1).chop_11.png'],N/A,"A
+BAKERY - FOOD-DAIRY-BEVERAGE"
+611,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_54 (1).chop_12.png'],N/A,"AND MISCELLANEOUS DRIVERS,"
+612,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_54 (1).chop_13.png'],N/A,ADVANCE SALESMEN-WARE-
+613,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_54 (1).chop_14.png'],N/A,HOUSEMEN AND HELPERS LOCAL
+614,"SCORE LESS THAN CUTOFF: 1,50,PROVIDENCE",['cd1970/entry/1970_Page_54 (1).chop_16.png'],1ST ST,331-8241
+615,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_54 (1).chop_60.png', 'cd1970/entry/1970_Page_54 (1).chop_61.png']",N/A,New England Federation Of Tel Workers (Area Ofc) 57 Eddy St Rm 310
+616,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_54 (2).chop_9.png'],N/A,TEXTILE WORKERS UNION OF
+617,EMPTY STREET,"['cd1970/entry/1970_Page_54 (2).chop_30.png', 'cd1970/entry/1970_Page_54 (2).chop_31.png']",,Cape Verdian St Antoines Society 673 Wickenden St
+618,"SCORE LESS THAN CUTOFF: st F] Federal Bldg Ct,79.5,PROVIDENCE","['cd1970/entry/1970_Page_54 (3).chop_75.png', 'cd1970/entry/1970_Page_54 (3).chop_76.png']",FEDERAL WY,American Legion 1st F] Federal Bldg Ct Hse
+619,EMPTY STREET,"['cd1970/entry/1970_Page_54 (3).chop_84.png', 'cd1970/entry/1970_Page_54 (3).chop_85.png']",787 ,Cerbo Frank Post No 787 (VFW) 40 Daniel
+620,EMPTY STREET,"['cd1970/entry/1970_Page_54 (3).chop_86.png', 'cd1970/entry/1970_Page_54 (3).chop_87.png']",,Disabled American Veterans Istfl Federal Bldg Ct Hse
+621,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_55 (1)_2.png'],N/A,VETERANSConta__
+622,EMPTY STREET,"['cd1970/entry/1970_Page_55 (1)_8.png', 'cd1970/entry/1970_Page_55 (1)_9.png']",,Jewish War Veterans Istfl Federal Bldg Ct
+623,EMPTY STREET,"['cd1970/entry/1970_Page_55 (1)_29.png', 'cd1970/entry/1970_Page_55 (1)_30.png']",,Veterans Of Foreign Wars Ist Fl Federal Bldg Ct Hse
+624,EMPTY STREET,"['cd1970/entry/1970_Page_55 (1)_40.png', 'cd1970/entry/1970_Page_55 (1)_41.png']",,American National Red Cross Istfl Federal Bidz Ct Hse
+625,"SCORE LESS THAN CUTOFF: Waterman At Cooke Sts,77.5,PROVIDENCE","['cd1970/entry/1970_Page_55 (1)_42.png', 'cd1970/entry/1970_Page_55 (1)_43.png', 'cd1970/entry/1970_Page_55 (1)_44.png']",WATERMAN ST,"AMERICAN NATIONAL RED CROSS (Providence Chanter), 150 Waterman At Cooke Sts (02906), Tel 831-7700"
+626,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_55 (1)_89.png'],N/A,PROVIDENCE DSTRICT NURSING
+627,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_55 (2)_38.png'],N/A,
+628,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_55 (2)_46.png', 'cd1970/entry/1970_Page_55 (2)_47.png']",N/A,(See Also Glass Dealers
+629,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_55 (3)_16.png'],N/A,ers)
+630,"SCORE LESS THAN CUTOFF: Haven Ave,73.0,PROVIDENCE","['cd1970/entry/1970_Page_55 (3)_18.png', 'cd1970/entry/1970_Page_55 (3)_19.png', 'cd1970/entry/1970_Page_55 (3)_20.png']",HAVANA ST,"CRANSTON HARDWARE CO INC, 40 Haven Av (Cranston, 02920), Tel 944-1811 (Gee Index To Advertisers)"
+631,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_55 (3)_25.png'],N/A,Advertisers)
+632,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_56 (1)_2.png'],N/A,Contd
+633,"SCORE LESS THAN CUTOFF: Holden St, PO Box 6506,72.0,PROVIDENCE","['cd1970/entry/1970_Page_56 (1)_44.png', 'cd1970/entry/1970_Page_56 (1)_45.png', 'cd1970/entry/1970_Page_56 (1)_46.png', 'cd1970/entry/1970_Page_56 (1)_47.png']",HOLDEN ST,"OBRIEN ROBERT CO THE, 42 Hol- den St, PO Box 6506 (02904), Tels 331-2251 And 331-2252 (See Index To Advertisers)"
+634,"SCORE LESS THAN CUTOFF: -1210,50.0,PROVIDENCE",['cd1970/entry/1970_Page_56 (1)_55.png'],10TH ST,Tel 728-1210 (See Index To Adver-
+635,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_56 (1)_56.png'],N/A,tisers)
+636,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_56 (2)_13.png', 'cd1970/entry/1970_Page_56 (2)_14.png']","02903),","Av (02903), Tel 421-6006 (See Index To Advertisers)"
+637,"SCORE LESS THAN CUTOFF: Westmin-,78.0,PROVIDENCE",['cd1970/entry/1970_Page_56 (2)_20.png'],WESTMINSTER ST,LUDLAMS PET SHOP. 369 Westmin-
+638,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_56 (2)_21.png'],"02903),","ster St (02903), Tel 421-4668"
+639,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_56 (2)_42.png'],N/A,Advertisers)
+640,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_56 (3)_67.png'],N/A,
+641,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_57 (1)_2.png'],N/A,Contd
+642,EMPTY STREET,['cd1970/entry/1970_Page_57 (1)_15.png'],,Bellin Leonard B325 Angell St
+643,EMPTY STREET,['cd1970/entry/1970_Page_57 (1)_48.png'],,Cashman Charles W Jr_110 Lockwood St
+644,"SCORE LESS THAN CUTOFF: 8,50,PROVIDENCE",['cd1970/entry/1970_Page_57 (1)_49.png'],8TH ST,Rm 438
+645,EMPTY STREET,"['cd1970/entry/1970_Page_57 (1)_63.png', 'cd1970/entry/1970_Page_57 (1)_64.png']",,Coleman Geo V dr 110 Lockwood St Rm 128
+646,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_58 (1)_2.png'],N/A,
+647,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_58 (2)_70.png'],N/A,Advertisers)
+648,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_59 (1).chop_1.png'],N/A,PLATERSContd
+649,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_59 (1).chop_14.png'],"02903),","St (02903), Tel 421-4018"
+650,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_59 (2).chop_48.png'],"02907),","St (02907), Tel 421-2149"
+651,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_59 (3).chop_8.png'],N/A,Advertisers)
+652,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_60 (1)_7.png', 'cd1970/entry/1970_Page_60 (1)_8.png']","02904),","River St (02904), Tel 331-1771 (Gee Index To Advertisers)"
+653,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_60 (1)_17.png', 'cd1970/entry/1970_Page_60 (1)_18.png']",N/A,(See Also Dairy Products Wholesale)
+654,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_60 (1)_40.png', 'cd1970/entry/1970_Page_60 (1)_41.png']",N/A,Advertisers)
+655,"SCORE LESS THAN CUTOFF: -3350,29.0,PROVIDENCE",['cd1970/entry/1970_Page_60 (1)_53.png'],I 95,Tel 272-3350 (See Index To Adver-
+656,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_60 (1)_54.png'],N/A,tisers)
+657,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_60 (2)_6.png', 'cd1970/entry/1970_Page_60 (2)_7.png', 'cd1970/entry/1970_Page_60 (2)_8.png']",N/A,"NEW ENGLAND TELEPHONE & TELEGRAPH CO, 77 Kennedy Plaza (02903), Tel 525-9950"
+658,"SCORE LESS THAN CUTOFF: WASHINGTON STREET BOSTON, MASS 02111,73,PROVIDENCE","['cd1970/entry/1970_Page_60 (2)_35.png', 'cd1970/entry/1970_Page_60 (2)_36.png', 'cd1970/entry/1970_Page_60 (2)_37.png']",WASHINGTON PL,"POLK RL &CO 600 WASHINGTON STREET BOSTON, MASS 02111"
+659,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_60 (2)_41.png'],10TH ST,331-0600 (See Index To Advertisers)
+660,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_60 (3)_55.png'],4TH ST,Marino A Television & Radio Center 944
+661,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_61 (1)_4.png'],N/A,Penn Central Co Union Station
+662,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_61 (1)_14.png'],N/A,(See Also Libraries)
+663,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_61 (1)_65.png'],"02907),","St (02907), Tels 521-5946, 861-5969"
+664,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_61 (2)_31.png'],N/A,FLETCHER REALTY CORP. 2
+665,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_61 (2)_32.png'],"02903),","Thomas St (02903), Tel 421-9230
+Fletcher Robt S 188 Benefit St"
+666,"SCORE LESS THAN CUTOFF: TURKS HEAD BLDG 76 WESTMINSTER STREET PROVIDENCE, RI 02903,66.0,PROVIDENCE","['cd1970/entry/1970_Page_61 (2)_46.png', 'cd1970/entry/1970_Page_61 (2)_47.png', 'cd1970/entry/1970_Page_61 (2)_48.png', 'cd1970/entry/1970_Page_61 (2)_49.png', 'cd1970/entry/1970_Page_61 (2)_50.png', 'cd1970/entry/1970_Page_61 (2)_51.png', 'cd1970/entry/1970_Page_61 (2)_52.png']",WESTMINSTER ST,"GROSS GL &H J INC 1100 TURKS HEAD BLDG 76 WESTMINSTER STREET PROVIDENCE, RI 02903 TELEPHONE 272-5400 (See Index To Advertisers)"
+667,"SCORE LESS THAN CUTOFF: Industrial Bank Bldz 111 Westminster,73.5,PROVIDENCE","['cd1970/entry/1970_Page_61 (2)_85.png', 'cd1970/entry/1970_Page_61 (2)_86.png']",WESTMINSTER ST,"KAGAN & SHAWCROSS INC, 1430 In- dustrial Bank Bldz 111 Westminster"
+668,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_61 (2)_87.png'],"02903),","St (02903), Tel 521-3900 Gee Index"
+669,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_61 (2)_88.png'],N/A,To Advertisers)
+670,"SCORE LESS THAN CUTOFF: hdustrial Bank Bldg. 111 Westminster,74.0,PROVIDENCE","['cd1970/entry/1970_Page_61 (3)_30.png', 'cd1970/entry/1970_Page_61 (3)_31.png']",WESTMINSTER ST,"OREILLY J CLIFDEN JR, 2007 h- dustrial Bank Bldg. 111 Westminster"
+671,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_61 (3)_32.png'],"02908),","St (02908), Tel 331-2740 (See Index"
+672,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_61 (3)_33.png'],N/A,To Advertisers)
+673,EMPTY STREET,['cd1970/entry/1970_Page_61 (3)_43.png'],300 ,"Suite 300 (02903), Tel 331-1122"
+674,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_61 (3)_52.png'],10TH ST,St Rm 720
+675,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_62 (1)_1.png'],N/A,REAL ESTATEContd
+676,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_62 (1)_34.png'],N/A,Advertisers)
+677,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_62 (1)_39.png'],N/A,Advertisers)
+678,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_62 (2)_35.png', 'cd1970/entry/1970_Page_62 (2)_36.png']","02903),","St (02903), Tel 331-2740 (See Index To Advertisers)"
+679,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_62 (2)_39.png'],N/A,Advertisers)
+680,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_62 (2)_48.png'],N/A,Advertisers)
+681,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_62 (2)_51.png', 'cd1970/entry/1970_Page_62 (2)_52.png']","02903),","St (02903), Tel 331-2740 (See Index To Advertisers)"
+682,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_62 (3)_7.png', 'cd1970/entry/1970_Page_62 (3)_8.png']",N/A,tisers)
+683,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_63 (1)_1.png'],N/A,RESEARCH Contd
+684,"SCORE LESS THAN CUTOFF: 3,50.0,PROVIDENCE",['cd1970/entry/1970_Page_63 (2)_20.png'],3RD ST,Downtown Doughnut Shop Inc 253
+685,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_63 (2)_21.png'],N/A,Weybosset St
+686,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (1)_1.png'],N/A,RESTAURANTSContd
+687,"SCORE LESS THAN CUTOFF: b State House,78.0,PROVIDENCE",['cd1970/entry/1970_Page_64 (1)_30.png'],STATE HWY 10,State House Restaurant 7b State House
+688,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (1)_74.png'],N/A,_-ARMANDOS RESTAURANT &
+689,"SCORE LESS THAN CUTOFF: -3164,29.0,PROVIDENCE",['cd1970/entry/1970_Page_64 (1)_76.png'],1ST ST,Tel 421-3164
+690,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_64 (1)_80.png'],10TH ST,MOORE J W ROOFING CO INC. 70
+691,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_64 (1)_81.png', 'cd1970/entry/1970_Page_64 (1)_82.png']","02909),","Atwood St (02909), Tel 944-0440 (See Index To Advertisers)"
+692,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (1)_87.png'],N/A,Index To Advertisers)
+693,EMPTY STREET,"['cd1970/entry/1970_Page_64 (2)_3.png', 'cd1970/entry/1970_Page_64 (2)_4.png']",,"20 Gordon Av (02905), Tel 461-2566 (See Index To Advertisers)"
+694,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_64 (2)_22.png'],I 95,467-3585 (See Index To Advertisers)
+695,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_64 (2)_24.png'],I 95,"SMITH MAURICE C CO INC, 169"
+696,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_64 (2)_25.png', 'cd1970/entry/1970_Page_64 (2)_26.png']","02903),","Dorrance St (02903), Tel 421-1064 (See Index To Advertisers)"
+697,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (2)_35.png'],N/A,COLUMBUS NATIONAL BANK OF
+698,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (2)_38.png'],"02903),","Av (02903), Tel 421-3244, 591"
+699,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_64 (2)_39.png', 'cd1970/entry/1970_Page_64 (2)_40.png']","02904),","Charles St (02904), Tel 861-0250, 1025 Smith St (02908), 593 Taunton"
+700,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_64 (2)_44.png', 'cd1970/entry/1970_Page_64 (2)_45.png']",02910).,Reservoir Av (Cranston: 02910). Tel 944-1650 (See Index To Advertisers)
+701,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE","['cd1970/entry/1970_Page_64 (2)_50.png', 'cd1970/entry/1970_Page_64 (2)_51.png', 'cd1970/entry/1970_Page_64 (2)_52.png']",I 95,"RHODE ISLAND HOSPITAL TRUST NATIONAL BANK (Safe Deposit De- partment), Hospital Trust Bldg 15"
+702,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_64 (2)_53.png', 'cd1970/entry/1970_Page_64 (2)_54.png', 'cd1970/entry/1970_Page_64 (2)_55.png']","02903),","Westminster St (02903), Tel 521- 6700 (See Index To Advertisers)"
+703,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_15.png'],"02903),","minster St (02903), Tel 272-1500,"
+704,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_20.png'],"02906),","Waterman St (02906), Tel 272-6600"
+705,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (3)_21.png'],N/A,"OLD STONE SAVINGS BANK, Main"
+706,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_28.png'],,520 Elmwood Av (02907). Tel 781-
+707,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_30.png'],"02909),","(02909), Tel 351-9830, 1477 Broad"
+708,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_31.png'],"02905),","St (02905), Tel 941-4400, Other"
+709,"SCORE LESS THAN CUTOFF: ), 1450,50,PROVIDENCE",['cd1970/entry/1970_Page_64 (3)_36.png'],I 195,"(East Providence, RI 02914), 1450"
+710,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_37.png'],"02919),","Hartford Av (Johnston, RI 02919),"
+711,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (3)_38.png'],N/A,"22 Wash ' Sq (Newport, RI"
+712,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_39.png'],146 ,"02840), Park Sq-Rte 146 (North"
+713,"SCORE LESS THAN CUTOFF: Goff Ave,62.5,PROVIDENCE",['cd1970/entry/1970_Page_64 (3)_40.png'],GANO AVE,"Smithfield), 65 Goff Av (Pawtucket,"
+714,"SCORE LESS THAN CUTOFF: ), Hoxsie-,71.0,PROVIDENCE",['cd1970/entry/1970_Page_64 (3)_44.png'],HOMESIDE DR,"Av (Warwick, RI 02886), Hoxsie-"
+715,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_45.png'],,"10 West Shore Rd (Warwick, RI"
+716,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_49.png'],02895),RI 02895) (See Index To Advertis-
+717,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (3)_50.png'],N/A,ers)
+718,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_64 (3)_51.png'],N/A,".PEOPLES SAVINGS BANK, Main Of-"
+719,"SCORE LESS THAN CUTOFF: ), Other Offices: 326,78.0,PROVIDENCE",['cd1970/entry/1970_Page_64 (3)_54.png'],POST OFFICE CT,"way St (02906), Other Offices: 326"
+720,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_56.png'],,"963 Namquid Dr (Warwick; 02888),"
+721,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_57.png'],,"2 High St (Westerly; 02891), 1440"
+722,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_64 (3)_58.png'],"02919),","Hartford Av (Johnston; 02919),"
+723,EMPTY STREET,['cd1970/entry/1970_Page_64 (3)_59.png'],,6633 Post Rd (North Kingstown;
+724,EMPTY STREET,"['cd1970/entry/1970_Page_64 (3)_66.png', 'cd1970/entry/1970_Page_64 (3)_67.png']",,"244 Weybosset St (02903), 155 on
+St (02906), 1 Olmeyville Sq (02909), 434 Smith St (02908) See Index To -"
+725,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_64 (3)_68.png', 'cd1970/entry/1970_Page_64 (3)_69.png']",N/A,Advertisers)
+726,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_65 (1)_1.png'],N/A,SAVINGS AND LOAN ASSNSContd
+727,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_65 (1)_4.png', 'cd1970/entry/1970_Page_65 (1)_5.png']",02903).,minster Mall (02903). Tel 421-2232 (See Index To Advertisers)
+728,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_65 (1)_14.png'],N/A,CAPE COD STAGING & EQUIPMENT
+729,"SCORE LESS THAN CUTOFF: 6,50,PROVIDENCE",['cd1970/entry/1970_Page_65 (1)_31.png'],6TH ST,Angelo Arthur School Of Hair Design 46
+730,"SCORE LESS THAN CUTOFF: d Fl,50,PROVIDENCE",['cd1970/entry/1970_Page_65 (1)_32.png'],FLORA ST,Aborn St 2d Fl
+731,EMPTY STREET,['cd1970/entry/1970_Page_65 (1)_35.png'],,Brown University Prospect St
+732,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_65 (2)_1.png'],N/A,
+733,EMPTY STREET,"['cd1970/entry/1970_Page_65 (2)_3.png', 'cd1970/entry/1970_Page_65 (2)_4.png']",,"St Cor River Av (02908), Tel 861- 1500"
+734,EMPTY STREET,"['cd1970/entry/1970_Page_65 (2)_57.png', 'cd1970/entry/1970_Page_65 (2)_58.png']",,Saint Edwards Parochial School'977 Branch Av
+735,"SCORE LESS THAN CUTOFF: Edendale Ave,79,PROVIDENCE","['cd1970/entry/1970_Page_65 (2)_74.png', 'cd1970/entry/1970_Page_65 (2)_75.png']",VERNDALE AVE,Saint Thomas Parochial School 15 Edendale Av
+736,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_65 (3)_51.png'],N/A,
+737,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_65 (3)_69.png', 'cd1970/entry/1970_Page_65 (3)_70.png']",N/A,Vocational Technical School Of Ri Corliss Park
+738,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (1)_1.png'],N/A,Rho e Islan
+739,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (1)_2.png'],N/A,"15 WESTMINSTER, PROVIDENCE,"
+740,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_66 (1)_3.png', 'cd1970/entry/1970_Page_66 (1)_4.png']",N/A,
+741,"SCORE LESS THAN CUTOFF: Valley St. 02909.,78.5,PROVIDENCE","['cd1970/entry/1970_Page_66 (1)_25.png', 'cd1970/entry/1970_Page_66 (1)_26.png']",VALLEY ST,"PRECISION AUTOMATICS, 54 Valley St. 02909. Tel 421-9382"
+742,"SCORE LESS THAN CUTOFF: 9,53.5,PROVIDENCE",['cd1970/entry/1970_Page_66 (1)_44.png'],I 95,"i
+
+Rm 1009"
+743,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_66 (2)_1.png', 'cd1970/entry/1970_Page_66 (2)_2.png', 'cd1970/entry/1970_Page_66 (2)_3.png', 'cd1970/entry/1970_Page_66 (2)_4.png']",N/A,Hospital Trust Member Feder Member Federal Depc
+744,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (2)_62.png'],N/A,
+745,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (3)_1.png'],N/A,
+746,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (3)_2.png'],N/A,Nati nal Bank -
+747,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (3)_3.png'],N/A,al Reserve System
+748,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_66 (3)_77.png'],N/A,"Palazzo
+
+\cadeniy v"
+749,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_67 (1).chop_1.png'],N/A,SHOE REPAIRERSC ontd
+750,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_67 (1).chop_59.png'],"02909),","Av (02909), Tels Office 274-8679,"
+751,"SCORE LESS THAN CUTOFF: -5426,29.0,PROVIDENCE",['cd1970/entry/1970_Page_67 (1).chop_60.png'],I 95,Res 861-5426 (See Index To Adver-
+752,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_67 (1).chop_61.png', 'cd1970/entry/1970_Page_67 (1).chop_62.png']",N/A,tisers)
+753,"SCORE LESS THAN CUTOFF: Spectacle St,75,PROVIDENCE","['cd1970/entry/1970_Page_67 (2)_11.png', 'cd1970/entry/1970_Page_67 (2)_12.png', 'cd1970/entry/1970_Page_67 (2)_13.png', 'cd1970/entry/1970_Page_67 (2)_14.png', 'cd1970/entry/1970_Page_67 (2)_15.png']",PEACE ST,"TECHNIC INC, Main Plant And Of- fice 88 Spectacle St (Cranston: 02910), Mailing Address PO Box 965 (Providence, RI 02901), Tel 781- 6100 (See Index To Advertisers)"
+754,"SCORE LESS THAN CUTOFF: Spectacle St,75,PROVIDENCE","['cd1970/entry/1970_Page_67 (2)_18.png', 'cd1970/entry/1970_Page_67 (2)_19.png']",PEACE ST,"TECHNIC INC, Main Plant And Office 88 Spectacle St (Cranston; 02910),"
+755,EMPTY STREET,"['cd1970/entry/1970_Page_67 (2)_20.png', 'cd1970/entry/1970_Page_67 (2)_21.png', 'cd1970/entry/1970_Page_67 (2)_22.png', 'cd1970/entry/1970_Page_67 (2)_23.png']",965 ,"Mailing Address PO Box 965 (Prov- idence, R I; 02901), Tel 781-6100 (See Index To Advertisers)"
+756,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_67 (2)_30.png', 'cd1970/entry/1970_Page_67 (2)_31.png']","02903),","minster Mall (02903), Tel 421-5822 (See Index To Advertisers)"
+757,"SCORE LESS THAN CUTOFF: Spectacle St,75,PROVIDENCE","['cd1970/entry/1970_Page_67 (3)_11.png', 'cd1970/entry/1970_Page_67 (3)_12.png', 'cd1970/entry/1970_Page_67 (3)_13.png', 'cd1970/entry/1970_Page_67 (3)_14.png', 'cd1970/entry/1970_Page_67 (3)_15.png']",PEACE ST,"TECHNIC INC, Main Plant And Of- fice 88 Spectacle St (Cranston: 02910), Mailing Address PO Box 965 (Providence, RI 02901), Tel 781- 6100 (See Index To Advertisers)"
+758,"SCORE LESS THAN CUTOFF: Spectacle St,75,PROVIDENCE","['cd1970/entry/1970_Page_67 (3)_18.png', 'cd1970/entry/1970_Page_67 (3)_19.png']",PEACE ST,"TECHNIC INC, Main Plant And Office 88 Spectacle St (Cranston; 02910),"
+759,EMPTY STREET,"['cd1970/entry/1970_Page_67 (3)_20.png', 'cd1970/entry/1970_Page_67 (3)_21.png', 'cd1970/entry/1970_Page_67 (3)_22.png', 'cd1970/entry/1970_Page_67 (3)_23.png']",965 ,"Mailing Address PO Box 965 (Prov- idence, R I; 02901), Tel 781-6100 (See Index To Advertisers)"
+760,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_67 (3)_30.png', 'cd1970/entry/1970_Page_67 (3)_31.png']","02903),","minster Mall (02903), Tel 421-5822 (See Index To Advertisers)"
+761,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (1)_16.png'],N/A,PATTON-MacGUYER CO (Div Of Avid
+762,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (1)_20.png'],N/A,PATTON-MacGUYER CO (Div Of Avid
+763,"SCORE LESS THAN CUTOFF: 0,40,PROVIDENCE",['cd1970/entry/1970_Page_68 (1)_22.png'],10TH ST,461-1500 (See Index To Advertisers)
+764,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_68 (1)_26.png'],I 95,467-3585 (See Index To Advertisers)
+765,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_68 (1)_33.png', 'cd1970/entry/1970_Page_68 (1)_34.png']",N/A,_ Advertisers)
+766,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (1)_36.png'],N/A,
+767,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (1)_42.png'],N/A,STATIONERSRETAIL
+768,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (2)_13.png'],N/A,Advertiser s)
+769,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_68 (2)_29.png'],"02905),","St (02905), Tel 781-4767 (See Index"
+770,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (2)_30.png'],N/A,To Advertisers)
+771,"SCORE LESS THAN CUTOFF: Carlsbad St,72,PROVIDENCE","['cd1970/entry/1970_Page_68 (3)_20.png', 'cd1970/entry/1970_Page_68 (3)_21.png', 'cd1970/entry/1970_Page_68 (3)_22.png']",CARL ST,"ARPIN GEORGE & SONS INC. 85 Carlsbad St (Cranston; 02920), Tel 942-6151 (See Index To Advertisers)"
+772,"SCORE LESS THAN CUTOFF: Hewes St,77.5,PROVIDENCE",['cd1970/entry/1970_Page_68 (3)_24.png'],HAWKES ST,Hope Store Fixture Co Inc 25 Hewes St
+773,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (3)_47.png'],N/A,
+774,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (3)_51.png'],N/A,Advertisers)
+775,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (3)_53.png'],N/A,
+776,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_68 (3)_58.png'],N/A,
+777,EMPTY STREET,"['cd1970/entry/1970_Page_69 (1)_3.png', 'cd1970/entry/1970_Page_69 (1)_4.png']",,"158 Pine St (02903), Tel (401) 331- 2380"
+778,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_69 (1)_18.png'],N/A,Mount Pleasant Tailors Cleansers & Dyers
+779,"SCORE LESS THAN CUTOFF: Manton Av. Lincoln Lace & Braid Co 61 Ponagansett,69.5,PROVIDENCE",['cd1970/entry/1970_Page_69 (1)_50.png'],PONAGANSETT AVE,"~ Artcraft Braid Co 39 Manton Av.
+Lincoln Lace & Braid Co 61 Ponagansett"
+780,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_69 (1)_59.png'],N/A,
+781,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (1)_1.png'],N/A,TAXICAB SERVICEContd
+782,EMPTY STREET,"['cd1970/entry/1970_Page_70 (1)_3.png', 'cd1970/entry/1970_Page_70 (1)_4.png']",,"315 Lockwood St (02907), Tel 421- 5000"
+783,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_17.png', 'cd1970/entry/1970_Page_70 (1)_18.png']",N/A,Abbey Telephone & Secreterial Service 86 Weybosset St Rm 607
+784,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (1)_19.png'],N/A,"ANSER PHONE SERVICE, Fletcher St"
+785,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_70 (1)_20.png', 'cd1970/entry/1970_Page_70 (1)_21.png']",02762).,Ext (Plainville. Mass 02762). Tel 724-8912 (See Index To Advertisers)
+786,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_22.png', 'cd1970/entry/1970_Page_70 (1)_23.png']",N/A,Business Mens Telephone Answering Service 111 Westminster St Rm 703
+787,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_28.png', 'cd1970/entry/1970_Page_70 (1)_29.png']",N/A,Eagle Telephone Answering Service 1055 Westminster St
+788,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_30.png', 'cd1970/entry/1970_Page_70 (1)_31.png']",N/A,Ideal Telephone Answering. Service 1046 Chalkstone Av
+789,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_32.png', 'cd1970/entry/1970_Page_70 (1)_33.png']",N/A,Modern Telephone Answering Service 100 Fountain St 5th Fl
+790,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_36.png', 'cd1970/entry/1970_Page_70 (1)_37.png']",N/A,Radio Telephone Of Rhode Island 1057 Westminster St
+791,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_39.png', 'cd1970/entry/1970_Page_70 (1)_40.png']",N/A,American Telephone & Telegraph Co 234 Washington St
+792,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_42.png', 'cd1970/entry/1970_Page_70 (1)_43.png']",N/A,New England Telephone & Telegraph (Bus Ofc) 77 Kennedy Plaza
+793,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (1)_44.png', 'cd1970/entry/1970_Page_70 (1)_45.png', 'cd1970/entry/1970_Page_70 (1)_46.png']",N/A,"NEW ENGLAND TELEPHONE & TELEGRAPH CO, 234 Washington St (02901). Tel 525-9800"
+794,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (1)_47.png'],N/A,"NEW ENGLAND TELEPHONE &
+TELEGRAPH CO (Traffic Dept) 234
+Washington St (02901), Tel 525-9950"
+795,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (2)_3.png'],N/A,PATTON-MacGUYER CO (Div Of
+796,"SCORE LESS THAN CUTOFF: 5,53,PROVIDENCE",['cd1970/entry/1970_Page_70 (2)_13.png'],I 95,"UNIVERSAL ENGRAVERS INC, 695"
+797,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_70 (2)_14.png'],"02903),","Eddy St (02903), Tel 421-9022"
+798,"SCORE LESS THAN CUTOFF: 4,50,PROVIDENCE",['cd1970/entry/1970_Page_70 (3)_32.png'],4TH ST,"LIFE CAP TIRE SERVICE INC, 424"
+799,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_70 (3)_33.png'],"02903),","Eddy St (02903), Tel 421-9375 (See"
+800,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_34.png'],N/A,Index To Advertisers)
+801,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_40.png'],N/A,COMMONWEALTH LAND TITLE IN-
+802,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_41.png'],N/A,"SURANCE COMPANY, Title Guaran-"
+803,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_44.png'],N/A,"House, Tel 331-5331 (Gee Index To"
+804,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_45.png'],N/A,Advertisers)
+805,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_70 (3)_47.png', 'cd1970/entry/1970_Page_70 (3)_48.png']",N/A,"COMMONWEALTH LAND TITLE INSURANCE COMPANY, Title"
+806,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_49.png'],N/A,Guarantee Co Of Rhode Island Di-
+807,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_51.png'],N/A,"To Court House, Tel 331-5331 Gee"
+808,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_70 (3)_52.png'],N/A,Index To Advertisers)
+809,EMPTY STREET,['cd1970/entry/1970_Page_71 (1)_44.png'],,Thurston Mfg Co/45 Borden St
+810,EMPTY STREET,['cd1970/entry/1970_Page_71 (1)_45.png'],,Toolcraft Inc 275:Hartford Av
+811,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_71 (3)_11.png'],02908),434 SMITH STREET (02908)
+812,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_71 (3)_12.png'],02903),244 WEYBOSSET STREET (02903)
+813,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_71 (3)_13.png'],N/A,(See Index To Advertisers)
+814,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_71 (3)_39.png', 'cd1970/entry/1970_Page_71 (3)_40.png']",N/A,(See Also Expressing And Moving)
+815,EMPTY STREET,['cd1970/entry/1970_Page_71 (3)_45.png'],,Associated Transport Inc Okie St
+816,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_72 (1)_1.png'],N/A,TRUC KINGContd
+817,"SCORE LESS THAN CUTOFF: Wal-,75.0,PROVIDENCE",['cd1970/entry/1970_Page_72 (1)_49.png'],WALDO ST,"PIERCE TRUCK CENTER, 401 Wal-"
+818,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_72 (1)_50.png', 'cd1970/entry/1970_Page_72 (1)_51.png']","02862),","cott St (Pawtucket, 02862), Tel 723- 4900"
+819,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_72 (1)_54.png'],N/A,"CHRBTYS AUTO REPAIRING, 2"
+820,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_72 (1)_55.png', 'cd1970/entry/1970_Page_72 (1)_56.png']","02919),","Sunnyside Av (Johnston, 02919), Tel 274-5971 (See Index To Advertisers)"
+821,"SCORE LESS THAN CUTOFF: Pomfret St,71,PROVIDENCE","['cd1970/entry/1970_Page_72 (1)_58.png', 'cd1970/entry/1970_Page_72 (1)_59.png']",SOMERSET ST,Tractor Trailer Sales & Service 2 Pomfret St
+822,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_72 (2)_23.png'],02903),244 WEYBOSSET STREET (02903)
+823,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_72 (2)_24.png', 'cd1970/entry/1970_Page_72 (2)_25.png']",N/A,(See Index To Advertisers) TUBE AND TUBING MFRS
+824,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_72 (3)_34.png'],N/A,MATERIAL
+825,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_72 (3)_59.png'],N/A,(See Also General Merchandise)
+826,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_73 (1)_1.png'],N/A,VARIETY STORESContd
+827,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_73 (2)_6.png'],N/A,
+828,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_73 (2)_14.png'],N/A,(See Also Animal Hospitals)
+829,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_73 (2)_31.png'],N/A,ECONOMY PAINT & WALLPAPER
+830,"SCORE LESS THAN CUTOFF: -2835 ,421-0347,39.5,PROVIDENCE",['cd1970/entry/1970_Page_73 (2)_33.png'],I 295,"Tels 421-2835 ,421-0347"
+831,EMPTY STREET,['cd1970/entry/1970_Page_73 (2)_35.png'],,Ace Warehouse Co Seaview Dr
+832,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_73 (3)_3.png'],N/A,
+833,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_74 (1)_1.png', 'cd1970/entry/1970_Page_74 (1)_2.png']",N/A,"THER STRIP MFRS
+
+t"
+834,"SCORE LESS THAN CUTOFF: sav,75.0,PROVIDENCE",['cd1970/entry/1970_Page_74 (1)_3.png'],SAVOY ST,"stlin Of Rhode Island Inc 513
+sav"
+835,FAILED TO PARSE AN ADDRESS,"['cd1970/entry/1970_Page_74 (1)_7.png', 'cd1970/entry/1970_Page_74 (1)_8.png']",N/A,GARMENT
+836,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_74 (1)_15.png'],N/A,
+837,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_74 (1)_31.png'],N/A,
+838,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_74 (1)_41.png'],N/A,Advertisers)
+839,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_74 (1)_49.png'],"02903),","St (02903), Tel 751-5555 (See Index"
+840,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_74 (1)_50.png'],N/A,To Advertisers)
+841,EMPTY STREET,['cd1970/entry/1970_Page_74 (2)_18.png'],,Eastern Wire Products Co 40-Dike St
+842,"SCORE LESS THAN CUTOFF: 7,50,PROVIDENCE",['cd1970/entry/1970_Page_74 (2)_22.png'],7TH ST,"WHAT CHEER WIRE WORKS, 87"
+843,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_74 (2)_23.png', 'cd1970/entry/1970_Page_74 (2)_24.png', 'cd1970/entry/1970_Page_74 (2)_25.png']","02905),","Willard Av (02905), Tel 421-9284 (See Index To Advertisers)"
+844,FAILED TO PARSE AN ADDRESS,['cd1970/entry/1970_Page_74 (2)_36.png'],N/A,Advertiser s)
+845,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_74 (2)_40.png', 'cd1970/entry/1970_Page_74 (2)_41.png']","02860),","St (Pawtucket; 02860), Tel 725-2100 (See Index To Advertisers)"
+846,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_74 (2)_44.png', 'cd1970/entry/1970_Page_74 (2)_45.png', 'cd1970/entry/1970_Page_74 (2)_46.png']","02903),","GLADDINGS INC. Westminster Mall (02903), Tel 521-9800 (See Index To Advertisers)"
+847,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_74 (3)_4.png'],"02903),","minster St (02903), Tel 831-6900"
+848,ERROR IN STREET MATCHING,['cd1970/entry/1970_Page_74 (3)_21.png'],"02911),","St (02911), Tel 331-1110, 110 Lock-"
+849,ERROR IN STREET MATCHING,"['cd1970/entry/1970_Page_74 (3)_22.png', 'cd1970/entry/1970_Page_74 (3)_23.png']","02903),","wood St (02903), Tel 421-3289"

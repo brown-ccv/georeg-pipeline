@@ -97,7 +97,7 @@ def geocode(dataFrame, dir_dir):
 
 	master_list = []
 	errors_list = []
-	today = datetime.date.today()
+	#today = datetime.date.today()
 	for row in dataFrame.itertuples():
 		#lt1=time.time()
 		# pull data from previous dataframe
@@ -105,6 +105,7 @@ def geocode(dataFrame, dir_dir):
 		city = str(row.City)
 		score = row.Conf_Score
 		group = row.Header
+		clean_header = row.Clean_Header
 		flist = row.File_List
 		text = row.Text
 		coName = row.Company_Name
@@ -148,15 +149,15 @@ def geocode(dataFrame, dir_dir):
 					'Match Score': score,
 					'Latitude': lat,
 					'Longitude': lon,
-					'Date_Added': today,
 					'File_List': flist,
 					'Text': [text],
 					'Company_Name': coName,
-					'Header': group
+					'Header': group,
+					'Header_Clean': clean_header
 					}
 
 				# if the row has a good score, add it to the masterlist
-				if conf_score > 85:
+				if conf_score > 99:
 					master_list.append(rowFrame)
 				else:
 					errors_list.append(row)
@@ -174,11 +175,11 @@ def geocode(dataFrame, dir_dir):
 					'Match Score': score,
 					'Latitude': lat,
 					'Longitude': lon,
-					'Date_Added': today,
 					'File_List': flist,
-					'Text': [text],
+					'Text': text,
 					'Company_Name': coName,
-					'Header': group
+					'Header': group,
+					'Header_Clean': clean_header
 					}
 			master_list.append(rowFrame)
 		else:

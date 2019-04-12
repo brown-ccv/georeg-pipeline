@@ -3,13 +3,13 @@ from fuzzywuzzy import fuzz
 import string
 import pickle as pkl
 import numpy as np
-
+import time
 
 # Global constants, should be in input_Params
 THRESHOLD = 85
 
 # can be in input_params, but this is stuff that needs to be replaced or removed.
-replace_char = ["*", "&", "%", "/", "\\"]
+replace_char = ["*", "%", "/", "\\"]
 strip_char = ["'", "-", ".", "!", ":", ";"]
 num_char =  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 red_flag_char = [" AVE ", " ST ", " AV ", " BLVD ", " BLV ", " RD ", " DR "]
@@ -20,8 +20,9 @@ common_errors = {
     "8": "B"
 }
 
-def clean_header(h):
+def clean_header(h_raw):
     # cleans the header
+    h = h_raw.partition(' (')[0]
     red_flag = False
     for s in replace_char:
         h = h.replace(s, "")
@@ -67,77 +68,6 @@ def match(headers, true_headers, map_dict):
                 map_dict[header] = (score_tuple[0], "no_header", "FALSE")
     return map_dict
 
-def calculate_scores(df):
-    # find the total length
-    l = len(df["clean_headers"])
-    # initialize the matrix
-    score_matrix = np.zeros((l,l))
-    i = 0
-    for h in df["clean_headers"]:
-        # create the scored matrix
-        score_matrix[i, :] = df["clean_headers"].apply(score, args=(h,)).values
-        #print("Row number: {} of {}".format(i, l - 1))
-        i += 1
-    return score_matrix
-
-def remove_repeat(df, scores):
-    # remove the repeated unknown headers
-    prelist = list(df["clean_headers"])
-    i = 0
-    for _ in df["clean_headers"]:
-        j = 0
-        for removal in scores[i, :]:
-            if removal and j > i: # the j > i ensures that only one copy of the header to header match is removed. 
-                #   A B C
-                # A . . .
-                # B . . .
-                # C . . .
-                # AC <==> CA, only one is removed
-
-                # check if can be removed, if yes, remove.
-                try:
-                    df = df[df["clean_headers"] != prelist[j]]
-                    #print("LOG: " + prelist[j] + " deleted!")
-                except KeyError:
-                    print("LOG: " + prelist[j] + " Already deleted")
-            j += 1
-        i += 1
-    return df
-
-
-# Functions to assign to the dataframe
-
-def assign_matched(D, map_dict):
-    matched = []
-    for h in D["clean_headers"]:
-        if h in map_dict: 
-            matched.append(map_dict[h][1])
-        else: 
-            #print("Known: ", h, " not in map_dict")
-            matched.append(h)
-    return matched
-
-def assign_score(D, map_dict):
-    scores = []
-    for h in D["clean_headers"]:
-        if h in map_dict: 
-            scores.append(map_dict[h][0])
-        else:
-            #print("Known: ", h, " not in map_dict")
-            scores.append(np.nan)
-    return scores
-
-def assign_bool(D, map_dict):
-    is_matched = []
-    for h in D["clean_headers"]:
-        if h in map_dict:
-            is_matched.append(map_dict[h][2])
-        else:
-            #print("Known: ", h, " not in map_dict")
-            is_matched.append("TRUE")
-    return is_matched
-
-
 
 # driver function to create the map_dict
 def generate_dict(df, true_headers):
@@ -155,20 +85,50 @@ def generate_dict(df, true_headers):
 # driver function to header match given a map_dict
 def match_headers(df, map_dict):
 
-    df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
-    df = df[df["clean_headers"].map(lambda h: (len(h) < 150) and (len(h) > 2) and (h != ""))].reset_index(drop=True)
+    #df = df.drop_duplicates("Header").dropna().assign(clean_headers=assign_clean)
+    t1 = time.time()
 
-    df = df.assign(
-        matched = lambda D: assign_matched(D, map_dict),
-        score = lambda D: assign_score(D, map_dict), 
-        is_matched = lambda D: assign_bool(D, map_dict))
+    header_dict = {}
+    score_dict = {}
+    bool_dict = {}
 
-    known = df.loc[df.matched != "no_header"].reset_index(drop=True)
-    unknown = df.loc[df.matched == "no_header"].reset_index(drop=True)
+    for header in set(df['Header']):
+        cleaned_header = clean_header(header)
+        if cleaned_header in map_dict.keys():
+            if map_dict[cleaned_header][1] != "no_header":
+                header_dict[header] = map_dict[cleaned_header][1]
+                score_dict[header] = map_dict[cleaned_header][0]
+                bool_dict[header] = map_dict[cleaned_header][2]
+            else:
+                header_dict[header] = cleaned_header
+                score_dict[header] = map_dict[cleaned_header][0]
+                bool_dict[header] = map_dict[cleaned_header][2]
+        else:
+            header_dict[header] = cleaned_header
+            score_dict[header] = 0
+            bool_dict[header] = "ERR: NOT IN MAPDICT"
 
-    scores = calculate_scores(unknown)
-    removal_matrix = (scores > THRESHOLD) & (scores < 100)
-    internal_unmatched = remove_repeat(unknown, removal_matrix)
-    internal_unmatched = internal_unmatched.reset_index(drop=True)
+    t2 = time.time()
+    print('clean header assigning time: ' + str(round(t2-t1,3)) + ' s')
 
-    return known, internal_unmatched, df
+    t1 = time.time()
+    header_list = []
+    score_list = []
+    bool_list = []
+
+    for row in df.itertuples():
+        raw_header = row.Header
+        header_list.append(header_dict[raw_header])
+        score_list.append(score_dict[raw_header])
+        bool_list.append(bool_dict[raw_header])
+    
+    t2 = time.time()
+    print('assigning time: ' + str(round(t2-t1, 3)) + ' s')
+    df = df.assign(clean_header=header_list,score=score_list,matched=bool_list)
+
+    return df
+
+
+
+
+
