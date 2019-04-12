@@ -15,24 +15,9 @@ import shutil
 #Chops columns into entries
 #Script contains unused functions and needs heavy editing.
 
+"""Sorts based on natural ordering of numbers, ie. "12" > "2" """
 def naturalSort(String_):
     return [int(s) if s.isdigit() else s for s in re.split(r'(\d+)', String_)]
-
-def lineIndent(img, h):
-    avg = 0
-    height, width = img.shape[:2]
-    for x in range(0, width):
-        if img[h, x] == 0:
-            return x
-    return -1
-
-def findFirstIndent(image, h):
-    height, width = image.shape[:2]
-    for i in range(h, height):
-        for x in range(0, width):
-            if image[i, x] == 0:
-                return i, x
-    return -1, -1
 
 def cropEntries(image, file, padding):
     #t1 = time.time()
