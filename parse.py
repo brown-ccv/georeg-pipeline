@@ -248,8 +248,23 @@ def chunk_process_ocr(chunk_files):
         return rlist
 
 
-# def assign_matched(D):
-#         return [h if m == "no_header" else m for h,m in zip(D["Header"], D["matched"])]
+"""
+handles newlines in the entries by splitting if the newline occurs part way thru the string
+"""
+def replace_newline(text):
+    ln = len(text)
+    n_idx = [m.start() for m in re.finditer("\n", text)]
+    split_idx = []
+    new_text = text
+    for idx in n_idx:
+        percent = idx/ln
+        if percent > 0.45 and percent < 0.55:
+            split_idx.append(idx)
+        else:
+            new_text = new_text[:idx] + " " + new_text[idx + 1,:]
+    parts = [new_text[i:j] for i,j in zip(split_idx, split_idx[1:]+[None])]
+    print(parts)
+    return parts
 
 """
 Main processing/driver script
@@ -355,6 +370,7 @@ def process_data(folder, params):
         raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
         is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
         entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
+        newline_parts_dict = {index:replace_newline(value) for index,value in raw_data['text'].iteritems()}
 
         raw_data_length = raw_data.shape[0]
         
@@ -388,18 +404,19 @@ def process_data(folder, params):
         file_list = []
         texts = []
         text = ''
+        parts_list = []
         headers = []
         header = ''
         cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
         text_dict = {index:value for index,value in raw_data['text'].iteritems()}
         file_dict = {index:value for index,value in raw_data['file'].iteritems()}
-
+        
         for index in raw_data.index:
                 #raw_row = raw_data.iloc[i]
                 row_text = text_dict[index].decode("utf-8")
                 cq = cq_dict[index]
                 file = file_dict[index]
-                
+                parts = newline_parts_dict[index] 
                 # concat headers
                 if is_header_dict[index]:
                         if cq:
@@ -411,6 +428,7 @@ def process_data(folder, params):
                 # if it's a page number
                 elif entry_num_dict[index] == 1 and row_text == file.rpartition('_Page_')[2].rpartition(' ')[0]:
                         pass
+                
                 # concat
                 elif cq:
                         file_list.append(file)
@@ -423,10 +441,11 @@ def process_data(folder, params):
                         headers.append(header)
                         texts.append(text.strip())
                         file_list = []
+                        parts_list.append(parts)
                         text = ''
 
         # throw it all into a dataframe
-        data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
+        data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists, "Parts":parts_list})
         
         t2 = time.time()
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -453,6 +472,22 @@ def process_data(folder, params):
         print('Writing data to data.csv...')
         t1 = time.time()
         data.to_csv(dir_dir + '/data.csv')
+        t2 = time.time()
+        print('Done in: ' + str(round(t2-t1, 3)) + ' s')
+
+        print('Expanding...')
+        t1 = time.time()
+        expanded_data_list = []
+        for index,row in data.iterrows():
+                if len(row['Parts']) > 1:
+                        text_parts = row['Parts']
+                        new_row = row.copy()
+                        for text_part in text_parts:
+                                new_row['Text'] = text_part
+                                expanded_data_list.append(new_row.copy())
+                else:
+                        expanded_data_list.append(row)
+        data = pd.DataFrame(expanded_data_list)
         t2 = time.time()
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
