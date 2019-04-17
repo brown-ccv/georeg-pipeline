@@ -28,34 +28,47 @@ def cropEntries(image, file, padding):
     sf = float(width)/float(2611)
     pad = int(padding/float(height)*float(11675))
     histogram  = pd.Series([width - cv2.countNonZero(img[i,:]) for i in list(range(height))])
+    # do plots. 
     #fig = plt.figure()
     #ax = histogram.plot()
     #ax.set_ylim([0,150])
     #ax.set_xlim([10500,11500])
     #plt.savefig('histogram' + file + '.pdf', bbox_inches='tight')
     #plt.close(fig)
+
+
     dip_df = histogram[histogram < sf*25].to_frame().rename(columns = {0:'count'})
     indices = np.array(dip_df.index.tolist()).reshape(-1,1)
     #pkl.dump(indices, open('indices.pkl', 'wb'))
     #t2 = time.time()
     #print('Prep time: ' + str(round(t2-t1, 2)) + ' s')
+
+    # find indices to cut the entries
     #tf1 = time.time()
     ms = MeanShift(bandwidth = sf*50, bin_seeding=True)
     ms.fit(indices)
     dip_group = ms.predict(indices)
     #tf2 = time.time()
     #print('Fit time: ' + str(round(tf2-tf1, 2)) + ' s')
+    
+    # add new column 
     #t1 = time.time()
     dip_df = dip_df.assign(group = dip_group)
     #cut_points = [0] + sorted(dip_df.groupby('group').apply(lambda x: int(np.mean(x.index))).tolist())[1:-1] + [height]
+    
+    #calculate where to cut
     cut_points = [0] + sorted(dip_df.groupby('group').idxmin()['count'].tolist())[1:-1] + [height]
     median_height = np.median([cut_points[i+1] - cut_points[i] for i in list(range(len(cut_points) - 1))])
     #t2 = time.time()
     #print('Sort time: ' + str(round(t2-t1, 2)) + ' s')
+
+    #for each pair of cut points found
     for i in list(range(len(cut_points)-1)):
         start,end = cut_points[i],cut_points[i+1]
+
+        # if we suspect an entry is too large
         if end-start > 1.5*median_height:
-            #print(i+1)
+            # do the algorithm over again
             entry_hist = pd.DataFrame(data={'count':[float(width - cv2.countNonZero(img[j,:])) for j in list(range(start,end))]}, index=list(range(start,end)))
             entry_dip_df = entry_hist[entry_hist['count'] < sf*100]
             entry_indices = np.array(entry_dip_df.index.tolist()).reshape(-1,1)
@@ -64,6 +77,8 @@ def cropEntries(image, file, padding):
             entry_dip_group = entry_ms.predict(entry_indices)
             entry_dip_df = entry_dip_df.assign(entry_group = entry_dip_group)
             entry_cut_points = [start] + sorted(entry_dip_df.groupby('entry_group').idxmin()['count'].tolist())[1:-1] + [end]
+            
+            # if you have too many cut points for one entry
             if len(entry_cut_points) > 2 :
                 #print(entry_cut_points)
                 #fig2 = plt.figure()
@@ -73,7 +88,10 @@ def cropEntries(image, file, padding):
                 #ax.set_ylim([0,300])
                 #plt.savefig('entry_hist' + file + str(i+1) + '.pdf', bbox_inches='tight')
                 #plt.close(fig2)
+
+                
                 for entry_i in list(range(len(entry_cut_points)-1)):
+                    # adjust the cut points
                     if histogram.iloc[entry_cut_points[entry_i]:entry_cut_points[entry_i+1]].sum() > sf*20:
                         adjusted_start = entry_cut_points[entry_i]
                         adjusted_end = entry_cut_points[entry_i+1]
@@ -87,6 +105,7 @@ def cropEntries(image, file, padding):
                         crop_points.append([adjusted_start,adjusted_end])
             else:
                 if entry_hist['count'].sum() > sf*20:
+                    # adjust cut points
                     adjusted_start = start + 0
                     adjusted_end = end - 0
                     while (histogram.iloc[adjusted_start] == 0) and (adjusted_start < (adjusted_end-1)):
@@ -98,7 +117,9 @@ def cropEntries(image, file, padding):
                     croppedImages.append(img[adjusted_start:adjusted_end, 0:width])
                     crop_points.append([adjusted_start,adjusted_end])
         else:
+            # if the cut points end up possibly cutting words
             if histogram.iloc[start:end].sum() > sf*20:
+                # adjust cut points
                 adjusted_start = start + 0
                 adjusted_end = end - 0
                 while (histogram.iloc[adjusted_start] == 0) and (adjusted_start < (adjusted_end-1)):
