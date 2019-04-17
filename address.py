@@ -155,7 +155,6 @@ class Address(object):
             street_matches = street_name_dict[stnam.upper()]
         else:
             try:
-                #TODO
                 street_matches = process.extractOne(stnam, addr_options['Street'], scorer=street_scorer)
                 if street_matches[0] in abbreviations['Street'].tolist():
                     street_matches = list(street_matches)
