@@ -114,7 +114,6 @@ class BrownArcGIS(ArcGIS):
         return {'candidates':geocoded}
 
 
-#TODO: you totally forgot the process required to make this work.
     def _refresh_authentication_token(self):
         self.retry = 0
         self.token_expiry = int(time()) + self.token_lifetime
