@@ -145,7 +145,6 @@ Algorithm is as follows:
 """
 def is_header(fbp, text, file, entry_num):
         year = int(file.partition('/')[0].lstrip('cd'))
-        text = text.decode("utf-8")
         # divides logic by year
         if year <= 1954:
                 if int(count_alpha(text)) == 0:
@@ -227,7 +226,8 @@ def ocr_file(file, api):
         api.SetVariable("tessedit_char_whitelist", "()*,'&.;-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
         boxes = api.GetComponentImages(RIL.TEXTLINE, True)
         outStr = api.GetUTF8Text()
-        text = outStr.encode('ascii', 'ignore')
+        # text = outStr.encode('ascii', 'ignore')
+        text = outStr
         im = cv2.imread(file, 0)
         width = im.shape[1]
         sf = float(width)/float(2611)
@@ -249,22 +249,42 @@ def chunk_process_ocr(chunk_files):
 
 
 """
+Given a list of strings and a threshold length, it concatenates strings such that small strings join big strings
+"""
+def join_small_str(parts, thresh):
+    root = None
+    joined = []
+    for i in range(len(parts)):
+        small = len(parts[i]) < thresh
+        if root and small:
+            root = root + " " + parts[i]
+        elif root and not small:
+            if len(root) < thresh:
+                root = root + " " + parts[i]
+                joined.append(root)
+                root = None
+            else:
+                joined.append(root)
+                root = parts[i]
+        else:
+            root = parts[i]
+    if root:
+        joined.append(root)
+    return joined
+
+
+"""
 handles newlines in the entries by splitting if the newline occurs part way thru the string
 """
 def replace_newline(text):
-    ln = len(text)
-    n_idx = [m.start() for m in re.finditer("\n", text)]
-    split_idx = []
-    new_text = text
-    for idx in n_idx:
-        percent = idx/ln
-        if percent > 0.45 and percent < 0.55:
-            split_idx.append(idx)
-        else:
-            new_text = new_text[:idx] + " " + new_text[idx + 1,:]
-    parts = [new_text[i:j] for i,j in zip(split_idx, split_idx[1:]+[None])]
-    print(parts)
+    if "\\n" in text:
+        parts = join_small_str(re.split(r"\\n", text), 15)
+    elif "\n" in text:
+        parts = join_small_str(re.split(r"\n", text), 15)
+    else:
+        parts = [text]
     return parts
+
 
 """
 Main processing/driver script
@@ -370,7 +390,6 @@ def process_data(folder, params):
         raw_data = raw_data.assign(is_header = raw_data.apply(lambda row: is_header(row['relative_fbp'], row['text'], row['file'], row['entry_num']), axis=1))
         is_header_dict = {index:value for index,value in raw_data['is_header'].iteritems()}
         entry_num_dict = {index:value for index,value in raw_data['entry_num'].iteritems()}
-        newline_parts_dict = {index:replace_newline(value) for index,value in raw_data['text'].iteritems()}
 
         raw_data_length = raw_data.shape[0]
         
@@ -404,7 +423,6 @@ def process_data(folder, params):
         file_list = []
         texts = []
         text = ''
-        parts_list = []
         headers = []
         header = ''
         cq_dict = {index:value for index,value in raw_data['cq'].iteritems()}
@@ -413,10 +431,10 @@ def process_data(folder, params):
         
         for index in raw_data.index:
                 #raw_row = raw_data.iloc[i]
-                row_text = text_dict[index].decode("utf-8")
+                row_text = text_dict[index]
                 cq = cq_dict[index]
                 file = file_dict[index]
-                parts = newline_parts_dict[index] 
+
                 # concat headers
                 if is_header_dict[index]:
                         if cq:
@@ -441,11 +459,10 @@ def process_data(folder, params):
                         headers.append(header)
                         texts.append(text.strip())
                         file_list = []
-                        parts_list.append(parts)
                         text = ''
 
         # throw it all into a dataframe
-        data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists, "Parts":parts_list})
+        data = pd.DataFrame(data={'Header':headers, 'Text':texts, 'File_List':file_lists})
         
         t2 = time.time()
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -475,18 +492,16 @@ def process_data(folder, params):
         t2 = time.time()
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
-        print('Expanding...')
+
+        print('Expanding newlines...')
         t1 = time.time()
         expanded_data_list = []
         for index,row in data.iterrows():
-                if len(row['Parts']) > 1:
-                        text_parts = row['Parts']
-                        new_row = row.copy()
-                        for text_part in text_parts:
-                                new_row['Text'] = text_part
-                                expanded_data_list.append(new_row.copy())
-                else:
-                        expanded_data_list.append(row)
+                parts = replace_newline(row['Text'])
+                new_row = row.copy()
+                for text_part in parts:
+                        new_row['Text'] = text_part
+                        expanded_data_list.append(new_row.copy())
         data = pd.DataFrame(expanded_data_list)
         t2 = time.time()
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
@@ -529,7 +544,7 @@ def process_data(folder, params):
         print('Done in: ' + str(round(t2-t1, 3)) + ' s')
 
         print('Matching city and street and geocoding...')
-        t1 = time.time()
+        t2 = time.time()
         result = dfProcess(data, params)
         t2 = time.time()
         print('Collective runtime: ' + str(round(t2-t1, 3)) + ' s')
