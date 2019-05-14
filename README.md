@@ -22,7 +22,7 @@ Then activate the environment by running:
 ### MacOS
 
 ```
-    pip install -r requirements_py3_macos.txt
+    pip3 install -r requirements_py3_macos.txt
 ```
 
 Install homebrew here: https://brew.sh/
@@ -41,7 +41,7 @@ Then install tesserocr by this command (tested on MacOS 10.14.1)
 ### Linux
 
 ```
-    pip install -r requirements_py3_linux.txt
+    pip3 install -r requirements_py3_linux.txt
 ```
 
 Then install the following packages based on your distro. 
@@ -55,7 +55,7 @@ For Ubuntu:
 Then install tesserocr
 
 ```
-    pip install tesserocr
+    pip3 install tesserocr
 ```
 
 ### Windows
