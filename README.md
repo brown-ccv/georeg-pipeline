@@ -1,3 +1,6 @@
+![Static Badge](https://img.shields.io/badge/ARCHIVED-red)
+
+**This repo was archived February 2026, due to inactivity.**
 
 A pipeline for extracting data from City Directories
 
